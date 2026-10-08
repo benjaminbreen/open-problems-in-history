@@ -1,4 +1,4 @@
-import { esc, period, voteBox as vbox, rowHTML, detailHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -238,10 +238,9 @@ function renderSuggest() {
     </form>`;
 }
 
-function renderContact() {
-  app.innerHTML = `
-    <h1 class="page-title">Contact</h1>
-    <p class="contact"><a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">breen85@gmail.com</a></p>`;
+function renderAbout() {
+  document.title = "About · Open Problems in History";
+  app.innerHTML = aboutHTML();
 }
 
 async function renderAdmin() {
@@ -291,11 +290,11 @@ function stats() {
 function route() {
   const path = location.pathname.replace(/\/+$/, "") || "/";
   document.title = "Open Problems in History";
-  const nav = path === "/" ? "list" : path.slice(1);
+  const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.slice(1);
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
-  else if (path === "/contact") renderContact();
+  else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
   else if (path === "/admin") renderAdmin();
   else renderList();
 }

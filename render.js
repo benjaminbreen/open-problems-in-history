@@ -143,3 +143,46 @@ export function detailHTML(ctx, p) {
     </div>
     </article>`;
 }
+
+// ---------- about ----------
+const ext = (href, text) => `<a href="${href}" target="_blank" rel="noopener">${text}</a>`;
+export const DONATE = "https://buy.stripe.com/5kQaEXfJLgRGbqrf1L4F201";
+export const REPO = "https://github.com/benjaminbreen/open-problems-in-history";
+
+export function aboutHTML() {
+  return `
+  <article class="about">
+    <h1 class="page-title">About</h1>
+    <div class="prose">
+      <p>This site is a prototype created by ${ext("https://benjaminpbreen.com/", "Benjamin Breen")}, a professor of history at UC Santa Cruz, to encourage collective work on historical problems that might prove &ldquo;tractable&rdquo; to the combined efforts of historians, archivists, scientists, interested amateurs, and frontier AI models.</p>
+      <p>It is loosely inspired by the ${ext("https://www.claymath.org/millennium-problems/", "Millennium Prize Problems")}, a list of highly significant and challenging open problems in mathematics. This site, however, is much more oriented toward crowdsourcing: collectively exploring not just how these problems might be answered, but also what historical &ldquo;millennium problems&rdquo; <em>should be in the first place</em>. You can <a href="/suggest">suggest new problems</a> and comment on any of the existing ones.</p>
+    </div>
+
+    <section class="donate">
+      <div>
+        <h2>Support this project</h2>
+      </div>
+      <a class="donate-btn" href="${DONATE}" target="_blank" rel="noopener">Donate <span aria-hidden="true">→</span></a>
+    </section>
+
+    <div class="prose">
+      <h2>Why now?</h2>
+      <p>As I&rsquo;ve ${ext("https://resobscura.substack.com/p/ai-labs-need-to-start-funding-historical", "written elsewhere")}, historical research is very different from mathematical and scientific research, in that it relies at least as much on intuition and subjective judgement as it does on notions of &ldquo;provability.&rdquo; Almost nothing in the historical record can be thought of as decisively &ldquo;solved&rdquo; or proven, and historical arguments are inherently different from, say, a mathematical proof that can be formalized in machine logic. For this reason, many (most?) of the problems that historians work on are <strong>not</strong> amenable to the sort of work that AI agents can do.</p>
+      <p>However, many others are. Frontier models can conduct multilingual searches through historical archives, including handwritten manuscripts, far faster than humans, although their results always require a human in the loop to confirm and check them. And as recent breakthroughs in ${ext("https://runtimewire.com/article/gpt-6-astra-marmont-cipher-carter-church", "historical cryptography")} and the ${ext("https://scrollprize.org/", "Vesuvius Challenge")} show, AI models are making significant contributions to subfields of historical analysis that involve computational solutions.</p>
+      <p>I developed the items on this list with these new possibilities in mind. The current list is the product of a few weeks of trial and error in September and October 2026, ${ext("https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness", "which I discussed here")}, as I used GPT-6 and Claude Opus 5.5 to explore a wide range of open problems in history to which frontier models might meaningfully contribute. I expect the list to grow substantially as new entries are crowdsourced. You can also upvote and downvote entries.</p>
+
+      <h2>Who can help</h2>
+      <p>One of the most important realizations from making the initial list is a relatively simple one: the most meaningful contributions to a problem set like this involve collaborations between historians, archivists, AI agents, and interested amateur researchers. In particular, archivists and librarians working to digitize manuscripts and other understudied primary sources will be essential to progress on many, if not all, of these problems.</p>
+      <p>I think it would make sense to form a working group to coordinate these efforts and build partnerships with the many digitization projects already under way. If you are interested in discussing this, please get in touch.</p>
+
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">breen85@gmail.com</a></li>
+        <li><span>New problems</span><a href="/suggest">Suggest a problem</a></li>
+        <li><span>The site itself</span><div>${ext(`${REPO}/issues/new`, "Open an issue on GitHub")} to report an error or propose a change; ${ext(`${REPO}/pulls`, "pull requests")} are welcome</div></li>
+        <li><span>Source and data</span>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</li>
+        <li><span>AI agents</span><a href="/llms.txt">llms.txt</a></li>
+      </ul>
+    </div>
+  </article>`;
+}

@@ -1,11 +1,31 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/suggest", "destination": "/" },
-    { "source": "/contact", "destination": "/" },
-    { "source": "/admin", "destination": "/" }
+    {
+      "source": "/suggest",
+      "destination": "/"
+    },
+    {
+      "source": "/admin",
+      "destination": "/"
+    }
   ],
   "headers": [
-    { "source": "/llms.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
+    {
+      "source": "/llms.txt",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/contact",
+      "destination": "/about",
+      "permanent": true
+    }
   ]
 }

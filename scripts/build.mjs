@@ -4,7 +4,7 @@
 //   p/<id>/index.html    one pre-rendered page per problem (readable without JavaScript)
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
-import { esc, rowHTML, detailHTML } from "../render.js";
+import { esc, rowHTML, detailHTML, aboutHTML } from "../render.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -81,9 +81,18 @@ for (const p of problems) {
   }));
 }
 
+fs.mkdirSync("about", { recursive: true });
+fs.writeFileSync("about/index.html", page({
+  title: `About · ${SITE}`,
+  description: "Why this list exists, who can help, how to contact Benjamin Breen, and how to support the project.",
+  head: social({ title: `About · ${SITE}`, description: "Why this list exists, who can help, and how to support the project.", url: `${URL}/about`, image: `${URL}/og/index.jpg` }),
+  main: aboutHTML(),
+}));
+
 fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>${URL}/</loc></url>
+<url><loc>${URL}/about</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
 `);

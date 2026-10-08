@@ -220,3 +220,30 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 @media (max-width: 640px) {
   .sbody > p, .steps li { font-size: 18px; }
 }
+
+/* about */
+.about { max-width: 760px; }
+.about .page-title { font-size: 34px; margin-top: 30px; }
+.prose p { font: 19.5px/1.6 var(--serif); margin: 0 0 16px; }
+.prose a { text-decoration-color: var(--accent); }
+.prose h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin: 40px 0 14px; padding: 16px 0 0; border: 0; border-top: 1px solid var(--rule); color: var(--ink); }
+.donate {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap;
+  margin: 30px 0 18px; padding: 22px 24px; border: 2px solid var(--ink); position: relative;
+}
+.donate::before { content: ""; position: absolute; left: -2px; top: -2px; width: 14px; height: 14px; background: var(--accent); }
+.donate h2 { font: 500 25px/1.2 var(--serif); margin: 0; padding: 0; border: 0; text-transform: none; letter-spacing: -.005em; color: var(--ink); }
+.donate-btn {
+  display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; font: 600 14px var(--mono); letter-spacing: .04em; text-transform: uppercase;
+  background: var(--accent); color: var(--accent-ink); text-decoration: none; border: 2px solid var(--accent); transition: background .2s, color .2s;
+}
+.donate-btn:hover { background: var(--ink); border-color: var(--ink); color: var(--bg); }
+.contact-list { list-style: none; margin: 0; padding: 0; font-size: 14px; }
+.contact-list li { display: grid; grid-template-columns: 150px 1fr; gap: 0 16px; padding: 9px 0; border-bottom: 1px solid var(--rule); color: var(--ink-2); }
+.contact-list li span { color: var(--muted); text-transform: uppercase; font-size: 11.5px; letter-spacing: .06em; padding-top: 2px; }
+.contact-list a { color: var(--ink); text-decoration-color: var(--accent); }
+@media (max-width: 640px) {
+  .prose p { font-size: 18px; }
+  .contact-list li { grid-template-columns: 1fr; }
+  .donate { padding: 18px; }
+}
