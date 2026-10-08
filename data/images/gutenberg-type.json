@@ -1,0 +1,12 @@
+{
+  "id": "gutenberg-type",
+  "file": "data/images/src/gutenberg-type.jpg",
+  "caption": "Gutenberg Bible type, Lenox copy, New York Public Library",
+  "commons": "https://commons.wikimedia.org/wiki/File:Detail_of_Gutenberg_Bible_(c._1455)_-_New_York_Public_Library_-_Midtown_-_Manhattan_-_New_York_City_-_USA_(24402008394).jpg",
+  "author": "Adam Jones from Kelowna, BC, Canada",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+  "crop": "center",
+  "zoom": 2.2,
+  "style": "bold"
+}

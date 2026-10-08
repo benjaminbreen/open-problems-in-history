@@ -1,0 +1,13 @@
+{
+  "id": "agade",
+  "file": "data/images/src/agade.jpg",
+  "caption": "Inscription on the Obelisk of Manishtushu, Akkadian, c. 2270 BCE",
+  "commons": "https://commons.wikimedia.org/wiki/File:P1050578_Louvre_Ob%C3%A9lisque_de_Manishtusu_d%C3%A9tail_rwk.JPG",
+  "author": "Mbzt",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0",
+  "crop": "center",
+  "zoom": 2.4,
+  "invert": false,
+  "style": "bold"
+}

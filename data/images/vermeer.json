@@ -1,0 +1,10 @@
+{
+  "id": "vermeer",
+  "file": "data/images/src/vermeer.jpg",
+  "caption": "Vermeer, The Music Lesson (Lady at the Virginals), c. 1662–65",
+  "commons": "https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_Lady_at_the_Virginal_with_a_Gentleman,_'The_Music_Lesson'_-_Google_Art_Project.jpg",
+  "author": "Johannes Vermeer",
+  "license": "Public domain",
+  "license_url": "",
+  "crop": "center"
+}

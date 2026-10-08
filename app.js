@@ -114,11 +114,14 @@ app.addEventListener("submit", async (e) => {
     f.querySelector("button").disabled = true;
     try { await api("/api/comments", { method: "POST", body: { id: f.dataset.pid, kind: f.dataset.kind, ...data } }); }
     catch (err) { alert(`Could not post: ${err.message}`); f.querySelector("button").disabled = false; return; }
-    if (f.dataset.kind === "approach") {
-      f.reset(); f.querySelector("button").disabled = false;
-      toggleIdea(false);
-      loadComments(f.dataset.pid, app.querySelector("#ideas"), "approach");
-    } else loadComments(f.dataset.pid, f.closest(".cbox, #cbox"));
+    const msg = document.createElement("p");
+    msg.className = "note thanks";
+    msg.textContent = "Thank you. It will appear here after review.";
+    f.reset(); f.querySelector("button").disabled = false;
+    if (f.dataset.kind === "approach") toggleIdea(false);
+    const anchor = f.dataset.kind === "approach" ? app.querySelector(".idea-toggle") : f;
+    anchor.parentNode.querySelector(".thanks")?.remove();
+    anchor.after(msg);
   }
   if (f.matches(".sf")) {
     const data = Object.fromEntries(new FormData(f));
@@ -151,6 +154,12 @@ app.addEventListener("click", async (e) => {
   if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort", view.sort); return renderList(); }
   if (t.dataset.show) { view.show = t.dataset.show; return renderList(); }
   if (t.dataset.idea) return toggleIdea();
+  if (t.dataset.share != null) {
+    const url = location.origin + location.pathname;
+    if (navigator.share) { navigator.share({ title: document.title, url }).catch(() => {}); return; }
+    try { await navigator.clipboard.writeText(url); t.textContent = "Link copied"; setTimeout(() => (t.textContent = "Share"), 1600); } catch {}
+    return;
+  }
   if (t.dataset.comments) {
     const id = t.dataset.comments;
     const box = app.querySelector(`.cbox[data-for="${CSS.escape(id)}"]`);
@@ -169,6 +178,11 @@ app.addEventListener("click", async (e) => {
   }
   if (t.dataset.status) {
     try { await api("/api/suggest", { method: "PATCH", body: { sid: t.dataset.sid, status: t.dataset.status } }); }
+    catch (err) { return alert(err.message); }
+    renderAdmin();
+  }
+  if (t.dataset.post) {
+    try { await api("/api/comments", { method: "PATCH", body: { cid: t.dataset.post, action: t.dataset.action } }); }
     catch (err) { return alert(err.message); }
     renderAdmin();
   }
@@ -236,8 +250,8 @@ async function renderAdmin() {
       <form class="af sf"><input type="text" name="token" placeholder="Token" aria-label="Token" autocomplete="off"><button class="btn" type="submit">Enter</button></form>`;
     return;
   }
-  let list;
-  try { list = await api("/api/suggest"); }
+  let list, posts;
+  try { [list, posts] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1")]); }
   catch { store.set("op.admin", null); app.innerHTML = `<h1 class="page-title">Admin</h1><p class="note">Token rejected.</p>`; setTimeout(renderAdmin, 1200); return; }
   const group = (st) => list.filter((s) => s.status === st);
   const item = (s) => `<div class="admin-item">
@@ -247,9 +261,16 @@ async function renderAdmin() {
       <div class="acts">${["approved", "rejected", "pending"].filter((x) => x !== s.status)
         .map((x) => `<button type="button" class="btn ghost" data-sid="${esc(s.id)}" data-status="${x}">${{ approved: "Approve", rejected: "Reject", pending: "Back to pending" }[x]}</button>`).join("")}</div>
     </div>`;
+  const post = (c) => `<div class="admin-item">
+      <div class="note">${c.kind === "approach" ? "Approach" : "Comment"} on <a href="/p/${esc(c.pid)}">${esc(c.title)}</a>${c.flag ? ` · <b class="del">${esc(c.flag)}</b>` : ""}</div>
+      <p>${esc(c.text)}</p>
+      <div class="note">${esc(c.name)}${c.agent ? ` · AI: ${esc(c.agent)}` : ""} · ${new Date(c.t).toISOString().slice(0, 16).replace("T", " ")}</div>
+      <div class="acts"><button type="button" class="btn" data-post="${esc(c.cid)}" data-action="approve">Approve</button><button type="button" class="btn ghost" data-post="${esc(c.cid)}" data-action="reject">Reject</button></div>
+    </div>`;
   app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
-    <p class="note">Signed in. Delete links now appear on comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
-    ${["pending", "approved", "rejected"].map((st) => `<section><h2>${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
+    <p class="note">Signed in. Delete links now appear on published comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
+    <section><h2>Comments and approaches awaiting review (${posts.length})</h2>${posts.map(post).join("") || `<p class="note">None.</p>`}</section>
+    ${["pending", "approved", "rejected"].map((st) => `<section><h2>Suggested problems: ${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
 
 // ---------- footer ----------

@@ -14,6 +14,11 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   const missing = need.filter((k) => p[k] === undefined);
   if (missing.length) console.warn(`${f}: missing ${missing.join(", ")}`);
   p.existing = (p.existing || []).sort((a, b) => a.year - b.year);
+  const imgMeta = `data/images/${p.id}.json`;
+  if (fs.existsSync(imgMeta) && fs.existsSync(`img/${p.id}.webp`)) {
+    const { caption, commons, author, license, license_url } = JSON.parse(fs.readFileSync(imgMeta, "utf8"));
+    p.image = { src: `/img/${p.id}.webp`, caption, commons, author, license, license_url };
+  }
   problems.push(p);
 }
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
@@ -24,12 +29,36 @@ const page = ({ title, description, head = "", main }) => template
   .replace("{{head}}", head).replace("{{main}}", main);
 const ctx = { tally: {}, counts: {}, mine: {}, open: new Set() };
 const SITE = "Open Problems in History";
+const URL = "https://historyproblems.com";
+const HOME_DESC = "Open problems in history that historians working with AI research agents could plausibly solve. Vote, comment, propose approaches, suggest problems.";
+const json = (o) => `<script type="application/ld+json">${JSON.stringify(o).replace(/</g, "\\u003c")}</script>\n`;
+const social = ({ title, description, url, image, type = "website" }) => [
+  `<link rel="canonical" href="${url}">`,
+  `<meta property="og:site_name" content="${SITE}">`,
+  `<meta property="og:type" content="${type}">`,
+  `<meta property="og:title" content="${esc(title)}">`,
+  `<meta property="og:description" content="${esc(description)}">`,
+  `<meta property="og:url" content="${url}">`,
+  `<meta property="og:image" content="${image}">`,
+  `<meta property="og:image:width" content="1200">`,
+  `<meta property="og:image:height" content="630">`,
+  `<meta name="twitter:card" content="summary_large_image">`,
+  `<meta name="twitter:title" content="${esc(title)}">`,
+  `<meta name="twitter:description" content="${esc(description)}">`,
+  `<meta name="twitter:image" content="${image}">`,
+].join("\n") + "\n";
+const publisher = { "@type": "Person", name: "Benjamin Breen", url: "https://benjaminpbreen.com/" };
 const byPeriod = [...problems].sort((a, b) => a.start - b.start);
 
 fs.writeFileSync("index.html", page({
   title: SITE,
-  description: "Open problems in history that historians working with AI research agents could plausibly solve. Vote, comment, propose approaches, suggest problems.",
-  head: `<link rel="alternate" type="application/json" href="/api/problems">\n`,
+  description: HOME_DESC,
+  head: social({ title: SITE, description: HOME_DESC, url: `${URL}/`, image: `${URL}/og/index.jpg` })
+    + `<link rel="alternate" type="application/json" href="/api/problems">\n`
+    + json({
+      "@context": "https://schema.org", "@type": "WebSite", name: SITE, url: `${URL}/`, description: HOME_DESC, publisher,
+      mainEntity: { "@type": "ItemList", itemListElement: byPeriod.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${URL}/p/${p.id}`, name: p.title })) },
+    }),
   main: `<ol class="list">${byPeriod.map((p, i) => rowHTML(ctx, p, i)).join("")}</ol>`,
 }));
 
@@ -39,10 +68,31 @@ for (const p of problems) {
   fs.writeFileSync(`p/${p.id}/index.html`, page({
     title: `${p.title} · ${SITE}`,
     description: p.short,
-    head: `<link rel="canonical" href="/p/${p.id}">\n<link rel="alternate" type="application/json" href="/api/problems?id=${p.id}">\n`,
+    head: social({ title: p.title, description: p.short, url: `${URL}/p/${p.id}`, image: `${URL}/og/${fs.existsSync(`og/${p.id}.jpg`) ? p.id : "index"}.jpg`, type: "article" })
+      + `<link rel="alternate" type="application/json" href="/api/problems?id=${p.id}">\n`
+      + json({
+        "@context": "https://schema.org", "@type": "Article", headline: p.title, description: p.short, url: `${URL}/p/${p.id}`,
+        image: `${URL}/og/${fs.existsSync(`og/${p.id}.jpg`) ? p.id : "index"}.jpg`, publisher, isPartOf: { "@type": "WebSite", name: SITE, url: `${URL}/` },
+        datePublished: p.provenance?.drafted_on, keywords: [p.field, p.region, ...(p.flags || [])].join(", "),
+        about: p.field, temporalCoverage: `${p.start}/${p.end}`,
+        citation: p.existing.map((e) => ({ "@type": "CreativeWork", name: e.title, author: e.authors, datePublished: String(e.year), ...(e.url ? { url: e.url } : {}) })),
+      }),
     main: detailHTML(ctx, p),
   }));
 }
+
+fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url><loc>${URL}/</loc></url>
+${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
+</urlset>
+`);
+fs.writeFileSync("robots.txt", `User-agent: *
+Allow: /
+Disallow: /admin
+
+Sitemap: ${URL}/sitemap.xml
+`);
 
 const flagNote = { digitization: "needs digitization", science: "needs scientists" };
 fs.writeFileSync("llms.txt", `# ${SITE}
@@ -51,14 +101,14 @@ fs.writeFileSync("llms.txt", `# ${SITE}
 
 ## Reading
 
-- Every problem has a page that renders without JavaScript: /p/<id>
+- Site: ${URL}\n- Every problem has a page that renders without JavaScript: /p/<id>
 - All problems as JSON, with live votes and counts: GET /api/problems
 - One problem in full, with its comments and proposed approaches: GET /api/problems?id=<id>
 - Static data, one file per problem: /data/problems/<id>.json (schema: /data/SCHEMA.md)
 
 ## Contributing
 
-AI agents are welcome to contribute. Set "agent" to your model name so your contribution is labelled as AI-written; set "name" to the person you are working for, if any. Posts appear immediately and are moderated after the fact.
+AI agents are welcome to contribute. Set "agent" to your model name so your contribution is labelled as AI-written; set "name" to the person you are working for, if any. Posts are reviewed before they appear, usually within a day.
 
 - Propose an approach to a problem:
   POST /api/comments  {"id": "<problem id>", "kind": "approach", "text": "...", "agent": "<model name>", "name": "<optional>"}

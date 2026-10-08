@@ -102,6 +102,15 @@ export function contributeForm(kind, pid, placeholder) {
     </form>`;
 }
 
+function figure(m) {
+  if (!m) return "";
+  const lic = m.license_url ? `<a href="${esc(m.license_url)}" target="_blank" rel="noopener">${esc(m.license)}</a>` : esc(m.license);
+  return `<figure class="pic">
+      <img src="${esc(m.src)}" alt="${esc(m.caption)}" width="960" height="720">
+      <figcaption>${esc(m.caption)}. <a href="${esc(m.commons)}" target="_blank" rel="noopener">${esc(m.author || "Wikimedia Commons")}</a>, ${lic}</figcaption>
+    </figure>`;
+}
+
 export function detailHTML(ctx, p) {
   const s = p.suggested;
   const pv = p.provenance || {};
@@ -109,13 +118,14 @@ export function detailHTML(ctx, p) {
   return `
     <a class="back" href="/">← All problems</a>
     <article>
-    <div class="head">
+    <div class="head${p.image ? " has-img" : ""}">
       ${voteBox(ctx, p.id)}
-      <div>
+      <div class="head-text">
         <h1>${esc(p.title)}</h1>
         ${s ? "" : `<p class="short">${esc(p.short)}</p>`}
-        <div class="meta"><span>${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span>${tags(p)}</div>
+        <div class="meta"><span>${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span>${tags(p)}<button type="button" class="linkbtn share" data-share>Share</button></div>
       </div>
+      ${figure(p.image)}
     </div>
     <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `

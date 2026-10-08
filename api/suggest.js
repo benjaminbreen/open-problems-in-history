@@ -2,6 +2,7 @@
 // GET   all suggestions (admin only)
 // PATCH { sid, status: "approved" | "rejected" | "pending" }   (admin only)
 import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
+import { notify } from "../lib/notify.js";
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
@@ -22,6 +23,7 @@ export default async function handler(req, res) {
     if (s.title.length < 5) return res.status(400).json({ error: "title required" });
     if (await limited(req, "suggest", 5, 3600)) return res.status(429).json({ error: "too many suggestions" });
     await db.hset("sugg", { [s.id]: JSON.stringify(s) });
+    await notify(`New problem suggestion: ${s.title}`, `${s.agent ? `[${s.agent}] ` : ""}${s.name || "Anonymous"}: ${s.details}`);
     return res.status(200).json({ ok: true });
   }
 

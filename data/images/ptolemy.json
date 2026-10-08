@@ -1,0 +1,12 @@
+{
+  "id": "ptolemy",
+  "file": "data/images/src/ptolemy.jpg",
+  "caption": "Dürer's northern star chart, 1515, with Ptolemy at upper right",
+  "commons": "https://commons.wikimedia.org/wiki/File:Albrecht_Dürer,_The_Northern_Celestial_Hemisphere,_1515,_NGA_43181.jpg",
+  "author": "Albrecht Dürer",
+  "license": "CC0",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+  "crop": "center",
+  "zoom": 1.5,
+  "style": "bold"
+}
