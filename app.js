@@ -78,7 +78,7 @@ function renderList() {
   app.innerHTML = `
     <div class="tools">
       <input type="search" id="q" placeholder="Search problems, authors, archives" value="${esc(view.q)}" aria-label="Search problems">
-      ${seg("show", "Show", [["all", "all"], ["digitization", "digitization"], ["science", "science"]])}
+      ${seg("show", "Show", [["all", "all"], ["digitization", "digitization"], ["science", "science"], ["decipherment", "decipherment"], ["forensics", "forensics"]])}
       <span class="count" id="count"></span>
     </div>
     <div class="thead" role="group" aria-label="Sort">
@@ -334,9 +334,36 @@ function renderDetail(id) {
   if (!p) { app.innerHTML = `<a class="back" href="/">← All problems</a><p class="empty">Not found.</p>`; return; }
   document.title = `${p.title} · Open Problems in History`;
   app.innerHTML = detailHTML(ctx(), p);
+  setupPrevNext(p.id);
   loadComments(p.id, app.querySelector("#cbox"));
   if (!p.suggested) loadComments(p.id, app.querySelector("#ideas"), "approach");
 }
+
+// Prev/next through the list in its current sort and filter order.
+let neighbors = {};
+function setupPrevNext(id) {
+  const rows = filtered();
+  let i = rows.findIndex((x) => x.id === id);
+  if (i < 0) { rows.splice(0, rows.length, ...all().sort(sorts[view.sort])); i = rows.findIndex((x) => x.id === id); }
+  neighbors = { prev: rows[i - 1]?.id, next: rows[i + 1]?.id };
+  const el = app.querySelector("#pn");
+  if (!el) return;
+  const btn = (k, ch, label) => neighbors[k]
+    ? `<a href="/p/${esc(neighbors[k])}" data-pn="${k}" aria-label="${label}" title="${label} (${k === "prev" ? "←" : "→"})">${ch}</a>`
+    : `<span class="off" aria-hidden="true">${ch}</span>`;
+  el.innerHTML = btn("prev", "←", "Previous problem") + btn("next", "→", "Next problem");
+}
+
+document.addEventListener("keydown", (e) => {
+  if (!location.pathname.startsWith("/p/") || e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+  if (e.target.closest?.("input, textarea, select, [contenteditable]")) return;
+  const id = e.key === "ArrowLeft" ? neighbors.prev : e.key === "ArrowRight" ? neighbors.next : null;
+  if (id) { e.preventDefault(); go(`/p/${id}`); }
+});
+app.addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-pn]");
+  if (a) { e.preventDefault(); go(a.pathname); }
+});
 
 function renderSuggest() {
   app.innerHTML = `

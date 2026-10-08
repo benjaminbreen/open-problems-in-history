@@ -7,7 +7,8 @@
   "start": 1400,
   "end": 1800,
   "flags": [
-    "digitization"
+    "digitization",
+    "decipherment"
   ],
   "matters": "Colonial chroniclers reported that khipukamayuq read histories, genealogies and laws from cords. If khipus encoded non-numerical information systematically, the Inka state kept records that could be read as primary sources for Andean history before and after 1532, and the comparative history of writing would need to include a non-graphic system. If they did not, accounts of Inka administration must explain how a large empire functioned on numerical records plus memory.",
   "stuck": "Roughly a thousand khipus survive (estimates vary), most without archaeological context, and very few can be paired with a Spanish-language transcription of the same record. The decimal knot system was established by Locke (1912) and the Aschers, but colour, fibre, spin and ply, attachment direction and knot orientation vary in ways that have resisted consistent interpretation. Data were long scattered across incompatible recording schemes and unpublished notebooks.",

@@ -7,7 +7,8 @@
   "start": -300,
   "end": 450,
   "flags": [
-    "digitization"
+    "digitization",
+    "decipherment"
   ],
   "matters": "Meroitic is the oldest written language of sub-Saharan Africa and the administrative and royal language of Kush for some seven centuries. The long royal stelae, temple texts and chronicles almost certainly record wars with Rome, succession and religious practice from a Kushite point of view; at present historians rely on Greek, Latin and Egyptian sources for that history. A secure classification would also date the spread of Northern East Sudanic languages along the Nile, which bears on Nubian linguistic and population history.",
   "stuck": "The script's sound values were recovered from Egyptian names, but there is no substantial bilingual text, and the language has no close, well-documented descendant. Most of the corpus consists of funerary inscriptions with predictable formulae, so the vocabulary securely understood is small, by most accounts on the order of a hundred words, and grammar is reconstructed mainly from those formulae. Classification is disputed: Rilly argues for the Northern East Sudanic branch with Nubian, Nara, Taman and Nyima, while Rowan and Lipiński have argued for an Afroasiatic affiliation.",

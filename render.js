@@ -5,6 +5,8 @@ export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&a
 export const FLAGS = {
   digitization: ["digitization", "dig", "Progress likely needs new digitization of known holdings, with archivists"],
   science: ["science", "sci", "Confirmation needs collaboration with scientists"],
+  decipherment: ["decipherment", "dec", "Reading a code, cipher or undeciphered script"],
+  forensics: ["forensics", "for", "Establishing how an object or dataset was made, or whether it is genuine"],
 };
 
 const yr = (y) => (y < 0 ? `${-y} BCE` : `${y}`);
@@ -116,7 +118,7 @@ export function detailHTML(ctx, p) {
   const pv = p.provenance || {};
   const approach = Array.isArray(p.approach) ? p.approach : p.approach ? [p.approach] : [];
   return `
-    <a class="back" href="/">← All problems</a>
+    <div class="backrow"><a class="back" href="/">← All problems</a><span class="pn" id="pn"></span></div>
     <article>
     <div class="head${p.image ? " has-img" : ""}">
       ${voteBox(ctx, p.id)}

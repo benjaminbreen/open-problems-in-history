@@ -7,7 +7,8 @@
   "start": -3300,
   "end": -1880,
   "flags": [
-    "digitization"
+    "digitization",
+    "decipherment"
   ],
   "matters": "Proto-Elamite is one of the earliest scripts anywhere and the first on the Iranian plateau, so its nature bears on whether writing was invented once in Mesopotamia and borrowed, or developed independently in more than one place. If its non-numerical signs encode syllables of Elamite, the history of that language extends back almost a millennium. Desset and colleagues' 2022 decipherment of Linear Elamite rests partly on a claimed continuity from Proto-Elamite; whether that continuity holds affects how far the decipherment can be pushed back.",
   "stuck": "The tablets are almost all administrative accounts from Susa, with smaller groups from Tepe Yahya, Tal-i Malyan, Tepe Sofalin and other sites; they contain several hundred non-numerical signs and short entries dominated by numbers. The numerical systems were largely worked out by Damerow and Englund through comparison with Mesopotamian proto-cuneiform, but the remaining signs could be logograms, personal names, institutional labels or syllables, and the short entries offer few repeated phonetic contexts. More than five centuries separate the last Proto-Elamite tablets from the first Linear Elamite inscriptions, and Dahl (2023) argues that Linear Elamite was a deliberate new creation rather than a descendant.",

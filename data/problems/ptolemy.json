@@ -7,7 +7,8 @@
   "start": -135,
   "end": 160,
   "flags": [
-    "science"
+    "science",
+    "forensics"
   ],
   "matters": "The Almagest catalogue is the oldest fully preserved star catalogue and the basis of Western and Islamic stellar astronomy until Ulugh Beg. Whether it records new observations bears on Ptolemy's reliability as a witness to his own practice, on the reconstruction of Hipparchus's lost catalogue, on the value of ancient positions for measuring precession and proper motion, and on broader arguments about how ancient scientists used data.",
   "stuck": "Ptolemy dates the catalogue to the first year of Antoninus (AD 137) and implies he observed it, but its longitudes are systematically about 1° too small for that date, consistent with adding a precession of 1° per century to positions for Hipparchus's epoch. Statistical tests of epoch, observer latitude, rounding patterns and error structure have yielded conflicting verdicts because the catalogue may mix sources and because results depend on modelling choices. Until 2022 there were almost no direct Hipparchan coordinates against which to compare.",

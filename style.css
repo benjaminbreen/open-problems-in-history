@@ -1,4 +1,5 @@
 :root {
+  --dec: #24506b; --for: #566b3a;
   --serif: "Newsreader", Georgia, serif;
   --mono: "IBM Plex Mono", ui-monospace, monospace;
   --bg: #ffffff; --bg-2: #f2f2f2; --ink: #111111; --ink-2: #333333; --muted: #6b6b6b; --rule: #dcdcdc;
@@ -112,6 +113,11 @@ textarea { min-height: 80px; resize: vertical; }
 /* detail */
 .back { display: inline-block; margin: 20px 0 0; font-size: 13px; color: var(--muted); text-decoration: none; }
 .back:hover { color: var(--ink); }
+.backrow { display: flex; justify-content: space-between; align-items: baseline; }
+.pn { display: flex; gap: 6px; margin-top: 20px; font-size: 15px; }
+.pn a, .pn .off { padding: 0 8px; color: var(--muted); text-decoration: none; }
+.pn a:hover { color: var(--ink); }
+.pn .off { opacity: .3; }
 .head { display: grid; grid-template-columns: 46px 1fr; gap: 0 16px; padding: 16px 0 22px; border-bottom: 3px solid var(--ink); }
 .head h1 { font: 500 32px/1.15 var(--serif); margin: 0; letter-spacing: -.012em; text-wrap: balance; max-width: 30em; }
 .head .short { -webkit-line-clamp: unset; font-size: 19px; margin-top: 10px; max-width: 46em; }
@@ -294,3 +300,10 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .thead button[data-sort="discussed"]::after { left: auto; right: 0; }
 .thead button[data-sort="discussed"]::before { left: auto; right: 12px; }
 @media (hover: none) { .thead button[data-tip]::after, .thead button[data-tip]::before { display: none; } }
+
+/* method tags: outlined, in muted inks */
+:root { --dec: #24506b; --for: #566b3a; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --dec: #7fb0cc; --for: #a9c38a; } }
+:root[data-theme="dark"] { --dec: #7fb0cc; --for: #a9c38a; }
+.tag.dec { color: var(--dec); border-color: var(--dec); background: none; }
+.tag.for { color: var(--for); border-color: var(--for); background: none; }

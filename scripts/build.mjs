@@ -138,7 +138,7 @@ Ratings are reviewed before they count. Historians' and AI models' ratings are c
 ${shuffledProblems.map((p) => `- ${p.id}: ${p.title}\n  ${p.short}`).join("\n")}
 `);
 
-const flagNote = { digitization: "needs digitization", science: "needs scientists" };
+const flagNote = { digitization: "needs digitization", science: "needs scientists", decipherment: "decipherment", forensics: "forensics" };
 fs.writeFileSync("llms.txt", `# ${SITE}
 
 > A ranked list of open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
