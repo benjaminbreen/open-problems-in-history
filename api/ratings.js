@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     for (const [id, v] of Object.entries(scores || {})) if (ids.has(id) && [1, 2, 3, 4, 5].includes(v)) s[id] = v;
     if (Object.keys(s).length < 5) return res.status(400).json({ error: "please score at least five problems" });
     if (!clean(name, 80)) return res.status(400).json({ error: "name required" });
-    if (await limited(req, "rate", 5, 3600)) return res.status(429).json({ error: "too many submissions" });
+    if (await limited(req, "rate", 30, 3600)) return res.status(429).json({ error: "too many submissions" });
     const n = {};
     for (const [id, v] of Object.entries(notes || {})) if (ids.has(id) && clean(v, 1000)) n[id] = clean(v, 1000);
     const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), scores: s, notes: n };
