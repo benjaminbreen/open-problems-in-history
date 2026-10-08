@@ -266,7 +266,7 @@ function renderRate() {
       <h1 class="page-title">Rate the problems</h1>
       <p class="rate-q">If this problem were solved, how much would it change historical understanding?</p>
       <ol class="scale"><li><b>1</b> A detail within a specialism</li><li><b>2</b> Matters to one subfield</li><li><b>3</b> Changes how a field sees its period</li><li><b>4</b> Matters well beyond its field</li><li><b>5</b> Reshapes a major historical narrative</li></ol>
-      <p class="note">Problems appear in a random order. Mark &ldquo;—&rdquo; for anything outside your expertise. Your answers are saved in this browser until you submit.</p>
+      <p class="note">Problems appear in a random order. Score as many as you like (at least five); mark &ldquo;—&rdquo; or skip anything outside your expertise. Your answers are saved in this browser until you submit.</p>
       <form class="rf">
         <div class="rf-who">
           <input type="text" name="name" required maxlength="80" placeholder="Name" aria-label="Name" value="${esc(d.name || "")}">
