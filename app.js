@@ -87,12 +87,15 @@ function seg(name, label, options) {
 }
 
 function renderList() {
+  const col = (k, l) => `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}">${l}</button>`;
   app.innerHTML = `
     <div class="tools">
-      <input type="search" id="q" placeholder="Search" value="${esc(view.q)}" aria-label="Search problems">
-      ${seg("sort", "Sort", [["votes", "votes"], ["discussed", "comments"], ["period", "period"], ["region", "region"], ["field", "field"], ["title", "title"]])}
+      <input type="search" id="q" placeholder="Search problems, authors, archives" value="${esc(view.q)}" aria-label="Search problems">
       ${seg("show", "Show", [["all", "all"], ["digitization", "digitization"], ["science", "science"]])}
       <span class="count" id="count"></span>
+    </div>
+    <div class="thead" role="group" aria-label="Sort">
+      <span></span>${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
     </div>
     <ol class="list" id="list"></ol>`;
   const q = app.querySelector("#q");
@@ -107,24 +110,24 @@ function renderRows() {
     <li class="row" id="r-${esc(p.id)}">
       <span class="rank">${i + 1}</span>
       ${voteBox(p.id)}
-      <div class="body">
+      <div class="main">
         <a class="ttl" href="#/p/${esc(p.id)}">${esc(p.title)}</a>
         ${p.short ? `<p class="short">${esc(p.short)}</p>` : ""}
-        <div class="meta">
-          ${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}
-          ${tags(p)}
-          <button type="button" class="linkbtn" data-comments="${esc(p.id)}" aria-expanded="${open.has(p.id)}">${commentLabel(p.id)}</button>
-        </div>
-        <div class="cbox" data-for="${esc(p.id)}"></div>
+        ${tags(p) ? `<div class="tags">${tags(p)}</div>` : ""}
+        <div class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</div>
       </div>
+      <span class="c">${esc(p.field)}</span>
+      <span class="c">${esc(p.region)}</span>
+      <span class="c per">${esc(period(p))}</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="${esc(p.id)}" aria-expanded="${open.has(p.id)}">${commentLabel(p.id)}</button></span>
+      <div class="cbox" data-for="${esc(p.id)}"></div>
     </li>`).join("") : `<li class="empty">No problems match.</li>`;
   for (const id of open) loadComments(id);
 }
 
 const commentLabel = (id) => {
   const n = ncom(id);
-  const verb = open.has(id) ? "Hide" : n ? "Read" : "Add";
-  return n ? `${verb} ${n} comment${n === 1 ? "" : "s"}` : open.has(id) ? "Hide comments" : "Add a comment";
+  return `${open.has(id) ? "−" : "+"} ${n || "comment"}`;
 };
 
 // ---------- comments ----------
@@ -241,7 +244,7 @@ function renderDetail(id) {
   const p = all().find((x) => x.id === id);
   if (!p) { app.innerHTML = `<a class="back" href="#/">← All problems</a><p class="empty">Not found.</p>`; return; }
   document.title = `${p.title} · Open Problems in History`;
-  const sec = (h, body) => body ? `<section><h2>${h}</h2>${body}</section>` : "";
+  const sec = (h, body) => body ? `<section><h2>${h}</h2><div class="sbody">${body}</div></section>` : "";
   const para = (s) => s ? String(s).split(/\n\n+/).map((x) => `<p>${esc(x)}</p>`).join("") : "";
   const s = p.suggested;
   app.innerHTML = `
@@ -251,9 +254,10 @@ function renderDetail(id) {
       <div>
         <h1>${esc(p.title)}</h1>
         ${s ? "" : `<p class="short">${esc(p.short)}</p>`}
-        <div class="meta">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")} ${tags(p)}</div>
+        <div class="meta"><span>${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span>${tags(p)}</div>
       </div>
     </div>
+    <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
     ${sec("Why it matters", para(p.matters))}
     ${sec("Why it is open", para(p.stuck))}
@@ -261,7 +265,8 @@ function renderDetail(id) {
     ${sec("Approach", para(p.approach))}
     ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>` : "")}
     ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>` : "")}`}
-    <section><h2>Comments</h2><div id="cbox"></div></section>`;
+    <section><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
+    </div>`;
   loadComments(p.id, app.querySelector("#cbox"));
 }
 
@@ -277,6 +282,13 @@ function renderSuggest() {
       <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button class="btn" type="submit">Send</button>
     </form>`;
+}
+
+// ---------- contact ----------
+function renderContact() {
+  app.innerHTML = `
+    <h1 class="page-title">Contact</h1>
+    <p class="contact"><a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">breen85@gmail.com</a></p>`;
 }
 
 // ---------- admin ----------
@@ -297,20 +309,21 @@ async function renderAdmin() {
       <div class="acts">${["approved", "rejected", "pending"].filter((x) => x !== s.status)
         .map((x) => `<button type="button" class="btn ghost" data-sid="${esc(s.id)}" data-status="${x}">${{ approved: "Approve", rejected: "Reject", pending: "Back to pending" }[x]}</button>`).join("")}</div>
     </div>`;
-  app.innerHTML = `<h1 class="page-title">Admin</h1>
+  app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
     <p class="note">Signed in. Delete links now appear on comments. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
-    ${["pending", "approved", "rejected"].map((st) => `<section><h2>${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}`;
+    ${["pending", "approved", "rejected"].map((st) => `<section><h2>${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
 
 // ---------- router ----------
 function route() {
   const h = location.hash.replace(/^#/, "") || "/";
   document.title = "Open Problems in History";
-  const nav = h.startsWith("/suggest") ? "suggest" : h === "/" ? "list" : "";
+  const nav = h === "/" ? "list" : h.slice(1);
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
   if (h.startsWith("/p/")) renderDetail(decodeURIComponent(h.slice(3)));
   else if (h === "/suggest") renderSuggest();
   else if (h === "/admin") renderAdmin();
+  else if (h === "/contact") renderContact();
   else renderList();
 }
 
