@@ -1,0 +1,7 @@
+.agents
+.claude
+skills-lock.json
+data/images/src
+.data
+node_modules
+.env*
