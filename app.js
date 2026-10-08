@@ -146,7 +146,7 @@ function toggleIdea(force) {
 
 app.addEventListener("click", async (e) => {
   const a = e.target.closest("a");
-  if (a && a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !a.pathname.startsWith("/data") && !a.pathname.startsWith("/api")) {
+  if (a && internal(a, e)) {
     e.preventDefault(); return go(a.pathname);
   }
   const t = e.target.closest("button");
@@ -299,6 +299,12 @@ function route() {
   else renderList();
 }
 
+// Links handled by the client router: same-origin pages only, not files (llms.txt, images) or the API.
+function internal(a, e) {
+  return a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !e.shiftKey
+    && !/\.[a-z0-9]+$/i.test(a.pathname) && !a.pathname.startsWith("/api") && !a.pathname.startsWith("/data");
+}
+
 function go(path) {
   if (path !== location.pathname) history.pushState(null, "", path);
   window.scrollTo(0, 0);
@@ -307,7 +313,7 @@ function go(path) {
 
 document.addEventListener("click", (e) => {
   const a = e.target.closest("header a, footer a");
-  if (a && a.origin === location.origin && !a.pathname.endsWith(".txt") && !e.metaKey && !e.ctrlKey) { e.preventDefault(); go(a.pathname); }
+  if (a && internal(a, e)) { e.preventDefault(); go(a.pathname); }
 });
 window.addEventListener("popstate", route);
 

@@ -177,7 +177,7 @@ export function aboutHTML() {
 
       <h2>Contact</h2>
       <ul class="contact-list">
-        <li><span>Email</span><a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">breen85@gmail.com</a></li>
+        <li><span>Email</span><div>You can reach me <a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">here</a></div></li>
         <li><span>New problems</span><a href="/suggest">Suggest a problem</a></li>
         <li><span>The site itself</span><div>${ext(`${REPO}/issues/new`, "Open an issue on GitHub")} to report an error or propose a change; ${ext(`${REPO}/pulls`, "pull requests")} are welcome</div></li>
         <li><span>Source and data</span>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</li>
