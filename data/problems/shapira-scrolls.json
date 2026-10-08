@@ -1,0 +1,187 @@
+{
+  "id": "shapira-scrolls",
+  "title": "Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery?",
+  "short": "Leather strips offered to Berlin and the British Museum in 1883 were dismissed as forgeries and then lost; since 2021 scholars have again argued they preserved a pre-biblical text.",
+  "region": "Middle East",
+  "field": "Texts & authorship",
+  "start": 1878,
+  "end": 1885,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "If the fragments were genuine, they would be by far the oldest biblical manuscript known and, on Idan Dershowitz's reading, direct evidence for a source of Deuteronomy, bearing on the composition history of the Pentateuch that critical scholarship has reconstructed only by inference. If they were forged, they are an unusually revealing case of how a nineteenth-century forger anticipated what scholars expected an ancient Hebrew text to look like, alongside the 'Moabite' pottery Shapira had sold to Berlin. The case also tests how scholarly communities judge authenticity when the object itself is lost and only copies and testimony remain.",
+  "stuck": "The strips were sold at auction in 1885 and have not been traced, so no material analysis is possible. The surviving evidence consists of transcriptions, drawings and printed facsimiles of uneven accuracy, made in 1883 by Shapira, Christian David Ginsburg and others, together with expert verdicts reached in days under poor conditions. Arguments on both sides depend on whether features of the text (letter forms modelled on the Mesha stele, orthography, a variant Decalogue, a structure resembling source-critical reconstructions of Deuteronomy) are read as marks of antiquity or of a forger working from scholarship available in the 1870s.",
+  "solved": "A published inventory of every linguistic, orthographic, palaeographic and textual feature in the surviving transcriptions, each classed as either attested in sources available by 1883 or first attested in material discovered later (the Dead Sea Scrolls, later Iron Age inscriptions). The question is settled for practical purposes if a set of features unavailable to an 1883 forger proves to be present, or if every feature can be traced to identifiable 1870s models.",
+  "approach": [
+    "Locate, image and transcribe all surviving copies of the text: Ginsburg's papers in British Library Add MS 41294, the Shapira transcription pages Dershowitz found in the Berlin State Library, the 1883 lithographs and newspaper facsimiles, and Clermont-Ganneau's published drawings, and align them as variant witnesses.",
+    "Build a reference corpus of what a forger could have known in 1883 (the Mesha stele and its published facsimiles, the Siloam inscription, Gesenius-era grammars, the Hebrew Bible and Samaritan Pentateuch editions, source-critical studies of Deuteronomy by 1883) and test each feature of the text against it.",
+    "Compare the same features against post-1947 evidence, chiefly Qumran manuscripts of Deuteronomy and paleo-Hebrew scrolls and later Iron Age inscriptions, flagging any agreement the 1883 corpus cannot explain.",
+    "Treat the Berlin committee's report, Ginsburg's reports to the British Museum and Clermont-Ganneau's notes as testimony to be weighed, with dates, conditions of examination and what each examiner actually saw.",
+    "High-resolution digitization of British Library Add MS 41294 and the Berlin Shapira inventory, in collaboration with those libraries, is the prerequisite for a reliable critical text."
+  ],
+  "existing": [
+    {
+      "year": 1883,
+      "authors": "Anonymous",
+      "title": "The Shapira Manuscript of Deuteronomy",
+      "venue": "Scientific American Supplement 16 (408): 6516",
+      "url": "https://doi.org/10.1038/scientificamerican10271883-6516asupp",
+      "note": "Contemporary report of the controversy as the fragments were examined in London, typical of the wide press coverage in 1883."
+    },
+    {
+      "year": 1885,
+      "authors": "Charles Clermont-Ganneau",
+      "title": "Les fraudes archéologiques en Palestine, suivies de quelques monuments phéniciens apocryphes",
+      "venue": "Paris: Ernest Leroux",
+      "url": "https://archive.org/details/lesfraudesarcho00gangoog",
+      "note": "Clermont-Ganneau's account of exposing Shapira's 'Moabite' pottery and the Deuteronomy strips, arguing the strips were cut from the margins of synagogue scrolls."
+    },
+    {
+      "year": 1958,
+      "authors": "Menahem Mansoor",
+      "title": "The Case of Shapira's Dead Sea (Deuteronomy) Scrolls of 1883",
+      "venue": "Transactions of the Wisconsin Academy of Sciences, Arts and Letters 47",
+      "url": "",
+      "note": "Reopened the case after the Qumran discoveries, concluding that neither the internal nor the external evidence proved forgery."
+    },
+    {
+      "year": 1965,
+      "authors": "Oskar K. Rabinowicz",
+      "title": "The Shapira Scroll: A Nineteenth-Century Forgery",
+      "venue": "Jewish Quarterly Review 56 (1)",
+      "url": "https://doi.org/10.2307/1453329",
+      "note": "Reply to Mansoor restating the case for forgery."
+    },
+    {
+      "year": 1965,
+      "authors": "John Marco Allegro",
+      "title": "The Shapira Affair",
+      "venue": "Garden City, NY: Doubleday",
+      "url": "https://archive.org/details/shapiraaffair0000john",
+      "note": "Narrative history of the affair by a member of the Dead Sea Scrolls editorial team, written after the Qumran finds revived interest in the case."
+    },
+    {
+      "year": 1995,
+      "authors": "Fred N. Reiner",
+      "title": "C. D. Ginsburg and the Shapira Affair: A Nineteenth-Century Dead Sea Scroll Controversy",
+      "venue": "British Library Journal 21",
+      "url": "https://bl.iro.bl.uk/concern/articles/562be574-53c8-4e9c-a366-e7a227df9ad0",
+      "note": "Reconstructed Ginsburg's role in examining the fragments for the British Museum in 1883."
+    },
+    {
+      "year": 2016,
+      "authors": "Chanan Tigay",
+      "title": "The Lost Book of Moses: The Hunt for the World's Oldest Bible",
+      "venue": "New York: Ecco",
+      "url": "https://openlibrary.org/works/OL20027313W",
+      "note": "Journalistic investigation of Shapira's career and of the later fate of the fragments after the 1885 sale."
+    },
+    {
+      "year": 2017,
+      "authors": "Shlomo Guil",
+      "title": "The Shapira Scroll was an Authentic Dead Sea Scroll",
+      "venue": "Palestine Exploration Quarterly 149 (1): 6–27",
+      "url": "https://doi.org/10.1080/00310328.2016.1185895",
+      "note": "Argued from circumstantial evidence about the reported find and the condition of the strips that they came from a cave near the Dead Sea."
+    },
+    {
+      "year": 2021,
+      "authors": "Idan Dershowitz",
+      "title": "The Valediction of Moses: New Evidence on the Shapira Deuteronomy Fragments",
+      "venue": "Zeitschrift für die alttestamentliche Wissenschaft 133 (1): 1–22",
+      "url": "https://doi.org/10.1515/zaw-2021-0001",
+      "note": "Presented Shapira's working transcription found in the Berlin State Library, with corrections that Dershowitz argued show Shapira struggling to read a text he had not composed."
+    },
+    {
+      "year": 2021,
+      "authors": "Idan Dershowitz",
+      "title": "The Valediction of Moses: A Proto-Biblical Book",
+      "venue": "Forschungen zum Alten Testament. Tübingen: Mohr Siebeck",
+      "url": "https://doi.org/10.1628/978-3-16-160645-8",
+      "note": "Open-access edition and commentary arguing the text is an antecedent of Deuteronomy rather than a reworking of it."
+    },
+    {
+      "year": 2021,
+      "authors": "Ronald Hendel",
+      "title": "Notes on the Orthography of the Shapira Manuscripts: The Forger's Marks",
+      "venue": "Zeitschrift für die alttestamentliche Wissenschaft 133 (2): 225–230",
+      "url": "https://doi.org/10.1515/zaw-2021-2008",
+      "note": "Argued that the spelling mixes the conventions of the Mesha stele and the Hebrew Bible, notably the consistent use of waw for final ō, an anachronism no ancient scribe would have produced."
+    },
+    {
+      "year": 2021,
+      "authors": "Ronald Hendel and Matthieu Richelle",
+      "title": "The Shapira Scrolls: The Case for Forgery",
+      "venue": "Biblical Archaeology Review 47 (4)",
+      "url": "https://library.biblicalarchaeology.org/article/the-shapira-scrolls-the-case-for-forgery",
+      "note": "Summarized the orthographic and palaeographic case against authenticity, drawing on material in the British Library file, in a magazine issue that also printed a case for authenticity."
+    },
+    {
+      "year": 2021,
+      "authors": "Ross K. Nichols",
+      "title": "The Moses Scroll",
+      "venue": "Horeb Press",
+      "url": "https://openlibrary.org/works/OL29855769W",
+      "note": "Popular reconstruction and translation arguing for authenticity, with contributions by James D. Tabor."
+    },
+    {
+      "year": 2022,
+      "authors": "Jonathan Klawans",
+      "title": "Shapira's Deuteronomy, Its Decalogue, and Dead Sea Scrolls Authentic and Forged",
+      "venue": "Dead Sea Discoveries 29 (2): 199–227",
+      "url": "https://doi.org/10.1163/15685179-bja10032",
+      "note": "Response to Dershowitz comparing the fragments with the Dead Sea Scrolls, Shapira's Moabite forgeries and later scroll forgeries, and proposing the text is a post-biblical pastiche rooted in the religious world of nineteenth-century Jerusalem."
+    },
+    {
+      "year": 2023,
+      "authors": "Jeffrey Stackert",
+      "title": "A Text That Was but Isn't: On the Contribution of Literary Evidence in the Assessment of Shapira Deuteronomy",
+      "venue": "Maarav 27 (1–2): 74–90",
+      "url": "https://doi.org/10.1086/726572",
+      "note": "Examined what literary-critical features of the text can and cannot contribute to judging its authenticity."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "British Library, London",
+      "collection": "Add MS 41294: papers relating to M. W. Shapira's manuscript of Deuteronomy, 1883–1884, presented by C. D. Ginsburg",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "none",
+      "note": "The main documentary file on the affair, assembled by Ginsburg, with correspondence and working papers from 1883–1884; consultable in the Manuscripts Reading Room."
+    },
+    {
+      "repository": "Staatsbibliothek zu Berlin",
+      "collection": "Shapira's handwritten inventory of the Hebrew manuscripts he collected, containing his preliminary transcription of the Deuteronomy text",
+      "url": "https://stabikat.de/",
+      "digitized": "none",
+      "note": "Where Dershowitz found the transcription pages with Shapira's own corrections; the library also holds Yemenite Hebrew manuscripts bought from Shapira."
+    },
+    {
+      "repository": "Palestine Exploration Fund, London",
+      "collection": "Quarterly Statement for 1883 and the Fund's archive of correspondence with Shapira's contemporaries",
+      "url": "https://archive.org/details/palestine-exploration-quarterly_1883-10",
+      "digitized": "partial",
+      "note": "The printed Quarterly Statement for October 1883 is online; the unpublished archive is consulted at the PEF in London by appointment."
+    },
+    {
+      "repository": "The Times Digital Archive (Gale)",
+      "collection": "The Times, August–September 1883: Ginsburg's and Clermont-Ganneau's letters and reports on the fragments",
+      "url": "https://www.gale.com/c/the-times-digital-archive",
+      "digitized": "full",
+      "note": "Subscription database containing the published translations and verdicts that circulated the text in 1883."
+    },
+    {
+      "repository": "Internet Archive",
+      "collection": "Clermont-Ganneau, Les fraudes archéologiques en Palestine (1885), with drawings of the strips",
+      "url": "https://archive.org/details/lesfraudesarcho00gangoog",
+      "digitized": "full",
+      "note": "Free scan of the main published account by the French examiner, including his facsimiles."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

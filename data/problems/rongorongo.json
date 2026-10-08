@@ -1,0 +1,193 @@
+{
+  "id": "rongorongo",
+  "title": "Was rongorongo an independent invention of writing?",
+  "short": "The undeciphered glyphs carved on about two dozen wooden objects from Rapa Nui may be a pre-contact invention of writing or a nineteenth-century response to European literacy.",
+  "region": "Pacific",
+  "field": "Languages & scripts",
+  "start": 1400,
+  "end": 1870,
+  "flags": [
+    "science"
+  ],
+  "matters": "Writing is generally held to have been invented independently only a handful of times (Mesopotamia, Egypt, China, Mesoamerica), so a pre-contact Rapa Nui script would add a case from a small, isolated island society without cities or bureaucratic states. That would bear on theories that tie writing to administration and urbanism and on what Polynesian societies could develop in isolation. If instead the script arose after the Spanish annexation ceremony of 1770, when islanders were asked to mark a document, it would be a well-documented case of stimulus diffusion, and the question of whether the glyphs encode language at all would remain separate.",
+  "stuck": "The corpus is small (fewer than 30 objects, about 15,000 glyphs in standard counts), the script ceased to be used in the 1860s after slave raids and epidemics, and nineteenth-century attempts to elicit readings from islanders produced unreliable results. Radiocarbon dates on the wood give only a terminus post quem for carving: most dated objects fall in the late eighteenth or nineteenth century, and the one fifteenth-century result (Tablet D, Échancrée) comes from non-native wood that could have been carved long after it was felled or arrived. Whether the glyphs record speech is itself disputed; claims of logosyllabic structure (Davletshin) and of a lunar calendar on Mamari (Guy) have not been converted into an agreed decipherment, and statistical tests of 'language-likeness' have been shown to misclassify non-linguistic symbol systems.",
+  "solved": "Direct dates on residues or carving-associated material, or on wood from additional inscribed objects, that securely place glyph carving before 1722, combined with a reading of sign sequences that predicts Rapa Nui words or parallel passages in unseen text and outperforms matched non-linguistic controls.",
+  "approach": [
+    "Compile a single, versioned digital corpus from Barthel's transcription and the newer 3D models and transcriptions (Lastilla et al.; Horley), with explicit sign-list choices recorded so that results can be rerun under alternative segmentations.",
+    "Use research agents to run statistical comparisons of rongorongo sequences against both written languages and non-linguistic symbol systems (heraldry, genealogical tallies, Polynesian tattoo and rock-art motif sequences), following Sproat's warnings about such tests, and report which conclusions survive changes in sign classification.",
+    "Test proposed readings (the Mamari lunar sequence, numeral and phonetic-complement hypotheses, parallel passages across tablets) by predicting held-out passages rather than by fitting known ones.",
+    "Extend radiocarbon and wood identification to the remaining tablets in Washington, St Petersburg, Santiago, London, Berlin and elsewhere, ideally on minimally invasive samples from carved surfaces or associated residues; this requires collaboration with the holding museums, wood anatomists and AMS radiocarbon laboratories."
+  ],
+  "existing": [
+    {
+      "year": 1958,
+      "authors": "Thomas S. Barthel",
+      "title": "Grundlagen zur Entzifferung der Osterinselschrift",
+      "venue": "Hamburg: Cram, de Gruyter",
+      "url": "https://openlibrary.org/works/OL6806224W",
+      "note": "Established the standard sign catalogue, the letter designations of the texts and the first systematic study of parallel passages."
+    },
+    {
+      "year": 1990,
+      "authors": "Jacques B. M. Guy",
+      "title": "The lunar calendar of Tablet Mamari",
+      "venue": "Journal de la Société des Océanistes 91 (2): 135–149",
+      "url": "https://doi.org/10.3406/jso.1990.2882",
+      "note": "Argued that a passage on Tablet C records a lunar calendar with intercalation, the most widely accepted identification of content in the corpus."
+    },
+    {
+      "year": 1996,
+      "authors": "Konstantin Pozdniakov",
+      "title": "Les bases du déchiffrement de l'écriture de l'île de Pâques",
+      "venue": "Journal de la Société des Océanistes 103 (2): 289–303",
+      "url": "https://doi.org/10.3406/jso.1996.1995",
+      "note": "Reduced Barthel's inventory to a smaller set of basic signs using distributional analysis, arguing for a syllabic core."
+    },
+    {
+      "year": 1997,
+      "authors": "Steven Roger Fischer",
+      "title": "Rongorongo: The Easter Island Script. History, Traditions, Texts",
+      "venue": "Oxford: Clarendon Press",
+      "url": "https://academic.oup.com/book/48586",
+      "note": "Comprehensive corpus study that argued the script was inspired by the 1770 Spanish annexation document, while also proposing a disputed procreation-chant reading."
+    },
+    {
+      "year": 2005,
+      "authors": "Catherine Orliac",
+      "title": "The Rongorongo tablets from Easter Island: botanical identification and 14C dating",
+      "venue": "Archaeology in Oceania 40 (3): 115–119",
+      "url": "https://doi.org/10.1002/j.1834-4453.2005.tb00597.x",
+      "note": "Identified tablet woods, including Thespesia populnea and imported species, and published a radiocarbon date that placed one tablet in the late eighteenth or nineteenth century."
+    },
+    {
+      "year": 2009,
+      "authors": "Tomi S. Melka",
+      "title": "Some Considerations about the Kohau Rongorongo Script in the Light of a Statistical Analysis of the 'Santiago Staff'",
+      "venue": "Cryptologia 33 (1): 24–73",
+      "url": "https://doi.org/10.1080/01611190802548998",
+      "note": "Statistical analysis of the longest text, discussing whether its repetitive structure fits a list, a chant or running language."
+    },
+    {
+      "year": 2009,
+      "authors": "Paul Horley",
+      "title": "Rongorongo Script: Carving Techniques and Scribal Corrections",
+      "venue": "Journal de la Société des Océanistes 129: 249–261",
+      "url": "https://doi.org/10.4000/jso.5813",
+      "note": "Showed evidence of planned layout and scribal corrections, consistent with a trained writing practice."
+    },
+    {
+      "year": 2012,
+      "authors": "Albert Davletshin",
+      "title": "Numerals and phonetic complements in the Kohau rongorongo script of Easter Island",
+      "venue": "Journal of the Polynesian Society 121 (3): 243–274",
+      "url": "https://doi.org/10.15286/jps.121.3.243-274",
+      "note": "Proposed numerals and phonetic complements as evidence that the script records Rapa Nui language."
+    },
+    {
+      "year": 2014,
+      "authors": "Richard Sproat",
+      "title": "A Statistical Comparison of Written Language and Nonlinguistic Symbol Systems",
+      "venue": "Language 90 (2): 457–481",
+      "url": "https://doi.org/10.1353/lan.2014.0031",
+      "note": "Showed that common statistical measures do not reliably separate writing from non-linguistic symbol systems, a constraint on any language-likeness test."
+    },
+    {
+      "year": 2021,
+      "authors": "Rafał M. Wieczorek, Kamil E. Frankiewicz, Alexei A. Oskolski and Paul Horley",
+      "title": "The rongorongo tablet from Berlin and the time-depth of Easter Island's writing system",
+      "venue": "Journal of Island and Coastal Archaeology 18 (2): 309–328",
+      "url": "https://doi.org/10.1080/15564894.2021.1950874",
+      "note": "Identified the wood of Tablet O and dated it to the early nineteenth century."
+    },
+    {
+      "year": 2021,
+      "authors": "Lorenzo Lastilla, Roberta Ravanelli, Miguel Valério and Silvia Ferrara",
+      "title": "Modelling the Rongorongo tablets: A new transcription of the Échancrée tablet and the foundation for decipherment attempts",
+      "venue": "Digital Scholarship in the Humanities 37 (2): 497–516",
+      "url": "https://doi.org/10.1093/llc/fqab045",
+      "note": "Used high-resolution 3D models to produce a revised transcription of Tablet D."
+    },
+    {
+      "year": 2022,
+      "authors": "Albert Davletshin",
+      "title": "The script of Rapa Nui (Easter Island) is logosyllabic, the language is East Polynesian: evidence from cross-readings",
+      "venue": "Journal of the Polynesian Society 131 (2): 185–220",
+      "url": "https://doi.org/10.15286/jps.131.2.185-220",
+      "note": "Argued from cross-readings between parallel passages that the script is logosyllabic and records an East Polynesian language."
+    },
+    {
+      "year": 2024,
+      "authors": "Silvia Ferrara, Laura Tassoni, Bernd Kromer, Lukas Wacker, Michael Friedrich, Francesca Tonini, Lorenzo Lastilla, Roberta Ravanelli and Sahra Talamo",
+      "title": "The invention of writing on Rapa Nui (Easter Island). New radiocarbon dates on the Rongorongo script",
+      "venue": "Scientific Reports 14: 2794",
+      "url": "https://doi.org/10.1038/s41598-024-53063-7",
+      "note": "Dated four tablets in Rome; three fell in the late seventeenth to nineteenth century, while the non-native wood of Tablet D yielded a fifteenth-century felling date, which the authors took as suggesting pre-contact use."
+    },
+    {
+      "year": 2024,
+      "authors": "Kyle Gorman and Richard Sproat",
+      "title": "Was rongorongo an independent invention of writing?",
+      "venue": "Language Log, 21 March 2024",
+      "url": "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+      "note": "Argued that a felling date gives only a terminus post quem for carving and that rongorongo has not been shown to encode language."
+    },
+    {
+      "year": 2024,
+      "authors": "Miguel Valério",
+      "title": "The Rongorongo 'Lunar Calendar' of Rapa Nui (Easter Island) and the Type of Script",
+      "venue": "In S. Ferrara, B. Montecchi and M. Valério (eds.), Writing from Invention to Decipherment (Oxford University Press): 189–224",
+      "url": "https://doi.org/10.1093/oso/9780198908746.003.0011",
+      "note": "Re-examined the Mamari calendar passage as evidence for the typology of the script."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Congregazione dei Sacri Cuori di Gesù e di Maria (Picpus Fathers), Rome",
+      "collection": "Tablets A (Tahua), B (Aruku Kurenga), C (Mamari) and D (Échancrée), from Bishop Jaussen's collection",
+      "url": "https://www.inscribercproject.com/3d_viewer_home.php",
+      "digitized": "partial",
+      "note": "The four tablets dated by Ferrara et al.; 3D models were made by the ERC INSCRIBE project, with access to the data on request."
+    },
+    {
+      "repository": "Smithsonian Institution, National Museum of Natural History, Washington, DC",
+      "collection": "Tablets R (Small Washington) and S (Large Washington), collected by William J. Thomson in 1886",
+      "url": "https://collections.si.edu/search/results.htm?q=rongorongo",
+      "digitized": "partial",
+      "note": "Tablet S shares an imported conifer wood with tablets N and P and may come from the same board."
+    },
+    {
+      "repository": "Peter the Great Museum of Anthropology and Ethnography (Kunstkamera), St Petersburg",
+      "collection": "Tablets P (Large St Petersburg) and Q (Small St Petersburg)",
+      "url": "https://www.kunstkamera.ru/en/",
+      "digitized": "none",
+      "note": "Tablet P is of the same imported conifer wood as N and S; the St Petersburg tablets have been sampled for wood identification and dating."
+    },
+    {
+      "repository": "Museo Nacional de Historia Natural, Santiago de Chile",
+      "collection": "Santiago Staff (I) and tablets G (Small Santiago) and H (Large Santiago)",
+      "url": "https://www.mnhn.gob.cl/",
+      "digitized": "partial",
+      "note": "Holds the Santiago Staff, the longest text in the corpus, and the only tablets held in Chile."
+    },
+    {
+      "repository": "Ethnologisches Museum, Staatliche Museen zu Berlin",
+      "collection": "Tablet O (Berlin)",
+      "url": "https://www.smb.museum/en/museums-institutions/ethnologisches-museum/home/",
+      "digitized": "partial",
+      "note": "Dated by Wieczorek et al. (2021) to the early nineteenth century."
+    },
+    {
+      "repository": "British Museum, London",
+      "collection": "Tablet K (London) and Mana Expedition to Easter Island (1913–15) photographs and drawings",
+      "url": "https://www.britishmuseum.org/collection/search?keyword=rongorongo",
+      "digitized": "partial",
+      "note": "Holds Tablet K and expedition records of rongorongo objects made when islanders who remembered the script were still alive."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

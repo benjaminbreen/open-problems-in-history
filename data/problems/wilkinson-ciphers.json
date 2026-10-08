@@ -1,0 +1,170 @@
+{
+  "id": "wilkinson-ciphers",
+  "title": "What do James Wilkinson's unread coded dispatches to Spanish officials say?",
+  "short": "Letters between the US Army's senior general and Spanish Louisiana, written in a code keyed to an unidentified printed dictionary, remain partly or wholly unread.",
+  "region": "Americas",
+  "field": "Texts & authorship",
+  "start": 1787,
+  "end": 1807,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "From 1787 James Wilkinson, later the ranking general of the US Army and governor of Louisiana Territory, took a Spanish pension and reported to the governors of Louisiana as Agent 13, so his coded letters are a running record of what Spain was told about Kentucky separatism, the Mississippi navigation question, frontier military dispositions and, later, the Burr affair. Historians have reconstructed this relationship largely from Spanish summaries, the deciphered letters that officials filed with their replies, and Wilkinson's own self-serving later accounts. Reading the undeciphered portions would show what Wilkinson actually offered, whom he named, and how Spanish policy in the Mississippi Valley responded, and it would test claims about other Americans drawn into the Spanish Conspiracy.",
+  "stuck": "Much of the correspondence uses a two-part code: a numbered table of names and common words, plus page, column and row references to a printed English dictionary that neither side identified in writing and that no modern researcher has located. Chu, Valenti and Knight (2020) found that the scanned material at the Library of Congress uses at least two distinct table systems and dictionary layouts (roughly 29 versus 39 rows per column), so wordbanks from one letter do not transfer cleanly to another. Their language-model decipherment recovered about three quarters of word tokens on a held-out sample, which leaves many proper names and rare words, the content most valuable to historians, uncertain. The photostats are scattered across Spanish-archive reproduction series, and the scans used in that study are not publicly linked.",
+  "solved": "A specific printed dictionary edition (or editions) is identified whose page, column and row coordinates reproduce a large set of independently known code–word pairs, including pairs withheld from the matching, and a previously unread dispatch is decoded with that key and checked against the archival original and Spanish replies.",
+  "approach": [
+    "Partition the surviving coded letters by system (the table and dictionary layouts that Chu, Valenti and Knight label 1078 and 1096) before any inference, using their public transcriptions and wordbanks as a starting set and holding back a portion of known pairs for testing.",
+    "Assemble a list of English dictionaries in print between about 1760 and 1800 (pocket and spelling dictionaries, including the Entick editions associated with the separate 1806 Burr cipher) with page counts and two-column layouts, and test each edition's scanned pages from Eighteenth Century Collections Online, HathiTrust and Internet Archive for exact matches to the known page–column–row anchors, allowing for pagination offsets.",
+    "Recover the alphabetic table separately by constraining unknown table numbers between known anchors and enforcing consistency of repeated codes across all letters, and treat personal-name codes as unresolved unless an independent source confirms them.",
+    "Locate and image the manuscript pages from which the transcriptions were made, chiefly the Library of Congress photostats of Archivo General de Indias, Papeles de Cuba legajos 2373–2375, and compare against the originals in Seville; this requires collaboration with Library of Congress and AGI staff where reproductions have not been digitized.",
+    "Publish the reconstructed key with its test results and a critical edition of at least one dispatch not represented in any contemporary deciphered copy."
+  ],
+  "existing": [
+    {
+      "year": 1854,
+      "authors": "Charles Gayarré",
+      "title": "History of Louisiana: The Spanish Domination",
+      "venue": "New York: Redfield",
+      "url": "https://archive.org/details/cihm_45094",
+      "note": "First published use of Spanish colonial records to show that Wilkinson had been in the pay of Spain."
+    },
+    {
+      "year": 1891,
+      "authors": "Thomas Marshall Green",
+      "title": "The Spanish Conspiracy",
+      "venue": "Cincinnati: Robert Clarke",
+      "url": "https://openlibrary.org/works/OL6006340W",
+      "note": "Kentucky-centred account of the separatist intrigue and Wilkinson's part in it, written partly to defend local reputations."
+    },
+    {
+      "year": 1904,
+      "authors": "William R. Shepherd",
+      "title": "Wilkinson and the Beginnings of the Spanish Conspiracy",
+      "venue": "American Historical Review 9 (3): 490–506",
+      "url": "https://doi.org/10.1086/ahr/9.3.490",
+      "note": "Used documents in the Spanish archives to reconstruct Wilkinson's 1787 approach to Governor Miró and his oath of allegiance."
+    },
+    {
+      "year": 1904,
+      "authors": "William R. Shepherd (ed.)",
+      "title": "Papers Bearing on James Wilkinson's Relations with Spain, 1787–1789",
+      "venue": "American Historical Review 9 (4): 748–766",
+      "url": "https://doi.org/10.1086/ahr/9.4.748",
+      "note": "Printed transcriptions of key Wilkinson documents from the Spanish archives, establishing a documentary base for later studies."
+    },
+    {
+      "year": 1927,
+      "authors": "Arthur Preston Whitaker",
+      "title": "The Spanish-American Frontier, 1783–1795: The Westward Movement and the Spanish Retreat in the Mississippi Valley",
+      "venue": "Boston: Houghton Mifflin",
+      "url": "https://archive.org/details/spanishamericanf00whit_0",
+      "note": "Placed Wilkinson's intrigue within Spanish frontier policy, drawing on the Papeles de Cuba and Madrid state papers."
+    },
+    {
+      "year": 1928,
+      "authors": "Arthur Preston Whitaker",
+      "title": "James Wilkinson's First Descent to New Orleans in 1787",
+      "venue": "Hispanic American Historical Review 8 (1): 82–97",
+      "url": "https://doi.org/10.1215/00182168-8.1.82",
+      "note": "Reconstructed the voyage and negotiations that began Wilkinson's Spanish connection."
+    },
+    {
+      "year": 1938,
+      "authors": "James Ripley Jacobs",
+      "title": "Tarnished Warrior: Major-General James Wilkinson",
+      "venue": "New York: Macmillan",
+      "url": "https://archive.org/details/tarnishedwarrior0000jame",
+      "note": "Biography whose bibliography located the Library of Congress photostats of Papeles de Cuba legajos 2373–2375 as the core of the Spanish correspondence."
+    },
+    {
+      "year": 1954,
+      "authors": "Thomas Perkins Abernethy",
+      "title": "The Burr Conspiracy",
+      "venue": "New York: Oxford University Press",
+      "url": "https://openlibrary.org/works/OL4786026W",
+      "note": "Traced Wilkinson's dealings with both Burr and Spanish officials, including his instructions that their correspondence be kept in cipher."
+    },
+    {
+      "year": 1993,
+      "authors": "Ralph E. Weber",
+      "title": "Masked Dispatches: Cryptograms and Cryptology in American History, 1775–1900",
+      "venue": "Fort Meade: National Security Agency, Center for Cryptologic History",
+      "url": "https://archive.org/details/masked_dispatches-nsa",
+      "note": "Described the 1806 Burr cipher letter as a dictionary code with page numbers, column bars and possible additives, and noted that the dictionary edition remains uncertain."
+    },
+    {
+      "year": 2009,
+      "authors": "Andro Linklater",
+      "title": "An Artist in Treason: The Extraordinary Double Life of General James Wilkinson",
+      "venue": "New York: Walker",
+      "url": "https://openlibrary.org/works/OL3835007W",
+      "note": "Modern biography that synthesized the Spanish archival record of Wilkinson's espionage and payments."
+    },
+    {
+      "year": 2015,
+      "authors": "David Narrett",
+      "title": "Adventurism and Empire: The Struggle for Mastery in the Louisiana–Florida Borderlands, 1762–1803",
+      "venue": "Chapel Hill: University of North Carolina Press for the Omohundro Institute",
+      "url": "https://openlibrary.org/works/OL21084914W",
+      "note": "Situated Wilkinson among the many adventurers who traded information and promises with Spanish Louisiana."
+    },
+    {
+      "year": 2020,
+      "authors": "Christopher Chu, Raphael Valenti and Kevin Knight",
+      "title": "Solving Historical Dictionary Codes with a Neural Language Model",
+      "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing: 5845–5854",
+      "url": "https://doi.org/10.18653/v1/2020.emnlp-main.471",
+      "note": "Transcribed Library of Congress scans, released wordbanks and unsolved transcriptions, and reported about 72–75% word-token accuracy on a held-out letter without identifying the dictionary."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Archivo General de Indias, Seville",
+      "collection": "Papeles de Cuba (Papeles procedentes de la Isla de Cuba), especially legajos 2373–2375 on Wilkinson's relations with the Louisiana governors",
+      "url": "https://pares.cultura.gob.es/",
+      "digitized": "partial",
+      "note": "Originals of the correspondence of Miró, Carondelet and Gayoso de Lemos, with coded letters and contemporary decipherments; searchable through PARES."
+    },
+    {
+      "repository": "Archivo Histórico Nacional, Madrid",
+      "collection": "Sección Estado, correspondence on Louisiana and the Floridas",
+      "url": "https://pares.cultura.gob.es/",
+      "digitized": "partial",
+      "note": "State papers that forwarded Wilkinson's memorials and coded reports to Madrid, including later correspondence with the Marqués de Casa Calvo."
+    },
+    {
+      "repository": "Library of Congress, Manuscript Division, Washington, DC",
+      "collection": "Foreign Copying Program photostats of the Archivo General de Indias (Papeles de Cuba) and Archivo Histórico Nacional",
+      "url": "https://www.loc.gov/manuscripts/",
+      "digitized": "none",
+      "note": "Reproductions from which Chu, Valenti and Knight transcribed their corpus; page numbers in their dataset refer to these copies, which are not online."
+    },
+    {
+      "repository": "GitHub (c2huc2hu/wilkinson)",
+      "collection": "Transcriptions, wordbanks, evaluation pair and unsolved letters in the 1078 and 1096 systems",
+      "url": "https://github.com/c2huc2hu/wilkinson",
+      "digitized": "partial",
+      "note": "Open machine-readable transcriptions; the linked folder of manuscript scans is not public."
+    },
+    {
+      "repository": "University of Pittsburgh Library System, Archives and Special Collections",
+      "collection": "James Wilkinson Papers, 1790–1818 (DAR.1937.09), Darlington Collection",
+      "url": "https://historicpittsburgh.org/islandora/object/pitt:31735051657314",
+      "digitized": "full",
+      "note": "Digitized correspondence including letters to Gayoso de Lemos and Spanish officials in Texas."
+    },
+    {
+      "repository": "Chicago History Museum Research Center",
+      "collection": "James Wilkinson letters, 1779–1809 (three volumes)",
+      "url": "https://www.chicagohistory.org/collections/",
+      "digitized": "none",
+      "note": "Bound letters recorded by Jacobs (1938) as a major body of Wilkinson's own correspondence; holdings should be checked against the current catalogue."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

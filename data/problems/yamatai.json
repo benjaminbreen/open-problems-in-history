@@ -1,0 +1,178 @@
+{
+  "id": "yamatai",
+  "title": "Where was Yamatai, the realm of Queen Himiko?",
+  "short": "A third-century Chinese account describes the Wa polity ruled by Himiko, but its itinerary cannot be followed literally and the Kyushu and Nara candidates have been argued since the Edo period.",
+  "region": "East Asia",
+  "field": "Places",
+  "start": 180,
+  "end": 280,
+  "flags": [
+    "science"
+  ],
+  "matters": "The 'Account of the Wa' in the Wei zhi, part of Chen Shou's Sanguozhi (late third century), is the earliest substantial description of political organisation in the Japanese archipelago. If Yamatai lay in the Nara basin, a polity centred on the area that later produced the Yamato kings already led a confederation reaching to northern Kyushu by the 230s, and the first great keyhole tombs mark its rulers; if it lay in Kyushu, Yamato kingship arose separately and later, and the Wei zhi describes a regional confederation. The choice shapes accounts of state formation, of the start of the Kofun period, and of how the early chronicles Kojiki and Nihon shoki relate to the Chinese record.",
+  "stuck": "Read literally, the Wei zhi's directions and travel times place Yamatai in the ocean far south of Kyushu, so every reconstruction emends either the directions (the Kinai reading turns 'south' into 'east') or the distances and order of stages (the Kyushu reading), and both sides can cite internal inconsistencies. No inscription names Yamatai or Himiko. The archaeological markers each side relies on are themselves disputed: the dates of the earliest keyhole tombs depend on radiocarbon calibration and pottery sequences, the triangular-rimmed deity-and-beast mirrors may be Wei gifts or Japanese products, and Hashihaka, the leading candidate for Himiko's tomb, is an Imperial Household Agency mausoleum closed to excavation.",
+  "solved": "A set of explicitly stated readings of the Wei zhi itinerary (each with its emendations listed), each predicting where a mid-third-century paramount centre and its subordinate polities should lie, scored against the dated distribution of large settlements, mounded tombs, Chinese imports and mirrors across western Japan. The problem is solved if one reading fits the independently dated archaeological pattern much better than all others under every defensible calibration of the dates.",
+  "approach": [
+    "Encode every stage of the Wei zhi itinerary and the list of subordinate countries in alternative readings (successive versus radial travel from Ito, emended directions, variant units for li and days) and compute the candidate regions each reading predicts.",
+    "Build a georeferenced database of Yayoi to early Kofun sites from the Nara National Research Institute's nationwide site-report archive: moated settlements, mounded tombs, Chinese mirrors and coins, iron, and Kibi- and Tōkai-style pottery, each with its stated date basis.",
+    "Re-model the absolute dates of the transition to the Kofun period in a single Bayesian framework that combines the Rekihaku and Makimuku radiocarbon series with dendrochronology and pottery phasing, reporting how the Hashihaka date moves under alternative calibration curves and reservoir assumptions.",
+    "Test each itinerary reading against this dated distribution and publish the scoring code so that proponents of either theory can substitute their own assumptions.",
+    "Narrowing the dates further requires collaboration with radiocarbon and dendrochronology laboratories on new short-lived samples from securely stratified contexts at Makimuku, Yoshinogari and the early Kofun mounds, and with the Imperial Household Agency for any further sampling at Hashihaka."
+  ],
+  "existing": [
+    {
+      "year": 1910,
+      "authors": "Naitō Konan (Torajirō)",
+      "title": "Himiko kō (A study of Himiko)",
+      "venue": "Geibun; reprinted in Naitō Konan zenshū. Tokyo: Chikuma Shobō, 1970",
+      "url": "https://cir.nii.ac.jp/crid/1573105975852133632",
+      "note": "Classic statement of the Kinai (Yamato) theory, published the same year as Shiratori Kurakichi's Kyushu-theory study, which set the terms of the modern academic dispute."
+    },
+    {
+      "year": 1951,
+      "authors": "Ryusaku Tsunoda and L. Carrington Goodrich",
+      "title": "Japan in the Chinese Dynastic Histories: Later Han through Ming Dynasties",
+      "venue": "South Pasadena: P. D. and Ione Perkins",
+      "url": "https://archive.org/details/japan-in-the-chinese-dynastic-histories-later-han-through-ming-dynasties-1951",
+      "note": "Standard English translation of the Wei zhi account of the Wa and related passages."
+    },
+    {
+      "year": 1996,
+      "authors": "Walter Edwards",
+      "title": "In Pursuit of Himiko: Postwar Archaeology and the Location of Yamatai",
+      "venue": "Monumenta Nipponica 51 (1)",
+      "url": "https://doi.org/10.2307/2385316",
+      "note": "Surveyed how postwar archaeology, especially mirror studies and tomb chronology, shifted the balance of the debate toward the Kinai theory."
+    },
+    {
+      "year": 1997,
+      "authors": "Joan R. Piggott",
+      "title": "The Emergence of Japanese Kingship",
+      "venue": "Stanford: Stanford University Press",
+      "url": "https://openlibrary.org/works/OL2650232W",
+      "note": "Takes Himiko's Yamatai as the starting point of a long account of how Japanese kingship took shape between the third and eighth centuries."
+    },
+    {
+      "year": 1999,
+      "authors": "Walter Edwards",
+      "title": "Mirrors on Ancient Yamato: The Kurozuka Kofun Discovery and the Question of Yamatai",
+      "venue": "Monumenta Nipponica 54 (1)",
+      "url": "https://doi.org/10.2307/2668274",
+      "note": "Assessed the 1998 discovery of more than thirty triangular-rimmed mirrors at Kurozuka in Nara and its use as evidence for a Kinai Yamatai."
+    },
+    {
+      "year": 2001,
+      "authors": "Wang Zhongshu",
+      "title": "Problems of the Triangular-rimmed Bronze Mirrors with Divinity and Animal Design Unearthed from Japan",
+      "venue": "Chinese Archaeology 1 (1)",
+      "url": "https://doi.org/10.1515/char.2001.1.1.63",
+      "note": "Argued that these mirrors, unknown in China, were made in Japan by immigrant craftsmen from Wu rather than given by the Wei court, undercutting their use as markers of Himiko's diplomacy."
+    },
+    {
+      "year": 2007,
+      "authors": "Gina L. Barnes",
+      "title": "State Formation in Japan: Emergence of a 4th-Century Ruling Elite",
+      "venue": "London and New York: Routledge",
+      "url": "https://doi.org/10.4324/9780203462874",
+      "note": "Archaeological account of the third and fourth centuries, with chapters tracing the move 'From Yamatai to Yamato' and on Hashihaka and the first mounded burials."
+    },
+    {
+      "year": 2007,
+      "authors": "J. Edward Kidder Jr.",
+      "title": "Himiko and Japan's Elusive Chiefdom of Yamatai: Archaeology, History, and Mythology",
+      "venue": "Honolulu: University of Hawai'i Press",
+      "url": "https://doi.org/10.1515/9780824862848",
+      "note": "Fullest English treatment, with a translation of the Wei zhi text, a history of the Japanese debate, and a chapter on Makimuku and the location of Yamatai."
+    },
+    {
+      "year": 2011,
+      "authors": "Harunari Hideji, Kobayashi Ken'ichi, Sakamoto Minoru, Imamura Mineo et al.",
+      "title": "Kofun shutsugenki no tanso 14 nendai sokutei (Radiocarbon Dating the Appearance of Kofun)",
+      "venue": "Bulletin of the National Museum of Japanese History 163: 133–176",
+      "url": "https://rekihaku.repo.nii.ac.jp/records/1889",
+      "note": "AMS dates on wood, seeds and pottery residues from Hashihaka and other Makimuku-area sites, calibrated with Japanese tree-ring data, placing the period just after Hashihaka's construction at 240–260 CE, close to Himiko's death."
+    },
+    {
+      "year": 2013,
+      "authors": "Koji Mizoguchi",
+      "title": "The Archaeology of Japan: From the Earliest Rice Farming Villages to the Rise of the State",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/cbo9781139034265",
+      "note": "Synthesis of Yayoi and Kofun archaeology that frames the Yamatai problem within the emergence of keyhole-tomb networks."
+    },
+    {
+      "year": 2018,
+      "authors": "Nakamura Toshio",
+      "title": "Makimuku iseki shutsudo no momo no kaku no AMS 14C nendai sokutei (AMS radiocarbon dating of peach stones from the Makimuku site)",
+      "venue": "Makimukugaku kenkyū 6: 65–73",
+      "url": "https://cir.nii.ac.jp/crid/1520017035724023680",
+      "note": "Dated twelve of about 2,800 peach stones from a pit near the large Makimuku building complex to roughly 135–230 CE, presented by the excavators as support for a Makimuku Yamatai."
+    },
+    {
+      "year": 2018,
+      "authors": "Yasumoto Biten",
+      "title": "Jiji koron 8: Makimuku iseki shutsudo no momo no kaku nendai sokutei (zenpen)",
+      "venue": "Kikan Yamataikoku 135: 92–144",
+      "url": "https://cir.nii.ac.jp/crid/1522543655420245632",
+      "note": "Detailed rebuttal of the Makimuku peach-stone interpretation by a leading advocate of the Kyushu theory, continued in a second part in 2019."
+    },
+    {
+      "year": 2022,
+      "authors": "Nakamura Toshio",
+      "title": "Makimuku iseki shutsudo momo kaku no AMS 14C nendai no saishinban kōsei dēta IntCal20 ni yoru reki-nen kōsei",
+      "venue": "Makimukugaku kenkyū 10: 291–300",
+      "url": "https://cir.nii.ac.jp/crid/1520017035727571712",
+      "note": "Recalibrated the Makimuku peach-stone dates with IntCal20, showing how the calendar range depends on the calibration curve used."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Sanguozhi, Wei shu 30 (Wuhuan Xianbei Dongyi zhuan), the 'Account of the Wa'",
+      "url": "https://ctext.org/sanguozhi",
+      "digitized": "full",
+      "note": "Open full text of the transmitted Wei zhi; textual variants must be checked against the Song printed editions and the related accounts in the Hou Hanshu and Liang shu."
+    },
+    {
+      "repository": "Nara National Research Institute for Cultural Properties",
+      "collection": "Comprehensive Database of Archaeological Site Reports in Japan (Zenkoku iseki hōkoku sōran)",
+      "url": "https://sitereports.nabunken.go.jp/",
+      "digitized": "partial",
+      "note": "Open archive of tens of thousands of excavation reports, including those for Makimuku, Yoshinogari and the early Kofun mounds, the basis for any georeferenced site database."
+    },
+    {
+      "repository": "Sakurai City Research Center for Makimukugaku, Nara Prefecture",
+      "collection": "Makimuku site excavation records, finds and the Makimukugaku kenkyū series",
+      "url": "https://www.city.sakurai.lg.jp/",
+      "digitized": "partial",
+      "note": "Holds the material from the large building complex and the peach-stone pit; samples for further dating are accessed through the centre."
+    },
+    {
+      "repository": "National Museum of Japanese History (Rekihaku), Sakura, Chiba",
+      "collection": "Radiocarbon dating programme for the Yayoi and early Kofun periods; samples and data from Hashihaka and Makimuku",
+      "url": "https://www.rekihaku.ac.jp/",
+      "digitized": "partial",
+      "note": "Source of the 240–260 CE estimate for Hashihaka and of much of the Japanese tree-ring calibration data."
+    },
+    {
+      "repository": "Imperial Household Agency, Tokyo",
+      "collection": "Mausolea and tombs (ryōbo) under its management, including Hashihaka, designated the tomb of Yamatototohimomosohime",
+      "url": "https://www.kunaicho.go.jp/ryobo/",
+      "digitized": "none",
+      "note": "Controls access to Hashihaka; only limited surface observation by academic societies has been permitted, and collected sherds are held by the agency."
+    },
+    {
+      "repository": "Yoshinogari Historical Park, Saga Prefecture",
+      "collection": "Yoshinogari site, excavated from 1986, with moated settlement, watchtower foundations and mound burials",
+      "url": "https://www.yoshinogari.jp/",
+      "digitized": "partial",
+      "note": "The principal Kyushu site cited for a Kyushu Yamatai; excavation reports are issued by the Saga Prefectural Board of Education."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

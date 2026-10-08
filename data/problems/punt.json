@@ -1,0 +1,186 @@
+{
+  "id": "punt",
+  "title": "Where was the land of Punt?",
+  "short": "Egypt traded by sea with Punt for over a thousand years, for incense, ebony, gold and baboons, but whether it lay in Africa, Arabia or both remains disputed.",
+  "region": "Africa",
+  "field": "Places",
+  "start": -2500,
+  "end": -1150,
+  "flags": [
+    "science"
+  ],
+  "matters": "Punt is the best-documented long-distance partner of pharaonic Egypt, attested from the Fifth Dynasty (Sahure) to Ramesses III, and its position determines the scale of Bronze Age Red Sea navigation and the reach of Egyptian exchange into the Horn of Africa or southern Arabia. It bears on the origins of the incense trade, on the early history of the Gash Delta and Eritrean lowland cultures that some archaeologists identify as Puntite, and on how far the Deir el-Bahari reliefs of Hatshepsut record observed people, houses, animals and plants rather than a stylized exotic land.",
+  "stuck": "Egyptian texts name Punt and its products but give no distances or coastlines, and Punt itself left no texts that name it. The commodities (myrrh and frankincense, ebony, gold, baboons, leopard skins) occur on both sides of the southern Red Sea, so lists and images can be read either way, and proposals have ranged from coastal Sudan and Eritrea to Somalia and western Arabia. Archaeology of the second millennium BCE on both coasts is thin, and harbour finds at Mersa/Wadi Gawasis document Egyptian departure and return rather than the destination.",
+  "solved": "Independent provenance results for several classes of Punt imports (baboons, aromatic resins, obsidian, ebony, pottery) excavated in dated Egyptian contexts converge on a bounded region, and that region contains contemporary sites whose material culture matches the Puntite goods and ceramics found at Mersa/Wadi Gawasis.",
+  "approach": [
+    "Compile every Egyptian attestation of Punt and Puntites, with commodities, dates, routes and accompanying images, from published corpora and the Deir el-Bahari and Sahure reliefs, and tag each product with its known natural range on both coasts.",
+    "Assemble the isotope, ancient DNA and geochemical provenance results now published for baboons, obsidian and resins into one geographic dataset, and map where the evidence overlaps and where it has been inferred from a single specimen.",
+    "Identify museum objects likely to be Punt imports in datable contexts (New Kingdom baboon mummies, resin residues, ebony, obsidian from Mersa/Wadi Gawasis) that have not yet been sampled.",
+    "Collaborate with primatologists and isotope geochemists to extend oxygen and strontium baselines and mitochondrial reference data for baboons in Eritrea, Sudan, Somalia and Yemen, and with organic chemists on residue analysis of resins against modern Boswellia and Commiphora reference samples.",
+    "Test the result against field data from Eritrean, Sudanese and Yemeni coastal sites of the second millennium BCE."
+  ],
+  "existing": [
+    {
+      "year": 1969,
+      "authors": "D. M. Dixon",
+      "title": "The Transplantation of Punt Incense Trees in Egypt",
+      "venue": "Journal of Egyptian Archaeology 55: 55–65",
+      "url": "https://doi.org/10.1177/030751336905500107",
+      "note": "Examined the incense trees shown being shipped from Punt at Deir el-Bahari and their botanical identity, a key strand in arguments about where Punt lay."
+    },
+    {
+      "year": 1993,
+      "authors": "K. A. Kitchen",
+      "title": "The land of Punt",
+      "venue": "In T. Shaw, P. Sinclair, B. Andah and A. Okpoko (eds.), The Archaeology of Africa: Food, Metals and Towns. London: Routledge",
+      "url": "https://doi.org/10.4324/9780203754245-51",
+      "note": "Influential synthesis that used the fauna, flora and textual itineraries to place Punt on the African side, in the region of coastal Sudan and Eritrea and their hinterland."
+    },
+    {
+      "year": 1997,
+      "authors": "Jacke Phillips",
+      "title": "Punt and Aksum: Egypt and the Horn of Africa",
+      "venue": "Journal of African History 38 (3): 423–457",
+      "url": "https://doi.org/10.1017/S0021853797007068",
+      "note": "Reviewed the Egyptian and Horn of Africa evidence and the archaeological cultures of the Eritrean and Sudanese lowlands as candidates for Punt."
+    },
+    {
+      "year": 2003,
+      "authors": "Dimitri Meeks",
+      "title": "Locating Punt",
+      "venue": "In D. O'Connor and S. Quirke (eds.), Mysterious Lands. London: UCL Press: 53–80",
+      "url": "https://doi.org/10.4324/9781843147626-4",
+      "note": "Main modern statement of the Arabian hypothesis, arguing from the textual geography that Punt lay on the western coast of the Arabian peninsula."
+    },
+    {
+      "year": 2007,
+      "authors": "Kathryn A. Bard and Rodolfo Fattovich (eds.)",
+      "title": "Harbor of the Pharaohs to the Land of Punt: Archaeological Investigations at Mersa/Wadi Gawasis, Egypt, 2001–2005",
+      "venue": "Naples: Università degli Studi di Napoli \"L'Orientale\"",
+      "url": "https://search.worldcat.org/title/251490535",
+      "note": "First report on the Middle Kingdom harbour, with inscribed stelae and ostraca naming Punt and Bia-Punt, ship timbers, cargo boxes and imported pottery."
+    },
+    {
+      "year": 2010,
+      "authors": "Kathryn A. Bard and Rodolfo Fattovich",
+      "title": "Spatial Use of the Twelfth Dynasty Harbor at Mersa/Wadi Gawasis for the Seafaring Expeditions to Punt",
+      "venue": "Journal of Ancient Egyptian Interconnections 2 (3)",
+      "url": "https://doi.org/10.2458/azu_jaei_v02i3_bard",
+      "note": "Described the shoreline shrines, storage caves and harbour layout and the dating of their use within the Twelfth Dynasty."
+    },
+    {
+      "year": 2012,
+      "authors": "Rodolfo Fattovich",
+      "title": "Egypt's trade with Punt: New discoveries on the Red Sea coast",
+      "venue": "British Museum Studies in Ancient Egypt and Sudan 18",
+      "url": "https://www.britishmuseum.org/research/publications/online-journals/bmsaes/issue-18",
+      "note": "Synthesis linking the Mersa/Wadi Gawasis finds to the Gash Group and related cultures of the Sudanese–Eritrean lowlands, which Fattovich identified as Puntite."
+    },
+    {
+      "year": 2016,
+      "authors": "Francis Breyer",
+      "title": "Punt: Die Suche nach dem \"Gottesland\"",
+      "venue": "Leiden: Brill (Culture and History of the Ancient Near East 80)",
+      "url": "https://doi.org/10.1163/9789004322615",
+      "note": "Comprehensive review of ancient and modern searches for Punt, with a full dossier of the Egyptian sources, arguing for an African location."
+    },
+    {
+      "year": 2018,
+      "authors": "Kathryn A. Bard and Rodolfo Fattovich",
+      "title": "Seafaring Expeditions to Punt in the Middle Kingdom: Excavations at Mersa/Wadi Gawasis, Egypt",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004379602",
+      "note": "Final synthesis of the harbour excavations, including the long-distance routes and the evidence from the site for Punt's location in the southern Red Sea."
+    },
+    {
+      "year": 2020,
+      "authors": "Julien Cooper",
+      "title": "Toponymy on the Periphery: Placenames of the Eastern Desert, Red Sea, and South Sinai in Egyptian Documents from the Early Dynastic until the End of the New Kingdom",
+      "venue": "Leiden: Brill (Probleme der Ägyptologie)",
+      "url": "https://doi.org/10.1163/9789004422216",
+      "note": "Systematic study of Egyptian placenames for the eastern deserts and Red Sea that situates Punt within the wider toponymy of the region."
+    },
+    {
+      "year": 2020,
+      "authors": "Nathaniel J. Dominy, Salima Ikram, Gillian L. Moritz, Patrick V. Wheatley, John N. Christensen, Jonathan W. Chipman and Paul L. Koch",
+      "title": "Mummified baboons reveal the far reach of early Egyptian mariners",
+      "venue": "eLife 9: e60860",
+      "url": "https://doi.org/10.7554/eLife.60860",
+      "note": "Oxygen and strontium isotopes of two New Kingdom hamadryas baboon mummies in the British Museum pointed to a region spanning much of Ethiopia, Eritrea and Djibouti and parts of Somalia and Yemen."
+    },
+    {
+      "year": 2020,
+      "authors": "Giulio Lucarini, Donatella Barca and Andrea Manzo",
+      "title": "The provenance of obsidian artefacts from the Middle Kingdom harbour of Mersa/Wadi Gawasis, Egypt, and its implications for Red Sea trade routes in the 2nd millennium BC",
+      "venue": "Quaternary International 555: 85–95",
+      "url": "https://doi.org/10.1016/j.quaint.2020.03.015",
+      "note": "LA-ICP-MS analysis matched obsidian from the harbour to sources in both Eritrea and Yemen, implying contacts with both shores of the southern Red Sea."
+    },
+    {
+      "year": 2023,
+      "authors": "Franziska Grathwol, Christian Roos, Dietmar Zinner, Benjamin Hume, Stéphanie M. Porcier, Didier Berthet, Jacques Cuisin, Stefan Merker, Claudio Ottoni, Wim Van Neer, Nathaniel J. Dominy and Gisela H. Kopp",
+      "title": "Adulis and the transshipment of baboons during classical antiquity",
+      "venue": "eLife 12: RP87513",
+      "url": "https://doi.org/10.7554/eLife.87513",
+      "note": "Complete mitochondrial genome of a Late Period baboon mummy from Gabbanat el-Qurud (c. 800–540 BCE) placed it with populations in Eritrea and northeastern Sudan, which the authors linked to Adulis and, more speculatively, to Punt."
+    },
+    {
+      "year": 2023,
+      "authors": "Wim Van Neer, Mircea Udrescu, Joris Peters, Bea De Cupere, Stéphane Pasquali and Stéphanie Porcier",
+      "title": "Palaeopathological and demographic data reveal conditions of keeping of the ancient baboons at Gabbanat el-Qurud (Thebes, Egypt)",
+      "venue": "PLOS ONE 18 (12): e0294934",
+      "url": "https://doi.org/10.1371/journal.pone.0294934",
+      "note": "Skeletal and demographic study suggesting a local breeding population founded from hamadryas baboons from the Horn of Africa or southern Arabia, a caution against reading every mummy as a direct import."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Mortuary temple of Hatshepsut, Deir el-Bahari, Luxor; Polish–Egyptian Archaeological and Conservation Mission (PCMA, University of Warsaw)",
+      "collection": "Punt reliefs of the southern middle portico: ships, Puntite settlement, the ruler Parahu and Ity, incense trees and cargo",
+      "url": "https://pcma.uw.edu.pl/en/",
+      "digitized": "partial",
+      "note": "The principal visual record of a Punt expedition, in situ and under long-term conservation and documentation by the Polish mission."
+    },
+    {
+      "repository": "Internet Archive (Egypt Exploration Fund publications)",
+      "collection": "Édouard Naville, The Temple of Deir el Bahari (1894–1908), Part III with the Punt colonnade plates",
+      "url": "https://archive.org/details/the-temple-of-deir-el-bahari-pt.-3",
+      "digitized": "full",
+      "note": "Facsimile drawings made before further deterioration of the reliefs, still the standard full publication of the Punt scenes."
+    },
+    {
+      "repository": "British Museum, London",
+      "collection": "Department of Egypt and Sudan: mummified baboons EA 6736 and EA 6738, purchased from the Henry Salt estate in 1837",
+      "url": "https://www.britishmuseum.org/collection",
+      "digitized": "partial",
+      "note": "The two New Kingdom hamadryas specimens sampled for isotopes by Dominy et al. (2020); online catalogue with images."
+    },
+    {
+      "repository": "Musée des Confluences, Lyon",
+      "collection": "Baboon mummies from Gabbanat el-Qurud, Thebes, excavated by Lortet and Gaillard in 1905 (e.g. MHNL 51000172, MHNL 90001206)",
+      "url": "https://www.museedesconfluences.fr/en",
+      "digitized": "none",
+      "note": "Largest dated assemblage of mummified baboons, used for radiocarbon, dental calculus, palaeopathology and ancient DNA studies; sampling by permission of the museum."
+    },
+    {
+      "repository": "Natural history museum mammal collections (Natural History Museum London, Field Museum Chicago, MNHN Paris, Museum für Naturkunde Berlin, SMNS Stuttgart)",
+      "collection": "Georeferenced historic baboon skins and skulls from Eritrea, Ethiopia, Sudan, Somalia and Arabia",
+      "url": "https://data.nhm.ac.uk/",
+      "digitized": "partial",
+      "note": "Reference specimens of known provenance that supplied the isotope and mitochondrial baselines; coverage of coastal Eritrea, Sudan and Yemen remains thin."
+    },
+    {
+      "repository": "Mersa/Wadi Gawasis archaeological project (Boston University and Università di Napoli \"L'Orientale\") and Egyptian Ministry of Tourism and Antiquities",
+      "collection": "Excavated ship timbers, cargo boxes, stelae, ostraca, obsidian and imported Eritrean–Sudanese and Yemeni pottery from the harbour",
+      "url": "https://doi.org/10.1163/9789004379602",
+      "digitized": "none",
+      "note": "Finds are stored in Egypt and published in the project monographs; further provenance sampling requires permission from the Egyptian antiquities authorities."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

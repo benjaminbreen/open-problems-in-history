@@ -1,0 +1,183 @@
+{
+  "id": "cocoliztli",
+  "title": "What caused the cocoliztli epidemics of 1545 and 1576 in New Spain?",
+  "short": "Two epidemics that Nahua and Spanish observers called cocoliztli killed a large share of central Mexico's Indigenous population, and their cause, whether a native haemorrhagic fever, enteric fever or something else, is disputed.",
+  "region": "Americas",
+  "field": "Disease",
+  "start": 1545,
+  "end": 1581,
+  "flags": [
+    "science"
+  ],
+  "matters": "The cocoliztli epidemics of 1545–48 and 1576–80 are counted among the largest mortality events in the sixteenth-century collapse of Mexico's Indigenous population, with contemporary and modern estimates of losses ranging widely and in some accounts exceeding the toll of the 1520 smallpox epidemic. Whether they were caused by a pathogen introduced from Europe or Africa, by a native disease released by drought and colonial disruption, or by several agents together changes how the collapse is explained: as an inevitable consequence of contact, or as the product of colonial labour, resettlement and famine acting on susceptible populations.",
+  "stuck": "The clinical descriptions (high fever, bleeding from nose and mouth, jaundice, rapid death, Indigenous victims and few Spanish ones) fit several modern diseases, and sixteenth-century terms like cocoliztli ('pestilence') were generic. Rodolfo Acuña-Soto and colleagues proposed a native rodent-borne haemorrhagic fever amplified by drought, but no such virus has been identified, and RNA viruses rarely survive to be detected in skeletal remains. Vågene et al. (2018) recovered Salmonella enterica Paratyphi C from an epidemic cemetery at Teposcolula-Yucundaa, but from one site in the Mixteca Alta and with the acknowledged possibility that other, undetectable pathogens were also present, so the finding has not settled the question for 1545 in central Mexico or for 1576 at all.",
+  "solved": "Pathogen evidence from several independently dated epidemic burials of 1545–48 and 1576–80, in central Mexico as well as Oaxaca, identifies the same agent or combination of agents, and the agent's known epidemiology is consistent with the timing, symptoms, age and ethnic pattern of mortality, and geography recorded in the Relaciones geográficas, parish and cabildo records.",
+  "approach": [
+    "Extract every report of the 1545 and 1576 epidemics from the Relaciones geográficas of 1579–85, the Florentine Codex and Sahagún's other writings, Francisco Hernández, Juan de Torquemada, Nahuatl annals such as the Codex en Cruz and Codex Mexicanus, viceregal correspondence and Mexico City cabildo minutes, coding symptoms, dates, places, mortality claims and who died.",
+    "Map these against tree-ring drought reconstructions and the spread of cattle, wheat, congregación and repartimiento labour to test whether mortality tracked climate, colonial disruption or communication routes.",
+    "Identify excavated or museum-held burial assemblages securely dated to either epidemic (epidemic cemeteries, hospital and convent burials in Mexico City, Puebla and Oaxaca) and work with INAH and palaeogenomic laboratories on metagenomic screening, including methods able to recover RNA viruses and parasites, so that the Teposcolula result can be tested at other sites."
+  ],
+  "existing": [
+    {
+      "year": 1991,
+      "authors": "Noble David Cook and W. George Lovell (eds.)",
+      "title": "\"Secret Judgments of God\": Old World Disease in Colonial Spanish America",
+      "venue": "Norman: University of Oklahoma Press",
+      "url": "https://openlibrary.org/works/OL19213212W",
+      "note": "Collected essays on epidemics in Spanish America, including Hanns Prem's chronology of disease outbreaks in sixteenth-century central Mexico."
+    },
+    {
+      "year": 1995,
+      "authors": "Robert McCaa",
+      "title": "Spanish and Nahuatl Views on Smallpox and Demographic Catastrophe in Mexico",
+      "venue": "Journal of Interdisciplinary History 25 (3)",
+      "url": "https://doi.org/10.2307/205693",
+      "note": "Compared Spanish and Nahuatl sources on the sixteenth-century epidemics and the weight they assign to smallpox relative to later outbreaks."
+    },
+    {
+      "year": 1998,
+      "authors": "Noble David Cook",
+      "title": "Born to Die: Disease and New World Conquest, 1492–1650",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://openlibrary.org/works/OL2688218W",
+      "note": "Synthesis of epidemic disease in the conquest of the Americas that places the 1545 and 1576 epidemics within a sequence of Old World introductions."
+    },
+    {
+      "year": 2000,
+      "authors": "Rodolfo Acuña-Soto, L. Calderón Romero and James H. Maguire",
+      "title": "Large epidemics of hemorrhagic fevers in Mexico 1545–1815",
+      "venue": "American Journal of Tropical Medicine and Hygiene 62 (6): 733–739",
+      "url": "https://doi.org/10.4269/ajtmh.2000.62.733",
+      "note": "Argued that the 1545 and 1576 epidemics and later colonial outbreaks were a haemorrhagic fever of unknown, probably native, origin, and that the 1576 epidemic killed about 45 percent of the population."
+    },
+    {
+      "year": 2000,
+      "authors": "John S. Marr and James B. Kiracofe",
+      "title": "Was the Huey Cocoliztli a haemorrhagic fever?",
+      "venue": "Medical History 44 (3): 341–362",
+      "url": "https://doi.org/10.1017/S0025727300066746",
+      "note": "Reviewed the clinical descriptions of the 1576 epidemic, including Francisco Hernández's, against candidate diagnoses and assessed the haemorrhagic fever hypothesis."
+    },
+    {
+      "year": 2002,
+      "authors": "Rodolfo Acuña-Soto, David W. Stahle, Malcolm K. Cleaveland and Matthew D. Therrell",
+      "title": "Megadrought and Megadeath in 16th Century Mexico",
+      "venue": "Emerging Infectious Diseases 8 (4): 360–362",
+      "url": "https://doi.org/10.3201/eid0804.010175",
+      "note": "Used a Douglas-fir tree-ring reconstruction to show that both epidemics coincided with severe drought, proposing that wet years after drought amplified rodent hosts of a native virus."
+    },
+    {
+      "year": 2004,
+      "authors": "Rodolfo Acuña-Soto, David W. Stahle, Matthew D. Therrell, Richard D. Griffin and Malcolm K. Cleaveland",
+      "title": "When half of the population died: the epidemic of hemorrhagic fevers of 1576 in Mexico",
+      "venue": "FEMS Microbiology Letters 240 (1): 1–5",
+      "url": "https://doi.org/10.1016/j.femsle.2004.09.011",
+      "note": "Restated the case for a native haemorrhagic fever in 1576 using contemporary descriptions and the drought record."
+    },
+    {
+      "year": 2012,
+      "authors": "Christina Warinner, Nelly Robles García, Ronald Spores and Noreen Tuross",
+      "title": "Disease, Demography, and Diet in Early Colonial New Spain: Investigation of a Sixteenth-Century Mixtec Cemetery at Teposcolula Yucundaa",
+      "venue": "Latin American Antiquity 23 (4): 467–489",
+      "url": "https://doi.org/10.7183/1045-6635.23.4.467",
+      "note": "Identified the Teposcolula Yucundaa burials as the earliest known colonial epidemic cemetery in Mexico, linked to the cocoliztli of 1544–50, and showed the dead were local Mixtecs."
+    },
+    {
+      "year": 2018,
+      "authors": "Åshild J. Vågene, Alexander Herbig, Michael G. Campana, Nelly M. Robles García, Christina Warinner, Susanna Sabin et al.",
+      "title": "Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico",
+      "venue": "Nature Ecology & Evolution 2 (3): 520–528",
+      "url": "https://doi.org/10.1038/s41559-017-0446-6",
+      "note": "Metagenomic screening of Teposcolula Yucundaa burials recovered Salmonella enterica Paratyphi C genomes, proposed as a strong candidate for the 1545 epidemic while not excluding other pathogens."
+    },
+    {
+      "year": 2018,
+      "authors": "Zhemin Zhou, Inge Lundstrøm, Alicia Tran-Dien, Sebastián Duchêne, Nabil-Fareed Alikhan, Martin J. Sergeant et al.",
+      "title": "Pan-genome Analysis of Ancient and Modern Salmonella enterica Demonstrates Genomic Stability of the Invasive Para C Lineage for Millennia",
+      "venue": "Current Biology 28 (15): 2420–2428",
+      "url": "https://doi.org/10.1016/j.cub.2018.05.058",
+      "note": "A Paratyphi C genome from a c. 1200 CE Norwegian burial showed the lineage was present in medieval Europe, consistent with but not proof of a European introduction to Mexico."
+    },
+    {
+      "year": 2021,
+      "authors": "Oscar René Benavides Cárabes and Carlos Viesca Treviño",
+      "title": "Changes in indigenous dress and the cocoliztli epidemic of 1544–1548 in New Spain",
+      "venue": "Social Medicine 14 (1): 20–27",
+      "url": "https://doi.org/10.71164/socialmedicine.v14i1.2021.1305",
+      "note": "Proposed that colonial changes in Indigenous clothing and living conditions favoured louse-borne transmission, reviving a typhus-related interpretation."
+    },
+    {
+      "year": 2025,
+      "authors": "Victoria Ríos Castaño",
+      "title": "Religion over Life and Death. The Cocoliztli in the Florentine Codex",
+      "venue": "In R. Radlwimmer (ed.), Bodies, Remedies, Policies. Berlin: De Gruyter: 69–88",
+      "url": "https://doi.org/10.1515/9783111249315-003",
+      "note": "Study of how Sahagún's Florentine Codex, compiled in the years of the 1576 epidemic, presents the cocoliztli and frames its meaning."
+    },
+    {
+      "year": 2025,
+      "authors": "Miriam Bravo-Lopez, Eduardo Arrieta-Donato, Viridiana Villa-Islas, Åshild J. Vågene et al. and María C. Ávila-Arcos",
+      "title": "Ancient genomic insights into Salmonella enterica Paratyphi C from Central Mexico",
+      "venue": "bioRxiv preprint 2025.10.13.681940",
+      "url": "https://doi.org/10.1101/2025.10.13.681940",
+      "note": "A nineteenth-century Paratyphi C genome from Mexico City clustered with the Teposcolula genomes, with divergence estimates the authors read as a colonial-era European introduction followed by local persistence (not yet peer reviewed)."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Benson Latin American Collection, University of Texas at Austin",
+      "collection": "Relaciones Geográficas of Mexico and Guatemala (1577–1585), with painted maps",
+      "url": "https://collections.lib.utexas.edu/?f%5Bmods_relatedItem_titleInfo_title_source_t%5D%5B%5D=Relaciones+Geogr%C3%A1ficas+of+Mexico+and+Guatemala",
+      "digitized": "full",
+      "note": "Responses to the crown questionnaire, many of which report population loss and the 1576 epidemic town by town; digitized and openly accessible."
+    },
+    {
+      "repository": "Archivo General de Indias, Seville",
+      "collection": "Relaciones geográficas held in Spain, Audiencia de México correspondence of viceroys and officials, and Mapas y Planos",
+      "url": "https://pares.mcu.es/",
+      "digitized": "partial",
+      "note": "Viceregal and ecclesiastical reports on the epidemics, tribute losses and remedies, searchable and partly imaged through PARES."
+    },
+    {
+      "repository": "Biblioteca Medicea Laurenziana, Florence",
+      "collection": "Florentine Codex (Historia general de las cosas de Nueva España), Med. Palat. 218–220",
+      "url": "https://florentinecodex.getty.edu/",
+      "digitized": "full",
+      "note": "Sahagún's bilingual Nahuatl and Spanish encyclopedia, compiled with Nahua collaborators during the 1576 epidemic and including comments on it; fully digitized in the Getty's Digital Florentine Codex."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Paris",
+      "collection": "Manuscrits mexicains, including the Codex Mexicanus (Mexicain 23–24) and the Codex en Cruz",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "full",
+      "note": "Nahua annals that record the epidemic years in pictorial form, including a 1545 image of a figure bleeding from nose and mouth in the Codex Mexicanus."
+    },
+    {
+      "repository": "Archivo General de la Nación, Mexico City",
+      "collection": "Ramos Indios, Mercedes, General de Parte and Hospital de Jesús; parish and tribute records",
+      "url": "https://www.gob.mx/agn",
+      "digitized": "partial",
+      "note": "Viceregal orders on tribute relief, hospitals and labour during the epidemics, and local petitions describing deaths."
+    },
+    {
+      "repository": "Archivo Histórico de la Ciudad de México",
+      "collection": "Actas de Cabildo del Ayuntamiento de México (published 1889 onward)",
+      "url": "https://archive.org/search?query=%22Actas+de+Cabildo+del+Ayuntamiento+de+la+Ciudad+de+Mexico%22",
+      "digitized": "partial",
+      "note": "Minutes of the Mexico City council recording food supply, burials and public health measures in the epidemic years; nineteenth-century printed volumes are online."
+    },
+    {
+      "repository": "Instituto Nacional de Antropología e Historia (INAH), Oaxaca and Mexico City",
+      "collection": "Skeletal collections from the Teposcolula Yucundaa epidemic cemetery and other colonial burial assemblages",
+      "url": "https://www.inah.gob.mx/",
+      "digitized": "none",
+      "note": "The human remains on which any pathogen identification depends; sampling requires INAH permits and collaboration with Mexican researchers."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

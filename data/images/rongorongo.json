@@ -1,0 +1,13 @@
+{
+  "id": "rongorongo",
+  "file": "data/images/src/rongorongo.jpg",
+  "caption": "Rongorongo tablet C (Mamari), side a, photographed in Papeete",
+  "commons": "https://commons.wikimedia.org/wiki/File:Rongorongo_C-a_Mamari.jpg",
+  "author": "Unknown (photograph by Widow Hoare; published by Stéphen-Chauvet, 1935)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "crop": "center",
+  "zoom": 2.2,
+  "style": "bold",
+  "invert": true
+}

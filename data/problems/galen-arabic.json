@@ -1,0 +1,192 @@
+{
+  "id": "galen-arabic",
+  "title": "Which lost works of Galen survive unrecognised in Arabic and Syriac?",
+  "short": "Many Galenic works lost in Greek were translated into Syriac and Arabic in ninth-century Baghdad; some may survive in unedited manuscripts or in quotations not yet traced to their source.",
+  "region": "Middle East",
+  "field": "Texts & authorship",
+  "start": 160,
+  "end": 1270,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Galen is the largest surviving author of Greek antiquity, yet his own lists and Hunayn ibn Ishaq's Risala name many works whose Greek text is lost, including logical, philosophical and Hippocratic commentaries. Several have already been recovered wholly or partly from Arabic (On Medical Experience, the later books of On Anatomical Procedures, On Examinations by which the Best Physicians are Recognised, the commentaries on Epidemics II and VI), and each recovery has changed accounts of ancient empiricism, anatomy or Hippocratic exegesis. Identifying further texts would also clarify what Arabic medicine and philosophy actually inherited from Galen, as opposed to what later authors attributed to him.",
+  "stuck": "Hunayn's Risala (c. 863, with later additions) describes about 129 Galenic works translated into Syriac or Arabic, but many of those translations survive only as quotations embedded in later compilations such as al-Razi's al-Hawi, Maimonides' Medical Aphorisms and Ibn Abi Usaybi'a's biographical dictionary, often paraphrased and attributed loosely. Large numbers of Arabic medical manuscripts in Istanbul, Iran, the Escorial and elsewhere remain uncatalogued in detail or unedited, and the Syriac layer, as the Galen Palimpsest shows, often survives only as erased undertext. Matching an Arabic paraphrase to a lost Greek work requires simultaneous command of Galen's Greek corpus, Hunayn's translation vocabulary and the Arabic compilers' citation habits, a combination few scholars have.",
+  "solved": "A passage or treatise in Arabic or Syriac is shown to derive from a Galenic work lost in Greek, by matching its title and content to Galen's or Hunayn's descriptions, by translation-vocabulary alignment with Hunayn's known versions, and by at least one independent witness (a second manuscript, a Greek or Latin fragment, or an attributed quotation elsewhere).",
+  "approach": [
+    "Build a register of every Galenic work lost or incomplete in Greek, starting from Fichtner's Corpus Galenicum bibliography and Hunayn's Risala as edited by Lamoreaux, with Galen's own descriptions of each work's contents.",
+    "Use research agents to align Galen's surviving Greek (Kühn's edition and the Corpus Medicorum Graecorum) with Hunayn-school Arabic translations through the Glossarium Graeco-Arabicum and Ullmann's lexical work, producing a model of how specific Greek terms and phrases were rendered.",
+    "Apply that model to machine-readable Arabic compilations in OpenITI (al-Razi's al-Hawi, Ibn Abi Usaybi'a, Maimonides) to flag Galen-attributed passages that match no extant Greek work, and cluster them by likely source title.",
+    "Prioritise manuscripts that Sezgin, Ullmann and Fichtner list as unedited Galenic translations and seek imaging and catalogue collaboration with the Süleymaniye Library, Iranian libraries and the Escorial where copies are not yet online."
+  ],
+  "existing": [
+    {
+      "year": 1925,
+      "authors": "Gotthelf Bergsträsser",
+      "title": "Hunain ibn Ishaq über die syrischen und arabischen Galen-Übersetzungen",
+      "venue": "Abhandlungen für die Kunde des Morgenlandes 17 (2). Leipzig: Brockhaus",
+      "url": "https://archive.org/details/HunainIbnIshaqberDieSyrischenUndArabischenGalen-bersetzungen",
+      "note": "First edition and German translation of Hunayn's Risala, the inventory of Galenic works translated into Syriac and Arabic."
+    },
+    {
+      "year": 1944,
+      "authors": "Richard Walzer",
+      "title": "Galen on Medical Experience: First Edition of the Arabic Version with English Translation and Notes",
+      "venue": "London: Oxford University Press for the Wellcome Historical Medical Museum",
+      "url": "https://archive.org/details/galenonmedicalex0000unse",
+      "note": "Edited from a single Istanbul manuscript a work on the empiricist–rationalist debate otherwise known only from small Greek fragments."
+    },
+    {
+      "year": 1969,
+      "authors": "Malcolm Lyons (ed.)",
+      "title": "Galen: On the Parts of Medicine; On Cohesive Causes; On Regimen in Acute Diseases in Accordance with the Theories of Hippocrates",
+      "venue": "Corpus Medicorum Graecorum, Supplementum Orientale II. Berlin: Akademie-Verlag",
+      "url": "https://doi.org/10.1515/9783112741092",
+      "note": "Edited Arabic versions of works lost or incomplete in Greek, establishing the Supplementum Orientale series as the venue for such recoveries."
+    },
+    {
+      "year": 1970,
+      "authors": "Manfred Ullmann",
+      "title": "Die Medizin im Islam",
+      "venue": "Handbuch der Orientalistik I, Ergänzungsband VI.1. Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004661806",
+      "note": "Surveyed the Arabic Galen and listed known manuscripts of individual translations, many still unedited."
+    },
+    {
+      "year": 2005,
+      "authors": "Véronique Boudon-Millot and Antoine Pietrobelli",
+      "title": "De l'arabe au grec: un nouveau témoin du texte de Galien (le Vlatadon 14)",
+      "venue": "Comptes rendus des séances de l'Académie des Inscriptions et Belles-Lettres 149 (2): 497–534",
+      "url": "https://doi.org/10.3406/crai.2005.22868",
+      "note": "Announced the Thessaloniki manuscript that restored On Avoiding Distress in Greek and fuller Greek texts of works previously known partly through Arabic and Latin."
+    },
+    {
+      "year": 2013,
+      "authors": "Siam Bhayro, Robert Hawley, Grigory Kessel and Peter E. Pormann",
+      "title": "The Syriac Galen Palimpsest: Progress, Prospects and Problems",
+      "venue": "Journal of Semitic Studies 58 (1): 131–148",
+      "url": "https://doi.org/10.1093/jss/fgs042",
+      "note": "Reported the identification of Sergius of Resh'aina's sixth-century Syriac version of On Simple Drugs beneath a later liturgical text."
+    },
+    {
+      "year": 2016,
+      "authors": "John C. Lamoreaux (ed. and trans.)",
+      "title": "Hunayn ibn Ishaq on His Galen Translations",
+      "venue": "Provo: Brigham Young University Press (Eastern Christian Texts)",
+      "url": "https://doi.org/10.7817/jaos.140.3.2020.rev046",
+      "note": "New edition and English translation of the Risala with its later additions; the link is to a review in the Journal of the American Oriental Society."
+    },
+    {
+      "year": 2016,
+      "authors": "Uwe Vagelpohl (ed.)",
+      "title": "Galeni In Hippocratis Epidemiarum librum II commentariorum I–VI versio Arabica",
+      "venue": "Corpus Medicorum Graecorum, Supplementum Orientale V 2. Berlin: De Gruyter",
+      "url": "https://doi.org/10.1515/9783110454055",
+      "note": "Edited Hunayn's Arabic version of a commentary whose Greek original is lost."
+    },
+    {
+      "year": 2018,
+      "authors": "Naima Afif, Siam Bhayro, Grigory Kessel, Peter E. Pormann, William I. Sellers and Natalia Smelova",
+      "title": "The Syriac Galen Palimpsest: A Tale of Two Texts",
+      "venue": "Manuscript Studies 3 (1): 110–154",
+      "url": "https://doi.org/10.1353/mns.2018.0005",
+      "note": "Described the imaging, codicology and recovered content of the palimpsest and its value for the Greek text."
+    },
+    {
+      "year": 2020,
+      "authors": "Emilie Savage-Smith, Simon Swain and Geert Jan van Gelder (eds.)",
+      "title": "A Literary History of Medicine: The ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ of Ibn Abī Uṣaybiʿah",
+      "venue": "Leiden: Brill (open access)",
+      "url": "https://doi.org/10.1163/9789004545564",
+      "note": "Critical edition and translation of the thirteenth-century biographical dictionary whose Galen entry lists works and preserves quotations."
+    },
+    {
+      "year": 2020,
+      "authors": "Naima Afif, Peter E. Pormann, William I. Sellers, Natalia Smelova and Siam Bhayro",
+      "title": "The Syriac Text of Book Nine of On Simple Drugs: New Evidence from the Syriac Galen Palimpsest",
+      "venue": "Archives Internationales d'Histoire des Sciences 70 (184–185): 130–149",
+      "url": "https://doi.org/10.1484/j.arihs.5.122784",
+      "note": "Used a lemmatised Greek–Syriac corpus with image analysis to reconstruct the Syriac and to propose readings for the Greek."
+    },
+    {
+      "year": 2022,
+      "authors": "Uwe Vagelpohl (ed.)",
+      "title": "Galeni In Hippocratis Epidemiarum librum VI commentariorum I–VIII versio Arabica",
+      "venue": "Corpus Medicorum Graecorum, Supplementum Orientale. Berlin: De Gruyter",
+      "url": "https://doi.org/10.1515/9783110774986",
+      "note": "Edited the Arabic translation, the only complete witness to a commentary of which roughly a third is lost in Greek."
+    },
+    {
+      "year": 2024,
+      "authors": "Peter E. Pormann",
+      "title": "Translation into Syriac, Arabic, and Hebrew",
+      "venue": "In The Oxford Handbook of Galen (Oxford University Press): 512–534",
+      "url": "https://doi.org/10.1093/oxfordhb/9780190913687.013.22",
+      "note": "Current survey of the Syriac, Arabic and Hebrew transmission and of works preserved only in translation."
+    },
+    {
+      "year": 2026,
+      "authors": "Antoine Pietrobelli",
+      "title": "New Considerations on the Manuscript Thessalonicensis Vlatadon 14",
+      "venue": "Religion in the Roman Empire 12 (2): 120–146",
+      "url": "https://doi.org/10.1628/rre-2026-0011",
+      "note": "Reassessed the manuscript that yielded On Avoiding Distress, the main recent case of a lost Galenic work recovered in Greek."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Berlin-Brandenburgische Akademie der Wissenschaften, Corpus Medicorum Graecorum/Latinorum",
+      "collection": "CMG online editions, including the Supplementum Orientale of Arabic versions",
+      "url": "https://cmg.bbaw.de/epubl/online/editionen.html",
+      "digitized": "full",
+      "note": "Free PDFs of critical editions of Greek Galen and of Arabic versions, the reference texts for alignment."
+    },
+    {
+      "repository": "Berlin-Brandenburgische Akademie der Wissenschaften, Corpus Medicorum Graecorum",
+      "collection": "Gerhard Fichtner, Corpus Galenicum: Bibliographie der galenischen und pseudogalenischen Werke (updated online)",
+      "url": "https://cmg.bbaw.de/arbeitsmittel/hippokrates-und-galenbibliographie-fichtner/",
+      "digitized": "full",
+      "note": "Work-by-work list recording which Galenic texts survive in Greek, Arabic, Syriac, Hebrew and Latin, with editions."
+    },
+    {
+      "repository": "Glossarium Graeco-Arabicum (Ruhr-Universität Bochum / BBAW TELOTA)",
+      "collection": "Database of Greek–Arabic word correspondences in translated texts",
+      "url": "https://telota.bbaw.de/glossga/",
+      "digitized": "full",
+      "note": "Lexical correspondences drawn from Graeco-Arabic translations, usable to train or check alignment models."
+    },
+    {
+      "repository": "University of Manchester, Syriac Galen Palimpsest project",
+      "collection": "Processed images and digital critical edition of Galen, On Simple Drugs in Syriac",
+      "url": "https://figshare.manchester.ac.uk/articles/dataset/Syriac_Galen_Palimpsest_Processed_Images/28554083",
+      "digitized": "full",
+      "note": "Open data from multispectral and synchrotron imaging of the privately owned palimpsest."
+    },
+    {
+      "repository": "OpenITI (Open Islamicate Texts Initiative)",
+      "collection": "Machine-readable texts of al-Razi's al-Hawi fi al-tibb (0313IbnZakariyyaRazi.HawiFiTibb) and Ibn Abi Usaybi'a's ʿUyun al-anbaʾ",
+      "url": "https://openiti.org/",
+      "digitized": "full",
+      "note": "Open Arabic corpus for searching Galen quotations at scale, with uneven text quality inherited from printed editions."
+    },
+    {
+      "repository": "Süleymaniye Manuscript Library, Istanbul",
+      "collection": "Arabic medical manuscripts in the Aya Sofya, Fatih and related collections, including unique copies of Galenic translations",
+      "url": "https://portal.yek.gov.tr/",
+      "digitized": "partial",
+      "note": "Holds many of the unique witnesses used for Supplementum Orientale editions; images are available through the Turkish manuscripts portal with registration."
+    },
+    {
+      "repository": "Real Biblioteca del Monasterio de San Lorenzo de El Escorial",
+      "collection": "Arabic manuscripts (Derenbourg–Renaud catalogue, medicine)",
+      "url": "https://rbme.patrimonionacional.es/",
+      "digitized": "partial",
+      "note": "One of the largest European holdings of Arabic medical manuscripts, with Galenic translations and compilations not all edited."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

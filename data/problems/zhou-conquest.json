@@ -1,0 +1,194 @@
+{
+  "id": "zhou-conquest",
+  "title": "In what year did the Zhou conquer the Shang?",
+  "short": "More than forty proposed dates for King Wu's victory over the last Shang king span over a century, and the official choice of 1046 BCE remains disputed.",
+  "region": "East Asia",
+  "field": "Chronology",
+  "start": -1130,
+  "end": -1018,
+  "flags": [
+    "science"
+  ],
+  "matters": "The conquest year is the pivot of early Chinese absolute chronology: the reign lengths of the Western Zhou kings are counted forward from it, and the late Shang kings, including the oracle-bone reigns at Anyang, are counted back from it. The dates of hundreds of inscribed bronzes, the calendar reconstructions they depend on, and every attempt to synchronize early China with other Bronze Age societies inherit whatever error it carries. Since 841 BCE is the earliest year fixed by continuous Chinese annalistic records, the choice of conquest year also determines how much of the preceding two centuries can be treated as dated history.",
+  "stuck": "Each line of evidence fixes a date only under assumptions that the others cannot independently check: the 'current' and 'ancient' texts of the Bamboo Annals disagree with each other and with Han reckonings, the five-planet conjunction of 1059 BCE dates a portent rather than the battle, and bronze date formulas such as those on the Li gui can be fitted to many calendars depending on how lunar-phase terms are defined. Radiocarbon dates from Fengxi and Yinxu bracket the transition only to within a few decades. The Xia–Shang–Zhou Chronology Project (preliminary report 2000, final report 2022) chose 1046 BCE by combining these sources, but critics argued that its weighting of evidence was not transparent and that later bronze discoveries contradict its Western Zhou reign scheme.",
+  "solved": "A published, reproducible model that takes every dated line of evidence as an explicit likelihood (textual reign counts, astronomical retrodictions, bronze calendar data, eclipse records, calibrated radiocarbon), returns a posterior distribution for the conquest year, and reports how that distribution shifts when each contested assumption (text version, lunar-phase definition, identification of an eclipse) is changed. The answer is settled to the extent that defensible alternative assumptions yield overlapping high-probability intervals.",
+  "approach": [
+    "Compile a machine-readable corpus of all Western Zhou bronze inscriptions with full date formulas (year, month, lunar-phase term, ganzhi day) from the Academia Sinica bronze database and recent excavation reports, recording king attributions as uncertain variables.",
+    "Encode the rival interpretations of the lunar-phase terms (the four-quarters model versus Liu Xin's fixed-day model and Nivison and Shaughnessy's alternatives) and test each against the full inscription set by computing how many inscriptions each calendar can accommodate.",
+    "Retrodict the astronomical claims (the 1059 BCE conjunction, the Jupiter position implied by the Li gui and Guoyu, Shang lunar eclipses in oracle-bone inscriptions) with modern ephemerides, including uncertainty in Delta-T.",
+    "Combine these with the Bamboo Annals reign counts and the Fengxi and Yinxu radiocarbon series in a single Bayesian model (for example in OxCal or Stan), and publish the code with sensitivity runs for each contested input.",
+    "Narrowing the radiocarbon component requires collaboration with radiocarbon laboratories on new high-precision, short-lived samples from securely stratified pre- and post-conquest contexts at Fengxi and Yinxu, wiggle-matched where timber is available."
+  ],
+  "existing": [
+    {
+      "year": 1978,
+      "authors": "David N. Keightley",
+      "title": "The Bamboo Annals and Shang-Chou Chronology",
+      "venue": "Harvard Journal of Asiatic Studies 38 (2)",
+      "url": "https://doi.org/10.2307/2718906",
+      "note": "Critical assessment of how far the Bamboo Annals could be used to build an absolute chronology for the Shang and Zhou."
+    },
+    {
+      "year": 1981,
+      "authors": "Edward L. Shaughnessy",
+      "title": "\"New\" Evidence on the Zhou Conquest",
+      "venue": "Early China 6: 57–79",
+      "url": "https://doi.org/10.1017/s0362502800007719",
+      "note": "Reassessed the transmitted and epigraphic evidence for the conquest campaign and its calendar."
+    },
+    {
+      "year": 1981,
+      "authors": "David W. Pankenier",
+      "title": "Astronomical Dates in Shang and Western Zhou",
+      "venue": "Early China 7: 2–37",
+      "url": "https://doi.org/10.1017/s0362502800005599",
+      "note": "Identified Bamboo Annals accounts of planetary conjunctions with those of 1576 and 1059 BCE and used the latter to argue for a conquest in 1046 BCE."
+    },
+    {
+      "year": 1982,
+      "authors": "David S. Nivison",
+      "title": "1040 as the Date of the Chou Conquest",
+      "venue": "Early China 8: 76–78",
+      "url": "https://doi.org/10.1017/s0362502800005459",
+      "note": "Short argument for 1040 BCE based on Nivison's reconstruction of the Bamboo Annals chronology."
+    },
+    {
+      "year": 1983,
+      "authors": "David S. Nivison",
+      "title": "The Dates of Western Chou",
+      "venue": "Harvard Journal of Asiatic Studies 43 (2)",
+      "url": "https://doi.org/10.2307/2719108",
+      "note": "Long reconstruction of Western Zhou reign dates from bronze inscriptions and the Bamboo Annals, the foundation of Nivison's later proposals."
+    },
+    {
+      "year": 1985,
+      "authors": "Edward L. Shaughnessy",
+      "title": "The \"Current\" Bamboo Annals and the Date of the Zhou Conquest of Shang",
+      "venue": "Early China 11: 33–60",
+      "url": "https://doi.org/10.1017/s0362502800003965",
+      "note": "Argued that the much-disparaged 'current' text preserves authentic material and that it supports a conquest in 1045 BCE."
+    },
+    {
+      "year": 1991,
+      "authors": "Edward L. Shaughnessy",
+      "title": "Sources of Western Zhou History: Inscribed Bronze Vessels",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://doi.org/10.1525/9780520910225",
+      "note": "Standard guide to using bronze inscriptions as historical sources, with a full treatment of their date formulas and a proposed absolute chronology."
+    },
+    {
+      "year": 1992,
+      "authors": "David W. Pankenier",
+      "title": "The Bamboo Annals Revisited: Problems of Method in Using the Chronicle as a Source for the Chronology of Early Zhou, Part 1",
+      "venue": "Bulletin of the School of Oriental and African Studies 55 (2): 272–297",
+      "url": "https://doi.org/10.1017/s0041977x00004626",
+      "note": "Methodological critique of how the Bamboo Annals had been emended to yield conquest dates (Part 2 followed in the same volume)."
+    },
+    {
+      "year": 2002,
+      "authors": "Li Xueqin",
+      "title": "The Xia-Shang-Zhou Chronology Project: Methodology and Results",
+      "venue": "Journal of East Asian Archaeology 4 (1): 321–333",
+      "url": "https://doi.org/10.1163/156852302322454585",
+      "note": "English statement by the Project's chief scientist of how textual, astronomical and radiocarbon evidence were combined to reach 1046 BCE."
+    },
+    {
+      "year": 2002,
+      "authors": "Yun Kuen Lee",
+      "title": "Building the Chronology of Early Chinese History",
+      "venue": "Asian Perspectives 41 (1): 15–42",
+      "url": "https://doi.org/10.1353/asi.2002.0006",
+      "note": "Critique of the Project's methods, arguing that its integration of disparate evidence was neither transparent nor independent of its desired conclusions."
+    },
+    {
+      "year": 2005,
+      "authors": "Guo Zhiyu, Liu Kexin, Yuan Sixun et al.",
+      "title": "AMS Radiocarbon Dating of the Fengxi Site in Shaanxi, China",
+      "venue": "Radiocarbon 47 (2): 221–229",
+      "url": "https://doi.org/10.1017/s003382220001972x",
+      "note": "Bayesian calibration of a stratified pre- and post-conquest sequence at the Zhou capital, placing the conquest most probably between about 1060 and 1000 BCE."
+    },
+    {
+      "year": 2008,
+      "authors": "Edward L. Shaughnessy",
+      "title": "Chronologies of Ancient China: A Critique of the \"Xia-Shang-Zhou Chronology Project\"",
+      "venue": "In Clara Wing-chung Ho (ed.), Windows on the Chinese World. Lanham: Lexington Books, 15–28",
+      "url": "https://doi.org/10.5040/9798216495222.ch01",
+      "note": "Critique of the Project's Western Zhou chronology and of its handling of bronze and textual evidence."
+    },
+    {
+      "year": 2013,
+      "authors": "David W. Pankenier",
+      "title": "Astrology and Cosmology in Early China: Conforming Earth to Heaven",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/cbo9781139017466",
+      "note": "Places the 1059 BCE conjunction and the Mandate of Heaven ideology at the centre of a broader account of early Chinese astral thought, retaining 1046 BCE."
+    },
+    {
+      "year": 2018,
+      "authors": "David S. Nivison (ed. Adam C. Schwartz)",
+      "title": "The Nivison Annals: Selected Works of David S. Nivison on Early Chinese Chronology, Astronomy, and Historiography",
+      "venue": "Berlin and Boston: De Gruyter",
+      "url": "https://doi.org/10.1515/9781501505393",
+      "note": "Collected papers, including a record of the Nivison–Shaughnessy debate on the Bamboo Annals and Nivison's later arguments for a conquest in the 1040s."
+    },
+    {
+      "year": 2023,
+      "authors": "Edward L. Shaughnessy",
+      "title": "The Xia Shang Zhou duandai gongcheng baogao and Its Chronology of the Western Zhou Dynasty",
+      "venue": "Early China 46: 351–371",
+      "url": "https://doi.org/10.1017/eac.2024.2",
+      "note": "Review of the Project's 2022 final report, arguing that bronzes published since 2000 show its Western Zhou absolute chronology to be fundamentally flawed and that the report left it uncorrected."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "National Museum of China, Beijing",
+      "collection": "Li gui (利簋), excavated at Lintong, Shaanxi, in 1976; the only known bronze whose inscription refers directly to the conquest",
+      "url": "https://www.chnmuseum.cn/",
+      "digitized": "partial",
+      "note": "The inscription records King Wu's attack on Shang on a jiazi day and a celestial observation often read as the position of Jupiter; the object is on display and published in rubbings."
+    },
+    {
+      "repository": "Institute of History and Philology, Academia Sinica, Taipei",
+      "collection": "Oracle bones and excavation records from the 1928–1937 Anyang (Yinxu) excavations",
+      "url": "https://www1.ihp.sinica.edu.tw/",
+      "digitized": "partial",
+      "note": "Holds the excavated Shang inscriptions, including eclipse records used to fix late Shang reigns, and the field archive of the pre-war excavations."
+    },
+    {
+      "repository": "Academia Sinica Digital Archives of Bronze Images and Inscriptions",
+      "collection": "Database of Shang and Zhou bronze inscriptions (殷周金文暨青銅器資料庫), with transcriptions, rubbings and bibliography",
+      "url": "https://bronze.asdc.sinica.edu.tw/",
+      "digitized": "full",
+      "note": "Main searchable source for compiling bronze date formulas; recent finds must be added from excavation reports."
+    },
+    {
+      "repository": "Anyang Normal University",
+      "collection": "Yinqi wenyuan (殷契文渊) oracle-bone inscription database",
+      "url": "https://jgw.aynu.edu.cn/",
+      "digitized": "full",
+      "note": "Searchable images and transcriptions of published oracle-bone inscriptions, including the lunar-eclipse records."
+    },
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Zhushu jinian (Bamboo Annals, 'current' text) and other transmitted chronological sources",
+      "url": "https://ctext.org/zhushu-jinian",
+      "digitized": "full",
+      "note": "Open full text of the current Bamboo Annals; the 'ancient text' fragments must be gathered from later quotations and modern compilations."
+    },
+    {
+      "repository": "Institute of Archaeology, Chinese Academy of Social Sciences, Beijing",
+      "collection": "Excavation archives and radiocarbon dating records from Yinxu (Anyang) and Fengxi (Chang'an), including samples dated for the Chronology Project",
+      "url": "http://kaogu.cssn.cn/",
+      "digitized": "none",
+      "note": "Holds the stratified sample series on which any refined radiocarbon estimate depends; access is by institutional collaboration."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}
