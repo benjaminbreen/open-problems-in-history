@@ -275,3 +275,22 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
   .rate-list .rank { display: none; }
   .pick button { width: 40px; height: 40px; }
 }
+
+/* column header tooltips */
+.thead button[data-tip] { position: relative; }
+.thead button[data-tip]::after {
+  content: attr(data-tip); position: absolute; top: calc(100% + 10px); left: 0; z-index: 20;
+  width: max-content; max-width: 260px; padding: 9px 11px; background: var(--ink); color: var(--bg);
+  font: 400 12px/1.5 var(--mono); letter-spacing: 0; text-transform: none; text-align: left; white-space: normal;
+  opacity: 0; transform: translateY(-3px); pointer-events: none; transition: opacity .15s, transform .15s;
+}
+.thead button[data-sort="impact"]::after { max-width: 340px; }
+.thead button[data-tip]::before {
+  content: ""; position: absolute; top: calc(100% + 4px); left: 12px; border: 6px solid transparent; border-bottom-color: var(--ink); border-top: 0;
+  opacity: 0; transition: opacity .15s; pointer-events: none; z-index: 20;
+}
+.thead button[data-tip]:hover::after, .thead button[data-tip]:focus-visible::after { opacity: 1; transform: none; transition-delay: .25s; }
+.thead button[data-tip]:hover::before, .thead button[data-tip]:focus-visible::before { opacity: 1; transition-delay: .25s; }
+.thead button[data-sort="discussed"]::after { left: auto; right: 0; }
+.thead button[data-sort="discussed"]::before { left: auto; right: 12px; }
+@media (hover: none) { .thead button[data-tip]::after, .thead button[data-tip]::before { display: none; } }

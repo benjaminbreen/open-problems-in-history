@@ -65,7 +65,16 @@ function seg(name, label, options) {
 }
 
 function renderList() {
-  const col = (k, l) => `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}">${l}</button>`;
+  const col = (k, l) => `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" data-tip="${esc(tips[k])}" aria-description="${esc(tips[k])}">${l}</button>`;
+  const tips = {
+    impact: impactTip(),
+    votes: "Readers' upvotes minus downvotes. One vote per browser per problem.",
+    title: "Alphabetical by question.",
+    field: "Grouped by field of history.",
+    region: "Grouped by region.",
+    period: "Ordered by the earliest date the problem concerns.",
+    discussed: "Ordered by number of published comments.",
+  };
   app.innerHTML = `
     <div class="tools">
       <input type="search" id="q" placeholder="Search problems, authors, archives" value="${esc(view.q)}" aria-label="Search problems">
@@ -79,6 +88,15 @@ function renderList() {
   const q = app.querySelector("#q");
   q.addEventListener("input", () => { view.q = q.value; renderRows(); });
   renderRows();
+}
+
+function impactTip() {
+  const { historians = 0, models = {} } = state.panel || {};
+  const n = (k, one, many) => `${k} ${k === 1 ? one : many}`;
+  const ai = Object.entries(models).map(([m, k]) => `${n(k, "rating", "ratings")} from ${m}`);
+  if (!historians && !ai.length) return "How much a solution would change historical understanding, rated 1–5 by historians and AI models. No ratings yet, so problems are ordered by period.";
+  const who = [historians ? n(historians, "professional historian", "professional historians") : "", ai.length ? `AI judges (${ai.join(", ")})` : ""].filter(Boolean).join(" and ");
+  return `How much a solution would change historical understanding, rated 1–5 by ${who}. Each rater's scores are standardised against their own average. Historians count for two-thirds of the ranking and the AI judges together for one-third; repeated runs of one model count as a single judge. Problems with few ratings are pulled toward the middle.`;
 }
 
 function renderRows() {
