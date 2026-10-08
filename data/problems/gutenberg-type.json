@@ -6,11 +6,17 @@
   "field": "Material & visual",
   "start": 1450,
   "end": 1470,
-  "flags": ["science"],
+  "flags": [
+    "science"
+  ],
   "matters": "The standard account of printing's origin credits Gutenberg with a system of steel punches, copper matrices and an adjustable hand mould, the method that let typefounders produce interchangeable sorts for the next four centuries. If the earliest Mainz types were instead cast from temporary or multiple matrices, the hand mould becomes a later development, possibly from the 1460s, and the chronology of technical invention, the roles of Gutenberg, Fust and Schoeffer, and comparisons with East Asian metal type all need revision. Methods for attributing and dating incunabula from type damage and sort identity also depend on what a 'single sort' is.",
   "stuck": "Agüera y Arcas and Needham's computational clustering of the DK type found far more distinct shapes per letter than a single-matrix system should produce, but their full data and methods were only partly published. Critics, above all Reske, argue that inking, paper, pressure, wear and photography generate apparent variation large enough to swamp the signal, so that algorithmic clustering of printed impressions cannot by itself identify matrices. No surviving type, punches or moulds from Gutenberg's shop exist, so the argument rests entirely on inferences from printed impressions.",
   "solved": "A published, reproducible dataset of every instance of selected letters across multiple copies of the DK-type prints and the 42-line Bible, with a casting model whose predicted distribution of within-letter variation matches the observed one significantly better than the alternatives, and which is consistent with impressions from experimentally cast type.",
-  "approach": "Agents can segment and register every glyph instance from the high-resolution digitizations of several B42 copies and the surviving DK-type prints, separating variation that recurs at the same text position across copies (press or inking effects) from variation that recurs across positions (sort identity). Competing casting processes (single matrix and hand mould, multiple matrices, temporary sand or clay matrices, composite punches) can then be simulated and their predicted variation compared with the observed clusters. Decisive confirmation would require collaboration with typefounders and materials scientists to cast type by each candidate method, print with period materials, and pass the impressions through the same pipeline.",
+  "approach": [
+    "Agents can segment and register every glyph instance from the high-resolution digitizations of several B42 copies and the surviving DK-type prints, separating variation that recurs at the same text position across copies (press or inking effects) from variation that recurs across positions (sort identity).",
+    "Competing casting processes (single matrix and hand mould, multiple matrices, temporary sand or clay matrices, composite punches) can then be simulated and their predicted variation compared with the observed clusters.",
+    "Decisive confirmation would require collaboration with typefounders and materials scientists to cast type by each candidate method, print with period materials, and pass the impressions through the same pipeline."
+  ],
   "existing": [
     {
       "year": 1969,
@@ -135,5 +141,11 @@
       "digitized": "none",
       "note": "Holds one of the earliest DK-type prints examined by Reske and is a natural partner for casting experiments."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

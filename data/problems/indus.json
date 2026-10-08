@@ -12,7 +12,11 @@
   "matters": "If the Indus signs are writing, the Harappan civilization was literate and every proposed decipherment (Dravidian, Indo-Aryan, Munda or other) is a legitimate project; if not, it becomes the main case of a large urban society administered without writing, which changes comparative accounts of states and bureaucracy. The answer also governs how seals, tags and pot inscriptions are read as evidence for trade, taxation and identity across a region of perhaps a million square kilometres.",
   "stuck": "Inscriptions average about five signs and the longest have only a few dozen, so statistical signatures that distinguish languages from other systems are weak at this length. Farmer, Sproat and Witzel (2004) argued the brevity and sign-repetition patterns are incompatible with writing; Rao et al. (2009) answered that conditional entropy places the corpus within the range of linguistic scripts; Sproat (2010, 2014) showed that several non-linguistic systems also fall in that range. The corpora used by different teams differ in sign lists (roughly 400 to 700 signs) and inclusion rules, and the most complete database (ICIT) requires permission to access.",
   "solved": "A pre-registered battery of measures, fixed before the Indus data are scored, classifies a large set of known writing systems and non-linguistic systems (heraldry, mason's marks, deity symbols, administrative codes) correctly when all are trimmed to the Indus length distribution, and then assigns the Indus corpus to one class with stated error rates that are robust to choice of sign list.",
-  "approach": "Assemble an open, versioned Indus corpus reconciling the Mahadevan, CISI and ICIT sign lists, and build comparison corpora of known scripts and non-linguistic systems sampled to match Indus text lengths, object types and sign inventories, extending Sproat's 2014 dataset. Fix the classifier and thresholds in a public pre-registration, then report results across alternative sign segmentations. Progress depends on negotiated open access to ICIT and to the CISI photographic archive, and on recording unpublished excavated material from Pakistan and India.",
+  "approach": [
+    "Assemble an open, versioned Indus corpus reconciling the Mahadevan, CISI and ICIT sign lists, and build comparison corpora of known scripts and non-linguistic systems sampled to match Indus text lengths, object types and sign inventories, extending Sproat's 2014 dataset.",
+    "Fix the classifier and thresholds in a public pre-registration, then report results across alternative sign segmentations.",
+    "Progress depends on negotiated open access to ICIT and to the CISI photographic archive, and on recording unpublished excavated material from Pakistan and India."
+  ],
   "existing": [
     {
       "year": 1977,
@@ -155,5 +159,11 @@
       "digitized": "none",
       "note": "Recent excavations have added inscriptions not yet in the corpora; recording them requires collaboration with the excavating authorities."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

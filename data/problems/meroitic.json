@@ -12,7 +12,11 @@
   "matters": "Meroitic is the oldest written language of sub-Saharan Africa and the administrative and royal language of Kush for some seven centuries. The long royal stelae, temple texts and chronicles almost certainly record wars with Rome, succession and religious practice from a Kushite point of view; at present historians rely on Greek, Latin and Egyptian sources for that history. A secure classification would also date the spread of Northern East Sudanic languages along the Nile, which bears on Nubian linguistic and population history.",
   "stuck": "The script's sound values were recovered from Egyptian names, but there is no substantial bilingual text, and the language has no close, well-documented descendant. Most of the corpus consists of funerary inscriptions with predictable formulae, so the vocabulary securely understood is small, by most accounts on the order of a hundred words, and grammar is reconstructed mainly from those formulae. Classification is disputed: Rilly argues for the Northern East Sudanic branch with Nubian, Nara, Taman and Nyima, while Rowan and Lipiński have argued for an Afroasiatic affiliation.",
   "solved": "A lexicon and grammar, fixed before testing, yield translations of held-out non-funerary passages (for example sections of royal stelae or temple texts) that independent specialists judge consistent with their archaeological, iconographic and historical context, and that correctly predict content later confirmed by newly found or newly published inscriptions.",
-  "approach": "Convert the REM corpus and inscriptions published since 2000 into a machine-readable, lemmatized corpus with find context, object type and date. Use reconstructed Proto-Northern East Sudanic and Old Nubian vocabulary to generate constrained translation hypotheses, and test them against held-out passages whose context (offering scenes, lists of places, military iconography) predicts parts of the content. Comparative work needs collaboration with Nubian and Nilo-Saharan linguists, and the corpus needs digitization of inscriptions excavated after 2000 and photographs held by excavation missions, given reported damage to collections in Khartoum during the war that began in 2023.",
+  "approach": [
+    "Convert the REM corpus and inscriptions published since 2000 into a machine-readable, lemmatized corpus with find context, object type and date.",
+    "Use reconstructed Proto-Northern East Sudanic and Old Nubian vocabulary to generate constrained translation hypotheses, and test them against held-out passages whose context (offering scenes, lists of places, military iconography) predicts parts of the content.",
+    "Comparative work needs collaboration with Nubian and Nilo-Saharan linguists, and the corpus needs digitization of inscriptions excavated after 2000 and photographs held by excavation missions, given reported damage to collections in Khartoum during the war that began in 2023."
+  ],
   "existing": [
     {
       "year": 1909,
@@ -139,5 +143,11 @@
       "digitized": "partial",
       "note": "Searchable through SMB-digital; includes temple and royal inscriptions as well as funerary material."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

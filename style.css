@@ -183,3 +183,24 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 @media (max-width: 640px) {
   .foot-sig .quiet { position: static; display: block; text-align: center; margin-top: 18px; }
 }
+
+/* provenance and AI attribution */
+.prov { margin: 14px 0 4px; font-size: 11.5px; color: var(--muted); }
+.agent { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; cursor: help; border-bottom: 1px dotted var(--muted); line-height: 1.2; vertical-align: -1px; }
+.agent .bot { width: 12px; height: 12px; flex: none; color: var(--ink-2); }
+.comment .who .agent { color: var(--ink); font-weight: 600; }
+
+/* potential approach */
+ul.steps { margin: 0; padding: 0; list-style: none; max-width: 46em; }
+.steps li { position: relative; padding-left: 22px; margin: 0 0 9px; font: 17px/1.5 var(--serif); }
+.steps li::before { content: ""; position: absolute; left: 3px; top: .62em; width: 7px; height: 7px; background: var(--accent); }
+.ideas h3 { font-size: 11.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; margin: 22px 0 10px; }
+.ideas .comment { border-left: 3px solid var(--rule); padding-left: 14px; max-width: 46em; }
+.idea-toggle { margin: 14px 0 6px; font-size: 13px; color: var(--ink); text-decoration-color: var(--accent); }
+.slide { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .3s ease; }
+.slide > div { overflow: hidden; }
+.slide.open { grid-template-rows: 1fr; }
+.slide.open > div { padding: 8px 0 6px; }
+.cf-row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+@media (max-width: 640px) { .cf-row { grid-template-columns: 1fr; } }
+.sbody > p.prov { font: 11.5px/1.6 var(--mono); color: var(--muted); }

@@ -12,7 +12,11 @@
   "matters": "Vermeer is the test case for broader claims that optical projection shaped European naturalism, including the Hockney–Falco thesis, and for how far seventeenth-century Dutch painting drew on contemporary optics in Delft, the city of Leeuwenhoek. The answer bears on how his paintings were made (tracing, transfer or free construction), on attributions and chronology based on technique, and on whether instruments such as the camera obscura were working tools for painters or mainly objects of natural-philosophical interest.",
   "stuck": "No document records Vermeer owning or using an optical device, and the 1676 inventory of his household lists none. The visual evidence (halation, differential focus, perspective and scale relationships) is compatible with optical observation but can also be produced by skilled painting, and proponents and critics have relied on different paintings and different reconstructions. Recent technical imaging has shown underpainting and revisions that complicate any model of direct tracing without settling whether projection was used at some stage.",
   "solved": "A quantitative model of the geometry, scale and focus effects predicted by specific optical set-ups in a reconstructed studio, tested across all securely attributed paintings and against their underdrawings and pinhole evidence, that either fits significantly better than free-hand construction with a pin-and-string perspective or is shown to add no explanatory power.",
-  "approach": "Agents can assemble a structured corpus of Vermeer's paintings with published technical imaging (infrared reflectography, MA-XRF, X-radiography, pinhole locations), extract perspective lines, object sizes and focus gradients, and test them against simulated projections from the room geometries reconstructed by Steadman and others. A parallel search of Delft notarial, guild and Jesuit records, and of optical literature circulating in the Dutch Republic, could look for documentary links. Confirmation needs collaboration with museum conservation scientists for access to full-resolution technical datasets and with optical engineers for physical reconstructions.",
+  "approach": [
+    "Agents can assemble a structured corpus of Vermeer's paintings with published technical imaging (infrared reflectography, MA-XRF, X-radiography, pinhole locations), extract perspective lines, object sizes and focus gradients, and test them against simulated projections from the room geometries reconstructed by Steadman and others.",
+    "A parallel search of Delft notarial, guild and Jesuit records, and of optical literature circulating in the Dutch Republic, could look for documentary links.",
+    "Confirmation needs collaboration with museum conservation scientists for access to full-resolution technical datasets and with optical engineers for physical reconstructions."
+  ],
   "existing": [
     {
       "year": 1964,
@@ -153,5 +157,11 @@
       "digitized": "full",
       "note": "1,280 Amsterdam inventories (1597–1681), useful for establishing how often optical instruments appear in Dutch households alongside paintings."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

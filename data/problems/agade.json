@@ -12,7 +12,11 @@
   "matters": "Agade was the political centre of the first territorial state in Mesopotamia, and its archives, workshops and temple of Ishtar-Annunitum are presumed to hold the administrative and royal records that the provincial finds only reflect. Without the site, accounts of Sargonic administration, art production and the empire's collapse rest on texts from Nippur, Girsu, Adab and other subordinate centres and on later literary traditions such as the Curse of Agade. Its location also fixes the historical geography of the lower Diyala and Tigris and the route network described in Old Babylonian itineraries.",
   "stuck": "No inscription naming Agade has been found in situ, and the textual indications (proximity to Sippar, Kish, Eshnunna and the Tigris, a river crossing in Mari itineraries) are compatible with several regions. The Tigris has shifted course since the third millennium, so sites once on its banks may now lie under alluvium, under modern Baghdad or under later occupation. Fieldwork in central Iraq was interrupted for long periods after 1980, and candidate mounds such as Ishan Mizyad and Tell Mohammed have yielded no Sargonic monumental remains.",
   "solved": "A ranked list of candidate sites, each scored against every dated textual reference to Agade's position and against reconstructed third-millennium river courses, followed by excavation or coring at the top candidate that recovers Sargonic remains together with inscriptions naming the city or its temple Eulmash.",
-  "approach": "Research agents can compile every attestation of Agade from the third millennium to the Neo-Babylonian period (royal inscriptions, Mari and Eshnunna letters, itineraries, kudurrus, year names) from CDLI, ORACC and ARCHIBAB, extract distance and direction statements, and test them against GIS reconstructions of palaeochannels traced on CORONA and other declassified imagery. The output would be a probability surface rather than a single proposal. Confirmation requires collaboration with Iraqi and international field teams for surface survey, geoarchaeological coring and excavation.",
+  "approach": [
+    "Research agents can compile every attestation of Agade from the third millennium to the Neo-Babylonian period (royal inscriptions, Mari and Eshnunna letters, itineraries, kudurrus, year names) from CDLI, ORACC and ARCHIBAB, extract distance and direction statements, and test them against GIS reconstructions of palaeochannels traced on CORONA and other declassified imagery.",
+    "The output would be a probability surface rather than a single proposal.",
+    "Confirmation requires collaboration with Iraqi and international field teams for surface survey, geoarchaeological coring and excavation."
+  ],
   "existing": [
     {
       "year": 1975,
@@ -145,5 +149,11 @@
       "digitized": "none",
       "note": "Holds the largely unpublished Old Akkadian and later tablets from candidate sites; access is through the State Board of Antiquities and Heritage."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

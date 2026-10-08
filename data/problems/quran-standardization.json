@@ -13,7 +13,11 @@
   "matters": "The date at which the consonantal skeleton (rasm) was fixed determines how far the text can be used as evidence for the first decades of Islam, how its relation to Muhammad's preaching is assessed, and how the early caliphate's religious authority is understood. A mid-seventh-century closure supports reading the Qurʾān as a near-contemporary witness; a Marwanid or later closure would allow for substantial editorial shaping during the conquest period. The question also bears on the history of Arabic orthography and on the reliability of the Islamic tradition's accounts of collection.",
   "stuck": "The earliest manuscripts are fragmentary, undated, dispersed across collections and often published only in part, and the Sanaa lower text survives as an erased palimpsest. Radiocarbon dates give the death of the animal whose skin became parchment, not the date of writing, and their ranges often span several decades on either side of 650 and 700. The literary accounts of ʿUthmān's and al-Ḥajjāj's interventions were recorded later and are read differently by scholars with different views of the tradition's reliability.",
   "solved": "A published stemmatic analysis of all variants in the dated and datable manuscripts (including the Sanaa lower text and the regional-codex variants), using shared orthographic errors to test whether the surviving Uthmanic-type manuscripts descend from a single written archetype, combined with a radiocarbon and palaeographic model that bounds when that archetype was produced, with results reproducible from open data.",
-  "approach": "Agents can align the transcriptions of early manuscripts available through Corpus Coranicum and published editions, code every orthographic and textual variant, and apply phylogenetic and stemmatic methods to test single-archetype and multiple-source models. The same dataset can be linked to radiocarbon results, palaeographic classes and the variants attributed to regional codices in the literary tradition. Progress needs digitization and publication of fragments held in Sanaa and elsewhere, in collaboration with their custodians, and further radiocarbon and multispectral imaging work with laboratories.",
+  "approach": [
+    "Agents can align the transcriptions of early manuscripts available through Corpus Coranicum and published editions, code every orthographic and textual variant, and apply phylogenetic and stemmatic methods to test single-archetype and multiple-source models.",
+    "The same dataset can be linked to radiocarbon results, palaeographic classes and the variants attributed to regional codices in the literary tradition.",
+    "Progress needs digitization and publication of fragments held in Sanaa and elsewhere, in collaboration with their custodians, and further radiocarbon and multispectral imaging work with laboratories."
+  ],
   "existing": [
     {
       "year": 1977,
@@ -164,5 +168,11 @@
       "digitized": "partial",
       "note": "Open database with images, transliterations and metadata for many early Qurʾān manuscripts, the main platform for systematic comparison."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

@@ -10,7 +10,11 @@
   "matters": "The volume of silver entering China is central to the argument that world trade became global after the founding of Manila in 1571, to explanations of the Ming fiscal shift to silver, and to debates over whether a contraction of silver imports helped bring down the Ming in the 1630s–40s. It also bears on European price history, on the Dutch and English East India Companies' balance of trade, and on nineteenth-century arguments that the reversal of silver flows destabilised the Qing.",
   "stuck": "Silver reached China by several routes (the Manila galleons, the Cape route via European companies, overland through Central Asia, and from Japan, which was a larger supplier than the Americas for parts of the period), and each route is documented in different archives with different biases. Registered mint and treasury output understates production because of contraband and unregistered silver, and smuggling on the Acapulco–Manila route was extensive. Chinese sources record taxes, prices and exchange rates rather than imports, so arrivals must be inferred, and published estimates (Barrett, Flynn and Giráldez, von Glahn, TePaske) rest on different assumptions about leakage, re-export and Japanese supply.",
   "solved": "A route-by-route, decade-by-decade mass balance for 1550–1800 in which American registered production plus an explicit contraband estimate equals the sum of silver retained in the Americas, shipped to Europe, re-exported to Asia, and carried across the Pacific, with China's share derived from these flows and checked against Japanese exports and Chinese monetary indicators (silver–copper exchange rates, tax receipts in silver, price levels).",
-  "approach": "Agents can assemble the published quantitative series (TePaske's mint and treasury data, Garner's mining series, VOC and East India Company bullion exports, galleon registers, Japanese export estimates) into one linked dataset with source citations and documented units, then flag gaps and double counting between routes. Historians can specify alternative contraband and re-export assumptions and see how each changes the China total, while agents search the AGI, AGN and VOC finding aids for unused series (for example Manila customs and Acapulco registers) that would narrow the largest uncertainties. Chinese provincial price and exchange-rate data from the Qing archives provide an independent test of the timing of inflows.",
+  "approach": [
+    "Agents can assemble the published quantitative series (TePaske's mint and treasury data, Garner's mining series, VOC and East India Company bullion exports, galleon registers, Japanese export estimates) into one linked dataset with source citations and documented units, then flag gaps and double counting between routes.",
+    "Historians can specify alternative contraband and re-export assumptions and see how each changes the China total, while agents search the AGI, AGN and VOC finding aids for unused series (for example Manila customs and Acapulco registers) that would narrow the largest uncertainties.",
+    "Chinese provincial price and exchange-rate data from the Qing archives provide an independent test of the timing of inflows."
+  ],
   "existing": [
     {
       "year": 1965,
@@ -168,5 +172,11 @@
       "digitized": "partial",
       "note": "Chinese-side evidence for timing and effects of silver inflows; access onsite by application, with some series online."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

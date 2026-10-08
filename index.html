@@ -4,44 +4,636 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Problems in History</title>
-<meta name="description" content="Open problems in history that historians and AI research agents could plausibly solve.">
+<meta name="description" content="Open problems in history that historians working with AI research agents could plausibly solve. Vote, comment, propose approaches, suggest problems.">
+<link rel="alternate" type="application/json" href="/api/problems">
+<link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt">
 <script>try { const t = localStorage.getItem("op.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="shared/signature.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/shared/signature.css">
+<link rel="stylesheet" href="/style.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>">
 </head>
 <body>
 <header class="top">
-  <a class="mark" href="#/">Open Problems in History</a>
+  <a class="mark" href="/">Open Problems in History</a>
   <nav>
-    <a href="#/" data-nav="list">Problems</a>
-    <a href="#/suggest" data-nav="suggest">Suggest a problem</a>
-    <a href="#/contact" data-nav="contact">Contact</a>
+    <a href="/" data-nav="list">Problems</a>
+    <a href="/suggest" data-nav="suggest">Suggest a problem</a>
+    <a href="/contact" data-nav="contact">Contact</a>
     <button class="mode" type="button" aria-label="Switch light or dark">◐</button>
   </nav>
 </header>
-<main id="app" tabindex="-1"></main>
+<main id="app" tabindex="-1"><ol class="list">
+    <li class="row" id="r-proto-elamite">
+      <span class="rank">1</span>
+      <div class="vote" data-id="proto-elamite">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/proto-elamite">Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?</a>
+        <p class="short">Iran&#39;s earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Languages &amp; scripts · Middle East · 3300–1880 BCE</div>
+      </div>
+      <span class="c">Languages &amp; scripts</span>
+      <span class="c">Middle East</span>
+      <span class="c per">3300–1880 BCE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="proto-elamite" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="proto-elamite"></div>
+    </li>
+    <li class="row" id="r-indus">
+      <span class="rank">2</span>
+      <div class="vote" data-id="indus">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/indus">Does the Indus script encode language, or a non-linguistic sign system?</a>
+        <p class="short">Whether the short Harappan inscriptions record speech at all has been argued with entropy statistics for two decades; no test yet separates writing from emblem systems decisively.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Languages &amp; scripts · South Asia · 2600–1900 BCE</div>
+      </div>
+      <span class="c">Languages &amp; scripts</span>
+      <span class="c">South Asia</span>
+      <span class="c per">2600–1900 BCE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="indus" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="indus"></div>
+    </li>
+    <li class="row" id="r-agade">
+      <span class="rank">3</span>
+      <div class="vote" data-id="agade">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/agade">Where was Agade, the capital of the Sargonic empire?</a>
+        <p class="short">The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Places · Middle East · 2350–539 BCE</div>
+      </div>
+      <span class="c">Places</span>
+      <span class="c">Middle East</span>
+      <span class="c per">2350–539 BCE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="agade" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="agade"></div>
+    </li>
+    <li class="row" id="r-mesopotamian-chronology">
+      <span class="rank">4</span>
+      <div class="vote" data-id="mesopotamian-chronology">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/mesopotamian-chronology">What is the absolute chronology of early second-millennium BCE Mesopotamia?</a>
+        <p class="short">Competing High, Middle, Low and Ultra-Low chronologies place Hammurabi and the fall of Babylon up to about 150 years apart; no single model integrates all the evidence.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Chronology · Middle East · 2000–1500 BCE</div>
+      </div>
+      <span class="c">Chronology</span>
+      <span class="c">Middle East</span>
+      <span class="c per">2000–1500 BCE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="mesopotamian-chronology" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="mesopotamian-chronology"></div>
+    </li>
+    <li class="row" id="r-linear-a">
+      <span class="rank">5</span>
+      <div class="vote" data-id="linear-a">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/linear-a">What language does Linear A record, and can any proposed family beat chance?</a>
+        <p class="short">Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.</p>
+        
+        <div class="m">Languages &amp; scripts · Mediterranean · 1800–1450 BCE</div>
+      </div>
+      <span class="c">Languages &amp; scripts</span>
+      <span class="c">Mediterranean</span>
+      <span class="c per">1800–1450 BCE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="linear-a" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="linear-a"></div>
+    </li>
+    <li class="row" id="r-meroitic">
+      <span class="rank">6</span>
+      <div class="vote" data-id="meroitic">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/meroitic">Can the Meroitic language be translated beyond its funerary formulae?</a>
+        <p class="short">Meroitic script has been readable since Griffith&#39;s work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Languages &amp; scripts · Africa · 300 BCE–450 CE</div>
+      </div>
+      <span class="c">Languages &amp; scripts</span>
+      <span class="c">Africa</span>
+      <span class="c per">300 BCE–450 CE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="meroitic" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="meroitic"></div>
+    </li>
+    <li class="row" id="r-ptolemy">
+      <span class="rank">7</span>
+      <div class="vote" data-id="ptolemy">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/ptolemy">Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus&#39;s?</a>
+        <p class="short">Ptolemy&#39;s catalogue of about 1,025 stars claims his own observations; statistical anomalies suggest much of it derives from Hipparchus three centuries earlier.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Science &amp; knowledge · Mediterranean · 135 BCE–160 CE</div>
+      </div>
+      <span class="c">Science &amp; knowledge</span>
+      <span class="c">Mediterranean</span>
+      <span class="c per">135 BCE–160 CE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="ptolemy" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="ptolemy"></div>
+    </li>
+    <li class="row" id="r-roman-census">
+      <span class="rank">8</span>
+      <div class="vote" data-id="roman-census">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/roman-census">How large was the Roman citizen population in the late Republic and under Augustus?</a>
+        <p class="short">Roman census totals jump from about 910,000 in 70/69 BCE to 4,063,000 in 28 BCE; whether this reflects a change in who was counted or real growth remains disputed.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Demography · Mediterranean · 115 BCE–14 CE</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">Mediterranean</span>
+      <span class="c per">115 BCE–14 CE</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="roman-census" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="roman-census"></div>
+    </li>
+    <li class="row" id="r-justinianic-plague">
+      <span class="rank">9</span>
+      <div class="vote" data-id="justinianic-plague">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/justinianic-plague">How many people did the Justinianic Plague kill, and did it change late antique society?</a>
+        <p class="short">Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Disease · Mediterranean · 541–750</div>
+      </div>
+      <span class="c">Disease</span>
+      <span class="c">Mediterranean</span>
+      <span class="c per">541–750</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="justinianic-plague" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="justinianic-plague"></div>
+    </li>
+    <li class="row" id="r-quran-standardization">
+      <span class="rank">10</span>
+      <div class="vote" data-id="quran-standardization">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/quran-standardization">When was the consonantal text of the Qurʾān standardized?</a>
+        <p class="short">Islamic tradition credits the caliph ʿUthmān (c. 650); some scholars place closure under ʿAbd al-Malik and al-Ḥajjāj (c. 700) or later. Manuscript evidence is now testing these positions.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Texts &amp; authorship · Middle East · 632–750</div>
+      </div>
+      <span class="c">Texts &amp; authorship</span>
+      <span class="c">Middle East</span>
+      <span class="c per">632–750</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="quran-standardization" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="quran-standardization"></div>
+    </li>
+    <li class="row" id="r-beowulf">
+      <span class="rank">11</span>
+      <div class="vote" data-id="beowulf">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/beowulf">When was Beowulf composed?</a>
+        <p class="short">Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.</p>
+        
+        <div class="m">Chronology · Europe · 680–1020</div>
+      </div>
+      <span class="c">Chronology</span>
+      <span class="c">Europe</span>
+      <span class="c per">680–1020</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="beowulf" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="beowulf"></div>
+    </li>
+    <li class="row" id="r-song-iron">
+      <span class="rank">12</span>
+      <div class="vote" data-id="song-iron">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/song-iron">How much iron did Song China produce in the eleventh century?</a>
+        <p class="short">Robert Hartwell&#39;s estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Economy · East Asia · 960–1127</div>
+      </div>
+      <span class="c">Economy</span>
+      <span class="c">East Asia</span>
+      <span class="c per">960–1127</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="song-iron" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="song-iron"></div>
+    </li>
+    <li class="row" id="r-gunpowder">
+      <span class="rank">13</span>
+      <div class="vote" data-id="gunpowder">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/gunpowder">By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century?</a>
+        <p class="short">Gunpowder formulas appear in China by 1044 and in Arabic and Latin texts by the later 1200s, but the path between them is unattested.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Science &amp; knowledge · Global · 1040–1350</div>
+      </div>
+      <span class="c">Science &amp; knowledge</span>
+      <span class="c">Global</span>
+      <span class="c per">1040–1350</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="gunpowder" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="gunpowder"></div>
+    </li>
+    <li class="row" id="r-copernicus-maragha">
+      <span class="rank">14</span>
+      <div class="vote" data-id="copernicus-maragha">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/copernicus-maragha">How, if at all, did Copernicus learn of the Maragha-school planetary models?</a>
+        <p class="short">Copernicus used devices found earlier in al-Ṭūsī and Ibn al-Shāṭir, but no document shows how a text containing them reached him or his teachers.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Science &amp; knowledge · Europe · 1250–1543</div>
+      </div>
+      <span class="c">Science &amp; knowledge</span>
+      <span class="c">Europe</span>
+      <span class="c per">1250–1543</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="copernicus-maragha" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="copernicus-maragha"></div>
+    </li>
+    <li class="row" id="r-black-death-africa">
+      <span class="rank">15</span>
+      <div class="vote" data-id="black-death-africa">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/black-death-africa">Did the Black Death reach sub-Saharan Africa in the fourteenth century?</a>
+        <p class="short">Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Disease · Africa · 1340–1500</div>
+      </div>
+      <span class="c">Disease</span>
+      <span class="c">Africa</span>
+      <span class="c per">1340–1500</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="black-death-africa" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="black-death-africa"></div>
+    </li>
+    <li class="row" id="r-kerala-jesuits">
+      <span class="rank">16</span>
+      <div class="vote" data-id="kerala-jesuits">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/kerala-jesuits">Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries?</a>
+        <p class="short">Madhava&#39;s school derived power series for π, sine and cosine before 1500; whether Jesuits in Kerala carried them to Europe remains undocumented.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Science &amp; knowledge · South Asia · 1350–1700</div>
+      </div>
+      <span class="c">Science &amp; knowledge</span>
+      <span class="c">South Asia</span>
+      <span class="c per">1350–1700</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="kerala-jesuits" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="kerala-jesuits"></div>
+    </li>
+    <li class="row" id="r-khipu">
+      <span class="rank">17</span>
+      <div class="vote" data-id="khipu">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/khipu">Do khipus record more than numbers, and can their non-numerical signs be read?</a>
+        <p class="short">Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Languages &amp; scripts · Americas · 1400–1800</div>
+      </div>
+      <span class="c">Languages &amp; scripts</span>
+      <span class="c">Americas</span>
+      <span class="c per">1400–1800</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="khipu" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="khipu"></div>
+    </li>
+    <li class="row" id="r-gutenberg-type">
+      <span class="rank">18</span>
+      <div class="vote" data-id="gutenberg-type">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/gutenberg-type">How did Gutenberg cast his type?</a>
+        <p class="short">Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Material &amp; visual · Europe · 1450–1470</div>
+      </div>
+      <span class="c">Material &amp; visual</span>
+      <span class="c">Europe</span>
+      <span class="c per">1450–1470</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="gutenberg-type" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="gutenberg-type"></div>
+    </li>
+    <li class="row" id="r-lost-editions">
+      <span class="rank">19</span>
+      <div class="vote" data-id="lost-editions">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/lost-editions">How many early printed editions have been lost without trace?</a>
+        <p class="short">Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.</p>
+        
+        <div class="m">Texts &amp; authorship · Europe · 1450–1600</div>
+      </div>
+      <span class="c">Texts &amp; authorship</span>
+      <span class="c">Europe</span>
+      <span class="c per">1450–1600</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="lost-editions" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="lost-editions"></div>
+    </li>
+    <li class="row" id="r-americas-1492">
+      <span class="rank">20</span>
+      <div class="vote" data-id="americas-1492">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/americas-1492">How many people lived in the Americas in 1492?</a>
+        <p class="short">Estimates of the hemisphere&#39;s population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Demography · Americas · 1492–1650</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">Americas</span>
+      <span class="c per">1492–1650</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="americas-1492" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="americas-1492"></div>
+    </li>
+    <li class="row" id="r-indigenous-slavery">
+      <span class="rank">21</span>
+      <div class="vote" data-id="indigenous-slavery">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/indigenous-slavery">How many Indigenous people were enslaved in the Americas between 1492 and 1900?</a>
+        <p class="short">Andrés Reséndez&#39;s estimate of 2.5 to 5 million enslaved Indigenous people is the only hemispheric figure, and it rests on regional extrapolation rather than a count.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Demography · Americas · 1492–1900</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">Americas</span>
+      <span class="c per">1492–1900</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="indigenous-slavery" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="indigenous-slavery"></div>
+    </li>
+    <li class="row" id="r-indian-ocean-slave-trade">
+      <span class="rank">22</span>
+      <div class="vote" data-id="indian-ocean-slave-trade">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/indian-ocean-slave-trade">How many people were carried in the Indian Ocean slave trades, 1500–1850?</a>
+        <p class="short">European slave trading in the Indian Ocean has been tentatively counted, but the combined volume of Dutch, Portuguese, French, British, Arab, Swahili and South Asian trades remains unknown.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Economy · Indian Ocean · 1500–1850</div>
+      </div>
+      <span class="c">Economy</span>
+      <span class="c">Indian Ocean</span>
+      <span class="c per">1500–1850</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="indian-ocean-slave-trade" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="indian-ocean-slave-trade"></div>
+    </li>
+    <li class="row" id="r-ottoman-tahrir">
+      <span class="rank">23</span>
+      <div class="vote" data-id="ottoman-tahrir">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/ottoman-tahrir">Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?</a>
+        <p class="short">Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Demography · Middle East · 1520–1700</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">Middle East</span>
+      <span class="c per">1520–1700</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="ottoman-tahrir" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="ottoman-tahrir"></div>
+    </li>
+    <li class="row" id="r-silver-china">
+      <span class="rank">24</span>
+      <div class="vote" data-id="silver-china">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/silver-china">How much American silver reached China between 1550 and 1800?</a>
+        <p class="short">Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.</p>
+        
+        <div class="m">Economy · Global · 1550–1800</div>
+      </div>
+      <span class="c">Economy</span>
+      <span class="c">Global</span>
+      <span class="c per">1550–1800</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="silver-china" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="silver-china"></div>
+    </li>
+    <li class="row" id="r-china-1600">
+      <span class="rank">25</span>
+      <div class="vote" data-id="china-1600">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/china-1600">How many people lived in China around 1600, and how many died between 1620 and 1680?</a>
+        <p class="short">Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.</p>
+        
+        <div class="m">Demography · East Asia · 1580–1680</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">East Asia</span>
+      <span class="c per">1580–1680</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="china-1600" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="china-1600"></div>
+    </li>
+    <li class="row" id="r-irish-1641">
+      <span class="rank">26</span>
+      <div class="vote" data-id="irish-1641">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/irish-1641">How many people were killed in the Irish rising of 1641?</a>
+        <p class="short">Contemporary claims of 154,000 to 300,000 Protestant victims are rejected, but the modern figure of roughly 4,000 killed has never been built from a full victim-level count.</p>
+        
+        <div class="m">Demography · Europe · 1641–1642</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">Europe</span>
+      <span class="c per">1641–1642</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="irish-1641" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="irish-1641"></div>
+    </li>
+    <li class="row" id="r-qing-literacy">
+      <span class="rank">27</span>
+      <div class="vote" data-id="qing-literacy">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/qing-literacy">How literate was the population of late imperial China?</a>
+        <p class="short">Rawski&#39;s 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Texts &amp; authorship · East Asia · 1644–1911</div>
+      </div>
+      <span class="c">Texts &amp; authorship</span>
+      <span class="c">East Asia</span>
+      <span class="c per">1644–1911</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="qing-literacy" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="qing-literacy"></div>
+    </li>
+    <li class="row" id="r-vermeer">
+      <span class="rank">28</span>
+      <div class="vote" data-id="vermeer">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/vermeer">Did Vermeer use a camera obscura or other optical aids?</a>
+        <p class="short">Optical effects, perspective geometry and technical imaging have been read for and against Vermeer&#39;s use of a camera obscura, with no documentary evidence either way.</p>
+        <div class="tags"><span class="tag sci" title="Confirmation needs collaboration with scientists">science</span></div>
+        <div class="m">Material &amp; visual · Europe · 1655–1675</div>
+      </div>
+      <span class="c">Material &amp; visual</span>
+      <span class="c">Europe</span>
+      <span class="c per">1655–1675</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="vermeer" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="vermeer"></div>
+    </li>
+    <li class="row" id="r-mendel">
+      <span class="rank">29</span>
+      <div class="vote" data-id="mendel">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/mendel">Were Mendel&#39;s pea-hybrid data too close to expectation, and if so, why?</a>
+        <p class="short">Fisher showed in 1936 that Mendel&#39;s ratios fit theory improbably well; a century of explanations has not produced documentary evidence of how the counts were made.</p>
+        
+        <div class="m">Science &amp; knowledge · Europe · 1856–1866</div>
+      </div>
+      <span class="c">Science &amp; knowledge</span>
+      <span class="c">Europe</span>
+      <span class="c per">1856–1866</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="mendel" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="mendel"></div>
+    </li>
+    <li class="row" id="r-influenza-1918-india">
+      <span class="rank">30</span>
+      <div class="vote" data-id="influenza-1918-india">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/influenza-1918-india">How many died of influenza in India in 1918–19, and why was mortality so high?</a>
+        <p class="short">India probably lost more lives than any other country in the 1918–19 pandemic, but estimates run from about 12 to over 17 million and the causes remain debated.</p>
+        <div class="tags"><span class="tag dig" title="Progress likely needs new digitization of known holdings, with archivists">digitization</span></div>
+        <div class="m">Disease · South Asia · 1918–1920</div>
+      </div>
+      <span class="c">Disease</span>
+      <span class="c">South Asia</span>
+      <span class="c per">1918–1920</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="influenza-1918-india" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="influenza-1918-india"></div>
+    </li>
+    <li class="row" id="r-great-leap">
+      <span class="rank">31</span>
+      <div class="vote" data-id="great-leap">
+    <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
+    <b title="0 up, 0 down">0</b>
+    <button type="button" data-v="-1" aria-pressed="false" aria-label="Downvote">▼</button>
+  </div>
+      <div class="main">
+        <a class="ttl" href="/p/great-leap">How many people died in the Great Leap Forward famine of 1959–1961?</a>
+        <p class="short">Estimates of excess deaths in China&#39;s Great Leap famine range from under 20 million to 45 million, depending on sources, baselines and assumptions about registration.</p>
+        
+        <div class="m">Demography · East Asia · 1958–1962</div>
+      </div>
+      <span class="c">Demography</span>
+      <span class="c">East Asia</span>
+      <span class="c per">1958–1962</span>
+      <span class="c com"><button type="button" class="linkbtn" data-comments="great-leap" aria-expanded="false">+ comment</button></span>
+      <div class="cbox" data-for="great-leap"></div>
+    </li></ol></main>
 <footer class="foot">
   <div class="foot-top">
     <div>
-      <a class="mark" href="#/">Open Problems in History</a>
+      <a class="mark" href="/">Open Problems in History</a>
       <p class="stats" id="stats"></p>
     </div>
     <ul class="foot-links">
-      <li><a href="#/">Problems</a></li>
-      <li><a href="#/suggest">Suggest a problem</a></li>
-      <li><a href="#/contact">Contact</a></li>
+      <li><a href="/">Problems</a></li>
+      <li><a href="/suggest">Suggest a problem</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/llms.txt">For AI agents</a></li>
       <li><a href="https://github.com/benjaminbreen/open-problems-in-history">Source and data</a></li>
     </ul>
   </div>
   <div class="foot-sig">
-    <p class="signature">Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"><img src="shared/res-obscura.png" alt="" width="28" height="28"></a></p>
-    <a href="#/admin" class="quiet">Admin</a>
+    <p class="signature">Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"><img src="/shared/res-obscura.png" alt="" width="28" height="28"></a></p>
+    <a href="/admin" class="quiet">Admin</a>
   </div>
 </footer>
-<script src="app.js" type="module"></script>
+<script src="/app.js" type="module"></script>
 </body>
 </html>

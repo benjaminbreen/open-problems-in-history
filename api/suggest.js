@@ -1,4 +1,4 @@
-// POST { title, details, name, email, website }   submit (private until approved)
+// POST { title, details, name, email, agent, website }   submit (private until approved)
 // GET   all suggestions (admin only)
 // PATCH { sid, status: "approved" | "rejected" | "pending" }   (admin only)
 import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
@@ -7,13 +7,14 @@ export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
 
   if (req.method === "POST") {
-    const { title, details, name, email, website } = req.body || {};
+    const { title, details, name, email, agent, website } = req.body || {};
     if (website) return res.status(200).json({ ok: true });
     const s = {
       id: "s-" + newId(),
       title: clean(title, 200),
       details: clean(details, 6000),
       name: clean(name, 80),
+      agent: clean(agent, 80),
       email: clean(email, 160),
       t: Date.now(),
       status: "pending",

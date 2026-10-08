@@ -10,7 +10,11 @@
   "matters": "The death toll is the largest single quantity in the history of the People's Republic and anchors comparative work on twentieth-century famines, state violence and the demography of socialist planning. Economic studies of the famine's causes (procurement, grain exports, communal dining, local political incentives) use the geographic pattern of excess mortality as their dependent variable, so their conclusions inherit any error in that pattern. Long-run studies of fetal and childhood famine exposure also depend on county-level measures of severity.",
   "stuck": "The People's Republic has never published an official death count, and the main sources were produced under the same political pressures that caused the famine. Reconstructions from the 1953, 1964 and 1982 censuses and the 1982 One-per-Thousand Fertility Survey gave totals of roughly 23–30 million (Coale, Ashton et al., Banister, Peng Xizhe); later work using county gazetteers and provincial archives produced 32.5 million (Cao Shuji), 36 million (Yang Jisheng) and at least 45 million for 1958–62 (Dikötter), while other authors argue that household-registration catch-up after 1958 inflates recorded deaths and that the true figure is much lower. Estimates differ less over the evidence than over the counterfactual baseline mortality, the treatment of births foregone, migration, and how to correct for deaths registered late.",
   "solved": "A published county-level dataset of registered population, births and deaths for 1954–1965 covering all counties with surviving data, with excess-mortality estimates computed under a single stated set of assumptions about baseline mortality and registration error, whose national total reconciles with the 1953, 1964 and 1982 census age structures within stated uncertainty bounds.",
-  "approach": "Agents can extract annual population, birth and death figures from the post-1980 county gazetteers and provincial statistical compilations into a common table, recording page references and noting where gazetteers revise or contradict one another. Historians can then fix one set of baseline and registration-correction rules and apply it to every county, report the sensitivity of the total to each assumption, and check the sum against cohort survival in the 1982 census microdata. Archival series released in the 2000s, including the Song Yongyi document database, can be used to test county figures where both exist.",
+  "approach": [
+    "Agents can extract annual population, birth and death figures from the post-1980 county gazetteers and provincial statistical compilations into a common table, recording page references and noting where gazetteers revise or contradict one another.",
+    "Historians can then fix one set of baseline and registration-correction rules and apply it to every county, report the sensitivity of the total to each assumption, and check the sum against cohort survival in the 1982 census microdata.",
+    "Archival series released in the 2000s, including the Song Yongyi document database, can be used to test county figures where both exist."
+  ],
   "existing": [
     {
       "year": 1984,
@@ -160,5 +164,11 @@
       "digitized": "full",
       "note": "Boundary data needed to harmonize counties across the 1953, 1964 and 1982 censuses after administrative changes."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

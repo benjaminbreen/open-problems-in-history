@@ -12,7 +12,10 @@
   "matters": "The scale of Indigenous enslavement determines how far the demographic collapse of the Americas should be attributed to coerced labor, displacement and violence rather than to epidemic disease alone. It affects the comparison between Indigenous and African slavery in the colonial economies of the Caribbean, Brazil, Chile, northern Mexico, the American Southwest and the English colonies of the Southeast and New England. It also bears on how historians read Spanish and Portuguese abolitions of Indian slavery (1542, 1570, 1755) that were repeatedly evaded through categories such as just war, rescate, encomienda, peonage and 'adoption'.",
   "stuck": "Indigenous slavery was frequently illegal or ambiguously legal, so it was recorded under euphemisms (criados, piezas, naborías, administrados, captives) or not recorded at all, and it was dispersed across many small transactions rather than concentrated in shipping. The surviving evidence is scattered among notarial protocols, lawsuits, baptismal registers, probate inventories, military reports and Indigenous testimony in Spanish, Portuguese, French, English and Indigenous languages, mostly undigitized or uncatalogued at item level. Reséndez's 2.5–5 million figure, which he presents as a cautious range, therefore aggregates regional estimates of very different quality, and several regions (Amazonia, the Río de la Plata, Central America after 1550) have no systematic count.",
   "solved": "A published, source-linked database of individual enslaved Indigenous people and enslaving events, organized by region and period, from which documented minimums can be computed and combined with explicit, testable multipliers for under-recording, producing a hemispheric range that others can recompute region by region.",
-  "approach": "AI agents could read digitized notarial protocols, baptismal and burial registers, freedom suits and probate inventories, flag every person described by terms associated with Indigenous bondage, and link repeated appearances of the same individual across record types for historians to review. The main obstacle is access: progress depends on digitizing and indexing notarial and judicial series in Seville, Mexico City, Santiago de Chile, São Paulo, Lima and Santa Fe in partnership with those archives, and on working with Indigenous communities and projects such as Native Bound Unbound that are already assembling records.",
+  "approach": [
+    "AI agents could read digitized notarial protocols, baptismal and burial registers, freedom suits and probate inventories, flag every person described by terms associated with Indigenous bondage, and link repeated appearances of the same individual across record types for historians to review.",
+    "The main obstacle is access: progress depends on digitizing and indexing notarial and judicial series in Seville, Mexico City, Santiago de Chile, São Paulo, Lima and Santa Fe in partnership with those archives, and on working with Indigenous communities and projects such as Native Bound Unbound that are already assembling records."
+  ],
   "existing": [
     {
       "year": 1913,
@@ -169,5 +172,11 @@
       "digitized": "partial",
       "note": "Assembling person-level records and transcriptions from archives in several countries; the nearest existing equivalent to a hemispheric database."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

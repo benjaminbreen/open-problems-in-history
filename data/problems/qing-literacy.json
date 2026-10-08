@@ -12,7 +12,11 @@
   "matters": "Literacy levels underpin arguments about Qing commercial capacity, the reach of print and vernacular fiction, popular religion and sectarian movements, and the state's ability to govern through written documents. Comparative economic history uses Chinese human capital in debates over the Great Divergence, and the claim that the character script did not hold back mass literacy rests largely on Rawski's figures. Estimates of women's literacy shape histories of gender and household management.",
   "stuck": "Rawski's range (roughly 30–45 percent of men and 2–10 percent of women with some reading ability) was inferred from school provision, the price and circulation of primers, and observers' impressions rather than from a direct measure. Literacy in China was graded and functional, so a single threshold is hard to define, and scholars since have favoured qualitative studies of 'literacies' over counts. Contracts survive in the hundreds of thousands, but most were written by scribes (daibi) and bear marks, crosses or signatures whose meaning has not been coded systematically, and the published facsimile series are scattered across regions with very different social structures.",
   "solved": "A coded sample of at least several thousand Qing contracts from more than one region, recording for each named party and witness whether they wrote their own name, wrote it in a different hand from the scribe, or made a mark, with the proportion of autograph signatures reported by decade, region, sex and role, and an explicit argument for how that proportion relates to reading ability.",
-  "approach": "Agents can work through published facsimile series (the Huizhou sets, Qingshui River manuscripts, Taiwan land deeds) to locate the signature block of each contract, classify each party's subscription as autograph, scribe-written or mark, and record the scribe's name so that the same hand can be recognised across documents; historians would verify a random subsample by eye. The method follows Cressy's English signature counts, but the coding rules must be adapted to Chinese practice, where scribes routinely wrote parties' names and parties added a hua ya mark. Digitization is needed because many contract holdings in county archives and university collections are catalogued but not imaged, and those that are imaged are often not publicly accessible.",
+  "approach": [
+    "Agents can work through published facsimile series (the Huizhou sets, Qingshui River manuscripts, Taiwan land deeds) to locate the signature block of each contract, classify each party's subscription as autograph, scribe-written or mark, and record the scribe's name so that the same hand can be recognised across documents; historians would verify a random subsample by eye.",
+    "The method follows Cressy's English signature counts, but the coding rules must be adapted to Chinese practice, where scribes routinely wrote parties' names and parties added a hua ya mark.",
+    "Digitization is needed because many contract holdings in county archives and university collections are catalogued but not imaged, and those that are imaged are often not publicly accessible."
+  ],
   "existing": [
     {
       "year": 1979,
@@ -146,5 +150,11 @@
       "digitized": "partial",
       "note": "More than 200,000 catalogued contracts and related manuscripts, with selections published in facsimile; access to originals is restricted (link is to Jian Qu's study of the corpus)."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

@@ -12,7 +12,10 @@
   "matters": "If plague reached West, East or Northeast Africa, it would offer an explanation for site abandonments, settlement shifts and political reorganizations that archaeologists date to the fourteenth and fifteenth centuries, from the forest zone of southern Ghana to Ife, and it would change how historians read the demographic and political background to the Atlantic encounter. It also bears on the global history of the second pandemic, on whether the Yersinia pestis lineages now endemic in Central and East Africa descend from medieval introductions, and on the long-standing assumption that Africa south of the Sahara was untouched while Eurasia and North Africa lost a large share of their populations.",
   "stuck": "Written sources from sub-Saharan Africa for the fourteenth century are few, and Arabic chroniclers who described plague in Egypt and the Maghrib were largely silent about lands beyond the Sahara, a silence that can be read either as absence of plague or absence of reporting. Archaeological signs such as abandonments, mass burials or population decline have other possible causes (drought, war, trade shifts), and few sites are dated precisely enough to tie them to the 1340s–1400s. No medieval Y. pestis genome has yet been published from sub-Saharan Africa, so the genetic argument rests on inferences from the phylogeny of modern African strains.",
   "solved": "Recovery of Yersinia pestis DNA, radiocarbon-dated to c. 1340–1500, from human remains at one or more sub-Saharan sites, placed on the second-pandemic phylogeny; or, conversely, systematic negative screening of well-dated fourteenth- and fifteenth-century burials across several regions combined with a full survey of the textual evidence showing no plague references.",
-  "approach": "AI agents can survey Arabic, Ge'ez, Portuguese and oral-traditional sources for references to epidemic mortality in the fourteenth and fifteenth centuries, including Ethiopian hagiographies and talismanic texts and West African manuscripts now digitized from Timbuktu, and compile a geo-referenced, dated register of candidate sites from the archaeological literature. Confirmation needs collaboration with ancient-DNA laboratories and African museums and heritage authorities to screen dated burials (for example from Swahili coast towns, the Ethiopian highlands, Nubia and the West African forest and Sahel) for Y. pestis, with radiocarbon dating to fix the chronology, under protocols agreed with descendant communities.",
+  "approach": [
+    "AI agents can survey Arabic, Ge'ez, Portuguese and oral-traditional sources for references to epidemic mortality in the fourteenth and fifteenth centuries, including Ethiopian hagiographies and talismanic texts and West African manuscripts now digitized from Timbuktu, and compile a geo-referenced, dated register of candidate sites from the archaeological literature.",
+    "Confirmation needs collaboration with ancient-DNA laboratories and African museums and heritage authorities to screen dated burials (for example from Swahili coast towns, the Ethiopian highlands, Nubia and the West African forest and Sahel) for Y. pestis, with radiocarbon dating to fix the chronology, under protocols agreed with descendant communities."
+  ],
   "existing": [
     {
       "year": 2010,
@@ -155,5 +158,11 @@
       "digitized": "partial",
       "note": "Earliest European eyewitness accounts of the West African coast, useful for testing claims of depopulation in the century after 1350."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

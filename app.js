@@ -1,7 +1,8 @@
+import { esc, period, voteBox as vbox, rowHTML, detailHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+
 const app = document.getElementById("app");
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
 const store = {
-  get: (k, d) => { try { return localStorage.getItem(k) ?? d; } catch { return d; } },
+  get: (k, dflt) => { try { return localStorage.getItem(k) ?? dflt; } catch { return dflt; } },
   set: (k, v) => { try { v == null ? localStorage.removeItem(k) : localStorage.setItem(k, v); } catch {} },
 };
 
@@ -10,11 +11,13 @@ let state = { tally: {}, counts: {}, mine: {}, suggestions: [] };
 const view = { q: "", sort: store.get("op.sort", "votes"), show: "all" };
 const open = new Set();
 const adminToken = () => store.get("op.admin", "");
+const ctx = () => ({ ...state, open });
 
-const FLAGS = {
-  digitization: ["digitization", "dig", "Progress likely needs new digitization of known holdings, with archivists"],
-  science: ["science", "sci", "Confirmation needs collaboration with scientists"],
-};
+const up = (id) => u(state, id);
+const score = (id) => sc(state, id);
+const ncom = (id) => nc(state, id);
+const voteBox = (id) => vbox(ctx(), id);
+const commentLabel = (id) => clabel(ctx(), id);
 
 // ---------- data ----------
 async function api(path, opts = {}) {
@@ -25,36 +28,9 @@ async function api(path, opts = {}) {
   return r.json();
 }
 
-const up = (id) => Number(state.tally[`${id}:up`]) || 0;
-const down = (id) => Number(state.tally[`${id}:down`]) || 0;
-const score = (id) => up(id) - down(id);
-const ncom = (id) => Math.max(0, Number(state.counts[id]) || 0);
-
 function all() {
   const sugg = state.suggestions.map((s) => ({ id: s.id, title: s.title, short: s.details?.split("\n")[0] || "", suggested: s, flags: [], region: "", field: "", start: null }));
   return problems.concat(sugg);
-}
-
-// ---------- formatting ----------
-const yr = (y) => (y < 0 ? `${-y} BCE` : `${y}`);
-function period(p) {
-  if (p.start == null) return "";
-  if (p.start === p.end) return yr(p.start);
-  if (p.start < 0 && p.end < 0) return `${-p.start}–${-p.end} BCE`;
-  if (p.start < 0) return `${-p.start} BCE–${p.end} CE`;
-  return `${p.start}–${p.end}`;
-}
-const tags = (p) => (p.flags || []).map((f) => FLAGS[f] ? `<span class="tag ${FLAGS[f][1]}" title="${esc(FLAGS[f][2])}">${FLAGS[f][0]}</span>` : "").join("")
-  + (p.suggested ? `<span class="tag">suggested</span>` : "");
-const when = (t) => new Date(t).toLocaleDateString(undefined, { year: "numeric", month: "short", day: "numeric" });
-
-function voteBox(id) {
-  const m = Number(state.mine[id]) || 0;
-  return `<div class="vote" data-id="${esc(id)}">
-    <button type="button" data-v="1" aria-pressed="${m === 1}" aria-label="Upvote">▲</button>
-    <b title="${up(id)} up, ${down(id)} down">${score(id)}</b>
-    <button type="button" data-v="-1" aria-pressed="${m === -1}" aria-label="Downvote">▼</button>
-  </div>`;
 }
 
 // ---------- list ----------
@@ -106,48 +82,25 @@ function renderList() {
 function renderRows() {
   const rows = filtered();
   app.querySelector("#count").textContent = `${rows.length} ${rows.length === 1 ? "problem" : "problems"}`;
-  app.querySelector("#list").innerHTML = rows.length ? rows.map((p, i) => `
-    <li class="row" id="r-${esc(p.id)}">
-      <span class="rank">${i + 1}</span>
-      ${voteBox(p.id)}
-      <div class="main">
-        <a class="ttl" href="#/p/${esc(p.id)}">${esc(p.title)}</a>
-        ${p.short ? `<p class="short">${esc(p.short)}</p>` : ""}
-        ${tags(p) ? `<div class="tags">${tags(p)}</div>` : ""}
-        <div class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</div>
-      </div>
-      <span class="c">${esc(p.field)}</span>
-      <span class="c">${esc(p.region)}</span>
-      <span class="c per">${esc(period(p))}</span>
-      <span class="c com"><button type="button" class="linkbtn" data-comments="${esc(p.id)}" aria-expanded="${open.has(p.id)}">${commentLabel(p.id)}</button></span>
-      <div class="cbox" data-for="${esc(p.id)}"></div>
-    </li>`).join("") : `<li class="empty">No problems match.</li>`;
+  app.querySelector("#list").innerHTML = rows.length ? rows.map((p, i) => rowHTML(ctx(), p, i)).join("") : `<li class="empty">No problems match.</li>`;
   for (const id of open) loadComments(id);
 }
 
-const commentLabel = (id) => {
-  const n = ncom(id);
-  return `${open.has(id) ? "−" : "+"} ${n || "comment"}`;
-};
-
-// ---------- comments ----------
-async function loadComments(id, el = app.querySelector(`.cbox[data-for="${CSS.escape(id)}"]`)) {
+// ---------- comments and proposed approaches ----------
+async function loadComments(id, el = app.querySelector(`.cbox[data-for="${CSS.escape(id)}"]`), kind = "comment") {
   if (!el) return;
-  el.innerHTML = `<div class="comments"><p class="note">Loading…</p></div>`;
   let list = [];
-  try { list = await api(`/api/comments?id=${encodeURIComponent(id)}`); } catch { el.innerHTML = `<div class="comments"><p class="note">Comments could not be loaded.</p></div>`; return; }
+  try { list = await api(`/api/comments?id=${encodeURIComponent(id)}&kind=${kind}`); }
+  catch { el.innerHTML = `<p class="note">Could not be loaded.</p>`; return; }
+  const admin = !!adminToken();
+  const items = list.map((c) => `<div class="comment"><div class="who">${who(c)}${admin ? ` <button type="button" class="linkbtn del" data-del="${esc(c.cid)}" data-pid="${esc(id)}" data-kind="${kind}">delete</button>` : ""}</div><p>${esc(c.text)}</p></div>`).join("");
+  if (kind === "approach") {
+    el.innerHTML = list.length ? `<h3>Proposed by readers</h3>${items}` : "";
+    return;
+  }
   state.counts[id] = list.length;
   stats();
-  const admin = !!adminToken();
-  el.innerHTML = `<div class="comments">
-    ${list.map((c) => `<div class="comment"><div class="who"><b>${esc(c.name)}</b> · ${when(c.t)}${admin ? ` <button type="button" class="linkbtn del" data-del="${esc(c.cid)}" data-pid="${esc(id)}">delete</button>` : ""}</div><p>${esc(c.text)}</p></div>`).join("")}
-    <form class="cf" data-pid="${esc(id)}">
-      <textarea name="text" required maxlength="4000" placeholder="Comment" aria-label="Comment"></textarea>
-      <input type="text" name="name" maxlength="80" placeholder="Name (optional)" aria-label="Name" value="${esc(store.get("op.name", ""))}">
-      <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button class="btn" type="submit">Post</button>
-    </form>
-  </div>`;
+  el.innerHTML = `<div class="comments">${items}${contributeForm("comment", id, "Comment")}</div>`;
   const btn = app.querySelector(`[data-comments="${CSS.escape(id)}"]`);
   if (btn) btn.textContent = commentLabel(id);
 }
@@ -156,17 +109,21 @@ app.addEventListener("submit", async (e) => {
   const f = e.target;
   e.preventDefault();
   if (f.matches(".cf")) {
-    const d = Object.fromEntries(new FormData(f));
-    store.set("op.name", d.name || null);
+    const data = Object.fromEntries(new FormData(f));
+    store.set("op.name", data.name || null);
     f.querySelector("button").disabled = true;
-    try { await api("/api/comments", { method: "POST", body: { id: f.dataset.pid, ...d } }); }
+    try { await api("/api/comments", { method: "POST", body: { id: f.dataset.pid, kind: f.dataset.kind, ...data } }); }
     catch (err) { alert(`Could not post: ${err.message}`); f.querySelector("button").disabled = false; return; }
-    loadComments(f.dataset.pid, f.closest(".cbox, #cbox"));
+    if (f.dataset.kind === "approach") {
+      f.reset(); f.querySelector("button").disabled = false;
+      toggleIdea(false);
+      loadComments(f.dataset.pid, app.querySelector("#ideas"), "approach");
+    } else loadComments(f.dataset.pid, f.closest(".cbox, #cbox"));
   }
   if (f.matches(".sf")) {
-    const d = Object.fromEntries(new FormData(f));
+    const data = Object.fromEntries(new FormData(f));
     f.querySelector("button").disabled = true;
-    try { await api("/api/suggest", { method: "POST", body: d }); }
+    try { await api("/api/suggest", { method: "POST", body: data }); }
     catch (err) { alert(`Could not send: ${err.message}`); f.querySelector("button").disabled = false; return; }
     f.outerHTML = `<p>Thank you. Your suggestion will appear once it has been reviewed.</p>`;
   }
@@ -176,11 +133,24 @@ app.addEventListener("submit", async (e) => {
   }
 });
 
+function toggleIdea(force) {
+  const b = app.querySelector(".idea-toggle"), s = app.querySelector("#idea-form");
+  const on = force ?? b.getAttribute("aria-expanded") !== "true";
+  b.setAttribute("aria-expanded", on);
+  s.classList.toggle("open", on);
+  if (on) setTimeout(() => s.querySelector("textarea")?.focus(), 200);
+}
+
 app.addEventListener("click", async (e) => {
+  const a = e.target.closest("a");
+  if (a && a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !a.pathname.startsWith("/data") && !a.pathname.startsWith("/api")) {
+    e.preventDefault(); return go(a.pathname);
+  }
   const t = e.target.closest("button");
   if (!t) return;
   if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort", view.sort); return renderList(); }
   if (t.dataset.show) { view.show = t.dataset.show; return renderList(); }
+  if (t.dataset.idea) return toggleIdea();
   if (t.dataset.comments) {
     const id = t.dataset.comments;
     const box = app.querySelector(`.cbox[data-for="${CSS.escape(id)}"]`);
@@ -191,10 +161,11 @@ app.addEventListener("click", async (e) => {
   }
   if (t.dataset.v) return vote(t.closest(".vote").dataset.id, Number(t.dataset.v));
   if (t.dataset.del) {
-    if (!confirm("Delete this comment?")) return;
-    try { await api(`/api/comments?id=${encodeURIComponent(t.dataset.pid)}&cid=${encodeURIComponent(t.dataset.del)}`, { method: "DELETE" }); }
+    if (!confirm("Delete this?")) return;
+    const kind = t.dataset.kind || "comment";
+    try { await api(`/api/comments?id=${encodeURIComponent(t.dataset.pid)}&cid=${encodeURIComponent(t.dataset.del)}&kind=${kind}`, { method: "DELETE" }); }
     catch (err) { return alert(`Could not delete: ${err.message}`); }
-    loadComments(t.dataset.pid, t.closest(".cbox, #cbox"));
+    loadComments(t.dataset.pid, kind === "approach" ? app.querySelector("#ideas") : t.closest(".cbox, #cbox"), kind);
   }
   if (t.dataset.status) {
     try { await api("/api/suggest", { method: "PATCH", body: { sid: t.dataset.sid, status: t.dataset.status } }); }
@@ -209,10 +180,10 @@ async function vote(id, v) {
   const old = Number(state.mine[id]) || 0;
   const next = old === v ? 0 : v;
   const apply = (from, to) => {
-    if (from === 1) state.tally[`${id}:up`] = up(id) - 1;
-    if (from === -1) state.tally[`${id}:down`] = down(id) - 1;
-    if (to === 1) state.tally[`${id}:up`] = up(id) + 1;
-    if (to === -1) state.tally[`${id}:down`] = down(id) + 1;
+    if (from === 1) state.tally[`${id}:up`] = u(state, id) - 1;
+    if (from === -1) state.tally[`${id}:down`] = d(state, id) - 1;
+    if (to === 1) state.tally[`${id}:up`] = u(state, id) + 1;
+    if (to === -1) state.tally[`${id}:down`] = d(state, id) + 1;
     state.mine[id] = to;
   };
   apply(old, next);
@@ -229,50 +200,16 @@ function refreshVotes(id) {
   for (const box of app.querySelectorAll(`.vote[data-id="${CSS.escape(id)}"]`)) box.outerHTML = voteBox(id);
 }
 
-// ---------- detail ----------
-function cite(e) {
-  const title = e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
-  return `<li><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${e.venue ? `, ${esc(e.venue.replace(/^In /, "in "))}` : ""}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
-}
-
-function archive(a) {
-  const dig = { full: "digitized", partial: "partly digitized", none: "not digitized" }[a.digitized] || "";
-  const rep = a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.repository)}</a>` : esc(a.repository);
-  return `<li><span class="rep">${rep}</span>${dig ? `<span class="tag">${dig}</span>` : ""}
-    ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}</li>`;
-}
-
+// ---------- pages ----------
 function renderDetail(id) {
   const p = all().find((x) => x.id === id);
-  if (!p) { app.innerHTML = `<a class="back" href="#/">← All problems</a><p class="empty">Not found.</p>`; return; }
+  if (!p) { app.innerHTML = `<a class="back" href="/">← All problems</a><p class="empty">Not found.</p>`; return; }
   document.title = `${p.title} · Open Problems in History`;
-  const sec = (h, body) => body ? `<section><h2>${h}</h2><div class="sbody">${body}</div></section>` : "";
-  const para = (s) => s ? String(s).split(/\n\n+/).map((x) => `<p>${esc(x)}</p>`).join("") : "";
-  const s = p.suggested;
-  app.innerHTML = `
-    <a class="back" href="#/">← All problems</a>
-    <div class="head">
-      ${voteBox(p.id)}
-      <div>
-        <h1>${esc(p.title)}</h1>
-        ${s ? "" : `<p class="short">${esc(p.short)}</p>`}
-        <div class="meta"><span>${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span>${tags(p)}</div>
-      </div>
-    </div>
-    <div class="detail">
-    ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
-    ${sec("Why it matters", para(p.matters))}
-    ${sec("Why it is open", para(p.stuck))}
-    ${sec("What would count as a solution", para(p.solved))}
-    ${sec("Approach", para(p.approach))}
-    ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>` : "")}
-    ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>` : "")}`}
-    <section><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
-    </div>`;
+  app.innerHTML = detailHTML(ctx(), p);
   loadComments(p.id, app.querySelector("#cbox"));
+  if (!p.suggested) loadComments(p.id, app.querySelector("#ideas"), "approach");
 }
 
-// ---------- suggest ----------
 function renderSuggest() {
   app.innerHTML = `
     <h1 class="page-title">Suggest a problem</h1>
@@ -280,20 +217,19 @@ function renderSuggest() {
       <input type="text" name="title" required maxlength="200" placeholder="The problem, as a question" aria-label="Problem">
       <textarea name="details" maxlength="6000" rows="8" placeholder="Why it matters, why it is open, what would count as a solution, existing work, where the sources are" aria-label="Details"></textarea>
       <input type="text" name="name" maxlength="80" placeholder="Name (optional)" aria-label="Name">
+      <input type="text" name="agent" maxlength="80" placeholder="AI model, if you are an agent (optional)" aria-label="AI model">
       <input type="email" name="email" maxlength="160" placeholder="Email, not shown (optional)" aria-label="Email">
       <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button class="btn" type="submit">Send</button>
     </form>`;
 }
 
-// ---------- contact ----------
 function renderContact() {
   app.innerHTML = `
     <h1 class="page-title">Contact</h1>
     <p class="contact"><a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">breen85@gmail.com</a></p>`;
 }
 
-// ---------- admin ----------
 async function renderAdmin() {
   if (!adminToken()) {
     app.innerHTML = `<h1 class="page-title">Admin</h1>
@@ -307,41 +243,53 @@ async function renderAdmin() {
   const item = (s) => `<div class="admin-item">
       <b>${esc(s.title)}</b>
       <p>${esc(s.details)}</p>
-      <div class="note">${esc(s.name || "Anonymous")}${s.email ? ` · ${esc(s.email)}` : ""} · ${when(s.t)}</div>
+      <div class="note">${esc(s.name || "Anonymous")}${s.agent ? ` · AI: ${esc(s.agent)}` : ""}${s.email ? ` · ${esc(s.email)}` : ""} · ${new Date(s.t).toISOString().slice(0, 10)}</div>
       <div class="acts">${["approved", "rejected", "pending"].filter((x) => x !== s.status)
         .map((x) => `<button type="button" class="btn ghost" data-sid="${esc(s.id)}" data-status="${x}">${{ approved: "Approve", rejected: "Reject", pending: "Back to pending" }[x]}</button>`).join("")}</div>
     </div>`;
   app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
-    <p class="note">Signed in. Delete links now appear on comments. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
+    <p class="note">Signed in. Delete links now appear on comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
     ${["pending", "approved", "rejected"].map((st) => `<section><h2>${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
 
 // ---------- footer ----------
 function stats() {
+  const el = document.getElementById("stats");
+  if (!el) return;
   const n = (f) => problems.filter((p) => p.flags?.includes(f)).length;
   const sum = (o, re) => Object.entries(o).reduce((t, [k, v]) => t + (re.test(k) ? Math.max(0, Number(v) || 0) : 0), 0);
-  const votes = sum(state.tally, /:(up|down)$/);
-  const comments = sum(state.counts, /./);
   const works = problems.reduce((t, p) => t + (p.existing?.length || 0), 0);
   const archives = problems.reduce((t, p) => t + (p.archives?.length || 0), 0);
-  document.getElementById("stats").innerHTML = [
+  el.innerHTML = [
     `${all().length} problems`, `${n("digitization")} need digitization`, `${n("science")} need scientists`,
-    `${works} works cited`, `${archives} archives`, `${votes} votes`, `${comments} comments`,
+    `${works} works cited`, `${archives} archives`, `${sum(state.tally, /:(up|down)$/)} votes`, `${sum(state.counts, /./)} comments`,
   ].map((x) => `<span>${x}</span>`).join("");
 }
 
 // ---------- router ----------
 function route() {
-  const h = location.hash.replace(/^#/, "") || "/";
+  const path = location.pathname.replace(/\/+$/, "") || "/";
   document.title = "Open Problems in History";
-  const nav = h === "/" ? "list" : h.slice(1);
+  const nav = path === "/" ? "list" : path.slice(1);
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
-  if (h.startsWith("/p/")) renderDetail(decodeURIComponent(h.slice(3)));
-  else if (h === "/suggest") renderSuggest();
-  else if (h === "/admin") renderAdmin();
-  else if (h === "/contact") renderContact();
+  if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
+  else if (path === "/suggest") renderSuggest();
+  else if (path === "/contact") renderContact();
+  else if (path === "/admin") renderAdmin();
   else renderList();
 }
+
+function go(path) {
+  if (path !== location.pathname) history.pushState(null, "", path);
+  window.scrollTo(0, 0);
+  route();
+}
+
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("header a, footer a");
+  if (a && a.origin === location.origin && !a.pathname.endsWith(".txt") && !e.metaKey && !e.ctrlKey) { e.preventDefault(); go(a.pathname); }
+});
+window.addEventListener("popstate", route);
 
 document.querySelector(".mode").addEventListener("click", () => {
   const dark = getComputedStyle(document.documentElement).colorScheme === "dark";
@@ -349,10 +297,11 @@ document.querySelector(".mode").addEventListener("click", () => {
   store.set("op.theme", document.documentElement.dataset.theme);
 });
 
-window.addEventListener("hashchange", () => { window.scrollTo(0, 0); route(); });
+// Old hash links (#/p/id) still work.
+if (location.hash.startsWith("#/")) history.replaceState(null, "", location.hash.slice(1));
 
 const [p, s] = await Promise.all([
-  fetch("data/problems.json").then((r) => r.json()),
+  fetch("/data/problems.json").then((r) => r.json()),
   api("/api/state").catch(() => state),
 ]);
 problems = p;

@@ -3,7 +3,7 @@ import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 
-const types = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png" };
+const types = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".txt": "text/plain; charset=utf-8", ".md": "text/plain; charset=utf-8" };
 const port = Number(process.env.PORT) || 4320;
 process.env.ADMIN_TOKEN ||= "dev";
 
@@ -21,7 +21,9 @@ http.createServer(async (req, res) => {
     try { await h(req, res); } catch (e) { console.error(e); res.statusCode = 500; res.end(); }
     return;
   }
-  const p = path.join(".", u.pathname === "/" ? "index.html" : u.pathname);
+  let p = path.join(".", decodeURIComponent(u.pathname));
+  if (fs.existsSync(p) && fs.statSync(p).isDirectory()) p = path.join(p, "index.html");
+  else if (!fs.existsSync(p) && !path.extname(p)) p = fs.existsSync(p + "/index.html") ? p + "/index.html" : "index.html";
   fs.readFile(p, (err, data) => {
     if (err) { res.writeHead(404).end("not found"); return; }
     res.writeHead(200, { "Content-Type": types[path.extname(p)] || "application/octet-stream", "Cache-Control": "no-store" }).end(data);

@@ -12,7 +12,11 @@
   "matters": "Hartwell's figure is the main quantitative support for the idea of a Northern Song 'industrial revolution' and for claims that Chinese iron output in 1078 rivalled that of Britain in the late eighteenth century. It is used in world histories, in comparative arguments about the Great Divergence, and in environmental histories of deforestation and the shift from charcoal to coal. If output was much lower, or largely charcoal-fuelled, the narrative of a Song coal-and-iron breakthrough that later stalled needs revision.",
   "stuck": "The figure is extrapolated from iron receipts recorded for state monopoly and tax purposes in compilations such as the Song huiyao and Wenxian tongkao, which record what the state collected, not what was produced, and Hartwell's multiplier from receipts to output is an assumption. Donald Wagner argued that these administrative figures cannot be scaled up so simply, and Tim Wright's review of four decades of citation found that the estimate has been repeated far more often than tested. Archaeological evidence for Song ironworks is patchy: few smelting sites have been excavated and published in detail, and slag volumes, furnace capacities and fuel types have not been surveyed systematically.",
   "solved": "An output estimate for the 1070s, with explicit error bounds, built from at least two independent lines of evidence (the fiscal record re-read prefecture by prefecture with a stated model of collection rates, and archaeological slag-heap volumes and furnace capacities from surveyed sites), with the two lines agreeing within their stated uncertainties.",
-  "approach": "Agents can extract every reference to iron production sites (ye, jian, wu), quotas and receipts from the full-text Song huiyao jigao, Xu zizhi tongjian changbian, Wenxian tongkao and Song gazetteers, map them to prefectures and dates, and assemble the competing readings of how quotas related to production. Historians can then compare alternative collection-rate models in a single framework. Confirmation requires collaboration with archaeometallurgists: systematic survey and volumetric measurement of slag heaps at known Song iron districts (for example around Handan and Cizhou in Hebei, and in Shanxi and Henan), radiocarbon dating of charcoal and coke inclusions, and analysis of slag and cast-iron objects (sulphur content and other tracers) to separate charcoal-fired from coal-fired production.",
+  "approach": [
+    "Agents can extract every reference to iron production sites (ye, jian, wu), quotas and receipts from the full-text Song huiyao jigao, Xu zizhi tongjian changbian, Wenxian tongkao and Song gazetteers, map them to prefectures and dates, and assemble the competing readings of how quotas related to production.",
+    "Historians can then compare alternative collection-rate models in a single framework.",
+    "Confirmation requires collaboration with archaeometallurgists: systematic survey and volumetric measurement of slag heaps at known Song iron districts (for example around Handan and Cizhou in Hebei, and in Shanxi and Henan), radiocarbon dating of charcoal and coke inclusions, and analysis of slag and cast-iron objects (sulphur content and other tracers) to separate charcoal-fired from coal-fired production."
+  ],
   "existing": [
     {
       "year": 1962,
@@ -138,5 +142,11 @@
       "digitized": "full",
       "note": "Open teaching text and bibliographies on Chinese iron technology, useful for locating published site reports."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

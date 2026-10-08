@@ -6,29 +6,147 @@
   "field": "Science & knowledge",
   "start": 1040,
   "end": 1350,
-  "flags": ["digitization"],
+  "flags": [
+    "digitization"
+  ],
   "matters": "The route determines whether gunpowder should be described as a Mongol-era transfer across Eurasia, a product of Mamluk and Andalusian Arabic chemistry, or a partly independent European development from Chinese-derived saltpetre knowledge. It shapes debates over the 'military revolution', over the role of the Mongol empire as a conduit of technology, and over the place of the Islamic world in histories of chemistry and warfare that often move directly from China to Europe.",
   "stuck": "The Chinese Wujing zongyao (compiled c. 1040–1044) gives the earliest surviving formulas, but the next datable recipes appear almost simultaneously in the 1260s–1290s in Latin (Roger Bacon's allusions in the Opus maius and Opus tertium, c. 1267; the Liber ignium attributed to Marcus Graecus) and in Arabic (Ḥasan al-Rammāḥ, c. 1270s–1280s), with no text recording a transfer. Arabic terms such as naft and Latin descriptions of incendiaries are ambiguous about whether they mean gunpowder, and the dating of many recipe collections rests on late manuscript copies. Bacon's supposed anagram recipe has been regarded as doubtful since the early twentieth century.",
   "solved": "A securely dated text, or a stemma of dated manuscripts, that shows one of the Latin or Arabic gunpowder recipe traditions copying or translating from an identifiable earlier source in another language, so that the direction and approximate date of transfer can be stated. A dated Persian, Arabic or Latin witness of a saltpetre-based recipe earlier than the 1260s outside China would also count.",
-  "approach": "Agents can assemble a comparative corpus of every dated gunpowder and saltpetre recipe in Chinese, Arabic, Persian, Hebrew and Latin, normalising ingredient proportions, technical vocabulary and purification methods, and then test for textual dependence between traditions. This requires digitizing and transcribing Arabic and Persian furūsiyya and military manuscripts in Paris, Istanbul, Cairo and elsewhere, and the earliest Latin Liber ignium and Feuerwerkbuch witnesses, with codicologists dating the copies.",
+  "approach": [
+    "Agents can assemble a comparative corpus of every dated gunpowder and saltpetre recipe in Chinese, Arabic, Persian, Hebrew and Latin, normalising ingredient proportions, technical vocabulary and purification methods, and then test for textual dependence between traditions.",
+    "This requires digitizing and transcribing Arabic and Persian furūsiyya and military manuscripts in Paris, Istanbul, Cairo and elsewhere, and the earliest Latin Liber ignium and Feuerwerkbuch witnesses, with codicologists dating the copies."
+  ],
   "existing": [
-    {"year": 1956, "authors": "David Ayalon", "title": "Gunpowder and Firearms in the Mamluk Kingdom: A Challenge to a Mediaeval Society", "venue": "London: Vallentine, Mitchell (repr. Routledge)", "url": "https://www.routledge.com/Gunpowder-and-Firearms-in-the-Mamluk-Kingdom-A-Challenge-to-Medieval-Society-1956/Ayalon/p/book/9781138975606", "note": "Dated securely attested Mamluk firearms to the 1360s and cautioned against reading earlier naft references as gunpowder."},
-    {"year": 1960, "authors": "J. R. Partington", "title": "A History of Greek Fire and Gunpowder", "venue": "Cambridge: Heffer (repr. Baltimore: Johns Hopkins University Press, 1999)", "url": "https://doi.org/10.56021/9780801859540", "note": "Foundational survey of Chinese, Arabic and Latin incendiary and gunpowder texts; dated the Liber ignium gunpowder recipes to about 1300 and argued for Chinese priority."},
-    {"year": 1986, "authors": "Joseph Needham, with Ho Ping-Yü, Lu Gwei-Djen and Wang Ling", "title": "Science and Civilisation in China, vol. 5, pt. 7: Military Technology; The Gunpowder Epic", "venue": "Cambridge: Cambridge University Press", "url": "https://openlibrary.org/books/OL7736167M", "note": "Comprehensive treatment of Chinese gunpowder from the Wujing zongyao onward, proposing transmission to Europe via the Mongols."},
-    {"year": 1988, "authors": "Lu Gwei-Djen, Joseph Needham and Phan Chi-Hsing", "title": "The Oldest Representation of a Bombard", "venue": "Technology and Culture 29 (3): 594–605", "url": "https://doi.org/10.2307/3105275", "note": "Argued that a Sichuan cave sculpture shows a gun by about 1128, pushing Chinese firearms well before the European record."},
-    {"year": 1997, "authors": "Bert S. Hall", "title": "Weapons and Warfare in Renaissance Europe: Gunpowder, Technology, and Tactics", "venue": "Baltimore: Johns Hopkins University Press", "url": "https://openlibrary.org/isbn/0801855314", "note": "Discussed saltpetre supply and the European recipe tradition and was sceptical of attributing a single route to transmission."},
-    {"year": 2003, "authors": "Ahmad Y. al-Hassan", "title": "Gunpowder Composition for Rockets and Cannon in Arabic Military Treaties of the Thirteenth and Fourteenth Centuries", "venue": "ICON 9", "url": "https://www.history-science-technology.com/articles/articles%202.html", "note": "Argued from al-Rammāḥ and other Arabic treatises for an Arabic-Islamic intermediary stage, including early Mamluk and Andalusian cannon; several of its dating claims are disputed."},
-    {"year": 2003, "authors": "Kenneth Chase", "title": "Firearms: A Global History to 1700", "venue": "Cambridge: Cambridge University Press", "url": "https://doi.org/10.1017/CBO9780511806681", "note": "Comparative global history that accepts Chinese origin and treats the transmission route as uncertain."},
-    {"year": 2004, "authors": "Iqtidar Alam Khan", "title": "Gunpowder and Firearms: Warfare in Medieval India", "venue": "New Delhi: Oxford University Press", "url": "https://openlibrary.org/isbn/0195665260", "note": "Traced gunpowder into South Asia with the Mongols in the thirteenth century, supporting a Mongol-era diffusion model."},
-    {"year": 2013, "authors": "Stephen G. Haw", "title": "The Mongol Empire – the First 'Gunpowder Empire'?", "venue": "Journal of the Royal Asiatic Society 23 (3): 441–469", "url": "https://doi.org/10.1017/S1356186313000369", "note": "Assessed the evidence for Mongol use and diffusion of gunpowder weapons and argued that it was more limited than often claimed."},
-    {"year": 2016, "authors": "Tonio Andrade", "title": "The Gunpowder Age: China, Military Innovation, and the Rise of the West in World History", "venue": "Princeton: Princeton University Press", "url": "https://doi.org/10.2307/j.ctvc77j74", "note": "Global synthesis that places the arrival of gunpowder in Europe in the context of Mongol-era contact."},
-    {"year": 2024, "authors": "Axel E. W. Müller", "title": "Gunpowder Technology in the Fifteenth Century: A Study, Edition and Translation of the Firework Book", "venue": "Woodbridge: Boydell Press (Royal Armouries Research Series 3)", "url": "https://doi.org/10.1515/9781805431756", "note": "First full edition and translation of a Feuerwerkbuch manuscript (Royal Armouries I.34), clarifying the later European recipe tradition against which earlier sources must be read."}
+    {
+      "year": 1956,
+      "authors": "David Ayalon",
+      "title": "Gunpowder and Firearms in the Mamluk Kingdom: A Challenge to a Mediaeval Society",
+      "venue": "London: Vallentine, Mitchell (repr. Routledge)",
+      "url": "https://www.routledge.com/Gunpowder-and-Firearms-in-the-Mamluk-Kingdom-A-Challenge-to-Medieval-Society-1956/Ayalon/p/book/9781138975606",
+      "note": "Dated securely attested Mamluk firearms to the 1360s and cautioned against reading earlier naft references as gunpowder."
+    },
+    {
+      "year": 1960,
+      "authors": "J. R. Partington",
+      "title": "A History of Greek Fire and Gunpowder",
+      "venue": "Cambridge: Heffer (repr. Baltimore: Johns Hopkins University Press, 1999)",
+      "url": "https://doi.org/10.56021/9780801859540",
+      "note": "Foundational survey of Chinese, Arabic and Latin incendiary and gunpowder texts; dated the Liber ignium gunpowder recipes to about 1300 and argued for Chinese priority."
+    },
+    {
+      "year": 1986,
+      "authors": "Joseph Needham, with Ho Ping-Yü, Lu Gwei-Djen and Wang Ling",
+      "title": "Science and Civilisation in China, vol. 5, pt. 7: Military Technology; The Gunpowder Epic",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://openlibrary.org/books/OL7736167M",
+      "note": "Comprehensive treatment of Chinese gunpowder from the Wujing zongyao onward, proposing transmission to Europe via the Mongols."
+    },
+    {
+      "year": 1988,
+      "authors": "Lu Gwei-Djen, Joseph Needham and Phan Chi-Hsing",
+      "title": "The Oldest Representation of a Bombard",
+      "venue": "Technology and Culture 29 (3): 594–605",
+      "url": "https://doi.org/10.2307/3105275",
+      "note": "Argued that a Sichuan cave sculpture shows a gun by about 1128, pushing Chinese firearms well before the European record."
+    },
+    {
+      "year": 1997,
+      "authors": "Bert S. Hall",
+      "title": "Weapons and Warfare in Renaissance Europe: Gunpowder, Technology, and Tactics",
+      "venue": "Baltimore: Johns Hopkins University Press",
+      "url": "https://openlibrary.org/isbn/0801855314",
+      "note": "Discussed saltpetre supply and the European recipe tradition and was sceptical of attributing a single route to transmission."
+    },
+    {
+      "year": 2003,
+      "authors": "Ahmad Y. al-Hassan",
+      "title": "Gunpowder Composition for Rockets and Cannon in Arabic Military Treaties of the Thirteenth and Fourteenth Centuries",
+      "venue": "ICON 9",
+      "url": "https://www.history-science-technology.com/articles/articles%202.html",
+      "note": "Argued from al-Rammāḥ and other Arabic treatises for an Arabic-Islamic intermediary stage, including early Mamluk and Andalusian cannon; several of its dating claims are disputed."
+    },
+    {
+      "year": 2003,
+      "authors": "Kenneth Chase",
+      "title": "Firearms: A Global History to 1700",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511806681",
+      "note": "Comparative global history that accepts Chinese origin and treats the transmission route as uncertain."
+    },
+    {
+      "year": 2004,
+      "authors": "Iqtidar Alam Khan",
+      "title": "Gunpowder and Firearms: Warfare in Medieval India",
+      "venue": "New Delhi: Oxford University Press",
+      "url": "https://openlibrary.org/isbn/0195665260",
+      "note": "Traced gunpowder into South Asia with the Mongols in the thirteenth century, supporting a Mongol-era diffusion model."
+    },
+    {
+      "year": 2013,
+      "authors": "Stephen G. Haw",
+      "title": "The Mongol Empire – the First 'Gunpowder Empire'?",
+      "venue": "Journal of the Royal Asiatic Society 23 (3): 441–469",
+      "url": "https://doi.org/10.1017/S1356186313000369",
+      "note": "Assessed the evidence for Mongol use and diffusion of gunpowder weapons and argued that it was more limited than often claimed."
+    },
+    {
+      "year": 2016,
+      "authors": "Tonio Andrade",
+      "title": "The Gunpowder Age: China, Military Innovation, and the Rise of the West in World History",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.2307/j.ctvc77j74",
+      "note": "Global synthesis that places the arrival of gunpowder in Europe in the context of Mongol-era contact."
+    },
+    {
+      "year": 2024,
+      "authors": "Axel E. W. Müller",
+      "title": "Gunpowder Technology in the Fifteenth Century: A Study, Edition and Translation of the Firework Book",
+      "venue": "Woodbridge: Boydell Press (Royal Armouries Research Series 3)",
+      "url": "https://doi.org/10.1515/9781805431756",
+      "note": "First full edition and translation of a Feuerwerkbuch manuscript (Royal Armouries I.34), clarifying the later European recipe tradition against which earlier sources must be read."
+    }
   ],
   "archives": [
-    {"repository": "Bibliothèque nationale de France, Paris", "collection": "Département des Manuscrits: Arabic military (furūsiyya) treatises, including copies of al-Rammāḥ, and Latin manuscripts of the Liber ignium", "url": "https://archivesetmanuscrits.bnf.fr/", "digitized": "partial", "note": "Holds manuscripts used by nineteenth-century editors of both the Arabic and Latin traditions; many are on Gallica, others only described in the catalogue."},
-    {"repository": "Bayerische Staatsbibliothek, Munich", "collection": "Latin and German manuscripts of the Liber ignium, Feuerwerkbuch and fifteenth-century Kriegsbücher", "url": "https://www.digitale-sammlungen.de/", "digitized": "partial", "note": "Large holdings of German pyrotechnic and military manuscripts, many digitized through the Münchener Digitalisierungszentrum."},
-    {"repository": "Royal Armouries, Leeds", "collection": "Library manuscript RA I.34 (Firework Book) and related military manuscripts", "url": "https://www.royalarmouries.org/", "digitized": "none", "note": "Witness edited by Müller (2024); access by appointment."},
-    {"repository": "National Library of China, Beijing", "collection": "Ming-period editions and manuscript copies of the Wujing zongyao", "url": "http://www.nlc.cn/", "digitized": "partial", "note": "The Song printings are lost, so all surviving witnesses of the 1044 formulas are later reprints whose textual history needs collation."},
-    {"repository": "Chinese Text Project", "collection": "Wujing zongyao (digitized transcription and page images)", "url": "https://ctext.org/wujing-zongyao", "digitized": "full", "note": "Searchable online text of the Wujing zongyao, useful for terminological comparison; requires checking against printed editions."}
-  ]
+    {
+      "repository": "Bibliothèque nationale de France, Paris",
+      "collection": "Département des Manuscrits: Arabic military (furūsiyya) treatises, including copies of al-Rammāḥ, and Latin manuscripts of the Liber ignium",
+      "url": "https://archivesetmanuscrits.bnf.fr/",
+      "digitized": "partial",
+      "note": "Holds manuscripts used by nineteenth-century editors of both the Arabic and Latin traditions; many are on Gallica, others only described in the catalogue."
+    },
+    {
+      "repository": "Bayerische Staatsbibliothek, Munich",
+      "collection": "Latin and German manuscripts of the Liber ignium, Feuerwerkbuch and fifteenth-century Kriegsbücher",
+      "url": "https://www.digitale-sammlungen.de/",
+      "digitized": "partial",
+      "note": "Large holdings of German pyrotechnic and military manuscripts, many digitized through the Münchener Digitalisierungszentrum."
+    },
+    {
+      "repository": "Royal Armouries, Leeds",
+      "collection": "Library manuscript RA I.34 (Firework Book) and related military manuscripts",
+      "url": "https://www.royalarmouries.org/",
+      "digitized": "none",
+      "note": "Witness edited by Müller (2024); access by appointment."
+    },
+    {
+      "repository": "National Library of China, Beijing",
+      "collection": "Ming-period editions and manuscript copies of the Wujing zongyao",
+      "url": "http://www.nlc.cn/",
+      "digitized": "partial",
+      "note": "The Song printings are lost, so all surviving witnesses of the 1044 formulas are later reprints whose textual history needs collation."
+    },
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Wujing zongyao (digitized transcription and page images)",
+      "url": "https://ctext.org/wujing-zongyao",
+      "digitized": "full",
+      "note": "Searchable online text of the Wujing zongyao, useful for terminological comparison; requires checking against printed editions."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

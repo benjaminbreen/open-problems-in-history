@@ -12,7 +12,12 @@
   "matters": "Proto-Elamite is one of the earliest scripts anywhere and the first on the Iranian plateau, so its nature bears on whether writing was invented once in Mesopotamia and borrowed, or developed independently in more than one place. If its non-numerical signs encode syllables of Elamite, the history of that language extends back almost a millennium. Desset and colleagues' 2022 decipherment of Linear Elamite rests partly on a claimed continuity from Proto-Elamite; whether that continuity holds affects how far the decipherment can be pushed back.",
   "stuck": "The tablets are almost all administrative accounts from Susa, with smaller groups from Tepe Yahya, Tal-i Malyan, Tepe Sofalin and other sites; they contain several hundred non-numerical signs and short entries dominated by numbers. The numerical systems were largely worked out by Damerow and Englund through comparison with Mesopotamian proto-cuneiform, but the remaining signs could be logograms, personal names, institutional labels or syllables, and the short entries offer few repeated phonetic contexts. More than five centuries separate the last Proto-Elamite tablets from the first Linear Elamite inscriptions, and Dahl (2023) argues that Linear Elamite was a deliberate new creation rather than a descendant.",
   "solved": "A structural analysis that partitions the sign inventory into numerical, logographic and candidate phonetic signs, with stated criteria, is validated on proto-cuneiform where the answers are known; applied to Proto-Elamite, it either identifies a set of signs whose distribution fits a syllabary, with predicted values that cohere with Linear Elamite readings beyond chance, or shows that no such subset exists.",
-  "approach": "Start from the CDLI transliterations and images, and treat the numerical layer as a solved constraint system so that every tablet's arithmetic is checked and the residual signs isolated. Train sign-distribution models on proto-cuneiform and early cuneiform, where logograms, determinatives and phonetic complements are known, then test whether Proto-Elamite contains a comparable phonetic subset, following the computational work of Born, Kelley and colleagues. Test the claimed Linear Elamite relation with pre-registered sign-form and value correspondences against shuffled pairings. Unpublished and poorly imaged tablets in the Louvre and in Iranian collections need high-resolution imaging, which requires collaboration with those institutions.",
+  "approach": [
+    "Start from the CDLI transliterations and images, and treat the numerical layer as a solved constraint system so that every tablet's arithmetic is checked and the residual signs isolated.",
+    "Train sign-distribution models on proto-cuneiform and early cuneiform, where logograms, determinatives and phonetic complements are known, then test whether Proto-Elamite contains a comparable phonetic subset, following the computational work of Born, Kelley and colleagues.",
+    "Test the claimed Linear Elamite relation with pre-registered sign-form and value correspondences against shuffled pairings.",
+    "Unpublished and poorly imaged tablets in the Louvre and in Iranian collections need high-resolution imaging, which requires collaboration with those institutions."
+  ],
   "existing": [
     {
       "year": 2004,
@@ -148,5 +153,11 @@
       "digitized": "partial",
       "note": "Holds tablets from Iranian excavations that are less fully imaged than the Louvre material; recording them requires collaboration with Iranian institutions."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

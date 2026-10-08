@@ -12,7 +12,11 @@
   "matters": "Because India's toll is the largest single component of every global estimate, the uncertainty there drives much of the spread in estimates of world pandemic mortality, from under 20 million to 50 million or more. The causes of Indian mortality (concurrent drought and food scarcity, wartime prices, malaria, the state of colonial public health, age and sex patterns) are central to arguments about how poverty and governance shape pandemic outcomes and are used to model future pandemics. The demographic shock also figures in the history of Indian nationalism, of the 1921 census 'great divide' in population growth, and of colonial medicine.",
   "stuck": "Death registration in British India relied on village watchmen and was incomplete, and the princely states, covering roughly a fifth of the population, kept poorer records or none. Estimates have therefore depended on intercensal comparison, on extrapolation from better-registered provinces, or on assumptions about baseline mortality, which produce different totals. The district-level registers and sanitary reports that would allow finer analysis are held in provincial and state archives and are mostly undigitized.",
   "solved": "A district-level panel of registered deaths for 1915–1921 covering all provinces of British India, with a documented correction for under-registration and an imputation for princely states, that yields an all-India excess mortality estimate with uncertainty bounds and identifies the district-level covariates that explain its variation.",
-  "approach": "Agents can transcribe the printed annual provincial sanitary and vital statistics reports and the 1921 census tables, already partly digitized, into a weekly or monthly district panel, and link them to rainfall, price and food-scarcity series and to malaria returns. Models of excess mortality can then be tested against independent intercensal estimates. Extending coverage to the princely states and to sub-district registers requires digitization of holdings in the National Archives of India and state archives, in collaboration with archivists there.",
+  "approach": [
+    "Agents can transcribe the printed annual provincial sanitary and vital statistics reports and the 1921 census tables, already partly digitized, into a weekly or monthly district panel, and link them to rainfall, price and food-scarcity series and to malaria returns.",
+    "Models of excess mortality can then be tested against independent intercensal estimates.",
+    "Extending coverage to the princely states and to sub-district registers requires digitization of holdings in the National Archives of India and state archives, in collaboration with archivists there."
+  ],
   "existing": [
     {
       "year": 1986,
@@ -122,5 +126,11 @@
       "digitized": "full",
       "note": "Open digitized statistical series useful for district covariates such as prices, rainfall and population."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

@@ -12,7 +12,11 @@
   "matters": "A large fall in Anatolian population would connect the Celali rebellions, the Little Ice Age droughts of the 1590s, rural flight and the transformation of Ottoman fiscal and military institutions into one crisis comparable to the 'general crisis' of seventeenth-century Europe and China. If the decline was smaller or mainly a shift from registered villages to towns, nomadism and untaxed settlements, then narratives of Ottoman 'decline' and of climate-driven collapse need revision. The question also tests whether Ottoman tax registers can be used for demography at all.",
   "stuck": "The detailed provincial surveys (tahrir defterleri) end in most of Anatolia by the 1580s and record taxable household heads rather than people, while the seventeenth-century avarız and cizye registers that follow count fiscal units (avarızhane) whose relation to households changed over time. Comparisons across the two series therefore mix demographic change with changes in what was counted. Most studies cover single districts, the registers are held in two archives with different access regimes, and many have never been transcribed.",
   "solved": "A linked village-level dataset across all surviving tahrir and avarız registers for a large sample of Anatolian districts, with a validated model converting each register's fiscal units into households, that produces regional population series from 1520 to 1700 with uncertainty and that agrees with independent evidence such as court records, settlement abandonment and cizye counts.",
-  "approach": "Agents can help transcribe and structure registers from facsimiles and published editions, match village names across registers and to modern locations, and estimate conversion factors between fiscal units and households where registers overlap. Regional series could then be tested against climate reconstructions, Celali violence and court-record evidence of flight. Scaling beyond published registers requires systematic digitization of the Tapu Tahrir (TT.d) and avarız series in the Ottoman Archives in Istanbul and the Kuyûd-ı Kadîme registers in Ankara, with collaboration from archivists and Ottoman palaeographers, since many registers use siyakat numerals and chancery hands that need specialist verification.",
+  "approach": [
+    "Agents can help transcribe and structure registers from facsimiles and published editions, match village names across registers and to modern locations, and estimate conversion factors between fiscal units and households where registers overlap.",
+    "Regional series could then be tested against climate reconstructions, Celali violence and court-record evidence of flight.",
+    "Scaling beyond published registers requires systematic digitization of the Tapu Tahrir (TT.d) and avarız series in the Ottoman Archives in Istanbul and the Kuyûd-ı Kadîme registers in Ankara, with collaboration from archivists and Ottoman palaeographers, since many registers use siyakat numerals and chancery hands that need specialist verification."
+  ],
   "existing": [
     {
       "year": 1957,
@@ -143,5 +147,11 @@
       "digitized": "partial",
       "note": "Court registers record flight, abandoned villages and tax disputes, an independent check on register-based population series; holdings for Anatolian courts are uneven."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

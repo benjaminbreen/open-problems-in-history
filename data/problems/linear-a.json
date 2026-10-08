@@ -10,7 +10,11 @@
   "matters": "The language of Linear A bears on who the Minoans were, how Bronze Age Crete related to Anatolia, the Levant and Egypt, and what the Mycenaean Greeks inherited when they adapted the script as Linear B. Readings of personal names, toponyms and religious formulae on libation vessels would change accounts of Minoan religion and administration. A demonstration that no candidate family is detectable at this corpus size would also be a result, setting limits on what further comparative claims can mean.",
   "stuck": "The corpus is small and mostly administrative: about 1,430 documents in the original GORILA edition and 1,534 after the 2024–25 supplement, most of them short tallies, sealings and roundels, with roughly 7,500 signs in all. Linear B values give approximate pronunciations, but the transfer of values is itself an assumption, and many proposals (Luwian, Semitic, Hurrian, Tyrsenian and others) have been argued by selective lexical matching without controls for how many matches chance would produce. Few proposals have been stated in advance in a form that could fail.",
   "solved": "A language-family hypothesis, specified before testing (sound correspondences, morphology, lexicon), predicts readings of held-out inscriptions significantly better than the same procedure applied to shuffled sign values and unrelated control languages; or a power analysis shows that no such test can succeed at the current corpus size. A narrower solvable target is a complete, consistent account of the fraction signs and commodity totals (KU-RO) that balances the surviving tallies.",
-  "approach": "Build a machine-readable corpus from SigLA, lineara.xyz and the GORILA supplement, with transliteration uncertainty encoded per sign. Pre-register each family hypothesis as a generative model and score it against held-out texts, using the cognate-alignment methods of Luo, Barzilay and colleagues (tested on Ugaritic, Gothic and Iberian) and Packard's 1974 logic of fictitious value assignments as controls. Separately, solve the accounting layer as a constraint problem: fraction values and logogram totals that make every complete tablet balance, extending Corazza et al. (2021).",
+  "approach": [
+    "Build a machine-readable corpus from SigLA, lineara.xyz and the GORILA supplement, with transliteration uncertainty encoded per sign.",
+    "Pre-register each family hypothesis as a generative model and score it against held-out texts, using the cognate-alignment methods of Luo, Barzilay and colleagues (tested on Ugaritic, Gothic and Iberian) and Packard's 1974 logic of fictitious value assignments as controls.",
+    "Separately, solve the accounting layer as a constraint problem: fraction values and logogram totals that make every complete tablet balance, extending Corazza et al. (2021)."
+  ],
   "existing": [
     {
       "year": 1950,
@@ -161,5 +165,11 @@
       "digitized": "partial",
       "note": "Hosts SigLA and the group behind the 2021 fraction-sign study; a likely collaborator for held-out test design."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

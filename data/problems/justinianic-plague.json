@@ -12,7 +12,11 @@
   "matters": "Maximalist readings make the pandemic a cause of the end of antiquity: depopulation weakening the eastern Roman empire before the Arab conquests, contraction of cities and trade, and the rural and fiscal transformations of the seventh century. Minimalist readings remove that causal link and return explanatory weight to war, climate and political decisions. The answer also shapes comparisons with the Black Death and with modern pandemics, and the use of plague as a general explanation in historical narratives.",
   "stuck": "Narrative sources (Procopius, John of Ephesus, Evagrius, Gregory of Tours) give vivid but rhetorically shaped figures for a few cities, and there are almost no serial demographic records. Documentary proxies such as papyri, legislation, coin output, inscriptions and building activity can be read as showing disruption or continuity depending on the baseline chosen. Ancient DNA proves presence of the pathogen at particular sites but not mortality rates, and pollen and settlement data are often too coarse in date to isolate the 540s from other causes.",
   "solved": "A region-by-region database of dated proxies (papyri, legislation, coin issues, dated inscriptions, burials with plague DNA, high-resolution pollen cores, settlement and building chronologies) showing, with stated uncertainties, whether measurable discontinuities cluster at the documented plague waves more than expected from a baseline of other shocks, yielding bounded mortality estimates for named regions.",
-  "approach": "Agents can extract and date every reference to plague waves from narrative and documentary sources, compile counts of dated papyri, inscriptions, laws and coin issues per year and region, and align them with published palaeoecological and aDNA results in a common spatial-temporal framework. Event-study statistics around each wave, with explicit baselines, would replace selective citation. Confirmation requires collaboration with ancient-DNA laboratories to screen more burials across the Mediterranean and Near East and with palynologists for well-dated, high-resolution cores.",
+  "approach": [
+    "Agents can extract and date every reference to plague waves from narrative and documentary sources, compile counts of dated papyri, inscriptions, laws and coin issues per year and region, and align them with published palaeoecological and aDNA results in a common spatial-temporal framework.",
+    "Event-study statistics around each wave, with explicit baselines, would replace selective citation.",
+    "Confirmation requires collaboration with ancient-DNA laboratories to screen more burials across the Mediterranean and Near East and with palynologists for well-dated, high-resolution cores."
+  ],
   "existing": [
     {
       "year": 1969,
@@ -178,5 +182,11 @@
       "digitized": "full",
       "note": "Texts used to count dated building and funerary inscriptions as a proxy for continuity or disruption."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

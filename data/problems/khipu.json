@@ -12,7 +12,11 @@
   "matters": "Colonial chroniclers reported that khipukamayuq read histories, genealogies and laws from cords. If khipus encoded non-numerical information systematically, the Inka state kept records that could be read as primary sources for Andean history before and after 1532, and the comparative history of writing would need to include a non-graphic system. If they did not, accounts of Inka administration must explain how a large empire functioned on numerical records plus memory.",
   "stuck": "Roughly a thousand khipus survive (estimates vary), most without archaeological context, and very few can be paired with a Spanish-language transcription of the same record. The decimal knot system was established by Locke (1912) and the Aschers, but colour, fibre, spin and ply, attachment direction and knot orientation vary in ways that have resisted consistent interpretation. Data were long scattered across incompatible recording schemes and unpublished notebooks.",
   "solved": "A model trained on matched khipu–document pairs predicts, for khipus or transcriptions held out from training, non-numerical features (such as moiety, lineage, place or personal-name categories) significantly better than chance and better than numerical-only baselines, and the predictions are confirmed when new matched pairs are found.",
-  "approach": "Use the Open Khipu Repository and Khipu Field Guide as a common schema, and systematically search colonial visitas, revisitas and court records in Peruvian and Spanish archives for documents stating that their figures were read from khipus, then match them by totals and structure as Medrano and Urton did for the Santa Valley khipus. Test competing readings, such as the alternative moiety alignments of Medrano and Urton (2018) and FitzPatrick (2024), against held-out cord groups. This depends on recording undocumented khipus in museum stores, especially in Berlin, Lima and smaller Peruvian collections, and on community agreements for khipus still held in villages such as Collata and Rapaz.",
+  "approach": [
+    "Use the Open Khipu Repository and Khipu Field Guide as a common schema, and systematically search colonial visitas, revisitas and court records in Peruvian and Spanish archives for documents stating that their figures were read from khipus, then match them by totals and structure as Medrano and Urton did for the Santa Valley khipus.",
+    "Test competing readings, such as the alternative moiety alignments of Medrano and Urton (2018) and FitzPatrick (2024), against held-out cord groups.",
+    "This depends on recording undocumented khipus in museum stores, especially in Berlin, Lima and smaller Peruvian collections, and on community agreements for khipus still held in villages such as Collata and Rapaz."
+  ],
   "existing": [
     {
       "year": 1912,
@@ -154,5 +158,11 @@
       "digitized": "none",
       "note": "Held by the community, not a museum; any further recording or imaging depends on community consent."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

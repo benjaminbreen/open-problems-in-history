@@ -12,7 +12,11 @@
   "matters": "The relative sequence of Old Assyrian, Old Babylonian and Kassite rulers is well established, but its anchor in absolute years is not, so every date before about 1400 BCE in Mesopotamia, Anatolia, Syria and the Levant inherits the uncertainty. Synchronisms with Egypt, the Hittite sack of Babylon, the dating of the Santorini eruption debate, climate-and-collapse arguments and comparisons with radiocarbon-dated archaeology all depend on which option is chosen. The four usual options put the fall of Babylon at 1651, 1595, 1531 or 1499 BCE.",
   "stuck": "The Venus observations preserved in later copies of Enūma Anu Enlil tablet 63 are corrupt and allow several solutions roughly 56 or 64 years apart, and month-length and eclipse arguments depend on contested readings and observational assumptions. Assyrian King List distance figures contain uncertain reign lengths, and the Kültepe eponym lists must be joined to Old Babylonian sources through a small number of synchronisms. Dendrochronological sequences from Anatolian sites were long only floating, and their wiggle-matched radiocarbon dates carry their own calibration and regional-offset uncertainties.",
   "solved": "A published, reproducible Bayesian model that ingests the Venus data, lunar month lengths, eclipse candidates, king-list and eponym-list distance numbers, dendrochronological sequences and radiocarbon dates with explicit priors, returns a posterior for a fixed anchor (such as Ammisaduqa year 1) with a stated uncertainty under 10 years, and remains stable when individual lines of evidence are removed.",
-  "approach": "Agents can build a machine-readable dataset of every chronologically relevant datum (each Venus copy and its variant readings, month-length records from Old Babylonian archives, eponym-list entries, reign lengths, synchronisms) with full citations, then encode them as constraints in a radiocarbon-modelling framework such as OxCal. Sensitivity analysis would show which items drive the result. New radiocarbon and dendrochronological measurements on securely contexted short-lived samples and timbers from Kültepe, Acemhöyük and Babylonian sites require collaboration with dendrochronology and radiocarbon laboratories.",
+  "approach": [
+    "Agents can build a machine-readable dataset of every chronologically relevant datum (each Venus copy and its variant readings, month-length records from Old Babylonian archives, eponym-list entries, reign lengths, synchronisms) with full citations, then encode them as constraints in a radiocarbon-modelling framework such as OxCal.",
+    "Sensitivity analysis would show which items drive the result.",
+    "New radiocarbon and dendrochronological measurements on securely contexted short-lived samples and timbers from Kültepe, Acemhöyük and Babylonian sites require collaboration with dendrochronology and radiocarbon laboratories."
+  ],
   "existing": [
     {
       "year": 1928,
@@ -154,5 +158,11 @@
       "digitized": "full",
       "note": "Calibration data needed to model wiggle-matched dendro sequences and to test regional offsets."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

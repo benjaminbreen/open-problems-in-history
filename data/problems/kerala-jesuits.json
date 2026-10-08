@@ -6,32 +6,171 @@
   "field": "Science & knowledge",
   "start": 1350,
   "end": 1700,
-  "flags": ["digitization"],
+  "flags": [
+    "digitization"
+  ],
   "matters": "If Kerala results on infinite series reached Europe, accounts of the origins of the calculus in Gregory, Newton and Leibniz would need to include an Indian component rather than parallel discovery. The question has also become a test case for arguments about the standard of evidence applied to East-to-West versus West-to-East transmission, and for the role of Jesuit colleges as intermediaries in Asian knowledge more generally.",
   "stuck": "The Kerala results (attributed to Mādhava, c. 1340–1425, and preserved in Nīlakaṇṭha's Tantrasaṅgraha of 1501 and Jyeṣṭhadeva's Yuktibhāṣā of c. 1530) are securely dated, and Jesuits were present in Cochin from the mid-sixteenth century. But no Jesuit letter, translation, notebook or library record yet produced mentions these series, and Joseph himself reports that a survey of Jesuit literature found no direct trace. The Jesuit college library at Cochin was dispersed when the Dutch took the city in 1663, and relevant Malayalam and Sanskrit manuscripts are scattered and only partly catalogued.",
   "solved": "Either a dated document showing a European in possession of, or describing, a Kerala series result before Gregory (1668) and Newton (c. 1665–1669), or a documented, bounded search of the named Jesuit correspondence series (ARSI Goa and Malabar volumes, Documenta Indica, Clavius correspondence) and Kerala manuscript holdings that records the absence of any such reference.",
-  "approach": "Agents can systematically read the published Documenta Indica and the microfilmed ARSI Goa-Malabar letters for references to Indian astronomy, calendars, Brahmin informants and mathematical manuscripts, and cross-match names of Jesuits in Cochin with correspondents of Clavius and the Collegio Romano. In parallel they can trace ownership and copying notes in Kerala astronomical manuscripts for European hands. Progress depends on digitizing the ARSI Goa series at item level and on the Oriental Research Institute and Royal Asiatic Society completing digitization of palm-leaf holdings with searchable catalogues.",
+  "approach": [
+    "Agents can systematically read the published Documenta Indica and the microfilmed ARSI Goa-Malabar letters for references to Indian astronomy, calendars, Brahmin informants and mathematical manuscripts, and cross-match names of Jesuits in Cochin with correspondents of Clavius and the Collegio Romano.",
+    "In parallel they can trace ownership and copying notes in Kerala astronomical manuscripts for European hands.",
+    "Progress depends on digitizing the ARSI Goa series at item level and on the Oriental Research Institute and Royal Asiatic Society completing digitization of palm-leaf holdings with searchable catalogues."
+  ],
   "existing": [
-    {"year": 1834, "authors": "Charles M. Whish", "title": "On the Hindú Quadrature of the Circle, and the Infinite Series of the Proportion of the Circumference to the Diameter Exhibited in the Four S'ástras, the Tantra Sangraham, Yucti Bháshá, Carana Padhati, and Sadratnamála", "venue": "Transactions of the Royal Asiatic Society of Great Britain and Ireland 3 (3): 509–523", "url": "https://doi.org/10.1017/S0950473700001221", "note": "First European account of the Kerala series, based on manuscripts Whish collected in Malabar."},
-    {"year": 1978, "authors": "C. T. Rajagopal and M. S. Rangachari", "title": "On an Untapped Source of Medieval Keralese Mathematics", "venue": "Archive for History of Exact Sciences 18 (2): 89–102", "url": "https://doi.org/10.1007/BF00348142", "note": "Edited and analysed the series for π, sine and cosine and established their Kerala attribution for modern historians of mathematics."},
-    {"year": 2001, "authors": "C. K. Raju", "title": "Computers, Mathematics Education, and the Alternative Epistemology of the Calculus in the Yuktibhāṣā", "venue": "Philosophy East and West 51 (3): 325–362", "url": "https://doi.org/10.1353/pew.2001.0045", "note": "Argued that Kerala techniques constitute a calculus and proposed Jesuit transmission to Europe."},
-    {"year": 2001, "authors": "Kim Plofker", "title": "The 'Error' in the Indian 'Taylor Series Approximation' to the Sine", "venue": "Historia Mathematica 28 (4): 283–295", "url": "https://doi.org/10.1006/hmat.2001.2331", "note": "Cautioned against reading Indian results through the categories of European analysis."},
-    {"year": 2002, "authors": "David Bressoud", "title": "Was Calculus Invented in India?", "venue": "The College Mathematics Journal 33 (1): 2–13", "url": "https://doi.org/10.1080/07468342.2002.11921911", "note": "Summarized the Kerala results and judged transmission to Europe unproven."},
-    {"year": 2004, "authors": "Dennis F. Almeida and George Gheverghese Joseph", "title": "Eurocentrism in the History of Mathematics: The Case of the Kerala School", "venue": "Race & Class 45 (4): 45–59", "url": "https://doi.org/10.1177/0306396804043866", "note": "Set out the circumstantial case for Jesuit transmission; the argument was widely publicized through a University of Manchester press release in 2007."},
-    {"year": 2007, "authors": "C. K. Raju", "title": "Cultural Foundations of Mathematics: The Nature of Mathematical Proof and the Transmission of the Calculus from India to Europe in the 16th c. CE", "venue": "New Delhi: Pearson Longman (PHISPC vol. X, pt. 4)", "url": "https://doi.org/10.1093/philmat/nkp003", "note": "Book-length argument for transmission via Jesuit interest in calendrics and navigation; link is to Ferreirós's critical review in Philosophia Mathematica."},
-    {"year": 2008, "authors": "K. V. Sarma, K. Ramasubramanian, M. D. Srinivas and M. S. Sriram", "title": "Gaṇita-Yukti-Bhāṣā (Rationales in Mathematical Astronomy) of Jyeṣṭhadeva", "venue": "New Delhi: Hindustan Book Agency; Springer", "url": "https://doi.org/10.1007/978-93-86279-37-8", "note": "Critical edition and translation of the Yuktibhāṣā, the main source for Kerala derivations of the series."},
-    {"year": 2009, "authors": "Kim Plofker", "title": "Mathematics in India", "venue": "Princeton: Princeton University Press", "url": "https://doi.org/10.1515/9781400834075", "note": "Standard survey; treats the Kerala results in detail and finds no evidence that they reached Europe."},
-    {"year": 2009, "authors": "George Gheverghese Joseph", "title": "A Passage to Infinity: Medieval Indian Mathematics from Kerala and Its Impact", "venue": "New Delhi: Sage", "url": "https://doi.org/10.4135/9788132108085", "note": "Restated the transmission hypothesis while acknowledging that Jesuit sources had not yielded direct evidence."},
-    {"year": 2009, "authors": "Dennis F. Almeida and George Gheverghese Joseph", "title": "Kerala Mathematics and Its Possible Transmission to Europe", "venue": "In P. Ernest, B. Greer and B. Sriraman (eds), Critical Issues in Mathematics Education, Charlotte, NC: Information Age Publishing, 171–188", "url": "https://doi.org/10.1108/978-1-60752-218-820251017", "note": "Detailed the proposed routes via the Cochin Jesuit college, Collegio Romano and navigational interest."},
-    {"year": 2016, "authors": "George Gheverghese Joseph", "title": "Indian Mathematics: Engaging with the World from Ancient to Modern Times", "venue": "London: World Scientific", "url": "https://doi.org/10.1142/q0018", "note": "Places the Kerala school in a wider account of Indian mathematical exchange with the outside world."},
-    {"year": 2018, "authors": "P. P. Divakaran", "title": "The Mathematics of India: Concepts, Methods, Connections", "venue": "Singapore: Springer", "url": "https://doi.org/10.1007/978-981-13-1774-3", "note": "Mathematical analysis of Nīlakaṇṭha's school that treats European transmission skeptically for lack of documentary evidence."}
+    {
+      "year": 1834,
+      "authors": "Charles M. Whish",
+      "title": "On the Hindú Quadrature of the Circle, and the Infinite Series of the Proportion of the Circumference to the Diameter Exhibited in the Four S'ástras, the Tantra Sangraham, Yucti Bháshá, Carana Padhati, and Sadratnamála",
+      "venue": "Transactions of the Royal Asiatic Society of Great Britain and Ireland 3 (3): 509–523",
+      "url": "https://doi.org/10.1017/S0950473700001221",
+      "note": "First European account of the Kerala series, based on manuscripts Whish collected in Malabar."
+    },
+    {
+      "year": 1978,
+      "authors": "C. T. Rajagopal and M. S. Rangachari",
+      "title": "On an Untapped Source of Medieval Keralese Mathematics",
+      "venue": "Archive for History of Exact Sciences 18 (2): 89–102",
+      "url": "https://doi.org/10.1007/BF00348142",
+      "note": "Edited and analysed the series for π, sine and cosine and established their Kerala attribution for modern historians of mathematics."
+    },
+    {
+      "year": 2001,
+      "authors": "C. K. Raju",
+      "title": "Computers, Mathematics Education, and the Alternative Epistemology of the Calculus in the Yuktibhāṣā",
+      "venue": "Philosophy East and West 51 (3): 325–362",
+      "url": "https://doi.org/10.1353/pew.2001.0045",
+      "note": "Argued that Kerala techniques constitute a calculus and proposed Jesuit transmission to Europe."
+    },
+    {
+      "year": 2001,
+      "authors": "Kim Plofker",
+      "title": "The 'Error' in the Indian 'Taylor Series Approximation' to the Sine",
+      "venue": "Historia Mathematica 28 (4): 283–295",
+      "url": "https://doi.org/10.1006/hmat.2001.2331",
+      "note": "Cautioned against reading Indian results through the categories of European analysis."
+    },
+    {
+      "year": 2002,
+      "authors": "David Bressoud",
+      "title": "Was Calculus Invented in India?",
+      "venue": "The College Mathematics Journal 33 (1): 2–13",
+      "url": "https://doi.org/10.1080/07468342.2002.11921911",
+      "note": "Summarized the Kerala results and judged transmission to Europe unproven."
+    },
+    {
+      "year": 2004,
+      "authors": "Dennis F. Almeida and George Gheverghese Joseph",
+      "title": "Eurocentrism in the History of Mathematics: The Case of the Kerala School",
+      "venue": "Race & Class 45 (4): 45–59",
+      "url": "https://doi.org/10.1177/0306396804043866",
+      "note": "Set out the circumstantial case for Jesuit transmission; the argument was widely publicized through a University of Manchester press release in 2007."
+    },
+    {
+      "year": 2007,
+      "authors": "C. K. Raju",
+      "title": "Cultural Foundations of Mathematics: The Nature of Mathematical Proof and the Transmission of the Calculus from India to Europe in the 16th c. CE",
+      "venue": "New Delhi: Pearson Longman (PHISPC vol. X, pt. 4)",
+      "url": "https://doi.org/10.1093/philmat/nkp003",
+      "note": "Book-length argument for transmission via Jesuit interest in calendrics and navigation; link is to Ferreirós's critical review in Philosophia Mathematica."
+    },
+    {
+      "year": 2008,
+      "authors": "K. V. Sarma, K. Ramasubramanian, M. D. Srinivas and M. S. Sriram",
+      "title": "Gaṇita-Yukti-Bhāṣā (Rationales in Mathematical Astronomy) of Jyeṣṭhadeva",
+      "venue": "New Delhi: Hindustan Book Agency; Springer",
+      "url": "https://doi.org/10.1007/978-93-86279-37-8",
+      "note": "Critical edition and translation of the Yuktibhāṣā, the main source for Kerala derivations of the series."
+    },
+    {
+      "year": 2009,
+      "authors": "Kim Plofker",
+      "title": "Mathematics in India",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.1515/9781400834075",
+      "note": "Standard survey; treats the Kerala results in detail and finds no evidence that they reached Europe."
+    },
+    {
+      "year": 2009,
+      "authors": "George Gheverghese Joseph",
+      "title": "A Passage to Infinity: Medieval Indian Mathematics from Kerala and Its Impact",
+      "venue": "New Delhi: Sage",
+      "url": "https://doi.org/10.4135/9788132108085",
+      "note": "Restated the transmission hypothesis while acknowledging that Jesuit sources had not yielded direct evidence."
+    },
+    {
+      "year": 2009,
+      "authors": "Dennis F. Almeida and George Gheverghese Joseph",
+      "title": "Kerala Mathematics and Its Possible Transmission to Europe",
+      "venue": "In P. Ernest, B. Greer and B. Sriraman (eds), Critical Issues in Mathematics Education, Charlotte, NC: Information Age Publishing, 171–188",
+      "url": "https://doi.org/10.1108/978-1-60752-218-820251017",
+      "note": "Detailed the proposed routes via the Cochin Jesuit college, Collegio Romano and navigational interest."
+    },
+    {
+      "year": 2016,
+      "authors": "George Gheverghese Joseph",
+      "title": "Indian Mathematics: Engaging with the World from Ancient to Modern Times",
+      "venue": "London: World Scientific",
+      "url": "https://doi.org/10.1142/q0018",
+      "note": "Places the Kerala school in a wider account of Indian mathematical exchange with the outside world."
+    },
+    {
+      "year": 2018,
+      "authors": "P. P. Divakaran",
+      "title": "The Mathematics of India: Concepts, Methods, Connections",
+      "venue": "Singapore: Springer",
+      "url": "https://doi.org/10.1007/978-981-13-1774-3",
+      "note": "Mathematical analysis of Nīlakaṇṭha's school that treats European transmission skeptically for lack of documentary evidence."
+    }
   ],
   "archives": [
-    {"repository": "Archivum Romanum Societatis Iesu (ARSI), Rome", "collection": "Assistentia Lusitaniae, Provinciae Goana et Malabarica (Goa series of letters and annual reports)", "url": "https://arsi.jesuits.global/", "digitized": "partial", "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski's inventory and access requires accreditation."},
-    {"repository": "Saint Louis University, Vatican Film Library, St. Louis", "collection": "Jesuit Historical Manuscripts on Microfilm (ARSI microfilms)", "url": "https://www.slu.edu/library/vatican-film-library/collections/jesuit-historical-manuscripts.php", "digitized": "partial", "note": "Microfilm copies of ARSI series, a practical route to the Goa-Malabar letters outside Rome."},
-    {"repository": "Archivio Storico della Pontificia Università Gregoriana, Rome", "collection": "APUG 529–530, correspondence of Christoph Clavius", "url": "https://unigre.it/en/historical-archive", "digitized": "partial", "note": "Letters to Clavius, the mathematical centre of the Jesuit network, partly digitized through the Clavius on the Web project."},
-    {"repository": "Oriental Research Institute and Manuscripts Library, University of Kerala, Thiruvananthapuram", "collection": "Palm-leaf manuscripts of Kerala astronomy and mathematics (Tantrasaṅgraha, Yuktibhāṣā, Karaṇapaddhati and commentaries)", "url": "https://orimssku.in/", "digitized": "none", "note": "More than 65,000 manuscripts, mostly palm leaf, catalogued in print; on-site access only."},
-    {"repository": "Royal Asiatic Society, London", "collection": "Whish Collection of South Indian manuscripts (gift of 1836)", "url": "https://royalasiaticsociety.org/south-indian-sanskrit-manuscripts-now-catalogued-online/", "digitized": "partial", "note": "Manuscripts Whish used in 1834, including Tantrasaṅgraha commentaries in Sanskrit and Malayalam; catalogued online and being digitized."},
-    {"repository": "Arquivo Nacional da Torre do Tombo, Lisbon", "collection": "Armário Jesuítico e Cartório dos Jesuítas (PT/TT/AJCJ), including records of overseas missions", "url": "https://digitarq.arquivos.pt/", "digitized": "partial", "note": "Portuguese Jesuit administrative records, searchable through the DigitArq catalogue, with variable digitization."}
-  ]
+    {
+      "repository": "Archivum Romanum Societatis Iesu (ARSI), Rome",
+      "collection": "Assistentia Lusitaniae, Provinciae Goana et Malabarica (Goa series of letters and annual reports)",
+      "url": "https://arsi.jesuits.global/",
+      "digitized": "partial",
+      "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski's inventory and access requires accreditation."
+    },
+    {
+      "repository": "Saint Louis University, Vatican Film Library, St. Louis",
+      "collection": "Jesuit Historical Manuscripts on Microfilm (ARSI microfilms)",
+      "url": "https://www.slu.edu/library/vatican-film-library/collections/jesuit-historical-manuscripts.php",
+      "digitized": "partial",
+      "note": "Microfilm copies of ARSI series, a practical route to the Goa-Malabar letters outside Rome."
+    },
+    {
+      "repository": "Archivio Storico della Pontificia Università Gregoriana, Rome",
+      "collection": "APUG 529–530, correspondence of Christoph Clavius",
+      "url": "https://unigre.it/en/historical-archive",
+      "digitized": "partial",
+      "note": "Letters to Clavius, the mathematical centre of the Jesuit network, partly digitized through the Clavius on the Web project."
+    },
+    {
+      "repository": "Oriental Research Institute and Manuscripts Library, University of Kerala, Thiruvananthapuram",
+      "collection": "Palm-leaf manuscripts of Kerala astronomy and mathematics (Tantrasaṅgraha, Yuktibhāṣā, Karaṇapaddhati and commentaries)",
+      "url": "https://orimssku.in/",
+      "digitized": "none",
+      "note": "More than 65,000 manuscripts, mostly palm leaf, catalogued in print; on-site access only."
+    },
+    {
+      "repository": "Royal Asiatic Society, London",
+      "collection": "Whish Collection of South Indian manuscripts (gift of 1836)",
+      "url": "https://royalasiaticsociety.org/south-indian-sanskrit-manuscripts-now-catalogued-online/",
+      "digitized": "partial",
+      "note": "Manuscripts Whish used in 1834, including Tantrasaṅgraha commentaries in Sanskrit and Malayalam; catalogued online and being digitized."
+    },
+    {
+      "repository": "Arquivo Nacional da Torre do Tombo, Lisbon",
+      "collection": "Armário Jesuítico e Cartório dos Jesuítas (PT/TT/AJCJ), including records of overseas missions",
+      "url": "https://digitarq.arquivos.pt/",
+      "digitized": "partial",
+      "note": "Portuguese Jesuit administrative records, searchable through the DigitArq catalogue, with variable digitization."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

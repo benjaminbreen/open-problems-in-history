@@ -10,7 +10,11 @@
   "matters": "Quantitative histories of the early book trade, of literacy and of the spread of ideas count surviving editions as if they were a fixed fraction of what was printed. If loss was heavy and uneven, falling hardest on cheap, small-format, vernacular, ephemeral and heavily used books such as schoolbooks, almanacs, broadsides and devotional texts, then the apparent dominance of Latin learned printing and the relative output of regions and printers are artefacts of survival. The same estimates are used to calibrate long-run series of book production that feed into economic history.",
   "stuck": "Lost editions leave evidence only indirectly, in booksellers' catalogues, inventories, references, binding fragments and editions known from a single copy. Statistical estimates depend on assumptions about how copy counts are distributed, and the main models give different answers for different categories of book. Catalogues such as ISTC, GW and USTC are revised continuously, but no one has systematically used their revision history to test whether past estimates correctly predicted the rate and kind of new discoveries.",
   "solved": "A survival model fitted on a dated snapshot of a major catalogue (for example ISTC or USTC as of a past year) that correctly predicts the number and category distribution of editions added in later years, together with an estimate of total lost editions by format, language and genre with stated uncertainty.",
-  "approach": "Agents can reconstruct historical states of ISTC, GW, USTC and VD16 from published versions, data exports and change logs, record copy counts per edition, and fit unseen-species estimators (Chao1, Efron–Thisted and successors) separately for format, language and genre. Predictions from older snapshots can then be scored against editions discovered since, and the documentary record of lost books (booksellers' lists, inventories, privileges) used as an independent check. All the needed catalogues are already online, so no new digitization is required, though cooperation with catalogue maintainers would allow access to dated record histories.",
+  "approach": [
+    "Agents can reconstruct historical states of ISTC, GW, USTC and VD16 from published versions, data exports and change logs, record copy counts per edition, and fit unseen-species estimators (Chao1, Efron–Thisted and successors) separately for format, language and genre.",
+    "Predictions from older snapshots can then be scored against editions discovered since, and the documentary record of lost books (booksellers' lists, inventories, privileges) used as an independent check.",
+    "All the needed catalogues are already online, so no new digitization is required, though cooperation with catalogue maintainers would allow access to dated record histories."
+  ],
   "existing": [
     {
       "year": 1976,
@@ -136,5 +140,11 @@
       "digitized": "full",
       "note": "Openly released datasets and model implementations that can be adapted to print catalogues."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

@@ -6,34 +6,186 @@
   "field": "Science & knowledge",
   "start": 1250,
   "end": 1543,
-  "flags": ["digitization"],
+  "flags": [
+    "digitization"
+  ],
   "matters": "If Copernicus drew on the Ṭūsī couple and Ibn al-Shāṭir's lunar and Mercury models, the Copernican revolution sits at the end of a continuous Arabic and Persian reform of Ptolemaic astronomy rather than at a Latin new beginning. The answer bears on how historians describe the relation between Islamic science and the Renaissance, on the role of Byzantine and Jewish intermediaries in fifteenth-century Italy, and on Swerdlow's reconstruction of how Copernicus reached heliocentrism in the first place.",
   "stuck": "The mathematical parallels have been clear since Kennedy and Roberts (1959) and Swerdlow and Neugebauer (1984), but Copernicus cites no Arabic author for these devices, and no Latin translation of al-Ṭūsī's Tadhkira or Ibn al-Shāṭir's Nihāyat al-sūl is known. The one securely located carrier, a Ṭūsī-couple diagram in a Byzantine Greek astronomical text in Vat. gr. 211, proves the device reached Italy but not that Copernicus saw it. Skeptics (Di Bono 1995, Blåsjö 2014, 2018) argue that the devices could have been derived independently or from Latin sources such as Proclus, so parallels alone cannot settle the question.",
   "solved": "A dated document (a manuscript, annotation, library inventory, loan record or letter) that places a text describing the Ṭūsī couple or Ibn al-Shāṭir's models in the hands of Copernicus, one of his teachers, or a scholar demonstrably in contact with him in Kraków, Bologna, Rome, Padua or Ferrara before about 1514. Alternatively, a documented exhaustive search of the relevant manuscript holdings that finds no such carrier would narrow the hypothesis to independent invention or oral transmission.",
-  "approach": "Agents can build a census of every Greek, Hebrew, Latin and Arabic manuscript known to contain the Ṭūsī couple or Ibn al-Shāṭir-type models, then cross-reference provenance, ownership marks and library inventories against the prosopography of Copernicus's teachers and Paduan contemporaries such as Amico and Fracastoro, and against Morrison's Jewish intermediaries such as Moses Galeano. Much of the Vatican, Bodleian and Uppsala material is already online, but progress requires digitizing and cataloguing uncatalogued Hebrew and Greek astronomical miscellanies in Italian, Polish and Central European libraries, and working with curators to read ownership notes and binding evidence.",
+  "approach": [
+    "Agents can build a census of every Greek, Hebrew, Latin and Arabic manuscript known to contain the Ṭūsī couple or Ibn al-Shāṭir-type models, then cross-reference provenance, ownership marks and library inventories against the prosopography of Copernicus's teachers and Paduan contemporaries such as Amico and Fracastoro, and against Morrison's Jewish intermediaries such as Moses Galeano.",
+    "Much of the Vatican, Bodleian and Uppsala material is already online, but progress requires digitizing and cataloguing uncatalogued Hebrew and Greek astronomical miscellanies in Italian, Polish and Central European libraries, and working with curators to read ownership notes and binding evidence."
+  ],
   "existing": [
-    {"year": 1959, "authors": "E. S. Kennedy and Victor Roberts", "title": "The Planetary Theory of Ibn al-Shāṭir", "venue": "Isis 50 (3): 227–235", "url": "https://doi.org/10.1086/348774", "note": "First showed that Ibn al-Shāṭir's lunar and planetary models are mathematically equivalent to those Copernicus later used."},
-    {"year": 1968, "authors": "Otto Neugebauer", "title": "On the Planetary Theory of Copernicus", "venue": "Vistas in Astronomy 10: 89–104", "url": "https://doi.org/10.1016/0083-6656(68)90040-8", "note": "Analysed Copernicus's models as technical modifications of Ptolemy and drew attention to their parallels with the Maragha school."},
-    {"year": 1973, "authors": "N. M. Swerdlow", "title": "The Derivation and First Draft of Copernicus's Planetary Theory: A Translation of the Commentariolus with Commentary", "venue": "Proceedings of the American Philosophical Society 117 (6): 423–512", "url": "https://www.jstor.org/stable/986461", "note": "Reconstructed Copernicus's path to heliocentrism from the Commentariolus and argued that his devices were very likely borrowed from Maragha sources."},
-    {"year": 1984, "authors": "N. M. Swerdlow and O. Neugebauer", "title": "Mathematical Astronomy in Copernicus's De Revolutionibus", "venue": "New York: Springer", "url": "https://doi.org/10.1007/978-1-4613-8262-1", "note": "Standard technical commentary; argued for transmission and identified the Ṭūsī-couple diagram in the Byzantine text of Vat. gr. 211 as a possible route."},
-    {"year": 1995, "authors": "Mario di Bono", "title": "Copernicus, Amico, Fracastoro and Ṭūsī's Device: Observations on the Use and Transmission of a Model", "venue": "Journal for the History of Astronomy 26 (2): 133–154", "url": "https://doi.org/10.1177/002182869502600203", "note": "Argued that versions of the device circulated in a Latin tradition and that independent derivation cannot be excluded."},
-    {"year": 2007, "authors": "George Saliba", "title": "Islamic Science and the Making of the European Renaissance", "venue": "Cambridge, MA: MIT Press", "url": "https://doi.org/10.7551/mitpress/3981.001.0001", "note": "Made the broadest case for transmission of Maragha-school astronomy to Renaissance Europe, including through Greek and Arabic manuscripts in Italy."},
-    {"year": 2007, "authors": "F. Jamil Ragep", "title": "Copernicus and His Islamic Predecessors: Some Historical Remarks", "venue": "History of Science 45 (1): 65–81", "url": "https://doi.org/10.1177/007327530704500103", "note": "Argued that both the technical devices and the philosophical motivations of Copernicus's reform have Islamic precedents."},
-    {"year": 2014, "authors": "Robert Morrison", "title": "A Scholarly Intermediary between the Ottoman Empire and Renaissance Europe", "venue": "Isis 105 (1): 32–57", "url": "https://doi.org/10.1086/675550", "note": "Identified Moses Galeano, a Jewish scholar active in the Veneto around 1500, as a carrier of Islamic astronomical ideas resembling those of Amico and Fracastoro."},
-    {"year": 2014, "authors": "Viktor Blåsjö", "title": "A Critique of the Arguments for Maragha Influence on Copernicus", "venue": "Journal for the History of Astronomy 45 (2): 183–195", "url": "https://doi.org/10.1177/002182861404500203", "note": "Argued that the technical parallels do not require transmission and that the documentary case is absent."},
-    {"year": 2016, "authors": "F. Jamil Ragep", "title": "Ibn al-Shāṭir and Copernicus: The Uppsala Notes Revisited", "venue": "Journal for the History of Astronomy 47 (4): 395–415", "url": "https://doi.org/10.1177/0021828616678508", "note": "Re-read Copernicus's notes in an Uppsala volume and argued that Ibn al-Shāṭir's models had features that made them useful for a heliocentric transformation."},
-    {"year": 2017, "authors": "F. Jamil Ragep", "title": "From Tūn to Toruń: The Twists and Turns of the Ṭūsī-Couple", "venue": "In R. Feldhay and F. J. Ragep (eds), Before Copernicus, Montreal: McGill-Queen's University Press, 161–197", "url": "https://doi.org/10.1515/9780773550117-011", "note": "Traced the versions of the Ṭūsī couple across Arabic, Greek, Hebrew and Latin sources and the routes by which they could have reached Europe."},
-    {"year": 2018, "authors": "Mark Nosonovsky", "title": "Abner of Burgos: The Missing Link between Nasir al-Din al-Tusi and Nicolaus Copernicus?", "venue": "Zutot 15 (1): 25–30", "url": "https://doi.org/10.1163/18750214-12151070", "note": "Proposed a Hebrew route via a fourteenth-century Castilian text describing a Ṭūsī-type device."},
-    {"year": 2018, "authors": "Viktor Blåsjö", "title": "A Rebuttal of Recent Arguments for Maragha Influence on Copernicus", "venue": "Studia Historiae Scientiarum 17: 479–497", "url": "https://doi.org/10.4467/2543702XSHS.18.017.9337", "note": "Replied to Ragep, Barker and Heidarzadeh, and Bala, maintaining that no documentary route has been shown."},
-    {"year": 2019, "authors": "Sajjad Nikfahm-Khubravan and F. Jamil Ragep", "title": "The Mercury Models of Ibn al-Šāṭir and Copernicus", "venue": "Arabic Sciences and Philosophy 29 (1): 1–59", "url": "https://doi.org/10.1017/S0957423918000085", "note": "Argued from detailed parameters that Copernicus's Mercury model is too close to Ibn al-Shāṭir's to be independent."},
-    {"year": 2025, "authors": "Robert Morrison", "title": "Merchants of Knowledge: Intellectual Exchange in the Ottoman Empire and Renaissance Europe", "venue": "Stanford: Stanford University Press", "url": "https://doi.org/10.1515/9781503642690", "note": "Book-length study of Jewish and other intermediaries carrying Islamic astronomy between the Ottoman world and Italy around 1500."}
+    {
+      "year": 1959,
+      "authors": "E. S. Kennedy and Victor Roberts",
+      "title": "The Planetary Theory of Ibn al-Shāṭir",
+      "venue": "Isis 50 (3): 227–235",
+      "url": "https://doi.org/10.1086/348774",
+      "note": "First showed that Ibn al-Shāṭir's lunar and planetary models are mathematically equivalent to those Copernicus later used."
+    },
+    {
+      "year": 1968,
+      "authors": "Otto Neugebauer",
+      "title": "On the Planetary Theory of Copernicus",
+      "venue": "Vistas in Astronomy 10: 89–104",
+      "url": "https://doi.org/10.1016/0083-6656(68)90040-8",
+      "note": "Analysed Copernicus's models as technical modifications of Ptolemy and drew attention to their parallels with the Maragha school."
+    },
+    {
+      "year": 1973,
+      "authors": "N. M. Swerdlow",
+      "title": "The Derivation and First Draft of Copernicus's Planetary Theory: A Translation of the Commentariolus with Commentary",
+      "venue": "Proceedings of the American Philosophical Society 117 (6): 423–512",
+      "url": "https://www.jstor.org/stable/986461",
+      "note": "Reconstructed Copernicus's path to heliocentrism from the Commentariolus and argued that his devices were very likely borrowed from Maragha sources."
+    },
+    {
+      "year": 1984,
+      "authors": "N. M. Swerdlow and O. Neugebauer",
+      "title": "Mathematical Astronomy in Copernicus's De Revolutionibus",
+      "venue": "New York: Springer",
+      "url": "https://doi.org/10.1007/978-1-4613-8262-1",
+      "note": "Standard technical commentary; argued for transmission and identified the Ṭūsī-couple diagram in the Byzantine text of Vat. gr. 211 as a possible route."
+    },
+    {
+      "year": 1995,
+      "authors": "Mario di Bono",
+      "title": "Copernicus, Amico, Fracastoro and Ṭūsī's Device: Observations on the Use and Transmission of a Model",
+      "venue": "Journal for the History of Astronomy 26 (2): 133–154",
+      "url": "https://doi.org/10.1177/002182869502600203",
+      "note": "Argued that versions of the device circulated in a Latin tradition and that independent derivation cannot be excluded."
+    },
+    {
+      "year": 2007,
+      "authors": "George Saliba",
+      "title": "Islamic Science and the Making of the European Renaissance",
+      "venue": "Cambridge, MA: MIT Press",
+      "url": "https://doi.org/10.7551/mitpress/3981.001.0001",
+      "note": "Made the broadest case for transmission of Maragha-school astronomy to Renaissance Europe, including through Greek and Arabic manuscripts in Italy."
+    },
+    {
+      "year": 2007,
+      "authors": "F. Jamil Ragep",
+      "title": "Copernicus and His Islamic Predecessors: Some Historical Remarks",
+      "venue": "History of Science 45 (1): 65–81",
+      "url": "https://doi.org/10.1177/007327530704500103",
+      "note": "Argued that both the technical devices and the philosophical motivations of Copernicus's reform have Islamic precedents."
+    },
+    {
+      "year": 2014,
+      "authors": "Robert Morrison",
+      "title": "A Scholarly Intermediary between the Ottoman Empire and Renaissance Europe",
+      "venue": "Isis 105 (1): 32–57",
+      "url": "https://doi.org/10.1086/675550",
+      "note": "Identified Moses Galeano, a Jewish scholar active in the Veneto around 1500, as a carrier of Islamic astronomical ideas resembling those of Amico and Fracastoro."
+    },
+    {
+      "year": 2014,
+      "authors": "Viktor Blåsjö",
+      "title": "A Critique of the Arguments for Maragha Influence on Copernicus",
+      "venue": "Journal for the History of Astronomy 45 (2): 183–195",
+      "url": "https://doi.org/10.1177/002182861404500203",
+      "note": "Argued that the technical parallels do not require transmission and that the documentary case is absent."
+    },
+    {
+      "year": 2016,
+      "authors": "F. Jamil Ragep",
+      "title": "Ibn al-Shāṭir and Copernicus: The Uppsala Notes Revisited",
+      "venue": "Journal for the History of Astronomy 47 (4): 395–415",
+      "url": "https://doi.org/10.1177/0021828616678508",
+      "note": "Re-read Copernicus's notes in an Uppsala volume and argued that Ibn al-Shāṭir's models had features that made them useful for a heliocentric transformation."
+    },
+    {
+      "year": 2017,
+      "authors": "F. Jamil Ragep",
+      "title": "From Tūn to Toruń: The Twists and Turns of the Ṭūsī-Couple",
+      "venue": "In R. Feldhay and F. J. Ragep (eds), Before Copernicus, Montreal: McGill-Queen's University Press, 161–197",
+      "url": "https://doi.org/10.1515/9780773550117-011",
+      "note": "Traced the versions of the Ṭūsī couple across Arabic, Greek, Hebrew and Latin sources and the routes by which they could have reached Europe."
+    },
+    {
+      "year": 2018,
+      "authors": "Mark Nosonovsky",
+      "title": "Abner of Burgos: The Missing Link between Nasir al-Din al-Tusi and Nicolaus Copernicus?",
+      "venue": "Zutot 15 (1): 25–30",
+      "url": "https://doi.org/10.1163/18750214-12151070",
+      "note": "Proposed a Hebrew route via a fourteenth-century Castilian text describing a Ṭūsī-type device."
+    },
+    {
+      "year": 2018,
+      "authors": "Viktor Blåsjö",
+      "title": "A Rebuttal of Recent Arguments for Maragha Influence on Copernicus",
+      "venue": "Studia Historiae Scientiarum 17: 479–497",
+      "url": "https://doi.org/10.4467/2543702XSHS.18.017.9337",
+      "note": "Replied to Ragep, Barker and Heidarzadeh, and Bala, maintaining that no documentary route has been shown."
+    },
+    {
+      "year": 2019,
+      "authors": "Sajjad Nikfahm-Khubravan and F. Jamil Ragep",
+      "title": "The Mercury Models of Ibn al-Šāṭir and Copernicus",
+      "venue": "Arabic Sciences and Philosophy 29 (1): 1–59",
+      "url": "https://doi.org/10.1017/S0957423918000085",
+      "note": "Argued from detailed parameters that Copernicus's Mercury model is too close to Ibn al-Shāṭir's to be independent."
+    },
+    {
+      "year": 2025,
+      "authors": "Robert Morrison",
+      "title": "Merchants of Knowledge: Intellectual Exchange in the Ottoman Empire and Renaissance Europe",
+      "venue": "Stanford: Stanford University Press",
+      "url": "https://doi.org/10.1515/9781503642690",
+      "note": "Book-length study of Jewish and other intermediaries carrying Islamic astronomy between the Ottoman world and Italy around 1500."
+    }
   ],
   "archives": [
-    {"repository": "Biblioteca Apostolica Vaticana, Vatican City", "collection": "Vat. gr. 211 (Byzantine astronomical collection with Ṭūsī-couple diagram) and other Vaticani graeci and ebraici astronomical manuscripts", "url": "https://digi.vatlib.it/view/MSS_Vat.gr.211", "digitized": "partial", "note": "Vat. gr. 211 is digitized on DigiVatLib; many Greek and Hebrew astronomical miscellanies are digitized but poorly described at the text level."},
-    {"repository": "Uppsala University Library, Uppsala", "collection": "Copernicana collection (books owned or annotated by Copernicus, taken from Frombork and Braniewo in 1626)", "url": "https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized", "digitized": "full", "note": "About 46 volumes, including those bearing the Uppsala notes, fully digitized and searchable on the Alvin platform."},
-    {"repository": "Biblioteka Jagiellońska, Kraków", "collection": "BJ 10000 (autograph of De revolutionibus) and fifteenth-century astronomical manuscripts of the Kraków university", "url": "https://jbc.bj.uj.edu.pl/", "digitized": "partial", "note": "Holds the autograph and the teaching manuscripts of the Kraków astronomical school Copernicus attended in 1491–1495; coverage on the Jagiellonian Digital Library is incomplete."},
-    {"repository": "Bodleian Library, Oxford", "collection": "MS Marsh 139 (Ibn al-Shāṭir, Nihāyat al-sūl, copied 1366) and other Arabic astronomical manuscripts", "url": "https://www.fihrist.org.uk/catalog/manuscript_11512", "digitized": "none", "note": "Catalogued in Fihrist; Marsh 139 passed through Golius's collection, so its presence in Europe is post-Copernican, but it is a key witness for the text."},
-    {"repository": "Max Planck Institute for the History of Science, Berlin / McGill University", "collection": "Islamic Scientific Manuscripts Initiative (ISMI) database of authors, works and witnesses", "url": "https://ismi.mpiwg-berlin.mpg.de/", "digitized": "partial", "note": "Union inventory of Arabic and Persian scientific manuscripts and their locations, the best starting point for locating witnesses of al-Ṭūsī and Ibn al-Shāṭir."},
-    {"repository": "Biblioteca Nazionale Marciana, Venice", "collection": "Fondo antico greco (Bessarion bequest, 1468) astronomical manuscripts", "url": "https://www.internetculturale.it/", "digitized": "partial", "note": "Bessarion's Greek library, the largest Byzantine scientific collection in fifteenth-century Italy, is only partly digitized and is a prime place to search for further carriers."}
-  ]
+    {
+      "repository": "Biblioteca Apostolica Vaticana, Vatican City",
+      "collection": "Vat. gr. 211 (Byzantine astronomical collection with Ṭūsī-couple diagram) and other Vaticani graeci and ebraici astronomical manuscripts",
+      "url": "https://digi.vatlib.it/view/MSS_Vat.gr.211",
+      "digitized": "partial",
+      "note": "Vat. gr. 211 is digitized on DigiVatLib; many Greek and Hebrew astronomical miscellanies are digitized but poorly described at the text level."
+    },
+    {
+      "repository": "Uppsala University Library, Uppsala",
+      "collection": "Copernicana collection (books owned or annotated by Copernicus, taken from Frombork and Braniewo in 1626)",
+      "url": "https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized",
+      "digitized": "full",
+      "note": "About 46 volumes, including those bearing the Uppsala notes, fully digitized and searchable on the Alvin platform."
+    },
+    {
+      "repository": "Biblioteka Jagiellońska, Kraków",
+      "collection": "BJ 10000 (autograph of De revolutionibus) and fifteenth-century astronomical manuscripts of the Kraków university",
+      "url": "https://jbc.bj.uj.edu.pl/",
+      "digitized": "partial",
+      "note": "Holds the autograph and the teaching manuscripts of the Kraków astronomical school Copernicus attended in 1491–1495; coverage on the Jagiellonian Digital Library is incomplete."
+    },
+    {
+      "repository": "Bodleian Library, Oxford",
+      "collection": "MS Marsh 139 (Ibn al-Shāṭir, Nihāyat al-sūl, copied 1366) and other Arabic astronomical manuscripts",
+      "url": "https://www.fihrist.org.uk/catalog/manuscript_11512",
+      "digitized": "none",
+      "note": "Catalogued in Fihrist; Marsh 139 passed through Golius's collection, so its presence in Europe is post-Copernican, but it is a key witness for the text."
+    },
+    {
+      "repository": "Max Planck Institute for the History of Science, Berlin / McGill University",
+      "collection": "Islamic Scientific Manuscripts Initiative (ISMI) database of authors, works and witnesses",
+      "url": "https://ismi.mpiwg-berlin.mpg.de/",
+      "digitized": "partial",
+      "note": "Union inventory of Arabic and Persian scientific manuscripts and their locations, the best starting point for locating witnesses of al-Ṭūsī and Ibn al-Shāṭir."
+    },
+    {
+      "repository": "Biblioteca Nazionale Marciana, Venice",
+      "collection": "Fondo antico greco (Bessarion bequest, 1468) astronomical manuscripts",
+      "url": "https://www.internetculturale.it/",
+      "digitized": "partial",
+      "note": "Bessarion's Greek library, the largest Byzantine scientific collection in fifteenth-century Italy, is only partly digitized and is a prime place to search for further carriers."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }

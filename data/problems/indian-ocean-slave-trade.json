@@ -6,11 +6,16 @@
   "field": "Economy",
   "start": 1500,
   "end": 1850,
-  "flags": ["digitization"],
+  "flags": [
+    "digitization"
+  ],
   "matters": "Without a credible volume, the Indian Ocean cannot be compared with the Atlantic, and claims about the relative weight of African, Malagasy and Asian forced migration in global history rest on guesswork. The numbers bear on the labor regimes of the VOC settlements at Batavia and the Cape, the plantation economies of the Mascarenes, the clove economy of Zanzibar and Pemba, the Gulf pearl industry, and on the demographic history of Madagascar, Mozambique and the East African interior. They also bear on how abolition worked in practice, since the trade shifted to new routes and legal forms after British and French bans.",
   "stuck": "There is no voyage-level dataset for the Indian Ocean comparable to the SlaveVoyages trans-Atlantic database, and much of the traffic moved in small numbers aboard ships whose main cargo was something else, so it left little trace in shipping records. The evidence is spread across Dutch, Portuguese, French, English, Arabic, Persian, Gujarati and Swahili sources in archives on four continents, and many local trades (for example within the Indonesian archipelago or along the Swahili coast) were never systematically recorded. Existing estimates either cover only European traders, as in Richard Allen's tentative figure of roughly 570,000 to 730,000 people for 1500–1850, or rest on extrapolations from scattered nineteenth-century observations, as in Ralph Austen's census of the East African trade.",
   "solved": "An open, record-level database of documented slave voyages and transfers in the Indian Ocean for 1500–1850, with each record linked to its archival source, from which minimum counts by route, carrier and decade can be computed and gaps quantified, so that a total for all carriers can be stated with an explicit uncertainty range.",
-  "approach": "AI agents can extract mentions of enslaved people from large digitized series, beginning with the VOC Overgekomen Brieven en Papieren being transcribed by GLOBALISE, Cape and Batavia records, French Mascarene port records and British anti-slave-trade correspondence, and assemble them into voyage and transfer records reviewed by historians. Progress beyond the Dutch and British material requires new digitization in partnership with the Archives nationales d'outre-mer, the Arquivo Histórico Ultramarino, the National Archives of Mauritius and the Zanzibar National Archives, and with scholars able to read Arabic, Gujarati and Swahili commercial papers.",
+  "approach": [
+    "AI agents can extract mentions of enslaved people from large digitized series, beginning with the VOC Overgekomen Brieven en Papieren being transcribed by GLOBALISE, Cape and Batavia records, French Mascarene port records and British anti-slave-trade correspondence, and assemble them into voyage and transfer records reviewed by historians.",
+    "Progress beyond the Dutch and British material requires new digitization in partnership with the Archives nationales d'outre-mer, the Arquivo Histórico Ultramarino, the National Archives of Mauritius and the Zanzibar National Archives, and with scholars able to read Arabic, Gujarati and Swahili commercial papers."
+  ],
   "existing": [
     {
       "year": 1975,
@@ -152,5 +157,11 @@
       "digitized": "partial",
       "note": "Digitized Gulf records with testimony of enslaved Africans and Baluchis seeking manumission, mostly late nineteenth and early twentieth century."
     }
-  ]
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
 }
