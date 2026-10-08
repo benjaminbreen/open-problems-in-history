@@ -1,0 +1,201 @@
+{
+  "id": "indian-ocean-tsunamis",
+  "title": "Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450?",
+  "short": "Geology and archaeology show two great tsunamis struck northern Sumatra around 1394 and 1450, but no contemporary text describing either has been identified.",
+  "region": "Indian Ocean",
+  "field": "Chronology",
+  "start": 1390,
+  "end": 1460,
+  "flags": [
+    "science"
+  ],
+  "matters": "Coral microatolls on Simeulue record sudden uplift above the Sunda megathrust in 1394 ± 2 and 1450 ± 3 CE, and tsunami deposits and abandoned settlements on the Aceh coast have been tied to these events, making them the closest predecessors of the 2004 Indian Ocean tsunami. A dated written witness would test the geological chronology independently, as Japanese records did for the 1700 Cascadia earthquake, and would constrain the extent of the events beyond Aceh (to Sri Lanka, South India or the Malay Peninsula), which matters for hazard models. It would also test the archaeological argument that the 1394 tsunami emptied the low-lying ports around Lamri and helped shift trade toward Samudera-Pasai and Melaka before the rise of the Aceh Sultanate.",
+  "stuck": "The geological case was built after 2004 by earth scientists and archaeologists, and their historical discussion relies on indirect textual signals such as the fading of Lamri from Arabic sailing texts rather than on a search for a description of the event. The candidate sources are scattered across languages and genres: the Ming Shilu and Zheng He-era accounts (Ma Huan, Fei Xin, Gong Zhen), which describe Lamri and Samudera in the 1400s–1430s; Malay chronicles such as the Hikayat Raja Pasai and Sejarah Melayu, known only from much later copies and lacking dates; and Arabic, Persian and South Indian materials. Ming restrictions on private maritime trade from 1371 also thinned Chinese contact with Sumatra precisely around 1394, so silence in Chinese records is hard to interpret.",
+  "solved": "Either a text written or reliably dated before c. 1520 that describes a sea flood, destructive wave or earthquake on the coasts of the eastern Indian Ocean and can be dated within the 1394 ± 2 or 1450 ± 3 CE windows; or a published negative search listing every source and passage examined for those windows (Ming Shilu, Zheng He-era accounts, Malay chronicles, Arabic nautical and geographical texts, Sri Lankan and South Indian records), with search terms and editions, so the absence can be cited and extended.",
+  "approach": [
+    "Extract every Ming Shilu entry for 1385–1460 that names Lamri (Nanwuli, Nanboli), Samudera (Sumendala), Aru, Melaka or Ceylon from Geoff Wade's open-access translations (bulk use by arrangement with NUS Press) and the Chinese full text, and flag gaps in tribute missions, reports of envoys lost at sea, and any notices of floods or earthquakes reported by foreign missions.",
+    "Read Ma Huan's chapter on Nanboli (visited in the 1410s, where he reports only about a thousand households), together with Fei Xin and Gong Zhen, for signs of recent destruction, relocated settlement or altered coastline, and compare their descriptions with the pre-1394 sites mapped by Daly et al.",
+    "Search the Hikayat Raja Pasai, Sejarah Melayu and Acehnese chronicles in their manuscript witnesses for floods from the sea, abandoned towns or divine punishments by water, and test whether any episode can be anchored to the 1394 or 1450 windows by its reign context.",
+    "Query OpenITI and the Arabic nautical texts (Ibn Majid, Sulayman al-Mahri) for Lamri, Fansur and Mandara, and South Indian and Sri Lankan chronicles for coastal inundations in the same decades.",
+    "Pass every candidate passage, with its date range, to the Earth Observatory of Singapore team or other paleoseismologists, who can judge whether the described effects and location fit a Sunda megathrust source and the coral-dated windows."
+  ],
+  "existing": [
+    {
+      "year": 1970,
+      "authors": "J. V. G. Mills (trans.)",
+      "title": "Ma Huan, Ying-yai sheng-lan: 'The Overall Survey of the Ocean's Shores' [1433]",
+      "venue": "Hakluyt Society Extra Series 42. Cambridge: Cambridge University Press",
+      "url": "https://archive.org/details/ying-yai-sheng-lan-1433",
+      "note": "Annotated translation of the eyewitness account of the Zheng He voyages, including the chapters on Samudera and on Lamri (Nanboli) written two decades after the 1394 event."
+    },
+    {
+      "year": 1979,
+      "authors": "G. R. Tibbetts",
+      "title": "A Study of the Arabic Texts Containing Material on South-East Asia",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004658776",
+      "note": "Compiled the Arabic geographical and nautical references to Lamri and northern Sumatra, the basis for later arguments about the port's decline and replacement by Mandara."
+    },
+    {
+      "year": 1988,
+      "authors": "E. Edwards McKinnon",
+      "title": "Beyond Serandib: A Note on Lambri at the Northern Tip of Aceh",
+      "venue": "Indonesia 46: 102",
+      "url": "https://doi.org/10.2307/3351047",
+      "note": "Combined textual references and surface finds to place the trading port of Lamri on the Lamreh (Lambaro) headlands east of Banda Aceh."
+    },
+    {
+      "year": 1996,
+      "authors": "Kenji Satake, Kunihiko Shimazaki, Yoshinobu Tsuji and Kazue Ueda",
+      "title": "Time and size of a giant earthquake in Cascadia inferred from Japanese tsunami records of January 1700",
+      "venue": "Nature 379: 246–249",
+      "url": "https://doi.org/10.1038/379246a0",
+      "note": "Dated the Cascadia earthquake to the evening of 26 January 1700 from Japanese village and domain records of an unexplained tsunami, the model for matching a geological event to a distant written witness."
+    },
+    {
+      "year": 2005,
+      "authors": "Brian F. Atwater, Musumi-Rokkaku Satoko, Satake Kenji, Tsuji Yoshinobu, Ueda Kazue and David K. Yamaguchi",
+      "title": "The Orphan Tsunami of 1700: Japanese Clues to a Parent Earthquake in North America",
+      "venue": "U.S. Geological Survey Professional Paper 1707. Seattle: University of Washington Press",
+      "url": "https://pubs.usgs.gov/publication/pp1707",
+      "note": "Presented the Japanese documents with translations alongside the North American geology, showing how textual and geological evidence were cross-dated."
+    },
+    {
+      "year": 2005,
+      "authors": "Geoff Wade (trans.)",
+      "title": "Southeast Asia in the Ming Shi-lu: An Open Access Resource",
+      "venue": "Singapore: Asia Research Institute and Singapore E-Press, National University of Singapore",
+      "url": "https://epress.nus.edu.sg/msl/",
+      "note": "English translations of all Ming Shilu references to Southeast Asian polities, browsable by Western and reign date, the most direct starting point for Chinese notices of Lamri and Samudera."
+    },
+    {
+      "year": 2008,
+      "authors": "Kruawun Jankaew, Brian F. Atwater, Yuki Sawai et al.",
+      "title": "Medieval forewarning of the 2004 Indian Ocean tsunami in Thailand",
+      "venue": "Nature 455: 1228–1231",
+      "url": "https://doi.org/10.1038/nature07373",
+      "note": "Identified sand sheets on Phra Thong Island, Thailand, from a predecessor tsunami dated broadly to c. 1300–1450 CE."
+    },
+    {
+      "year": 2008,
+      "authors": "Katrin Monecke, Willi Finger, David Klarer et al.",
+      "title": "A 1,000-year sediment record of tsunami recurrence in northern Sumatra",
+      "venue": "Nature 455: 1232–1234",
+      "url": "https://doi.org/10.1038/nature07374",
+      "note": "Found sand sheets in coastal marshes of western Aceh, including one dated to roughly 1290–1400 CE, as evidence of a 2004-scale predecessor."
+    },
+    {
+      "year": 2010,
+      "authors": "Aron J. Meltzner, Kerry Sieh, Hong-Wei Chiang et al.",
+      "title": "Coral evidence for earthquake recurrence and an A.D. 1390–1455 cluster at the south end of the 2004 Aceh–Andaman rupture",
+      "venue": "Journal of Geophysical Research: Solid Earth 115: B10402",
+      "url": "https://doi.org/10.1029/2010JB007499",
+      "note": "Dated sudden coral uplift on Simeulue to 1394 ± 2 and 1450 ± 3 CE, the narrow windows that any textual witness must match."
+    },
+    {
+      "year": 2015,
+      "authors": "Anthony Reid",
+      "title": "History and Seismology in the Ring of Fire: Punctuating the Indonesian Past",
+      "venue": "In D. Henley and H. Schulte Nordholt (eds.), Environment, Trade and Society in Southeast Asia: 62–77. Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004288058_006",
+      "note": "Argued that Indonesian historians had neglected earthquakes and tsunamis and that documentary research could extend the seismic record."
+    },
+    {
+      "year": 2015,
+      "authors": "Kerry Sieh, Patrick Daly, E. Edwards McKinnon et al.",
+      "title": "Penultimate predecessors of the 2004 Indian Ocean tsunami in Aceh, Sumatra: Stratigraphic, archeological, and historical evidence",
+      "venue": "Journal of Geophysical Research: Solid Earth 120 (1): 308–325",
+      "url": "https://doi.org/10.1002/2014JB011538",
+      "note": "Found tsunami-deposited coral rubble and a settlement destroyed soon after 1366 ± 3 CE on the Lambaro headlands, tied them to the 1394 and 1450 uplifts, and used the disappearance of Lamri from written sources as indirect historical support, without citing any text that describes the waves."
+    },
+    {
+      "year": 2016,
+      "authors": "Anthony Reid",
+      "title": "Two hitherto unknown Indonesian tsunamis of the seventeenth century: Probabilities and context",
+      "venue": "Journal of Southeast Asian Studies 47 (1): 88–108",
+      "url": "https://doi.org/10.1017/S002246341500048X",
+      "note": "Used Dutch and other documentary sources to identify seventeenth-century tsunamis, including a sea flood in Aceh, demonstrating the method for a later period."
+    },
+    {
+      "year": 2017,
+      "authors": "Charles M. Rubin, Benjamin P. Horton, Kerry Sieh et al.",
+      "title": "Highly variable recurrence of tsunamis in the 7,400 years before the 2004 Indian Ocean tsunami",
+      "venue": "Nature Communications 8: 16019",
+      "url": "https://doi.org/10.1038/ncomms16019",
+      "note": "Recorded at least eleven tsunamis between 7,400 and 2,900 years ago in a sea cave on the Aceh coast, showing highly irregular recurrence; the cave sequence does not cover the medieval events."
+    },
+    {
+      "year": 2019,
+      "authors": "Patrick Daly, Kerry Sieh, Tai Yew Seng et al.",
+      "title": "Archaeological evidence that a late 14th-century tsunami devastated the coast of northern Sumatra and redirected history",
+      "venue": "Proceedings of the National Academy of Sciences 116 (24): 11679–11686",
+      "url": "https://doi.org/10.1073/pnas.1902241116",
+      "note": "Used tens of thousands of dated sherds and over 5,000 gravestones along 40 km of coast to argue that c. 1394 the low-lying settlements were destroyed while the headland port of Lamri survived, and that the coast was later resettled as the core of the Aceh Sultanate; found no compelling settlement evidence for c. 1450."
+    },
+    {
+      "year": 2019,
+      "authors": "Patrick Daly, E. Edwards McKinnon, R. Michael Feener et al.",
+      "title": "The Historic Trading Port of Lamri on the North Sumatran Coast",
+      "venue": "Bulletin de l'École française d'Extrême-Orient 105: 115–144",
+      "url": "https://doi.org/10.3406/befeo.2019.6298",
+      "note": "Brought together the Chinese, Arabic and Malay references to Lamri with the survey data, the fullest guide to the textual sources a search would need to read."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Asia Research Institute and NUS Press, National University of Singapore",
+      "collection": "Geoff Wade, Southeast Asia in the Ming Shi-lu (translated entries browsable by Western and reign date, with a name index)",
+      "url": "https://epress.nus.edu.sg/msl/",
+      "digitized": "full",
+      "note": "Free English translations with Chinese reign dates for every Southeast Asian entry, including missions from Lamri and Samudera; bulk harvesting requires permission from NUS Press."
+    },
+    {
+      "repository": "Academia Sinica, Institute of History and Philology, Taipei",
+      "collection": "Scripta Sinica (Hanji dianzi wenxian) full-text Ming Shilu, with the collated edition",
+      "url": "https://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm",
+      "digitized": "full",
+      "note": "Searchable Chinese text of the Veritable Records for checking entries outside Wade's selection, such as notices of envoys, storms and floods; limited free access, full access by subscription."
+    },
+    {
+      "repository": "Chinese Wikisource",
+      "collection": "Ma Huan, Yingya shenglan (瀛涯勝覽), including the chapters on Sumendala and Nanboli; Ming Shilu text",
+      "url": "https://zh.wikisource.org/wiki/瀛涯勝覽",
+      "digitized": "full",
+      "note": "Open transcriptions of the Zheng He-era accounts; editions should be checked against the printed collated texts before citation."
+    },
+    {
+      "repository": "Royal Asiatic Society of Great Britain and Ireland, London",
+      "collection": "Raffles Malay 67 (Hikayat Raja Pasai, the principal manuscript) and Raffles Malay 68 (Sejarah Melayu, dated 1808)",
+      "url": "https://royalasiaticsociety.org/category/malay-manuscripts/",
+      "digitized": "partial",
+      "note": "Raffles Malay manuscripts are being added to the Society's digital library; Raffles Malay 68 is online, and the Hikayat Raja Pasai is available in printed editions by Hill (1961) and Jones."
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "Or 14350, Hikayat Raja Handik and Hikayat Raja Pasai (incomplete), copied 1797",
+      "url": "https://searcharchives.bl.uk/catalog/032-002480085",
+      "digitized": "partial",
+      "note": "An earlier, incomplete witness of the Hikayat Raja Pasai; the catalogue links to images that are currently unavailable."
+    },
+    {
+      "repository": "Leiden University Libraries",
+      "collection": "Malay, Acehnese and Arabic manuscripts (Cod. Or.), including chronicles of Aceh and Pasai",
+      "url": "https://digitalcollections.universiteitleiden.nl/",
+      "digitized": "partial",
+      "note": "The largest European holding of Acehnese manuscripts, with a growing share of digitized items."
+    },
+    {
+      "repository": "Open Islamicate Texts Initiative (OpenITI)",
+      "collection": "Machine-readable corpus of Arabic geographical, nautical and historical works",
+      "url": "https://openiti.org/",
+      "digitized": "full",
+      "note": "Allows full-text search of Arabic sources for Lamri, Fansur, Mandara and reports of sea floods in the Indian Ocean."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

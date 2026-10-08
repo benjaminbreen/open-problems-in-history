@@ -1,0 +1,207 @@
+{
+  "id": "unattributed-eruptions",
+  "title": "Which volcanoes caused the great unattributed sulfate spikes in polar ice, above all 1809?",
+  "short": "Several of the largest volcanic sulfate deposits of the last millennium, in 1230, 1286, 1458, 1695 and 1809, have no securely identified source volcano.",
+  "region": "Global",
+  "field": "Places",
+  "start": 1229,
+  "end": 1810,
+  "flags": [
+    "science"
+  ],
+  "matters": "Reconstructions of volcanic climate forcing such as eVolv2k assign every bipolar sulfate spike without a known source to the equator, and source latitude, season and plume height change how much sulfur reached the stratosphere and how cooling was distributed between hemispheres. The 1809 event, estimated at roughly 12–19 Tg of stratospheric sulfur, opens the coldest decade of the last several centuries together with Tambora (1815); attributing it affects explanations of the harvest failures, famines and disease of the 1810s. Identifications also anchor ice-core chronologies: a named, historically dated eruption is a fixed point that can test or correct layer counting, as the reassignment of the 1450s signals to 1453 and 1458 showed.",
+  "stuck": "The polar ice records the sulfate but not its origin, and the glass shards that could fingerprint a source are microscopic, scarce, and sometimes come from more than one eruption in the same layer. Many candidate volcanoes lie in regions (Melanesia, the Kurils, the Andes, island Southeast Asia) with thin written records for the relevant decades, and their deposits are poorly sampled and poorly dated. Documentary searches have tended to start from a favoured volcano and look for confirmation, and some claimed eyewitness reports have been propagated through secondary citations without checking the original source.",
+  "solved": "Each spike is assigned to a named volcano by a published match between the major-element (and ideally trace-element) chemistry of glass shards in the ice layer and proximal deposits of that volcano, together with at least one dated documentary witness (an eruption report, ashfall, or optical phenomena such as a dimmed sun or abnormal twilights) consistent with the ice-core timing to within a year.",
+  "approach": [
+    "Build a gazetteer-linked index of every documentary report of ashfall, dimmed or discoloured sun, dry fog, red twilights and unexplained explosions for 1228–1232, 1284–1288, 1456–1460, 1693–1697 and 1807–1810, drawing on Chinese local gazetteers (LoGaRT), Korean and Japanese court records and diaries, Arabic chronicles (OpenITI), Spanish colonial correspondence and ships' logs.",
+    "Trace every claimed witness back to the original text and edition, record the exact wording, place and date, and flag reports that rest only on secondary citations; keyword hits should be read in context, since terms for haze, halos and aurorae overlap in premodern Chinese and Japanese sources.",
+    "Score each candidate volcano listed in the Smithsonian Global Volcanism Program against three tests: the timing window implied by the ice cores, the source latitude implied by the ratio of Greenland to Antarctic deposition and by sulfur isotopes, and the documentary evidence from its region.",
+    "For the leading candidates, work with tephrochronologists to sample proximal deposits, obtain radiocarbon or dendro-dated ages, and compare their glass chemistry with cryptotephra extracted from the relevant ice layers in Greenland and Antarctic cores."
+  ],
+  "existing": [
+    {
+      "year": 1991,
+      "authors": "Jihong Dai, Ellen Mosley-Thompson and Lonnie G. Thompson",
+      "title": "Ice core evidence for an explosive tropical volcanic eruption 6 years preceding Tambora",
+      "venue": "Journal of Geophysical Research: Atmospheres 96 (D9): 17361–17366",
+      "url": "https://doi.org/10.1029/91JD01634",
+      "note": "First identified the c. 1809 sulfate layer in both Greenland and Antarctic cores and argued that its bipolar distribution implied a tropical eruption absent from the historical record."
+    },
+    {
+      "year": 2006,
+      "authors": "Kaplan Yalcin, Cameron P. Wake, Karl J. Kreutz et al.",
+      "title": "Ice core evidence for a second volcanic eruption around 1809 in the Northern Hemisphere",
+      "venue": "Geophysical Research Letters 33",
+      "url": "https://doi.org/10.1029/2006GL026013",
+      "note": "Found dacitic glass in the 1809 layer of the Eclipse Icefield core (Yukon) that differs from andesitic glass reported in Antarctic cores, raising the possibility that the signal combines two eruptions."
+    },
+    {
+      "year": 2007,
+      "authors": "J. B. Witter and S. Self",
+      "title": "The Kuwae (Vanuatu) eruption of AD 1452: potential magnitude and volatile release",
+      "venue": "Bulletin of Volcanology 69 (3): 301–318",
+      "url": "https://doi.org/10.1007/s00445-006-0075-4",
+      "note": "Made the case for Kuwae as the source of the largest sulfate signal of the fifteenth century, then dated to 1452/53, and estimated a very large sulfur aerosol release from it."
+    },
+    {
+      "year": 2009,
+      "authors": "Jihong Cole-Dai, David Ferris, Alyson Lanciki, Joël Savarino et al.",
+      "title": "Cold decade (AD 1810–1819) caused by Tambora (1815) and another (1809) stratospheric volcanic eruption",
+      "venue": "Geophysical Research Letters 36 (22)",
+      "url": "https://doi.org/10.1029/2009GL040882",
+      "note": "Used mass-independent sulfur isotope fractionation in South Pole ice to show that the 1809 sulfate reached the stratosphere, supporting a single large tropical eruption."
+    },
+    {
+      "year": 2013,
+      "authors": "Jihong Cole-Dai, David G. Ferris, Alyson L. Lanciki, Joël Savarino et al.",
+      "title": "Two likely stratospheric volcanic eruptions in the 1450s C.E. found in a bipolar, subannually dated 800 year ice core record",
+      "venue": "Journal of Geophysical Research: Atmospheres 118 (14): 7459–7466",
+      "url": "https://doi.org/10.1002/jgrd.50587",
+      "note": "Separated the mid-fifteenth-century signal into two events, the larger dated to 1458, which undermined the fit between Kuwae and historical reports from 1453."
+    },
+    {
+      "year": 2013,
+      "authors": "Franck Lavigne, Jean-Philippe Degeai, Jean-Christophe Komorowski, Sébastien Guillet et al.",
+      "title": "Source of the great A.D. 1257 mystery eruption unveiled, Samalas volcano, Rinjani Volcanic Complex, Indonesia",
+      "venue": "Proceedings of the National Academy of Sciences 110 (42): 16742–16747",
+      "url": "https://doi.org/10.1073/pnas.1307520110",
+      "note": "Solved the largest unattributed spike of the millennium by combining tephra geochemistry, radiocarbon dates and Old Javanese babad texts describing the destruction of Pamatan, the model for the other cases."
+    },
+    {
+      "year": 2014,
+      "authors": "A. Guevara-Murua, C. A. Williams, E. J. Hendy, A. C. Rust and K. V. Cashman",
+      "title": "Observations of a stratospheric aerosol veil from a tropical volcanic eruption in December 1808: is this the Unknown ~1809 eruption?",
+      "venue": "Climate of the Past 10 (5): 1707–1722",
+      "url": "https://doi.org/10.5194/cp-10-1707-2014",
+      "note": "Identified the reports of Francisco José de Caldas in Bogotá (a veil dimming the sun from 11 December 1808) and José Hipólito Unanue in Lima (abnormal twilights) as aerosol observations, and proposed an eruption date of about 4 December 1808."
+    },
+    {
+      "year": 2015,
+      "authors": "M. Sigl, M. Winstrup, J. R. McConnell, K. C. Welten et al.",
+      "title": "Timing and climate forcing of volcanic eruptions for the past 2,500 years",
+      "venue": "Nature 523 (7562): 543–549",
+      "url": "https://doi.org/10.1038/nature14565",
+      "note": "Revised the Greenland and Antarctic chronologies against tree rings and produced the event list from which the remaining unattributed spikes are now defined."
+    },
+    {
+      "year": 2017,
+      "authors": "Sébastien Guillet, Christophe Corona, Markus Stoffel, Myriam Khodri et al.",
+      "title": "Climate response to the Samalas volcanic eruption in 1257 revealed by proxy records",
+      "venue": "Nature Geoscience 10 (2): 123–128",
+      "url": "https://doi.org/10.1038/ngeo2875",
+      "note": "Combined tree rings with a systematic reading of medieval European chronicles to reconstruct the climatic aftermath of 1257, showing how documentary series can test an attribution."
+    },
+    {
+      "year": 2017,
+      "authors": "Matthew Toohey and Michael Sigl",
+      "title": "Volcanic stratospheric sulfur injections and aerosol optical depth from 500 BCE to 1900 CE",
+      "venue": "Earth System Science Data 9 (2): 809–831",
+      "url": "https://doi.org/10.5194/essd-9-809-2017",
+      "note": "The eVolv2k database, which lists sulfur injection estimates for each event and assigns unidentified bipolar events a default equatorial source."
+    },
+    {
+      "year": 2019,
+      "authors": "Laura H. Hartman, Andrei V. Kurbatov, Dominic A. Winski, Alicia M. Cruz-Uribe et al.",
+      "title": "Volcanic glass properties from 1459 C.E. volcanic event in South Pole ice core dismiss Kuwae caldera as a potential source",
+      "venue": "Scientific Reports 9",
+      "url": "https://doi.org/10.1038/s41598-019-50939-x",
+      "note": "Reported that glass shards from the 1458 sulfate interval in the South Pole ice core are chemically distinct from Kuwae products and named Mount Reclus as one possible contributor."
+    },
+    {
+      "year": 2020,
+      "authors": "Sébastien Guillet, Christophe Corona, Francis Ludlow, Clive Oppenheimer et al.",
+      "title": "Climatic and societal impacts of a \"forgotten\" cluster of volcanic eruptions in 1108–1110 CE",
+      "venue": "Scientific Reports 10: 6715",
+      "url": "https://doi.org/10.1038/s41598-020-63339-3",
+      "note": "Used European and Japanese written sources, including the Chūyūki diary on the 1108 Asama eruption, alongside ice cores and tree rings to identify a previously overlooked cluster, a template for the documentary side of attribution."
+    },
+    {
+      "year": 2021,
+      "authors": "Claudia Timmreck, Matthew Toohey, Davide Zanchettin, Stefan Brönnimann et al.",
+      "title": "The unidentified eruption of 1809: a climatic cold case",
+      "venue": "Climate of the Past 17 (4): 1455–1482",
+      "url": "https://doi.org/10.5194/cp-17-1455-2021",
+      "note": "Reviewed the ice-core, instrumental and documentary evidence and modelled the climatic effects, concluding that the source, season and exact year of the eruption remain unknown."
+    },
+    {
+      "year": 2024,
+      "authors": "Jihong Cole-Dai, Derek L. Brandis, Dave G. Ferris et al.",
+      "title": "Five Large 13th Century C.E. Volcanic Eruptions Recorded in Antarctica Ice Cores",
+      "venue": "Atmosphere 15 (6): 661",
+      "url": "https://doi.org/10.3390/atmos15060661",
+      "note": "Compared South Pole and other Antarctic records with Greenland to show that the thirteenth century contains five large eruptions, Samalas among them, most with bipolar signals pointing to low-latitude sources."
+    },
+    {
+      "year": 2025,
+      "authors": "William Hutchison, Patrick Sugden, Andrea Burke et al.",
+      "title": "The 1831 CE mystery eruption identified as Zavaritskii caldera, Simushir Island (Kurils)",
+      "venue": "Proceedings of the National Academy of Sciences 122 (1): e2416699122",
+      "url": "https://doi.org/10.1073/pnas.2416699122",
+      "note": "Matched cryptotephra in Greenland ice to a remote Kuril caldera, a recent demonstration that the method can resolve a nineteenth-century unknown when proximal deposits are sampled."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "PANGAEA, Alfred Wegener Institute, Bremerhaven",
+      "collection": "Sigl and Toohey, eVolv2k version 4 (2024): volcanic stratospheric sulfur injections, 500 BCE–1900 CE",
+      "url": "https://doi.org/10.1594/PANGAEA.971968",
+      "digitized": "full",
+      "note": "Current event table listing date, Greenland and Antarctic sulfate, estimated injection and attributed source; 1230, 1286, 1695 and 1809 carry no source and 1458 is attributed to Kuwae without tephra confirmation."
+    },
+    {
+      "repository": "NOAA National Centers for Environmental Information, World Data Service for Paleoclimatology",
+      "collection": "Ice core datasets (sulfate, conductivity and tephra series for Greenland and Antarctic cores)",
+      "url": "https://www.ncei.noaa.gov/products/paleoclimatology/ice-core",
+      "digitized": "full",
+      "note": "Open archive of published ice-core chemistry records needed to locate the exact depth and timing of each spike."
+    },
+    {
+      "repository": "Smithsonian Institution, Global Volcanism Program",
+      "collection": "Volcanoes of the World database (eruption histories, dating methods and references for Holocene volcanoes)",
+      "url": "https://volcano.si.edu/",
+      "digitized": "full",
+      "note": "The standard catalogue of candidate volcanoes and dated eruptions against which documentary and tephra evidence must be scored."
+    },
+    {
+      "repository": "Biblioteca Nacional de Colombia (digitized copies via Universidad Distrital Francisco José de Caldas repository), Bogotá",
+      "collection": "Semanario del Nuevo Reyno de Granada, ed. Francisco José de Caldas, 1808–1809",
+      "url": "https://repository.udistrital.edu.co/collections/fe3091fd-26ab-49c6-9f76-fce483275a89",
+      "digitized": "partial",
+      "note": "Caldas's scientific weekly, issued through 1809, the setting for the Bogotá observations of the December 1808 veil and for other New Granadan weather notes."
+    },
+    {
+      "repository": "Archivo General de Indias, Seville (via PARES)",
+      "collection": "Audiencia de Santa Fe, Audiencia de Lima, Audiencia de Quito and Filipinas sections, correspondence of 1808–1810",
+      "url": "https://pares.mcu.es/",
+      "digitized": "partial",
+      "note": "Viceregal and audiencia correspondence that may report eruptions, ashfall or crop failure in the Andes and the Philippines; many legajos are imaged on PARES, others require a visit."
+    },
+    {
+      "repository": "Max Planck Institute for the History of Science, Berlin",
+      "collection": "LoGaRT (Local Gazetteers Research Tools), searchable Chinese local gazetteers",
+      "url": "https://logart.mpiwg-berlin.mpg.de/",
+      "digitized": "full",
+      "note": "Full-text search across thousands of difangzhi with records of anomalous skies, dimmed sun and harvest failures; some content requires institutional access."
+    },
+    {
+      "repository": "Open Islamicate Texts Initiative (OpenITI)",
+      "collection": "Machine-readable corpus of premodern Arabic and Persian chronicles",
+      "url": "https://openiti.org/",
+      "digitized": "full",
+      "note": "Open corpus (released through Zenodo) for searching Mamluk and other chronicles for darkened sun and unusual twilight in the 1230s, 1280s and 1450s."
+    },
+    {
+      "repository": "DANS Data Station, Netherlands (KNMI dataset)",
+      "collection": "CLIWOC: Climatological Database for the World's Oceans 1750–1850, release 2.1",
+      "url": "https://doi.org/10.17026/dans-2bx-dutg",
+      "digitized": "full",
+      "note": "Digitized British, Dutch, French and Spanish logbook observations, including weather remarks that may record haze or abnormal skies at sea in 1808–1809."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-08",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-08"
+  }
+}

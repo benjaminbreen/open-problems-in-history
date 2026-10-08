@@ -1,0 +1,11 @@
+{
+  "id": "unattributed-eruptions",
+  "file": "data/images/src/unattributed-eruptions.jpg",
+  "caption": "Ice core with a volcanic ash layer, Talos Dome, Antarctica, 2005",
+  "commons": "https://commons.wikimedia.org/wiki/File:Ice_core_extracted_at_Talos_Dome_showing_an_ash_layer_corresponding_to_the_Toba_eruption.jpg",
+  "author": "Dargaud",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "crop": "center",
+  "zoom": 1.0
+}
