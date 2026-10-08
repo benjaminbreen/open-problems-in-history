@@ -7,8 +7,9 @@ const store = {
 };
 
 let problems = [];
-let state = { tally: {}, counts: {}, mine: {}, suggestions: [] };
-const view = { q: "", sort: store.get("op.sort", "votes"), show: "all" };
+let state = { tally: {}, counts: {}, mine: {}, suggestions: [], impact: {} };
+const imp = (id) => state.impact?.[id]?.score ?? -99;
+const view = { q: "", sort: store.get("op.sort2", "impact"), show: "all" };
 const open = new Set();
 const adminToken = () => store.get("op.admin", "");
 const ctx = () => ({ ...state, open });
@@ -35,6 +36,7 @@ function all() {
 
 // ---------- list ----------
 const sorts = {
+  impact: (a, b) => imp(b.id) - imp(a.id) || score(b.id) - score(a.id) || (a.start ?? 1e9) - (b.start ?? 1e9),
   votes: (a, b) => score(b.id) - score(a.id) || up(b.id) - up(a.id) || (a.start ?? 1e9) - (b.start ?? 1e9),
   discussed: (a, b) => ncom(b.id) - ncom(a.id) || score(b.id) - score(a.id),
   period: (a, b) => (a.start ?? 1e9) - (b.start ?? 1e9) || a.title.localeCompare(b.title),
@@ -71,7 +73,7 @@ function renderList() {
       <span class="count" id="count"></span>
     </div>
     <div class="thead" role="group" aria-label="Sort">
-      <span></span>${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
+      ${col("impact", "Impact")}${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
     </div>
     <ol class="list" id="list"></ol>`;
   const q = app.querySelector("#q");
@@ -130,6 +132,18 @@ app.addEventListener("submit", async (e) => {
     catch (err) { alert(`Could not send: ${err.message}`); f.querySelector("button").disabled = false; return; }
     f.outerHTML = `<p>Thank you. Your suggestion will appear once it has been reviewed.</p>`;
   }
+  if (f.matches(".rf")) {
+    const d = draft();
+    const data = Object.fromEntries(new FormData(f));
+    const scores = Object.fromEntries(Object.entries(d.scores || {}).filter(([, v]) => v > 0));
+    if (Object.keys(scores).length < 5) return alert("Please score at least five problems.");
+    f.querySelector(".rate-bar button").disabled = true;
+    try { await api("/api/ratings", { method: "POST", body: { ...data, scores, notes: d.notes || {} } }); }
+    catch (err) { alert(`Could not submit: ${err.message}`); f.querySelector(".rate-bar button").disabled = false; return; }
+    store.set("op.rate.draft", null);
+    app.querySelector(".rate").innerHTML = `<h1 class="page-title">Thank you</h1><p class="rate-q">Your ratings have been received.</p>`;
+    window.scrollTo(0, 0);
+  }
   if (f.matches(".af")) {
     store.set("op.admin", new FormData(f).get("token") || null);
     renderAdmin();
@@ -151,9 +165,16 @@ app.addEventListener("click", async (e) => {
   }
   const t = e.target.closest("button");
   if (!t) return;
-  if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort", view.sort); return renderList(); }
+  if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort2", view.sort); return renderList(); }
   if (t.dataset.show) { view.show = t.dataset.show; return renderList(); }
   if (t.dataset.idea) return toggleIdea();
+  if (t.dataset.rate) {
+    const d = draft(); d.scores ||= {};
+    d.scores[t.dataset.rate] = Number(t.dataset.val);
+    saveDraft(d);
+    for (const b of t.parentNode.children) b.setAttribute("aria-pressed", b === t);
+    return rateCount();
+  }
   if (t.dataset.share != null) {
     const url = location.origin + location.pathname;
     if (navigator.share) { navigator.share({ title: document.title, url }).catch(() => {}); return; }
@@ -178,6 +199,11 @@ app.addEventListener("click", async (e) => {
   }
   if (t.dataset.status) {
     try { await api("/api/suggest", { method: "PATCH", body: { sid: t.dataset.sid, status: t.dataset.status } }); }
+    catch (err) { return alert(err.message); }
+    renderAdmin();
+  }
+  if (t.dataset.rating) {
+    try { await api("/api/ratings", { method: "PATCH", body: { rid: t.dataset.rating, action: t.dataset.action } }); }
     catch (err) { return alert(err.message); }
     renderAdmin();
   }
@@ -214,6 +240,76 @@ function refreshVotes(id) {
   for (const box of app.querySelectorAll(`.vote[data-id="${CSS.escape(id)}"]`)) box.outerHTML = voteBox(id);
 }
 
+// ---------- impact rating ----------
+function shuffled(ids) {
+  let order = [];
+  try { order = JSON.parse(store.get("op.rate.order", "[]")); } catch {}
+  if (order.length !== ids.length || !ids.every((id) => order.includes(id))) {
+    order = [...ids];
+    for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
+    store.set("op.rate.order", JSON.stringify(order));
+  }
+  return order;
+}
+const draft = () => { try { return JSON.parse(store.get("op.rate.draft", "{}")); } catch { return {}; } };
+const saveDraft = (d) => store.set("op.rate.draft", JSON.stringify(d));
+
+function renderRate() {
+  document.title = "Rate the problems · Open Problems in History";
+  const d = draft();
+  d.scores ||= {}; d.notes ||= {};
+  const byId = Object.fromEntries(problems.map((p) => [p.id, p]));
+  const order = shuffled(problems.map((p) => p.id));
+  const btn = (id, v, label) => `<button type="button" data-rate="${esc(id)}" data-val="${v}" aria-pressed="${d.scores[id] === v}">${label}</button>`;
+  app.innerHTML = `
+    <div class="rate">
+      <h1 class="page-title">Rate the problems</h1>
+      <p class="rate-q">If this problem were solved, how much would it change historical understanding?</p>
+      <ol class="scale"><li><b>1</b> A detail within a specialism</li><li><b>2</b> Matters to one subfield</li><li><b>3</b> Changes how a field sees its period</li><li><b>4</b> Matters well beyond its field</li><li><b>5</b> Reshapes a major historical narrative</li></ol>
+      <p class="note">Problems appear in a random order. Mark &ldquo;—&rdquo; for anything outside your expertise. Your answers are saved in this browser until you submit.</p>
+      <form class="rf">
+        <div class="rf-who">
+          <input type="text" name="name" required maxlength="80" placeholder="Name" aria-label="Name" value="${esc(d.name || "")}">
+          <input type="text" name="affiliation" maxlength="160" placeholder="Field and institution" aria-label="Field and institution" value="${esc(d.affiliation || "")}">
+          <input type="text" name="agent" maxlength="80" placeholder="AI model, if you are an agent" aria-label="AI model" value="${esc(d.agent || "")}">
+        </div>
+        <ol class="rate-list">${order.map((id, i) => {
+          const p = byId[id];
+          return `<li>
+            <span class="rank">${i + 1}</span>
+            <div class="main">
+              <a class="ttl" href="/p/${esc(id)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+              <p class="short">${esc(p.short)}</p>
+              <details${d.notes[id] ? " open" : ""}><summary>Note</summary><textarea data-note="${esc(id)}" maxlength="1000" aria-label="Note">${esc(d.notes[id] || "")}</textarea></details>
+            </div>
+            <div class="pick" role="group" aria-label="Impact">${[1, 2, 3, 4, 5].map((v) => btn(id, v, v)).join("")}${btn(id, 0, "—")}</div>
+          </li>`;
+        }).join("")}</ol>
+        <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="rate-bar"><span id="rate-count"></span><button class="btn" type="submit">Submit ratings</button></div>
+      </form>
+    </div>`;
+  rateCount();
+}
+
+function rateCount() {
+  const d = draft();
+  const n = Object.values(d.scores || {}).filter((v) => v > 0).length;
+  const seen = Object.keys(d.scores || {}).length;
+  const el = app.querySelector("#rate-count");
+  if (el) el.textContent = `${n} scored · ${problems.length - seen} left`;
+}
+
+app.addEventListener("input", (e) => {
+  const t = e.target;
+  if (!t.closest(".rf")) return;
+  const d = draft();
+  d.notes ||= {};
+  if (t.dataset.note) d.notes[t.dataset.note] = t.value;
+  else if (["name", "affiliation", "agent"].includes(t.name)) d[t.name] = t.value;
+  saveDraft(d);
+});
+
 // ---------- pages ----------
 function renderDetail(id) {
   const p = all().find((x) => x.id === id);
@@ -249,8 +345,8 @@ async function renderAdmin() {
       <form class="af sf"><input type="text" name="token" placeholder="Token" aria-label="Token" autocomplete="off"><button class="btn" type="submit">Enter</button></form>`;
     return;
   }
-  let list, posts;
-  try { [list, posts] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1")]); }
+  let list, posts, ratings;
+  try { [list, posts, ratings] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1"), api("/api/ratings")]); }
   catch { store.set("op.admin", null); app.innerHTML = `<h1 class="page-title">Admin</h1><p class="note">Token rejected.</p>`; setTimeout(renderAdmin, 1200); return; }
   const group = (st) => list.filter((s) => s.status === st);
   const item = (s) => `<div class="admin-item">
@@ -260,6 +356,16 @@ async function renderAdmin() {
       <div class="acts">${["approved", "rejected", "pending"].filter((x) => x !== s.status)
         .map((x) => `<button type="button" class="btn ghost" data-sid="${esc(s.id)}" data-status="${x}">${{ approved: "Approve", rejected: "Reject", pending: "Back to pending" }[x]}</button>`).join("")}</div>
     </div>`;
+  const title = (id) => problems.find((p) => p.id === id)?.title || id;
+  const rater = (r, pending) => `<div class="admin-item">
+      <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}
+      <div class="note">${Object.keys(r.scores).length} scored · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
+      <details><summary class="note">Scores</summary><ol class="admin-scores">${Object.entries(r.scores).sort((a, b) => b[1] - a[1])
+        .map(([id, v]) => `<li><b>${v}</b> ${esc(title(id))}${r.notes?.[id] ? `<span class="note"> — ${esc(r.notes[id])}</span>` : ""}</li>`).join("")}</ol></details>
+      <div class="acts">${pending
+        ? `<button type="button" class="btn" data-rating="${esc(r.rid)}" data-action="approve">Approve</button><button type="button" class="btn ghost" data-rating="${esc(r.rid)}" data-action="reject">Reject</button>`
+        : `<button type="button" class="btn ghost" data-rating="${esc(r.rid)}" data-action="remove">Remove</button>`}</div>
+    </div>`;
   const post = (c) => `<div class="admin-item">
       <div class="note">${c.kind === "approach" ? "Approach" : "Comment"} on <a href="/p/${esc(c.pid)}">${esc(c.title)}</a>${c.flag ? ` · <b class="del">${esc(c.flag)}</b>` : ""}</div>
       <p>${esc(c.text)}</p>
@@ -268,6 +374,8 @@ async function renderAdmin() {
     </div>`;
   app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
     <p class="note">Signed in. Delete links now appear on published comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
+    <section><h2>Impact ratings awaiting review (${ratings.pending.length})</h2>${ratings.pending.map((r) => rater(r, true)).join("") || `<p class="note">None.</p>`}</section>
+    <section><h2>Impact ratings in use (${ratings.approved.length})</h2>${ratings.approved.map((r) => rater(r, false)).join("") || `<p class="note">None.</p>`}</section>
     <section><h2>Comments and approaches awaiting review (${posts.length})</h2>${posts.map(post).join("") || `<p class="note">None.</p>`}</section>
     ${["pending", "approved", "rejected"].map((st) => `<section><h2>Suggested problems: ${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
@@ -296,6 +404,7 @@ function route() {
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
   else if (path === "/admin") renderAdmin();
+  else if (path === "/rate") renderRate();
   else renderList();
 }
 

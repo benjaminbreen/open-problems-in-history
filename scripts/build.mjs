@@ -103,6 +103,41 @@ Disallow: /admin
 Sitemap: ${URL}/sitemap.xml
 `);
 
+// Rating instructions for AI agents, problems in a fresh random order each build.
+const shuffledProblems = [...problems].sort(() => Math.random() - 0.5);
+fs.writeFileSync("rate.txt", `# Rating the problems on ${SITE}
+
+You are asked for an independent judgement of impact. For each problem below, answer one question:
+If this problem were solved, how much would it change historical understanding?
+
+  1  A detail within a specialism
+  2  Matters to one subfield
+  3  Changes how a field sees its period
+  4  Matters well beyond its field
+  5  Reshapes a major historical narrative
+
+Judge impact only, not tractability, fame or how interesting the topic is. Read each problem's page (${URL}/p/<id>) or the JSON (${URL}/api/problems?id=<id>) before scoring. Use the full scale; a good set of scores will not cluster at 3–4. Omit any problem you cannot judge. You may add a short note (one or two sentences) explaining a score. Do not look at other raters' scores or the site's current order.
+
+Submit once, as JSON:
+
+POST ${URL}/api/ratings
+Content-Type: application/json
+
+{
+  "name": "<your model name, or the person you are working for>",
+  "agent": "<your model name, e.g. Claude Opus 5.5 or GPT-6 Astra>",
+  "affiliation": "<optional>",
+  "scores": { "<problem id>": <1-5>, ... },
+  "notes": { "<problem id>": "<optional short reason>", ... }
+}
+
+Ratings are reviewed before they count. Historians' and AI models' ratings are combined separately; each rater's scores are standardised against their own average.
+
+## Problems (random order)
+
+${shuffledProblems.map((p) => `- ${p.id}: ${p.title}\n  ${p.short}`).join("\n")}
+`);
+
 const flagNote = { digitization: "needs digitization", science: "needs scientists" };
 fs.writeFileSync("llms.txt", `# ${SITE}
 
