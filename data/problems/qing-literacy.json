@@ -1,0 +1,150 @@
+{
+  "id": "qing-literacy",
+  "title": "How literate was the population of late imperial China?",
+  "short": "Rawski's 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.",
+  "region": "East Asia",
+  "field": "Texts & authorship",
+  "start": 1644,
+  "end": 1911,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Literacy levels underpin arguments about Qing commercial capacity, the reach of print and vernacular fiction, popular religion and sectarian movements, and the state's ability to govern through written documents. Comparative economic history uses Chinese human capital in debates over the Great Divergence, and the claim that the character script did not hold back mass literacy rests largely on Rawski's figures. Estimates of women's literacy shape histories of gender and household management.",
+  "stuck": "Rawski's range (roughly 30–45 percent of men and 2–10 percent of women with some reading ability) was inferred from school provision, the price and circulation of primers, and observers' impressions rather than from a direct measure. Literacy in China was graded and functional, so a single threshold is hard to define, and scholars since have favoured qualitative studies of 'literacies' over counts. Contracts survive in the hundreds of thousands, but most were written by scribes (daibi) and bear marks, crosses or signatures whose meaning has not been coded systematically, and the published facsimile series are scattered across regions with very different social structures.",
+  "solved": "A coded sample of at least several thousand Qing contracts from more than one region, recording for each named party and witness whether they wrote their own name, wrote it in a different hand from the scribe, or made a mark, with the proportion of autograph signatures reported by decade, region, sex and role, and an explicit argument for how that proportion relates to reading ability.",
+  "approach": "Agents can work through published facsimile series (the Huizhou sets, Qingshui River manuscripts, Taiwan land deeds) to locate the signature block of each contract, classify each party's subscription as autograph, scribe-written or mark, and record the scribe's name so that the same hand can be recognised across documents; historians would verify a random subsample by eye. The method follows Cressy's English signature counts, but the coding rules must be adapted to Chinese practice, where scribes routinely wrote parties' names and parties added a hua ya mark. Digitization is needed because many contract holdings in county archives and university collections are catalogued but not imaged, and those that are imaged are often not publicly accessible.",
+  "existing": [
+    {
+      "year": 1979,
+      "authors": "Evelyn Sakakida Rawski",
+      "title": "Education and Popular Literacy in Ch'ing China",
+      "venue": "Ann Arbor: University of Michigan Press (Michigan Studies on China)",
+      "url": "https://find.library.upenn.edu/catalog/993615413503681",
+      "note": "Argued from school provision, cheap primers and contemporary testimony that functional literacy was widespread, estimating 30–45 percent for men and 2–10 percent for women."
+    },
+    {
+      "year": 1980,
+      "authors": "David Cressy",
+      "title": "Literacy and the Social Order: Reading and Writing in Tudor and Stuart England",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511560484",
+      "note": "Methodological model: measured English literacy by counting signatures versus marks on depositions, wills and marriage bonds."
+    },
+    {
+      "year": 1980,
+      "authors": "Paul A. Cohen",
+      "title": "Review of Education and Popular Literacy in Ch'ing China, by Evelyn S. Rawski",
+      "venue": "Journal of Asian Studies",
+      "url": "https://resolve.cambridge.org/core/journals/journal-of-asian-studies/article/education-and-popular-literacy-in-ching-china-by-evelyn-sakakida-rawski-ann-arbor-the-university-of-michigan-press-1979-xii-294-pp-appendixes-notes-glossary-bibliography-index-1650/E979C50BBDEC4862341528099C987B70",
+      "note": "Influential review that accepted the reorientation Rawski proposed while noting that her estimates were not unassailable."
+    },
+    {
+      "year": 1985,
+      "authors": "David Johnson, Andrew J. Nathan and Evelyn S. Rawski (eds.)",
+      "title": "Popular Culture in Late Imperial China",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://ci.nii.ac.jp/ncid/BA00557423",
+      "note": "Essays on the social foundations of popular culture and communication across literacy levels, framing literacy as graded rather than binary."
+    },
+    {
+      "year": 2004,
+      "authors": "Li Bozhong 李伯重",
+      "title": "Bagu zhi wai: Ming Qing Jiangnan de jiaoyu ji qi dui jingji de yingxiang 八股之外：明清江南的教育及其对经济的影响",
+      "venue": "Qingshi yanjiu 清史研究 2004: 1–14",
+      "url": "https://qsyj.ruc.edu.cn/CN/Y2004/V0/I1/1",
+      "note": "Argued that practical reading, writing and arithmetic instruction in Jiangnan, beyond examination training, was widespread and economically significant."
+    },
+    {
+      "year": 2007,
+      "authors": "Cynthia J. Brokaw",
+      "title": "Commerce in Culture: The Sibao Book Trade in the Qing and Republican Periods",
+      "venue": "Cambridge, MA: Harvard University Asia Center (Harvard East Asian Monographs 280)",
+      "url": "https://www.oeaw.ac.at/resources/Record/993581747704498",
+      "note": "Showed rural Fujian publishers supplying primers, household guides and manuals across south China, evidence for a broad market of modest readers."
+    },
+    {
+      "year": 2010,
+      "authors": "Jörg Baten, Debin Ma, Stephen Morgan and Qing Wang",
+      "title": "Evolution of living standards and human capital in China in the 18–20th centuries: Evidences from real wages, age-heaping, and anthropometrics",
+      "venue": "Explorations in Economic History 47 (3): 347–359",
+      "url": "https://doi.org/10.1016/j.eeh.2009.09.003",
+      "note": "Used age-heaping as a numeracy proxy and found Chinese human capital relatively high by world standards, with decline in the south after the mid-nineteenth century."
+    },
+    {
+      "year": 2021,
+      "authors": "Wen Haibo 温海波",
+      "title": "Zazi duwu yu Ming Qing shizi wenti yanjiu 杂字读物与明清识字问题研究",
+      "venue": "Anhui shixue 安徽史学 2021 (4)",
+      "url": "https://www.aisixiang.com/data/128682.html",
+      "note": "Proposed measuring popular literacy through corpus analysis of zazi primers alongside account books and contracts, and argued for lower, functional thresholds."
+    },
+    {
+      "year": 2021,
+      "authors": "Jian Qu",
+      "title": "Social Order through Contracts: Qingshui River Manuscripts from Southwest China",
+      "venue": "Singapore: Springer",
+      "url": "https://doi.org/10.1007/978-981-33-4947-6",
+      "note": "First Western-language monograph on the Qingshui River contracts, analysing over 3,000 documents and how they were produced and used locally."
+    },
+    {
+      "year": 2024,
+      "authors": "Qu Jian 瞿见",
+      "title": "'Yi kou daibi' yu 'yi gao daibi': Qingdai Qingshui jiang qiyue de daibi fangshi “依口代笔”与“依稿代笔”：清代清水江契约的代笔方式",
+      "venue": "Sixiang zhanxian 思想战线 50 (1): 83–97",
+      "url": "https://search.napstic.cn/literature/periodical/010sxzx202401011",
+      "note": "Showed that most Qingshui contracts were drafted by scribes who composed rather than merely transcribed, which bears directly on reading signatures as literacy evidence."
+    },
+    {
+      "year": 2024,
+      "authors": "Yonghua Liu and Haibo Wen",
+      "title": "What Meant to Be a Literate in Qing China?",
+      "venue": "South China Quarterly 14 (1): 97–111",
+      "url": "https://ias.um.edu.mo/wp-content/South%20China%20Quarterly/PDF/2024%E5%B9%B4%E7%AC%AC1%E6%9C%9F/8.%E5%8A%89%E6%B0%B8%E8%8F%AF%EF%BC%8C%E6%BA%AB%E6%B5%B7%E6%B3%A2.pdf",
+      "note": "Proposed 'genre of text' as a way to connect literacy to everyday practice, using a late Qing Huizhou peasant family that handled more than ten kinds of documents."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Institute of History, Chinese Academy of Social Sciences, Beijing",
+      "collection": "Huizhou documents published as Huizhou qiannian qiyue wenshu 徽州千年契約文書 (Huashan wenyi, 1991 and 1993; 40 vols.)",
+      "url": "http://lishisuo.cssn.cn/",
+      "digitized": "partial",
+      "note": "Facsimiles of Song-to-Republican contracts from Huizhou; originals held by the Institute, published volumes widely available in research libraries."
+    },
+    {
+      "repository": "Department of History, Shanghai Jiao Tong University, Shanghai",
+      "collection": "Local historical documents collection (land deeds, account books and village documents from many provinces)",
+      "url": "https://history.sjtu.edu.cn/",
+      "digitized": "partial",
+      "note": "Large university collection of folk documents assembled under Cao Shuji; access by arrangement with the department."
+    },
+    {
+      "repository": "Harvard-Yenching Library, Harvard University, Cambridge, MA",
+      "collection": "Published deed and contract series (Huizhou, Fujian, Taiwan, Zigong and others), with research guide",
+      "url": "https://scalar.fas.harvard.edu/ming-qing-documents/deeds-and-contracts",
+      "digitized": "none",
+      "note": "Guide to printed facsimile collections held at Harvard and how to use them; the volumes themselves are print."
+    },
+    {
+      "repository": "National Taiwan University Library and Department of Computer Science, Taipei",
+      "collection": "Taiwan History Digital Library (THDL), including Qing-era land deeds (guqishu)",
+      "url": "https://thdl.ntu.edu.tw/",
+      "digitized": "full",
+      "note": "Searchable transcriptions and metadata for large numbers of Qing Taiwanese deeds and official documents, with full-text search suited to locating signature formulae."
+    },
+    {
+      "repository": "Institute of Taiwan History, Academia Sinica, Taipei",
+      "collection": "Archives of Taiwan history: ancient documents (guwenshu), including the Anlishe documents (1714–1918)",
+      "url": "https://archives.ith.sinica.edu.tw/",
+      "digitized": "partial",
+      "note": "Imaged private contracts and official documents; online viewing with registration, some items onsite only."
+    },
+    {
+      "repository": "County archives of Qiandongnan Prefecture (Jinping, Tianzhu, Liping and others), Guizhou",
+      "collection": "Qingshui River documents (Qingshui jiang wenshu 清水江文书)",
+      "url": "https://doi.org/10.1007/978-981-33-4947-6",
+      "digitized": "partial",
+      "note": "More than 200,000 catalogued contracts and related manuscripts, with selections published in facsimile; access to originals is restricted (link is to Jian Qu's study of the corpus)."
+    }
+  ]
+}

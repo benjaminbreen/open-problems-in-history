@@ -1,0 +1,157 @@
+{
+  "id": "vermeer",
+  "title": "Did Vermeer use a camera obscura or other optical aids?",
+  "short": "Optical effects, perspective geometry and technical imaging have been read for and against Vermeer's use of a camera obscura, with no documentary evidence either way.",
+  "region": "Europe",
+  "field": "Material & visual",
+  "start": 1655,
+  "end": 1675,
+  "flags": [
+    "science"
+  ],
+  "matters": "Vermeer is the test case for broader claims that optical projection shaped European naturalism, including the Hockney–Falco thesis, and for how far seventeenth-century Dutch painting drew on contemporary optics in Delft, the city of Leeuwenhoek. The answer bears on how his paintings were made (tracing, transfer or free construction), on attributions and chronology based on technique, and on whether instruments such as the camera obscura were working tools for painters or mainly objects of natural-philosophical interest.",
+  "stuck": "No document records Vermeer owning or using an optical device, and the 1676 inventory of his household lists none. The visual evidence (halation, differential focus, perspective and scale relationships) is compatible with optical observation but can also be produced by skilled painting, and proponents and critics have relied on different paintings and different reconstructions. Recent technical imaging has shown underpainting and revisions that complicate any model of direct tracing without settling whether projection was used at some stage.",
+  "solved": "A quantitative model of the geometry, scale and focus effects predicted by specific optical set-ups in a reconstructed studio, tested across all securely attributed paintings and against their underdrawings and pinhole evidence, that either fits significantly better than free-hand construction with a pin-and-string perspective or is shown to add no explanatory power.",
+  "approach": "Agents can assemble a structured corpus of Vermeer's paintings with published technical imaging (infrared reflectography, MA-XRF, X-radiography, pinhole locations), extract perspective lines, object sizes and focus gradients, and test them against simulated projections from the room geometries reconstructed by Steadman and others. A parallel search of Delft notarial, guild and Jesuit records, and of optical literature circulating in the Dutch Republic, could look for documentary links. Confirmation needs collaboration with museum conservation scientists for access to full-resolution technical datasets and with optical engineers for physical reconstructions.",
+  "existing": [
+    {
+      "year": 1964,
+      "authors": "Charles Seymour Jr.",
+      "title": "Dark Chamber and Light-Filled Room: Vermeer and the Camera Obscura",
+      "venue": "The Art Bulletin 46 (3): 323–331",
+      "url": "https://doi.org/10.1080/00043079.1964.10788766",
+      "note": "First practical test, comparing a camera obscura image of Vermeer-like props with the halation and diffusion effects in the paintings."
+    },
+    {
+      "year": 1971,
+      "authors": "Daniel A. Fink",
+      "title": "Vermeer's Use of the Camera Obscura: A Comparative Study",
+      "venue": "The Art Bulletin 53 (4): 493–505",
+      "url": "https://doi.org/10.1080/00043079.1971.10790546",
+      "note": "Listed optical signatures and argued that they appear in 26 paintings, while cautioning against over-reading them."
+    },
+    {
+      "year": 1977,
+      "authors": "Arthur K. Wheelock Jr.",
+      "title": "Perspective, Optics, and Delft Artists around 1650",
+      "venue": "New York: Garland (Harvard PhD dissertation, 1973)",
+      "url": "https://katalog.lib.cas.cz/AV/Record/002834432",
+      "note": "Placed Vermeer within Delft painters' engagement with perspective and optics, treating the camera obscura as one influence on vision rather than a tracing device."
+    },
+    {
+      "year": 1989,
+      "authors": "John Michael Montias",
+      "title": "Vermeer and His Milieu: A Web of Social History",
+      "venue": "Princeton: Princeton University Press",
+      "note": "Archival reconstruction of Vermeer's life and documents, including the 1676 household inventory, which contains no optical instrument."
+    },
+    {
+      "year": 1995,
+      "authors": "Jørgen Wadum",
+      "title": "Vermeer in Perspective",
+      "venue": "In Arthur K. Wheelock Jr., ed., Johannes Vermeer (Washington: National Gallery of Art; The Hague: Mauritshuis), 67–79",
+      "url": "https://pure.kb.dk/en/publications/vermeer-in-perspective/",
+      "note": "Found pinholes at the vanishing points of thirteen paintings and argued that Vermeer constructed perspective with a pin and string, an alternative to optical projection."
+    },
+    {
+      "year": 1998,
+      "authors": "Allan A. Mills",
+      "title": "Vermeer and the Camera Obscura: Some Practical Considerations",
+      "venue": "Leonardo 31 (3)",
+      "url": "https://doi.org/10.2307/1576575",
+      "note": "Argued that the dimness of seventeenth-century projections made direct tracing on canvas impractical, while accepting that some optical effects may reflect observation through a camera."
+    },
+    {
+      "year": 2001,
+      "authors": "Philip Steadman",
+      "title": "Vermeer's Camera: Uncovering the Truth Behind the Masterpieces",
+      "venue": "Oxford: Oxford University Press",
+      "url": "https://cca.qc.ca/en/search/details/library/publication/45439380",
+      "note": "Reconstructed the room geometry of a group of paintings and argued that their image sizes match projections from a camera obscura placed at the back wall of a single studio."
+    },
+    {
+      "year": 2001,
+      "authors": "David Hockney",
+      "title": "Secret Knowledge: Rediscovering the Lost Techniques of the Old Masters",
+      "venue": "London: Thames & Hudson",
+      "url": "https://en.wikipedia.org/wiki/Hockney%E2%80%93Falco_thesis",
+      "note": "Argued that lenses and mirrors underlay Western naturalism from about 1430, with Vermeer as a late example; developed with the physicist Charles Falco and widely disputed."
+    },
+    {
+      "year": 2017,
+      "authors": "Jane Jelley",
+      "title": "Traces of Vermeer",
+      "venue": "Oxford: Oxford University Press",
+      "url": "https://www.oup.com.au/books/others/9780198789727-traces-of-vermeer",
+      "note": "A painter's experimental reconstruction proposing that Vermeer traced projected images onto oiled paper and transferred them as monochrome underpaintings."
+    },
+    {
+      "year": 2019,
+      "authors": "Abbie Vandivere, Annelies van Loon, Kathryn A. Dooley, Ralph Haswell, Robert G. Erdmann, Emilien Leonhardt",
+      "title": "Revealing the painterly technique beneath the surface of Vermeer's Girl with a Pearl Earring using macro- and microscale imaging",
+      "venue": "Heritage Science 7: 64",
+      "url": "https://doi.org/10.1186/s40494-019-0308-4",
+      "note": "Girl in the Spotlight project (Mauritshuis, 2018): imaging identified ground, fine black outlines and underlayers, evidence for the sequence of construction against which tracing hypotheses can be tested."
+    },
+    {
+      "year": 2020,
+      "authors": "David G. Stork, Christopher W. Tyler and Sara J. Schechner",
+      "title": "Did Tim Paint a Vermeer?",
+      "venue": "Journal of Imaging Science and Technology 64 (6): 060403",
+      "url": "https://doi.org/10.2352/J.ImagingSci.Technol.2020.64.6.060403",
+      "note": "Critique of Tim Jenison's mirror-comparator method shown in Teller's film Tim's Vermeer (2013), concluding that Vermeer was very unlikely to have used it."
+    },
+    {
+      "year": 2023,
+      "authors": "Gregor J. M. Weber",
+      "title": "Johannes Vermeer: Faith, Light and Reflection",
+      "venue": "Amsterdam: Rijksmuseum; Rotterdam: nai010",
+      "url": "https://www.nai010.com/en/publicaties/johannes-vermeer-english/246075",
+      "note": "Published with the 2023 Rijksmuseum exhibition; links Vermeer's optical effects to Jesuit interest in the camera obscura in Delft, an interpretive argument without direct documentary proof."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Mauritshuis, The Hague",
+      "collection": "Girl with a Pearl Earring and View of Delft; technical data from The Girl in the Spotlight (2018)",
+      "url": "https://mauritshuis.nl/en/discover/exhibitions/the-girl-in-the-spotlight",
+      "digitized": "partial",
+      "note": "Project results are summarized online and published in Heritage Science; full scan datasets require request to the museum."
+    },
+    {
+      "repository": "Rijksmuseum, Amsterdam",
+      "collection": "The Milkmaid (SK-A-2344), The Little Street, Woman Reading a Letter, The Love Letter; 2022–23 technical research (MA-XRF, RIS, SWIR)",
+      "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2344",
+      "digitized": "partial",
+      "note": "High-resolution images are open access; the 2022 Milkmaid study revealed an underpainting and painted-out jug holder and fire basket."
+    },
+    {
+      "repository": "Royal Collection Trust, London",
+      "collection": "Lady at the Virginals with a Gentleman ('The Music Lesson'), RCIN 405346",
+      "url": "https://www.rct.uk/collection/exhibitions/masterpieces-from-buckingham-palace/the-queens-gallery-buckingham-palace/lady-at-the-virginals-with-a-gentleman",
+      "digitized": "partial",
+      "note": "The painting at the centre of Steadman's room reconstruction and of Jenison's replication."
+    },
+    {
+      "repository": "Staatliche Kunstsammlungen Dresden, Gemäldegalerie Alte Meister",
+      "collection": "Woman Reading a Letter at an Open Window and The Procuress; documentation from the restoration completed in 2021",
+      "url": "https://gemaeldegalerie.skd.museum/",
+      "digitized": "partial",
+      "note": "Restoration removed later overpaint revealing a Cupid painting on the back wall, altering the room geometry used in optical reconstructions."
+    },
+    {
+      "repository": "Stadsarchief Delft",
+      "collection": "Notarial archives, including the 29 February 1676 inventory of Vermeer's household drawn up for notary J. van Veen; guild, church and burial records",
+      "url": "https://zoeken.stadsarchiefdelft.nl/",
+      "digitized": "partial",
+      "note": "Source base for Montias's documentary reconstruction; many notarial protocols are indexed online and imaged on request."
+    },
+    {
+      "repository": "Frick Art Reference Library, New York, with RKD",
+      "collection": "Montias Database of 17th Century Dutch Art Inventories",
+      "url": "https://research.frick.org/montias",
+      "digitized": "full",
+      "note": "1,280 Amsterdam inventories (1597–1681), useful for establishing how often optical instruments appear in Dutch households alongside paintings."
+    }
+  ]
+}

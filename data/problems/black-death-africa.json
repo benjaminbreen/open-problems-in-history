@@ -1,0 +1,151 @@
+{
+  "id": "black-death-africa",
+  "title": "Did the Black Death reach sub-Saharan Africa in the fourteenth century?",
+  "short": "Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.",
+  "region": "Africa",
+  "field": "Disease",
+  "start": 1340,
+  "end": 1500,
+  "flags": [
+    "science"
+  ],
+  "matters": "If plague reached West, East or Northeast Africa, it would offer an explanation for site abandonments, settlement shifts and political reorganizations that archaeologists date to the fourteenth and fifteenth centuries, from the forest zone of southern Ghana to Ife, and it would change how historians read the demographic and political background to the Atlantic encounter. It also bears on the global history of the second pandemic, on whether the Yersinia pestis lineages now endemic in Central and East Africa descend from medieval introductions, and on the long-standing assumption that Africa south of the Sahara was untouched while Eurasia and North Africa lost a large share of their populations.",
+  "stuck": "Written sources from sub-Saharan Africa for the fourteenth century are few, and Arabic chroniclers who described plague in Egypt and the Maghrib were largely silent about lands beyond the Sahara, a silence that can be read either as absence of plague or absence of reporting. Archaeological signs such as abandonments, mass burials or population decline have other possible causes (drought, war, trade shifts), and few sites are dated precisely enough to tie them to the 1340s–1400s. No medieval Y. pestis genome has yet been published from sub-Saharan Africa, so the genetic argument rests on inferences from the phylogeny of modern African strains.",
+  "solved": "Recovery of Yersinia pestis DNA, radiocarbon-dated to c. 1340–1500, from human remains at one or more sub-Saharan sites, placed on the second-pandemic phylogeny; or, conversely, systematic negative screening of well-dated fourteenth- and fifteenth-century burials across several regions combined with a full survey of the textual evidence showing no plague references.",
+  "approach": "AI agents can survey Arabic, Ge'ez, Portuguese and oral-traditional sources for references to epidemic mortality in the fourteenth and fifteenth centuries, including Ethiopian hagiographies and talismanic texts and West African manuscripts now digitized from Timbuktu, and compile a geo-referenced, dated register of candidate sites from the archaeological literature. Confirmation needs collaboration with ancient-DNA laboratories and African museums and heritage authorities to screen dated burials (for example from Swahili coast towns, the Ethiopian highlands, Nubia and the West African forest and Sahel) for Y. pestis, with radiocarbon dating to fix the chronology, under protocols agreed with descendant communities.",
+  "existing": [
+    {
+      "year": 2010,
+      "authors": "Giovanna Morelli et al.",
+      "title": "Yersinia pestis Genome Sequencing Identifies Patterns of Global Phylogenetic Diversity",
+      "venue": "Nature Genetics 42 (12): 1140–1143",
+      "url": "https://doi.org/10.1038/ng.705",
+      "note": "Global phylogeny of modern Y. pestis that placed African Antiqua (1.ANT) strains on a branch arising shortly after the medieval polytomy, later used by historians to argue for a medieval introduction to Africa."
+    },
+    {
+      "year": 2011,
+      "authors": "Kirsten I. Bos et al.",
+      "title": "A Draft Genome of Yersinia pestis from Victims of the Black Death",
+      "venue": "Nature 478: 506–510",
+      "url": "https://doi.org/10.1038/nature10549",
+      "note": "First reconstructed Black Death genome (London, 1348–50), establishing the method that could be applied to African remains."
+    },
+    {
+      "year": 2014,
+      "authors": "Monica H. Green",
+      "title": "Taking 'Pandemic' Seriously: Making the Black Death Global",
+      "venue": "The Medieval Globe 1: Pandemic Disease in the Medieval World: Rethinking the Black Death",
+      "url": "https://scholarworks.wmich.edu/medieval_globe/1/",
+      "note": "Argued that genetics required historians to consider regions, including sub-Saharan Africa, absent from the traditional Black Death narrative."
+    },
+    {
+      "year": 2018,
+      "authors": "Gérard Chouin",
+      "title": "Reflections on Plague in African History (14th–19th c.)",
+      "venue": "Afriques 09",
+      "url": "https://doi.org/10.4000/afriques.2228",
+      "note": "Sets out the hypothesis that plague reached West Africa in the fourteenth century, citing site abandonments in southern Ghana and at Ife and gaps in oral tradition."
+    },
+    {
+      "year": 2018,
+      "authors": "Monica H. Green",
+      "title": "Putting Africa on the Black Death Map: Narratives from Genetics and History",
+      "venue": "Afriques 09",
+      "url": "https://doi.org/10.4000/afriques.2125",
+      "note": "Reads the phylogeny of modern African Y. pestis strains as evidence for medieval introductions and outlines what aDNA testing would need to show."
+    },
+    {
+      "year": 2018,
+      "authors": "Daphne E. Gallagher and Stephen A. Dueppen",
+      "title": "Recognizing Plague Epidemics in the Archaeological Record of West Africa",
+      "venue": "Afriques 09",
+      "url": "https://doi.org/10.4000/afriques.2198",
+      "note": "Assesses which archaeological signatures could and could not distinguish plague from other causes of disruption in West African sites."
+    },
+    {
+      "year": 2018,
+      "authors": "Marie-Laure Derat",
+      "title": "Du lexique aux talismans: occurrences de la peste dans la Corne de l'Afrique du XIIIe au XVe siècle",
+      "venue": "Afriques 09",
+      "url": "https://doi.org/10.4000/afriques.2090",
+      "note": "Identifies Ge'ez terms, hagiographic episodes and protective texts that may refer to plague in medieval Ethiopia."
+    },
+    {
+      "year": 2019,
+      "authors": "Maria A. Spyrou et al.",
+      "title": "Phylogeography of the Second Plague Pandemic Revealed through Analysis of Historical Yersinia pestis Genomes",
+      "venue": "Nature Communications 10: 4470",
+      "url": "https://doi.org/10.1038/s41467-019-12154-0",
+      "note": "Traced the diversification of second-pandemic strains across Europe and western Eurasia from medieval genomes, a framework into which any African genome would be placed."
+    },
+    {
+      "year": 2019,
+      "authors": "Toby Green",
+      "title": "A Fistful of Shells: West Africa from the Rise of the Slave Trade to the Age of Revolution",
+      "venue": "Chicago: University of Chicago Press",
+      "url": "https://openlibrary.org/isbn/9780226644578",
+      "note": "Synthesis of West African history that engages the possibility of fourteenth-century epidemic disruption as background to Atlantic contact."
+    },
+    {
+      "year": 2020,
+      "authors": "Monica H. Green",
+      "title": "The Four Black Deaths",
+      "venue": "American Historical Review 125 (5): 1601–1631",
+      "url": "https://doi.org/10.1093/ahr/rhaa511",
+      "note": "Reframes the Black Death as a series of thirteenth- and fourteenth-century strain radiations, including routes toward Africa."
+    },
+    {
+      "year": 2022,
+      "authors": "Maria A. Spyrou et al.",
+      "title": "The Source of the Black Death in Fourteenth-Century Central Eurasia",
+      "venue": "Nature 606: 718–724",
+      "url": "https://doi.org/10.1038/s41586-022-04800-3",
+      "note": "Located the second pandemic's ancestral strain in the Tian Shan c. 1338, fixing the starting point from which any spread to Africa must be measured."
+    },
+    {
+      "year": 2023,
+      "authors": "Esther S. Brielle et al.",
+      "title": "Entwined African and Asian Genetic Roots of Medieval Peoples of the Swahili Coast",
+      "venue": "Nature 615: 866–873",
+      "url": "https://doi.org/10.1038/s41586-023-05754-w",
+      "note": "Human aDNA from medieval and early modern Swahili coast burials, showing that suitable dated remains and sequencing data already exist for pathogen screening."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Hill Museum & Manuscript Library (vHMML Reading Room), Collegeville, Minnesota",
+      "collection": "Digitized Timbuktu and Malian manuscript collections (SAVAMA-DCI and private libraries)",
+      "url": "https://www.vhmml.org/readingRoom/",
+      "digitized": "partial",
+      "note": "Imaged Arabic and Ajami manuscripts from Mali, mostly later than the fourteenth century but including chronicles and medical texts that may record earlier epidemics; free registration."
+    },
+    {
+      "repository": "British Library, Endangered Archives Programme, London",
+      "collection": "Ethiopian monastic and church manuscript surveys (Ge'ez hagiographies, chronicles and magical-protective texts)",
+      "url": "https://eap.bl.uk/",
+      "digitized": "partial",
+      "note": "Open-access images of Ethiopian manuscript collections relevant to Derat's lexical and talismanic evidence for plague."
+    },
+    {
+      "repository": "British Institute in Eastern Africa, Nairobi",
+      "collection": "Archaeological archive, including Neville Chittick's excavation records for Kilwa Kisiwani, Aksum and Mogadishu (1961–1983)",
+      "url": "https://biea.ac.uk/archives/",
+      "digitized": "partial",
+      "note": "Field notes, plans and photographs from Swahili coast and Horn excavations, partly digitized via the Archaeology Data Service; access by appointment."
+    },
+    {
+      "repository": "European Nucleotide Archive, EMBL-EBI, Hinxton",
+      "collection": "Raw sequencing data from published ancient DNA studies of African individuals (e.g. Swahili coast, Nubia, Ethiopia)",
+      "url": "https://www.ebi.ac.uk/ena/browser/home",
+      "digitized": "full",
+      "note": "Public shotgun data from existing aDNA studies that can be re-screened computationally for Y. pestis reads before new sampling."
+    },
+    {
+      "repository": "Arquivo Nacional da Torre do Tombo, Lisbon",
+      "collection": "Corpo Cronológico and chancery records for fifteenth-century Portuguese voyages to West Africa",
+      "url": "https://digitarq.arquivos.pt/",
+      "digitized": "partial",
+      "note": "Earliest European eyewitness accounts of the West African coast, useful for testing claims of depopulation in the century after 1350."
+    }
+  ]
+}

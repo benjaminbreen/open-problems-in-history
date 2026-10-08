@@ -1,0 +1,168 @@
+{
+  "id": "quran-standardization",
+  "title": "When was the consonantal text of the Qurʾān standardized?",
+  "short": "Islamic tradition credits the caliph ʿUthmān (c. 650); some scholars place closure under ʿAbd al-Malik and al-Ḥajjāj (c. 700) or later. Manuscript evidence is now testing these positions.",
+  "region": "Middle East",
+  "field": "Texts & authorship",
+  "start": 632,
+  "end": 750,
+  "flags": [
+    "science",
+    "digitization"
+  ],
+  "matters": "The date at which the consonantal skeleton (rasm) was fixed determines how far the text can be used as evidence for the first decades of Islam, how its relation to Muhammad's preaching is assessed, and how the early caliphate's religious authority is understood. A mid-seventh-century closure supports reading the Qurʾān as a near-contemporary witness; a Marwanid or later closure would allow for substantial editorial shaping during the conquest period. The question also bears on the history of Arabic orthography and on the reliability of the Islamic tradition's accounts of collection.",
+  "stuck": "The earliest manuscripts are fragmentary, undated, dispersed across collections and often published only in part, and the Sanaa lower text survives as an erased palimpsest. Radiocarbon dates give the death of the animal whose skin became parchment, not the date of writing, and their ranges often span several decades on either side of 650 and 700. The literary accounts of ʿUthmān's and al-Ḥajjāj's interventions were recorded later and are read differently by scholars with different views of the tradition's reliability.",
+  "solved": "A published stemmatic analysis of all variants in the dated and datable manuscripts (including the Sanaa lower text and the regional-codex variants), using shared orthographic errors to test whether the surviving Uthmanic-type manuscripts descend from a single written archetype, combined with a radiocarbon and palaeographic model that bounds when that archetype was produced, with results reproducible from open data.",
+  "approach": "Agents can align the transcriptions of early manuscripts available through Corpus Coranicum and published editions, code every orthographic and textual variant, and apply phylogenetic and stemmatic methods to test single-archetype and multiple-source models. The same dataset can be linked to radiocarbon results, palaeographic classes and the variants attributed to regional codices in the literary tradition. Progress needs digitization and publication of fragments held in Sanaa and elsewhere, in collaboration with their custodians, and further radiocarbon and multispectral imaging work with laboratories.",
+  "existing": [
+    {
+      "year": 1977,
+      "authors": "John Wansbrough",
+      "title": "Quranic Studies: Sources and Methods of Scriptural Interpretation",
+      "venue": "London Oriental Series 31. Oxford: Oxford University Press",
+      "url": "https://archive.org/details/in.ernet.dli.2015.120716",
+      "note": "Argued from form-critical analysis that the canonical text emerged gradually and was not fixed until around 800."
+    },
+    {
+      "year": 2004,
+      "authors": "Michael Cook",
+      "title": "The Stemma of the Regional Codices of the Koran",
+      "venue": "Graeco-Arabica 9–10",
+      "url": "",
+      "note": "Showed that the variants reported for the regional codices form a coherent stemma consistent with copies made from a single exemplar, as the tradition about ʿUthmān describes."
+    },
+    {
+      "year": 2009,
+      "authors": "François Déroche",
+      "title": "La transmission écrite du Coran dans les débuts de l'islam: le codex Parisino-petropolitanus",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/ej.9789004172722.i-594",
+      "note": "Codicological, orthographic and textual study of one of the oldest large Qurʾān manuscripts, showing a rasm close to the standard text with orthographic variation."
+    },
+    {
+      "year": 2010,
+      "authors": "Behnam Sadeghi and Uwe Bergmann",
+      "title": "The Codex of a Companion of the Prophet and the Qurʾān of the Prophet",
+      "venue": "Arabica 57 (4): 343–436",
+      "url": "https://doi.org/10.1163/157005810X504518",
+      "note": "Analysed the non-Uthmanic lower text of the Sanaa palimpsest and reported a radiocarbon date for one of its leaves placing the parchment before about 671."
+    },
+    {
+      "year": 2012,
+      "authors": "Behnam Sadeghi and Mohsen Goudarzi",
+      "title": "Ṣanʿāʾ 1 and the Origins of the Qurʾān",
+      "venue": "Der Islam 87 (1–2): 1–129",
+      "url": "https://doi.org/10.1515/islam-2011-0025",
+      "note": "Edited the lower text of several palimpsest folios and argued that it represents an independent textual tradition, while the Uthmanic text derives from a single archetype."
+    },
+    {
+      "year": 2014,
+      "authors": "François Déroche",
+      "title": "Qur'ans of the Umayyads: A First Overview",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004261853",
+      "note": "Surveyed Umayyad-period manuscripts and discussed Marwanid interventions in script, orthography and book production."
+    },
+    {
+      "year": 2014,
+      "authors": "Nicolai Sinai",
+      "title": "When did the consonantal skeleton of the Quran reach closure? Part I",
+      "venue": "Bulletin of the School of Oriental and African Studies 77 (2): 273–292",
+      "url": "https://doi.org/10.1017/S0041977X1400010X",
+      "note": "Weighed the literary, documentary and manuscript evidence and argued that closure before the Marwanid period is more probable (Part II in BSOAS 77 (3): 509–521)."
+    },
+    {
+      "year": 2015,
+      "authors": "University of Birmingham, Cadbury Research Library",
+      "title": "Birmingham Qur'an manuscript dated among the oldest in the world",
+      "venue": "University of Birmingham news release, 22 July 2015",
+      "url": "https://www.birmingham.ac.uk/news/2015/birmingham-quran-manuscript-dated-among-the-oldest-in-the-world",
+      "note": "Announced Oxford radiocarbon dating of the Mingana 1572a leaves to 568–645 CE at 95.4 per cent probability."
+    },
+    {
+      "year": 2018,
+      "authors": "Éléonore Cellard",
+      "title": "Codex Amrensis 1",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004375499",
+      "note": "Reconstruction and edition of an early Hijazi-script codex whose leaves are dispersed among several collections."
+    },
+    {
+      "year": 2019,
+      "authors": "Marijn van Putten",
+      "title": "\"The Grace of God\" as evidence for a written Uthmanic archetype: the importance of shared orthographic idiosyncrasies",
+      "venue": "Bulletin of the School of Oriental and African Studies 82 (2): 271–288",
+      "url": "https://doi.org/10.1017/S0041977X19000338",
+      "note": "Showed that early manuscripts share arbitrary spelling conventions that are best explained by descent from one written archetype."
+    },
+    {
+      "year": 2019,
+      "authors": "Michael Josef Marx and Tobias J. Jocham",
+      "title": "Radiocarbon (14C) Dating of Qurʾān Manuscripts",
+      "venue": "In A. Kaplony and M. Marx (eds.), Qurʾān Quotations Preserved on Papyrus Documents, 7th–10th Centuries (Leiden: Brill): 188–221",
+      "url": "https://doi.org/10.1163/9789004376977_007",
+      "note": "Reported and discussed the Corpus Coranicum radiocarbon programme for early Qurʾān manuscripts and its interpretive limits."
+    },
+    {
+      "year": 2020,
+      "authors": "Hythem Sidky",
+      "title": "On the Regionality of Qurʾānic Codices",
+      "venue": "Journal of the International Qur'anic Studies Association 5: 133–210",
+      "url": "https://doi.org/10.5913/jiqsa.5.2020.a005",
+      "note": "Matched variants in early manuscripts to the regional codices described in the tradition, supporting a stemma of regionally distributed copies."
+    },
+    {
+      "year": 2022,
+      "authors": "Marijn van Putten",
+      "title": "Quranic Arabic: From its Hijazi Origins to its Classical Reading Traditions",
+      "venue": "Leiden: Brill",
+      "url": "https://doi.org/10.1163/9789004506251",
+      "note": "Linguistic reconstruction of the language of the rasm from early manuscripts and reading traditions."
+    },
+    {
+      "year": 2022,
+      "authors": "Stephen J. Shoemaker",
+      "title": "Creating the Qur'an: A Historical-Critical Study",
+      "venue": "Oakland: University of California Press",
+      "url": "https://doi.org/10.1525/luminos.128",
+      "note": "Argued for standardization under ʿAbd al-Malik and al-Ḥajjāj and questioned the reliability of radiocarbon dates for fixing the text earlier."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Dār al-Makhṭūṭāt (House of Manuscripts), Sanaa",
+      "collection": "DAM 01-27.1 (Ṣanʿāʾ 1 palimpsest) and other Qurʾān fragments found in the Great Mosque of Sanaa in 1972",
+      "url": "",
+      "digitized": "partial",
+      "note": "Holds the palimpsest whose lower text is the main non-Uthmanic witness; imaging from the 1980s–2000s exists but much remains unpublished, and access has been limited by the war in Yemen."
+    },
+    {
+      "repository": "Cadbury Research Library, University of Birmingham",
+      "collection": "Mingana Collection, Islamic Arabic 1572a (Birmingham Qurʾān leaves)",
+      "url": "https://www.birmingham.ac.uk/facilities/cadbury/index.aspx",
+      "digitized": "partial",
+      "note": "Two leaves radiocarbon dated in 2015; considered part of the same manuscript as leaves in BnF Arabe 328(c)."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Paris",
+      "collection": "Arabe 328 (Codex Parisino-petropolitanus and associated fragments) and other early Hijazi and Kufic fragments",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "full",
+      "note": "Early Qurʾān fragments available through Gallica; the remaining leaves of the Parisino-petropolitanus are in the National Library of Russia, St Petersburg."
+    },
+    {
+      "repository": "Universitätsbibliothek Tübingen",
+      "collection": "Ma VI 165 (Kufic Qurʾān fragment, suras 17–36)",
+      "url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
+      "digitized": "full",
+      "note": "Fully digitized fragment radiocarbon dated to 649–675 CE through the Coranica project."
+    },
+    {
+      "repository": "Corpus Coranicum, Berlin-Brandenburg Academy of Sciences and Humanities",
+      "collection": "Manuscripta Coranica database of early manuscripts, variant readings (Variae Lectiones) and radiocarbon results",
+      "url": "https://corpuscoranicum.de/",
+      "digitized": "partial",
+      "note": "Open database with images, transliterations and metadata for many early Qurʾān manuscripts, the main platform for systematic comparison."
+    }
+  ]
+}

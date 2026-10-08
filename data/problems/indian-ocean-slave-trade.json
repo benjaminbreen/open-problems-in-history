@@ -1,0 +1,156 @@
+{
+  "id": "indian-ocean-slave-trade",
+  "title": "How many people were carried in the Indian Ocean slave trades, 1500–1850?",
+  "short": "European slave trading in the Indian Ocean has been tentatively counted, but the combined volume of Dutch, Portuguese, French, British, Arab, Swahili and South Asian trades remains unknown.",
+  "region": "Indian Ocean",
+  "field": "Economy",
+  "start": 1500,
+  "end": 1850,
+  "flags": ["digitization"],
+  "matters": "Without a credible volume, the Indian Ocean cannot be compared with the Atlantic, and claims about the relative weight of African, Malagasy and Asian forced migration in global history rest on guesswork. The numbers bear on the labor regimes of the VOC settlements at Batavia and the Cape, the plantation economies of the Mascarenes, the clove economy of Zanzibar and Pemba, the Gulf pearl industry, and on the demographic history of Madagascar, Mozambique and the East African interior. They also bear on how abolition worked in practice, since the trade shifted to new routes and legal forms after British and French bans.",
+  "stuck": "There is no voyage-level dataset for the Indian Ocean comparable to the SlaveVoyages trans-Atlantic database, and much of the traffic moved in small numbers aboard ships whose main cargo was something else, so it left little trace in shipping records. The evidence is spread across Dutch, Portuguese, French, English, Arabic, Persian, Gujarati and Swahili sources in archives on four continents, and many local trades (for example within the Indonesian archipelago or along the Swahili coast) were never systematically recorded. Existing estimates either cover only European traders, as in Richard Allen's tentative figure of roughly 570,000 to 730,000 people for 1500–1850, or rest on extrapolations from scattered nineteenth-century observations, as in Ralph Austen's census of the East African trade.",
+  "solved": "An open, record-level database of documented slave voyages and transfers in the Indian Ocean for 1500–1850, with each record linked to its archival source, from which minimum counts by route, carrier and decade can be computed and gaps quantified, so that a total for all carriers can be stated with an explicit uncertainty range.",
+  "approach": "AI agents can extract mentions of enslaved people from large digitized series, beginning with the VOC Overgekomen Brieven en Papieren being transcribed by GLOBALISE, Cape and Batavia records, French Mascarene port records and British anti-slave-trade correspondence, and assemble them into voyage and transfer records reviewed by historians. Progress beyond the Dutch and British material requires new digitization in partnership with the Archives nationales d'outre-mer, the Arquivo Histórico Ultramarino, the National Archives of Mauritius and the Zanzibar National Archives, and with scholars able to read Arabic, Gujarati and Swahili commercial papers.",
+  "existing": [
+    {
+      "year": 1975,
+      "authors": "Edward A. Alpers",
+      "title": "Ivory and Slaves in East Central Africa: Changing Patterns of International Trade to the Later Nineteenth Century",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://openlibrary.org/isbn/0520026896",
+      "note": "Reconstructed the growth of slave exports from the Mozambique coast and its hinterland, including French demand from the Mascarenes."
+    },
+    {
+      "year": 1987,
+      "authors": "Abdul Sheriff",
+      "title": "Slaves, Spices and Ivory in Zanzibar: Integration of an East African Commercial Empire into the World Economy, 1770–1873",
+      "venue": "London: James Currey",
+      "url": "https://openlibrary.org/isbn/0852550154",
+      "note": "Used customs and consular evidence to estimate the Zanzibar trade and the slave labor demand of the clove plantations."
+    },
+    {
+      "year": 1988,
+      "authors": "Ralph A. Austen",
+      "title": "The 19th Century Islamic Slave Trade from East Africa (Swahili and Red Sea Coasts): A Tentative Census",
+      "venue": "Slavery & Abolition 9 (3): 21–44",
+      "url": "https://doi.org/10.1080/01440398808574960",
+      "note": "Most cited quantitative estimate of exports from East Africa to the Muslim world, built from scattered consular and travellers' figures."
+    },
+    {
+      "year": 1989,
+      "authors": "William Gervase Clarence-Smith (ed.)",
+      "title": "The Economics of the Indian Ocean Slave Trade in the Nineteenth Century",
+      "venue": "London: Frank Cass",
+      "url": "https://openlibrary.org/isbn/0714633593",
+      "note": "Collected the first set of regional quantitative studies for the nineteenth-century trade, including Austen's census."
+    },
+    {
+      "year": 1994,
+      "authors": "Robert C.-H. Shell",
+      "title": "Children of Bondage: A Social History of the Slave Society at the Cape of Good Hope, 1652–1838",
+      "venue": "Hanover, NH: Wesleyan University Press",
+      "url": "https://openlibrary.org/isbn/0819552739",
+      "note": "Estimated imports of enslaved people to the Cape from Madagascar, Mozambique, South Asia and the Indonesian archipelago."
+    },
+    {
+      "year": 2003,
+      "authors": "Markus Vink",
+      "title": "\"The World's Oldest Trade\": Dutch Slavery and Slave Trade in the Indian Ocean in the Seventeenth Century",
+      "venue": "Journal of World History 14 (2): 131–177",
+      "url": "https://doi.org/10.1353/jwh.2003.0026",
+      "note": "Argued that the VOC slave trade was far larger than previously assumed and offered estimates for seventeenth-century Dutch trading."
+    },
+    {
+      "year": 2009,
+      "authors": "Kerry Ward",
+      "title": "Networks of Empire: Forced Migration in the Dutch East India Company",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511551628",
+      "note": "Placed slave trading within the VOC's wider system of forced migration, including convicts and exiles, between Batavia and the Cape."
+    },
+    {
+      "year": 2010,
+      "authors": "Richard B. Allen",
+      "title": "Satisfying the \"Want for Labouring People\": European Slave Trading in the Indian Ocean, 1500–1850",
+      "venue": "Journal of World History 21 (1): 45–73",
+      "url": "https://doi.org/10.1353/jwh.0.0100",
+      "note": "First systematic estimate of slave trading by Portuguese, Dutch, French and British carriers across the Indian Ocean."
+    },
+    {
+      "year": 2013,
+      "authors": "Robert Harms, Bernard K. Freamon and David W. Blight (eds.)",
+      "title": "Indian Ocean Slavery in the Age of Abolition",
+      "venue": "New Haven: Yale University Press",
+      "url": "https://openlibrary.org/isbn/9780300163872",
+      "note": "Essays on how the trade continued and changed form under nineteenth-century abolition regimes, including in the Gulf and Red Sea."
+    },
+    {
+      "year": 2014,
+      "authors": "Richard B. Allen",
+      "title": "European Slave Trading in the Indian Ocean, 1500–1850",
+      "venue": "Athens: Ohio University Press",
+      "url": "https://www.ohioswallow.com/9780821421062/european-slave-trading-in-the-indian-ocean-15001850/",
+      "note": "Book-length reconstruction giving a tentative total of roughly 570,000 to 730,000 people carried by European traders, and stressing how much remains uncounted."
+    },
+    {
+      "year": 2014,
+      "authors": "Pedro Machado",
+      "title": "Ocean of Trade: South Asian Merchants, Africa and the Indian Ocean, c. 1750–1850",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://openlibrary.org/isbn/9781107070264",
+      "note": "Shows Gujarati Vaniya merchants financing and supplying the Mozambique slave trade, a part of the traffic largely invisible in European shipping records."
+    },
+    {
+      "year": 2022,
+      "authors": "GLOBALISE project (Huygens Institute, Amsterdam)",
+      "title": "GLOBALISE: Enriching the VOC Archives",
+      "venue": "NWO-funded research infrastructure, 2022–2026",
+      "url": "https://globalise.huygens.knaw.nl/",
+      "note": "Machine transcription of over 5 million pages of VOC Overgekomen Brieven en Papieren, making Dutch evidence on slave purchases and shipments searchable at scale for the first time."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Archief van de Verenigde Oost-Indische Compagnie (VOC), inv. 1.04.02, especially the Overgekomen Brieven en Papieren",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+      "digitized": "partial",
+      "note": "Many volumes are scanned and the OBP is being machine-transcribed by GLOBALISE (transcriptions.globalise.huygens.knaw.nl); slave purchases are scattered through letters, muster rolls and accounts."
+    },
+    {
+      "repository": "National Archives and Records Service of South Africa, Western Cape Archives and Records Service, Cape Town",
+      "collection": "VOC Cape records (Council of Policy resolutions, slave transfer deeds, opgaafrolle) and British-period slave registers",
+      "url": "https://www.nationalarchives.gov.za/",
+      "digitized": "partial",
+      "note": "Records of slave imports into the Cape from Madagascar, Mozambique, South Asia and the archipelago; catalogued through the NAAIRS database."
+    },
+    {
+      "repository": "Archives nationales d'outre-mer, Aix-en-Provence",
+      "collection": "Fonds of Île de France (Mauritius) and Île Bourbon (Réunion), Compagnie des Indes, and colonial correspondence (série C)",
+      "url": "https://recherche-anom.culture.gouv.fr/",
+      "digitized": "partial",
+      "note": "Core French evidence for the Mascarene trade from Madagascar, Mozambique and the Swahili coast; civil registers are imaged online, administrative series mostly are not."
+    },
+    {
+      "repository": "Arquivo Histórico Ultramarino, Lisbon",
+      "collection": "Moçambique and Índia caixas and códices (Conselho Ultramarino)",
+      "url": "https://digitarq.arquivos.pt/",
+      "digitized": "partial",
+      "note": "Portuguese administrative and customs records for Mozambique Island, Quelimane and Goa; catalogue online, most documents viewable only in Lisbon."
+    },
+    {
+      "repository": "The National Archives, Kew",
+      "collection": "T 71 (Office of Registry of Colonial Slaves, including Mauritius and Cape registers from 1815) and FO 84 (Slave Trade Department correspondence)",
+      "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/british-transatlantic-slave-trade-records/",
+      "digitized": "partial",
+      "note": "Mauritius and Cape slave registers record birthplace and age of enslaved people; FO 84 holds naval and consular reports on the East African and Gulf trades."
+    },
+    {
+      "repository": "British Library, London, via Qatar Digital Library",
+      "collection": "India Office Records, IOR/R/15 (Persian Gulf Political Residency), including manumission statements",
+      "url": "https://www.qdl.qa/en",
+      "digitized": "partial",
+      "note": "Digitized Gulf records with testimony of enslaved Africans and Baluchis seeking manumission, mostly late nineteenth and early twentieth century."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "id": "khipu",
+  "title": "Do khipus record more than numbers, and can their non-numerical signs be read?",
+  "short": "Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.",
+  "region": "Americas",
+  "field": "Languages & scripts",
+  "start": 1400,
+  "end": 1800,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Colonial chroniclers reported that khipukamayuq read histories, genealogies and laws from cords. If khipus encoded non-numerical information systematically, the Inka state kept records that could be read as primary sources for Andean history before and after 1532, and the comparative history of writing would need to include a non-graphic system. If they did not, accounts of Inka administration must explain how a large empire functioned on numerical records plus memory.",
+  "stuck": "Roughly a thousand khipus survive (estimates vary), most without archaeological context, and very few can be paired with a Spanish-language transcription of the same record. The decimal knot system was established by Locke (1912) and the Aschers, but colour, fibre, spin and ply, attachment direction and knot orientation vary in ways that have resisted consistent interpretation. Data were long scattered across incompatible recording schemes and unpublished notebooks.",
+  "solved": "A model trained on matched khipu–document pairs predicts, for khipus or transcriptions held out from training, non-numerical features (such as moiety, lineage, place or personal-name categories) significantly better than chance and better than numerical-only baselines, and the predictions are confirmed when new matched pairs are found.",
+  "approach": "Use the Open Khipu Repository and Khipu Field Guide as a common schema, and systematically search colonial visitas, revisitas and court records in Peruvian and Spanish archives for documents stating that their figures were read from khipus, then match them by totals and structure as Medrano and Urton did for the Santa Valley khipus. Test competing readings, such as the alternative moiety alignments of Medrano and Urton (2018) and FitzPatrick (2024), against held-out cord groups. This depends on recording undocumented khipus in museum stores, especially in Berlin, Lima and smaller Peruvian collections, and on community agreements for khipus still held in villages such as Collata and Rapaz.",
+  "existing": [
+    {
+      "year": 1912,
+      "authors": "L. Leland Locke",
+      "title": "The Ancient Quipu, a Peruvian Knot Record",
+      "venue": "American Anthropologist 14 (2): 325–332",
+      "url": "https://doi.org/10.1525/aa.1912.14.2.02a00070",
+      "note": "Showed that knot types and positions encode a base-ten place-value system, the foundation of all later khipu reading."
+    },
+    {
+      "year": 2002,
+      "authors": "Jeffrey Quilter and Gary Urton (eds.)",
+      "title": "Narrative Threads: Accounting and Recounting in Andean Khipu",
+      "venue": "Austin: University of Texas Press",
+      "url": "https://doi.org/10.7560/769038",
+      "note": "Collected essays, including contributions by Marcia Ascher and William Conklin, on whether khipus could carry narrative as well as accounts."
+    },
+    {
+      "year": 2004,
+      "authors": "Frank Salomon",
+      "title": "The Cord Keepers: Khipus and Cultural Life in a Peruvian Village",
+      "venue": "Durham, NC: Duke University Press",
+      "url": "https://doi.org/10.1215/9780822386179",
+      "note": "Ethnography and archival history of the patrimonial khipus of Tupicocha, linking cords to colonial and later village records."
+    },
+    {
+      "year": 2005,
+      "authors": "Gary Urton and Carrie J. Brezine",
+      "title": "Khipu Accounting in Ancient Peru",
+      "venue": "Science 309 (5737): 1065–1067",
+      "url": "https://doi.org/10.1126/science.1113426",
+      "note": "Used the Khipu Database to identify hierarchical summation across a set of Puruchuco khipus and proposed that a recurring knot sequence might identify the place Puruchuco."
+    },
+    {
+      "year": 2005,
+      "authors": "Marcia Ascher",
+      "title": "How Can Spin, Ply, and Knot Direction Contribute to Understanding the Quipu Code?",
+      "venue": "Latin American Antiquity 16 (1): 99–111",
+      "url": "https://doi.org/10.2307/30042488",
+      "note": "Assessed whether construction features beyond knot value pattern consistently, drawing on the Aschers' decades of recorded khipu data."
+    },
+    {
+      "year": 2014,
+      "authors": "Sabine Hyland, Gene A. Ware and Madison Clark",
+      "title": "Knot Direction in a Khipu/Alphabetic Text from the Central Andes",
+      "venue": "Latin American Antiquity 25 (2): 189–197",
+      "url": "https://doi.org/10.7183/1045-6635.25.2.189",
+      "note": "Examined knot direction in a khipu paired with an alphabetic text, arguing that it carried non-numerical information."
+    },
+    {
+      "year": 2017,
+      "authors": "Sabine Hyland",
+      "title": "Writing with Twisted Cords: The Inscriptive Capacity of Andean Khipus",
+      "venue": "Current Anthropology 58 (3): 412–419",
+      "url": "https://doi.org/10.1086/691682",
+      "note": "Analyzed two non-numerical khipus held by the community of San Juan de Collata and argued that their combinations of fibre, colour and ply direction are numerous enough to function as a logosyllabic sign system."
+    },
+    {
+      "year": 2018,
+      "authors": "Manuel Medrano and Gary Urton",
+      "title": "Toward the Decipherment of a Set of Mid-Colonial Khipus from the Santa Valley, Coastal Peru",
+      "venue": "Ethnohistory 65 (1): 1–23",
+      "url": "https://doi.org/10.1215/00141801-4260638",
+      "note": "Matched six khipus to a 1670 revisita of San Pedro de Corongo listing 132 named tributaries in six ayllus; knot totals equal the assessed tribute, and attachment direction appears to mark moiety."
+    },
+    {
+      "year": 2021,
+      "authors": "Sabine Hyland, Sarah Bennison and William P. Hyland",
+      "title": "Khipus, Khipu Boards, and Sacred Texts: Toward a Philology of Andean Knotted Cords",
+      "venue": "Latin American Research Review 56 (2): 400–416",
+      "url": "https://doi.org/10.25222/larr.1032",
+      "note": "Traced hybrid khipu/alphabetic 'khipu boards' from colonial Peru to twentieth-century ritual use at San Pedro de Casta."
+    },
+    {
+      "year": 2024,
+      "authors": "Mackinley FitzPatrick",
+      "title": "New Insights on Cord Attachment and Social Hierarchy in Six Khipus from the Santa Valley, Peru",
+      "venue": "Ethnohistory 71 (4): 443–469",
+      "url": "https://doi.org/10.1215/00141801-11266328",
+      "note": "Re-examined the Santa Valley match, identified gaps in its documentation, and used combinatorics to propose a different moiety alignment with recto and verso attachments as marked and unmarked signs."
+    },
+    {
+      "year": 2025,
+      "authors": "OKR Team (Open Khipu Research Laboratory; advisory board Carrie Brezine, Mackinley FitzPatrick, Iván Ghezzi, Sabine Hyland, Manuel Medrano, Jeffrey Splitstoser)",
+      "title": "The Open Khipu Repository, v2.1.0",
+      "venue": "Zenodo dataset",
+      "url": "https://doi.org/10.5281/zenodo.18025748",
+      "note": "Open SQLite database of khipu cord-level data recorded through 2017 plus later archival submissions, with stable KH identifiers (KH0001–KH0702 as of December 2025)."
+    },
+    {
+      "year": 2026,
+      "authors": "Mackinley FitzPatrick",
+      "title": "Knot Tricks: What Mathematical Knot Theory Can Reveal about the Structure of Khipu Knot Encoding",
+      "venue": "Latin American Antiquity 37 (2): 226–242",
+      "url": "https://doi.org/10.1017/laq.2026.10171",
+      "note": "Formalized khipu knot types with knot theory, showing that some visually distinct knots are topologically equivalent and flagging common misidentifications in recorded data."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Open Khipu Repository (Open Khipu Research Laboratory)",
+      "collection": "khipu.db SQLite database and KH number registry",
+      "url": "https://github.com/khipulab/open-khipu-repository",
+      "digitized": "full",
+      "note": "MIT-licensed cord-level data for several hundred khipus from museums worldwide, recorded through 2017 and extended since; new submissions are reviewed by an advisory board."
+    },
+    {
+      "repository": "Khipu Field Guide (Ashok Khosla, with Manuel Medrano)",
+      "collection": "Schematic drawings, database and analyses of about 700 khipus, plus 'paper khipu' transcriptions from colonial documents",
+      "url": "https://www.khipufieldguide.com/",
+      "digitized": "full",
+      "note": "Open site that renders OKR-derived data visually and collects transcribed khipu-based colonial texts useful for matching."
+    },
+    {
+      "repository": "Ethnologisches Museum, Staatliche Museen zu Berlin",
+      "collection": "Andean khipu collection (one of the largest museum holdings), searchable in SMB-digital",
+      "url": "https://recherche.smb.museum/",
+      "digitized": "partial",
+      "note": "Many Berlin khipus were recorded by Urton's project, but photographs and full structural records are not available for all; study requires museum permission."
+    },
+    {
+      "repository": "Museo Nacional de Arqueología, Antropología e Historia del Perú, Lima",
+      "collection": "Khipus from coastal and highland sites, including Puruchuco",
+      "url": "https://mnaahp.cultura.pe/",
+      "digitized": "partial",
+      "note": "Major Peruvian holding; parts have been recorded in the Khipu Database and OKR, with other specimens undocumented."
+    },
+    {
+      "repository": "Archivo General de la Nación, Lima",
+      "collection": "Colonial visitas, revisitas, tribute and court records, such as the Derecho Indígena and Real Audiencia series",
+      "url": "https://www.gob.pe/agn",
+      "digitized": "partial",
+      "note": "The likeliest source of further documents transcribed from khipus; many records are uncatalogued at item level, so finding matches is a search task suited to agents working with archivists."
+    },
+    {
+      "repository": "Community of San Juan de Collata, Huarochirí, Peru",
+      "collection": "Two narrative khipus and associated community documents studied by Sabine Hyland",
+      "url": "https://doi.org/10.1086/691682",
+      "digitized": "none",
+      "note": "Held by the community, not a museum; any further recording or imaging depends on community consent."
+    }
+  ]
+}

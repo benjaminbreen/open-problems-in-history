@@ -1,0 +1,182 @@
+{
+  "id": "justinianic-plague",
+  "title": "How many people did the Justinianic Plague kill, and did it change late antique society?",
+  "short": "Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.",
+  "region": "Mediterranean",
+  "field": "Disease",
+  "start": 541,
+  "end": 750,
+  "flags": [
+    "science"
+  ],
+  "matters": "Maximalist readings make the pandemic a cause of the end of antiquity: depopulation weakening the eastern Roman empire before the Arab conquests, contraction of cities and trade, and the rural and fiscal transformations of the seventh century. Minimalist readings remove that causal link and return explanatory weight to war, climate and political decisions. The answer also shapes comparisons with the Black Death and with modern pandemics, and the use of plague as a general explanation in historical narratives.",
+  "stuck": "Narrative sources (Procopius, John of Ephesus, Evagrius, Gregory of Tours) give vivid but rhetorically shaped figures for a few cities, and there are almost no serial demographic records. Documentary proxies such as papyri, legislation, coin output, inscriptions and building activity can be read as showing disruption or continuity depending on the baseline chosen. Ancient DNA proves presence of the pathogen at particular sites but not mortality rates, and pollen and settlement data are often too coarse in date to isolate the 540s from other causes.",
+  "solved": "A region-by-region database of dated proxies (papyri, legislation, coin issues, dated inscriptions, burials with plague DNA, high-resolution pollen cores, settlement and building chronologies) showing, with stated uncertainties, whether measurable discontinuities cluster at the documented plague waves more than expected from a baseline of other shocks, yielding bounded mortality estimates for named regions.",
+  "approach": "Agents can extract and date every reference to plague waves from narrative and documentary sources, compile counts of dated papyri, inscriptions, laws and coin issues per year and region, and align them with published palaeoecological and aDNA results in a common spatial-temporal framework. Event-study statistics around each wave, with explicit baselines, would replace selective citation. Confirmation requires collaboration with ancient-DNA laboratories to screen more burials across the Mediterranean and Near East and with palynologists for well-dated, high-resolution cores.",
+  "existing": [
+    {
+      "year": 1969,
+      "authors": "Jean-Noël Biraben and Jacques Le Goff",
+      "title": "La peste dans le Haut Moyen Age",
+      "venue": "Annales. Économies, Sociétés, Civilisations 24 (6): 1484–1510",
+      "url": "https://doi.org/10.3406/ahess.1969.422183",
+      "note": "First systematic chronology and map of the recurrent plague waves from 541 to the eighth century."
+    },
+    {
+      "year": 2002,
+      "authors": "Peter Sarris",
+      "title": "The Justinianic plague: origins and effects",
+      "venue": "Continuity and Change 17 (2): 169–182",
+      "url": "https://doi.org/10.1017/S0268416002004137",
+      "note": "Argued from papyri and legislation for major economic effects, including labour shortages and pressure on landholding."
+    },
+    {
+      "year": 2004,
+      "authors": "Dionysios Ch. Stathakopoulos",
+      "title": "Famine and Pestilence in the Late Roman and Early Byzantine Empire: A Systematic Survey of Subsistence Crises and Epidemics",
+      "venue": "Aldershot: Ashgate (reissued Routledge 2017)",
+      "url": "https://doi.org/10.4324/9781315255439",
+      "note": "Catalogue of every recorded famine and epidemic from 284 to 750, the basic reference for source attestations of plague waves."
+    },
+    {
+      "year": 2007,
+      "authors": "Lester K. Little (ed.)",
+      "title": "Plague and the End of Antiquity: The Pandemic of 541–750",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511812934",
+      "note": "Influential collected volume presenting the pandemic as a major demographic and historical turning point."
+    },
+    {
+      "year": 2013,
+      "authors": "Michaela Harbeck, Lisa Seifert, Stephanie Hänsch, David M. Wagner and others",
+      "title": "Yersinia pestis DNA from Skeletal Remains from the 6th Century AD Reveals Insights into Justinianic Plague",
+      "venue": "PLoS Pathogens 9 (5): e1003349",
+      "url": "https://doi.org/10.1371/journal.ppat.1003349",
+      "note": "Confirmed Y. pestis in sixth-century burials at Aschheim, Bavaria."
+    },
+    {
+      "year": 2014,
+      "authors": "David M. Wagner, Jennifer Klunk, Michaela Harbeck, Alison Devault and others",
+      "title": "Yersinia pestis and the Plague of Justinian 541–543 AD: a genomic analysis",
+      "venue": "The Lancet Infectious Diseases 14 (4): 319–326",
+      "url": "https://doi.org/10.1016/S1473-3099(13)70323-2",
+      "note": "Reconstructed a draft genome placing the Justinianic strain on a now-extinct branch distinct from the Black Death lineage."
+    },
+    {
+      "year": 2017,
+      "authors": "Kyle Harper",
+      "title": "The Fate of Rome: Climate, Disease, and the End of an Empire",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.2307/j.ctv9b2txr",
+      "note": "Synthesis treating the pandemic, together with Late Antique cooling, as a central cause of Roman decline."
+    },
+    {
+      "year": 2019,
+      "authors": "Marcel Keller, Maria A. Spyrou, Christiana L. Scheib and others",
+      "title": "Ancient Yersinia pestis genomes from across Western Europe reveal early diversification during the First Pandemic (541–750)",
+      "venue": "Proceedings of the National Academy of Sciences 116 (25): 12363–12372",
+      "url": "https://doi.org/10.1073/pnas.1820447116",
+      "note": "Recovered eight genomes from Britain, France, Germany and Spain, showing wide geographic reach and microdiversity of the pathogen."
+    },
+    {
+      "year": 2019,
+      "authors": "Guy Bar-Oz, Lior Weissbrod, Tali Erickson-Gini and others",
+      "title": "Ancient trash mounds unravel urban collapse a century before the end of Byzantine hegemony in the southern Levant",
+      "venue": "Proceedings of the National Academy of Sciences 116 (17): 8239–8248",
+      "url": "https://doi.org/10.1073/pnas.1900233116",
+      "note": "Dated the end of refuse disposal at Elusa to the mid-sixth century and linked it to plague and climate stress."
+    },
+    {
+      "year": 2019,
+      "authors": "Lee Mordechai and Merle Eisenberg",
+      "title": "Rejecting Catastrophe: The Case of the Justinianic Plague",
+      "venue": "Past & Present 244 (1): 3–50",
+      "url": "https://doi.org/10.1093/pastj/gtz009",
+      "note": "Argued that the textual case for catastrophic mortality rests on a few sources and maximalist assumptions."
+    },
+    {
+      "year": 2019,
+      "authors": "Lee Mordechai, Merle Eisenberg, Timothy P. Newfield, Adam Izdebski, Janet E. Kay and Hendrik Poinar",
+      "title": "The Justinianic Plague: An inconsequential pandemic?",
+      "venue": "Proceedings of the National Academy of Sciences 116 (51): 25546–25554",
+      "url": "https://doi.org/10.1073/pnas.1903797116",
+      "note": "Found no clear break around 541–544 in papyri, legislation, coinage, inscriptions, burials or pollen, and argued the pandemic's impact has been overstated."
+    },
+    {
+      "year": 2020,
+      "authors": "Mischa Meier",
+      "title": "The 'Justinianic Plague': An \"Inconsequential Pandemic\"? A Reply",
+      "venue": "Medizinhistorisches Journal 55 (2)",
+      "url": "https://doi.org/10.25162/mhj-2020-0006",
+      "note": "Rebuttal defending the significance of the pandemic and criticizing the minimalist use of proxy data."
+    },
+    {
+      "year": 2020,
+      "authors": "Merle Eisenberg and Lee Mordechai",
+      "title": "The Justinianic Plague and Global Pandemics: The Making of the Plague Concept",
+      "venue": "American Historical Review 125 (5): 1632–1667",
+      "url": "https://doi.org/10.1093/ahr/rhaa510",
+      "note": "Traced how the modern idea of a uniform, catastrophic plague pandemic shaped readings of the sixth-century evidence."
+    },
+    {
+      "year": 2021,
+      "authors": "Peter Sarris",
+      "title": "New Approaches to the 'Plague of Justinian'",
+      "venue": "Past & Present 254 (1): 315–346",
+      "url": "https://doi.org/10.1093/pastj/gtab024",
+      "note": "Viewpoint article responding to the minimalist case and reasserting evidence for severe demographic and fiscal effects."
+    },
+    {
+      "year": 2026,
+      "authors": "Karen Hendrix, Swamy R. Adapa, Robert H. Tykot, Gregory O'Corry-Crowe, Andrea Vianello, Gloria C. Ferreira, Michael Decker and Rays H. Y. Jiang",
+      "title": "Bioarchaeological signatures during the Plague of Justinian (541–750 CE) in Jerash (ancient Gerasa), Jordan",
+      "venue": "Journal of Archaeological Science 186: 106473",
+      "url": "https://doi.org/10.1016/j.jas.2026.106473",
+      "note": "Bioarchaeological study of a mass burial at Jerash associated with the pandemic, extending direct evidence to the eastern Mediterranean."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Papyrological Navigator (papyri.info), Duke Collaboratory for Classics Computing and partners",
+      "collection": "Duke Databank of Documentary Papyri, HGV metadata and APIS images for Egyptian papyri of the sixth and seventh centuries",
+      "url": "https://papyri.info/",
+      "digitized": "full",
+      "note": "Searchable texts and dates of documentary papyri, the main serial source for rents, wages, leases and legal activity before and after 541."
+    },
+    {
+      "repository": "University of Wyoming College of Law, Annotated Justinian Code (Blume translation)",
+      "collection": "Justinian's Code and Novels in Fred H. Blume's English translation, including the post-plague legislation of 544",
+      "url": "https://www.uwyo.edu/lawlib/blume-justinian/",
+      "digitized": "full",
+      "note": "Online text of the Novels used to argue for or against plague-driven labour and fiscal measures."
+    },
+    {
+      "repository": "Dumbarton Oaks, Washington, DC",
+      "collection": "Byzantine coin collection and catalogue",
+      "url": "https://www.doaks.org/resources/coins",
+      "digitized": "partial",
+      "note": "Major reference collection for dating changes in sixth-century coin output and weight standards."
+    },
+    {
+      "repository": "Neotoma Paleoecology Database",
+      "collection": "Fossil pollen records, including European Pollen Database cores spanning 500–800 CE",
+      "url": "https://www.neotomadb.org/",
+      "digitized": "full",
+      "note": "Open pollen data for testing agricultural abandonment and recovery around the plague waves."
+    },
+    {
+      "repository": "European Nucleotide Archive (EMBL-EBI)",
+      "collection": "Raw sequencing data for published ancient Y. pestis genomes from First Pandemic burials",
+      "url": "https://www.ebi.ac.uk/ena/browser/home",
+      "digitized": "full",
+      "note": "Reads deposited with the aDNA studies, allowing reanalysis of pathogen presence and phylogeny."
+    },
+    {
+      "repository": "Packard Humanities Institute, Searchable Greek Inscriptions",
+      "collection": "Dated Greek inscriptions of the sixth and seventh centuries from the eastern Mediterranean",
+      "url": "https://inscriptions.packhum.org/",
+      "digitized": "full",
+      "note": "Texts used to count dated building and funerary inscriptions as a proxy for continuity or disruption."
+    }
+  ]
+}

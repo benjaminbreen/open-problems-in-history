@@ -1,0 +1,149 @@
+{
+  "id": "agade",
+  "title": "Where was Agade, the capital of the Sargonic empire?",
+  "short": "The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.",
+  "region": "Middle East",
+  "field": "Places",
+  "start": -2350,
+  "end": -539,
+  "flags": [
+    "science"
+  ],
+  "matters": "Agade was the political centre of the first territorial state in Mesopotamia, and its archives, workshops and temple of Ishtar-Annunitum are presumed to hold the administrative and royal records that the provincial finds only reflect. Without the site, accounts of Sargonic administration, art production and the empire's collapse rest on texts from Nippur, Girsu, Adab and other subordinate centres and on later literary traditions such as the Curse of Agade. Its location also fixes the historical geography of the lower Diyala and Tigris and the route network described in Old Babylonian itineraries.",
+  "stuck": "No inscription naming Agade has been found in situ, and the textual indications (proximity to Sippar, Kish, Eshnunna and the Tigris, a river crossing in Mari itineraries) are compatible with several regions. The Tigris has shifted course since the third millennium, so sites once on its banks may now lie under alluvium, under modern Baghdad or under later occupation. Fieldwork in central Iraq was interrupted for long periods after 1980, and candidate mounds such as Ishan Mizyad and Tell Mohammed have yielded no Sargonic monumental remains.",
+  "solved": "A ranked list of candidate sites, each scored against every dated textual reference to Agade's position and against reconstructed third-millennium river courses, followed by excavation or coring at the top candidate that recovers Sargonic remains together with inscriptions naming the city or its temple Eulmash.",
+  "approach": "Research agents can compile every attestation of Agade from the third millennium to the Neo-Babylonian period (royal inscriptions, Mari and Eshnunna letters, itineraries, kudurrus, year names) from CDLI, ORACC and ARCHIBAB, extract distance and direction statements, and test them against GIS reconstructions of palaeochannels traced on CORONA and other declassified imagery. The output would be a probability surface rather than a single proposal. Confirmation requires collaboration with Iraqi and international field teams for surface survey, geoarchaeological coring and excavation.",
+  "existing": [
+    {
+      "year": 1975,
+      "authors": "Harvey Weiss",
+      "title": "Kish, Akkad and Agade",
+      "venue": "Journal of the American Oriental Society 95 (3): 434–453",
+      "url": "https://doi.org/10.2307/599355",
+      "note": "Review article on Gibson's Kish survey that examined the textual and archaeological case for placing Agade in the Kish region, including Ishan Mizyad."
+    },
+    {
+      "year": 1983,
+      "authors": "Jerrold S. Cooper",
+      "title": "The Curse of Agade",
+      "venue": "Baltimore: Johns Hopkins University Press",
+      "url": "https://archive.org/details/curseofagade0000unse",
+      "note": "Edition of the Sumerian literary composition on the city's destruction, the main later tradition shaping how Agade's fate and setting were imagined."
+    },
+    {
+      "year": 1990,
+      "authors": "Christophe Wall-Romana",
+      "title": "An Areal Location of Agade",
+      "venue": "Journal of Near Eastern Studies 49 (3): 205–245",
+      "url": "https://doi.org/10.1086/373442",
+      "note": "Systematic review of textual clues that placed Agade near the Tigris–Diyala confluence and proposed Tell Mohammed in southeastern Baghdad, while admitting no Sargonic remains were known there."
+    },
+    {
+      "year": 1998,
+      "authors": "Raphael Kutscher",
+      "title": "Toward the Location of Akkade",
+      "venue": "Proceedings of the 34th Rencontre Assyriologique Internationale (Ankara)",
+      "url": "https://keibi.uni-tuebingen.de/Record/KEI00015053",
+      "note": "Conference paper revisiting the textual evidence for Akkade's position."
+    },
+    {
+      "year": 1998,
+      "authors": "Hermann Gasche and Michel Tanret (eds.)",
+      "title": "Changing Watercourses in Babylonia: Towards a Reconstruction of the Ancient Environment in Lower Mesopotamia",
+      "venue": "Mesopotamian History and Environment II/5. Ghent and Chicago: University of Ghent and Oriental Institute",
+      "url": "https://archive.org/details/changing-watercourses-in-babylonia.-towards-a-reconstruction-of-the-ancient-envi",
+      "note": "Reconstruction of ancient Tigris and Euphrates courses in northern Babylonia that any river-based argument for Agade's position must use."
+    },
+    {
+      "year": 2002,
+      "authors": "Julian E. Reade",
+      "title": "Early monuments in Gulf stone at the British Museum, with observations on some Gudea statues and the location of Agade",
+      "venue": "Zeitschrift für Assyriologie 92 (2): 258–295",
+      "url": "https://doi.org/10.1515/zava.2002.92.2.258",
+      "note": "Used the findspot of an Old Akkadian statue fragment to argue for a location near the Tigris–ʿAdhaim confluence south of Samarra."
+    },
+    {
+      "year": 2014,
+      "authors": "Nele Ziegler",
+      "title": "Akkade à l'époque paléo-babylonienne",
+      "venue": "In N. Ziegler and E. Cancik-Kirschbaum (eds.), Entre les fleuves II (BBVO 24): 177–190",
+      "url": "https://keibi.uni-tuebingen.de/Record/KEI00125940",
+      "note": "Assembled the Old Babylonian evidence, chiefly from Mari and Eshnunna, for Akkade as a functioning city and for its position within Eshnunna's sphere."
+    },
+    {
+      "year": 2016,
+      "authors": "Benjamin R. Foster",
+      "title": "The Age of Agade: Inventing Empire in Ancient Mesopotamia",
+      "venue": "London and New York: Routledge",
+      "url": "https://doi.org/10.4324/9781315686561",
+      "note": "Standard synthesis of the Sargonic period that summarizes the state of the location question."
+    },
+    {
+      "year": 2022,
+      "authors": "Naohiko Kawakami",
+      "title": "Searching for the location of the ancient city of Akkade in relation to the ancient course of the Tigris using historical geographical and GIS analyses",
+      "venue": "Akkadica 143 (2): 101–135",
+      "url": "https://doi.org/10.21825/akkadica.99688",
+      "note": "Combined textual itineraries with a GIS reconstruction of the ancient Tigris to propose a candidate near the ʿAdhaim confluence."
+    },
+    {
+      "year": 2023,
+      "authors": "Naohiko Kawakami",
+      "title": "The Location of the Ancient City of Akkade: Review of Past Theories and Identification of Issues for Formulating a Specific Methodology for Searching Akkade",
+      "venue": "al-Rāfidān 44: 45–68",
+      "url": "https://kokushikan.repo.nii.ac.jp/records/15919",
+      "note": "Reviewed 140 years of proposals (Tell ed-Dēr, Babylon, Ishan Mizyad, the Diyala and ʿAdhaim confluences, Samarra) and set out a method for evaluating them."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Cuneiform Digital Library Initiative (CDLI)",
+      "collection": "Old Akkadian, Ur III and Old Babylonian texts mentioning Akkade/Agade; searchable catalogue and transliterations",
+      "url": "https://cdli.earth/",
+      "digitized": "partial",
+      "note": "Open catalogue of cuneiform artifacts with images for many tablets, the main entry point for compiling attestations of the toponym."
+    },
+    {
+      "repository": "ARCHIBAB (Archives babyloniennes), Collège de France / CNRS",
+      "collection": "Old Babylonian letters and administrative texts, including the Mari corpus with itineraries and references to Akkade",
+      "url": "https://www.archibab.fr/",
+      "digitized": "partial",
+      "note": "Online database of Old Babylonian documents with editions; essential for the Mari and Eshnunna evidence on river crossings and routes."
+    },
+    {
+      "repository": "ORACC, Royal Inscriptions of Assyria online and related projects",
+      "collection": "RIAo and royal inscription corpora; Sargonic royal inscriptions as edited in RIME 2",
+      "url": "https://oracc.museum.upenn.edu/riao/",
+      "digitized": "full",
+      "note": "Lemmatized online editions of royal inscriptions useful for tracing later references to Akkade and its temples."
+    },
+    {
+      "repository": "Center for Advanced Spatial Technologies, University of Arkansas",
+      "collection": "CORONA Atlas and Referencing System (declassified 1960s–70s reconnaissance imagery, orthorectified)",
+      "url": "https://corona.cast.uark.edu/",
+      "digitized": "full",
+      "note": "Free orthorectified CORONA imagery of Iraq showing mounds and palaeochannels since obscured by agriculture and urban growth."
+    },
+    {
+      "repository": "U.S. Geological Survey, EarthExplorer",
+      "collection": "Declassified Satellite Imagery 1, 2 and 3 (CORONA, ARGON, LANYARD, KH-7, KH-9)",
+      "url": "https://earthexplorer.usgs.gov/",
+      "digitized": "full",
+      "note": "Source archive for raw declassified frames; free registration required for download."
+    },
+    {
+      "repository": "Institute for the Study of Ancient Cultures (ISAC), University of Chicago",
+      "collection": "Diyala Project: records of the 1930s excavations at Tell Asmar (Eshnunna), Khafajah and Tell Agrab",
+      "url": "https://isac.uchicago.edu/research/projects/diyala-project",
+      "digitized": "partial",
+      "note": "Digitized excavation records and object data for the Diyala region, which textual evidence ties closely to Akkade."
+    },
+    {
+      "repository": "Iraq Museum, Baghdad",
+      "collection": "Finds and tablets from Iraqi excavations at Ishan Mizyad (1979–82) and Tell Mohammed",
+      "url": "",
+      "digitized": "none",
+      "note": "Holds the largely unpublished Old Akkadian and later tablets from candidate sites; access is through the State Board of Antiquities and Heritage."
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "id": "song-iron",
+  "title": "How much iron did Song China produce in the eleventh century?",
+  "short": "Robert Hartwell's estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.",
+  "region": "East Asia",
+  "field": "Economy",
+  "start": 960,
+  "end": 1127,
+  "flags": [
+    "science"
+  ],
+  "matters": "Hartwell's figure is the main quantitative support for the idea of a Northern Song 'industrial revolution' and for claims that Chinese iron output in 1078 rivalled that of Britain in the late eighteenth century. It is used in world histories, in comparative arguments about the Great Divergence, and in environmental histories of deforestation and the shift from charcoal to coal. If output was much lower, or largely charcoal-fuelled, the narrative of a Song coal-and-iron breakthrough that later stalled needs revision.",
+  "stuck": "The figure is extrapolated from iron receipts recorded for state monopoly and tax purposes in compilations such as the Song huiyao and Wenxian tongkao, which record what the state collected, not what was produced, and Hartwell's multiplier from receipts to output is an assumption. Donald Wagner argued that these administrative figures cannot be scaled up so simply, and Tim Wright's review of four decades of citation found that the estimate has been repeated far more often than tested. Archaeological evidence for Song ironworks is patchy: few smelting sites have been excavated and published in detail, and slag volumes, furnace capacities and fuel types have not been surveyed systematically.",
+  "solved": "An output estimate for the 1070s, with explicit error bounds, built from at least two independent lines of evidence (the fiscal record re-read prefecture by prefecture with a stated model of collection rates, and archaeological slag-heap volumes and furnace capacities from surveyed sites), with the two lines agreeing within their stated uncertainties.",
+  "approach": "Agents can extract every reference to iron production sites (ye, jian, wu), quotas and receipts from the full-text Song huiyao jigao, Xu zizhi tongjian changbian, Wenxian tongkao and Song gazetteers, map them to prefectures and dates, and assemble the competing readings of how quotas related to production. Historians can then compare alternative collection-rate models in a single framework. Confirmation requires collaboration with archaeometallurgists: systematic survey and volumetric measurement of slag heaps at known Song iron districts (for example around Handan and Cizhou in Hebei, and in Shanxi and Henan), radiocarbon dating of charcoal and coke inclusions, and analysis of slag and cast-iron objects (sulphur content and other tracers) to separate charcoal-fired from coal-fired production.",
+  "existing": [
+    {
+      "year": 1962,
+      "authors": "Robert Hartwell",
+      "title": "A Revolution in the Chinese Iron and Coal Industries during the Northern Sung, 960–1126 A.D.",
+      "venue": "Journal of Asian Studies 21 (2): 153–162",
+      "url": "https://www.cambridge.org/core/journals/journal-of-asian-studies/article/revolution-in-the-chinese-iron-and-coal-industries-during-the-northern-sung-9601126-ad/C4ED428E19B0A04C7225BB57822C89DF",
+      "note": "Founding statement of the Northern Song iron and coal 'revolution', based on fiscal and descriptive sources."
+    },
+    {
+      "year": 1966,
+      "authors": "Robert Hartwell",
+      "title": "Markets, Technology, and the Structure of Enterprise in the Development of the Eleventh-Century Chinese Iron and Steel Industry",
+      "venue": "Journal of Economic History 26 (1): 29–58",
+      "url": "https://www.cambridge.org/core/journals/journal-of-economic-history/article/markets-technology-and-the-structure-of-enterprise-in-the-development-of-the-eleventhcentury-chinese-iron-and-steel-industry/14F6FC80DC69C83A1C726A719CA82947",
+      "note": "Developed the output estimate for 1078 and compared eleventh-century Chinese expansion favourably with early modern England."
+    },
+    {
+      "year": 1967,
+      "authors": "Robert Hartwell",
+      "title": "A Cycle of Economic Change in Imperial China: Coal and Iron in Northeast China, 750–1350",
+      "venue": "Journal of the Economic and Social History of the Orient 10: 102–159",
+      "url": "https://doi.org/10.1163/156852067X00109",
+      "note": "Argued that coal and iron production in the northeast peaked in the Northern Song and then declined, at least per capita."
+    },
+    {
+      "year": 1999,
+      "authors": "Peter J. Golas",
+      "title": "Science and Civilisation in China, vol. 5, part 13: Mining",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://www.cambridge.org/9780521580007",
+      "note": "Comprehensive history of Chinese mining, including Song coal and iron ore extraction, from written and archaeological sources."
+    },
+    {
+      "year": 2001,
+      "authors": "Donald B. Wagner",
+      "title": "The Administration of the Iron Industry in Eleventh-Century China",
+      "venue": "Journal of the Economic and Social History of the Orient 44 (2): 175–197",
+      "url": "https://doi.org/10.1163/156852001753731033",
+      "note": "Re-examined the Song administrative sources on which Hartwell relied and questioned how far the recorded figures can be converted into total production."
+    },
+    {
+      "year": 2003,
+      "authors": "Michael L. Wayman and Helen Wang",
+      "title": "Cast iron coins of Song dynasty China: a metallurgical study",
+      "venue": "Historical Metallurgy 37 (1): 6–24",
+      "url": "https://www.hmsjournal.org/index.php/home/article/view/258",
+      "note": "Analysed 37 Song iron coins and inferred from sulphur content that Shaanxi mints used coal- or coke-smelted iron while southeastern mints used charcoal-smelted iron."
+    },
+    {
+      "year": 2003,
+      "authors": "Donald B. Wagner",
+      "title": "Chinese blast furnaces from the 10th to the 14th century",
+      "venue": "Historical Metallurgy 37 (1): 25–37",
+      "url": "https://hmsjournal.org/index.php/home/article/view/259",
+      "note": "Reviewed excavated and standing Song–Yuan furnaces, including the Kuangshancun furnace in Hebei, and the shift toward mineral fuel and water-powered bellows."
+    },
+    {
+      "year": 2007,
+      "authors": "Tim Wright",
+      "title": "An Economic Cycle in Imperial China? Revisiting Robert Hartwell on Iron and Coal",
+      "venue": "Journal of the Economic and Social History of the Orient 50: 398–423",
+      "url": "https://doi.org/10.1163/156852007783244963",
+      "note": "Traced how Hartwell's estimate was received and reused over forty years and called for a consistent long-run series of coal and iron estimates."
+    },
+    {
+      "year": 2008,
+      "authors": "Donald B. Wagner",
+      "title": "Science and Civilisation in China, vol. 5, part 11: Ferrous Metallurgy",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://kansalliskirjasto.finna.fi/Record/fikka.2265050",
+      "note": "Standard history of Chinese iron and steel in political and economic context, with extended treatment of the Song industry and its sources."
+    },
+    {
+      "year": 2019,
+      "authors": "Siran Liu, Thilo Rehren, Dashu Qin, Jianli Chen et al.",
+      "title": "Coal-fuelled crucible lead-silver smelting in 12th–13th century China: A technological innovation in the age of deforestation",
+      "venue": "Journal of Archaeological Science 104: 75–84",
+      "url": "https://doi.org/10.1016/j.jas.2019.01.004",
+      "note": "Excavated evidence from Hebei for coal-fuelled non-ferrous smelting, while noting that most iron smelters of the period still used charcoal-fired furnaces."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Institute of History and Philology, Academia Sinica, Taipei",
+      "collection": "Scripta Sinica (Hanji dianzi wenxian 漢籍電子文獻): full texts of Song huiyao jigao, Xu zizhi tongjian changbian, Song shi and Wenxian tongkao",
+      "url": "https://hanchi.ihp.sinica.edu.tw/",
+      "digitized": "full",
+      "note": "Searchable full texts of the main fiscal sources for Song iron quotas and receipts; partly free, fuller access by institutional subscription."
+    },
+    {
+      "repository": "National Library of China, Beijing",
+      "collection": "Song huiyao jigao 宋會要輯稿 manuscript (Xu Song's compilation from the Yongle dadian) and Song–Yuan editions",
+      "url": "http://read.nlc.cn/thematDataSearch/toGujiIndex",
+      "digitized": "partial",
+      "note": "Holds the manuscript underlying printed editions of the Song huiyao; selected rare books viewable online."
+    },
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Wenxian tongkao, Song shi and other Song-period texts with page scans",
+      "url": "https://ctext.org/",
+      "digitized": "full",
+      "note": "Open texts and scans with an API for bulk extraction of passages on mining and metallurgy."
+    },
+    {
+      "repository": "Institute of Historical Metallurgy and Materials, University of Science and Technology Beijing",
+      "collection": "Slag, ore and metal reference samples from surveyed ancient smelting sites",
+      "url": "https://enihmm.ustb.edu.cn/",
+      "digitized": "none",
+      "note": "Leading Chinese laboratory for archaeometallurgical analysis; collaboration route for slag and fuel studies of Song ironworks."
+    },
+    {
+      "repository": "Kuangshancun ironworks site, Handan region, Hebei",
+      "collection": "Standing Song-period blast furnace and associated slag deposits",
+      "url": "https://hmsjournal.org/index.php/home/article/view/259",
+      "digitized": "none",
+      "note": "One of the few Song furnaces preserved in situ; fieldwork requires collaboration with Hebei provincial cultural-relics authorities (link is Wagner's description of the site)."
+    },
+    {
+      "repository": "Donald B. Wagner, online resources (Copenhagen)",
+      "collection": "The archaeometallurgy of iron, with bibliographies and site surveys including Liu Peifeng's survey of crucible smelting sites in Shanxi and Henan",
+      "url": "https://donwagner.dk/arch-iron",
+      "digitized": "full",
+      "note": "Open teaching text and bibliographies on Chinese iron technology, useful for locating published site reports."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "meroitic",
+  "title": "Can the Meroitic language be translated beyond its funerary formulae?",
+  "short": "Meroitic script has been readable since Griffith's work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.",
+  "region": "Africa",
+  "field": "Languages & scripts",
+  "start": -300,
+  "end": 450,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Meroitic is the oldest written language of sub-Saharan Africa and the administrative and royal language of Kush for some seven centuries. The long royal stelae, temple texts and chronicles almost certainly record wars with Rome, succession and religious practice from a Kushite point of view; at present historians rely on Greek, Latin and Egyptian sources for that history. A secure classification would also date the spread of Northern East Sudanic languages along the Nile, which bears on Nubian linguistic and population history.",
+  "stuck": "The script's sound values were recovered from Egyptian names, but there is no substantial bilingual text, and the language has no close, well-documented descendant. Most of the corpus consists of funerary inscriptions with predictable formulae, so the vocabulary securely understood is small, by most accounts on the order of a hundred words, and grammar is reconstructed mainly from those formulae. Classification is disputed: Rilly argues for the Northern East Sudanic branch with Nubian, Nara, Taman and Nyima, while Rowan and Lipiński have argued for an Afroasiatic affiliation.",
+  "solved": "A lexicon and grammar, fixed before testing, yield translations of held-out non-funerary passages (for example sections of royal stelae or temple texts) that independent specialists judge consistent with their archaeological, iconographic and historical context, and that correctly predict content later confirmed by newly found or newly published inscriptions.",
+  "approach": "Convert the REM corpus and inscriptions published since 2000 into a machine-readable, lemmatized corpus with find context, object type and date. Use reconstructed Proto-Northern East Sudanic and Old Nubian vocabulary to generate constrained translation hypotheses, and test them against held-out passages whose context (offering scenes, lists of places, military iconography) predicts parts of the content. Comparative work needs collaboration with Nubian and Nilo-Saharan linguists, and the corpus needs digitization of inscriptions excavated after 2000 and photographs held by excavation missions, given reported damage to collections in Khartoum during the war that began in 2023.",
+  "existing": [
+    {
+      "year": 1909,
+      "authors": "David Randall-MacIver and C. Leonard Woolley, with F. Ll. Griffith",
+      "title": "Areika",
+      "venue": "Eckley B. Coxe Junior Expedition to Nubia 1. Oxford: University Museum",
+      "url": "https://archive.org/details/areika00rand",
+      "note": "Excavation report including Griffith's first presentation of the Meroitic sign values, worked out from Meroitic spellings of Egyptian names."
+    },
+    {
+      "year": 1911,
+      "authors": "F. Ll. Griffith",
+      "title": "Karanòg: The Meroitic Inscriptions of Shablûl and Karanòg",
+      "venue": "Eckley B. Coxe Junior Expedition to Nubia 6. Philadelphia: University Museum",
+      "url": "https://archive.org/details/karanogmeroitici00grif",
+      "note": "Edition of the funerary inscriptions from two Lower Nubian cemeteries, with Griffith's analysis of the formulae and a first sketch of the language."
+    },
+    {
+      "year": 1967,
+      "authors": "Bruce G. Trigger",
+      "title": "Spoken and Written Meroitic: A Note on the Terminal Formulae in Meroitic Funerary Inscriptions from Armenna West",
+      "venue": "Journal of Egyptian Archaeology 53: 166",
+      "url": "https://doi.org/10.2307/3855593",
+      "note": "Used variation in funerary formulae to infer features of the spoken language behind the written conventions."
+    },
+    {
+      "year": 2000,
+      "authors": "Jean Leclant, André Heyler, Catherine Berger-el Naggar, Claude Carrier and Claude Rilly",
+      "title": "Répertoire d'épigraphie méroïtique (REM), tomes I–III",
+      "venue": "Paris: Académie des Inscriptions et Belles-Lettres",
+      "url": "https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845",
+      "note": "Corpus of all Meroitic inscriptions published to that date, numbered REM 0001 to 1278, now openly available on Persée."
+    },
+    {
+      "year": 2011,
+      "authors": "Claude Rilly",
+      "title": "Recent Research on Meroitic, the Ancient Language of Sudan",
+      "venue": "Ityopis 1",
+      "url": "http://www.ityopis.org/Issues-1_files/ITYOPIS-I-Rilly.pdf",
+      "note": "Survey of the corpus (about 90 per cent cursive), its chronology and the comparative case for Northern East Sudanic affiliation."
+    },
+    {
+      "year": 2012,
+      "authors": "Claude Rilly and Alex de Voogt",
+      "title": "The Meroitic Language and Writing System",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/cbo9780511920028",
+      "note": "English-language reference grammar and script description summarizing Rilly's La langue du royaume de Méroé (2007) and Le méroïtique et sa famille linguistique (2010)."
+    },
+    {
+      "year": 2015,
+      "authors": "Kirsty Rowan",
+      "title": "The Meroitic 'Initial a' Sign as Griffith's Initial Aleph",
+      "venue": "Zeitschrift für Ägyptische Sprache und Altertumskunde 142 (1): 70–84",
+      "url": "https://doi.org/10.1515/zaes-2015-0007",
+      "note": "Part of Rowan's phonological reanalysis of the script, which underlies her argument that Meroitic phonotactics fit an Afroasiatic language better than an East Sudanic one."
+    },
+    {
+      "year": 2019,
+      "authors": "Claude Rilly",
+      "title": "Languages of Ancient Nubia",
+      "venue": "In Dietrich Raue (ed.), Handbook of Ancient Nubia. Berlin: De Gruyter, 129–152",
+      "url": "https://doi.org/10.1515/9783110420388-007",
+      "note": "Places Meroitic among the attested and inferred languages of the Middle Nile, including Old Nubian and earlier Kushite names in Egyptian sources."
+    },
+    {
+      "year": 2020,
+      "authors": "Claude Rilly",
+      "title": "Personal Markers and Verbal Number in Meroitic",
+      "venue": "Dotawo: A Journal of Nubian Studies 7",
+      "url": "https://doi.org/10.5070/d67052246",
+      "note": "Reconstructs verbal morphology through comparison with Nubian and other Northern East Sudanic languages, the main route by which grammar beyond the formulae has advanced."
+    },
+    {
+      "year": 2020,
+      "authors": "Roger Blench",
+      "title": "Morphological Evidence for the Coherence of East Sudanic",
+      "venue": "Dotawo: A Journal of Nubian Studies 7: 264–311",
+      "url": "https://doi.org/10.2307/jj.2353780.8",
+      "note": "Assesses whether East Sudanic is a valid genetic unit, the comparative frame on which Rilly's classification of Meroitic depends."
+    },
+    {
+      "year": 2021,
+      "authors": "Claude Rilly",
+      "title": "Language and Writing in the Kingdom of Meroe",
+      "venue": "In Geoff Emberling and Bruce Beyer Williams (eds.), The Oxford Handbook of Ancient Nubia. Oxford: Oxford University Press, 653–669",
+      "url": "https://doi.org/10.1093/oxfordhb/9780190496272.013.30",
+      "note": "Current overview of what can and cannot be translated, with the state of the lexicon and the main unread text genres."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Persée / Académie des Inscriptions et Belles-Lettres",
+      "collection": "Répertoire d'épigraphie méroïtique, tomes I–III (REM 0001–1278)",
+      "url": "https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845",
+      "digitized": "full",
+      "note": "Open scanned corpus with transliterations and bibliography; not lemmatized or machine-structured, and it stops at 2000."
+    },
+    {
+      "repository": "British Museum, London",
+      "collection": "Department of Egypt and Sudan: Meroitic inscriptions, including the long stela of Amanirenas and Akinidad from Hamadab",
+      "url": "https://www.britishmuseum.org/collection",
+      "digitized": "partial",
+      "note": "Online collection records with images for many objects; the Hamadab stela is one of the longest non-funerary Meroitic texts."
+    },
+    {
+      "repository": "Penn Museum, Philadelphia",
+      "collection": "Eckley B. Coxe Junior Expedition to Nubia: inscribed offering tables and stelae from Karanog, Shablul and Areika",
+      "url": "https://www.penn.museum/collections/",
+      "digitized": "partial",
+      "note": "Holds much of the material Griffith used to establish the script, with excavation records."
+    },
+    {
+      "repository": "Museum of Fine Arts, Boston",
+      "collection": "Harvard University–Boston Museum of Fine Arts Expedition finds from the royal cemeteries of Meroe and other Kushite sites",
+      "url": "https://www.mfa.org/collections",
+      "digitized": "partial",
+      "note": "Royal and elite inscribed objects with excavation context from Reisner's expedition; online records vary in completeness."
+    },
+    {
+      "repository": "Ägyptisches Museum und Papyrussammlung, Staatliche Museen zu Berlin",
+      "collection": "Meroitic inscriptions and objects from the Lepsius expedition and later German work at Naga and Musawwarat es-Sufra",
+      "url": "https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/home/",
+      "digitized": "partial",
+      "note": "Searchable through SMB-digital; includes temple and royal inscriptions as well as funerary material."
+    }
+  ]
+}

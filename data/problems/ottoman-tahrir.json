@@ -1,0 +1,147 @@
+{
+  "id": "ottoman-tahrir",
+  "title": "Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?",
+  "short": "Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.",
+  "region": "Middle East",
+  "field": "Demography",
+  "start": 1520,
+  "end": 1700,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "A large fall in Anatolian population would connect the Celali rebellions, the Little Ice Age droughts of the 1590s, rural flight and the transformation of Ottoman fiscal and military institutions into one crisis comparable to the 'general crisis' of seventeenth-century Europe and China. If the decline was smaller or mainly a shift from registered villages to towns, nomadism and untaxed settlements, then narratives of Ottoman 'decline' and of climate-driven collapse need revision. The question also tests whether Ottoman tax registers can be used for demography at all.",
+  "stuck": "The detailed provincial surveys (tahrir defterleri) end in most of Anatolia by the 1580s and record taxable household heads rather than people, while the seventeenth-century avarız and cizye registers that follow count fiscal units (avarızhane) whose relation to households changed over time. Comparisons across the two series therefore mix demographic change with changes in what was counted. Most studies cover single districts, the registers are held in two archives with different access regimes, and many have never been transcribed.",
+  "solved": "A linked village-level dataset across all surviving tahrir and avarız registers for a large sample of Anatolian districts, with a validated model converting each register's fiscal units into households, that produces regional population series from 1520 to 1700 with uncertainty and that agrees with independent evidence such as court records, settlement abandonment and cizye counts.",
+  "approach": "Agents can help transcribe and structure registers from facsimiles and published editions, match village names across registers and to modern locations, and estimate conversion factors between fiscal units and households where registers overlap. Regional series could then be tested against climate reconstructions, Celali violence and court-record evidence of flight. Scaling beyond published registers requires systematic digitization of the Tapu Tahrir (TT.d) and avarız series in the Ottoman Archives in Istanbul and the Kuyûd-ı Kadîme registers in Ankara, with collaboration from archivists and Ottoman palaeographers, since many registers use siyakat numerals and chancery hands that need specialist verification.",
+  "existing": [
+    {
+      "year": 1957,
+      "authors": "Ömer Lütfi Barkan",
+      "title": "Essai sur les données statistiques des registres de recensement dans l'Empire ottoman aux XVe et XVIe siècles",
+      "venue": "Journal of the Economic and Social History of the Orient 1 (1): 9–36",
+      "url": "https://doi.org/10.1163/156852057X00038",
+      "note": "Founding statement of the use of tahrir registers for demography, estimating strong sixteenth-century population growth across the empire."
+    },
+    {
+      "year": 1963,
+      "authors": "Mustafa Akdağ",
+      "title": "Celâlî İsyanları (1550–1603)",
+      "venue": "Ankara: Ankara Üniversitesi",
+      "note": "Linked the Celali rebellions to population growth, landlessness and economic dislocation in Anatolia."
+    },
+    {
+      "year": 1972,
+      "authors": "M. A. Cook",
+      "title": "Population Pressure in Rural Anatolia, 1450–1600",
+      "venue": "London: Oxford University Press (London Oriental Series 27)",
+      "note": "Village-level analysis of tahrir registers arguing that population grew faster than cultivated land in the sixteenth century, producing pressure on resources."
+    },
+    {
+      "year": 1979,
+      "authors": "Leila Erder and Suraiya Faroqhi",
+      "title": "Population rise and fall in Anatolia 1550–1620",
+      "venue": "Middle Eastern Studies 15 (3): 322–345",
+      "url": "https://doi.org/10.1080/00263207908700415",
+      "note": "Compared later tahrir registers across districts and identified a turning point from growth to decline around the 1580s."
+    },
+    {
+      "year": 1983,
+      "authors": "William J. Griswold",
+      "title": "The Great Anatolian Rebellion, 1000–1020/1591–1611",
+      "venue": "Klaus Schwarz Verlag (Islamkundliche Untersuchungen)",
+      "note": "Narrative and political history of the Celali uprisings that framed the period as one of rural upheaval."
+    },
+    {
+      "year": 1990,
+      "authors": "Rhoads Murphey",
+      "title": "Ottoman census methods in the mid-sixteenth century: three case histories",
+      "venue": "Studia Islamica 71: 115–126",
+      "url": "https://doi.org/10.2307/1595640",
+      "note": "Examined how survey officials actually compiled registers, raising questions about their completeness as counts."
+    },
+    {
+      "year": 1992,
+      "authors": "Bekir Kemal Ataman",
+      "title": "Ottoman demographic history (14th–17th centuries): some considerations",
+      "venue": "Journal of the Economic and Social History of the Orient 35: 187–198",
+      "url": "https://doi.org/10.2307/3632409",
+      "note": "Methodological critique of converting tahrir household counts into population estimates."
+    },
+    {
+      "year": 1992,
+      "authors": "Heath W. Lowry",
+      "title": "Studies in Defterology",
+      "venue": "Istanbul: Isis Press",
+      "note": "Essays on the use of tahrir registers, including their limitations as demographic sources."
+    },
+    {
+      "year": 2004,
+      "authors": "Metin M. Coşgel",
+      "title": "Ottoman Tax Registers (Tahrir Defterleri)",
+      "venue": "Historical Methods 37 (2): 87–102",
+      "url": "https://doi.org/10.3200/HMTS.37.2.87-102",
+      "note": "Survey of the registers as quantitative sources for economists and of methods for sampling and analysing them."
+    },
+    {
+      "year": 2004,
+      "authors": "Oktay Özel",
+      "title": "Population Changes in Ottoman Anatolia during the 16th and 17th Centuries: The 'Demographic Crisis' Reconsidered",
+      "venue": "International Journal of Middle East Studies 36 (2): 183–205",
+      "url": "https://doi.org/10.1017/S0020743804362021",
+      "note": "Combined late tahrir and seventeenth-century avarız registers to argue for a severe and lasting decline in rural Anatolian population from the late sixteenth century."
+    },
+    {
+      "year": 2011,
+      "authors": "Sam White",
+      "title": "The Climate of Rebellion in the Early Modern Ottoman Empire",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511844058",
+      "note": "Linked drought and cold in the 1590s, famine, the Celali rebellions and depopulation into a Little Ice Age crisis."
+    },
+    {
+      "year": 2016,
+      "authors": "Oktay Özel",
+      "title": "The Collapse of Rural Order in Ottoman Anatolia: Amasya 1576–1643",
+      "venue": "Leiden: Brill",
+      "url": "https://openlibrary.org/isbn/9789004309715",
+      "note": "Detailed regional study of Amasya documenting rural desertion and the breakdown of the provincial order across the transition from tahrir to avarız registration."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Presidency of the Republic of Türkiye, Directorate of State Archives, Ottoman Archives (BOA), Istanbul",
+      "collection": "Tapu Tahrir Defterleri (TT.d); avarız and cizye registers in Maliyeden Müdevver (MAD.d) and Kamil Kepeci (KK.d) series",
+      "url": "https://katalog.devletarsivleri.gov.tr/",
+      "digitized": "partial",
+      "note": "Main holdings of fifteenth- and sixteenth-century survey registers and later fiscal registers; the online catalogue lists items and many are viewable as images by registered researchers."
+    },
+    {
+      "repository": "General Directorate of Land Registry and Cadastre (TKGM), Kuyûd-ı Kadîme Archive, Ankara",
+      "collection": "Detailed (mufassal) tahrir registers, many the final provincial copies of surveys also partly held in Istanbul",
+      "url": "https://www.tkgm.gov.tr/",
+      "digitized": "partial",
+      "note": "Access requires permission; the archive's tahrir holdings are essential for districts whose Istanbul copies are lost."
+    },
+    {
+      "repository": "Directorate of State Archives, Ankara (publications)",
+      "collection": "Published facsimile and transcription editions of selected tahrir and muhasebe registers",
+      "url": "https://www.devletarsivleri.gov.tr/",
+      "digitized": "partial",
+      "note": "Facsimile editions of selected registers that can serve as training and validation data for transcription."
+    },
+    {
+      "repository": "Türk Tarih Kurumu (Turkish Historical Society), Ankara",
+      "collection": "Published editions and monographs on individual sancak registers",
+      "url": "https://www.ttk.gov.tr/",
+      "digitized": "partial",
+      "note": "Many district-level transcriptions of tahrir registers, a ready-made corpus for linking villages across registers."
+    },
+    {
+      "repository": "İSAM (Center for Islamic Studies), Istanbul",
+      "collection": "Copies of Ottoman kadı sicilleri (court registers) and bibliographic databases",
+      "url": "https://isamveri.org/",
+      "digitized": "partial",
+      "note": "Court registers record flight, abandoned villages and tax disputes, an independent check on register-based population series; holdings for Anatolian courts are uneven."
+    }
+  ]
+}

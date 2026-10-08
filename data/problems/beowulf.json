@@ -1,0 +1,131 @@
+{
+  "id": "beowulf",
+  "title": "When was Beowulf composed?",
+  "short": "Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.",
+  "region": "Europe",
+  "field": "Chronology",
+  "start": 680,
+  "end": 1020,
+  "flags": [],
+  "matters": "An early date (before about 750) makes Beowulf a witness to the culture of Christian Mercia or Northumbria and to oral-traditional material close to the migration period; a date in the Viking age or the reign of Cnut makes it a product of Anglo-Scandinavian politics and late West Saxon literary culture. The choice shapes readings of the poem's attitude to pagan ancestors, Danish kings and Christianity, and its use as evidence for early English legend, Germanic heroic tradition and the history of Old English verse.",
+  "stuck": "The poem survives in one manuscript copied around 1000, so internal evidence of composition date must be separated from changes introduced by copying. Metrical tests such as Kaluza's law depend on phonological distinctions whose dating and dialect distribution are themselves inferred, and the corpus of securely dated Old English verse is very small. Arguments from palaeographic error patterns, vocabulary and historical allusion each point to a range rather than a date, and scholars weigh them differently.",
+  "solved": "A dating model trained on Old English texts with independently established dates and transmission histories that assigns Beowulf a composition interval with calibrated uncertainty, and that correctly recovers the known dates of held-out texts, including texts preserved only in late copies.",
+  "approach": "Agents can build a feature set for every Old English poem and dated prose text from the Dictionary of Old English Corpus and manuscript facsimiles: metrical features (Kaluza's law, contraction, parasite vowels), morphology, vocabulary, spelling layers and scribal error types. A model calibrated on dated or datable texts, with explicit treatment of copying as a source of noise, can then estimate Beowulf's date and report which features drive it. All key witnesses are already digitized, so the main need is careful philological annotation that specialists can audit.",
+  "existing": [
+    {
+      "year": 1981,
+      "authors": "Colin Chase, ed.",
+      "title": "The Dating of Beowulf",
+      "venue": "Toronto: University of Toronto Press",
+      "note": "Conference volume that broke the consensus for an eighth-century date, with several contributors arguing for a Viking-age or later context."
+    },
+    {
+      "year": 1981,
+      "authors": "Kevin S. Kiernan",
+      "title": "Beowulf and the Beowulf Manuscript",
+      "venue": "New Brunswick: Rutgers University Press; revised edition Ann Arbor: University of Michigan Press, 1996",
+      "url": "https://openlibrary.org/isbn/0472084127",
+      "note": "Argued from codicology that the poem was composed or substantially reworked in the early eleventh century, contemporary with the surviving manuscript."
+    },
+    {
+      "year": 1992,
+      "authors": "R. D. Fulk",
+      "title": "A History of Old English Meter",
+      "venue": "Philadelphia: University of Pennsylvania Press",
+      "url": "https://openlibrary.org/isbn/0812231570",
+      "note": "Argued that the poem's observance of Kaluza's law and other metrical features requires composition before about 725 if Mercian or about 825 if Northumbrian."
+    },
+    {
+      "year": 1999,
+      "authors": "Kevin Kiernan, ed.",
+      "title": "Electronic Beowulf",
+      "venue": "London: British Library; 5th edition, University of Kentucky, 2026",
+      "url": "https://ebeowulf.uky.edu/",
+      "note": "Digital edition with high-resolution and ultraviolet images of the manuscript, backlit restorations and images of the early transcripts."
+    },
+    {
+      "year": 2000,
+      "authors": "Michael Lapidge",
+      "title": "The archetype of Beowulf",
+      "venue": "Anglo-Saxon England 29: 5–41",
+      "url": "https://doi.org/10.1017/S0263675100002398",
+      "note": "Argued from patterns of scribal letter confusion that the poem descends from an exemplar written in a script used before about 750."
+    },
+    {
+      "year": 2007,
+      "authors": "Roberta Frank",
+      "title": "A Scandal in Toronto: The Dating of 'Beowulf' a Quarter Century On",
+      "venue": "Speculum 82 (4): 843–864",
+      "url": "https://doi.org/10.1017/S0038713400011313",
+      "note": "Retrospective by a contributor to the 1981 volume, reviewing how the debate had developed and questioning the confidence of metrical arguments for an early date."
+    },
+    {
+      "year": 2008,
+      "authors": "R. D. Fulk, Robert E. Bjork and John D. Niles, eds.",
+      "title": "Klaeber's Beowulf, fourth edition",
+      "venue": "Toronto: University of Toronto Press",
+      "url": "https://openlibrary.org/isbn/0802095671",
+      "note": "Standard critical edition, whose introduction surveys the linguistic and metrical dating evidence and inclines to an early date."
+    },
+    {
+      "year": 2014,
+      "authors": "Leonard Neidorf, ed.",
+      "title": "The Dating of Beowulf: A Reassessment",
+      "venue": "Cambridge: D. S. Brewer",
+      "url": "https://openlibrary.org/isbn/9781843843870",
+      "note": "Essays assembling metrical, lexical, onomastic and palaeographic arguments for composition before about 750."
+    },
+    {
+      "year": 2019,
+      "authors": "Leonard Neidorf, Madison S. Krieger, Michelle Yakubek, Pramit Chaudhuri and Joseph P. Dexter",
+      "title": "Large-scale quantitative profiling of the Old English verse tradition",
+      "venue": "Nature Human Behaviour 3 (6): 560–567",
+      "url": "https://doi.org/10.1038/s41562-019-0570-1",
+      "note": "Stylometric profiling of Old English verse that supports single authorship of Beowulf; it addresses unity rather than date but supplies a computational framework applicable to dating."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "British Library, London",
+      "collection": "Cotton MS Vitellius A XV (Nowell Codex, ff. 94–209, containing Beowulf and Judith)",
+      "url": "https://www.bl.uk/collection/digitised-manuscripts-archives?ref=Cotton_MS_Vitellius_A_XV",
+      "digitized": "full",
+      "note": "The unique manuscript, fire-damaged in 1731; fully imaged, though British Library online services were disrupted after the 2023 cyberattack."
+    },
+    {
+      "repository": "University of Kentucky and British Library",
+      "collection": "Electronic Beowulf, 5th edition",
+      "url": "https://ebeowulf.uky.edu/",
+      "digitized": "full",
+      "note": "Manuscript images under ordinary, ultraviolet and backlit conditions with textual, grammatical and metrical apparatus."
+    },
+    {
+      "repository": "Royal Danish Library, Copenhagen",
+      "collection": "Thorkelin transcripts A and B of Beowulf (1787–89)",
+      "url": "https://www.kb.dk/",
+      "digitized": "full",
+      "note": "Transcripts made before further fire-edge losses, which preserve readings now missing from the manuscript; images are included in Electronic Beowulf."
+    },
+    {
+      "repository": "Dictionary of Old English, University of Toronto",
+      "collection": "Dictionary of Old English Web Corpus and Dictionary A–I",
+      "url": "https://doe.artsci.utoronto.ca/",
+      "digitized": "full",
+      "note": "At least one copy of every surviving Old English text, about three million words; corpus access is by subscription."
+    },
+    {
+      "repository": "Old English Poetry in Facsimile project",
+      "collection": "Linked editions and manuscript images of Old English poems",
+      "url": "https://oepoetryfacsimile.org/",
+      "digitized": "full",
+      "note": "Open-access editions keyed to manuscript images, useful for comparing Beowulf's spelling and metre with poems in the Exeter, Vercelli and Junius manuscripts."
+    },
+    {
+      "repository": "Exeter Cathedral Library and Archives",
+      "collection": "Exeter Book (Exeter Cathedral Library MS 3501)",
+      "url": "https://www.exeter-cathedral.org.uk/",
+      "digitized": "partial",
+      "note": "The largest Old English poetic anthology, copied in the later tenth century; the principal comparison corpus for metrical and lexical dating."
+    }
+  ]
+}

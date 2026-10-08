@@ -1,0 +1,172 @@
+{
+  "id": "silver-china",
+  "title": "How much American silver reached China between 1550 and 1800?",
+  "short": "Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.",
+  "region": "Global",
+  "field": "Economy",
+  "start": 1550,
+  "end": 1800,
+  "flags": [],
+  "matters": "The volume of silver entering China is central to the argument that world trade became global after the founding of Manila in 1571, to explanations of the Ming fiscal shift to silver, and to debates over whether a contraction of silver imports helped bring down the Ming in the 1630s–40s. It also bears on European price history, on the Dutch and English East India Companies' balance of trade, and on nineteenth-century arguments that the reversal of silver flows destabilised the Qing.",
+  "stuck": "Silver reached China by several routes (the Manila galleons, the Cape route via European companies, overland through Central Asia, and from Japan, which was a larger supplier than the Americas for parts of the period), and each route is documented in different archives with different biases. Registered mint and treasury output understates production because of contraband and unregistered silver, and smuggling on the Acapulco–Manila route was extensive. Chinese sources record taxes, prices and exchange rates rather than imports, so arrivals must be inferred, and published estimates (Barrett, Flynn and Giráldez, von Glahn, TePaske) rest on different assumptions about leakage, re-export and Japanese supply.",
+  "solved": "A route-by-route, decade-by-decade mass balance for 1550–1800 in which American registered production plus an explicit contraband estimate equals the sum of silver retained in the Americas, shipped to Europe, re-exported to Asia, and carried across the Pacific, with China's share derived from these flows and checked against Japanese exports and Chinese monetary indicators (silver–copper exchange rates, tax receipts in silver, price levels).",
+  "approach": "Agents can assemble the published quantitative series (TePaske's mint and treasury data, Garner's mining series, VOC and East India Company bullion exports, galleon registers, Japanese export estimates) into one linked dataset with source citations and documented units, then flag gaps and double counting between routes. Historians can specify alternative contraband and re-export assumptions and see how each changes the China total, while agents search the AGI, AGN and VOC finding aids for unused series (for example Manila customs and Acapulco registers) that would narrow the largest uncertainties. Chinese provincial price and exchange-rate data from the Qing archives provide an independent test of the timing of inflows.",
+  "existing": [
+    {
+      "year": 1965,
+      "authors": "A. Kobata",
+      "title": "The Production and Uses of Gold and Silver in Sixteenth- and Seventeenth-Century Japan",
+      "venue": "Economic History Review 18 (2): 245–266",
+      "url": "https://doi.org/10.1111/j.1468-0289.1965.tb02274.x",
+      "note": "Established the scale of Japanese silver exports, which competed with American silver as a source of China's supply."
+    },
+    {
+      "year": 1982,
+      "authors": "William S. Atwell",
+      "title": "International Bullion Flows and the Chinese Economy circa 1530–1650",
+      "venue": "Past and Present 95: 68–90",
+      "url": "https://doi.org/10.1093/past/95.1.68",
+      "note": "Argued that Japanese and American silver transformed the late Ming economy and that a fall in imports after the 1630s contributed to the dynasty's collapse."
+    },
+    {
+      "year": 1988,
+      "authors": "Richard L. Garner",
+      "title": "Long-Term Silver Mining Trends in Spanish America: A Comparative Analysis of Peru and Mexico",
+      "venue": "American Historical Review 93 (4): 898–935",
+      "url": "https://doi.org/10.1086/ahr/93.4.898",
+      "note": "Long-run production series for Peruvian and Mexican silver from registered taxes, the base for most later flow estimates."
+    },
+    {
+      "year": 1990,
+      "authors": "Ward Barrett",
+      "title": "World Bullion Flows, 1450–1800",
+      "venue": "In James D. Tracy (ed.), The Rise of Merchant Empires, Cambridge University Press, 224–254",
+      "url": "https://www.cambridge.org/core/books/rise-of-merchant-empires/world-bullion-flows-14501800/45737F116FD19E3E957D220319FC75DD",
+      "note": "First global accounting of bullion production and movement, estimating the shares of American silver that flowed to Europe and on to Asia."
+    },
+    {
+      "year": 1995,
+      "authors": "Dennis O. Flynn and Arturo Giráldez",
+      "title": "Born with a 'Silver Spoon': The Origin of World Trade in 1571",
+      "venue": "Journal of World History 6 (2): 201–221",
+      "url": "https://doi.org/10.4324/9781315249094-13",
+      "note": "Argued that Chinese demand, driven by silver's high value in China, created a global market linked through Manila from 1571 (link is the 2022 reprint)."
+    },
+    {
+      "year": 1996,
+      "authors": "Richard von Glahn",
+      "title": "Fountain of Fortune: Money and Monetary Policy in China, 1000–1700",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://doi.org/10.1525/9780520917453",
+      "note": "Monetary history of China that produced revised estimates of silver imports by source and period."
+    },
+    {
+      "year": 1996,
+      "authors": "Richard von Glahn",
+      "title": "Myth and Reality of China's Seventeenth-Century Monetary Crisis",
+      "venue": "Journal of Economic History 56 (2): 429–454",
+      "url": "https://doi.org/10.1017/S0022050700016508",
+      "note": "Challenged Atwell's thesis, arguing that silver imports did not collapse in the 1630s–40s on the scale required to explain the Ming fall."
+    },
+    {
+      "year": 2002,
+      "authors": "Dennis O. Flynn and Arturo Giráldez",
+      "title": "Cycles of Silver: Global Economic Unity through the Mid-Eighteenth Century",
+      "venue": "Journal of World History 13 (2): 391–427",
+      "url": "https://doi.org/10.1353/jwh.2002.0035",
+      "note": "Extended the argument into a two-cycle model of silver production and Chinese demand through the eighteenth century."
+    },
+    {
+      "year": 2006,
+      "authors": "Man-houng Lin",
+      "title": "China Upside Down: Currency, Society, and Ideologies, 1808–1856",
+      "venue": "Cambridge, MA: Harvard University Asia Center (Harvard East Asian Monographs 270)",
+      "url": "https://fairbank.fas.harvard.edu/research/publications/china-upside-down-currency-society-and-ideologies-1808-1856/",
+      "note": "Linked the end of the Spanish American silver supply during the independence wars to silver outflow and crisis in Qing China, framing the end point of the period."
+    },
+    {
+      "year": 2008,
+      "authors": "Kent G. Deng",
+      "title": "Miracle or Mirage? Foreign Silver, China's Economy and Globalization from the Sixteenth to the Nineteenth Centuries",
+      "venue": "Pacific Economic Review 13 (3): 320–357",
+      "url": "https://doi.org/10.1111/j.1468-0106.2008.00404.x",
+      "note": "Argued that foreign silver was small relative to the Chinese economy and questioned claims for its transformative effect."
+    },
+    {
+      "year": 2009,
+      "authors": "Alejandra Irigoin",
+      "title": "The End of a Silver Era: The Consequences of the Breakdown of the Spanish Peso Standard in China and the United States, 1780s–1850s",
+      "venue": "Journal of World History 20 (2): 207–244",
+      "url": "https://doi.org/10.1353/jwh.0.0053",
+      "note": "Showed how Chinese demand for the Spanish peso as a unit, not only as bullion, shaped late flows and their reversal."
+    },
+    {
+      "year": 2010,
+      "authors": "John J. TePaske (ed. Kendall W. Brown)",
+      "title": "A New World of Gold and Silver",
+      "venue": "Leiden: Brill (The Atlantic World 21)",
+      "url": "https://library.usi.edu/record/429471",
+      "note": "Posthumous compilation of decade-by-decade registered gold and silver output from Spanish and Portuguese American treasuries and mints, with discussion of contraband."
+    },
+    {
+      "year": 2019,
+      "authors": "Richard von Glahn",
+      "title": "The Changing Significance of Latin American Silver in the Chinese Economy, 16th–19th Centuries",
+      "venue": "Revista de Historia Económica / Journal of Iberian and Latin American Economic History (published online 2019)",
+      "url": "https://doi.org/10.1017/S0212610919000193",
+      "note": "Updated synthesis of import estimates and of silver's changing monetary role in China across three centuries."
+    },
+    {
+      "year": 2024,
+      "authors": "Nuno Palma and André C. Silva",
+      "title": "Spending a Windfall: American Precious Metals and Euro-Asian Trade",
+      "venue": "International Economic Review 65 (1): 283–313",
+      "url": "https://doi.org/10.1111/iere.12662",
+      "note": "Quantified how American bullion financed European imports from Asia, a key link in the Cape-route component of flows to China."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Archivo General de Indias, Seville (via PARES)",
+      "collection": "Contaduría and Filipinas sections: Caja de Manila accounts, galleon registers, Acapulco and Manila customs records",
+      "url": "https://pares.cultura.gob.es/inicio.html",
+      "digitized": "partial",
+      "note": "Principal source for registered silver on the Acapulco–Manila route; many legajos imaged on PARES, the rest consultable in Seville."
+    },
+    {
+      "repository": "Archivo General de la Nación, Mexico City",
+      "collection": "Real Hacienda, Casa de Moneda and Filipinas series",
+      "url": "https://www.gob.mx/agn",
+      "digitized": "partial",
+      "note": "Mint and treasury records for New Spain, the main source of Pacific silver; consultation onsite with partial digital access."
+    },
+    {
+      "repository": "Global Price and Income History Group, University of California, Davis",
+      "collection": "Government budget series, including Klein and TePaske treasury accounts for Mexico, 1576–1816 (hosted on the European State Finance Database)",
+      "url": "https://gpih.ucdavis.edu/Government.htm",
+      "digitized": "full",
+      "note": "Free downloadable royal treasury series compiled from the Spanish American cajas."
+    },
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Archives of the Dutch East India Company (VOC), 1602–1795, including bullion shipments and Asian accounts",
+      "url": "https://www.nationaalarchief.nl/",
+      "digitized": "partial",
+      "note": "Records of VOC silver exports from Europe and Japanese silver traded through Deshima; much is inventoried and partly imaged."
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "India Office Records: East India Company ledgers, Canton factory records and bullion export accounts",
+      "url": "https://www.bl.uk/",
+      "digitized": "partial",
+      "note": "Main source for English silver shipments to Canton in the eighteenth century; reading-room access, selected series digitized."
+    },
+    {
+      "repository": "First Historical Archives of China, Beijing",
+      "collection": "Qing palace memorials and Board of Revenue records on silver, copper cash exchange rates, grain prices and Guangdong maritime customs",
+      "url": "https://www.fhac.com.cn/",
+      "digitized": "partial",
+      "note": "Chinese-side evidence for timing and effects of silver inflows; access onsite by application, with some series online."
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "linear-a",
+  "title": "What language does Linear A record, and can any proposed family beat chance?",
+  "short": "Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.",
+  "region": "Mediterranean",
+  "field": "Languages & scripts",
+  "start": -1800,
+  "end": -1450,
+  "flags": [],
+  "matters": "The language of Linear A bears on who the Minoans were, how Bronze Age Crete related to Anatolia, the Levant and Egypt, and what the Mycenaean Greeks inherited when they adapted the script as Linear B. Readings of personal names, toponyms and religious formulae on libation vessels would change accounts of Minoan religion and administration. A demonstration that no candidate family is detectable at this corpus size would also be a result, setting limits on what further comparative claims can mean.",
+  "stuck": "The corpus is small and mostly administrative: about 1,430 documents in the original GORILA edition and 1,534 after the 2024–25 supplement, most of them short tallies, sealings and roundels, with roughly 7,500 signs in all. Linear B values give approximate pronunciations, but the transfer of values is itself an assumption, and many proposals (Luwian, Semitic, Hurrian, Tyrsenian and others) have been argued by selective lexical matching without controls for how many matches chance would produce. Few proposals have been stated in advance in a form that could fail.",
+  "solved": "A language-family hypothesis, specified before testing (sound correspondences, morphology, lexicon), predicts readings of held-out inscriptions significantly better than the same procedure applied to shuffled sign values and unrelated control languages; or a power analysis shows that no such test can succeed at the current corpus size. A narrower solvable target is a complete, consistent account of the fraction signs and commodity totals (KU-RO) that balances the surviving tallies.",
+  "approach": "Build a machine-readable corpus from SigLA, lineara.xyz and the GORILA supplement, with transliteration uncertainty encoded per sign. Pre-register each family hypothesis as a generative model and score it against held-out texts, using the cognate-alignment methods of Luo, Barzilay and colleagues (tested on Ugaritic, Gothic and Iberian) and Packard's 1974 logic of fictitious value assignments as controls. Separately, solve the accounting layer as a constraint problem: fraction values and logogram totals that make every complete tablet balance, extending Corazza et al. (2021).",
+  "existing": [
+    {
+      "year": 1950,
+      "authors": "Emmett L. Bennett Jr.",
+      "title": "Fractional Quantities in Minoan Bookkeeping",
+      "venue": "American Journal of Archaeology 54 (3): 204–222",
+      "url": "https://doi.org/10.2307/500299",
+      "note": "First systematic attempt to assign values to the Linear A fraction signs from their use in tallies."
+    },
+    {
+      "year": 1958,
+      "authors": "L. R. Palmer",
+      "title": "Luvian and Linear A",
+      "venue": "Transactions of the Philological Society 57 (1): 75–100",
+      "url": "https://doi.org/10.1111/j.1467-968x.1958.tb01273.x",
+      "note": "Proposed that the language of Linear A was Luwian or closely related Anatolian, the founding statement of the Anatolian hypothesis."
+    },
+    {
+      "year": 1966,
+      "authors": "Cyrus H. Gordon",
+      "title": "Evidence for the Minoan Language",
+      "venue": "Ventnor, NJ: Ventnor Publishers",
+      "url": "https://keibi.uni-tuebingen.de/Record/KEI00082883",
+      "note": "Argued for a Northwest Semitic reading of Linear A; widely reviewed and not accepted by most Aegean specialists."
+    },
+    {
+      "year": 1974,
+      "authors": "David W. Packard",
+      "title": "Minoan Linear A",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://archive.org/details/minoanlineara0000pack",
+      "note": "Computer-assisted statistical study that compared Linear B sound values against fictitious reassignments, an early use of random controls for this script."
+    },
+    {
+      "year": 1976,
+      "authors": "Louis Godart and Jean-Pierre Olivier",
+      "title": "Recueil des inscriptions en linéaire A (GORILA), vols. 1–5",
+      "venue": "Études crétoises 21, 1976–1985",
+      "url": "https://find.library.upenn.edu/catalog/9973463503681",
+      "note": "The standard corpus edition, with photographs, drawings and transliterations of roughly 1,430 inscriptions."
+    },
+    {
+      "year": 1990,
+      "authors": "Margalit Finkelberg",
+      "title": "Minoan Inscriptions on Libation Vessels",
+      "venue": "Minos 25–26 (1990–1991)",
+      "url": "https://gredos.usal.es/handle/10366/73475",
+      "note": "Analyzed the religious 'libation formula' and argued that its morphology is compatible with an Anatolian language."
+    },
+    {
+      "year": 2019,
+      "authors": "Jiaming Luo, Yuan Cao and Regina Barzilay",
+      "title": "Neural Decipherment via Minimum-Cost Flow: From Ugaritic to Linear B",
+      "venue": "Proceedings of the 57th Annual Meeting of the ACL: 3146–3155",
+      "url": "https://aclanthology.org/P19-1303/",
+      "note": "Unsupervised cognate-matching model that recovered known decipherments of Ugaritic and Linear B, a benchmark method for testing family hypotheses."
+    },
+    {
+      "year": 2020,
+      "authors": "Ester Salgarella",
+      "title": "Aegean Linear Script(s): Rethinking the Relationship between Linear A and Linear B",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/9781108783477",
+      "note": "Palaeographic and structural comparison of the two scripts, reassessing which Linear B values can safely be projected back onto Linear A."
+    },
+    {
+      "year": 2020,
+      "authors": "Ester Salgarella and Simon Castellan",
+      "title": "SigLA: The Signs of Linear A. A Palaeographical Database",
+      "venue": "Online database (CC BY-NC-SA 4.0)",
+      "url": "https://sigla.phis.me/",
+      "note": "Searchable sign-by-sign database of Linear A documents with drawings, the main machine-readable resource for statistical work."
+    },
+    {
+      "year": 2021,
+      "authors": "Michele Corazza, Silvia Ferrara, Barbara Montecchi, Fabio Tamburini and Miguel Valério",
+      "title": "The mathematical values of fraction signs in the Linear A script: A computational, statistical and typological approach",
+      "venue": "Journal of Archaeological Science 125: 105214",
+      "url": "https://doi.org/10.1016/j.jas.2020.105214",
+      "note": "Used exhaustive computation over candidate values, constrained by palaeography and typology, to propose a consistent set of fraction values for c. 1600–1450 BCE."
+    },
+    {
+      "year": 2021,
+      "authors": "Jiaming Luo, Frederik Hartmann, Enrico Santus, Regina Barzilay and Yuan Cao",
+      "title": "Deciphering Undersegmented Ancient Scripts Using Phonetic Prior",
+      "venue": "Transactions of the Association for Computational Linguistics 9: 69–81",
+      "url": "https://doi.org/10.1162/tacl_a_00354",
+      "note": "Extended the cognate model to unsegmented scripts with unknown relatives; identified known relatives for Gothic and Ugaritic and found no strong support for Basque as a relative of Iberian."
+    },
+    {
+      "year": 2024,
+      "authors": "Aaradh Nepal and Francesco Perono Cacciafoco",
+      "title": "Minoan Cryptanalysis: Computational Approaches to Deciphering Linear A and Assessing Its Connections with Language Families from the Mediterranean and the Black Sea Areas",
+      "venue": "Information 15 (2): 73",
+      "url": "https://doi.org/10.3390/info15020073",
+      "note": "Applied recent computational similarity methods to compare Linear A with Egyptian, Luwian, Hittite, Proto-Celtic and Uralic, reporting scattered matches and discussing the methods' limits."
+    },
+    {
+      "year": 2025,
+      "authors": "Maurizio Del Freo and Julien Zurbach",
+      "title": "Recueil des inscriptions en linéaire A. Supplément 1 (RILA-S1)",
+      "venue": "Études crétoises 21.6. Athens: École française d'Athènes",
+      "url": "https://editions.efa.gr/?r=publication&id=1050",
+      "note": "Adds 107 documents published through 2023, bringing the corpus to 1,534 documents and 7,574 signs; the CNR announcement dates it 2024."
+    },
+    {
+      "year": 2026,
+      "authors": "Brent Davis",
+      "title": "The Undeciphered Aegean Scripts: Linguistic Investigations into the Languages They Encode",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/9781009562331",
+      "note": "Applies 'syllabotactic' statistics to Linear A and the other undeciphered Aegean scripts and publishes the underlying data, building on his earlier argument for verb-initial word order."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Heraklion Archaeological Museum, Heraklion, Crete",
+      "collection": "Linear A tablets, roundels, nodules and inscribed stone vessels, including the Hagia Triada archive (HT series)",
+      "url": "https://heraklionmuseum.gr/en/",
+      "digitized": "partial",
+      "note": "Holds the majority of Linear A documents; study of originals requires a permit from the Greek Ministry of Culture, and some Hagia Triada material is in Rome and Florence."
+    },
+    {
+      "repository": "SigLA database (Cambridge / Rennes / University of Bologna INSCRIBE)",
+      "collection": "Sign-level palaeographic database of Linear A inscriptions",
+      "url": "https://sigla.phis.me/",
+      "digitized": "partial",
+      "note": "Open access under CC BY-NC-SA 4.0, with hand drawings and sign, sequence and document search; coverage was still being extended after 2021."
+    },
+    {
+      "repository": "lineara.xyz",
+      "collection": "Interactive Linear A corpus with transliterations, findspot map and regular-expression search",
+      "url": "https://lineara.xyz/",
+      "digitized": "full",
+      "note": "Open browsing and search over transliterated inscriptions, with sister sites for Linear B, Cretan Hieroglyphic and Cypro-Minoan; transliterations derive from GORILA and John Younger's former Kansas site."
+    },
+    {
+      "repository": "École française d'Athènes, Athens",
+      "collection": "Recueil des inscriptions en linéaire A (GORILA, Études crétoises 21.1–5) and Supplément 1 (Études crétoises 21.6)",
+      "url": "https://editions.efa.gr/?r=publication&id=1050",
+      "digitized": "none",
+      "note": "The authoritative print edition with photographs and facsimiles; not openly digitized, so a machine-readable concordance against it is a first task."
+    },
+    {
+      "repository": "INSCRIBE project, University of Bologna",
+      "collection": "Invention of Scripts and Their Beginnings (ERC project, PI Silvia Ferrara): Aegean script datasets and publications",
+      "url": "https://site.unibo.it/inscribe/en/linear-a-sigla",
+      "digitized": "partial",
+      "note": "Hosts SigLA and the group behind the 2021 fraction-sign study; a likely collaborator for held-out test design."
+    }
+  ]
+}

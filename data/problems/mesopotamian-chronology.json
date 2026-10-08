@@ -1,0 +1,158 @@
+{
+  "id": "mesopotamian-chronology",
+  "title": "What is the absolute chronology of early second-millennium BCE Mesopotamia?",
+  "short": "Competing High, Middle, Low and Ultra-Low chronologies place Hammurabi and the fall of Babylon up to about 150 years apart; no single model integrates all the evidence.",
+  "region": "Middle East",
+  "field": "Chronology",
+  "start": -2000,
+  "end": -1500,
+  "flags": [
+    "science"
+  ],
+  "matters": "The relative sequence of Old Assyrian, Old Babylonian and Kassite rulers is well established, but its anchor in absolute years is not, so every date before about 1400 BCE in Mesopotamia, Anatolia, Syria and the Levant inherits the uncertainty. Synchronisms with Egypt, the Hittite sack of Babylon, the dating of the Santorini eruption debate, climate-and-collapse arguments and comparisons with radiocarbon-dated archaeology all depend on which option is chosen. The four usual options put the fall of Babylon at 1651, 1595, 1531 or 1499 BCE.",
+  "stuck": "The Venus observations preserved in later copies of Enūma Anu Enlil tablet 63 are corrupt and allow several solutions roughly 56 or 64 years apart, and month-length and eclipse arguments depend on contested readings and observational assumptions. Assyrian King List distance figures contain uncertain reign lengths, and the Kültepe eponym lists must be joined to Old Babylonian sources through a small number of synchronisms. Dendrochronological sequences from Anatolian sites were long only floating, and their wiggle-matched radiocarbon dates carry their own calibration and regional-offset uncertainties.",
+  "solved": "A published, reproducible Bayesian model that ingests the Venus data, lunar month lengths, eclipse candidates, king-list and eponym-list distance numbers, dendrochronological sequences and radiocarbon dates with explicit priors, returns a posterior for a fixed anchor (such as Ammisaduqa year 1) with a stated uncertainty under 10 years, and remains stable when individual lines of evidence are removed.",
+  "approach": "Agents can build a machine-readable dataset of every chronologically relevant datum (each Venus copy and its variant readings, month-length records from Old Babylonian archives, eponym-list entries, reign lengths, synchronisms) with full citations, then encode them as constraints in a radiocarbon-modelling framework such as OxCal. Sensitivity analysis would show which items drive the result. New radiocarbon and dendrochronological measurements on securely contexted short-lived samples and timbers from Kültepe, Acemhöyük and Babylonian sites require collaboration with dendrochronology and radiocarbon laboratories.",
+  "existing": [
+    {
+      "year": 1928,
+      "authors": "S. Langdon and J. K. Fotheringham",
+      "title": "The Venus Tablets of Ammizaduga",
+      "venue": "Oxford: Oxford University Press",
+      "url": "https://archive.org/details/TheVenusTabletsOfAmmizaduga1928",
+      "note": "First full astronomical treatment of the Venus observations, proposing a high date for the First Dynasty of Babylon."
+    },
+    {
+      "year": 1982,
+      "authors": "Peter J. Huber, with A. Sachs, M. Stol, R. M. Whiting, E. Leichty, C. B. F. Walker and G. van Driel",
+      "title": "Astronomical Dating of Babylon I and Ur III",
+      "venue": "Occasional Papers on the Near East 1/4. Malibu: Undena",
+      "url": "https://archive.org/details/astronomical-dating-of-babylon-i-and-ur-iii",
+      "note": "Statistical analysis of Venus data, lunar month lengths and eclipse omens that favoured the Long (High) Chronology."
+    },
+    {
+      "year": 1998,
+      "authors": "H. Gasche, J. A. Armstrong, S. W. Cole and V. G. Gurzadyan",
+      "title": "Dating the Fall of Babylon: A Reappraisal of Second-Millennium Chronology",
+      "venue": "Mesopotamian History and Environment II/4. Ghent and Chicago: University of Ghent and Oriental Institute",
+      "url": "https://isac.uchicago.edu/sites/default/files/uploads/shared/docs/fall_of_babylon.pdf",
+      "note": "Used ceramic sequences, king-list reconsideration and astronomy to propose the Ultra-Low Chronology with the fall of Babylon in 1499 BCE."
+    },
+    {
+      "year": 2000,
+      "authors": "Peter J. Huber",
+      "title": "Astronomy and Ancient Chronology",
+      "venue": "Akkadica 119–120",
+      "url": "https://doi.org/10.21825/akkadica.99482",
+      "note": "Defended the astronomical case for the Long Chronology against the Ultra-Low proposal."
+    },
+    {
+      "year": 2000,
+      "authors": "Vahe G. Gurzadyan",
+      "title": "On the Astronomical Records and Babylonian Chronology",
+      "venue": "Akkadica 119–120",
+      "url": "https://doi.org/10.21825/akkadica.99488",
+      "note": "Argued that the Venus and eclipse records are consistent with the Ultra-Low Chronology."
+    },
+    {
+      "year": 2009,
+      "authors": "Regine Pruzsinszky",
+      "title": "Mesopotamian Chronology of the 2nd Millennium B.C.",
+      "venue": "Contributions to the Chronology of the Eastern Mediterranean 22. Vienna: Austrian Academy of Sciences Press",
+      "url": "https://doi.org/10.1553/0x0022aa91",
+      "note": "Systematic introduction to the king lists, eponym lists, year names and synchronisms on which any absolute chronology depends."
+    },
+    {
+      "year": 2010,
+      "authors": "Joachim Mebert",
+      "title": "Die Venustafeln des Ammī-ṣaduqa und ihre Bedeutung für die astronomische Datierung der altbabylonischen Zeit",
+      "venue": "Archiv für Orientforschung Beiheft 31. Vienna: Institut für Orientalistik",
+      "url": "https://keibi.uni-tuebingen.de/Record/KEI00104002",
+      "note": "New philological study of all copies of the Venus tablets, re-examining the readings on which competing astronomical solutions rest."
+    },
+    {
+      "year": 2012,
+      "authors": "Gojko Barjamovic, Thomas Hertel and Mogens Trolle Larsen",
+      "title": "Ups and Downs at Kanesh: Chronology, History and Society in the Old Assyrian Period",
+      "venue": "PIHANS 120 / Old Assyrian Archives Studies 5. Leiden: Nederlands Instituut voor het Nabije Oosten",
+      "url": "https://keibi.uni-tuebingen.de/Record/KEI00121590",
+      "note": "Reconstructed the Old Assyrian eponym sequence from the Kültepe Eponym Lists and dated texts and argued that it supports the Middle Chronology."
+    },
+    {
+      "year": 2013,
+      "authors": "Teije de Jong",
+      "title": "Astronomical Fine-Tuning of the Chronology of the Hammurabi Age",
+      "venue": "Jaarbericht Ex Oriente Lux 44: 147–167",
+      "url": "https://dare.uva.nl/id/746c7eff-3a2d-424b-9abd-f37ad6b0cbfc",
+      "note": "Re-examined Venus visibility conditions and radiocarbon data and favoured a Low-Middle option with Ammisaduqa year 1 in 1638 BCE."
+    },
+    {
+      "year": 2016,
+      "authors": "Sturt W. Manning, Carol B. Griggs, Brita Lorentzen, Gojko Barjamovic, Christopher Bronk Ramsey, Bernd Kromer and Eva Maria Wild",
+      "title": "Integrated Tree-Ring-Radiocarbon High-Resolution Timeframe to Resolve Earlier Second Millennium BCE Mesopotamian Chronology",
+      "venue": "PLOS ONE 11 (7): e0157144",
+      "url": "https://doi.org/10.1371/journal.pone.0157144",
+      "note": "Wiggle-matched tree-ring sequences from Kültepe and Acemhöyük linked to Old Assyrian officials and concluded that only the Middle Chronology fits."
+    },
+    {
+      "year": 2020,
+      "authors": "Sturt W. Manning, Lukas Wacker, Ulf Büntgen, Christopher Bronk Ramsey, Michael W. Dee, Bernd Kromer and others",
+      "title": "Radiocarbon offsets and old world chronology as relevant to Mesopotamia, Egypt, Anatolia and Thera (Santorini)",
+      "venue": "Scientific Reports 10: 13785",
+      "url": "https://doi.org/10.1038/s41598-020-69287-2",
+      "note": "Showed that regional and calendar-period radiocarbon offsets of a few decades can shift wiggle-match results and must be modelled."
+    },
+    {
+      "year": 2022,
+      "authors": "Felix Höflmayer and Sturt W. Manning",
+      "title": "A Synchronized Early Middle Bronze Age Chronology for Egypt, the Levant, and Mesopotamia",
+      "venue": "Journal of Near Eastern Studies 81 (1): 1–24",
+      "url": "https://doi.org/10.1086/718498",
+      "note": "Combined Mesopotamian textual chronology with radiocarbon evidence from Egypt and the Levant into a synchronized framework built on the Middle Chronology."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "British Museum, London",
+      "collection": "K.160 and other Kuyunjik copies of Enūma Anu Enlil tablet 63 (the Venus Tablet of Ammisaduqa)",
+      "url": "https://www.britishmuseum.org/collection/object/W_K-160",
+      "digitized": "partial",
+      "note": "Principal Neo-Assyrian copy of the Venus observations from Ashurbanipal's library; about twenty copies and fragments are known in total."
+    },
+    {
+      "repository": "Old Assyrian Research Environment (OARE), OCHRE platform",
+      "collection": "Encoded Old Assyrian texts, chiefly from Kültepe/Kanesh, with persons, eponyms and transactions marked up",
+      "url": "https://voices.uchicago.edu/ochre/project/oare",
+      "digitized": "partial",
+      "note": "Structured data for the Kanesh archives from which eponym-dated synchronisms are drawn."
+    },
+    {
+      "repository": "Cuneiform Digital Library Initiative (CDLI)",
+      "collection": "Kültepe Eponym Lists, Assyrian King List exemplars, Old Babylonian year-name and dated archival texts",
+      "url": "https://cdli.earth/",
+      "digitized": "partial",
+      "note": "Catalogue and images of tablets carrying king lists, eponym lists and dated documents used for month-length analyses."
+    },
+    {
+      "repository": "ARCHIBAB, Collège de France / CNRS",
+      "collection": "Dated Old Babylonian letters and administrative documents, including Mari",
+      "url": "https://www.archibab.fr/",
+      "digitized": "partial",
+      "note": "Database of Old Babylonian documents with dates, useful for month-length data and synchronisms between Mari, Babylon and Assyria."
+    },
+    {
+      "repository": "Cornell Tree-Ring Laboratory (Malcolm and Carolyn Wiener Laboratory for Aegean and Near Eastern Dendrochronology), Ithaca",
+      "collection": "Wood and charcoal samples from Kültepe, Acemhöyük, Porsuk and other Anatolian sites",
+      "url": "https://dendro.cornell.edu/",
+      "digitized": "partial",
+      "note": "Physical sample archive and ring-width data underlying the Middle Bronze Age Anatolian sequences; access to samples by arrangement with the laboratory."
+    },
+    {
+      "repository": "IntCal Working Group",
+      "collection": "IntCal20 radiocarbon calibration curve and underlying datasets",
+      "url": "https://intcal.org/",
+      "digitized": "full",
+      "note": "Calibration data needed to model wiggle-matched dendro sequences and to test regional offsets."
+    }
+  ]
+}

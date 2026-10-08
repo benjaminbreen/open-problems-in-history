@@ -1,0 +1,152 @@
+{
+  "id": "proto-elamite",
+  "title": "Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?",
+  "short": "Iran's earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.",
+  "region": "Middle East",
+  "field": "Languages & scripts",
+  "start": -3300,
+  "end": -1880,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Proto-Elamite is one of the earliest scripts anywhere and the first on the Iranian plateau, so its nature bears on whether writing was invented once in Mesopotamia and borrowed, or developed independently in more than one place. If its non-numerical signs encode syllables of Elamite, the history of that language extends back almost a millennium. Desset and colleagues' 2022 decipherment of Linear Elamite rests partly on a claimed continuity from Proto-Elamite; whether that continuity holds affects how far the decipherment can be pushed back.",
+  "stuck": "The tablets are almost all administrative accounts from Susa, with smaller groups from Tepe Yahya, Tal-i Malyan, Tepe Sofalin and other sites; they contain several hundred non-numerical signs and short entries dominated by numbers. The numerical systems were largely worked out by Damerow and Englund through comparison with Mesopotamian proto-cuneiform, but the remaining signs could be logograms, personal names, institutional labels or syllables, and the short entries offer few repeated phonetic contexts. More than five centuries separate the last Proto-Elamite tablets from the first Linear Elamite inscriptions, and Dahl (2023) argues that Linear Elamite was a deliberate new creation rather than a descendant.",
+  "solved": "A structural analysis that partitions the sign inventory into numerical, logographic and candidate phonetic signs, with stated criteria, is validated on proto-cuneiform where the answers are known; applied to Proto-Elamite, it either identifies a set of signs whose distribution fits a syllabary, with predicted values that cohere with Linear Elamite readings beyond chance, or shows that no such subset exists.",
+  "approach": "Start from the CDLI transliterations and images, and treat the numerical layer as a solved constraint system so that every tablet's arithmetic is checked and the residual signs isolated. Train sign-distribution models on proto-cuneiform and early cuneiform, where logograms, determinatives and phonetic complements are known, then test whether Proto-Elamite contains a comparable phonetic subset, following the computational work of Born, Kelley and colleagues. Test the claimed Linear Elamite relation with pre-registered sign-form and value correspondences against shuffled pairings. Unpublished and poorly imaged tablets in the Louvre and in Iranian collections need high-resolution imaging, which requires collaboration with those institutions.",
+  "existing": [
+    {
+      "year": 2004,
+      "authors": "Robert K. Englund",
+      "title": "The State of Decipherment of Proto-Elamite",
+      "venue": "In Stephen D. Houston (ed.), The First Writing: Script Invention as History and Process. Cambridge: Cambridge University Press, 100–149",
+      "url": "https://www.mpiwg-berlin.mpg.de/Preprints/P183.PDF",
+      "note": "Standard account of the numerical systems, the debt to Late Uruk proto-cuneiform, and the limits of decipherment; the link is the author's preprint version."
+    },
+    {
+      "year": 2005,
+      "authors": "Jacob L. Dahl",
+      "title": "Complex Graphemes in Proto-Elamite",
+      "venue": "Cuneiform Digital Library Journal 2005:3",
+      "url": "https://cdli.mpiwg-berlin.mpg.de/articles/cdlj/2005-3.pdf",
+      "note": "Analyzed how compound signs are built from simpler ones, an early step toward a structural sign list."
+    },
+    {
+      "year": 2009,
+      "authors": "Jacob L. Dahl",
+      "title": "Early Writing in Iran, a Reappraisal",
+      "venue": "Iran 47 (1): 23–31",
+      "url": "https://doi.org/10.1080/05786967.2009.11864757",
+      "note": "Reassessed the chronology and development of the earliest writing in Iran in light of the CDLI-based re-edition of the Susa tablets."
+    },
+    {
+      "year": 2012,
+      "authors": "Jacob L. Dahl",
+      "title": "The Marks of Early Writing",
+      "venue": "Iran 50 (1): 1–11",
+      "url": "https://doi.org/10.1080/05786967.2012.11834709",
+      "note": "Examined early sign forms and marking practices in the Iranian tablets as evidence for how the script was organized and learned."
+    },
+    {
+      "year": 2016,
+      "authors": "François Desset",
+      "title": "The Proto-Elamite Writing in Iran",
+      "venue": "Archéo-Nil: 67–104",
+      "url": "https://hal.science/hal-03471106v1",
+      "note": "Survey of the corpus and its sites that set out Desset's case for continuity between Proto-Elamite and later Iranian writing."
+    },
+    {
+      "year": 2018,
+      "authors": "Jacob L. Dahl",
+      "title": "The Proto-Elamite Writing System",
+      "venue": "In Javier Álvarez-Mon, Gian Pietro Basello and Yasmina Wicks (eds.), The Elamite World. London: Routledge, 383–396",
+      "url": "https://doi.org/10.4324/9781315658032-20",
+      "note": "Handbook overview of the sign inventory, numerical systems and administrative content."
+    },
+    {
+      "year": 2018,
+      "authors": "François Desset",
+      "title": "Linear Elamite Writing",
+      "venue": "In Javier Álvarez-Mon, Gian Pietro Basello and Yasmina Wicks (eds.), The Elamite World. London: Routledge, 397–415",
+      "url": "https://doi.org/10.4324/9781315658032-21",
+      "note": "Companion overview of the later Linear Elamite corpus, before the 2022 decipherment claim."
+    },
+    {
+      "year": 2019,
+      "authors": "Logan Born, Kathryn Kelley, Nishant Kambhatla, Carolyn Chen and Anoop Sarkar",
+      "title": "Sign Clustering and Topic Extraction in Proto-Elamite",
+      "venue": "Proceedings of the 3rd Joint SIGHUM Workshop on Computational Linguistics for Cultural Heritage, Social Sciences, Humanities and Literature: 122–132",
+      "url": "https://doi.org/10.18653/v1/w19-2516",
+      "note": "Applied unsupervised clustering and topic models to the CDLI transliterations to group signs by distribution and identify document types."
+    },
+    {
+      "year": 2021,
+      "authors": "Logan Born, Kathryn Kelley, M. Willis Monroe and Anoop Sarkar",
+      "title": "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models",
+      "venue": "Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021: 4136–4146",
+      "url": "https://doi.org/10.18653/v1/2021.findings-acl.362",
+      "note": "Combined sign images and distributional data to test whether compound signs mean what their components suggest."
+    },
+    {
+      "year": 2022,
+      "authors": "François Desset, Kambiz Tabibzadeh, Matthieu Kervran, Gian Pietro Basello and Gianni Marchesi",
+      "title": "The Decipherment of Linear Elamite Writing",
+      "venue": "Zeitschrift für Assyriologie und vorderasiatische Archäologie 112 (1): 11–60",
+      "url": "https://doi.org/10.1515/za-2022-0003",
+      "note": "Proposed phonetic values for Linear Elamite (c. 2300–1880 BCE) as a writing of Elamite, using eight inscribed silver beakers published in 2018 from a private collection, and argued for continuity with Proto-Elamite."
+    },
+    {
+      "year": 2023,
+      "authors": "Jacob L. Dahl",
+      "title": "Proto-Elamite and Linear Elamite, a Misunderstood Relationship?",
+      "venue": "Akkadica 144 (2)",
+      "url": "https://doi.org/10.21825/akkadica.99694",
+      "note": "Argued that resemblances across more than 500 years are better explained by late third-millennium scribes creating a new script from recovered Proto-Elamite tablets and Old Akkadian cuneiform."
+    },
+    {
+      "year": 2025,
+      "authors": "M. Willis Monroe, Kathryn Kelley, Logan Born and Anoop Sarkar",
+      "title": "Recent Progress in Deciphering Proto-Elamite",
+      "venue": "Near Eastern Archaeology 88 (4): 314–323",
+      "url": "https://doi.org/10.1086/738240",
+      "note": "Reports results of the combined mathematical, comparative and computational decipherment program."
+    },
+    {
+      "year": 2026,
+      "authors": "Kathryn Kelley",
+      "title": "Proto-Elamite",
+      "venue": "Cambridge Elements. Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/9781009614559",
+      "note": "Synthesis describing about 1,700 tablets dated c. 3300–2900 BCE and the current interdisciplinary decipherment project."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Musée du Louvre, Paris",
+      "collection": "Département des Antiquités orientales: Susa tablets (Sb inventory numbers), published in MDP 6, 17, 26 and Textes cunéiformes du Louvre 32 (Dahl 2019); Linear Elamite inscriptions from Susa",
+      "url": "https://collections.louvre.fr/",
+      "digitized": "partial",
+      "note": "Holds the great majority of Proto-Elamite tablets; many have been imaged for CDLI, while some joins and fragments remain unpublished."
+    },
+    {
+      "repository": "Cuneiform Digital Library Initiative (CDLI)",
+      "collection": "Proto-Elamite period artifacts (ca. 3100–2900 BC): transliterations, photographs and line art",
+      "url": "https://cdli.earth/search?simple-value%5B0%5D=%2A&simple-field%5B0%5D=keyword&f%5Bperiod%5D%5B0%5D=Proto-Elamite+%28ca.+3100-2900+BC%29&limit=100",
+      "digitized": "full",
+      "note": "Open access; the period filter returns about 1,750 entries, with transliteration conventions that differ across editors."
+    },
+    {
+      "repository": "CDLI Wiki, University of Oxford",
+      "collection": "Proto-Elamite pages: sign lists, numerical systems and crowdsourcing materials from Jacob Dahl's project",
+      "url": "https://cdli.ox.ac.uk/wiki/doku.php?id=proto-elamite",
+      "digitized": "full",
+      "note": "Working sign list and teaching materials released from 2012 onward to invite outside contributions; access is behind an automated bot check."
+    },
+    {
+      "repository": "National Museum of Iran, Tehran",
+      "collection": "Proto-Elamite and Linear Elamite material from excavations in Iran",
+      "url": "https://irannationalmuseum.ir/en/",
+      "digitized": "partial",
+      "note": "Holds tablets from Iranian excavations that are less fully imaged than the Louvre material; recording them requires collaboration with Iranian institutions."
+    }
+  ]
+}

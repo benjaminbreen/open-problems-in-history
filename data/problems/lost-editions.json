@@ -1,0 +1,140 @@
+{
+  "id": "lost-editions",
+  "title": "How many early printed editions have been lost without trace?",
+  "short": "Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1450,
+  "end": 1600,
+  "flags": [],
+  "matters": "Quantitative histories of the early book trade, of literacy and of the spread of ideas count surviving editions as if they were a fixed fraction of what was printed. If loss was heavy and uneven, falling hardest on cheap, small-format, vernacular, ephemeral and heavily used books such as schoolbooks, almanacs, broadsides and devotional texts, then the apparent dominance of Latin learned printing and the relative output of regions and printers are artefacts of survival. The same estimates are used to calibrate long-run series of book production that feed into economic history.",
+  "stuck": "Lost editions leave evidence only indirectly, in booksellers' catalogues, inventories, references, binding fragments and editions known from a single copy. Statistical estimates depend on assumptions about how copy counts are distributed, and the main models give different answers for different categories of book. Catalogues such as ISTC, GW and USTC are revised continuously, but no one has systematically used their revision history to test whether past estimates correctly predicted the rate and kind of new discoveries.",
+  "solved": "A survival model fitted on a dated snapshot of a major catalogue (for example ISTC or USTC as of a past year) that correctly predicts the number and category distribution of editions added in later years, together with an estimate of total lost editions by format, language and genre with stated uncertainty.",
+  "approach": "Agents can reconstruct historical states of ISTC, GW, USTC and VD16 from published versions, data exports and change logs, record copy counts per edition, and fit unseen-species estimators (Chao1, Efron–Thisted and successors) separately for format, language and genre. Predictions from older snapshots can then be scored against editions discovered since, and the documentary record of lost books (booksellers' lists, inventories, privileges) used as an independent check. All the needed catalogues are already online, so no new digitization is required, though cooperation with catalogue maintainers would allow access to dated record histories.",
+  "existing": [
+    {
+      "year": 1976,
+      "authors": "Bradley Efron and Ronald Thisted",
+      "title": "Estimating the number of unseen species: How many words did Shakespeare know?",
+      "venue": "Biometrika 63 (3): 435–447",
+      "url": "https://doi.org/10.1093/biomet/63.3.435",
+      "note": "Adapted ecological unseen-species estimation to texts, the methodological ancestor of later estimates of lost books."
+    },
+    {
+      "year": 2009,
+      "authors": "Eltjo Buringh and Jan Luiten van Zanden",
+      "title": "Charting the 'Rise of the West': Manuscripts and Printed Books in Europe, A Long-Term Perspective from the Sixth through Eighteenth Centuries",
+      "venue": "Journal of Economic History 69 (2): 409–445",
+      "url": "https://doi.org/10.1017/S0022050709000837",
+      "note": "Estimated European manuscript and book production by century, applying assumed loss rates to surviving counts; widely used and criticized for its survival assumptions."
+    },
+    {
+      "year": 2011,
+      "authors": "Jonathan Green, Frank McIntyre and Paul Needham",
+      "title": "The Shape of Incunable Survival and Statistical Estimation of Lost Editions",
+      "venue": "Papers of the Bibliographical Society of America 105 (2): 141–175",
+      "url": "https://doi.org/10.1086/680773",
+      "note": "Fitted distributions to ISTC copy counts and argued that lost incunable editions are far more numerous than earlier guesses, especially among small editions."
+    },
+    {
+      "year": 2016,
+      "authors": "Flavia Bruni and Andrew Pettegree, eds.",
+      "title": "Lost Books: Reconstructing the Print World of Pre-Industrial Europe",
+      "venue": "Leiden: Brill (Library of the Written Word 46)",
+      "url": "https://doi.org/10.1163/9789004311824",
+      "note": "Collected case studies of documented but lost editions across Europe, using inventories, catalogues and archival references."
+    },
+    {
+      "year": 2016,
+      "authors": "Andrew Pettegree",
+      "title": "The Legion of the Lost: Recovering the Lost Books of Early Modern Europe",
+      "venue": "In Bruni and Pettegree, eds., Lost Books (Leiden: Brill), 1–27",
+      "url": "https://doi.org/10.1163/9789004311824_002",
+      "note": "Argued from USTC data that a large share of sixteenth-century editions, especially cheap vernacular print, survive in one copy or none."
+    },
+    {
+      "year": 2016,
+      "authors": "Falk Eisermann",
+      "title": "The Gutenberg Galaxy's Dark Matter: Lost Incunabula, and Ways to Retrieve Them",
+      "venue": "In Bruni and Pettegree, eds., Lost Books (Leiden: Brill), 29–54",
+      "url": "https://doi.org/10.1163/9789004311824_003",
+      "note": "Surveyed the documentary and fragmentary evidence for lost fifteenth-century editions, including broadsides and indulgences recovered from bindings."
+    },
+    {
+      "year": 2016,
+      "authors": "Jonathan Green and Frank McIntyre",
+      "title": "Lost Incunable Editions: Closing in on an Estimate",
+      "venue": "In Bruni and Pettegree, eds., Lost Books (Leiden: Brill), 55–72",
+      "url": "https://doi.org/10.1163/9789004311824_004",
+      "note": "Refined the 2011 estimates of how many fifteenth-century editions survive in no copy."
+    },
+    {
+      "year": 2016,
+      "authors": "Alexandra Hill",
+      "title": "Lost Print in England: Entries in the Stationers' Company Register, 1557–1640",
+      "venue": "In Bruni and Pettegree, eds., Lost Books (Leiden: Brill), 144–159",
+      "url": "https://doi.org/10.1163/9789004311824_008",
+      "note": "Used registered titles with no surviving copy to measure loss in English print, an independent check on statistical estimates."
+    },
+    {
+      "year": 2016,
+      "authors": "Goran Proot",
+      "title": "Survival Factors of Seventeenth-Century Hand-Press Books Published in the Southern Netherlands: The Importance of Sheet Counts, Sammelbände and the Role of Institutional Collections",
+      "venue": "In Bruni and Pettegree, eds., Lost Books (Leiden: Brill), 160–201",
+      "url": "https://doi.org/10.1163/9789004311824_009",
+      "note": "Showed that survival depends strongly on edition size in sheets, binding with other works and institutional ownership, variables a survival model should include."
+    },
+    {
+      "year": 2022,
+      "authors": "Mike Kestemont, Folgert Karsdorp, Elisabeth de Bruijn, Matthew Driscoll, Katarzyna A. Kapitan, Pádraig Ó Macháin, Daniel Sawyer and Remco Sleiderink",
+      "title": "Forgotten books: The application of unseen species models to the survival of culture",
+      "venue": "Science 375 (6582): 765–769",
+      "url": "https://doi.org/10.1126/science.abl7655",
+      "note": "Applied unseen-species models to medieval narrative manuscripts in six vernaculars and estimated that most works survive but most manuscripts were lost, with marked differences between literatures; data and code released openly."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "British Library and CERL",
+      "collection": "Incunabula Short Title Catalogue (ISTC), begun 1980",
+      "url": "https://data.cerl.org/istc/_search",
+      "digitized": "full",
+      "note": "Edition-level records of about 30,000 fifteenth-century editions with copy locations; the main base for copy-count survival models."
+    },
+    {
+      "repository": "Staatsbibliothek zu Berlin",
+      "collection": "Gesamtkatalog der Wiegendrucke (GW), begun 1904",
+      "url": "https://www.gesamtkatalogderwiegendrucke.de/",
+      "digitized": "full",
+      "note": "Detailed descriptive catalogue of incunabula including fragments, with a long printed and online revision history useful for dating discoveries."
+    },
+    {
+      "repository": "University of St Andrews",
+      "collection": "Universal Short Title Catalogue (USTC)",
+      "url": "https://www.ustc.ac.uk/",
+      "digitized": "full",
+      "note": "Edition records for European printing to 1650 with copy locations, including editions recorded only from documentary evidence of lost books."
+    },
+    {
+      "repository": "Bayerische Staatsbibliothek, Munich, and Herzog August Bibliothek, Wolfenbüttel",
+      "collection": "VD16 (German-speaking lands, 1501–1600) and VD17",
+      "url": "https://www.bsb-muenchen.de/sammlungen/historische-drucke/recherche/vd-16/",
+      "digitized": "full",
+      "note": "National retrospective bibliographies with copy holdings, many linked to full digitizations."
+    },
+    {
+      "repository": "CERL",
+      "collection": "Material Evidence in Incunabula (MEI)",
+      "url": "https://data.cerl.org/mei/_search",
+      "digitized": "partial",
+      "note": "Copy-specific provenance and use evidence that can show how survival depended on ownership and institutional paths."
+    },
+    {
+      "repository": "GitHub (Kestemont et al.)",
+      "collection": "Data and code for 'Forgotten books' (2022)",
+      "url": "https://github.com/mikekestemont/forgotten-books",
+      "digitized": "full",
+      "note": "Openly released datasets and model implementations that can be adapted to print catalogues."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "china-1600",
+  "title": "How many people lived in China around 1600, and how many died between 1620 and 1680?",
+  "short": "Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.",
+  "region": "East Asia",
+  "field": "Demography",
+  "start": 1580,
+  "end": 1680,
+  "flags": [],
+  "matters": "The size of the late Ming population sets the denominator for comparisons of Chinese and European living standards, urbanization and per capita output, including recent historical national accounts. It also determines how catastrophic the Ming–Qing transition was: whether the wars, epidemics and famines of 1620–1680 killed a few tens of millions or a much larger share of the population, and how far the climate-crisis interpretation of the seventeenth century rests on China. Qing-era growth rates, and therefore arguments about the eighteenth-century population boom, depend on where the seventeenth-century trough lay.",
+  "stuck": "Official Ming registers record roughly 60 million people throughout the dynasty, a figure that reflects fiscal quotas fixed after 1393 rather than headcounts, so every modern total is a reconstruction. Ho Ping-ti (1959) proposed about 150 million for 1600; later work, including Cao Shuji's prefecture-level reconstruction, puts the late Ming peak close to 200 million, with some estimates higher. The central Yellow Register archive in Nanjing was lost, local gazetteer figures vary in what they count, and corrections for under-registration have been applied region by region with assumptions that are hard to compare.",
+  "solved": "A county- or prefecture-level population series for c.1580, 1630 and 1680 covering at least the core provinces, in which every adjustment to registered figures is stated as an explicit, reproducible rule, and whose implied densities and trends are shown to be consistent with independent evidence on cultivated land, land clearance, grain prices and tax arrears.",
+  "approach": "Agents can extract every household, ding and mouth figure, land total and tax quota from the digitized Ming and early Qing gazetteers into a single database keyed to CHGIS county boundaries, recording the year and the registration category of each number. Historians can then specify alternative under-registration models (for example, by ratio of ding to mouths, or by comparison with 1680s Qing registration) and run them consistently across counties, with the agents flagging outliers and internal contradictions for human review. Cross-checks against grain-price series, reclamation memorials of the 1650s–1680s and local reports of depopulation would test whether a given model produces plausible regional trajectories. The surviving Yellow Register fragments reused as book-backing paper could provide household-level calibration points if they are systematically imaged and transcribed.",
+  "existing": [
+    {
+      "year": 1959,
+      "authors": "Ping-ti Ho",
+      "title": "Studies on the Population of China, 1368–1953",
+      "venue": "Cambridge, MA: Harvard University Press (Harvard East Asian Series 4)",
+      "url": "https://doi.org/10.4159/harvard.9780674184510",
+      "note": "Founding study; drew on several thousand gazetteers to show that Ming registered figures were fiscal units and suggested a population of roughly 150 million by 1600."
+    },
+    {
+      "year": 1969,
+      "authors": "Dwight H. Perkins",
+      "title": "Agricultural Development in China, 1368–1968",
+      "venue": "Chicago: Aldine",
+      "url": "https://www.taylorfrancis.com/books/9781315082776",
+      "note": "Built long-run population and cultivated-acreage series from Ming–Qing tax records and gazetteers, arguing that output kept pace with a five- or six-fold population rise."
+    },
+    {
+      "year": 1980,
+      "authors": "Liang Fangzhong 梁方仲",
+      "title": "Zhongguo lidai hukou, tiandi, tianfu tongji 中国历代户口、田地、田赋统计",
+      "venue": "Shanghai: Shanghai renmin chubanshe",
+      "url": "https://find.library.upenn.edu/catalog/996687773503681",
+      "note": "Standard compilation of dynastic household, land and land-tax statistics, including Ming provincial and prefectural series, on which most later reconstructions draw."
+    },
+    {
+      "year": 1998,
+      "authors": "Martin Heijdra",
+      "title": "The socio-economic development of rural China during the Ming",
+      "venue": "The Cambridge History of China, vol. 8: The Ming Dynasty, 1368–1644, Part 2",
+      "url": "https://www.cambridge.org/core/books/cambridge-history-of-china/socioeconomic-development-of-rural-china-during-the-ming/AFBA77C7B487ABD972768ADCBCE7C4AB",
+      "note": "Reviewed the difficulties of Ming population and land registration figures and their implications for estimating rural growth over the dynasty."
+    },
+    {
+      "year": 2000,
+      "authors": "Cao Shuji 曹树基",
+      "title": "Zhongguo renkou shi, di si juan: Ming shiqi 中国人口史 第四卷 明时期",
+      "venue": "Shanghai: Fudan daxue chubanshe (Ge Jianxiong, ed., Zhongguo renkou shi)",
+      "url": "",
+      "note": "Prefecture-by-prefecture reconstruction of Ming population with region-specific corrections, placing the late Ming peak near 200 million around 1630."
+    },
+    {
+      "year": 2003,
+      "authors": "Kent G. Deng",
+      "title": "Fact or Fiction? Re-examination of Chinese Premodern Population Statistics",
+      "venue": "LSE Economic History Working Paper 76/03",
+      "url": "https://researchonline.lse.ac.uk/id/eprint/22353",
+      "note": "Argued that modern estimates have drifted away from the official record, that the gap for post-1350 China can reach 200 million, and criticised the habit of linearising growth."
+    },
+    {
+      "year": 2013,
+      "authors": "Geoffrey Parker",
+      "title": "Global Crisis: War, Climate Change and Catastrophe in the Seventeenth Century",
+      "venue": "New Haven: Yale University Press",
+      "url": "https://libcat.mcphs.edu/Record/in00000292295/TOC",
+      "note": "Placed the Ming collapse and Manchu conquest (1618–84) at the centre of a climate-driven global crisis, relying on a large Chinese population loss."
+    },
+    {
+      "year": 2018,
+      "authors": "Stephen Broadberry, Hanhui Guan and David Daokui Li",
+      "title": "China, Europe, and the Great Divergence: A Study in Historical National Accounting, 980–1850",
+      "venue": "Journal of Economic History 78 (4)",
+      "url": "https://doi.org/10.1017/S0022050718000529",
+      "note": "Historical national accounts for China whose per capita figures depend on population series drawn in part from Cao Shuji's Ming volume."
+    },
+    {
+      "year": 2022,
+      "authors": "Shuji Cao, Dong Yan and Richard von Glahn",
+      "title": "Population Change",
+      "venue": "The Cambridge Economic History of China, vol. 1, ed. Debin Ma and Richard von Glahn, 300–339",
+      "url": "https://doi.org/10.1017/9781108587334.010",
+      "note": "Synthesis of population change from 1000 to 1800, including the Ming peak and the seventeenth-century decline."
+    },
+    {
+      "year": 2024,
+      "authors": "Shuji Cao",
+      "title": "The Population History of China (1368–1953)",
+      "venue": "Leiden: Brill (Quantitative Economic History of China)",
+      "url": "https://www.cqh.hku.hk/?p=16930",
+      "note": "Prefecture-level population figures for 1393, 1580, 1630, 1680 and later benchmark years, with the underlying statistical models, databases and metadata."
+    },
+    {
+      "year": 2025,
+      "authors": "Julia C. Schneider",
+      "title": "Crunching Numbers in Ming Times: What Population Censuses Can Tell about Chinese Migration towards the South",
+      "venue": "Journal of the European Association for Chinese Studies 6 (2): 101–139",
+      "url": "https://doi.org/10.25365/jeacs.2025.6.2.schneider",
+      "note": "Compared Ming census figures in the Shilu, Mingshi and Da Ming huidian with gazetteers and the Huangyu kao, finding stagnant or negative registered growth in parts of the south."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Erudition (Airusheng 爱如生), Beijing",
+      "collection": "Zhongguo fangzhi ku 中国方志库 (full-text database of pre-1949 local gazetteers)",
+      "url": "http://www.er07.com/",
+      "digitized": "full",
+      "note": "The largest searchable corpus of Ming and Qing gazetteers with page images; institutional subscription."
+    },
+    {
+      "repository": "Harvard-Yenching Library, Harvard University, Cambridge, MA",
+      "collection": "Chinese local gazetteers and the Chinese Rare Books digitization project",
+      "url": "https://curiosity.lib.harvard.edu/chinese-rare-books",
+      "digitized": "partial",
+      "note": "One of the largest gazetteer holdings outside China; many Ming and Qing editions are freely viewable as page images."
+    },
+    {
+      "repository": "Library of Congress, Asian Division, Washington, DC",
+      "collection": "Chinese Rare Books collection, including Ming and Qing local gazetteers",
+      "url": "https://www.loc.gov/collections/chinese-rare-books/",
+      "digitized": "partial",
+      "note": "Open-access scans of rare Chinese editions, including many local gazetteers."
+    },
+    {
+      "repository": "National Library of China, Beijing",
+      "collection": "Zhonghua guji ziyuan ku 中华古籍资源库 (rare books and gazetteers)",
+      "url": "http://read.nlc.cn/thematDataSearch/toGujiIndex",
+      "digitized": "partial",
+      "note": "Free page images of Ming editions and gazetteers held by the National Library; registration required for some items."
+    },
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Scanned gazetteers, Ming shilu and fiscal compendia, with crowd-sourced transcription",
+      "url": "https://ctext.org/",
+      "digitized": "full",
+      "note": "Open platform with page images and OCR text, and an API suitable for bulk extraction."
+    },
+    {
+      "repository": "Shanghai Library, Shanghai",
+      "collection": "Rare editions printed on reused official paper (gongwen zhi yinben 公文纸印本), including early Ming Yellow Register sheets",
+      "url": "https://www.library.sh.cn/",
+      "digitized": "partial",
+      "note": "Several Song–Yuan editions are printed on the backs of Hongwu-era Yellow Register pages from Chuzhou; reading the registers requires imaging of the reverse sides."
+    },
+    {
+      "repository": "China Historical GIS, Harvard University and Fudan University",
+      "collection": "CHGIS time-series county and prefecture boundaries",
+      "url": "https://chgis.fas.harvard.edu/",
+      "digitized": "full",
+      "note": "Free boundary and place-name data needed to link gazetteer figures to consistent spatial units."
+    },
+    {
+      "repository": "First Historical Archives of China, Beijing",
+      "collection": "Early Qing palace memorials and Board of Revenue records on registration and land reclamation (kenhuang), 1644–1680s",
+      "url": "https://www.fhac.com.cn/",
+      "digitized": "partial",
+      "note": "Main repository for early Qing fiscal documents; access in person by application, with selected series online."
+    }
+  ]
+}

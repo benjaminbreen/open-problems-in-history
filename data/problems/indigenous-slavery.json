@@ -1,0 +1,173 @@
+{
+  "id": "indigenous-slavery",
+  "title": "How many Indigenous people were enslaved in the Americas between 1492 and 1900?",
+  "short": "Andrés Reséndez's estimate of 2.5 to 5 million enslaved Indigenous people is the only hemispheric figure, and it rests on regional extrapolation rather than a count.",
+  "region": "Americas",
+  "field": "Demography",
+  "start": 1492,
+  "end": 1900,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "The scale of Indigenous enslavement determines how far the demographic collapse of the Americas should be attributed to coerced labor, displacement and violence rather than to epidemic disease alone. It affects the comparison between Indigenous and African slavery in the colonial economies of the Caribbean, Brazil, Chile, northern Mexico, the American Southwest and the English colonies of the Southeast and New England. It also bears on how historians read Spanish and Portuguese abolitions of Indian slavery (1542, 1570, 1755) that were repeatedly evaded through categories such as just war, rescate, encomienda, peonage and 'adoption'.",
+  "stuck": "Indigenous slavery was frequently illegal or ambiguously legal, so it was recorded under euphemisms (criados, piezas, naborías, administrados, captives) or not recorded at all, and it was dispersed across many small transactions rather than concentrated in shipping. The surviving evidence is scattered among notarial protocols, lawsuits, baptismal registers, probate inventories, military reports and Indigenous testimony in Spanish, Portuguese, French, English and Indigenous languages, mostly undigitized or uncatalogued at item level. Reséndez's 2.5–5 million figure, which he presents as a cautious range, therefore aggregates regional estimates of very different quality, and several regions (Amazonia, the Río de la Plata, Central America after 1550) have no systematic count.",
+  "solved": "A published, source-linked database of individual enslaved Indigenous people and enslaving events, organized by region and period, from which documented minimums can be computed and combined with explicit, testable multipliers for under-recording, producing a hemispheric range that others can recompute region by region.",
+  "approach": "AI agents could read digitized notarial protocols, baptismal and burial registers, freedom suits and probate inventories, flag every person described by terms associated with Indigenous bondage, and link repeated appearances of the same individual across record types for historians to review. The main obstacle is access: progress depends on digitizing and indexing notarial and judicial series in Seville, Mexico City, Santiago de Chile, São Paulo, Lima and Santa Fe in partnership with those archives, and on working with Indigenous communities and projects such as Native Bound Unbound that are already assembling records.",
+  "existing": [
+    {
+      "year": 1913,
+      "authors": "Almon Wheeler Lauber",
+      "title": "Indian Slavery in Colonial Times within the Present Limits of the United States",
+      "venue": "New York: Columbia University (Studies in History, Economics and Public Law)",
+      "url": "https://doi.org/10.7312/laub91564",
+      "note": "First survey of Indigenous enslavement in the English, French and Spanish colonies north of Mexico."
+    },
+    {
+      "year": 1971,
+      "authors": "William L. Sherman",
+      "title": "Indian Slavery and the Cerrato Reforms",
+      "venue": "Hispanic American Historical Review 51 (1): 25–50",
+      "url": "https://doi.org/10.1215/00182168-51.1.25",
+      "note": "Showed the scale of Indian slavery in Guatemala and the effects of the New Laws' enforcement in the 1540s."
+    },
+    {
+      "year": 1978,
+      "authors": "Stuart B. Schwartz",
+      "title": "Indian Labor and New World Plantations: European Demands and Indian Responses in Northeastern Brazil",
+      "venue": "American Historical Review 83 (1)",
+      "url": "https://doi.org/10.2307/1865902",
+      "note": "Documented the reliance of early Bahian sugar plantations on enslaved and coerced Indigenous labor before the transition to African slavery."
+    },
+    {
+      "year": 1979,
+      "authors": "William L. Sherman",
+      "title": "Forced Native Labor in Sixteenth-Century Central America",
+      "venue": "Lincoln: University of Nebraska Press",
+      "url": "https://openlibrary.org/isbn/0803241003",
+      "note": "Regional study including the export of enslaved Indigenous people from Nicaragua and Honduras to Panama and Peru."
+    },
+    {
+      "year": 1988,
+      "authors": "John M. Monteiro",
+      "title": "From Indian to Slave: Forced Native Labour and Colonial Society in São Paulo during the Seventeenth Century",
+      "venue": "Slavery & Abolition 9 (2): 105–127",
+      "url": "https://doi.org/10.1080/01440398808574952",
+      "note": "Used São Paulo probate inventories to show the scale of bandeirante enslavement; expanded in Negros da terra (1994)."
+    },
+    {
+      "year": 2002,
+      "authors": "Alan Gallay",
+      "title": "The Indian Slave Trade: The Rise of the English Empire in the American South, 1670–1717",
+      "venue": "New Haven: Yale University Press",
+      "url": "https://openlibrary.org/isbn/0300087543",
+      "note": "Argued that between roughly 24,000 and 51,000 Indigenous people were captured and sold through the Carolina trade between 1670 and 1715, many of them exported to the Caribbean."
+    },
+    {
+      "year": 2002,
+      "authors": "James F. Brooks",
+      "title": "Captives and Cousins: Slavery, Kinship, and Community in the Southwest Borderlands",
+      "venue": "Chapel Hill: Omohundro Institute / University of North Carolina Press",
+      "url": "https://openlibrary.org/isbn/0807853828",
+      "note": "Used New Mexico baptismal registers and legal records to trace captive exchange among Spanish, Pueblo, Navajo, Apache and Comanche communities into the nineteenth century."
+    },
+    {
+      "year": 2011,
+      "authors": "Neil L. Whitehead",
+      "title": "Indigenous Slavery in South America, 1492–1820",
+      "venue": "In David Eltis and Stanley L. Engerman (eds.), The Cambridge World History of Slavery, vol. 3 (Cambridge University Press), 248–272",
+      "url": "https://doi.org/10.1017/CHOL9780521840682.012",
+      "note": "Continental synthesis covering both Indigenous and European-driven slaving in South America."
+    },
+    {
+      "year": 2012,
+      "authors": "Brett Rushforth",
+      "title": "Bonds of Alliance: Indigenous and Atlantic Slaveries in New France",
+      "venue": "Chapel Hill: Omohundro Institute / University of North Carolina Press",
+      "url": "https://doi.org/10.5149/9780807838174_rushforth",
+      "note": "Reconstructed thousands of enslaved Indigenous people (panis) in French colonial records from the Great Lakes to the Caribbean."
+    },
+    {
+      "year": 2015,
+      "authors": "Nancy E. van Deusen",
+      "title": "Global Indios: The Indigenous Struggle for Justice in Sixteenth-Century Spain",
+      "venue": "Durham: Duke University Press",
+      "url": "https://www.dukeupress.edu/global-indios",
+      "note": "Analyzes more than one hundred freedom suits brought in Castile between 1530 and 1585 by enslaved Indigenous people transported to Iberia."
+    },
+    {
+      "year": 2015,
+      "authors": "Margaret Ellen Newell",
+      "title": "Brethren by Nature: New England Indians, Colonists, and the Origins of American Slavery",
+      "venue": "Ithaca: Cornell University Press",
+      "url": "https://doi.org/10.7591/cornell/9780801434150.001.0001",
+      "note": "Shows the centrality of Indigenous enslavement and export in New England, especially after the Pequot War and King Philip's War."
+    },
+    {
+      "year": 2016,
+      "authors": "Andrés Reséndez",
+      "title": "The Other Slavery: The Uncovered Story of Indian Enslavement in America",
+      "venue": "Boston: Houghton Mifflin Harcourt",
+      "url": "https://openlibrary.org/isbn/9780547640983",
+      "note": "Hemispheric synthesis proposing that between 2.5 and 5 million Indigenous people were enslaved from 1492 to 1900, excluding encomienda and repartimiento labor."
+    },
+    {
+      "year": 2017,
+      "authors": "Arne Bialuschewski and Linford D. Fisher",
+      "title": "Guest Editors' Introduction: New Directions in the History of Native American Slavery Studies",
+      "venue": "Ethnohistory 64 (1): 1–17",
+      "url": "https://doi.org/10.1215/00141801-3688327",
+      "note": "Introduces a special issue on seventeenth-century Indigenous slavery and surveys the hemispheric literature in several languages."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Archivo General de Indias, Seville",
+      "collection": "Justicia and Escribanía de Cámara (freedom suits of indios esclavos, 1530s–1580s); Patronato; Audiencia de Chile and Audiencia de Guatemala correspondence",
+      "url": "https://pares.cultura.gob.es/inicio.html",
+      "digitized": "partial",
+      "note": "Lawsuits and royal inquiries naming enslaved Indigenous people; many legajos imaged on PARES but not described at the level of individuals."
+    },
+    {
+      "repository": "Archivo General de la Nación, Mexico City",
+      "collection": "Ramos Indios, Inquisición, Provincias Internas, Civil and Tierras",
+      "url": "https://www.gob.mx/agn",
+      "digitized": "partial",
+      "note": "Records of captives taken in the Chichimeca and northern frontier wars and of freedom petitions; indexed mostly through printed AGN catalogues."
+    },
+    {
+      "repository": "Archivo Nacional Histórico, Santiago de Chile",
+      "collection": "Real Audiencia, Capitanía General and Escribanos de Santiago (sales and registrations of Mapuche captives, 1608–1683 and after)",
+      "url": "https://www.archivonacional.gob.cl/",
+      "digitized": "partial",
+      "note": "Notarial and judicial evidence for the legal enslavement of Mapuche prisoners of war under the 1608 royal decree."
+    },
+    {
+      "repository": "Arquivo Público do Estado de São Paulo",
+      "collection": "Inventários e Testamentos (probate inventories of the seventeenth century, partly published in a printed series from 1920)",
+      "url": "https://www.arquivoestado.sp.gov.br/",
+      "digitized": "partial",
+      "note": "Inventories listing Indigenous 'administrados' and 'negros da terra' held by bandeirante households; the basis of Monteiro's estimates."
+    },
+    {
+      "repository": "New Mexico State Records Center and Archives, Santa Fe",
+      "collection": "Spanish Archives of New Mexico I and II; Mexican Archives of New Mexico",
+      "url": "https://www.srca.nm.gov/",
+      "digitized": "partial",
+      "note": "Colonial and Mexican-period government records documenting captives and genízaros; microfilm editions exist, with church registers held separately by the Archdiocese of Santa Fe."
+    },
+    {
+      "repository": "South Carolina Department of Archives and History, Columbia",
+      "collection": "Journals of the Commissioners of the Indian Trade; Records of the Secretary of the Province (bills of sale)",
+      "url": "https://scdah.sc.gov/",
+      "digitized": "partial",
+      "note": "Evidence for the Carolina trade in Indigenous captives, c. 1670–1720."
+    },
+    {
+      "repository": "Native Bound Unbound (Mellon Foundation-funded digital project)",
+      "collection": "Digital repository of records of Indigenous captivity and slavery across the Americas (legal cases, censuses, wills, church registers, objects)",
+      "url": "https://nativeboundunbound.org/",
+      "digitized": "partial",
+      "note": "Assembling person-level records and transcriptions from archives in several countries; the nearest existing equivalent to a hemispheric database."
+    }
+  ]
+}

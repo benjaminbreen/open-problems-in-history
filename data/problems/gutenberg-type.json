@@ -1,0 +1,139 @@
+{
+  "id": "gutenberg-type",
+  "title": "How did Gutenberg cast his type?",
+  "short": "Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.",
+  "region": "Europe",
+  "field": "Material & visual",
+  "start": 1450,
+  "end": 1470,
+  "flags": ["science"],
+  "matters": "The standard account of printing's origin credits Gutenberg with a system of steel punches, copper matrices and an adjustable hand mould, the method that let typefounders produce interchangeable sorts for the next four centuries. If the earliest Mainz types were instead cast from temporary or multiple matrices, the hand mould becomes a later development, possibly from the 1460s, and the chronology of technical invention, the roles of Gutenberg, Fust and Schoeffer, and comparisons with East Asian metal type all need revision. Methods for attributing and dating incunabula from type damage and sort identity also depend on what a 'single sort' is.",
+  "stuck": "Agüera y Arcas and Needham's computational clustering of the DK type found far more distinct shapes per letter than a single-matrix system should produce, but their full data and methods were only partly published. Critics, above all Reske, argue that inking, paper, pressure, wear and photography generate apparent variation large enough to swamp the signal, so that algorithmic clustering of printed impressions cannot by itself identify matrices. No surviving type, punches or moulds from Gutenberg's shop exist, so the argument rests entirely on inferences from printed impressions.",
+  "solved": "A published, reproducible dataset of every instance of selected letters across multiple copies of the DK-type prints and the 42-line Bible, with a casting model whose predicted distribution of within-letter variation matches the observed one significantly better than the alternatives, and which is consistent with impressions from experimentally cast type.",
+  "approach": "Agents can segment and register every glyph instance from the high-resolution digitizations of several B42 copies and the surviving DK-type prints, separating variation that recurs at the same text position across copies (press or inking effects) from variation that recurs across positions (sort identity). Competing casting processes (single matrix and hand mould, multiple matrices, temporary sand or clay matrices, composite punches) can then be simulated and their predicted variation compared with the observed clusters. Decisive confirmation would require collaboration with typefounders and materials scientists to cast type by each candidate method, print with period materials, and pass the impressions through the same pipeline.",
+  "existing": [
+    {
+      "year": 1969,
+      "authors": "Harry Carter",
+      "title": "A View of Early Typography up to about 1600",
+      "venue": "Oxford: Clarendon Press (Lyell Lectures 1968); reprinted London: Hyphen Press, 2002",
+      "url": "https://hyphenpress.co.uk/?p=1019",
+      "note": "Standard account of early punchcutting and typefounding by a practising typographer, treating the punch, matrix and mould as the basis of type production from the start."
+    },
+    {
+      "year": 1982,
+      "authors": "Paul Needham",
+      "title": "Johann Gutenberg and the Catholicon Press",
+      "venue": "Papers of the Bibliographical Society of America 76 (4)",
+      "url": "https://doi.org/10.1086/pbsa.76.4.24302468",
+      "note": "Argued from paper stocks that the Mainz Catholicon was printed in three impressions from reusable two-line slugs, showing that early Mainz printing used methods other than standard type composition."
+    },
+    {
+      "year": 2003,
+      "authors": "Blaise Agüera y Arcas",
+      "title": "Temporary Matrices and Elemental Punches in Gutenberg's DK Type",
+      "venue": "In Kristian Jensen, ed., Incunabula and Their Readers: Printing, Selling and Using Books in the Fifteenth Century (London: British Library)",
+      "url": "https://www.princeton.edu/news/2001/02/08/gutenbergs-role-reviewed",
+      "note": "Written up from work with Paul Needham first presented at the Grolier Club in 2001: image clustering of the DK type in the Bulla Turcorum, the Scheide B42 and other pre-1465 prints found hundreds of variant forms per letter and proposed temporary matrices formed from elemental punches (link is the 2001 Princeton announcement)."
+    },
+    {
+      "year": 2011,
+      "authors": "Aureli Alabert and Luz M. Rangel",
+      "title": "Classifying the typefaces of the Gutenberg 42-line bible",
+      "venue": "International Journal on Document Analysis and Recognition 14 (4): 303–317",
+      "url": "https://doi.org/10.1007/s10032-010-0140-6",
+      "note": "Cluster analysis of letters on a B42 page found several clusters for 'i' and 'a', which the authors read as evidence for multiple matrices per letter."
+    },
+    {
+      "year": 2015,
+      "authors": "Christoph Reske",
+      "title": "Hat Johannes Gutenberg das Gießinstrument erfunden? Mikroskopischer Typenvergleich an frühen Drucken",
+      "venue": "Gutenberg-Jahrbuch 90: 40–59; English translation, 'Did Johannes Gutenberg invent the hand mould?', JGU Mainz, 2021",
+      "url": "https://doi.org/10.25358/openscience-5699",
+      "note": "Main critique of the computational argument: microscopic comparison of DK-type prints and later incunabula concluded that printing effects make algorithmic comparison unreliable and that the observed variation fits a punch, matrix and hand mould system."
+    },
+    {
+      "year": 2017,
+      "authors": "Eric Marshall White",
+      "title": "Editio Princeps: A History of the Gutenberg Bible",
+      "venue": "London and Turnhout: Harvey Miller",
+      "url": "https://www.brepols.net/products/IS-9781909400849-1",
+      "note": "Comprehensive history and census of the 49 surviving copies and fragments of at least 14 others, the reference point for locating copies to compare."
+    },
+    {
+      "year": 2021,
+      "authors": "Mari Agata and Teru Agata",
+      "title": "Statistical Analysis of the Gutenberg 42-line Bible Types: Special Focus on Letters with a Suspension Stroke",
+      "venue": "Papers of the Bibliographical Society of America 115 (2): 167–183",
+      "url": "https://doi.org/10.1086/713981",
+      "note": "Statistical measurement of letters with suspension strokes in the Keio B42 copy as evidence for how sorts and their matrices were made."
+    },
+    {
+      "year": 2022,
+      "authors": "Mari Agata and Teru Agata",
+      "title": "Analysis of the Gutenberg 42-line Bible types aided by type-image recognition",
+      "venue": "Digital Humanities 2022 (ADHO), Tokyo",
+      "url": "https://dh-abstracts.library.virginia.edu/works/11916",
+      "note": "OCR-assisted measurement of about 120,000 letters on 46 pages of the Keio copy; found that stroke-to-letter distances differ between 40- and 42-line pages and suggested strokes and letters were punched separately."
+    },
+    {
+      "year": 2022,
+      "authors": "Luz M. Rangel and Aureli Alabert",
+      "title": "Two corrections to recent censuses of the Gutenberg 42-line bible",
+      "venue": "Journal of the Printing Historical Society, new series 3: 101–113",
+      "url": "https://investigacion.unir.net/documentos/69a0159a2cb38428f3fc0b75",
+      "note": "Corrects copy-level details in the Needham and White censuses, relevant to any multi-copy comparison of B42 type."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Niedersächsische Staats- und Universitätsbibliothek Göttingen",
+      "collection": "Göttingen vellum copy of the 42-line Bible, with the Göttinger Musterbuch and Helmasperger Notarial Instrument",
+      "url": "http://www.gutenbergdigital.de/",
+      "digitized": "full",
+      "note": "Gutenberg Digital presents complete high-resolution images of the Göttingen copy and related documents; freely accessible."
+    },
+    {
+      "repository": "Keio University Library, Tokyo",
+      "collection": "Keio copy of the 42-line Bible, volume 1 (imaged by the HUMI project)",
+      "url": "https://dcollections.lib.keio.ac.jp/en/gutenberg",
+      "digitized": "full",
+      "note": "Page images with an IIIF manifest; the copy used in the Agata studies of type statistics."
+    },
+    {
+      "repository": "Princeton University Library, Scheide Library",
+      "collection": "Scheide copy of the 42-line Bible; Bulla Thurcorum (Latin, 1456, DK type, unique copy); 31-line Cyprus Indulgence (1454)",
+      "url": "https://dpul.princeton.edu/gutenberg",
+      "digitized": "partial",
+      "note": "The copies studied by Agüera y Arcas and Needham; selected items are online through the Princeton Digital Library."
+    },
+    {
+      "repository": "Library of Congress, Rare Book and Special Collections Division, Washington, DC",
+      "collection": "Vellum copy of the 42-line Bible (three volumes, ex Vollbehr)",
+      "url": "https://www.loc.gov/item/52002339/",
+      "digitized": "full",
+      "note": "One of three complete vellum copies; imaged in full with Octavo in the early 2000s."
+    },
+    {
+      "repository": "Harry Ransom Center, University of Texas at Austin",
+      "collection": "Gutenberg Bible (paper copy, acquired 1978)",
+      "url": "https://www.hrc.utexas.edu/gutenberg-bible/",
+      "digitized": "full",
+      "note": "Complete copy, digitized and available through the Ransom Center's digital collections."
+    },
+    {
+      "repository": "Staatsbibliothek zu Berlin and Gesamtkatalog der Wiegendrucke",
+      "collection": "DK-type prints, including the German 'Bulla widder die Turcken' (1456) and Donatus fragments; GW records for all copies",
+      "url": "https://www.gesamtkatalogderwiegendrucke.de/",
+      "digitized": "partial",
+      "note": "GW lists every surviving DK-type fragment and its holding library, many of which hold only single leaves or binding fragments."
+    },
+    {
+      "repository": "Gutenberg-Museum, Mainz",
+      "collection": "Fragment vom Weltgericht (Sibyllenweissagung), DK type; museum copies of the 42-line Bible; reconstructed press and casting equipment",
+      "url": "https://www.gutenberg-museum.de/",
+      "digitized": "none",
+      "note": "Holds one of the earliest DK-type prints examined by Reske and is a natural partner for casting experiments."
+    }
+  ]
+}

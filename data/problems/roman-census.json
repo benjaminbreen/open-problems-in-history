@@ -1,0 +1,166 @@
+{
+  "id": "roman-census",
+  "title": "How large was the Roman citizen population in the late Republic and under Augustus?",
+  "short": "Roman census totals jump from about 910,000 in 70/69 BCE to 4,063,000 in 28 BCE; whether this reflects a change in who was counted or real growth remains disputed.",
+  "region": "Mediterranean",
+  "field": "Demography",
+  "start": -115,
+  "end": 14,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "Estimates of Italy's population under Augustus range from roughly 5–7 million on the low count to 14 million or more on the high count, and every account of late Republican agrarian crisis, slavery, military recruitment, urbanization, colonization and per-capita income in Roman Italy builds on one of them. The low count implies a stagnant or declining free rural population consistent with the Gracchan narrative of peasant displacement; the high count implies substantial growth and a densely settled countryside. The figures are also a benchmark for population estimates of the whole empire.",
+  "stuck": "The surviving totals are bare numbers transmitted by literary sources (Livy's Periochae, Phlegon of Tralles, Augustus' Res Gestae) with no statement of who was registered, and the text tradition itself varies (the Periocha for 70/69 BCE is transmitted as 900,000, Phlegon gives 910,000, and the Greek version of the Res Gestae differs from the Latin for 28 BCE). The 70/69 BCE figure is widely thought to be an undercount after the Social War enfranchisement, so the size of the jump is itself uncertain. Survey archaeology, the main independent check, depends on site-recovery rates, dating of surface ceramics and assumptions about household size that are hard to calibrate.",
+  "solved": "A model that converts each reading (low, middle, high) into predicted densities of occupied rural sites and urban areas for specific surveyed regions, compared against harmonized survey datasets with stated recovery rates, showing that one reading fits the observed settlement record within its uncertainty and the others do not.",
+  "approach": "Agents can assemble all census figures with their textual variants, enfranchisement and colonization data and the main demographic models into one dataset, then harmonize published field-survey gazetteers (Tiber Valley, Roman Suburbium, Pontine Region, Albegna/Ager Cosanus, Biferno and others) into site counts by period and size class. Bayesian estimation of recovery rates across overlapping surveys would let the competing counts be scored against the same evidence. Progress needs digitization of legacy survey archives and site cards held by the British School at Rome and Italian and Dutch institutions, in collaboration with their archivists and survey directors.",
+  "existing": [
+    {
+      "year": 1886,
+      "authors": "Julius Beloch",
+      "title": "Die Bevölkerung der griechisch-römischen Welt",
+      "venue": "Leipzig: Duncker & Humblot",
+      "url": "https://archive.org/details/diebevlkerungde01belogoog",
+      "note": "Founding study that read the Augustan totals as including women and children, the origin of the low count."
+    },
+    {
+      "year": 1924,
+      "authors": "Tenney Frank",
+      "title": "Roman Census Statistics from 225 to 28 B.C.",
+      "venue": "Classical Philology 19 (4): 329–341",
+      "url": "https://doi.org/10.1086/360609",
+      "note": "Argued that the Augustan figures counted adult males like the Republican ones, implying a much larger population."
+    },
+    {
+      "year": 1971,
+      "authors": "P. A. Brunt",
+      "title": "Italian Manpower 225 B.C.–A.D. 14",
+      "venue": "Oxford: Clarendon Press",
+      "url": "https://archive.org/details/italianmanpower20000brun",
+      "note": "Comprehensive defence of the low count, linking it to military recruitment, colonization and the decline of the free peasantry."
+    },
+    {
+      "year": 1994,
+      "authors": "Elio Lo Cascio",
+      "title": "The Size of the Roman Population: Beloch and the Meaning of the Augustan Census Figures",
+      "venue": "Journal of Roman Studies 84: 23–40",
+      "url": "https://doi.org/10.2307/300868",
+      "note": "Reopened the debate by arguing that the Augustan totals count adult males, reviving the high count."
+    },
+    {
+      "year": 2001,
+      "authors": "Neville Morley",
+      "title": "The Transformation of Italy, 225–28 B.C.",
+      "venue": "Journal of Roman Studies 91: 50–62",
+      "url": "https://doi.org/10.2307/3184769",
+      "note": "Examined the demographic and economic implications of the rival readings for late Republican Italy."
+    },
+    {
+      "year": 2005,
+      "authors": "Robert Witcher",
+      "title": "The extended metropolis: Urbs, suburbium and population",
+      "venue": "Journal of Roman Archaeology 18: 120–138",
+      "url": "https://doi.org/10.1017/S1047759400007248",
+      "note": "Showed that survey-based population estimates for Rome's hinterland depend heavily on assumed site-recovery rates, with the high count requiring low recovery."
+    },
+    {
+      "year": 2008,
+      "authors": "Walter Scheidel",
+      "title": "Roman Population Size: The Logic of the Debate",
+      "venue": "In L. de Ligt and S. Northwood (eds.), People, Land, and Politics: Demographic Developments and the Transformation of Roman Italy 300 BC–AD 14 (Leiden: Brill)",
+      "url": "https://doi.org/10.1163/ej.9789004171183.i-656",
+      "note": "Set out what each count implies for fertility, urbanization, slavery and military participation, and which evidence could discriminate between them."
+    },
+    {
+      "year": 2008,
+      "authors": "Saskia Hin",
+      "title": "Counting Romans",
+      "venue": "In L. de Ligt and S. Northwood (eds.), People, Land, and Politics (Leiden: Brill)",
+      "url": "https://doi.org/10.1163/ej.9789004171183.i-656",
+      "note": "Proposed a middle count in which the Augustan census registered all citizens sui iuris regardless of age and sex."
+    },
+    {
+      "year": 2011,
+      "authors": "Alessandro Launaro",
+      "title": "Peasants and Slaves: The Rural Population of Roman Italy (200 BC to AD 100)",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://assets.cambridge.org/97811070/04795/frontmatter/9781107004795_frontmatter.pdf",
+      "note": "Used Italian field-survey trends to argue against the low count, while conceding that survey data cannot readily separate the middle and high counts."
+    },
+    {
+      "year": 2012,
+      "authors": "Luuk de Ligt",
+      "title": "Peasants, Citizens and Soldiers: Studies in the Demographic History of Roman Italy 225 BC–AD 100",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9781139003834",
+      "note": "Defended a revised low count using urban networks, colonial land allocations and military data."
+    },
+    {
+      "year": 2013,
+      "authors": "Saskia Hin",
+      "title": "The Demography of Roman Italy: Population Dynamics in an Ancient Conquest Society, 201 BCE–14 CE",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511782305",
+      "note": "Book-length development of the middle count with explicit demographic modelling of fertility, mortality and migration."
+    },
+    {
+      "year": 2020,
+      "authors": "Helen Patterson, Robert Witcher and Helga Di Giuseppe",
+      "title": "The Changing Landscapes of Rome's Northern Hinterland: The British School at Rome's Tiber Valley Project",
+      "venue": "Oxford: Archaeopress",
+      "url": "https://doi.org/10.2307/jj.15136055",
+      "note": "Final synthesis of the restudy of the South Etruria Survey and related data, a database of about 5,000 sites."
+    },
+    {
+      "year": 2022,
+      "authors": "P. A. J. Attema, P. Carafa, W. M. Jongman, C. J. Smith, A. J. Bronkhorst, M. C. Capanna and others",
+      "title": "The Roman Hinterland Project: Integrating Archaeological Field Surveys around Rome and Beyond",
+      "venue": "European Journal of Archaeology 25 (2): 238–258",
+      "url": "https://doi.org/10.1017/eaa.2021.51",
+      "note": "Harmonized several survey datasets around Rome into a common database, the kind of integration needed to test population models."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "LacusCurtius (University of Chicago), text of the Res Gestae Divi Augusti",
+      "collection": "Res Gestae 8 (census of 28 BCE, 8 BCE and 14 CE) from the Monumentum Ancyranum, Ankara",
+      "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html",
+      "digitized": "full",
+      "note": "Latin text and translation of the census totals 4,063,000, 4,233,000 and 4,937,000; the inscription itself survives on the Temple of Augustus and Roma in Ankara."
+    },
+    {
+      "repository": "British School at Rome, Archive",
+      "collection": "South Etruria Survey (John Ward-Perkins) records and Tiber Valley Project materials",
+      "url": "https://www.bsr.ac.uk/archive",
+      "digitized": "partial",
+      "note": "Site cards, maps and photographs from the foundational survey of Rome's northern hinterland; consultation by appointment."
+    },
+    {
+      "repository": "Fasti Online Survey, AIAC",
+      "collection": "Database of archaeological field surveys in Italy and the Mediterranean",
+      "url": "https://www.fastionline.org/survey/",
+      "digitized": "partial",
+      "note": "Records of survey projects, including the Pontine Region Project, with bibliographic and spatial metadata."
+    },
+    {
+      "repository": "Epigraphik-Datenbank Clauss/Slaby (EDCS)",
+      "collection": "Latin inscriptions of Italy, including funerary inscriptions with ages at death",
+      "url": "https://db.edcs.eu/epigr/epi.php?s_sprache=en",
+      "digitized": "full",
+      "note": "Searchable texts of Latin inscriptions, used in debates over age structure, mortality and family size in Roman Italy."
+    },
+    {
+      "repository": "Epigraphic Database Roma (EDR)",
+      "collection": "Greek and Latin inscriptions of Rome and Italy",
+      "url": "http://www.edr-edr.it/",
+      "digitized": "full",
+      "note": "Edited texts with photographs and bibliography for Italian inscriptions relevant to population and status."
+    },
+    {
+      "repository": "Livius.org",
+      "collection": "Livy, Periochae 96–100 (Periocha 98: the census of 70/69 BCE)",
+      "url": "https://www.livius.org/sources/content/livy/livy-periochae-96-100/",
+      "digitized": "full",
+      "note": "Translation of the epitome that transmits the 70/69 BCE total; compare Phlegon of Tralles' 910,000."
+    }
+  ]
+}

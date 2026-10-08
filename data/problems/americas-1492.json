@@ -1,0 +1,175 @@
+{
+  "id": "americas-1492",
+  "title": "How many people lived in the Americas in 1492?",
+  "short": "Estimates of the hemisphere's population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.",
+  "region": "Americas",
+  "field": "Demography",
+  "start": 1492,
+  "end": 1650,
+  "flags": [
+    "digitization",
+    "science"
+  ],
+  "matters": "The contact population sets the scale of the demographic collapse that followed, and so the magnitude of the most consequential mortality event of the early modern world. It underpins arguments about the density and environmental impact of Indigenous societies (including the extent of anthropogenic landscapes in Amazonia and eastern North America), about the labor economies of the Spanish and Portuguese empires, and about whether reforestation of abandoned land contributed to the atmospheric CO2 minimum around 1610 that Lewis and Maslin proposed as a marker for the Anthropocene.",
+  "stuck": "Almost no direct counts exist for 1492: early colonial tribute lists, visitas and missionary reports begin decades after epidemics had already struck, so every estimate projects backward through assumed depopulation ratios or carrying capacities. Hemispheric totals are built by summing regional estimates of very uneven quality, and the same sparse figures support results as different as Kroeber's roughly 8.4 million and Dobyns's 90–112 million. Archaeological proxies (settlement counts, radiocarbon date densities, LiDAR-mapped house platforms) measure occupation over centuries rather than population at a single date.",
+  "solved": "A regional-level reconstruction for c. 1492 in which every region's estimate is tied to an openly published dataset of documentary counts and archaeological proxies, with stated assumptions and uncertainty intervals, such that the hemispheric total and its interval can be recomputed and the main regional disagreements (central Mexico, the Andes, Amazonia, eastern North America) are each narrowed by independent lines of evidence.",
+  "approach": "AI agents could extract every population figure from digitized tribute rolls, visitas, relaciones geográficas and mission registers into a common table with date, place, unit counted and source, so that depopulation curves can be fitted per province rather than assumed. This requires further digitization and transcription of tribute and visita series held at the Archivo General de Indias and the Archivo General de la Nación (Mexico) and of Andean visitas and revisitas in Lima and Sucre. On the archaeological side, collaboration with archaeologists working on LiDAR survey, settlement-pattern data and radiocarbon databases is needed to produce calibrated occupation estimates for the decades just before contact.",
+  "existing": [
+    {
+      "year": 1939,
+      "authors": "A. L. Kroeber",
+      "title": "Cultural and Natural Areas of Native North America",
+      "venue": "University of California Publications in American Archaeology and Ethnology 38",
+      "url": "https://digitalassets.lib.berkeley.edu/anthpubs/ucb/text/ucp038-001.pdf",
+      "note": "Low-count benchmark: about 900,000 north of Mexico and, in the hemispheric total usually attributed to him, roughly 8.4 million."
+    },
+    {
+      "year": 1954,
+      "authors": "Ángel Rosenblat",
+      "title": "La población indígena y el mestizaje en América",
+      "venue": "Buenos Aires: Nova, 2 vols.",
+      "url": "https://www.memoriachilena.gob.cl/602/w3-article-66255.html",
+      "note": "Region-by-region compilation that put the hemisphere at about 13.4 million in 1492."
+    },
+    {
+      "year": 1963,
+      "authors": "Woodrow Borah and Sherburne F. Cook",
+      "title": "The Aboriginal Population of Central Mexico on the Eve of the Spanish Conquest",
+      "venue": "Ibero-Americana 45, Berkeley: University of California Press",
+      "url": "https://publishing.cdlib.org/ucpressebooks/public/book/essays-in-population-history-vol-iii-mexico-and-california.html",
+      "note": "Used tribute records to estimate about 25.2 million for central Mexico in 1518, falling to around 1 million by the early seventeenth century."
+    },
+    {
+      "year": 1966,
+      "authors": "Henry F. Dobyns",
+      "title": "Estimating Aboriginal American Population: An Appraisal of Techniques with a New Hemispheric Estimate",
+      "venue": "Current Anthropology 7 (4): 395–416",
+      "url": "https://doi.org/10.1086/200749",
+      "note": "Applied a 20:1 to 25:1 depopulation ratio from population nadirs to propose 90–112 million for the hemisphere."
+    },
+    {
+      "year": 1980,
+      "authors": "Rudolph A. Zambardino",
+      "title": "Mexico's Population in the Sixteenth Century: Demographic Anomaly or Mathematical Illusion?",
+      "venue": "Journal of Interdisciplinary History 11 (1)",
+      "url": "https://doi.org/10.2307/202984",
+      "note": "Statistical critique showing the wide error margins in the Cook and Borah reconstruction and arguing for a substantially lower central Mexican figure."
+    },
+    {
+      "year": 1987,
+      "authors": "Russell Thornton",
+      "title": "American Indian Holocaust and Survival: A Population History since 1492",
+      "venue": "Norman: University of Oklahoma Press",
+      "url": "https://www.oupress.com/9780806122205/american-indian-holocaust-and-survival/",
+      "note": "Estimated over 7 million north of Mexico and about 72 million for the hemisphere, emphasizing epidemics, war and removal."
+    },
+    {
+      "year": 1992,
+      "authors": "William M. Denevan (ed.)",
+      "title": "The Native Population of the Americas in 1492",
+      "venue": "Madison: University of Wisconsin Press, 2nd ed. (1st ed. 1976)",
+      "url": "https://archive.org/details/nativepopulation0000unse",
+      "note": "Standard regional compilation; the second edition revised Denevan's hemispheric figure from about 57 million to about 54 million."
+    },
+    {
+      "year": 1998,
+      "authors": "David Henige",
+      "title": "Numbers from Nowhere: The American Indian Contact Population Debate",
+      "venue": "Norman: University of Oklahoma Press",
+      "url": "https://www.oupress.com/9780806190365/numbers-from-nowhere/",
+      "note": "Sustained source-critical argument that high counts rest on unreliable chronicle figures and arbitrary extrapolation."
+    },
+    {
+      "year": 2003,
+      "authors": "Massimo Livi-Bacci",
+      "title": "Return to Hispaniola: Reassessing a Demographic Catastrophe",
+      "venue": "Hispanic American Historical Review 83 (1): 3–51",
+      "url": "https://doi.org/10.1215/00182168-83-1-3",
+      "note": "Reassesses the Taíno population and argues that conquest, labor demands and social disruption drove decline before smallpox arrived in 1518."
+    },
+    {
+      "year": 2010,
+      "authors": "George R. Milner and George Chaplin",
+      "title": "Eastern North American Population at ca. A.D. 1500",
+      "venue": "American Antiquity 75 (4): 707–726",
+      "url": "https://doi.org/10.7183/0002-7316.75.4.707",
+      "note": "Archaeologically based estimate for eastern North America that supports moderate rather than very high figures."
+    },
+    {
+      "year": 2015,
+      "authors": "Simon L. Lewis and Mark A. Maslin",
+      "title": "Defining the Anthropocene",
+      "venue": "Nature 519: 171–180",
+      "url": "https://doi.org/10.1038/nature14258",
+      "note": "Proposed the 1610 CO2 minimum (the 'Orbis spike') as an Anthropocene marker, linking it to post-contact depopulation and reforestation in the Americas."
+    },
+    {
+      "year": 2019,
+      "authors": "Alexander Koch, Chris Brierley, Mark M. Maslin and Simon L. Lewis",
+      "title": "Earth System Impacts of the European Arrival and Great Dying in the Americas after 1492",
+      "venue": "Quaternary Science Reviews 207: 13–36",
+      "url": "https://doi.org/10.1016/j.quascirev.2018.12.004",
+      "note": "Meta-analysis of 119 regional estimates giving 60.5 million (interquartile range 44.8–78.2 million) and a 90 percent decline, with regrowth on abandoned land accounting for part of the CO2 drop."
+    },
+    {
+      "year": 2022,
+      "authors": "Heiko Prümers, Carla Jaimes Betancourt, José Iriarte, Mark Robinson and Martin Schaich",
+      "title": "Lidar Reveals Pre-Hispanic Low-Density Urbanism in the Bolivian Amazon",
+      "venue": "Nature 606: 325–328",
+      "url": "https://doi.org/10.1038/s41586-022-04780-4",
+      "note": "LiDAR mapping of Casarabe-culture settlements (c. 500–1400 CE) that strengthens the case for dense pre-contact occupation in parts of Amazonia."
+    },
+    {
+      "year": 2025,
+      "authors": "Robert L. Kelly, Madeline Mackie, Spencer Pelton and Erick Robinson",
+      "title": "Spatiotemporal Distribution of the North American Indigenous Population prior to European Contact",
+      "venue": "Proceedings of the National Academy of Sciences 122 (6)",
+      "url": "https://doi.org/10.1073/pnas.2419454122",
+      "note": "Radiocarbon-density analysis of over 61,000 dates suggesting a continental peak around 1150 CE and regional declines well before contact, complicating back-projection from post-contact nadirs."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Archivo General de Indias, Seville",
+      "collection": "Contaduría (tribute accounts), Justicia, Audiencias de México, Lima and Charcas (visitas, tasaciones), Patronato; relaciones geográficas held in Indiferente General",
+      "url": "https://pares.cultura.gob.es/inicio.html",
+      "digitized": "partial",
+      "note": "The core source for early tribute assessments and visitas; many legajos are imaged on PARES but item-level description and transcription are thin."
+    },
+    {
+      "repository": "Archivo General de la Nación, Mexico City",
+      "collection": "Ramos Tributos, Indios, Padrones, Tierras and Hospital de Jesús",
+      "url": "https://www.gob.mx/agn",
+      "digitized": "partial",
+      "note": "Sixteenth- and seventeenth-century tribute counts and padrones for New Spain, indexed mainly by printed AGN catalogues; digitization is incomplete."
+    },
+    {
+      "repository": "Benson Latin American Collection, University of Texas at Austin",
+      "collection": "Joaquín García Icazbalceta collection of Relaciones Geográficas of Mexico and Guatemala, 1578–1586 (43 of the 167 known responses)",
+      "url": "https://sites.utexas.edu/llilasbensonds/?p=704",
+      "digitized": "full",
+      "note": "Imaged manuscripts and painted maps answering the 1577 questionnaire, which asked about past and present population; most other responses are in Seville and at the Real Academia de la Historia, Madrid."
+    },
+    {
+      "repository": "The Huntington Library, San Marino, California",
+      "collection": "Early California Population Project (baptism, marriage and burial registers of the California missions, 1769–1850)",
+      "url": "https://huntington.org/early-california-population-project",
+      "digitized": "full",
+      "note": "Record-level database of over 100,000 baptisms and 70,000 burials; a model for linking mission registers elsewhere in the Spanish borderlands. Free registration required."
+    },
+    {
+      "repository": "p3k14c global archaeological radiocarbon database",
+      "collection": "Compiled radiocarbon dates for the Americas (including the Canadian Archaeological Radiocarbon Database)",
+      "url": "https://www.p3k14c.org/",
+      "digitized": "full",
+      "note": "Open dataset used for date-density proxies of past population; coverage is uneven between regions."
+    },
+    {
+      "repository": "OpenTopography (San Diego Supercomputer Center)",
+      "collection": "Archaeological and environmental airborne LiDAR point clouds for the Americas",
+      "url": "https://opentopography.org/",
+      "digitized": "full",
+      "note": "Hosts some published LiDAR datasets; many archaeological surveys (e.g. Maya lowlands, Amazonia) are held by project teams or national agencies and require collaboration to access."
+    }
+  ]
+}
