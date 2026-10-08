@@ -1,0 +1,23 @@
+/* "Made by Benjamin Breen" signature, shared across sites.
+   Markup:
+   <p class="signature">Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"><img src="res-obscura.png" alt="" width="28" height="28"></a></p>
+   Each site sets --sig-fg, --sig-muted and --sig-rule for its own background. */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+.signature {
+  --sig-fg: #16161a; --sig-muted: #5c5c63; --sig-rule: #b9b6ae;
+  display: flex; align-items: center; justify-content: center; gap: 10px; margin: 0;
+  font: 400 15px/1 Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--sig-muted); letter-spacing: 0;
+}
+.signature .sig-name {
+  font-weight: 600; color: var(--sig-fg); text-decoration: none;
+  border-bottom: 1px solid var(--sig-rule); padding-bottom: 3px; transition: border-color .2s;
+}
+.signature .sig-name:hover { border-bottom-color: var(--sig-fg); }
+.signature .sig-logo {
+  display: block; width: 28px; height: 28px; border-radius: 50%; margin-left: 2px;
+  box-shadow: 0 0 0 1px var(--sig-rule); transition: transform .3s;
+}
+.signature .sig-logo:hover { transform: rotate(-8deg); }
+.signature .sig-logo img { display: block; width: 100%; height: 100%; border-radius: 50%; }

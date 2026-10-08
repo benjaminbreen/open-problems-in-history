@@ -137,6 +137,7 @@ async function loadComments(id, el = app.querySelector(`.cbox[data-for="${CSS.es
   let list = [];
   try { list = await api(`/api/comments?id=${encodeURIComponent(id)}`); } catch { el.innerHTML = `<div class="comments"><p class="note">Comments could not be loaded.</p></div>`; return; }
   state.counts[id] = list.length;
+  stats();
   const admin = !!adminToken();
   el.innerHTML = `<div class="comments">
     ${list.map((c) => `<div class="comment"><div class="who"><b>${esc(c.name)}</b> · ${when(c.t)}${admin ? ` <button type="button" class="linkbtn del" data-del="${esc(c.cid)}" data-pid="${esc(id)}">delete</button>` : ""}</div><p>${esc(c.text)}</p></div>`).join("")}
@@ -224,6 +225,7 @@ async function vote(id, v) {
 }
 
 function refreshVotes(id) {
+  stats();
   for (const box of app.querySelectorAll(`.vote[data-id="${CSS.escape(id)}"]`)) box.outerHTML = voteBox(id);
 }
 
@@ -314,6 +316,20 @@ async function renderAdmin() {
     ${["pending", "approved", "rejected"].map((st) => `<section><h2>${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
 
+// ---------- footer ----------
+function stats() {
+  const n = (f) => problems.filter((p) => p.flags?.includes(f)).length;
+  const sum = (o, re) => Object.entries(o).reduce((t, [k, v]) => t + (re.test(k) ? Math.max(0, Number(v) || 0) : 0), 0);
+  const votes = sum(state.tally, /:(up|down)$/);
+  const comments = sum(state.counts, /./);
+  const works = problems.reduce((t, p) => t + (p.existing?.length || 0), 0);
+  const archives = problems.reduce((t, p) => t + (p.archives?.length || 0), 0);
+  document.getElementById("stats").innerHTML = [
+    `${all().length} problems`, `${n("digitization")} need digitization`, `${n("science")} need scientists`,
+    `${works} works cited`, `${archives} archives`, `${votes} votes`, `${comments} comments`,
+  ].map((x) => `<span>${x}</span>`).join("");
+}
+
 // ---------- router ----------
 function route() {
   const h = location.hash.replace(/^#/, "") || "/";
@@ -342,3 +358,4 @@ const [p, s] = await Promise.all([
 problems = p;
 state = s;
 route();
+stats();

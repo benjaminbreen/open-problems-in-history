@@ -141,8 +141,16 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 .admin h2 { padding: 18px 0 8px; border: 0; }
 .del { color: var(--accent); margin-left: 8px; }
 
-.foot { display: flex; justify-content: space-between; padding: 28px 0 44px; margin-top: 32px; border-top: 3px solid var(--ink); font-size: 13px; color: var(--muted); }
+.foot { margin-top: 48px; border-top: 3px solid var(--ink); font-size: 13px; color: var(--ink-2); }
 .foot a { text-decoration: none; }
+.foot a:hover { color: var(--ink); }
+.foot-top { display: flex; justify-content: space-between; gap: 24px 48px; flex-wrap: wrap; padding: 26px 0 30px; border-bottom: 1px solid var(--rule); }
+.stats { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 4px 0; color: var(--muted); max-width: 640px; }
+.stats span:not(:last-child)::after { content: "·"; margin: 0 10px; color: var(--rule); }
+.foot-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.foot-sig { position: relative; padding: 30px 0 40px; }
+.foot-sig .quiet { position: absolute; right: 0; top: 36px; font-size: 12px; }
+.signature { --sig-fg: var(--ink); --sig-muted: var(--muted); --sig-rule: var(--rule); }
 .quiet { color: var(--rule); }
 .quiet:hover { color: var(--muted); }
 
@@ -172,3 +180,6 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
   .sbody { padding-top: 8px; }
 }
 .admin section { display: block; }
+@media (max-width: 640px) {
+  .foot-sig .quiet { position: static; display: block; text-align: center; margin-top: 18px; }
+}
