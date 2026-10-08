@@ -1,9 +1,9 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/suggest", "destination": "/index.html" },
-    { "source": "/contact", "destination": "/index.html" },
-    { "source": "/admin", "destination": "/index.html" }
+    { "source": "/suggest", "destination": "/" },
+    { "source": "/contact", "destination": "/" },
+    { "source": "/admin", "destination": "/" }
   ],
   "headers": [
     { "source": "/llms.txt", "headers": [{ "key": "Content-Type", "value": "text/plain; charset=utf-8" }] }
