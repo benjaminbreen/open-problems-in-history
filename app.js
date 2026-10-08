@@ -125,7 +125,7 @@ app.addEventListener("submit", async (e) => {
     anchor.parentNode.querySelector(".thanks")?.remove();
     anchor.after(msg);
   }
-  if (f.matches(".sf")) {
+  if (f.matches(".sf:not(.af)")) {
     const data = Object.fromEntries(new FormData(f));
     f.querySelector("button").disabled = true;
     try { await api("/api/suggest", { method: "POST", body: data }); }
