@@ -25,6 +25,13 @@
       "note": "Established the scale of Japanese silver exports, which competed with American silver as a source of China's supply."
     },
     {
+      "authors": "María Cristina Urrutia de Stebelski",
+      "year": 1980,
+      "title": "Guía del ramo Filipinas",
+      "venue": "México: Archivo General de la Nación (Serie Guías y Catálogos 5)",
+      "note": "Guide to the 63 volumes of the AGN's Ramo Filipinas, the Mexican side of the Manila galleon administration."
+    },
+    {
       "year": 1982,
       "authors": "William S. Atwell",
       "title": "International Bullion Flows and the Chinese Economy circa 1530–1650",
@@ -39,6 +46,14 @@
       "venue": "American Historical Review 93 (4): 898–935",
       "url": "https://doi.org/10.1086/ahr/93.4.898",
       "note": "Long-run production series for Peruvian and Mexican silver from registered taxes, the base for most later flow estimates."
+    },
+    {
+      "authors": "Antonia Heredia Herrera",
+      "year": 1989,
+      "title": "Filipinas en el Archivo General de Indias",
+      "venue": "In El Extremo Oriente Ibérico: Investigaciones históricas, metodología y estado de la cuestión, Madrid: Agencia Española de Cooperación Internacional and CSIC, 149–183 (revised from Anuario de Estudios Americanos 37, 1980)",
+      "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
+      "note": "Classification of the AGI's Audiencia de Filipinas fonds by series, with legajo ranges for the Manila treasury accounts and galleon registers."
     },
     {
       "year": 1990,
@@ -145,13 +160,13 @@
           "name": "Filipinas: general accounts of the Real Hacienda, 1726-1834",
           "ref": "Filipinas, legs. 858-868 and 871",
           "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
-          "note": "General accounts of the Manila treasury with detailed receipts (cargo) and expenditure (data); described in the Archivo General de Indias catalogue of the Filipinas section."
+          "note": "General accounts of the Manila treasury with detailed receipts (cargo) and expenditure (data), described in Heredia Herrera (1989)."
         },
         {
           "name": "Filipinas: testimonies of registros de naos, 1657-1809",
           "ref": "Filipinas, legs. 934-964 (selection)",
           "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
-          "note": "Sewn registers formed at the Manila treasury for each galleon, with appraisal of goods, tonnage survey and the allotment of cargo space, sent to Spain; spread over legajos 934-964.",
+          "note": "Sewn registers formed at the Manila treasury for each galleon, with appraisal of goods, tonnage survey and the allotment of cargo space, sent to Spain; spread over legajos 934-964; series described in Heredia Herrera (1989).",
           "match": [
             "galleon registers"
           ]
@@ -159,7 +174,7 @@
         {
           "name": "Contaduría, Section II (pre-1726 Philippine accounts)",
           "ref": "ES.41091.AGI//CONTADURIA",
-          "note": "Some finding aids place the Manila treasury accounts for years before 1726 in the Contaduría rather than in Filipinas."
+          "note": "Heredia Herrera (1989) places the Manila treasury accounts for years before 1726 in the Contaduría rather than in Filipinas."
         }
       ]
     },
@@ -176,7 +191,8 @@
       "holdings": [
         {
           "name": "Ramo Filipinas",
-          "note": "Sixty-three volumes from 1718 on the Philippines and the Manila galleon trade, with a published guide to the series."
+          "note": "Sixty-three volumes from 1718 on the Philippines and the Manila galleon trade, described in the guide by Urrutia de Stebelski (1980).",
+          "ref": "AGN, Filipinas, vols. 1–63"
         },
         {
           "name": "Casa de Moneda",

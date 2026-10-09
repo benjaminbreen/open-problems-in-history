@@ -114,6 +114,11 @@ function citeLinker(existing = [], archives = []) {
     if (!names.length || /\s/.test(surname(names[0]))) return;
     if (names.length === 2) add(`${surname(names[0])} and ${surname(names[1])}`, { ref: `w${i}`, year: String(e.year), kind: "w" });
     add(surname(names[0]), { ref: `w${i}`, year: String(e.year), kind: "w" });
+    // compound surnames and particles ("Heredia Herrera", "Urrutia de Stebelski", "von Glahn"):
+    // each trailing run of the name also matches, and the longest one present in the text wins
+    const toks = names[0].split(/\s+/).filter((t) => !/^[A-Z]\.?$|^[A-Z]\.[A-Z]\.?$/.test(t));
+    for (let k = 1; k < toks.length - 1; k++) add(toks.slice(k).join(" "), { ref: `w${i}`, year: String(e.year), kind: "w" });
+    if (toks.length === 2 && /^[a-z]/.test(toks[0])) add(toks.join(" "), { ref: `w${i}`, year: String(e.year), kind: "w" });
   });
   archives.forEach((a, i) => {
     archiveNames(a).forEach((n) => add(n, { ref: `a${i}`, kind: "a" }));
