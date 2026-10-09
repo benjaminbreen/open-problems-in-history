@@ -9,6 +9,20 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Identify unedited Galenic translations listed by Sezgin, Ullmann and Fichtner in the Süleymaniye, Iranian libraries and the Escorial, and arrange imaging and catalogue records."
+    },
+    {
+      "who": "philologists",
+      "ask": "Match Galen-attributed passages in al-Hawi, Ibn Abi Usaybi'a and Maimonides to works lost in Greek, using Galen's and Hunayn's descriptions of their contents."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Model how Hunayn-school translators rendered Greek terms, using the Glossarium Graeco-Arabicum, and apply it to OpenITI texts to flag passages matching no extant Greek work."
+    }
+  ],
   "matters": "Galen is the largest surviving author of Greek antiquity, yet his own lists and Hunayn ibn Ishaq's Risala name many works whose Greek text is lost, including logical, philosophical and Hippocratic commentaries. Several have already been recovered wholly or partly from Arabic (On Medical Experience, the later books of On Anatomical Procedures, On Examinations by which the Best Physicians are Recognised, the commentaries on Epidemics II and VI), and each recovery has changed accounts of ancient empiricism, anatomy or Hippocratic exegesis. Identifying further texts would also clarify what Arabic medicine and philosophy actually inherited from Galen, as opposed to what later authors attributed to him.",
   "stuck": "Hunayn's Risala (c. 863, with later additions) describes about 129 Galenic works translated into Syriac or Arabic, but many of those translations survive only as quotations embedded in later compilations such as al-Razi's al-Hawi, Maimonides' Medical Aphorisms and Ibn Abi Usaybi'a's biographical dictionary, often paraphrased and attributed loosely. Large numbers of Arabic medical manuscripts in Istanbul, Iran, the Escorial and elsewhere remain uncatalogued in detail or unedited, and the Syriac layer, as the Galen Palimpsest shows, often survives only as erased undertext. Matching an Arabic paraphrase to a lost Greek work requires simultaneous command of Galen's Greek corpus, Hunayn's translation vocabulary and the Arabic compilers' citation habits, a combination few scholars have.",
   "solved": "A passage or treatise in Arabic or Syriac is shown to derive from a Galenic work lost in Greek, by matching its title and content to Galen's or Hunayn's descriptions, by translation-vocabulary alignment with Hunayn's known versions, and by at least one independent witness (a second manuscript, a Greek or Latin fragment, or an attributed quotation elsewhere).",
@@ -271,6 +285,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

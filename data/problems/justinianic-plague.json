@@ -9,6 +9,20 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geneticists",
+      "ask": "Align the pathogen genomes from Harbeck (2013), Wagner (2014) and Keller (2019) with dated burials, so each site with plague DNA enters the regional register with its date range."
+    },
+    {
+      "who": "epidemiologists",
+      "ask": "Test, following White (2020), whether the mortality and duration reported for each city are internally plausible under epidemic models, and state which source claims fail."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Supply dated settlement, building and pollen chronologies by region, with explicit pre-541 baselines, so event-study comparisons can test for breaks at each plague wave."
+    }
+  ],
   "matters": "Maximalist readings make the pandemic a cause of the end of antiquity: depopulation weakening the eastern Roman empire before the Arab conquests, contraction of cities and trade, and the rural and fiscal transformations of the seventh century. Minimalist readings remove that causal link and return explanatory weight to war, climate and political decisions. The answer also shapes comparisons with the Black Death and with modern pandemics, and the use of plague as a general explanation in historical narratives.",
   "stuck": "Narrative sources (Procopius, John of Ephesus, Evagrius, Gregory of Tours) give vivid but rhetorically shaped figures for a few cities, and there are almost no serial demographic records. Documentary proxies such as papyri, legislation, coin output, inscriptions and building activity can be read as showing disruption or continuity depending on the baseline chosen. Ancient DNA proves presence of the pathogen at particular sites but not mortality rates, and pollen and settlement data are often too coarse in date to isolate the 540s from other causes.",
   "solved": "A region-by-region database of dated proxies (papyri, legislation, coin issues, dated inscriptions, burials with plague DNA, high-resolution pollen cores, settlement and building chronologies) showing, with stated uncertainties, whether measurable discontinuities cluster at the documented plague waves more than expected from a baseline of other shocks, yielding bounded mortality estimates for named regions.",
@@ -259,6 +273,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

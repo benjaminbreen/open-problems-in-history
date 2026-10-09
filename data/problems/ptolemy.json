@@ -10,6 +10,16 @@
     "science",
     "forensics"
   ],
+  "needs": [
+    {
+      "who": "astronomers",
+      "ask": "Compare the Hipparchan coordinates recovered from the Codex Climaci Rescriptus with Ptolemy's entries for the same stars, testing for a uniform 2°40′ longitude shift."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Rebuild the competing tests on one edition of the catalogue matched to Hipparcos and Gaia DR3, reporting results by constellation, magnitude and source subset with doubtful identifications flagged."
+    }
+  ],
   "matters": "The Almagest catalogue is the oldest fully preserved star catalogue and the basis of Western and Islamic stellar astronomy until Ulugh Beg. Whether it records new observations bears on Ptolemy's reliability as a witness to his own practice, on the reconstruction of Hipparchus's lost catalogue, on the value of ancient positions for measuring precession and proper motion, and on broader arguments about how ancient scientists used data.",
   "stuck": "Ptolemy dates the catalogue to the first year of Antoninus (AD 137) and implies he observed it, but its longitudes are systematically about 1° too small for that date, consistent with adding a precession of 1° per century to positions for Hipparchus's epoch. Statistical tests of epoch, observer latitude, rounding patterns and error structure have yielded conflicting verdicts because the catalogue may mix sources and because results depend on modelling choices. Until 2022 there were almost no direct Hipparchan coordinates against which to compare.",
   "solved": "Recovery of enough of Hipparchus's own coordinates (from palimpsests or other witnesses) to show for a substantial sample of stars whether Ptolemy's entries equal Hipparchan values shifted by 2°40′ in longitude, or differ in ways that require independent measurement; or a pre-registered statistical analysis of the whole catalogue, using modern astrometry, that discriminates between the two hypotheses for defined subsets of stars.",
@@ -212,6 +222,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

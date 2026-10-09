@@ -10,6 +10,16 @@
     "digitization",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "cryptographers",
+      "ask": "Test English dictionary editions printed between about 1760 and 1800 against the known page, column and row anchors, holding back known code-word pairs to validate any match."
+    },
+    {
+      "who": "archivists",
+      "ask": "Locate the Library of Congress photostats of AGI Papeles de Cuba legajos 2373 to 2375 and compare them with the originals in Seville."
+    }
+  ],
   "matters": "From 1787 James Wilkinson, later the ranking general of the US Army and governor of Louisiana Territory, took a Spanish pension and reported to the governors of Louisiana as Agent 13, so his coded letters are a running record of what Spain was told about Kentucky separatism, the Mississippi navigation question, frontier military dispositions and, later, the Burr affair. Historians have reconstructed this relationship largely from Spanish summaries, the deciphered letters that officials filed with their replies, and Wilkinson's own self-serving later accounts. Reading the undeciphered portions would show what Wilkinson actually offered, whom he named, and how Spanish policy in the Mississippi Valley responded, and it would test claims about other Americans drawn into the Spanish Conspiracy.",
   "stuck": "Much of the correspondence uses a two-part code: a numbered table of names and common words, plus page, column and row references to a printed English dictionary that neither side identified in writing and that no modern researcher has located. Chu, Valenti and Knight (2020) found that the scanned material at the Library of Congress uses at least two distinct table systems and dictionary layouts (roughly 29 versus 39 rows per column), so wordbanks from one letter do not transfer cleanly to another. Their language-model decipherment recovered about three quarters of word tokens on a held-out sample, which leaves many proper names and rare words, the content most valuable to historians, uncertain. The photostats are scattered across Spanish-archive reproduction series, and the scans used in that study are not publicly linked.",
   "solved": "A specific printed dictionary edition (or editions) is identified whose page, column and row coordinates reproduce a large set of independently known code–word pairs, including pairs withheld from the matching, and a previously unread dispatch is decoded with that key and checked against the archival original and Spanish replies.",
@@ -206,6 +216,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

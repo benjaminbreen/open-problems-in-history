@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "archaeologists",
+      "ask": "Build a dated database of Yayoi to early Kofun settlements, mounded tombs, mirrors, iron and pottery from the Nara National Research Institute site reports, recording each date basis."
+    },
+    {
+      "who": "gis",
+      "ask": "Encode each reading of the Wei zhi itinerary, with its emended directions and distance units, and score the regions it predicts against the georeferenced site distribution."
+    }
+  ],
   "matters": "The 'Account of the Wa' in the Wei zhi, part of Chen Shou's Sanguozhi (late third century), is the earliest substantial description of political organisation in the Japanese archipelago. If Yamatai lay in the Nara basin, a polity centred on the area that later produced the Yamato kings already led a confederation reaching to northern Kyushu by the 230s, and the first great keyhole tombs mark its rulers; if it lay in Kyushu, Yamato kingship arose separately and later, and the Wei zhi describes a regional confederation. The choice shapes accounts of state formation, of the start of the Kofun period, and of how the early chronicles Kojiki and Nihon shoki relate to the Chinese record.",
   "stuck": "Read literally, the Wei zhi's directions and travel times place Yamatai in the ocean far south of Kyushu, so every reconstruction emends either the directions (the Kinai reading turns 'south' into 'east') or the distances and order of stages (the Kyushu reading), and both sides can cite internal inconsistencies. No inscription names Yamatai or Himiko. The archaeological markers each side relies on are themselves disputed: the dates of the earliest keyhole tombs depend on radiocarbon calibration and pottery sequences, the triangular-rimmed deity-and-beast mirrors may be Wei gifts or Japanese products, and Hashihaka, the leading candidate for Himiko's tomb, is an Imperial Household Agency mausoleum closed to excavation.",
   "solved": "A set of explicitly stated readings of the Wei zhi itinerary (each with its emendations listed), each predicting where a mid-third-century paramount centre and its subordinate polities should lie, scored against the dated distribution of large settlements, mounded tombs, Chinese imports and mirrors across western Japan. The problem is solved if one reading fits the independently dated archaeological pattern much better than all others under every defensible calibration of the dates.",
@@ -217,6 +227,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

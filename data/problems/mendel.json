@@ -9,6 +9,16 @@
   "flags": [
     "forensics"
   ],
+  "needs": [
+    {
+      "who": "statisticians",
+      "ask": "Encode every count in the 1866 paper and the Nägeli letters as one dataset, and test which documented procedures reproduce both Fisher's goodness-of-fit and 2:1 progeny-test anomalies."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Assess whether botanical factors in pea segregation, such as those Fairbanks and Schaalje (2007) tested experimentally, could shift Mendel's expected ratios enough to explain his close fits."
+    }
+  ],
   "matters": "Mendel's paper is the founding document of genetics and a standard case in teaching about scientific integrity, so whether his numbers were selected, adjusted, unconsciously biased or simply lucky affects how the episode is taught and how historians read his intentions. The answer also bears on what Mendel set out to do, whether he tested a pre-formed theory or reported plant-breeding experiments, and on the reception of his work by Nägeli and the rediscoverers of 1900.",
   "stuck": "Fisher's chi-square analysis found an overall fit with a probability of roughly 7 in 100,000 and also argued that Mendel's 2:1 ratios in the progeny tests should have been biased toward 1.7:1. Mendel's experimental notebooks do not survive, and many of his papers are reported to have been burned after his death in 1884, so only the published paper and a handful of letters to Nägeli constrain explanations. Proposed solutions (a too-eager assistant, sequential stopping, selective reporting, a different sampling model, botanical factors such as pollen tetrads) are each compatible with the summary numbers and therefore hard to discriminate.",
   "solved": "Either discovery of primary records (field notes, seed counts, or correspondence) that show how Mendel collected and selected his counts, or a statistical analysis that specifies a historically documented procedure and shows that it reproduces both Fisher's goodness-of-fit anomaly and the 2:1 progeny-test anomaly at conventional significance, while competing procedures do not.",
@@ -213,6 +223,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

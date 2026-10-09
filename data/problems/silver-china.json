@@ -7,6 +7,20 @@
   "start": 1550,
   "end": 1800,
   "flags": [],
+  "needs": [
+    {
+      "who": "economists",
+      "ask": "Build a decade-by-decade mass balance for 1550 to 1800 that reconciles registered production, contraband estimates and route flows, and test it against Chinese silver-copper exchange rates and prices."
+    },
+    {
+      "who": "archivists",
+      "ask": "Read the Manila treasury accounts and galleon registers in the AGI against the Ramo Filipinas in the AGN to produce a reconciled Acapulco-Manila series for 1571 to 1815."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Convert every published figure to tonnes of fine silver with documented assumptions, then propagate the uncertainty to show where mint, treasury and shipping series double count."
+    }
+  ],
   "matters": "The volume of silver entering China is central to the argument that world trade became global after the founding of Manila in 1571, to explanations of the Ming fiscal shift to silver, and to debates over whether a contraction of silver imports helped bring down the Ming in the 1630s–40s. It also bears on European price history, on the Dutch and English East India Companies' balance of trade, and on nineteenth-century arguments that the reversal of silver flows destabilised the Qing.",
   "stuck": "Silver reached China by several routes (the Manila galleons, the Cape route via European companies, overland through Central Asia, and from Japan, which was a larger supplier than the Americas for parts of the period), and each route is documented in different archives with different biases. Registered mint and treasury output understates production because of contraband and unregistered silver, and smuggling on the Acapulco–Manila route was extensive. Chinese sources record taxes, prices and exchange rates rather than imports, so arrivals must be inferred, and published estimates (Barrett, Flynn and Giráldez, von Glahn, TePaske) rest on different assumptions about leakage, re-export and Japanese supply.",
   "solved": "A route-by-route, decade-by-decade mass balance for 1550–1800 in which American registered production plus an explicit contraband estimate equals the sum of silver retained in the Americas, shipped to Europe, re-exported to Asia, and carried across the Pacific, with China's share derived from these flows and checked against Japanese exports and Chinese monetary indicators (silver–copper exchange rates, tax receipts in silver, price levels).",
@@ -314,6 +328,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

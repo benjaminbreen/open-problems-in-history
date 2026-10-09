@@ -9,6 +9,16 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Transcribe and flag candidate entries in the Escribanos de Santiago and Real Audiencia records for 1608–1683, linking the same person across sales, baptisms, lawsuits and inventories."
+    },
+    {
+      "who": "demographers",
+      "ask": "Use the overlap between record types in the regional pilots to estimate how many enslaved people each series misses, and state testable multipliers for under-recording."
+    }
+  ],
   "matters": "The scale of Indigenous enslavement determines how far the demographic collapse of the Americas should be attributed to coerced labor, displacement and violence rather than to epidemic disease alone. It affects the comparison between Indigenous and African slavery in the colonial economies of the Caribbean, Brazil, Chile, northern Mexico, the American Southwest and the English colonies of the Southeast and New England. It also bears on how historians read Spanish and Portuguese abolitions of Indian slavery (1542, 1570, 1755) that were repeatedly evaded through categories such as just war, rescate, encomienda, peonage and 'adoption'.",
   "stuck": "Indigenous slavery was frequently illegal or ambiguously legal, so it was recorded under euphemisms (criados, piezas, naborías, administrados, captives) or not recorded at all, and it was dispersed across many small transactions rather than concentrated in shipping. The surviving evidence is scattered among notarial protocols, lawsuits, baptismal registers, probate inventories, military reports and Indigenous testimony in Spanish, Portuguese, French, English and Indigenous languages, mostly undigitized or uncatalogued at item level. Reséndez's 2.5–5 million figure, which he presents as a cautious range, therefore aggregates regional estimates of very different quality, and several regions (Amazonia, the Río de la Plata, Central America after 1550) have no systematic count.",
   "solved": "A published, source-linked database of individual enslaved Indigenous people and enslaving events, organized by region and period, from which documented minimums can be computed and combined with explicit, testable multipliers for under-recording, producing a hemispheric range that others can recompute region by region.",
@@ -319,6 +329,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

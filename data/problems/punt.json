@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geneticists",
+      "ask": "Build mitochondrial reference data for baboons in Eritrea, Sudan, Somalia and Yemen and compare it with New Kingdom baboon mummies such as British Museum EA 6736 and EA 6738."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Compare the Puntite goods and ceramics from Mersa/Wadi Gawasis with second-millennium BCE material from Eritrean, Sudanese and Yemeni coastal sites, and extend isotope baselines for baboons and residue analysis of resins against Boswellia and Commiphora references."
+    }
+  ],
   "matters": "Punt is the best-documented long-distance partner of pharaonic Egypt, attested from the Fifth Dynasty (Sahure) to Ramesses III, and its position determines the scale of Bronze Age Red Sea navigation and the reach of Egyptian exchange into the Horn of Africa or southern Arabia. It bears on the origins of the incense trade, on the early history of the Gash Delta and Eritrean lowland cultures that some archaeologists identify as Puntite, and on how far the Deir el-Bahari reliefs of Hatshepsut record observed people, houses, animals and plants rather than a stylized exotic land.",
   "stuck": "Egyptian texts name Punt and its products but give no distances or coastlines, and Punt itself left no texts that name it. The commodities (myrrh and frankincense, ebony, gold, baboons, leopard skins) occur on both sides of the southern Red Sea, so lists and images can be read either way, and proposals have ranged from coastal Sudan and Eritrea to Somalia and western Arabia. Archaeology of the second millennium BCE on both coasts is thin, and harbour finds at Mersa/Wadi Gawasis document Egyptian departure and return rather than the destination.",
   "solved": "Independent provenance results for several classes of Punt imports (baboons, aromatic resins, obsidian, ebony, pottery) excavated in dated Egyptian contexts converge on a bounded region, and that region contains contemporary sites whose material culture matches the Puntite goods and ceramics found at Mersa/Wadi Gawasis.",
@@ -228,6 +238,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

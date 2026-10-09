@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML, period, REPO } from "../render.js";
+import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -101,6 +101,23 @@ fs.writeFileSync("methods/index.html", page({
   main: methodsHTML(),
 }));
 
+fs.mkdirSync("for", { recursive: true });
+fs.writeFileSync("for/index.html", page({
+  title: `Who can help · ${SITE}`,
+  description: "The specialities, from archivists to geneticists, whose methods could move these historical problems forward.",
+  head: social({ title: `Who can help · ${SITE}`, description: "Specialities whose methods could move these problems forward.", url: `${URL}/for`, image: `${URL}/og/index.jpg` }),
+  main: forIndexHTML(problems),
+}));
+for (const n of NEEDS) {
+  fs.mkdirSync(`for/${n.slug}`, { recursive: true });
+  fs.writeFileSync(`for/${n.slug}/index.html`, page({
+    title: `${n.title} · ${SITE}`,
+    description: n.pitch,
+    head: social({ title: `Open problems for ${n.label} · ${SITE}`, description: n.pitch, url: `${URL}/for/${n.slug}`, image: `${URL}/og/index.jpg` }),
+    main: forHTML(n.slug, problems),
+  }));
+}
+
 fs.mkdirSync("sources", { recursive: true });
 fs.writeFileSync("sources/index.html", page({
   title: `Sources · ${SITE}`,
@@ -114,6 +131,8 @@ fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <url><loc>${URL}/</loc></url>
 <url><loc>${URL}/about</loc></url>
 <url><loc>${URL}/methods</loc></url>
+<url><loc>${URL}/for</loc></url>
+${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/sources</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
@@ -179,6 +198,7 @@ Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by
 - All problems as JSON, with live impact scores, votes and counts: GET ${URL}/api/problems
 - One problem in full, with its approved comments and proposed approaches: GET ${URL}/api/problems?id=<id>
 - Static data, one file per problem: ${URL}/data/problems/<id>.json (schema: ${URL}/data/SCHEMA.md)
+- Each problem's "needs" field lists the specialities beyond history that could help ({"who": "<speciality>", "ask": "<what they could do>"}).
 - Each problem's "flags" field lists what it needs: "digitization" (sources not yet digitized), "science" (scientific or quantitative methods), "decipherment", "forensics".
 
 ## Contributing
@@ -202,6 +222,7 @@ ${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field
 
 ## Optional
 
+- Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: ${URL}/for and ${URL}/for/<speciality>
 - How the problems were chosen and how impact ratings are combined: ${URL}/methods
 - Every work and archive cited across the problems: ${URL}/sources
 - Instructions for AI models asked to rate problems for impact: ${URL}/rate.txt

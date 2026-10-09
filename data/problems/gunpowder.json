@@ -9,6 +9,16 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Locate, describe and date the earliest Liber ignium, Feuerwerkbuch and Arabic furūsiyya witnesses in Paris, Munich, Leeds, Istanbul and Cairo, and report which remain undigitized."
+    },
+    {
+      "who": "philologists",
+      "ask": "Transcribe and collate dated gunpowder and saltpetre recipes in Chinese, Arabic, Persian, Hebrew and Latin, recording the attested senses of terms such as bārūd and sal petrosum."
+    }
+  ],
   "matters": "The route determines whether gunpowder should be described as a Mongol-era transfer across Eurasia, a product of Mamluk and Andalusian Arabic chemistry, or a partly independent European development from Chinese-derived saltpetre knowledge. It shapes debates over the 'military revolution', over the role of the Mongol empire as a conduit of technology, and over the place of the Islamic world in histories of chemistry and warfare that often move directly from China to Europe.",
   "stuck": "The Chinese Wujing zongyao (compiled c. 1040–1044) gives the earliest surviving formulas, but the next datable recipes appear almost simultaneously in the 1260s–1290s in Latin (Roger Bacon's allusions in the Opus maius and Opus tertium, c. 1267; the Liber ignium attributed to Marcus Graecus) and in Arabic (Ḥasan al-Rammāḥ, c. 1270s–1280s), with no text recording a transfer. Arabic terms such as naft and Latin descriptions of incendiaries are ambiguous about whether they mean gunpowder, and the dating of many recipe collections rests on late manuscript copies. Bacon's supposed anagram recipe has been regarded as doubtful since the early twentieth century.",
   "solved": "A securely dated text, or a stemma of dated manuscripts, that shows one of the Latin or Arabic gunpowder recipe traditions copying or translating from an identifiable earlier source in another language, so that the direction and approximate date of transfer can be stated. A dated Persian, Arabic or Latin witness of a saltpetre-based recipe earlier than the 1260s outside China would also count.",
@@ -229,6 +239,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

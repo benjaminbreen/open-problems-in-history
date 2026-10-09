@@ -1,4 +1,4 @@
-import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, forHTML, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -417,6 +417,11 @@ async function thanks() {
   el.hidden = false;
 }
 
+function renderFor(slug) {
+  document.title = `${slug ? NEED[slug]?.title || "Not found" : "Who can help"} · Open Problems in History`;
+  app.innerHTML = slug ? forHTML(slug, all()) : forIndexHTML(all());
+}
+
 function renderMethods() {
   document.title = "Methods · Open Problems in History";
   app.innerHTML = methodsHTML();
@@ -495,12 +500,13 @@ async function renderAdmin() {
 function stats() {
   const el = document.getElementById("stats");
   if (!el) return;
-  const n = (f) => problems.filter((p) => p.flags?.includes(f)).length;
   const sum = (o, re) => Object.entries(o).reduce((t, [k, v]) => t + (re.test(k) ? Math.max(0, Number(v) || 0) : 0), 0);
   const works = problems.reduce((t, p) => t + (p.existing?.length || 0), 0);
   const archives = problems.reduce((t, p) => t + (p.archives?.length || 0), 0);
+  const top = Object.entries(needCounts(problems)).sort((a, b) => b[1] - a[1]).slice(0, 5)
+    .map(([k, c]) => `<a href="/for/${k}">${c} need ${NEED[k].short}</a>`);
   el.innerHTML = [
-    `${all().length} problems`, `${n("digitization")} need digitization`, `${n("science")} need scientists`,
+    `${all().length} problems`, ...top, `<a href="/for">who else can help →</a>`,
     `${works} works cited`, `${archives} archives`, `${sum(state.tally, /:(up|down)$/)} votes`, `${sum(state.counts, /./)} comments`,
   ].map((x) => `<span>${x}</span>`).join("");
 }
@@ -509,12 +515,13 @@ function stats() {
 function route() {
   const path = location.pathname.replace(/\/+$/, "") || "/";
   document.title = "Open Problems in History";
-  const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.slice(1);
+  const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.split("/")[1];
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
   else if (path === "/methods") renderMethods();
+  else if (path === "/for" || path.startsWith("/for/")) renderFor(decodeURIComponent(path.slice(5)));
   else if (path === "/sources") renderSources();
   else if (path === "/admin") renderAdmin();
   else if (path === "/rate") renderRate();

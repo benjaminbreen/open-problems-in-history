@@ -10,6 +10,16 @@
     "science",
     "forensics"
   ],
+  "needs": [
+    {
+      "who": "conservation-scientists",
+      "ask": "Record perspective lines, pinhole positions, object sizes and focus gradients from the published technical imaging of each securely attributed painting, with measurement error."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Test whether tracing from a projection, unaided camera observation or pin-and-string construction best fits the measured geometry across the paintings, and report the comparative fit."
+    }
+  ],
   "matters": "Vermeer is the test case for broader claims that optical projection shaped European naturalism, including the Hockney–Falco thesis, and for how far seventeenth-century Dutch painting drew on contemporary optics in Delft, the city of Leeuwenhoek. The answer bears on how his paintings were made (tracing, transfer or free construction), on attributions and chronology based on technique, and on whether instruments such as the camera obscura were working tools for painters or mainly objects of natural-philosophical interest.",
   "stuck": "No document records Vermeer owning or using an optical device, and the 1676 inventory of his household lists none. The visual evidence (halation, differential focus, perspective and scale relationships) is compatible with optical observation but can also be produced by skilled painting, and proponents and critics have relied on different paintings and different reconstructions. Recent technical imaging has shown underpainting and revisions that complicate any model of direct tracing without settling whether projection was used at some stage.",
   "solved": "A quantitative model of the geometry, scale and focus effects predicted by specific optical set-ups in a reconstructed studio, tested across all securely attributed paintings and against their underdrawings and pinhole evidence, that either fits significantly better than free-hand construction with a pin-and-string perspective or is shown to add no explanatory power.",
@@ -275,6 +285,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

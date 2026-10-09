@@ -9,6 +9,20 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geneticists",
+      "ask": "Screen securely dated 1545 and 1576 epidemic burials beyond Teposcolula-Yucundaa with methods able to recover RNA viruses and parasites as well as bacteria."
+    },
+    {
+      "who": "epidemiologists",
+      "ask": "State what the drought-and-rodent, colonial-disruption and contagion-along-routes models predict for the timing, geography and victims of mortality, and test them against the documentary atlas."
+    },
+    {
+      "who": "geoscientists",
+      "ask": "Compare the Stahle gridded soil-moisture reconstructions with dated, georeferenced epidemic reports for 1545 and 1576, and state where drought preceded mortality."
+    }
+  ],
   "matters": "The cocoliztli epidemics of 1545–48 and 1576–80 are counted among the largest mortality events in the sixteenth-century collapse of Mexico's Indigenous population, with contemporary and modern estimates of losses ranging widely and in some accounts exceeding the toll of the 1520 smallpox epidemic. Whether they were caused by a pathogen introduced from Europe or Africa, by a native disease released by drought and colonial disruption, or by several agents together changes how the collapse is explained: as an inevitable consequence of contact, or as the product of colonial labour, resettlement and famine acting on susceptible populations.",
   "stuck": "The clinical descriptions (high fever, bleeding from nose and mouth, jaundice, rapid death, Indigenous victims and few Spanish ones) fit several modern diseases, and sixteenth-century terms like cocoliztli ('pestilence') were generic. Rodolfo Acuña-Soto and colleagues proposed a native rodent-borne haemorrhagic fever amplified by drought, but no such virus has been identified, and RNA viruses rarely survive to be detected in skeletal remains. Vågene et al. (2018) recovered Salmonella enterica Paratyphi C from an epidemic cemetery at Teposcolula-Yucundaa, but from one site in the Mixteca Alta and with the acknowledged possibility that other, undetectable pathogens were also present, so the finding has not settled the question for 1545 in central Mexico or for 1576 at all.",
   "solved": "Pathogen evidence from several independently dated epidemic burials of 1545–48 and 1576–80, in central Mexico as well as Oaxaca, identifies the same agent or combination of agents, and the agent's known epidemiology is consistent with the timing, symptoms, age and ethnic pattern of mortality, and geography recorded in the Relaciones geográficas, parish and cabildo records.",
@@ -270,6 +284,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

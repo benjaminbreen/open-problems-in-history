@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geoscientists",
+      "ask": "Sample proximal deposits of the leading candidate volcanoes, date them, and compare their glass chemistry with cryptotephra from the relevant Greenland and Antarctic ice layers."
+    },
+    {
+      "who": "archivists",
+      "ask": "Trace each claimed eyewitness report of ashfall, dimmed sun or red twilights back to its original text and edition, recording exact wording, place and date."
+    }
+  ],
   "matters": "Reconstructions of volcanic climate forcing such as eVolv2k assign every bipolar sulfate spike without a known source to the equator, and source latitude, season and plume height change how much sulfur reached the stratosphere and how cooling was distributed between hemispheres. The 1809 event, estimated at roughly 12–19 Tg of stratospheric sulfur, opens the coldest decade of the last several centuries together with Tambora (1815); attributing it affects explanations of the harvest failures, famines and disease of the 1810s. Identifications also anchor ice-core chronologies: a named, historically dated eruption is a fixed point that can test or correct layer counting, as the reassignment of the 1450s signals to 1453 and 1458 showed.",
   "stuck": "The polar ice records the sulfate but not its origin, and the glass shards that could fingerprint a source are microscopic, scarce, and sometimes come from more than one eruption in the same layer. Many candidate volcanoes lie in regions (Melanesia, the Kurils, the Andes, island Southeast Asia) with thin written records for the relevant decades, and their deposits are poorly sampled and poorly dated. Documentary searches have tended to start from a favoured volcano and look for confirmation, and some claimed eyewitness reports have been propagated through secondary citations without checking the original source.",
   "solved": "Each spike is assigned to a named volcano by a published match between the major-element (and ideally trace-element) chemistry of glass shards in the ice layer and proximal deposits of that volcano, together with at least one dated documentary witness (an eruption report, ashfall, or optical phenomena such as a dimmed sun or abnormal twilights) consistent with the ice-core timing to within a year.",
@@ -246,6 +256,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

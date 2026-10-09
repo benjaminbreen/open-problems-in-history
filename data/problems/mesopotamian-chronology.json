@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "astronomers",
+      "ask": "Test the High, Middle, Low-Middle and Ultra-Low chronologies against every copy of the Venus observations, the Old Babylonian month lengths and the eclipse candidates in one dataset."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Combine the Anatolian dendro-radiocarbon wiggle-matches with the textual constraints in a Bayesian model, stating calibration and regional-offset assumptions and checking stability when each line of evidence is removed."
+    }
+  ],
   "matters": "The relative sequence of Old Assyrian, Old Babylonian and Kassite rulers is well established, but its anchor in absolute years is not, so every date before about 1400 BCE in Mesopotamia, Anatolia, Syria and the Levant inherits the uncertainty. Synchronisms with Egypt, the Hittite sack of Babylon, the dating of the Santorini eruption debate, climate-and-collapse arguments and comparisons with radiocarbon-dated archaeology all depend on which option is chosen. The four usual options put the fall of Babylon at 1651, 1595, 1531 or 1499 BCE.",
   "stuck": "The Venus observations preserved in later copies of Enūma Anu Enlil tablet 63 are corrupt and allow several solutions roughly 56 or 64 years apart, and month-length and eclipse arguments depend on contested readings and observational assumptions. Assyrian King List distance figures contain uncertain reign lengths, and the Kültepe eponym lists must be joined to Old Babylonian sources through a small number of synchronisms. Dendrochronological sequences from Anatolian sites were long only floating, and their wiggle-matched radiocarbon dates carry their own calibration and regional-offset uncertainties.",
   "solved": "A published, reproducible Bayesian model that ingests the Venus data, lunar month lengths, eclipse candidates, king-list and eponym-list distance numbers, dendrochronological sequences and radiocarbon dates with explicit priors, returns a posterior for a fixed anchor (such as Ammisaduqa year 1) with a stated uncertainty under 10 years, and remains stable when individual lines of evidence are removed.",
@@ -208,6 +218,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

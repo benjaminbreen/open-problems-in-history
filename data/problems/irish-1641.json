@@ -7,6 +7,20 @@
   "start": 1641,
   "end": 1642,
   "flags": [],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Code each deposition in TCD MS 836 for reported killings, recording victim, place, date, manner and whether the deponent was an eyewitness or repeating hearsay."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Cluster reports of the same killing across depositions into a deduplicated Armagh register, and compare eyewitness and hearsay totals against the 1650s examinations."
+    },
+    {
+      "who": "gis",
+      "ask": "Normalise place names against the Down Survey parish and barony maps so reported killings can be mapped and matched across depositions."
+    }
+  ],
   "matters": "The scale of settler deaths in the winter of 1641–42 shaped English and Scottish policy toward Ireland for a decade, was invoked to justify the Cromwellian conquest and the land confiscations of the 1650s, and remained a fixed point in Protestant and Catholic memory into the twentieth century. Whether the violence amounted to a general massacre, a set of local atrocities, or something in between bears on arguments about colonial violence, sectarian identity, and the comparative history of early modern mass killing. A defensible total, with its distribution in time and place, would also show how far the printed atrocity literature departed from the sworn testimony on which it drew.",
   "stuck": "The figures in circulation were produced for polemic: the Lords Justices relayed a claim of 154,000 dead in 1643, Sir John Temple in 1646 wrote of over 300,000 British and Protestants murdered or expelled, and Sir William Petty later proposed about 37,000. Modern estimates, generally around 4,000 killed directly and perhaps 10,000–12,000 including deaths from exposure, hunger and disease, are largely concentrated on Ulster and rest on partial readings rather than a systematic count; Aidan Clarke argued in 2013 that even this consensus needs re-examination. The depositions are dominated by hearsay, the same killings are reported by many deponents with varying names and numbers, and Catholic victims of settler and army reprisals are poorly represented in a source collected from Protestants.",
   "solved": "A published, deduplicated database of every death reported in the 1641 Depositions, each linked to the depositions that mention it and coded for eyewitness versus hearsay, place, date and manner, yielding a reproducible minimum count and a stated range for Protestant deaths, with Catholic deaths assessed from other sources.",
@@ -278,6 +292,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

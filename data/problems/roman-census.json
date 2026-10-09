@@ -9,6 +9,16 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "demographers",
+      "ask": "Make explicit the demographic assumptions behind the low, middle and high readings and convert each into predicted rural site and urban densities for specific surveyed regions."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Harmonize the Tiber Valley, Suburbium, Pontine, Albegna and Biferno survey gazetteers into site counts by period and size class, stating how broadly dated sites are treated."
+    }
+  ],
   "matters": "Estimates of Italy's population under Augustus range from roughly 5–7 million on the low count to 14 million or more on the high count, and every account of late Republican agrarian crisis, slavery, military recruitment, urbanization, colonization and per-capita income in Roman Italy builds on one of them. The low count implies a stagnant or declining free rural population consistent with the Gracchan narrative of peasant displacement; the high count implies substantial growth and a densely settled countryside. The figures are also a benchmark for population estimates of the whole empire.",
   "stuck": "The surviving totals are bare numbers transmitted by literary sources (Livy's Periochae, Phlegon of Tralles, Augustus' Res Gestae) with no statement of who was registered, and the text tradition itself varies (the Periocha for 70/69 BCE is transmitted as 900,000, Phlegon gives 910,000, and the Greek version of the Res Gestae differs from the Latin for 28 BCE). The 70/69 BCE figure is widely thought to be an undercount after the Social War enfranchisement, so the size of the jump is itself uncertain. Survey archaeology, the main independent check, depends on site-recovery rates, dating of surface ceramics and assumptions about household size that are hard to calibrate.",
   "solved": "A model that converts each reading (low, middle, high) into predicted densities of occupied rural sites and urban areas for specific surveyed regions, compared against harmonized survey datasets with stated recovery rates, showing that one reading fits the observed settlement record within its uncertainty and the others do not.",
@@ -238,6 +248,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

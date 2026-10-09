@@ -10,6 +10,20 @@
     "science",
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "epidemiologists",
+      "ask": "Fit a spatially explicit model to dated outbreaks and health office records of arrivals and quarantines, and test whether quarantine stringency or exposure explains which ports escaped introduction."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Sample burials from the last outbreaks in Provence, the Baltic, Messina, southern Italy and the Balkans to test local reservoir against repeated reintroduction from Asia."
+    },
+    {
+      "who": "archivists",
+      "ask": "Digitize and extract ship arrivals, bills of health and quarantine durations from the health office archives of Marseille, Venice, Livorno, Genoa, Dubrovnik and Malta."
+    }
+  ],
   "matters": "The retreat of plague is one of the earliest large declines in European mortality, and its cause determines whether early modern states could control epidemic disease through quarantine, cordons and health passes, or whether the decline was ecological or biological and owed little to policy. The answer bears on demographic models of the eighteenth-century population rise, on the divergence between western Europe and the Ottoman and Russian lands where plague continued into the nineteenth century, and on current arguments about the efficacy of border controls against epidemics.",
   "stuck": "The retreat was gradual and uneven: London's last major epidemic was 1665, central Europe and the Baltic suffered in 1708–13, Provence in 1720–22, Messina in 1743, Moscow in 1771, and Noja (1815–16) and Mallorca (1820) saw late seaborne outbreaks, so any explanation must account for a moving frontier rather than a single date. Each main hypothesis (quarantine, rat or flea ecology, host immunity, climate, pathogen change) predicts the same broad outcome and is hard to falsify from mortality data alone. The genetic evidence has opened a parallel dispute over whether European plague was sustained by local reservoirs or repeatedly reintroduced from Asia, and ancient DNA samples remain few for the last outbreaks.",
   "solved": "A spatially explicit model, fitted to dated outbreak records and to the records of health offices on ship arrivals, quarantines and cordons, that reproduces the sequence and geography of the last western European outbreaks and correctly predicts which ports and regions escaped introduction when exposed, with its assumptions about reservoirs consistent with the ancient DNA phylogeny.",
@@ -244,6 +258,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

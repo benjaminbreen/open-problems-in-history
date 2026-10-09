@@ -10,6 +10,20 @@
     "digitization",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Compile a graded glossary of recurring words outside the funerary formulae, separating secure, probable and conjectural meanings, and test translation hypotheses drawn from Old Nubian against the Hamadab stela."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Supply find context, object type and date for REM inscriptions and texts published since 2000, so that passages can be read against their offering scenes, place lists and iconography."
+    },
+    {
+      "who": "archivists",
+      "ask": "Turn the scanned REM volumes on Persée and inscriptions published since 2000 into a lemmatized, machine-readable corpus, recording which editor made each word segmentation."
+    }
+  ],
   "matters": "Meroitic is the oldest written language of sub-Saharan Africa and the administrative and royal language of Kush for some seven centuries. The long royal stelae, temple texts and chronicles almost certainly record wars with Rome, succession and religious practice from a Kushite point of view; at present historians rely on Greek, Latin and Egyptian sources for that history. A secure classification would also date the spread of Northern East Sudanic languages along the Nile, which bears on Nubian linguistic and population history.",
   "stuck": "The script's sound values were recovered from Egyptian names, but there is no substantial bilingual text, and the language has no close, well-documented descendant. Most of the corpus consists of funerary inscriptions with predictable formulae, so the vocabulary securely understood is small, by most accounts on the order of a hundred words, and grammar is reconstructed mainly from those formulae. Classification is disputed: Rilly argues for the Northern East Sudanic branch with Nubian, Nara, Taman and Nyima, while Rowan and Lipiński have argued for an Afroasiatic affiliation.",
   "solved": "A lexicon and grammar, fixed before testing, yield translations of held-out non-funerary passages (for example sections of royal stelae or temple texts) that independent specialists judge consistent with their archaeological, iconographic and historical context, and that correctly predict content later confirmed by newly found or newly published inscriptions.",
@@ -218,6 +232,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

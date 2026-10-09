@@ -9,6 +9,20 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "astronomers",
+      "ask": "Test the rival lunar-phase models against the bronze date formulas and the recorded conjunctions, and report which conquest years each model allows."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Obtain new high-precision radiocarbon dates on short-lived samples from securely stratified pre- and post-conquest contexts at Fengxi and Yinxu, wiggle-matched where timber survives."
+    },
+    {
+      "who": "philologists",
+      "ask": "Compile the Western Zhou bronze date formulas into a machine-readable corpus, and set out where the current and ancient Bamboo Annals texts disagree on reign counts."
+    }
+  ],
   "matters": "The conquest year is the pivot of early Chinese absolute chronology: the reign lengths of the Western Zhou kings are counted forward from it, and the late Shang kings, including the oracle-bone reigns at Anyang, are counted back from it. The dates of hundreds of inscribed bronzes, the calendar reconstructions they depend on, and every attempt to synchronize early China with other Bronze Age societies inherit whatever error it carries. Since 841 BCE is the earliest year fixed by continuous Chinese annalistic records, the choice of conquest year also determines how much of the preceding two centuries can be treated as dated history.",
   "stuck": "Each line of evidence fixes a date only under assumptions that the others cannot independently check: the 'current' and 'ancient' texts of the Bamboo Annals disagree with each other and with Han reckonings, the five-planet conjunction of 1059 BCE dates a portent rather than the battle, and bronze date formulas such as those on the Li gui can be fitted to many calendars depending on how lunar-phase terms are defined. Radiocarbon dates from Fengxi and Yinxu bracket the transition only to within a few decades. The Xia–Shang–Zhou Chronology Project (preliminary report 2000, final report 2022) chose 1046 BCE by combining these sources, but critics argued that its weighting of evidence was not transparent and that later bronze discoveries contradict its Western Zhou reign scheme.",
   "solved": "A published, reproducible model that takes every dated line of evidence as an explicit likelihood (textual reign counts, astronomical retrodictions, bronze calendar data, eclipse records, calibrated radiocarbon), returns a posterior distribution for the conquest year, and reports how that distribution shifts when each contested assumption (text version, lunar-phase definition, identification of an eclipse) is changed. The answer is settled to the extent that defensible alternative assumptions yield overlapping high-probability intervals.",
@@ -235,6 +249,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

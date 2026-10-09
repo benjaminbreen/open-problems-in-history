@@ -7,6 +7,20 @@
   "start": 1580,
   "end": 1680,
   "flags": [],
+  "needs": [
+    {
+      "who": "demographers",
+      "ask": "Specify alternative under-registration models, such as ding-to-mouth ratios or comparison with 1680s Qing registration, and apply each consistently across counties."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Flag outliers and internal contradictions in gazetteer household and land figures, and test each under-registration model against grain-price series and reclamation memorials."
+    },
+    {
+      "who": "gis",
+      "ask": "Key every gazetteer population, land and tax figure to CHGIS county boundaries by year, so densities and trends can be mapped across the core provinces."
+    }
+  ],
   "matters": "The size of the late Ming population sets the denominator for comparisons of Chinese and European living standards, urbanization and per capita output, including recent historical national accounts. It also determines how catastrophic the Ming–Qing transition was: whether the wars, epidemics and famines of 1620–1680 killed a few tens of millions or a much larger share of the population, and how far the climate-crisis interpretation of the seventeenth century rests on China. Qing-era growth rates, and therefore arguments about the eighteenth-century population boom, depend on where the seventeenth-century trough lay.",
   "stuck": "Official Ming registers record roughly 60 million people throughout the dynasty, a figure that reflects fiscal quotas fixed after 1393 rather than headcounts, so every modern total is a reconstruction. Ho Ping-ti (1959) proposed about 150 million for 1600; later work, including Cao Shuji's prefecture-level reconstruction, puts the late Ming peak close to 200 million, with some estimates higher. The central Yellow Register archive in Nanjing was lost, local gazetteer figures vary in what they count, and corrections for under-registration have been applied region by region with assumptions that are hard to compare.",
   "solved": "A county- or prefecture-level population series for c.1580, 1630 and 1680 covering at least the core provinces, in which every adjustment to registered figures is stated as an explicit, reproducible rule, and whose implied densities and trends are shown to be consistent with independent evidence on cultivated land, land clearance, grain prices and tax arrears.",
@@ -189,6 +203,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

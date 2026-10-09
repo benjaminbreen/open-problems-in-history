@@ -9,6 +9,16 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Read the Documenta Indica and the ARSI Goa-Malabar letters for references to Indian astronomy, Brahmin informants and mathematical manuscripts, and register each mention by Jesuit, place and date."
+    },
+    {
+      "who": "philologists",
+      "ask": "Survey Kerala astronomical manuscripts at the Oriental Research Institute and the Royal Asiatic Society for ownership marks, copying notes or Latin and Portuguese annotations showing European hands."
+    }
+  ],
   "matters": "If Kerala results on infinite series reached Europe, accounts of the origins of the calculus in Gregory, Newton and Leibniz would need to include an Indian component rather than parallel discovery. The question has also become a test case for arguments about the standard of evidence applied to East-to-West versus West-to-East transmission, and for the role of Jesuit colleges as intermediaries in Asian knowledge more generally.",
   "stuck": "The Kerala results (attributed to Mādhava, c. 1340–1425, and preserved in Nīlakaṇṭha's Tantrasaṅgraha of 1501 and Jyeṣṭhadeva's Yuktibhāṣā of c. 1530) are securely dated, and Jesuits were present in Cochin from the mid-sixteenth century. But no Jesuit letter, translation, notebook or library record yet produced mentions these series, and Joseph himself reports that a survey of Jesuit literature found no direct trace. The Jesuit college library at Cochin was dispersed when the Dutch took the city in 1663, and relevant Malayalam and Sanskrit manuscripts are scattered and only partly catalogued.",
   "solved": "Either a dated document showing a European in possession of, or describing, a Kerala series result before Gregory (1668) and Newton (c. 1665–1669), or a documented, bounded search of the named Jesuit correspondence series (ARSI Goa and Malabar volumes, Documenta Indica, Clavius correspondence) and Kerala manuscript holdings that records the absence of any such reference.",
@@ -286,6 +296,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

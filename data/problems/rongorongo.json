@@ -10,6 +10,20 @@
     "science",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "computational-linguists",
+      "ask": "Compare rongorongo sign sequences against written languages and non-linguistic symbol systems, and test proposed readings by predicting held-out passages under alternative sign segmentations."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Extend radiocarbon dating and wood identification to the undated tablets, using minimally invasive samples from carved surfaces or associated residues with AMS laboratories."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Work with the holding museums in Washington, St Petersburg, Santiago, London and Berlin to identify sampling points on the tablets that minimize damage to carved surfaces."
+    }
+  ],
   "matters": "Writing is generally held to have been invented independently only a handful of times (Mesopotamia, Egypt, China, Mesoamerica), so a pre-contact Rapa Nui script would add a case from a small, isolated island society without cities or bureaucratic states. That would bear on theories that tie writing to administration and urbanism and on what Polynesian societies could develop in isolation. If instead the script arose after the Spanish annexation ceremony of 1770, when islanders were asked to mark a document, it would be a well-documented case of stimulus diffusion, and the question of whether the glyphs encode language at all would remain separate.",
   "stuck": "The corpus is small (fewer than 30 objects, about 15,000 glyphs in standard counts), the script ceased to be used in the 1860s after slave raids and epidemics, and nineteenth-century attempts to elicit readings from islanders produced unreliable results. Radiocarbon dates on the wood give only a terminus post quem for carving: most dated objects fall in the late eighteenth or nineteenth century, and the one fifteenth-century result (Tablet D, Échancrée) comes from non-native wood that could have been carved long after it was felled or arrived. Whether the glyphs record speech is itself disputed; claims of logosyllabic structure (Davletshin) and of a lunar calendar on Mamari (Guy) have not been converted into an agreed decipherment, and statistical tests of 'language-likeness' have been shown to misclassify non-linguistic symbol systems.",
   "solved": "Direct dates on residues or carving-associated material, or on wood from additional inscribed objects, that securely place glyph carving before 1722, combined with a reading of sign sequences that predicts Rapa Nui words or parallel passages in unseen text and outperforms matched non-linguistic controls.",
@@ -270,6 +284,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

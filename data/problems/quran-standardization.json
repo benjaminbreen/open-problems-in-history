@@ -10,6 +10,20 @@
     "science",
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Align early manuscript transcriptions from Corpus Coranicum verse by verse, coding each difference as orthographic, consonantal or verse division, and test single-archetype and fluid-text stemmata."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Build a model combining the radiocarbon dates of early Qurʾān parchments with palaeographic evidence to bound when the Uthmanic archetype was produced."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Image the Sanaa palimpsest and other dispersed early fragments so that the erased lower text and unpublished leaves can be read and transcribed."
+    }
+  ],
   "matters": "The date at which the consonantal skeleton (rasm) was fixed determines how far the text can be used as evidence for the first decades of Islam, how its relation to Muhammad's preaching is assessed, and how the early caliphate's religious authority is understood. A mid-seventh-century closure supports reading the Qurʾān as a near-contemporary witness; a Marwanid or later closure would allow for substantial editorial shaping during the conquest period. The question also bears on the history of Arabic orthography and on the reliability of the Islamic tradition's accounts of collection.",
   "stuck": "The earliest manuscripts are fragmentary, undated, dispersed across collections and often published only in part, and the Sanaa lower text survives as an erased palimpsest. Radiocarbon dates give the death of the animal whose skin became parchment, not the date of writing, and their ranges often span several decades on either side of 650 and 700. The literary accounts of ʿUthmān's and al-Ḥajjāj's interventions were recorded later and are read differently by scholars with different views of the tradition's reliability.",
   "solved": "A published stemmatic analysis of all variants in the dated and datable manuscripts (including the Sanaa lower text and the regional-codex variants), using shared orthographic errors to test whether the surviving Uthmanic-type manuscripts descend from a single written archetype, combined with a radiocarbon and palaeographic model that bounds when that archetype was produced, with results reproducible from open data.",
@@ -253,6 +267,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

@@ -10,6 +10,16 @@
     "digitization",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "computational-linguists",
+      "ask": "Train sign-distribution models on proto-cuneiform, where logograms and phonetic signs are known, then test whether the residual Proto-Elamite signs contain a comparable phonetic subset."
+    },
+    {
+      "who": "philologists",
+      "ask": "Test the claimed relation to Linear Elamite with pre-registered sign-form and value correspondences scored against shuffled pairings, using the CDLI transliterations and images."
+    }
+  ],
   "matters": "Proto-Elamite is one of the earliest scripts anywhere and the first on the Iranian plateau, so its nature bears on whether writing was invented once in Mesopotamia and borrowed, or developed independently in more than one place. If its non-numerical signs encode syllables of Elamite, the history of that language extends back almost a millennium. Desset and colleagues' 2022 decipherment of Linear Elamite rests partly on a claimed continuity from Proto-Elamite; whether that continuity holds affects how far the decipherment can be pushed back.",
   "stuck": "The tablets are almost all administrative accounts from Susa, with smaller groups from Tepe Yahya, Tal-i Malyan, Tepe Sofalin and other sites; they contain several hundred non-numerical signs and short entries dominated by numbers. The numerical systems were largely worked out by Damerow and Englund through comparison with Mesopotamian proto-cuneiform, but the remaining signs could be logograms, personal names, institutional labels or syllables, and the short entries offer few repeated phonetic contexts. More than five centuries separate the last Proto-Elamite tablets from the first Linear Elamite inscriptions, and Dahl (2023) argues that Linear Elamite was a deliberate new creation rather than a descendant.",
   "solved": "A structural analysis that partitions the sign inventory into numerical, logographic and candidate phonetic signs, with stated criteria, is validated on proto-cuneiform where the answers are known; applied to Proto-Elamite, it either identifies a set of signs whose distribution fits a syllabary, with predicted values that cohere with Linear Elamite readings beyond chance, or shows that no such subset exists.",
@@ -212,6 +222,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

@@ -7,6 +7,16 @@
   "start": 1450,
   "end": 1600,
   "flags": [],
+  "needs": [
+    {
+      "who": "statisticians",
+      "ask": "Fit Chao1 and Efron–Thisted estimators by format, language and genre on a past snapshot of ISTC or GW, and check their predictions against editions found since."
+    },
+    {
+      "who": "archivists",
+      "ask": "Reconstruct earlier states of ISTC and GW from published versions and dated records, and build one record per edition with surviving copy count, format, language and sheet count."
+    }
+  ],
   "matters": "Quantitative histories of the early book trade, of literacy and of the spread of ideas count surviving editions as if they were a fixed fraction of what was printed. If loss was heavy and uneven, falling hardest on cheap, small-format, vernacular, ephemeral and heavily used books such as schoolbooks, almanacs, broadsides and devotional texts, then the apparent dominance of Latin learned printing and the relative output of regions and printers are artefacts of survival. The same estimates are used to calibrate long-run series of book production that feed into economic history.",
   "stuck": "Lost editions leave evidence only indirectly, in booksellers' catalogues, inventories, references, binding fragments and editions known from a single copy. Statistical estimates depend on assumptions about how copy counts are distributed, and the main models give different answers for different categories of book. Catalogues such as ISTC, GW and USTC are revised continuously, but no one has systematically used their revision history to test whether past estimates correctly predicted the rate and kind of new discoveries.",
   "solved": "A survival model fitted on a dated snapshot of a major catalogue (for example ISTC or USTC as of a past year) that correctly predicts the number and category distribution of editions added in later years, together with an estimate of total lost editions by format, language and genre with stated uncertainty.",
@@ -208,6 +218,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

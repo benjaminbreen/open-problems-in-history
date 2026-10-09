@@ -9,6 +9,20 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geneticists",
+      "ask": "Re-screen published African ancient-DNA shotgun data in the European Nucleotide Archive for Yersinia pestis, reporting coverage and detection limits for each individual."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Build a geo-referenced register of candidate sites and human remains with calibrated radiocarbon ranges and laboratory codes, keeping settlement disruption and dated burials separate."
+    },
+    {
+      "who": "epidemiologists",
+      "ask": "State what mortality and settlement patterns plague would produce in the forest zone and the Horn, as distinct from drought or war, for testing against the site register."
+    }
+  ],
   "matters": "If plague reached West, East or Northeast Africa, it would offer an explanation for site abandonments, settlement shifts and political reorganizations that archaeologists date to the fourteenth and fifteenth centuries, from the forest zone of southern Ghana to Ife, and it would change how historians read the demographic and political background to the Atlantic encounter. It also bears on the global history of the second pandemic, on whether the Yersinia pestis lineages now endemic in Central and East Africa descend from medieval introductions, and on the long-standing assumption that Africa south of the Sahara was untouched while Eurasia and North Africa lost a large share of their populations.",
   "stuck": "Written sources from sub-Saharan Africa for the fourteenth century are few, and Arabic chroniclers who described plague in Egypt and the Maghrib were largely silent about lands beyond the Sahara, a silence that can be read either as absence of plague or absence of reporting. Archaeological signs such as abandonments, mass burials or population decline have other possible causes (drought, war, trade shifts), and few sites are dated precisely enough to tie them to the 1340s–1400s. No medieval Y. pestis genome has yet been published from sub-Saharan Africa, so the genetic argument rests on inferences from the phylogeny of modern African strains.",
   "solved": "Recovery of Yersinia pestis DNA, radiocarbon-dated to c. 1340–1500, from human remains at one or more sub-Saharan sites, placed on the second-pandemic phylogeny; or, conversely, systematic negative screening of well-dated fourteenth- and fifteenth-century burials across several regions combined with a full survey of the textual evidence showing no plague references.",
@@ -260,6 +274,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

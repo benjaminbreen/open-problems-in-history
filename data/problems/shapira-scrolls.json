@@ -10,6 +10,20 @@
     "digitization",
     "forensics"
   ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Classify every orthographic, palaeographic and textual feature of the transcriptions as attested in sources available by 1883 or only in later material such as Qumran Deuteronomy manuscripts."
+    },
+    {
+      "who": "archivists",
+      "ask": "Locate and describe every surviving witness, from British Library Add MS 41294 and the Berlin Shapira inventory to the 1883 lithographs, so they can be aligned as variants."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Image British Library Add MS 41294 and the Berlin Shapira inventory at high resolution, with those libraries, to support a reliable critical text of the transcriptions."
+    }
+  ],
   "matters": "If the fragments were genuine, they would be by far the oldest biblical manuscript known and, on Idan Dershowitz's reading, direct evidence for a source of Deuteronomy, bearing on the composition history of the Pentateuch that critical scholarship has reconstructed only by inference. If they were forged, they are an unusually revealing case of how a nineteenth-century forger anticipated what scholars expected an ancient Hebrew text to look like, alongside the 'Moabite' pottery Shapira had sold to Berlin. The case also tests how scholarly communities judge authenticity when the object itself is lost and only copies and testimony remain.",
   "stuck": "The strips were sold at auction in 1885 and have not been traced, so no material analysis is possible. The surviving evidence consists of transcriptions, drawings and printed facsimiles of uneven accuracy, made in 1883 by Shapira, Christian David Ginsburg and others, together with expert verdicts reached in days under poor conditions. Arguments on both sides depend on whether features of the text (letter forms modelled on the Mesha stele, orthography, a variant Decalogue, a structure resembling source-critical reconstructions of Deuteronomy) are read as marks of antiquity or of a forger working from scholarship available in the 1870s.",
   "solved": "A published inventory of every linguistic, orthographic, palaeographic and textual feature in the surviving transcriptions, each classed as either attested in sources available by 1883 or first attested in material discovered later (the Dead Sea Scrolls, later Iron Age inscriptions). The question is settled for practical purposes if a set of features unavailable to an 1883 forger proves to be present, or if every feature can be traced to identifiable 1870s models.",
@@ -226,6 +240,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

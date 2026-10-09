@@ -15,6 +15,7 @@ Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by
 - All problems as JSON, with live impact scores, votes and counts: GET https://historyproblems.com/api/problems
 - One problem in full, with its approved comments and proposed approaches: GET https://historyproblems.com/api/problems?id=<id>
 - Static data, one file per problem: https://historyproblems.com/data/problems/<id>.json (schema: https://historyproblems.com/data/SCHEMA.md)
+- Each problem's "needs" field lists the specialities beyond history that could help ({"who": "<speciality>", "ask": "<what they could do>"}).
 - Each problem's "flags" field lists what it needs: "digitization" (sources not yet digitized), "science" (scientific or quantitative methods), "decipherment", "forensics".
 
 ## Contributing
@@ -77,6 +78,7 @@ Good contributions are specific: cite works with author, title, year and a DOI o
 
 ## Optional
 
+- Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: https://historyproblems.com/for and https://historyproblems.com/for/<speciality>
 - How the problems were chosen and how impact ratings are combined: https://historyproblems.com/methods
 - Every work and archive cited across the problems: https://historyproblems.com/sources
 - Instructions for AI models asked to rate problems for impact: https://historyproblems.com/rate.txt

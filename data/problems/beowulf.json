@@ -7,6 +7,16 @@
   "start": 680,
   "end": 1020,
   "flags": [],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Annotate Old English poems and dated prose for metrical, morphological and orthographic features, marking which are authorial and which scribal, using the Dictionary of Old English Corpus."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Train a dating model only on independently dated Old English texts, treat copying as explicit noise, and test it on held-out texts preserved in late copies."
+    }
+  ],
   "matters": "An early date (before about 750) makes Beowulf a witness to the culture of Christian Mercia or Northumbria and to oral-traditional material close to the migration period; a date in the Viking age or the reign of Cnut makes it a product of Anglo-Scandinavian politics and late West Saxon literary culture. The choice shapes readings of the poem's attitude to pagan ancestors, Danish kings and Christianity, and its use as evidence for early English legend, Germanic heroic tradition and the history of Old English verse.",
   "stuck": "The poem survives in one manuscript copied around 1000, so internal evidence of composition date must be separated from changes introduced by copying. Metrical tests such as Kaluza's law depend on phonological distinctions whose dating and dialect distribution are themselves inferred, and the corpus of securely dated Old English verse is very small. Arguments from palaeographic error patterns, vocabulary and historical allusion each point to a range rather than a date, and scholars weigh them differently.",
   "solved": "A dating model trained on Old English texts with independently established dates and transmission histories that assigns Beowulf a composition interval with calibrated uncertainty, and that correctly recovers the known dates of held-out texts, including texts preserved only in late copies.",
@@ -193,6 +203,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

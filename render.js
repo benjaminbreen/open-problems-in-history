@@ -9,6 +9,113 @@ export const FLAGS = {
   forensics: ["forensics", "for", "Establishing how an object or dataset was made, or whether it is genuine"],
 };
 
+// Specialities a problem may need, beyond historians. Each problem's "needs" lists { who: slug, ask }.
+export const NEEDS = [
+  {
+    "slug": "archivists",
+    "short": "archivists",
+    "label": "archivists and librarians",
+    "title": "Archivists and librarians",
+    "covers": "cataloguing, digitization, locating records",
+    "pitch": "Many of these problems are stalled not for lack of ideas but because the records that would settle them are uncatalogued, undigitized, or scattered across institutions. Archivists and librarians know where those records are, what condition they are in, and what it would take to make them searchable."
+  },
+  {
+    "slug": "archaeologists",
+    "label": "archaeologists",
+    "title": "Archaeologists",
+    "covers": "excavation, field survey, site databases, radiocarbon, isotopes and materials analysis",
+    "pitch": "Several problems turn on sites that have never been securely identified, excavated or published in full, or on claims that radiocarbon dates, isotope signatures and materials analysis could test. Archaeologists and archaeological scientists can supply the field evidence, dating and laboratory results that documents alone cannot."
+  },
+  {
+    "slug": "geneticists",
+    "label": "geneticists",
+    "title": "Geneticists",
+    "covers": "ancient DNA of pathogens, people, plants and animals",
+    "pitch": "Ancient DNA has already reshaped the history of plague and of human migration. These problems ask what sequencing pathogens, people, plants and animals could still settle, and where the samples are."
+  },
+  {
+    "slug": "epidemiologists",
+    "label": "epidemiologists",
+    "title": "Epidemiologists",
+    "covers": "disease transmission and mortality",
+    "pitch": "Historical mortality estimates often rest on assumptions about how a disease spread and how deadly it was. Epidemiologists can test those assumptions against what is known of transmission, and say which figures are plausible."
+  },
+  {
+    "slug": "demographers",
+    "label": "demographers",
+    "title": "Demographers",
+    "covers": "population estimates and under-registration",
+    "pitch": "Population figures for the past are reconstructed from tax registers, censuses and tribute lists that each counted different people in different ways. Demographers can model under-registration and test which estimates the records can actually support."
+  },
+  {
+    "slug": "geoscientists",
+    "label": "geoscientists",
+    "title": "Geoscientists",
+    "covers": "volcanology, ice cores, palaeoclimate, tsunami deposits, river courses",
+    "pitch": "Ice cores, tsunami deposits, tree rings and shifting river courses record events that written sources describe only partly or not at all. These problems need geoscientists to match the physical record with the documentary one."
+  },
+  {
+    "slug": "astronomers",
+    "label": "astronomers",
+    "title": "Astronomers",
+    "covers": "ancient observations, dating by eclipses and conjunctions",
+    "pitch": "Ancient observations of eclipses, conjunctions and stars can fix dates and test the honesty of old records, but only with careful modelling of what was visible, where and when."
+  },
+  {
+    "slug": "statisticians",
+    "short": "data scientists",
+    "label": "statisticians and data scientists",
+    "title": "Statisticians and data scientists",
+    "covers": "modelling, estimating what is missing, image and text analysis",
+    "pitch": "Many of these problems come down to estimating what is missing, separating signal from noise, or testing whether a pattern beats chance. Statisticians and data scientists can design those tests and make the reasoning explicit and repeatable."
+  },
+  {
+    "slug": "computational-linguists",
+    "label": "computational linguists",
+    "title": "Computational linguists",
+    "covers": "sign statistics, language models, stylometry",
+    "pitch": "Undeciphered scripts and disputed texts can be approached through sign statistics, language models and stylometry. These problems need computational linguists who can set up tests that a proposed reading must pass."
+  },
+  {
+    "slug": "philologists",
+    "short": "philologists",
+    "label": "philologists and epigraphers",
+    "title": "Philologists and epigraphers",
+    "covers": "specialist languages and scripts: Arabic, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and others",
+    "pitch": "Much of the evidence lies in texts that few people can read: Arabic, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and other languages and scripts. Philologists and epigraphers are needed to read, edit and check these sources, including whatever AI tools extract from them."
+  },
+  {
+    "slug": "cryptographers",
+    "label": "cryptographers",
+    "title": "Cryptographers",
+    "covers": "codes and ciphers",
+    "pitch": "Some historical documents were written to be unreadable. Cryptographers can identify the system behind a code or cipher and test proposed solutions against the surviving text."
+  },
+  {
+    "slug": "conservation-scientists",
+    "label": "conservation scientists",
+    "title": "Conservation scientists",
+    "covers": "imaging and materials analysis of manuscripts, paintings and objects",
+    "pitch": "Imaging and materials analysis can show how an object was made, when, and whether it is what it claims to be. Conservation scientists can say which techniques are feasible on fragile manuscripts, paintings and objects, and what they could reveal."
+  },
+  {
+    "slug": "gis",
+    "label": "GIS specialists",
+    "title": "GIS specialists",
+    "covers": "mapping historical places, routes and boundaries",
+    "pitch": "Places named in historical sources often have to be located, mapped and linked to changing boundaries before anything else can be done. GIS specialists can build the spatial frameworks these problems depend on."
+  },
+  {
+    "slug": "economists",
+    "label": "economists",
+    "title": "Economists",
+    "covers": "historical money, prices and production",
+    "pitch": "Historical money flows and production figures are reconstructed from partial and often inconsistent records. Economists can test whether the estimates are consistent with prices, trade and output elsewhere."
+  }
+];
+for (const n of NEEDS) n.short ??= n.label;
+export const NEED = Object.fromEntries(NEEDS.map((n) => [n.slug, n]));
+
 const yr = (y) => (y < 0 ? `${-y} BCE` : `${y}`);
 export function period(p) {
   if (p.start == null) return "";
@@ -181,6 +288,51 @@ function figure(m) {
     </figure>`;
 }
 
+// ---------- specialities ----------
+const andList = (a) => a.length < 2 ? a.join("") : `${a.slice(0, -1).join(", ")} and ${a[a.length - 1]}`;
+const needLink = (slug) => NEED[slug] ? `<a href="/for/${slug}">${esc(NEED[slug].label)}</a>` : "";
+const needsOf = (p) => (p.needs || []).filter((n) => NEED[n.who]);
+export const helpsLine = (p) => needsOf(p).length ? `<p class="helps">Could use help from ${andList(needsOf(p).map((n) => needLink(n.who)))}.</p>` : "";
+const needsSection = (p) => needsOf(p).length ? `<dl class="needs">${needsOf(p).map((n) => `<dt>${needLink(n.who)}</dt><dd>${esc(n.ask)}</dd>`).join("")}</dl>
+      ${prov("Drafted", p.provenance?.drafted_by, p.provenance?.needs_on || p.provenance?.drafted_on, "Drafted these suggestions; reviewed by Benjamin Breen")}` : "";
+
+export function needCounts(problems) {
+  const c = Object.fromEntries(NEEDS.map((n) => [n.slug, 0]));
+  for (const p of problems) for (const n of needsOf(p)) c[n.who]++;
+  return c;
+}
+
+export function forIndexHTML(problems) {
+  const c = needCounts(problems);
+  return `
+  <article class="about for">
+    <h1 class="page-title">Who can help</h1>
+    <div class="prose">
+      <p>Most of these problems cannot be solved by historians alone. Each one lists the specialities whose methods or knowledge could move it forward. If you work in one of these fields, start with its page: it lists the problems where your expertise is needed and what, specifically, you could do.</p>
+    </div>
+    <ul class="for-list">${NEEDS.map((n) => `<li><a href="/for/${n.slug}">${esc(n.title)}</a><span>${esc(n.covers)}</span><b>${c[n.slug] ? `${c[n.slug]} ${c[n.slug] === 1 ? "problem" : "problems"}` : "none yet"}</b></li>`).join("")}</ul>
+  </article>`;
+}
+
+export function forHTML(slug, problems) {
+  const n = NEED[slug];
+  if (!n) return `<p class="empty">No such speciality. <a href="/for">See all specialities</a>.</p>`;
+  const rows = problems.flatMap((p) => needsOf(p).filter((x) => x.who === slug).map((x) => ({ p, ask: x.ask })));
+  return `
+  <div class="backrow"><a class="back" href="/for">← Who can help</a></div>
+  <article class="about for">
+    <h1 class="page-title">${esc(n.title)}</h1>
+    <p class="for-covers">${esc(n.covers)}</p>
+    <div class="prose"><p>${esc(n.pitch)}</p></div>
+    ${rows.length ? `<ol class="for-problems">${rows.map(({ p, ask }) => `<li><a class="t" href="/p/${p.id}">${esc(p.title)}</a><p>${esc(ask)}</p><span class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span></li>`).join("")}</ol>`
+      : `<p class="note">No problems on the list need this speciality yet. If you know of one that does, <a href="/suggest">suggest it</a>.</p>`}
+    <div class="prose">
+      <p>To contribute, propose an approach or leave a comment on any problem page, or <a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">get in touch</a>.</p>
+      <p class="prov">Drafted by ${agent("Claude Opus 5.5", "Drafted this page; reviewed by Benjamin Breen.")}</p>
+    </div>
+  </article>`;
+}
+
 export function detailHTML(ctx, p) {
   const s = p.suggested;
   const pv = p.provenance || {};
@@ -196,6 +348,7 @@ export function detailHTML(ctx, p) {
         <h1>${esc(p.title)}</h1>
         ${s ? "" : `<p class="short">${esc(p.short)}</p>`}
         <div class="meta"><span>${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span>${tags(p)}<button type="button" class="linkbtn share" data-share>Share</button></div>
+        ${s ? "" : helpsLine(p)}
       </div>
       ${figure(p.image)}
     </div>
@@ -209,6 +362,7 @@ export function detailHTML(ctx, p) {
       <div id="ideas" class="ideas"></div>
       <button type="button" class="linkbtn idea-toggle" data-idea="idea-form" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}
+    ${needsOf(p).length ? sec("Who can help", needsSection(p), "help") : ""}
     ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}
       <button type="button" class="linkbtn idea-toggle" data-idea="work-form" aria-expanded="false">Know of a work that belongs here? Suggest it</button>
       <div class="slide" id="work-form"><div>${contributeForm("work", p.id, "Author, title, year and venue, with a link if you have one, and a sentence on why it belongs")}</div></div>` : "")}

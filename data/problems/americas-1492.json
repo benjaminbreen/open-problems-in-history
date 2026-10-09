@@ -10,6 +10,24 @@
     "digitization",
     "science"
   ],
+  "needs": [
+    {
+      "who": "demographers",
+      "ask": "Fit province-level depopulation curves from tribute and visita counts, keeping the tributary-to-population conversion as an explicit, adjustable parameter with stated uncertainty."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Derive occupation estimates for the decades before contact from LiDAR surveys and radiocarbon date densities, and state how they compare with documentary counts for the same region."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Assess whether ancient and modern genomic evidence on population size can serve as an independent check on regional estimates, and state its date resolution."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Combine the documentary table and archaeological proxies into regional estimates with uncertainty intervals, so the hemispheric total and its interval can be recomputed openly."
+    }
+  ],
   "matters": "The contact population sets the scale of the demographic collapse that followed, and so the magnitude of the most consequential mortality event of the early modern world. It underpins arguments about the density and environmental impact of Indigenous societies (including the extent of anthropogenic landscapes in Amazonia and eastern North America), about the labor economies of the Spanish and Portuguese empires, and about whether reforestation of abandoned land contributed to the atmospheric CO2 minimum around 1610 that Lewis and Maslin proposed as a marker for the Anthropocene.",
   "stuck": "Almost no direct counts exist for 1492: early colonial tribute lists, visitas and missionary reports begin decades after epidemics had already struck, so every estimate projects backward through assumed depopulation ratios or carrying capacities. Hemispheric totals are built by summing regional estimates of very uneven quality, and the same sparse figures support results as different as Kroeber's roughly 8.4 million and Dobyns's 90–112 million. Archaeological proxies (settlement counts, radiocarbon date densities, LiDAR-mapped house platforms) measure occupation over centuries rather than population at a single date.",
   "solved": "A regional-level reconstruction for c. 1492 in which every region's estimate is tied to an openly published dataset of documentary counts and archaeological proxies, with stated assumptions and uncertainty intervals, such that the hemispheric total and its interval can be recomputed and the main regional disagreements (central Mexico, the Andes, Amazonia, eastern North America) are each narrowed by independent lines of evidence.",
@@ -320,6 +338,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

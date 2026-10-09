@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "economists",
+      "ask": "Specify competing models of what the Song iron receipts measure, from Hartwell's fixed multiplier to variable collection fractions, and test which fits shifts in administration versus regional demand."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Compile a register of attested Song iron sites linked to the Song huiyao and gazetteers, and measure slag-heap volumes, furnace capacities and fuel types to give an output estimate independent of the fiscal record."
+    }
+  ],
   "matters": "Hartwell's figure is the main quantitative support for the idea of a Northern Song 'industrial revolution' and for claims that Chinese iron output in 1078 rivalled that of Britain in the late eighteenth century. It is used in world histories, in comparative arguments about the Great Divergence, and in environmental histories of deforestation and the shift from charcoal to coal. If output was much lower, or largely charcoal-fuelled, the narrative of a Song coal-and-iron breakthrough that later stalled needs revision.",
   "stuck": "The figure is extrapolated from iron receipts recorded for state monopoly and tax purposes in compilations such as the Song huiyao and Wenxian tongkao, which record what the state collected, not what was produced, and Hartwell's multiplier from receipts to output is an assumption. Donald Wagner argued that these administrative figures cannot be scaled up so simply, and Tim Wright's review of four decades of citation found that the estimate has been repeated far more often than tested. Archaeological evidence for Song ironworks is patchy: few smelting sites have been excavated and published in detail, and slag volumes, furnace capacities and fuel types have not been surveyed systematically.",
   "solved": "An output estimate for the 1070s, with explicit error bounds, built from at least two independent lines of evidence (the fiscal record re-read prefecture by prefecture with a stated model of collection rates, and archaeological slag-heap volumes and furnace capacities from surveyed sites), with the two lines agreeing within their stated uncertainties.",
@@ -184,6 +194,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

@@ -10,6 +10,20 @@
     "digitization",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "archaeologists",
+      "ask": "Search colonial visitas, revisitas and court records, including the Archivo General de la Nación, for documents read from khipus, and match each candidate pair by totals and structure."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Using the Open Khipu Repository schema, write rival readings of colour, ply and attachment as models that predict non-numerical features of held-out cord groups."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Test whether proposed meanings predict unseen cords better than chance and better than the numerical baseline set by Medrano (2024)."
+    }
+  ],
   "matters": "Colonial chroniclers reported that khipukamayuq read histories, genealogies and laws from cords. If khipus encoded non-numerical information systematically, the Inka state kept records that could be read as primary sources for Andean history before and after 1532, and the comparative history of writing would need to include a non-graphic system. If they did not, accounts of Inka administration must explain how a large empire functioned on numerical records plus memory.",
   "stuck": "Roughly a thousand khipus survive (estimates vary), most without archaeological context, and very few can be paired with a Spanish-language transcription of the same record. The decimal knot system was established by Locke (1912) and the Aschers, but colour, fibre, spin and ply, attachment direction and knot orientation vary in ways that have resisted consistent interpretation. Data were long scattered across incompatible recording schemes and unpublished notebooks.",
   "solved": "A model trained on matched khipu–document pairs predicts, for khipus or transcriptions held out from training, non-numerical features (such as moiety, lineage, place or personal-name categories) significantly better than chance and better than numerical-only baselines, and the predictions are confirmed when new matched pairs are found.",
@@ -260,6 +274,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

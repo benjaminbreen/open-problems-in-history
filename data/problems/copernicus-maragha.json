@@ -9,6 +9,16 @@
   "flags": [
     "digitization"
   ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Examine ownership notes, bindings and library inventories of Greek and Hebrew astronomical miscellanies in Italian, Polish and Central European collections, including the Jagiellonian Library."
+    },
+    {
+      "who": "philologists",
+      "ask": "Census every manuscript carrying the Ṭūsī couple or an Ibn al-Shāṭir-type model in any language, recording which device variant each witness carries and its date."
+    }
+  ],
   "matters": "If Copernicus drew on the Ṭūsī couple and Ibn al-Shāṭir's lunar and Mercury models, the Copernican revolution sits at the end of a continuous Arabic and Persian reform of Ptolemaic astronomy rather than at a Latin new beginning. The answer bears on how historians describe the relation between Islamic science and the Renaissance, on the role of Byzantine and Jewish intermediaries in fifteenth-century Italy, and on Swerdlow's reconstruction of how Copernicus reached heliocentrism in the first place.",
   "stuck": "The mathematical parallels have been clear since Kennedy and Roberts (1959) and Swerdlow and Neugebauer (1984), but Copernicus cites no Arabic author for these devices, and no Latin translation of al-Ṭūsī's Tadhkira or Ibn al-Shāṭir's Nihāyat al-sūl is known. The one securely located carrier, a Ṭūsī-couple diagram in a Byzantine Greek astronomical text in Vat. gr. 211, proves the device reached Italy but not that Copernicus saw it. Skeptics (Di Bono 1995, Blåsjö 2014, 2018) argue that the devices could have been derived independently or from Latin sources such as Proclus, so parallels alone cannot settle the question.",
   "solved": "A dated document (a manuscript, annotation, library inventory, loan record or letter) that places a text describing the Ṭūsī couple or Ibn al-Shāṭir's models in the hands of Copernicus, one of his teachers, or a scholar demonstrably in contact with him in Kraków, Bologna, Rome, Padua or Ferrara before about 1514. Alternatively, a documented exhaustive search of the relevant manuscript holdings that finds no such carrier would narrow the hypothesis to independent invention or oral transmission.",
@@ -262,6 +272,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

@@ -8,6 +8,7 @@
   "field": one of "Demography" | "Economy" | "Science & knowledge" | "Languages & scripts" | "Texts & authorship" | "Chronology" | "Material & visual" | "Places" | "Disease",
   "start": integer year (BCE as negative), "end": integer year — the period the problem concerns,
   "flags": array, possibly empty, of "digitization" (progress likely needs new digitization of known, located holdings and collaboration with archivists) and/or "science" (confirmation needs collaboration with scientists: excavation, ancient DNA, radiocarbon, dendrochronology, materials analysis, imaging),
+  "needs": [ { "who": speciality slug from NEEDS in render.js (e.g. "archivists", "geneticists", "astronomers"), "ask": "One imperative sentence, max ~28 words: what someone in that speciality could concretely do on this problem" } ],
   "matters": "2–4 sentences: what other arguments depend on the answer",
   "stuck": "2–4 sentences: why it has stayed open",
   "solved": "1–3 sentences: what would count as a solution, stated as a test that can be checked",

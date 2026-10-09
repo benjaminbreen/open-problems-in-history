@@ -10,6 +10,20 @@
     "digitization",
     "decipherment"
   ],
+  "needs": [
+    {
+      "who": "archaeologists",
+      "ask": "Reconcile the Mahadevan, CISI and ICIT sign lists into an open, versioned corpus, recording object type and site for each inscription and keeping alternative sign mergers side by side."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Build comparison corpora of known scripts and non-linguistic systems trimmed to Indus text lengths, extending Sproat (2014), and test measures beyond entropy such as sign-position regularities."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Pre-register the classifiers and thresholds, then report error rates for the Indus corpus across alternative sign lists and segmentations."
+    }
+  ],
   "matters": "If the Indus signs are writing, the Harappan civilization was literate and every proposed decipherment (Dravidian, Indo-Aryan, Munda or other) is a legitimate project; if not, it becomes the main case of a large urban society administered without writing, which changes comparative accounts of states and bureaucracy. The answer also governs how seals, tags and pot inscriptions are read as evidence for trade, taxation and identity across a region of perhaps a million square kilometres.",
   "stuck": "Inscriptions average about five signs and the longest have only a few dozen, so statistical signatures that distinguish languages from other systems are weak at this length. Farmer, Sproat and Witzel (2004) argued the brevity and sign-repetition patterns are incompatible with writing; Rao et al. (2009) answered that conditional entropy places the corpus within the range of linguistic scripts; Sproat (2010, 2014) showed that several non-linguistic systems also fall in that range. The corpora used by different teams differ in sign lists (roughly 400 to 700 signs) and inclusion rules, and the most complete database (ICIT) requires permission to access.",
   "solved": "A pre-registered battery of measures, fixed before the Indus data are scored, classifies a large set of known writing systems and non-linguistic systems (heraldry, mason's marks, deity symbols, administrative codes) correctly when all are trimmed to the Indus length distribution, and then assigns the Indus corpus to one class with stated error rates that are robust to choice of sign list.",
@@ -209,6 +223,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }

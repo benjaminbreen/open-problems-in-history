@@ -9,6 +9,16 @@
   "flags": [
     "science"
   ],
+  "needs": [
+    {
+      "who": "geoscientists",
+      "ask": "Judge whether each candidate passage, with its date range, describes effects and a location consistent with a Sunda megathrust source and the coral-dated 1394 and 1450 windows."
+    },
+    {
+      "who": "philologists",
+      "ask": "Search the Ming Shilu, Ma Huan, Fei Xin, Gong Zhen and the Malay chronicles for sea floods or abandoned towns, and record every passage and edition examined."
+    }
+  ],
   "matters": "Coral microatolls on Simeulue record sudden uplift above the Sunda megathrust in 1394 ± 2 and 1450 ± 3 CE, and tsunami deposits and abandoned settlements on the Aceh coast have been tied to these events, making them the closest predecessors of the 2004 Indian Ocean tsunami. A dated written witness would test the geological chronology independently, as Japanese records did for the 1700 Cascadia earthquake, and would constrain the extent of the events beyond Aceh (to Sri Lanka, South India or the Malay Peninsula), which matters for hazard models. It would also test the archaeological argument that the 1394 tsunami emptied the low-lying ports around Lamri and helped shift trade toward Samudera-Pasai and Melaka before the rise of the Aceh Sultanate.",
   "stuck": "The geological case was built after 2004 by earth scientists and archaeologists, and their historical discussion relies on indirect textual signals such as the fading of Lamri from Arabic sailing texts rather than on a search for a description of the event. The candidate sources are scattered across languages and genres: the Ming Shilu and Zheng He-era accounts (Ma Huan, Fei Xin, Gong Zhen), which describe Lamri and Samudera in the 1400s–1430s; Malay chronicles such as the Hikayat Raja Pasai and Sejarah Melayu, known only from much later copies and lacking dates; and Arabic, Persian and South Indian materials. Ming restrictions on private maritime trade from 1371 also thinned Chinese contact with Sumatra precisely around 1394, so silence in Chinese records is hard to interpret.",
   "solved": "Either a text written or reliably dated before c. 1520 that describes a sea flood, destructive wave or earthquake on the coasts of the eastern Indian Ocean and can be dated within the 1394 ± 2 or 1450 ± 3 CE windows; or a published negative search listing every source and passage examined for those windows (Ming Shilu, Zheng He-era accounts, Malay chronicles, Arabic nautical and geographical texts, Sri Lankan and South Indian records), with search terms and editions, so the absence can be cited and extended.",
@@ -285,6 +295,7 @@
     "drafted_by": "Claude Opus 5.5",
     "drafted_on": "2026-10-08",
     "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08"
+    "compiled_on": "2026-10-08",
+    "needs_on": "2026-10-09"
   }
 }
