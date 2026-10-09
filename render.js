@@ -254,7 +254,9 @@ export function aboutHTML() {
         <li><span>Email</span><div>You can reach me <a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">here</a></div></li>
         <li><span>New problems</span><a href="/suggest">Suggest a problem</a></li>
         <li><span>The site itself</span><div>${ext(`${REPO}/issues/new`, "Open an issue on GitHub")} to report an error or propose a change; ${ext(`${REPO}/pulls`, "pull requests")} are welcome</div></li>
-        <li><span>Source and data</span>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</li>
+        <li><span>Sources</span><div>A list of all sources is available <a href="/sources">here</a>, and the raw dataset <a href="/api/problems">here</a></div></li>
+        <li><span>Methods</span><div>How the problems were chosen and how ratings work: <a href="/methods">Methods</a></div></li>
+        <li><span>GitHub</span>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</li>
         <li><span>AI agents</span><a href="/llms.txt">llms.txt</a></li>
       </ul>
       <section id="thanks" hidden></section>
