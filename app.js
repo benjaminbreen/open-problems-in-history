@@ -150,10 +150,11 @@ app.addEventListener("submit", async (e) => {
     catch (err) { alert(`Could not post: ${err.message}`); f.querySelector("button").disabled = false; return; }
     const msg = document.createElement("p");
     msg.className = "note thanks";
-    msg.textContent = "Thank you. It will appear here after review.";
+    msg.textContent = f.dataset.kind === "work" ? "Thank you. The editors will review it." : "Thank you. It will appear here after review.";
     f.reset(); f.querySelector("button").disabled = false;
-    if (f.dataset.kind === "approach") toggleIdea(false);
-    const anchor = f.dataset.kind === "approach" ? app.querySelector(".idea-toggle") : f;
+    const form = { approach: "idea-form", work: "work-form" }[f.dataset.kind];
+    if (form) toggleIdea(false, form);
+    const anchor = form ? app.querySelector(`.idea-toggle[data-idea="${form}"]`) : f;
     anchor.parentNode.querySelector(".thanks")?.remove();
     anchor.after(msg);
   }
@@ -182,8 +183,8 @@ app.addEventListener("submit", async (e) => {
   }
 });
 
-function toggleIdea(force) {
-  const b = app.querySelector(".idea-toggle"), s = app.querySelector("#idea-form");
+function toggleIdea(force, id = "idea-form") {
+  const b = app.querySelector(`.idea-toggle[data-idea="${id}"]`), s = app.querySelector(`#${id}`);
   const on = force ?? b.getAttribute("aria-expanded") !== "true";
   b.setAttribute("aria-expanded", on);
   s.classList.toggle("open", on);
@@ -199,7 +200,7 @@ app.addEventListener("click", async (e) => {
   if (!t) return;
   if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort2", view.sort); return renderList(); }
   if (t.dataset.show) { view.show = t.dataset.show; writeURL(); return renderList(); }
-  if (t.dataset.idea) return toggleIdea();
+  if (t.dataset.idea) return toggleIdea(undefined, t.dataset.idea);
   if (t.dataset.rate) {
     const d = draft(); d.scores ||= {};
     d.scores[t.dataset.rate] = Number(t.dataset.val);
@@ -452,16 +453,18 @@ async function renderAdmin() {
         : `<button type="button" class="btn ghost" data-rating="${esc(r.rid)}" data-action="remove">Remove</button>`}</div>
     </div>`;
   const post = (c) => `<div class="admin-item">
-      <div class="note">${c.kind === "approach" ? "Approach" : "Comment"} on <a href="/p/${esc(c.pid)}">${esc(c.title)}</a>${c.flag ? ` · <b class="del">${esc(c.flag)}</b>` : ""}</div>
+      <div class="note">${{ approach: "Approach", work: "Suggested work" }[c.kind] || "Comment"} on <a href="/p/${esc(c.pid)}">${esc(c.title)}</a>${c.flag ? ` · <b class="del">${esc(c.flag)}</b>` : ""}</div>
       <p>${esc(c.text)}</p>
       <div class="note">${esc(c.name)}${c.agent ? ` · AI: ${esc(c.agent)}` : ""} · ${new Date(c.t).toISOString().slice(0, 16).replace("T", " ")}</div>
-      <div class="acts"><button type="button" class="btn" data-post="${esc(c.cid)}" data-action="approve">Approve</button><button type="button" class="btn ghost" data-post="${esc(c.cid)}" data-action="reject">Reject</button></div>
+      <div class="acts">${c.kind === "work"
+        ? `<button type="button" class="btn" data-post="${esc(c.cid)}" data-action="reject">Mark added</button><button type="button" class="btn ghost" data-post="${esc(c.cid)}" data-action="reject">Dismiss</button>`
+        : `<button type="button" class="btn" data-post="${esc(c.cid)}" data-action="approve">Approve</button><button type="button" class="btn ghost" data-post="${esc(c.cid)}" data-action="reject">Reject</button>`}</div>
     </div>`;
   app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
     <p class="note">Signed in. Delete links now appear on published comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
     <section><h2>Impact ratings awaiting review (${ratings.pending.length})</h2>${ratings.pending.map((r) => rater(r, true)).join("") || `<p class="note">None.</p>`}</section>
     <section><h2>Impact ratings in use (${ratings.approved.length})</h2>${ratings.approved.map((r) => rater(r, false)).join("") || `<p class="note">None.</p>`}</section>
-    <section><h2>Comments and approaches awaiting review (${posts.length})</h2>${posts.map(post).join("") || `<p class="note">None.</p>`}</section>
+    <section><h2>Comments, approaches and suggested works awaiting review (${posts.length})</h2>${posts.map(post).join("") || `<p class="note">None.</p>`}</section>
     ${["pending", "approved", "rejected"].map((st) => `<section><h2>Suggested problems: ${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
 

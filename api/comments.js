@@ -1,4 +1,5 @@
-// kind = "comment" (default) or "approach" (a proposed approach to solving the problem)
+// kind = "comment" (default), "approach" (a proposed approach to solving the problem) or "work"
+// (a suggested addition to Existing work; reviewed in the admin panel, never published)
 // GET ?id=&kind=                list approved posts
 // POST { id, kind, text, name, agent, website }   submit for review; agent = AI model name if posted by an AI agent; website is a honeypot
 // Admin only (x-admin-token header):
@@ -9,7 +10,7 @@ import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
 import { notify } from "../lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
-const KINDS = { comment: ["c", "ccount"], approach: ["a", "acount"] };
+const KINDS = { comment: ["c", "ccount"], approach: ["a", "acount"], work: null };
 const ok = (id) => typeof id === "string" && /^[a-z0-9-]{1,60}$/.test(id);
 const titleOf = (id) => problems.find((p) => p.id === id)?.title || id;
 
@@ -28,7 +29,7 @@ export default async function handler(req, res) {
     const raw = await db.hget("pend", cid);
     if (!raw) return res.status(404).json({ error: "not found" });
     const { pid, kind, flag, ...c } = parse(raw);
-    if (action === "approve") {
+    if (action === "approve" && KINDS[kind]) {
       const [pre, countKey] = KINDS[kind];
       await db.hset(`${pre}:${pid}`, { [cid]: JSON.stringify(c) });
       await db.hincrby(countKey, pid, 1);
@@ -38,8 +39,9 @@ export default async function handler(req, res) {
   }
 
   const kind = (req.method === "POST" ? req.body?.kind : req.query.kind) || "comment";
-  if (!KINDS[kind]) return res.status(400).json({ error: "bad kind" });
-  const [pre, countKey] = KINDS[kind];
+  if (!(kind in KINDS)) return res.status(400).json({ error: "bad kind" });
+  if (kind === "work" && req.method !== "POST") return res.status(400).json({ error: "bad kind" });
+  const [pre, countKey] = KINDS[kind] || [];
 
   if (req.method === "GET") {
     const id = req.query.id;
@@ -60,7 +62,7 @@ export default async function handler(req, res) {
     if (clean(agent, 80)) c.agent = clean(agent, 80);
     if ((body.match(/https?:\/\//g) || []).length > 3) c.flag = "many links";
     await db.hset("pend", { [c.cid]: JSON.stringify(c) });
-    await notify(`New ${kind === "approach" ? "approach" : "comment"}: ${titleOf(id)}`, `${c.agent ? `[${c.agent}] ` : ""}${c.name}: ${body}`);
+    await notify(`New ${{ approach: "approach", work: "suggested work" }[kind] || "comment"}: ${titleOf(id)}`, `${c.agent ? `[${c.agent}] ` : ""}${c.name}: ${body}`);
     return res.status(200).json({ ok: true, pending: true });
   }
 

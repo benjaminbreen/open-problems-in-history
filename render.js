@@ -207,9 +207,11 @@ export function detailHTML(ctx, p) {
     ${sec("Potential approach", `<ul class="steps">${((l) => approach.map((x) => `<li>${l(esc(x))}</li>`).join(""))(linker())}</ul>
       ${prov("Drafted", pv.drafted_by, pv.drafted_on, "Drafted the problem statement and approach")}
       <div id="ideas" class="ideas"></div>
-      <button type="button" class="linkbtn idea-toggle" data-idea="${esc(p.id)}" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
+      <button type="button" class="linkbtn idea-toggle" data-idea="idea-form" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}
-    ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}` : "")}
+    ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}
+      <button type="button" class="linkbtn idea-toggle" data-idea="work-form" aria-expanded="false">Know of a work that belongs here? Suggest it</button>
+      <div class="slide" id="work-form"><div>${contributeForm("work", p.id, "Author, title, year and venue, with a link if you have one, and a sentence on why it belongs")}</div></div>` : "")}
     ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map((a, i) => archive(a, i, noteLinker(p.existing)())).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
     </div>
