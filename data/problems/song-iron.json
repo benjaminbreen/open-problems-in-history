@@ -13,9 +13,12 @@
   "stuck": "The figure is extrapolated from iron receipts recorded for state monopoly and tax purposes in compilations such as the Song huiyao and Wenxian tongkao, which record what the state collected, not what was produced, and Hartwell's multiplier from receipts to output is an assumption. Donald Wagner argued that these administrative figures cannot be scaled up so simply, and Tim Wright's review of four decades of citation found that the estimate has been repeated far more often than tested. Archaeological evidence for Song ironworks is patchy: few smelting sites have been excavated and published in detail, and slag volumes, furnace capacities and fuel types have not been surveyed systematically.",
   "solved": "An output estimate for the 1070s, with explicit error bounds, built from at least two independent lines of evidence (the fiscal record re-read prefecture by prefecture with a stated model of collection rates, and archaeological slag-heap volumes and furnace capacities from surveyed sites), with the two lines agreeing within their stated uncertainties.",
   "approach": [
-    "Agents can extract every reference to iron production sites (ye, jian, wu), quotas and receipts from the full-text Song huiyao jigao, Xu zizhi tongjian changbian, Wenxian tongkao and Song gazetteers, map them to prefectures and dates, and assemble the competing readings of how quotas related to production.",
-    "Historians can then compare alternative collection-rate models in a single framework.",
-    "Confirmation requires collaboration with archaeometallurgists: systematic survey and volumetric measurement of slag heaps at known Song iron districts (for example around Handan and Cizhou in Hebei, and in Shanxi and Henan), radiocarbon dating of charcoal and coke inclusions, and analysis of slag and cast-iron objects (sulphur content and other tracers) to separate charcoal-fired from coal-fired production."
+    "Any revision begins with the case Hartwell (1962) and Hartwell (1966) built from receipt lists in the Song huiyao and Wenxian tongkao, and his longer cycle in Hartwell (1967). The critiques in Wagner (2001) and Wagner (2008), the reception history traced by Wright (2007) and the survey of mining by Golas (1999) set out where that reasoning is weakest.",
+    "Extract every mention of ironworks (ye, jian, wu), quotas and receipts from the Song huiyao jigao, Xu zizhi tongjian changbian, Wenxian tongkao and Song gazetteers, through Scripta Sinica and the Chinese Text Project, and tie each to a prefecture and date using CHGIS (2016). The decision that shapes the data is how each figure is classed: quota, actual receipt, tax share of private output, or narrative report.",
+    "Several models of what the receipts mean then compete. Hartwell's multiplier treats taxed iron as a fixed fraction of private output; a lower reading treats receipts as close to the output of state works, with private production largely unrecorded; a third allows the fraction to vary with collection rules. Figures that shift with changes in administration rather than with regional demand would count against a fixed multiplier.",
+    "A prefecture-by-prefecture register of attested Song iron sites, linking documentary references to published site reports, would be useful even if total output stays uncertain, because it shows where production was concentrated and where fieldwork would test the most.",
+    "Archaeology gives a second line of evidence. Slag volumes and furnace capacities at districts around Kuangshancun near Handan, in Cizhou, Shanxi and Henan, and at charcoal-fuelled bloomery sites such as Xiacaopu in Fujian, together with fuel tracers of the kind used by Wayman and Wang (2003) and Liu (2019), could bound output and the share smelted with coal. The answer will remain an order-of-magnitude range, but one with stated error bounds.",
+    "That second line depends on archaeometallurgists, such as those at the University of Science and Technology Beijing, and on provincial cultural-relics bureaus permitting survey, sampling and radiocarbon dating. Historians of Song fiscal administration need to review how the textual figures are classed."
   ],
   "existing": [
     {
@@ -91,6 +94,14 @@
       "note": "Standard history of Chinese iron and steel in political and economic context, with extended treatment of the Song industry and its sources."
     },
     {
+      "year": 2016,
+      "authors": "CHGIS (Fairbank Center for Chinese Studies, Harvard University, and Center for Historical Geographical Studies, Fudan University)",
+      "title": "China Historical GIS, Version 6",
+      "venue": "Harvard Dataverse",
+      "url": "https://chgis.fas.harvard.edu/data/chgis/v6/",
+      "note": "Time-series dataset of administrative units, including prefectures and counties across dynasties, for placing Song iron sites and quotas on a map; free for academic use."
+    },
+    {
       "year": 2019,
       "authors": "Siran Liu, Thilo Rehren, Dashu Qin, Jianli Chen et al.",
       "title": "Coal-fuelled crucible lead-silver smelting in 12th–13th century China: A technological innovation in the age of deforestation",
@@ -105,7 +116,10 @@
       "collection": "Scripta Sinica (Hanji dianzi wenxian 漢籍電子文獻): full texts of Song huiyao jigao, Xu zizhi tongjian changbian, Song shi and Wenxian tongkao",
       "url": "https://hanchi.ihp.sinica.edu.tw/",
       "digitized": "full",
-      "note": "Searchable full texts of the main fiscal sources for Song iron quotas and receipts; partly free, fuller access by institutional subscription."
+      "note": "Searchable full texts of the main fiscal sources for Song iron quotas and receipts; partly free, fuller access by institutional subscription.",
+      "aliases": [
+        "Scripta Sinica"
+      ]
     },
     {
       "repository": "National Library of China, Beijing",
@@ -154,6 +168,16 @@
       "url": "https://donwagner.dk/arch-iron",
       "digitized": "full",
       "note": "Open teaching text and bibliographies on Chinese iron technology, useful for locating published site reports."
+    },
+    {
+      "repository": "Xiacaopu iron production site, Qingyang, Anxi County, Fujian",
+      "collection": "Song-period bloomery furnaces, mining pits and fuel hills, a component of the World Heritage property 'Quanzhou: Emporium of the World in Song-Yuan China'",
+      "url": "https://whc.unesco.org/en/list/1561",
+      "digitized": "none",
+      "note": "Charcoal-fuelled smelting site radiocarbon-dated to about the tenth and eleventh centuries, excavated by Peking University since 2019; a southern contrast to the northern coal districts.",
+      "aliases": [
+        "Xiacaopu"
+      ]
     }
   ],
   "provenance": {

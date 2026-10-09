@@ -11,9 +11,12 @@
   "stuck": "Silver reached China by several routes (the Manila galleons, the Cape route via European companies, overland through Central Asia, and from Japan, which was a larger supplier than the Americas for parts of the period), and each route is documented in different archives with different biases. Registered mint and treasury output understates production because of contraband and unregistered silver, and smuggling on the Acapulco–Manila route was extensive. Chinese sources record taxes, prices and exchange rates rather than imports, so arrivals must be inferred, and published estimates (Barrett, Flynn and Giráldez, von Glahn, TePaske) rest on different assumptions about leakage, re-export and Japanese supply.",
   "solved": "A route-by-route, decade-by-decade mass balance for 1550–1800 in which American registered production plus an explicit contraband estimate equals the sum of silver retained in the Americas, shipped to Europe, re-exported to Asia, and carried across the Pacific, with China's share derived from these flows and checked against Japanese exports and Chinese monetary indicators (silver–copper exchange rates, tax receipts in silver, price levels).",
   "approach": [
-    "Agents can assemble the published quantitative series (TePaske's mint and treasury data, Garner's mining series, VOC and East India Company bullion exports, galleon registers, Japanese export estimates) into one linked dataset with source citations and documented units, then flag gaps and double counting between routes.",
-    "Historians can specify alternative contraband and re-export assumptions and see how each changes the China total, while agents search the AGI, AGN and VOC finding aids for unused series (for example Manila customs and Acapulco registers) that would narrow the largest uncertainties.",
-    "Chinese provincial price and exchange-rate data from the Qing archives provide an independent test of the timing of inflows."
+    "The registered production series of Garner (1988) and TePaske (2010), the global accounting of Barrett (1990) and the import estimates of Atwell (1982), Flynn and Giráldez (1995) and von Glahn (1996) are the base. Kobata (1965) fixed the scale of Japanese supply, and the galleon histories of Bonialian (2014) and Giráldez (2015) document how much of the Pacific trade escaped registration.",
+    "Assemble every published figure into one linked dataset, recording route, decade, original unit (pesos, marks or taels), fineness and whether the number is registered or estimated. Converting all of it to tonnes of fine silver with documented assumptions is what makes the routes comparable and exposes double counting where the same silver appears in mint, treasury and shipping series.",
+    "For the Pacific route, read the Manila treasury accounts and galleon registers in the AGI, located through Heredia Herrera (1989), against the Ramo Filipinas in the AGN described by Urrutia de Stebelski (1980). A reconciled Acapulco–Manila series for 1571–1815, set beside contemporary complaints about smuggling, would be useful on its own.",
+    "Rival readings of the seventeenth century can then be tested directly. Atwell's case for a collapse of imports after the 1630s and von Glahn's reply in the Journal of Economic History predict different decade totals, while Deng (2008) and Flynn and Giráldez (2002) disagree on how large the inflow was relative to the Chinese economy; VOC finding aids for Deshima and the Canton factory records of the East India Company give independent checks on the Japanese and Cape routes.",
+    "On the Chinese side, silver–copper exchange rates and provincial prices from the Qing archives, and from 1736 the Qing Grain Price Database, offer a test of timing rather than volume. Palma and Silva (2024), Irigoin (2009) and Lin (2006) frame the eighteenth-century and closing years, but contraband and the overland route through Central Asia mean China's share will remain a range under stated assumptions.",
+    "Progress depends on wider imaging of AGI and AGN legajos, on access to Qing memorials through the First Historical Archives, and on economic historians who read Spanish, Dutch and classical Chinese reviewing each series before it enters the totals."
   ],
   "existing": [
     {
@@ -128,6 +131,22 @@
       "note": "Posthumous compilation of decade-by-decade registered gold and silver output from Spanish and Portuguese American treasuries and mints, with discussion of contraband."
     },
     {
+      "year": 2014,
+      "authors": "Mariano Bonialian",
+      "title": "China en la América colonial: Bienes, mercados, comercio y cultura del consumo desde México hasta Buenos Aires",
+      "venue": "México: Instituto Mora; Buenos Aires: Biblos",
+      "url": "https://www.marcialpons.es/libros/china-en-la-america-colonial/9789876912839/",
+      "note": "Traced Asian goods and the silver paid for them through New Spain, Peru and the Río de la Plata, using unpublished Spanish, Mexican, Peruvian and Argentine records, much of it trade outside the registered galleon."
+    },
+    {
+      "year": 2015,
+      "authors": "Arturo Giráldez",
+      "title": "The Age of Trade: The Manila Galleons and the Dawn of the Global Economy",
+      "venue": "Lanham, MD: Rowman & Littlefield",
+      "url": "https://catalogo.abie.es/Record/unav.b30440798",
+      "note": "Full history of the Manila galleon route from 1571 to 1815, with silver as the commodity driving the trade."
+    },
+    {
       "year": 2019,
       "authors": "Richard von Glahn",
       "title": "The Changing Significance of Latin American Silver in the Chinese Economy, 16th–19th Centuries",
@@ -160,7 +179,10 @@
           "name": "Filipinas: general accounts of the Real Hacienda, 1726-1834",
           "ref": "Filipinas, legs. 858-868 and 871",
           "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
-          "note": "General accounts of the Manila treasury with detailed receipts (cargo) and expenditure (data), described in Heredia Herrera (1989)."
+          "note": "General accounts of the Manila treasury with detailed receipts (cargo) and expenditure (data), described in Heredia Herrera (1989).",
+          "match": [
+            "Manila treasury accounts"
+          ]
         },
         {
           "name": "Filipinas: testimonies of registros de naos, 1657-1809",
@@ -192,7 +214,10 @@
         {
           "name": "Ramo Filipinas",
           "note": "Sixty-three volumes from 1718 on the Philippines and the Manila galleon trade, described in the guide by Urrutia de Stebelski (1980).",
-          "ref": "AGN, Filipinas, vols. 1–63"
+          "ref": "AGN, Filipinas, vols. 1–63",
+          "match": [
+            "Ramo Filipinas"
+          ]
         },
         {
           "name": "Casa de Moneda",
@@ -251,7 +276,10 @@
           "name": "Factory Records: China and Japan",
           "ref": "IOR/G/12",
           "url": "https://searcharchives.bl.uk/catalog/036-000175241",
-          "note": "Canton diaries and consultations 1751-1834, China Select Committee secret consultations 1793-1832 and ship diaries 1721-1751."
+          "note": "Canton diaries and consultations 1751-1834, China Select Committee secret consultations 1793-1832 and ship diaries 1721-1751.",
+          "match": [
+            "Canton factory records"
+          ]
         },
         {
           "name": "Records of the East India Company Factory at Canton",
@@ -269,6 +297,16 @@
       "note": "Chinese-side evidence for timing and effects of silver inflows; access onsite by application, with some series online.",
       "aliases": [
         "Qing archives"
+      ]
+    },
+    {
+      "repository": "Institute of Modern History, Academia Sinica, Taipei",
+      "collection": "Qing Dynasty Grain Price Database (清代糧價資料庫), monthly provincial grain price reports from 1736 to 1911, compiled from the project begun by Wang Yeh-chien",
+      "url": "https://mhdb.mh.sinica.edu.tw/foodprice/about.php",
+      "digitized": "full",
+      "note": "Prices reported to the throne in silver taels per picul, drawn from memorials in the National Palace Museum, Taipei, and the First Historical Archives; online after free registration.",
+      "aliases": [
+        "Qing Grain Price Database"
       ]
     }
   ],

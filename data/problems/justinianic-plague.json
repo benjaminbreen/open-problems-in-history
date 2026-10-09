@@ -13,9 +13,12 @@
   "stuck": "Narrative sources (Procopius, John of Ephesus, Evagrius, Gregory of Tours) give vivid but rhetorically shaped figures for a few cities, and there are almost no serial demographic records. Documentary proxies such as papyri, legislation, coin output, inscriptions and building activity can be read as showing disruption or continuity depending on the baseline chosen. Ancient DNA proves presence of the pathogen at particular sites but not mortality rates, and pollen and settlement data are often too coarse in date to isolate the 540s from other causes.",
   "solved": "A region-by-region database of dated proxies (papyri, legislation, coin issues, dated inscriptions, burials with plague DNA, high-resolution pollen cores, settlement and building chronologies) showing, with stated uncertainties, whether measurable discontinuities cluster at the documented plague waves more than expected from a baseline of other shocks, yielding bounded mortality estimates for named regions.",
   "approach": [
-    "Agents can extract and date every reference to plague waves from narrative and documentary sources, compile counts of dated papyri, inscriptions, laws and coin issues per year and region, and align them with published palaeoecological and aDNA results in a common spatial-temporal framework.",
-    "Event-study statistics around each wave, with explicit baselines, would replace selective citation.",
-    "Confirmation requires collaboration with ancient-DNA laboratories to screen more burials across the Mediterranean and Near East and with palynologists for well-dated, high-resolution cores."
+    "Build on the source surveys of Biraben (1969) and Stathakopoulos (2004), the essays in Little (2007), and the maximalist synthesis of Harper (2017), read against the minimalist critique of Mordechai and Eisenberg (2019) and the replies by Sarris (2021) and Meier (2020). Roosen (2018) is a warning about reusing older compilations of plague mentions without returning to the sources.",
+    "Extract and date every reference to plague waves in narrative and documentary sources, then count dated papyri from the Papyrological Navigator, inscriptions, laws and coin issues per year and region. The main decision is how to separate a genuine fall in documentation from the uneven survival of sources, so every series needs an explicit pre-541 baseline.",
+    "Two readings compete: a demographic catastrophe that reshaped the empire, and a serious but locally bounded epidemic. Event-study comparisons around each wave would tell them apart: a maximalist case predicts synchronous breaks across regions and source types, a minimalist one scattered or absent breaks.",
+    "Align these series with pathogen genomes from Harbeck (2013), Wagner (2014) and Keller (2019), with pollen records in Neotoma, and with site studies such as Bar-Oz (2019) and Hendrix (2026). Epidemic models like White (2020), which found the reported Constantinople mortality and duration hard to reconcile, can test whether source claims are internally plausible.",
+    "A dated, region-by-region register of attested outbreaks and documentary series would be useful even if mortality stays unresolved. Any death toll will remain a wide range that differs by region rather than a single imperial figure.",
+    "Late antique historians, papyrologists and numismatists should review the coding and any agent-produced counts. Confirmation depends on ancient-DNA laboratories screening more burials across the Mediterranean and Near East, and on palynologists producing well-dated, high-resolution cores."
   ],
   "existing": [
     {
@@ -83,6 +86,14 @@
       "note": "Synthesis treating the pandemic, together with Late Antique cooling, as a central cause of Roman decline."
     },
     {
+      "year": 2018,
+      "authors": "Joris Roosen and Daniel R. Curtis",
+      "title": "Dangers of Noncritical Use of Historical Plague Data",
+      "venue": "Emerging Infectious Diseases 24, no. 1: 103-110",
+      "url": "https://doi.org/10.3201/eid2401.170477",
+      "note": "Shows how gaps and errors in Biraben's plague dataset propagate into modern analyses; a methodological caution for any count of plague mentions."
+    },
+    {
       "year": 2019,
       "authors": "Marcel Keller, Maria A. Spyrou, Christiana L. Scheib and others",
       "title": "Ancient Yersinia pestis genomes from across Western Europe reveal early diversification during the First Pandemic (541–750)",
@@ -129,6 +140,14 @@
       "venue": "American Historical Review 125 (5): 1632–1667",
       "url": "https://doi.org/10.1093/ahr/rhaa510",
       "note": "Traced how the modern idea of a uniform, catastrophic plague pandemic shaped readings of the sixth-century evidence."
+    },
+    {
+      "year": 2020,
+      "authors": "Lauren A. White and Lee Mordechai",
+      "title": "Modeling the Justinianic Plague: Comparing hypothesized transmission routes",
+      "venue": "PLOS ONE 15, no. 4: e0231256",
+      "url": "https://doi.org/10.1371/journal.pone.0231256",
+      "note": "Compartmental models of the 542 outbreak in Constantinople; no transmission route reproduces both the mortality and the duration described in the sources."
     },
     {
       "year": 2021,

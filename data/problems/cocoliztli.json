@@ -13,9 +13,12 @@
   "stuck": "The clinical descriptions (high fever, bleeding from nose and mouth, jaundice, rapid death, Indigenous victims and few Spanish ones) fit several modern diseases, and sixteenth-century terms like cocoliztli ('pestilence') were generic. Rodolfo Acuña-Soto and colleagues proposed a native rodent-borne haemorrhagic fever amplified by drought, but no such virus has been identified, and RNA viruses rarely survive to be detected in skeletal remains. Vågene et al. (2018) recovered Salmonella enterica Paratyphi C from an epidemic cemetery at Teposcolula-Yucundaa, but from one site in the Mixteca Alta and with the acknowledged possibility that other, undetectable pathogens were also present, so the finding has not settled the question for 1545 in central Mexico or for 1576 at all.",
   "solved": "Pathogen evidence from several independently dated epidemic burials of 1545–48 and 1576–80, in central Mexico as well as Oaxaca, identifies the same agent or combination of agents, and the agent's known epidemiology is consistent with the timing, symptoms, age and ethnic pattern of mortality, and geography recorded in the Relaciones geográficas, parish and cabildo records.",
   "approach": [
-    "Extract every report of the 1545 and 1576 epidemics from the Relaciones geográficas of 1579–85, the Florentine Codex and Sahagún's other writings, Francisco Hernández, Juan de Torquemada, Nahuatl annals such as the Codex en Cruz and Codex Mexicanus, viceregal correspondence and Mexico City cabildo minutes, coding symptoms, dates, places, mortality claims and who died.",
-    "Map these against tree-ring drought reconstructions and the spread of cattle, wheat, congregación and repartimiento labour to test whether mortality tracked climate, colonial disruption or communication routes.",
-    "Identify excavated or museum-held burial assemblages securely dated to either epidemic (epidemic cemeteries, hospital and convent burials in Mexico City, Puebla and Oaxaca) and work with INAH and palaeogenomic laboratories on metagenomic screening, including methods able to recover RNA viruses and parasites, so that the Teposcolula result can be tested at other sites."
+    "Build on the demographic and documentary work of Cook (1991), McCaa (1995) and Cook (1998), the haemorrhagic-fever case made by Acuña-Soto (2000) and Marr (2000), and the drought argument of Acuña-Soto (2002). The pictorial annals, read through Mengin (1952), and recent readings of the Florentine Codex by Ríos Castaño (2025) show how much the Nahuatl sources still have to give.",
+    "Extract every report of the 1545 and 1576 epidemics from the Relaciones geográficas of 1579–85, Sahagún's writings, Francisco Hernández, Juan de Torquemada, the Codex en Cruz and Codex Mexicanus, viceregal correspondence and the Mexico City cabildo minutes. Each report becomes a record of symptoms, dates, place, mortality claim and who died, with Spanish and Nahuatl testimony kept distinct and the date of writing recorded, since many accounts were set down decades after the events.",
+    "A georeferenced, source-graded atlas of the two epidemics would be useful on its own terms, showing where the documentary record is dense, where it is silent, and how far later chroniclers copied one another.",
+    "Set the atlas against the gridded soil-moisture reconstructions of Stahle (2016) and against the spread of cattle, wheat, congregación and repartimiento labour. A drought-and-rodent reservoir model, a colonial-disruption model and a contagion-along-routes model predict different geographies and timings of mortality, and the comparison should be reviewed by historians of New Spain before any is preferred.",
+    "Treat the pathogen as an open question. The Salmonella Paratyphi C genomes from Teposcolula-Yucundaa reported by Vågene (2018), with the context in Warinner (2012), Zhou (2018) and Bravo-Lopez (2025), establish one infection at one site, not the cause of the whole epidemic; mortality totals, too, will stay a wide range.",
+    "Testing that result depends on INAH and palaeogenomic laboratories: identifying securely dated epidemic burials in Mexico City, Puebla, Oaxaca and elsewhere, and screening them with methods able to recover RNA viruses and parasites as well as bacteria, under protocols agreed with descendant communities."
   ],
   "existing": [
     {
@@ -89,6 +92,14 @@
       "venue": "Latin American Antiquity 23 (4): 467–489",
       "url": "https://doi.org/10.7183/1045-6635.23.4.467",
       "note": "Identified the Teposcolula Yucundaa burials as the earliest known colonial epidemic cemetery in Mexico, linked to the cocoliztli of 1544–50, and showed the dead were local Mixtecs."
+    },
+    {
+      "year": 2016,
+      "authors": "David W. Stahle, Edward R. Cook, Dorian J. Burnette, José Villanueva, Julián Cerano et al.",
+      "title": "The Mexican Drought Atlas: Tree-ring reconstructions of the soil moisture balance during the late pre-Hispanic, colonial, and modern eras",
+      "venue": "Quaternary Science Reviews 149: 34–60",
+      "url": "https://doi.org/10.1016/j.quascirev.2016.06.018",
+      "note": "Gridded summer soil-moisture reconstructions for Mexico from 1400 CE, built from 252 tree-ring chronologies, allowing drought to be mapped year by year against epidemic reports."
     },
     {
       "year": 2018,

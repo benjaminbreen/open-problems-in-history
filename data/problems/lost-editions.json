@@ -11,9 +11,12 @@
   "stuck": "Lost editions leave evidence only indirectly, in booksellers' catalogues, inventories, references, binding fragments and editions known from a single copy. Statistical estimates depend on assumptions about how copy counts are distributed, and the main models give different answers for different categories of book. Catalogues such as ISTC, GW and USTC are revised continuously, but no one has systematically used their revision history to test whether past estimates correctly predicted the rate and kind of new discoveries.",
   "solved": "A survival model fitted on a dated snapshot of a major catalogue (for example ISTC or USTC as of a past year) that correctly predicts the number and category distribution of editions added in later years, together with an estimate of total lost editions by format, language and genre with stated uncertainty.",
   "approach": [
-    "Agents can reconstruct historical states of ISTC, GW, USTC and VD16 from published versions, data exports and change logs, record copy counts per edition, and fit unseen-species estimators (Chao1, Efron–Thisted and successors) separately for format, language and genre.",
-    "Predictions from older snapshots can then be scored against editions discovered since, and the documentary record of lost books (booksellers' lists, inventories, privileges) used as an independent check.",
-    "All the needed catalogues are already online, so no new digitization is required, though cooperation with catalogue maintainers would allow access to dated record histories."
+    "The estimates so far rest on a few decisions made differently each time: Buringh and van Zanden (2009) applied assumed loss rates, Green et al. (2011) and Green and McIntyre (2016) fitted copy-count distributions from ISTC, and Kestemont and Karsdorp (2020) and Kestemont et al. (2022) brought ecological unseen-species estimators from Efron and Thisted (1976) to manuscripts, with open code. Camps, Randon-Furling and Godreau (2025) have since set manuscript and incunable loss rates side by side.",
+    "Turning the catalogues into data means one record per edition with its surviving copy count, format, language, genre and sheet count. How copies are counted shapes the result, since fragments in bindings, Sammelbände and duplicate holdings in aggregated catalogues all inflate or deflate the singletons on which the estimators depend; Proot (2016) shows why sheet count and institutional ownership belong in the model.",
+    "With that table built from ISTC, GW, USTC and VD16, Chao1, Efron–Thisted and their successors can be fitted separately by format, language and genre, so that cheap vernacular print, which Pettegree (2016) and Eisermann (2016) argue is the most heavily lost, is not averaged away.",
+    "Catalogues have histories, so the estimators can be tested. Reconstructing earlier states of ISTC and GW from published versions and dated records, and checking what each snapshot predicted against the editions found since, would show which estimator is calibrated; that comparison is useful whatever the final total.",
+    "The documentary record of lost books is a second, independent check: registered titles in the Stationers' Register as used by Hill (2016), booksellers' lists, inventories and privileges, as gathered by Bruni and Pettegree (2016). Where statistical and documentary estimates diverge, the gap itself measures how far copy-count models miss editions that left no survivor at all, and the total will remain a range.",
+    "The catalogues are online, so no new digitization is needed, but dated record histories depend on cooperation from their maintainers at CERL, the Staatsbibliothek zu Berlin and St Andrews, and book historians should review how fragments and ephemera are classified."
   ],
   "existing": [
     {
@@ -89,12 +92,28 @@
       "note": "Showed that survival depends strongly on edition size in sheets, binding with other works and institutional ownership, variables a survival model should include."
     },
     {
+      "year": 2020,
+      "authors": "Mike Kestemont and Folgert Karsdorp",
+      "title": "Estimating the Loss of Medieval Literature with an Unseen Species Model from Ecodiversity",
+      "venue": "Proceedings of the Workshop on Computational Humanities Research (CHR 2020), CEUR Workshop Proceedings 2723",
+      "url": "https://ceur-ws.org/Vol-2723/short10.pdf",
+      "note": "Applied the Chao1 estimator to Middle Dutch chivalric epics and compared it with other estimators on simulated data, the pilot for the 2022 Science study."
+    },
+    {
       "year": 2022,
       "authors": "Mike Kestemont, Folgert Karsdorp, Elisabeth de Bruijn, Matthew Driscoll, Katarzyna A. Kapitan, Pádraig Ó Macháin, Daniel Sawyer and Remco Sleiderink",
       "title": "Forgotten books: The application of unseen species models to the survival of culture",
       "venue": "Science 375 (6582): 765–769",
       "url": "https://doi.org/10.1126/science.abl7655",
       "note": "Applied unseen-species models to medieval narrative manuscripts in six vernaculars and estimated that most works survive but most manuscripts were lost, with marked differences between literatures; data and code released openly."
+    },
+    {
+      "year": 2025,
+      "authors": "Jean-Baptiste Camps, Julien Randon-Furling and Ulysse Godreau",
+      "title": "On the transmission of texts: written cultures as complex systems",
+      "venue": "arXiv preprint 2505.19246",
+      "url": "https://arxiv.org/abs/2505.19246",
+      "note": "Compiles loss-rate estimates for medieval manuscripts and incunabula and models textual transmission as a complex system."
     }
   ],
   "archives": [
@@ -115,7 +134,8 @@
       "digitized": "full",
       "note": "Detailed descriptive catalogue of incunabula including fragments, with a long printed and online revision history useful for dating discoveries.",
       "aliases": [
-        "GW"
+        "GW",
+        "Staatsbibliothek zu Berlin"
       ]
     },
     {

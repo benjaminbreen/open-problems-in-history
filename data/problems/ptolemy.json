@@ -14,9 +14,12 @@
   "stuck": "Ptolemy dates the catalogue to the first year of Antoninus (AD 137) and implies he observed it, but its longitudes are systematically about 1° too small for that date, consistent with adding a precession of 1° per century to positions for Hipparchus's epoch. Statistical tests of epoch, observer latitude, rounding patterns and error structure have yielded conflicting verdicts because the catalogue may mix sources and because results depend on modelling choices. Until 2022 there were almost no direct Hipparchan coordinates against which to compare.",
   "solved": "Recovery of enough of Hipparchus's own coordinates (from palimpsests or other witnesses) to show for a substantial sample of stars whether Ptolemy's entries equal Hipparchan values shifted by 2°40′ in longitude, or differ in ways that require independent measurement; or a pre-registered statistical analysis of the whole catalogue, using modern astrometry, that discriminates between the two hypotheses for defined subsets of stars.",
   "approach": [
-    "Agents can rebuild the competing statistical tests from a single machine-readable edition of the catalogue and modern Hipparcos and Gaia positions, making every assumption explicit and reporting results by constellation and source subset.",
-    "In parallel, they can systematically compare newly recovered Hipparchan readings with Ptolemy's entries.",
-    "Further progress depends on multispectral imaging of the remaining undertext of the Codex Climaci Rescriptus and other Sinai palimpsests by imaging scientists, and on collaboration with astronomers to model proper motion and refraction."
+    "The statistical case has been argued many times, from Vogt (1925) and Newton (1977) through Evans (1987), Graßhoff (1990), Shevchenko (1990) and Dambis and Efremov (2000), with Duke (2002) questioning whether proper motions can separate the two epochs at all. Verbunt and van Gent (2012) already provide a machine-readable catalogue, and Toomer (1984) the standard translation, so teams need not start from the text.",
+    "Rebuild the competing tests on one shared footing: a single edition of the catalogue, with variants from Greek witnesses such as Vat. gr. 1594 and the Arabic and Latin tradition inventoried by Ptolemaeus Arabus et Latinus, matched star by star to modern positions from Hipparcos and Gaia DR3, described by Vallenari (2023) for the Gaia Collaboration. The identification of each ancient star with a modern one is the decision that most shapes the data, and doubtful identifications should be flagged rather than silently resolved.",
+    "With every assumption explicit, the main hypotheses can be tested side by side: that Ptolemy observed with a miscalibrated instrument, as Evans (1987) proposed; that he adapted Hipparchan coordinates by adding precession; or that the catalogue is a mixture. Reporting results by constellation, magnitude and source subset would show whether different parts of the catalogue have different origins.",
+    "The Hipparchan coordinates recovered by Gysembergh, Williams and Zingg (2022) from the Codex Climaci Rescriptus give, for the first time, a direct sample to compare with Ptolemy's entries. Even a few dozen stars, compared after converting between Hipparchus's equatorial and Ptolemy's ecliptic systems, would test the copying hypothesis more directly than error statistics can.",
+    "For much of the catalogue the answer is likely to remain probabilistic, with some regions attributable to Hipparchus and others uncertain. Historians of astronomy and astronomers should review both the star identifications and the modelling of proper motion and refraction.",
+    "Further direct evidence depends on multispectral imaging of the remaining undertext of the Codex Climaci Rescriptus and other Sinai palimpsests by imaging scientists, and on the Museum of the Bible, St Catherine's Monastery and partner libraries continuing to open these manuscripts to study."
   ],
   "existing": [
     {
@@ -76,6 +79,14 @@
       "note": "Used fast-moving stars to date the observations to roughly the second century BC, consistent with Hipparchus rather than Ptolemy."
     },
     {
+      "year": 2002,
+      "authors": "Dennis W. Duke",
+      "title": "Dating the Almagest Star Catalogue Using Proper Motions: A Reconsideration",
+      "venue": "Journal for the History of Astronomy 33 (1): 45–55",
+      "url": "https://people.sc.fsu.edu/~dduke/pmotion.pdf",
+      "note": "Argued that proper-motion dating cannot statistically distinguish Hipparchus's epoch from Ptolemy's."
+    },
+    {
       "year": 2005,
       "authors": "Bradley E. Schaefer",
       "title": "The Epoch of the Constellations on the Farnese Atlas and Their Origin in Hipparchus's Lost Catalogue",
@@ -106,6 +117,14 @@
       "venue": "Journal for the History of Astronomy 53 (4): 383–393",
       "url": "https://doi.org/10.1177/00218286221128289",
       "note": "Recovered Hipparchan equatorial coordinates for stars of Corona Borealis from the undertext of the Codex Climaci Rescriptus, the first direct sample of his catalogue."
+    },
+    {
+      "year": 2023,
+      "authors": "A. Vallenari et al. (Gaia Collaboration)",
+      "title": "Gaia Data Release 3: Summary of the Content and Survey Properties",
+      "venue": "Astronomy & Astrophysics 674: A1",
+      "url": "https://doi.org/10.1051/0004-6361/202243940",
+      "note": "Current high-precision astrometry and proper motions for back-computing ancient star positions."
     }
   ],
   "archives": [
@@ -147,7 +166,10 @@
           "name": "Vat. gr. 1594 (Heiberg's B)",
           "ref": "Vat. gr. 1594",
           "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1594",
-          "note": "Ninth-century Almagest with Theon's prolegomena and two layers of scholia, one of the oldest Greek witnesses to the catalogue text."
+          "note": "Ninth-century Almagest with Theon's prolegomena and two layers of scholia, one of the oldest Greek witnesses to the catalogue text.",
+          "match": [
+            "Vat. gr. 1594"
+          ]
         },
         {
           "name": "Vat. gr. 180 (Heiberg's D)",
@@ -162,7 +184,10 @@
       "collection": "Ptolemaeus Arabus et Latinus (database of Arabic and Latin Ptolemaic manuscripts)",
       "url": "https://ptolemaeus.badw.de/",
       "digitized": "partial",
-      "note": "Inventory of Arabic and Latin witnesses of the Almagest, whose catalogue variants help establish the text's original values."
+      "note": "Inventory of Arabic and Latin witnesses of the Almagest, whose catalogue variants help establish the text's original values.",
+      "aliases": [
+        "Ptolemaeus Arabus et Latinus"
+      ]
     },
     {
       "repository": "European Space Agency",

@@ -13,9 +13,12 @@
   "stuck": "No inscription naming Agade has been found in situ, and the textual indications (proximity to Sippar, Kish, Eshnunna and the Tigris, a river crossing in Mari itineraries) are compatible with several regions. The Tigris has shifted course since the third millennium, so sites once on its banks may now lie under alluvium, under modern Baghdad or under later occupation. Fieldwork in central Iraq was interrupted for long periods after 1980, and candidate mounds such as Ishan Mizyad and Tell Mohammed have yielded no Sargonic monumental remains.",
   "solved": "A ranked list of candidate sites, each scored against every dated textual reference to Agade's position and against reconstructed third-millennium river courses, followed by excavation or coring at the top candidate that recovers Sargonic remains together with inscriptions naming the city or its temple Eulmash.",
   "approach": [
-    "Research agents can compile every attestation of Agade from the third millennium to the Neo-Babylonian period (royal inscriptions, Mari and Eshnunna letters, itineraries, kudurrus, year names) from CDLI, ORACC and ARCHIBAB, extract distance and direction statements, and test them against GIS reconstructions of palaeochannels traced on CORONA and other declassified imagery.",
-    "The output would be a probability surface rather than a single proposal.",
-    "Confirmation requires collaboration with Iraqi and international field teams for surface survey, geoarchaeological coring and excavation."
+    "The location debate already has a long human literature to build on: the Kish-region case of Weiss (1975), the areal reconstruction of Wall-Romana (1990), Kutscher (1998) on the Diyala approaches, Reade (2002) on monuments and routes, and the reviews of the evidence in Kawakami (2022) and Kawakami (2023). The Sargonic inscriptions in Frayne (1993) and the Old Babylonian dossier gathered by Ziegler (2014) are the textual core.",
+    "Teams could compile every attestation of Agade from the third millennium to the Neo-Babylonian period (royal inscriptions, Mari and Eshnunna letters, itineraries, kudurrus, year names) from CDLI, ORACC and ARCHIBAB. Each statement of distance, direction, river crossing or neighbouring town becomes a dated constraint, with assyriologists deciding how literally formulaic or literary references such as Cooper (1983) should be taken.",
+    "The landscape side builds on the channel reconstructions in Gasche and Tanret (1998) and the remote-sensing work of Hritz (2010), tracing palaeochannels and mounds on CORONA and other declassified imagery so that textual constraints can be tested against where watercourses actually ran in the late third millennium.",
+    "The main rival hypotheses, a site near Kish and Babylon, one on the Tigris near the Diyala confluence, or one further north near Samarra, predict different travel times and river relations in the Mari and Eshnunna letters, so weighting each constraint by its date and reliability shows which zone the texts favour.",
+    "Even without a find, the result would be a published probability surface with its assumptions laid out, which narrows survey targets and can be revised as new tablets appear. The answer will remain a region rather than a mound until there is excavated evidence.",
+    "Confirmation depends on Iraqi institutions and international field teams: survey, geoarchaeological coring and excavation under the State Board of Antiquities and Heritage, and publication of tablets now held in the Iraq Museum."
   ],
   "existing": [
     {
@@ -73,6 +76,14 @@
       "venue": "Zeitschrift für Assyriologie 92 (2): 258–295",
       "url": "https://doi.org/10.1515/zava.2002.92.2.258",
       "note": "Used the findspot of an Old Akkadian statue fragment to argue for a location near the Tigris–ʿAdhaim confluence south of Samarra."
+    },
+    {
+      "year": 2010,
+      "authors": "Carrie Hritz",
+      "title": "Tracing Settlement Patterns and Channel Systems in Southern Mesopotamia Using Remote Sensing",
+      "venue": "Journal of Field Archaeology 35 (2): 184–203",
+      "url": "https://doi.org/10.1179/009346910X12707321520477",
+      "note": "Uses GIS and satellite imagery to reconstruct ancient channels and proposes a revised course for the Tigris in antiquity."
     },
     {
       "year": 2014,

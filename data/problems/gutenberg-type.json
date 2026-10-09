@@ -14,9 +14,11 @@
   "stuck": "Agüera y Arcas and Needham's computational clustering of the DK type found far more distinct shapes per letter than a single-matrix system should produce, but their full data and methods were only partly published. Critics, above all Reske, argue that inking, paper, pressure, wear and photography generate apparent variation large enough to swamp the signal, so that algorithmic clustering of printed impressions cannot by itself identify matrices. No surviving type, punches or moulds from Gutenberg's shop exist, so the argument rests entirely on inferences from printed impressions.",
   "solved": "A published, reproducible dataset of every instance of selected letters across multiple copies of the DK-type prints and the 42-line Bible, with a casting model whose predicted distribution of within-letter variation matches the observed one significantly better than the alternatives, and which is consistent with impressions from experimentally cast type.",
   "approach": [
-    "Agents can segment and register every glyph instance from the high-resolution digitizations of several B42 copies and the surviving DK-type prints, separating variation that recurs at the same text position across copies (press or inking effects) from variation that recurs across positions (sort identity).",
-    "Competing casting processes (single matrix and hand mould, multiple matrices, temporary sand or clay matrices, composite punches) can then be simulated and their predicted variation compared with the observed clusters.",
-    "Decisive confirmation would require collaboration with typefounders and materials scientists to cast type by each candidate method, print with period materials, and pass the impressions through the same pipeline."
+    "The question has a long human history, from the punch-matrix-mould account of Carter (1969) and Needham (1982) to the DK-type clustering of Agüera y Arcas (2003), which suggested temporary matrices, and the microscopic rebuttal of Reske (2015). Computational work on the 42-line Bible by Alabert (2011), Rangel (2022) and Agata (2021) shows that glyph-level analysis is feasible, but each study used a small sample of letters and copies.",
+    "Segment and register every glyph instance from high-resolution digitizations of several B42 copies, including Göttingen and Keio, and of the surviving DK-type prints. The decision that shapes the data is how a glyph is aligned and measured, so the registration method and its error should be published before any clustering.",
+    "Separate variation that recurs at the same text position across copies, which points to inking, paper and press, from variation that recurs across positions, which points to the identity of a cast sort. A public catalogue of sorts that can be followed from page to page would be a lasting result even if the casting question stays open.",
+    "Simulate the competing processes: a single matrix with a hand mould, multiple matrices from one punch, temporary sand or clay matrices, and composite punches. Each predicts a different pattern of how many distinct shapes exist per letter and how they differ, and bibliographers and type historians should judge whether the fit is meaningful.",
+    "Decisive confirmation needs typefounders, printers and materials scientists willing to cast type by each candidate method, print with period materials, and pass the impressions through the same pipeline, alongside library partners prepared to image more copies at a common resolution."
   ],
   "existing": [
     {
@@ -105,6 +107,9 @@
           "url": "http://www.gutenbergdigital.de/",
           "note": "Complete images of one of the few surviving vellum copies, usable for comparing glyph instances across copies."
         }
+      ],
+      "aliases": [
+        "Göttingen"
       ]
     },
     {
@@ -119,6 +124,9 @@
           "url": "https://dcollections.lib.keio.ac.jp/en/gutenberg",
           "note": "Page images with an IIIF manifest, suitable for glyph segmentation."
         }
+      ],
+      "aliases": [
+        "Keio"
       ]
     },
     {

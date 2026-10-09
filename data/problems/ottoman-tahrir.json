@@ -13,9 +13,12 @@
   "stuck": "The detailed provincial surveys (tahrir defterleri) end in most of Anatolia by the 1580s and record taxable household heads rather than people, while the seventeenth-century avarız and cizye registers that follow count fiscal units (avarızhane) whose relation to households changed over time. Comparisons across the two series therefore mix demographic change with changes in what was counted. Most studies cover single districts, the registers are held in two archives with different access regimes, and many have never been transcribed.",
   "solved": "A linked village-level dataset across all surviving tahrir and avarız registers for a large sample of Anatolian districts, with a validated model converting each register's fiscal units into households, that produces regional population series from 1520 to 1700 with uncertainty and that agrees with independent evidence such as court records, settlement abandonment and cizye counts.",
   "approach": [
-    "Agents can help transcribe and structure registers from facsimiles and published editions, match village names across registers and to modern locations, and estimate conversion factors between fiscal units and households where registers overlap.",
-    "Regional series could then be tested against climate reconstructions, Celali violence and court-record evidence of flight.",
-    "Scaling beyond published registers requires systematic digitization of the Tapu Tahrir (TT.d) and avarız series in the Ottoman Archives in Istanbul and the Kuyûd-ı Kadîme registers in Ankara, with collaboration from archivists and Ottoman palaeographers, since many registers use siyakat numerals and chancery hands that need specialist verification."
+    "The debate is already framed by decades of register work. Barkan (1957) and Cook (1972) read the sixteenth-century tahrirs as evidence of strong growth and pressure on land, Erder and Faroqhi (1979) located a turning point around the 1580s, and Özel (2004) and Özel (2016) linked late tahrirs to seventeenth-century avarız registers to argue for a deep, lasting decline. White (2011) tied that decline to drought, famine and the Celali rebellions described by Akdağ (1963) and Griswold (1983).",
+    "Much of the evidence is already transcribed in published district editions, such as the Kayseri registers edited by İnbaşı (2009), and in monographs issued by the Türk Tarih Kurumu. Collaborative teams could structure these into a common table of villages, household heads, bachelors and exempt groups, with every figure traced to a page of a register.",
+    "The core difficulty is that tahrir and avarız registers count different things, as Murphey (1990), Ataman (1992), Lowry (1992) and Coşgel (2004) emphasise. Where registers for the same district overlap, conversion factors between fiscal units and households can be estimated, and these should be carried forward as ranges rather than single multipliers.",
+    "Linking villages across registers and to modern locations would show where settlements were abandoned rather than merely re-registered. The nineteenth-century gazetteer of Kabadayı et al. (2022) offers a bridge between Ottoman toponyms and coordinates, and a mapped series for a few well-documented districts would be useful even if an empire-wide figure stays out of reach.",
+    "Two explanations then compete: real demographic collapse through violence, famine and flight, or an artefact of changing fiscal practice, with households hidden, merged into larger avarız units or moved outside the surveyed villages. Regional series can be tested against climate reconstructions, the timing of Celali violence and court-record evidence of flight and abandoned villages in İSAM's copies of the kadı registers, which would tend to confirm collapse where all three move together.",
+    "Scaling beyond published registers requires systematic digitization of the Tapu Tahrir (TT.d) and avarız series in the Ottoman Archives and the Kuyûd-ı Kadîme registers in Ankara, with archivists and Ottoman palaeographers. Many registers use siyakat numerals and chancery hands that need specialist verification, and automated transcription has so far been tested mainly on print, as in Kirmizialtin and Wrisley (2022)."
   ],
   "existing": [
     {
@@ -133,6 +136,22 @@
       "venue": "Leiden: Brill",
       "url": "https://openlibrary.org/isbn/9789004309715",
       "note": "Detailed regional study of Amasya documenting rural desertion and the breakdown of the provincial order across the transition from tahrir to avarız registration."
+    },
+    {
+      "year": 2022,
+      "authors": "Suphan Kirmizialtin and David Wrisley",
+      "title": "Automated Transcription of Non-Latin Script Periodicals: A Case Study in the Ottoman Turkish Print Archive",
+      "venue": "Digital Humanities Quarterly 16 (2)",
+      "url": "https://digitalhumanities.org/dhq/vol/16/2/000577/000577.html",
+      "note": "Tests machine transcription of Ottoman Turkish in Arabic script on printed periodicals, a baseline for the harder task of register hands and siyakat."
+    },
+    {
+      "year": 2022,
+      "authors": "M. Erdem Kabadayı, Grigor Boykov, Akın Sefer and Piet Gerrits",
+      "title": "Ottoman NFS Gazetteer (16,296 populated places), version 1",
+      "venue": "Zenodo dataset (UrbanOccupationsOETR and POPGEO_BG projects)",
+      "url": "https://doi.org/10.5281/zenodo.7351936",
+      "note": "Geolocated settlements drawn from 764 Ottoman population registers of 1830–1849, usable as a bridge between register toponyms and modern locations."
     }
   ],
   "archives": [

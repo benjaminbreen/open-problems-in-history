@@ -14,9 +14,12 @@
   "stuck": "Roughly a thousand khipus survive (estimates vary), most without archaeological context, and very few can be paired with a Spanish-language transcription of the same record. The decimal knot system was established by Locke (1912) and the Aschers, but colour, fibre, spin and ply, attachment direction and knot orientation vary in ways that have resisted consistent interpretation. Data were long scattered across incompatible recording schemes and unpublished notebooks.",
   "solved": "A model trained on matched khipu–document pairs predicts, for khipus or transcriptions held out from training, non-numerical features (such as moiety, lineage, place or personal-name categories) significantly better than chance and better than numerical-only baselines, and the predictions are confirmed when new matched pairs are found.",
   "approach": [
-    "Use the Open Khipu Repository and Khipu Field Guide as a common schema, and systematically search colonial visitas, revisitas and court records in Peruvian and Spanish archives for documents stating that their figures were read from khipus, then match them by totals and structure as Medrano and Urton did for the Santa Valley khipus.",
-    "Test competing readings, such as the alternative moiety alignments of Medrano and Urton (2018) and FitzPatrick (2024), against held-out cord groups.",
-    "This depends on recording undocumented khipus in museum stores, especially in Berlin, Lima and smaller Peruvian collections, and on community agreements for khipus still held in villages such as Collata and Rapaz."
+    "Build on the structural studies of Locke (1912), Ascher (2005) and Urton (2005), the ethnography of Salomon (2004), and the colonial transcriptions gathered in Pärssinen (2004). Recent work has opened the non-numerical question directly: Hyland (2017) on Collata, Clindaniel (2019) on paired signs at Inkawasi, and Medrano (2018) on the Santa Valley khipus.",
+    "Use the Open Khipu Repository and the Khipu Field Guide as a common schema. Medrano (2024) shows how far the arithmetic regularities of the corpus can be characterised at scale, which sets a baseline any non-numerical reading must go beyond.",
+    "Search colonial visitas, revisitas and court records in Peruvian and Spanish archives, including the Archivo General de la Nación, for documents stating that their figures were read from khipus. Each candidate pair, matched by totals and structure, is a small key; a vetted list of such pairs would be useful whatever it yields for decipherment.",
+    "Test rival readings against held-out cord groups, for example the alternative moiety and hierarchy alignments of Medrano (2018) and FitzPatrick (2024). The deciding evidence is whether a proposed meaning for colour, ply or attachment predicts unseen cords better than chance.",
+    "Expect a mixed answer: some signs may prove to be category or name markers, while narrative khipus such as those at Collata stay only partly read.",
+    "Andeanists, khipu specialists and the communities that hold khipus should review every proposed reading. The work depends on recording undocumented khipus in museum stores, especially in Berlin, Lima and smaller Peruvian collections, and on agreements with communities such as Collata and Rapaz."
   ],
   "existing": [
     {
@@ -92,6 +95,14 @@
       "note": "Matched six khipus to a 1670 revisita of San Pedro de Corongo listing 132 named tributaries in six ayllus; knot totals equal the assessed tribute, and attachment direction appears to mark moiety."
     },
     {
+      "year": 2019,
+      "authors": "Jon Clindaniel",
+      "title": "Toward a Grammar of the Inka Khipu: Investigating the Production of Non-numerical Signs",
+      "venue": "PhD dissertation, Harvard University",
+      "url": "https://dash.harvard.edu/handle/1/42029631",
+      "note": "Argues that non-numerical signs in Inkawasi and other khipus worked as paired, conventionalized predicates, and proposes a preliminary grammar."
+    },
+    {
       "year": 2021,
       "authors": "Sabine Hyland, Sarah Bennison and William P. Hyland",
       "title": "Khipus, Khipu Boards, and Sacred Texts: Toward a Philology of Andean Knotted Cords",
@@ -106,6 +117,14 @@
       "venue": "Ethnohistory 71 (4): 443–469",
       "url": "https://doi.org/10.1215/00141801-11266328",
       "note": "Re-examined the Santa Valley match, identified gaps in its documentation, and used combinatorics to propose a different moiety alignment with recto and verso attachments as marked and unmarked signs."
+    },
+    {
+      "year": 2024,
+      "authors": "Manuel Medrano and Ashok Khosla",
+      "title": "How Can Data Science Contribute to Understanding the Khipu Code?",
+      "venue": "Latin American Antiquity 36, no. 2 (2025): 497-516; online 2024",
+      "url": "https://doi.org/10.1017/laq.2024.5",
+      "note": "Computational analysis of about 650 khipus finding that Ascher's sum relations characterize at least 74% of the corpus."
     },
     {
       "year": 2025,

@@ -108,7 +108,7 @@ export const ARCHIVE = `<svg class="arc" viewBox="0 0 12 12" aria-hidden="true">
 
 function citeLinker(existing = [], archives = []) {
   const keys = new Map(); // escaped phrase -> [{ ref, year?, kind }]
-  const add = (phrase, hit) => { const k = esc(String(phrase).trim()); if (k.length >= 3) keys.set(k, [...(keys.get(k) || []), hit]); };
+  const add = (phrase, hit) => { const k = esc(String(phrase).trim()); if (k.length >= 2) keys.set(k, [...(keys.get(k) || []), hit]); };
   existing.forEach((e, i) => {
     const names = String(e.authors || "").replace(/\([^)]*\)|\bet al\.?/g, "").split(/,\s*|\s+and\s+|;\s*/).map((n) => n.trim()).filter(Boolean);
     if (!names.length || /\s/.test(surname(names[0]))) return;

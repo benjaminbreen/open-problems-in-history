@@ -13,9 +13,12 @@
   "stuck": "The Kerala results (attributed to Mādhava, c. 1340–1425, and preserved in Nīlakaṇṭha's Tantrasaṅgraha of 1501 and Jyeṣṭhadeva's Yuktibhāṣā of c. 1530) are securely dated, and Jesuits were present in Cochin from the mid-sixteenth century. But no Jesuit letter, translation, notebook or library record yet produced mentions these series, and Joseph himself reports that a survey of Jesuit literature found no direct trace. The Jesuit college library at Cochin was dispersed when the Dutch took the city in 1663, and relevant Malayalam and Sanskrit manuscripts are scattered and only partly catalogued.",
   "solved": "Either a dated document showing a European in possession of, or describing, a Kerala series result before Gregory (1668) and Newton (c. 1665–1669), or a documented, bounded search of the named Jesuit correspondence series (ARSI Goa and Malabar volumes, Documenta Indica, Clavius correspondence) and Kerala manuscript holdings that records the absence of any such reference.",
   "approach": [
-    "Agents can systematically read the published Documenta Indica and the microfilmed ARSI Goa-Malabar letters for references to Indian astronomy, calendars, Brahmin informants and mathematical manuscripts, and cross-match names of Jesuits in Cochin with correspondents of Clavius and the Collegio Romano.",
-    "In parallel they can trace ownership and copying notes in Kerala astronomical manuscripts for European hands.",
-    "Progress depends on digitizing the ARSI Goa series at item level and on the Oriental Research Institute and Royal Asiatic Society completing digitization of palm-leaf holdings with searchable catalogues."
+    "Build on the mathematical reconstructions of the Kerala school from Whish (1834) and Rajagopal (1978) to the edition and translation of the Yuktibhāṣā in Sarma (2008) and the surveys of Plofker (2009) and Divakaran (2018). The transmission case is argued most fully in Joseph (2009) and Raju (2007), and questioned in Bressoud (2002) and Plofker (2009).",
+    "Read the printed Documenta Indica and the microfilmed ARSI Goa-Malabar letters, located through Gramatowski (1992), for references to Indian astronomy, calendars, Brahmin informants and mathematical manuscripts. Županov (2005) and Baldini (2008) give the missionary and scientific context for which Jesuits were in Cochin and what they were trained to notice.",
+    "Turn these into a register of named Jesuits, places, dates and the subject of each mention, then cross-match it against the Clavius correspondence edited by Baldini (1992) and other Collegio Romano correspondents. Deciding what counts as a mathematical reference, as opposed to calendrical or astrological interest, shapes the result and should be set by specialists.",
+    "In parallel, survey Kerala astronomical manuscripts at the Oriental Research Institute and the Royal Asiatic Society for ownership marks, copying notes or Latin and Portuguese annotations that would show European hands.",
+    "The hypotheses are direct transmission through Jesuit intermediaries, independent European rediscovery, and diffuse exposure too thin to trace. Only a named intermediary, a manuscript copy in Europe or a European text echoing Kerala methods would decide between them, so a well-documented absence in the Jesuit record would itself be a result.",
+    "Historians of Indian mathematics and Jesuit specialists should review every match. Progress depends on item-level digitization of the ARSI Goa series and on the Oriental Research Institute and Royal Asiatic Society completing searchable catalogues of their palm-leaf holdings."
   ],
   "existing": [
     {
@@ -83,6 +86,14 @@
       "note": "Set out the circumstantial case for Jesuit transmission; the argument was widely publicized through a University of Manchester press release in 2007."
     },
     {
+      "year": 2005,
+      "authors": "Ines G. Županov",
+      "title": "Missionary Tropics: The Catholic Frontier in India (16th-17th Centuries)",
+      "venue": "Ann Arbor: University of Michigan Press",
+      "url": "https://press.umich.edu/Books/M/Missionary-Tropics",
+      "note": "Study of Jesuit missions in Portuguese India from multilingual Jesuit sources, including their encounters with Brahmin learning."
+    },
+    {
       "year": 2007,
       "authors": "C. K. Raju",
       "title": "Cultural Foundations of Mathematics: The Nature of Mathematical Proof and the Transmission of the Calculus from India to Europe in the 16th c. CE",
@@ -97,6 +108,14 @@
       "venue": "New Delhi: Hindustan Book Agency; Springer",
       "url": "https://doi.org/10.1007/978-93-86279-37-8",
       "note": "Critical edition and translation of the Yuktibhāṣā, the main source for Kerala derivations of the series."
+    },
+    {
+      "year": 2008,
+      "authors": "Ugo Baldini",
+      "title": "The Portuguese Assistancy of the Society of Jesus and scientific activities in its Asian missions until 1640",
+      "venue": "In History of Mathematical Sciences: Portugal and East Asia III, ed. Luís Saraiva and Catherine Jami (World Scientific)",
+      "url": "https://web.bc.edu/ricci/indexAuthor.php?id=11050",
+      "note": "Survey of the training and scientific activity of Jesuits sent to Asia through Lisbon, the route by which Cochin missionaries arrived."
     },
     {
       "year": 2009,

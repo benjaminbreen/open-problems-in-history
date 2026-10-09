@@ -14,9 +14,12 @@
   "stuck": "The earliest manuscripts are fragmentary, undated, dispersed across collections and often published only in part, and the Sanaa lower text survives as an erased palimpsest. Radiocarbon dates give the death of the animal whose skin became parchment, not the date of writing, and their ranges often span several decades on either side of 650 and 700. The literary accounts of ʿUthmān's and al-Ḥajjāj's interventions were recorded later and are read differently by scholars with different views of the tradition's reliability.",
   "solved": "A published stemmatic analysis of all variants in the dated and datable manuscripts (including the Sanaa lower text and the regional-codex variants), using shared orthographic errors to test whether the surviving Uthmanic-type manuscripts descend from a single written archetype, combined with a radiocarbon and palaeographic model that bounds when that archetype was produced, with results reproducible from open data.",
   "approach": [
-    "Agents can align the transcriptions of early manuscripts available through Corpus Coranicum and published editions, code every orthographic and textual variant, and apply phylogenetic and stemmatic methods to test single-archetype and multiple-source models.",
-    "The same dataset can be linked to radiocarbon results, palaeographic classes and the variants attributed to regional codices in the literary tradition.",
-    "Progress needs digitization and publication of fragments held in Sanaa and elsewhere, in collaboration with their custodians, and further radiocarbon and multispectral imaging work with laboratories."
+    "The manuscript work of Déroche (2009), Déroche (2014) and Cellard (2018), the studies of the Sanaa lower text by Sadeghi (2010), Sadeghi (2012) and Hilali (2017), and the stemmatic arguments of Cook (2004), van Putten (2019) and Sidky (2020) already supply most of the method. The open question is how their results combine with the radiocarbon dates and with the later dating defended by Wansbrough (1977) and Shoemaker (2022).",
+    "Transcriptions of early manuscripts from Corpus Coranicum and published editions can be aligned verse by verse, with each difference coded as orthographic (spelling conventions, scriptio defectiva), consonantal or a matter of verse division. Keeping these categories separate matters, since shared orthographic idiosyncrasies are the evidence van Putten (2019) used for a single written archetype.",
+    "Phylogenetic and stemmatic methods, of the kind Sidky (2020) applied and Fedeli (2020) has discussed for digital editions, can then test rival models: a single Uthmanic archetype copied into regional exemplars, several independent sources later merged, or a text still fluid until the Marwanid reforms. Each predicts a different pattern of shared errors and spelling conventions across manuscripts of different regions and dates.",
+    "A tested stemma of the Uthmanic manuscripts, with the regional variants reported in the literary tradition mapped onto it, would be useful in its own right, whatever the date of closure. The Sanaa lower text would sit outside it as a check on how a non-Uthmanic tradition behaves.",
+    "Linking the same dataset to radiocarbon results (Marx 2019), palaeographic classes and the Mingana Collection and Tübingen dates would test whether manuscripts placed early by the stemma are also early by carbon. Given calibration ranges and the interval between preparing parchment and writing on it, as Shoemaker (2022) stresses, the date of standardization will probably stay a range of decades, though one that might exclude some positions argued by Sinai (2014) and his critics.",
+    "All of this depends on custodians and laboratories: publication and imaging of fragments held at Dār al-Makhṭūṭāt in Sanaa and elsewhere, multispectral imaging of palimpsests, and further radiocarbon dating. Specialists in Qurʾānic manuscripts would need to review every alignment and variant classification."
   ],
   "existing": [
     {
@@ -84,6 +87,14 @@
       "note": "Announced Oxford radiocarbon dating of the Mingana 1572a leaves to 568–645 CE at 95.4 per cent probability."
     },
     {
+      "year": 2017,
+      "authors": "Asma Hilali",
+      "title": "The Sanaa Palimpsest: The Transmission of the Qur'an in the First Centuries AH",
+      "venue": "Oxford: Oxford University Press, in association with the Institute of Ismaili Studies (Qur'anic Studies Series 17)",
+      "url": "https://iis.ac.uk/publications-listing/2017/the-sanaa-palimpsest",
+      "note": "Edition and study of DAM 01-27.1 that reads the lower text as possibly a teaching or exercise text rather than a complete rival codex."
+    },
+    {
       "year": 2018,
       "authors": "Éléonore Cellard",
       "title": "Codex Amrensis 1",
@@ -114,6 +125,14 @@
       "venue": "Journal of the International Qur'anic Studies Association 5: 133–210",
       "url": "https://doi.org/10.5913/jiqsa.5.2020.a005",
       "note": "Matched variants in early manuscripts to the regional codices described in the tradition, supporting a stemma of regionally distributed copies."
+    },
+    {
+      "year": 2020,
+      "authors": "Alba Fedeli",
+      "title": "Digital Humanities and Qur'ānic Manuscript Studies: New Perspectives and Challenges for Collaborative Spaces and Plural Views",
+      "venue": "Journal of College of Sharia and Islamic Studies 38 (1)",
+      "url": "https://doi.org/10.29117/jcsis.2020.0260",
+      "note": "Reviews digital imaging, text encoding and phylogenetic approaches to early Qurʾān manuscripts, and the need for collaborative editions."
     },
     {
       "year": 2022,

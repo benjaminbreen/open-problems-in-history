@@ -13,9 +13,12 @@
   "stuck": "The Venus observations preserved in later copies of Enūma Anu Enlil tablet 63 are corrupt and allow several solutions roughly 56 or 64 years apart, and month-length and eclipse arguments depend on contested readings and observational assumptions. Assyrian King List distance figures contain uncertain reign lengths, and the Kültepe eponym lists must be joined to Old Babylonian sources through a small number of synchronisms. Dendrochronological sequences from Anatolian sites were long only floating, and their wiggle-matched radiocarbon dates carry their own calibration and regional-offset uncertainties.",
   "solved": "A published, reproducible Bayesian model that ingests the Venus data, lunar month lengths, eclipse candidates, king-list and eponym-list distance numbers, dendrochronological sequences and radiocarbon dates with explicit priors, returns a posterior for a fixed anchor (such as Ammisaduqa year 1) with a stated uncertainty under 10 years, and remains stable when individual lines of evidence are removed.",
   "approach": [
-    "Agents can build a machine-readable dataset of every chronologically relevant datum (each Venus copy and its variant readings, month-length records from Old Babylonian archives, eponym-list entries, reign lengths, synchronisms) with full citations, then encode them as constraints in a radiocarbon-modelling framework such as OxCal.",
-    "Sensitivity analysis would show which items drive the result.",
-    "New radiocarbon and dendrochronological measurements on securely contexted short-lived samples and timbers from Kültepe, Acemhöyük and Babylonian sites require collaboration with dendrochronology and radiocarbon laboratories."
+    "The textual framework is already well mapped: Pruzsinszky (2009) sets out the king lists, eponym lists, year names and synchronisms, Barjamovic, Hertel and Larsen (2012) rebuilt the Old Assyrian eponym sequence with the help of KEL G from Günbattı (2008), and Mebert (2010) re-edited every copy of the Venus observations preserved in later copies of Enūma Anu Enlil tablet 63. Teams can build directly on these, and on the dated texts in ARCHIBAB and the Old Assyrian Research Environment.",
+    "Compile one machine-readable dataset of every chronologically relevant datum: each Venus copy and its variant readings, month-length records from Old Babylonian archives, eponym-list entries, reign lengths and cross-dated synchronisms, each with full citation and a note on how secure the reading is. Deciding how to score a damaged or disputed reading will shape the result more than any later statistics.",
+    "The rival solutions, the High chronology of Langdon and Fotheringham (1928) and Huber (1982), the Middle and Low-Middle options argued by Barjamovic, Hertel and Larsen (2012) and de Jong (2013), and the Ultra-Low chronology of Gasche et al. (1998), each make predictions about Venus visibility, lunar month lengths and the spacing of Assyrian eponyms. Testing all of them against the same dataset, as Huber (2000) and Gurzadyan (2000) did against parts of it, would show where they genuinely diverge.",
+    "Encode the textual constraints alongside the dendro-radiocarbon wiggle-matches of Manning et al. (2016) in a Bayesian framework such as OxCal, described by Bronk Ramsey (2009), calibrated with IntCal20 from Reimer et al. (2020). Modelling the regional offsets identified by Manning et al. (2020) explicitly matters, since a few decades of offset is the size of the gap between neighbouring chronologies.",
+    "Sensitivity analysis is a useful result in its own right: it would show which tablets, readings and samples actually drive the answer, and which long-debated items make no difference. The answer will most likely remain a narrowed range of candidate dates rather than a single year, and Assyriologists and radiocarbon specialists should review both the coding and the model.",
+    "Settling the remaining range requires new radiocarbon and dendrochronological measurements on securely contexted short-lived samples and timbers from Kültepe, Acemhöyük and Babylonian sites, which depends on excavation teams, the Cornell Tree-Ring Laboratory and radiocarbon laboratories, and on museums allowing collation of the tablets themselves."
   ],
   "existing": [
     {
@@ -75,6 +78,14 @@
       "note": "Systematic introduction to the king lists, eponym lists, year names and synchronisms on which any absolute chronology depends."
     },
     {
+      "year": 2009,
+      "authors": "Christopher Bronk Ramsey",
+      "title": "Bayesian Analysis of Radiocarbon Dates",
+      "venue": "Radiocarbon 51 (1): 337–360",
+      "url": "https://doi.org/10.1017/S0033822200033865",
+      "note": "Describes the model components of OxCal 4, the framework used to combine radiocarbon dates with ordering and interval constraints."
+    },
+    {
       "year": 2010,
       "authors": "Joachim Mebert",
       "title": "Die Venustafeln des Ammī-ṣaduqa und ihre Bedeutung für die astronomische Datierung der altbabylonischen Zeit",
@@ -113,6 +124,14 @@
       "venue": "Scientific Reports 10: 13785",
       "url": "https://doi.org/10.1038/s41598-020-69287-2",
       "note": "Showed that regional and calendar-period radiocarbon offsets of a few decades can shift wiggle-match results and must be modelled."
+    },
+    {
+      "year": 2020,
+      "authors": "Paula J. Reimer, William E. N. Austin, Edouard Bard and others",
+      "title": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0–55 cal kBP)",
+      "venue": "Radiocarbon 62 (4): 725–757",
+      "url": "https://doi.org/10.1017/RDC.2020.41",
+      "note": "The current calibration curve against which Middle Bronze Age wiggle-matches must be modelled."
     },
     {
       "year": 2022,

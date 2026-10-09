@@ -11,9 +11,12 @@
   "stuck": "The poem survives in one manuscript copied around 1000, so internal evidence of composition date must be separated from changes introduced by copying. Metrical tests such as Kaluza's law depend on phonological distinctions whose dating and dialect distribution are themselves inferred, and the corpus of securely dated Old English verse is very small. Arguments from palaeographic error patterns, vocabulary and historical allusion each point to a range rather than a date, and scholars weigh them differently.",
   "solved": "A dating model trained on Old English texts with independently established dates and transmission histories that assigns Beowulf a composition interval with calibrated uncertainty, and that correctly recovers the known dates of held-out texts, including texts preserved only in late copies.",
   "approach": [
-    "Agents can build a feature set for every Old English poem and dated prose text from the Dictionary of Old English Corpus and manuscript facsimiles: metrical features (Kaluza's law, contraction, parasite vowels), morphology, vocabulary, spelling layers and scribal error types.",
-    "A model calibrated on dated or datable texts, with explicit treatment of copying as a source of noise, can then estimate Beowulf's date and report which features drive it.",
-    "All key witnesses are already digitized, so the main need is careful philological annotation that specialists can audit."
+    "The debate is well mapped by human scholarship: the conference volume Chase (1981), the late-date case of Kiernan (1981), the metrical history of Fulk (1992), Lapidge (2000) on letter-form errors in the archetype, the retrospect of Frank (2007), and the essays in Neidorf (2014). Neidorf (2017) argues that scribal modernization can be separated from the poet's own language.",
+    "Teams could build a feature set for every Old English poem and dated prose text from the Dictionary of Old English Corpus and manuscript facsimiles: metrical features such as Kaluza's law, contraction and parasite vowels, along with morphology, vocabulary, spelling layers and scribal error types. Which features count as authorial and which as scribal is the decision that shapes everything downstream, and it belongs with philologists.",
+    "The quantitative profiling of Neidorf (2019) shows the method can work at scale; a next step would calibrate a model only on texts with independent dating and treat copying as an explicit source of noise, so that it reports which features drive any estimate.",
+    "The rival positions, composition around 700 or earlier versus a tenth- or eleventh-century poem close to the manuscript, make different predictions: an early poem should show archaic metrical patterns that scribes failed to update, while a late one should show them only as imitation. Testing those features against Klaeber's edition, Fulk (2008), and the readings in Electronic Beowulf would show which pattern holds.",
+    "A shareable annotated corpus of metrical and orthographic features would be useful for other Old English poems even if Beowulf's date stays contested, and the estimate itself will remain a range of decades or centuries rather than a year.",
+    "All key witnesses are already digitized, so the main need is careful philological annotation by Old English specialists, along with continued open access to the Dictionary of Old English Corpus and British Library images."
   ],
   "existing": [
     {
@@ -80,6 +83,14 @@
       "note": "Essays assembling metrical, lexical, onomastic and palaeographic arguments for composition before about 750."
     },
     {
+      "year": 2017,
+      "authors": "Leonard Neidorf",
+      "title": "The Transmission of Beowulf: Language, Culture, and Scribal Behavior",
+      "venue": "Ithaca: Cornell University Press",
+      "url": "https://muse.jhu.edu/book/52637",
+      "note": "Separates scribal modernization and error from the poet's archaic language and argues for composition around 700."
+    },
+    {
       "year": 2019,
       "authors": "Leonard Neidorf, Madison S. Krieger, Michelle Yakubek, Pramit Chaudhuri and Joseph P. Dexter",
       "title": "Large-scale quantitative profiling of the Old English verse tradition",
@@ -124,6 +135,9 @@
           "url": "https://ebeowulf.uky.edu/ebeo4.0/CD/kportico/thork.htm",
           "note": "Images of both Thorkelin transcripts, the scribe's copy and Thorkelin's own, made before further losses at the fire-damaged edges."
         }
+      ],
+      "aliases": [
+        "Electronic Beowulf"
       ]
     },
     {

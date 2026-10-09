@@ -14,14 +14,17 @@
   "stuck": "No document records Vermeer owning or using an optical device, and the 1676 inventory of his household lists none. The visual evidence (halation, differential focus, perspective and scale relationships) is compatible with optical observation but can also be produced by skilled painting, and proponents and critics have relied on different paintings and different reconstructions. Recent technical imaging has shown underpainting and revisions that complicate any model of direct tracing without settling whether projection was used at some stage.",
   "solved": "A quantitative model of the geometry, scale and focus effects predicted by specific optical set-ups in a reconstructed studio, tested across all securely attributed paintings and against their underdrawings and pinhole evidence, that either fits significantly better than free-hand construction with a pin-and-string perspective or is shown to add no explanatory power.",
   "approach": [
-    "Agents can assemble a structured corpus of Vermeer's paintings with published technical imaging (infrared reflectography, MA-XRF, X-radiography, pinhole locations), extract perspective lines, object sizes and focus gradients, and test them against simulated projections from the room geometries reconstructed by Steadman and others.",
-    "A parallel search of Delft notarial, guild and Jesuit records, and of optical literature circulating in the Dutch Republic, could look for documentary links.",
-    "Confirmation needs collaboration with museum conservation scientists for access to full-resolution technical datasets and with optical engineers for physical reconstructions."
+    "The case for optical use runs from Seymour (1964) and Fink (1971) through the room reconstructions of Steadman (2001), the broader claims of Hockney (2001) and the transfer experiments of Jelley (2017). Against it stand the pinholes found by Wadum (1995), the practical objections of Mills (1998) and Stork (2020), while Wheelock (1977), Huerta (2003) and Weber (2023) place Vermeer within Delft optics and natural philosophy.",
+    "Build a corpus of securely attributed paintings with their published technical imaging, drawing on Vandivere (2019) for the Girl with a Pearl Earring, the National Gallery of Art studies in Wieseman (2022), the Rijksmuseum scans of The Milkmaid and the Dresden restoration. What counts as secure, and which state of a painting is measured, shapes the result, since Girl with a Flute has been reassigned to the studio and the Dresden room changed when its Cupid was uncovered.",
+    "For each painting, record perspective lines, pinhole positions, object sizes and focus gradients with their measurement error, and compare them with simulated projections from reconstructed studios.",
+    "Three hypotheses make different predictions. Tracing from a projection implies image scales consistent with a fixed lens and screen across paintings and outlines laid in directly; observation through a camera without tracing implies optical effects without that scale consistency; pin-and-string construction alone implies perspective that fits the pinholes better than any lens model.",
+    "An open table of geometry and technical findings per painting would serve chronology and attribution even if the optical question stays open. Alongside it, a search of Delft notarial, guild and Jesuit records, and of inventories through the Frick Art Reference Library, could show how common optical instruments were in Dutch households, though the answer for Vermeer himself may remain a matter of relative likelihood.",
+    "This rests on conservation scientists at the Mauritshuis, Rijksmuseum, National Gallery of Art and Dresden releasing full-resolution datasets, on optical engineers building physical reconstructions, and on art historians and conservators reviewing the measurements."
   ],
   "existing": [
     {
       "year": 1964,
-      "authors": "Charles Seymour Jr.",
+      "authors": "Charles Seymour, Jr.",
       "title": "Dark Chamber and Light-Filled Room: Vermeer and the Camera Obscura",
       "venue": "The Art Bulletin 46 (3): 323–331",
       "url": "https://doi.org/10.1080/00043079.1964.10788766",
@@ -37,7 +40,7 @@
     },
     {
       "year": 1977,
-      "authors": "Arthur K. Wheelock Jr.",
+      "authors": "Arthur K. Wheelock, Jr.",
       "title": "Perspective, Optics, and Delft Artists around 1650",
       "venue": "New York: Garland (Harvard PhD dissertation, 1973)",
       "url": "https://katalog.lib.cas.cz/AV/Record/002834432",
@@ -83,6 +86,14 @@
       "note": "Argued that lenses and mirrors underlay Western naturalism from about 1430, with Vermeer as a late example; developed with the physicist Charles Falco and widely disputed."
     },
     {
+      "year": 2003,
+      "authors": "Robert D. Huerta",
+      "title": "Giants of Delft: Johannes Vermeer and the Natural Philosophers: The Parallel Search for Knowledge during the Age of Discovery",
+      "venue": "Lewisburg: Bucknell University Press",
+      "url": "https://wellcomecollection.org/works/cavm95hw",
+      "note": "Set Vermeer beside Leeuwenhoek and other natural philosophers, reading his use of the camera obscura as part of a shared optical way of inquiry."
+    },
+    {
       "year": 2017,
       "authors": "Jane Jelley",
       "title": "Traces of Vermeer",
@@ -105,6 +116,14 @@
       "venue": "Journal of Imaging Science and Technology 64 (6): 060403",
       "url": "https://doi.org/10.2352/J.ImagingSci.Technol.2020.64.6.060403",
       "note": "Critique of Tim Jenison's mirror-comparator method shown in Teller's film Tim's Vermeer (2013), concluding that Vermeer was very unlikely to have used it."
+    },
+    {
+      "year": 2022,
+      "authors": "Marjorie E. Wieseman, Alexandra Libby, E. Melanie Gifford and Dina Anchin",
+      "title": "Vermeer's Studio and the Girl with a Flute: New Findings from the National Gallery of Art",
+      "venue": "Journal of Historians of Netherlandish Art 14 (2)",
+      "url": "https://doi.org/10.5092/jhna.2022.14.2.3",
+      "note": "Technical and art-historical study that reassigned Girl with a Flute to Vermeer's studio, in a special issue on the National Gallery's imaging of its Vermeers."
     },
     {
       "year": 2023,
@@ -202,6 +221,9 @@
           "url": "https://skd-online-collection.skd.museum/Details/Index/415421",
           "note": "Vermeer's 1656 painting, in the Dresden collection."
         }
+      ],
+      "aliases": [
+        "Dresden"
       ]
     },
     {
@@ -232,6 +254,21 @@
       "url": "https://research.frick.org/montias",
       "digitized": "full",
       "note": "1,280 Amsterdam inventories (1597–1681), useful for establishing how often optical instruments appear in Dutch households alongside paintings."
+    },
+    {
+      "repository": "National Gallery of Art, Washington",
+      "collection": "Girl with the Red Hat, Young Girl with a Flute, Woman Holding a Balance and A Lady Writing; technical imaging for the 2022 exhibition Vermeer's Secrets",
+      "url": "https://www.nga.gov/exhibitions/2022/vermeers-secrets.html",
+      "digitized": "partial",
+      "note": "Results published in JHNA 14 (2), 2022; full imaging data on request.",
+      "holdings": [
+        {
+          "name": "Studio of Johannes Vermeer, Girl with a Flute",
+          "ref": "1942.9.98",
+          "url": "https://www.nga.gov/artworks/1237-girl-flute",
+          "note": "Reattributed from Vermeer to his studio after the 2022 technical study."
+        }
+      ]
     }
   ],
   "provenance": {

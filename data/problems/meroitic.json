@@ -14,9 +14,12 @@
   "stuck": "The script's sound values were recovered from Egyptian names, but there is no substantial bilingual text, and the language has no close, well-documented descendant. Most of the corpus consists of funerary inscriptions with predictable formulae, so the vocabulary securely understood is small, by most accounts on the order of a hundred words, and grammar is reconstructed mainly from those formulae. Classification is disputed: Rilly argues for the Northern East Sudanic branch with Nubian, Nara, Taman and Nyima, while Rowan and Lipiński have argued for an Afroasiatic affiliation.",
   "solved": "A lexicon and grammar, fixed before testing, yield translations of held-out non-funerary passages (for example sections of royal stelae or temple texts) that independent specialists judge consistent with their archaeological, iconographic and historical context, and that correctly predict content later confirmed by newly found or newly published inscriptions.",
   "approach": [
-    "Convert the REM corpus and inscriptions published since 2000 into a machine-readable, lemmatized corpus with find context, object type and date.",
-    "Use reconstructed Proto-Northern East Sudanic and Old Nubian vocabulary to generate constrained translation hypotheses, and test them against held-out passages whose context (offering scenes, lists of places, military iconography) predicts parts of the content.",
-    "Comparative work needs collaboration with Nubian and Nilo-Saharan linguists, and the corpus needs digitization of inscriptions excavated after 2000 and photographs held by excavation missions, given reported damage to collections in Khartoum during the war that began in 2023."
+    "Since Griffith (1911) read the script, progress has come from the formulae and from comparison. The REM corpus of Leclant et al. (2000), Rilly (2007) on the lexicon and grammar, Rilly (2010) on the language family, and Rilly (2012), written with Alex de Voogt, are the base, with Rilly (2020) showing how verbal morphology can be recovered through Nubian.",
+    "The REM texts and inscriptions published since 2000 need to become a lemmatized, machine-readable corpus with find context, object type and date. Segmentation is the decision that matters most, since the word divider is used inconsistently, and every split the corpus adopts should be traceable to an editor.",
+    "Two classifications compete: the Northern East Sudanic affiliation argued in Rilly (2010), and the Afroasiatic reading of the phonology in Rowan (2015). Each predicts different cognates for the basic vocabulary, and Blench (2020) bears on how secure the East Sudanic family itself is, so the corpus can score both against the same held-out vocabulary.",
+    "Reconstructed Proto-Northern East Sudanic and the Old Nubian lexicon of Browne (1996) can then generate constrained translation hypotheses, tested on passages whose context predicts part of the content: offering scenes, lists of places, and military iconography as on the Hamadab stela of Amanirenas and Akinidad.",
+    "A useful intermediate result is a graded glossary that separates secure, probable and conjectural meanings for every recurring word outside the funerary formulae. Royal and historical texts will likely stay partly readable, with the meaning of many passages given as a range of candidates rather than a single translation.",
+    "This depends on Nubian and Nilo-Saharan linguists reviewing every proposal, and on excavation missions and museums sharing post-2000 inscriptions and photographs, a need sharpened by reported damage to collections in Khartoum during the war that began in 2023."
   ],
   "existing": [
     {
@@ -44,12 +47,36 @@
       "note": "Used variation in funerary formulae to infer features of the spoken language behind the written conventions."
     },
     {
+      "year": 1996,
+      "authors": "Gerald M. Browne",
+      "title": "Old Nubian Dictionary",
+      "venue": "Corpus Scriptorum Christianorum Orientalium, Subsidia. Leuven: Peeters",
+      "url": "https://glottolog.org/resource/reference/id/13338",
+      "note": "Standard lexicon of medieval Old Nubian, the best-attested relative for comparison with Meroitic vocabulary."
+    },
+    {
       "year": 2000,
       "authors": "Jean Leclant, André Heyler, Catherine Berger-el Naggar, Claude Carrier and Claude Rilly",
       "title": "Répertoire d'épigraphie méroïtique (REM), tomes I–III",
       "venue": "Paris: Académie des Inscriptions et Belles-Lettres",
       "url": "https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845",
       "note": "Corpus of all Meroitic inscriptions published to that date, numbered REM 0001 to 1278, now openly available on Persée."
+    },
+    {
+      "year": 2007,
+      "authors": "Claude Rilly",
+      "title": "La langue du royaume de Méroé: Un panorama de la plus ancienne culture écrite d'Afrique subsaharienne",
+      "venue": "Bibliothèque de l'École des hautes études, Sciences historiques et philologiques 344. Paris: Champion",
+      "url": "https://library.arce.org/portal/Record/56662",
+      "note": "Philological analysis of the corpus that expanded the secure Meroitic lexicon and grammar."
+    },
+    {
+      "year": 2010,
+      "authors": "Claude Rilly",
+      "title": "Le méroïtique et sa famille linguistique",
+      "venue": "Afrique et langage 14. Louvain and Paris: Peeters",
+      "url": "https://library.arce.org/portal/Record/56661",
+      "note": "Comparative study across Nilo-Saharan that places Meroitic in Northern East Sudanic and proposes a reconstruction of the proto-language."
     },
     {
       "year": 2011,
@@ -137,7 +164,10 @@
         {
           "name": "Hamadab stela of Amanirenas and Akinidad",
           "ref": "EA 1650",
-          "note": "Sandstone stela excavated by Garstang in 1914, with 42 lines of Meroitic cursive, among the longest known texts; its twin was left at Hamadab."
+          "note": "Sandstone stela excavated by Garstang in 1914, with 42 lines of Meroitic cursive, among the longest known texts; its twin was left at Hamadab.",
+          "match": [
+            "Hamadab stela of Amanirenas and Akinidad"
+          ]
         }
       ]
     },

@@ -13,9 +13,12 @@
   "stuck": "The surviving totals are bare numbers transmitted by literary sources (Livy's Periochae, Phlegon of Tralles, Augustus' Res Gestae) with no statement of who was registered, and the text tradition itself varies (the Periocha for 70/69 BCE is transmitted as 900,000, Phlegon gives 910,000, and the Greek version of the Res Gestae differs from the Latin for 28 BCE). The 70/69 BCE figure is widely thought to be an undercount after the Social War enfranchisement, so the size of the jump is itself uncertain. Survey archaeology, the main independent check, depends on site-recovery rates, dating of surface ceramics and assumptions about household size that are hard to calibrate.",
   "solved": "A model that converts each reading (low, middle, high) into predicted densities of occupied rural sites and urban areas for specific surveyed regions, compared against harmonized survey datasets with stated recovery rates, showing that one reading fits the observed settlement record within its uncertainty and the others do not.",
   "approach": [
-    "Agents can assemble all census figures with their textual variants, enfranchisement and colonization data and the main demographic models into one dataset, then harmonize published field-survey gazetteers (Tiber Valley, Roman Suburbium, Pontine Region, Albegna/Ager Cosanus, Biferno and others) into site counts by period and size class.",
-    "Bayesian estimation of recovery rates across overlapping surveys would let the competing counts be scored against the same evidence.",
-    "Progress needs digitization of legacy survey archives and site cards held by the British School at Rome and Italian and Dutch institutions, in collaboration with their archivists and survey directors."
+    "The debate is mature. Beloch (1886) and Brunt (1971) defended the low count, Frank (1924) and Lo Cascio (1994) the high count, and Hin (2008) a middle reading, while Scheidel (2008) set out what each implies. Later work by de Ligt (2012) and Hin (2013) carried the low and middle counts further, and Launaro (2011) and Witcher (2005) brought field survey into the argument.",
+    "The literary side can be gathered into one dataset: every census figure with its textual variants, from Augustus' Res Gestae to the Periocha for 70/69 BCE, together with enfranchisement, colonization and recruitment data and the demographic assumptions of each model. Making those assumptions explicit would show which disagreements are about evidence and which about modelling choices.",
+    "Survey data are harder. Published gazetteers from the Tiber Valley (Patterson 2020), the Roman Suburbium, the Pontine Region, the Albegna valley, the Biferno and others would need harmonizing into site counts by period and size class, building on the integration already done by Attema (2022). The decisions that shape the data are how to treat sites dated only broadly and how to compare surveys of different intensity, and specialists who ran the surveys should review them.",
+    "With overlapping surveys of different intensity, recovery rates can be estimated rather than assumed, for instance with Bayesian models. That matters because Witcher (2005) showed that the high count requires low recovery, and Fentress (2009) found Albegna densities hard to reconcile with large rural populations.",
+    "Scoring the low, middle and high counts against the same evidence would then show which survives. A defensible regional estimate of rural population for Rome's hinterland, with its uncertainty, would be useful even if Italy as a whole stays open, and the national figure will almost certainly remain a range.",
+    "Progress needs digitization of legacy survey archives, including the site cards of the South Etruria Survey at the British School at Rome and records held by Italian and Dutch institutions, done in collaboration with archivists and survey directors."
   ],
   "existing": [
     {
@@ -81,6 +84,14 @@
       "venue": "In L. de Ligt and S. Northwood (eds.), People, Land, and Politics (Leiden: Brill)",
       "url": "https://doi.org/10.1163/ej.9789004171183.i-656",
       "note": "Proposed a middle count in which the Augustan census registered all citizens sui iuris regardless of age and sex."
+    },
+    {
+      "year": 2009,
+      "authors": "Elizabeth Fentress",
+      "title": "Peopling the Countryside: Roman Demography in the Albegna Valley and Jerba",
+      "venue": "In A. Bowman and A. Wilson (eds.), Quantifying the Roman Economy: Methods and Problems (Oxford: Oxford University Press): 127–162",
+      "url": "https://doi.org/10.1093/acprof:oso/9780199562596.001.0001",
+      "note": "Compared two surveys using similar methods and found low rural site densities in the Albegna valley, which she set against estimates of Italy's population."
     },
     {
       "year": 2011,
