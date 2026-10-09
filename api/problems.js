@@ -6,7 +6,7 @@ import { db, parse } from "../lib/store.js";
 import { impact } from "../lib/impact.js";
 
 export default async function handler(req, res) {
-  res.setHeader("Cache-Control", "no-store");
+  res.setHeader("Cache-Control", "public, s-maxage=60, stale-while-revalidate=600");
   res.setHeader("Access-Control-Allow-Origin", "*");
   const [tally, ccount, acount, ratings] = await Promise.all([db.hgetall("tally"), db.hgetall("ccount"), db.hgetall("acount"), db.hgetall("ratings")]);
   const imp = impact(Object.values(ratings || {}).map(parse));

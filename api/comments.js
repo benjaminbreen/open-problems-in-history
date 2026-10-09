@@ -45,6 +45,7 @@ export default async function handler(req, res) {
     const id = req.query.id;
     if (!ok(id)) return res.status(400).json({ error: "bad id" });
     const all = Object.values((await db.hgetall(`${pre}:${id}`)) || {}).map(parse).sort((a, b) => a.t - b.t);
+    if (!req.query.fresh) res.setHeader("Cache-Control", "public, s-maxage=20, stale-while-revalidate=120");
     return res.status(200).json(all);
   }
 

@@ -18,7 +18,7 @@ export function period(p) {
   return `${p.start}–${p.end}`;
 }
 
-export const tags = (p) => (p.flags || []).map((f) => FLAGS[f] ? `<span class="tag ${FLAGS[f][1]}" title="${esc(FLAGS[f][2])}">${FLAGS[f][0]}</span>` : "").join("")
+export const tags = (p) => (p.flags || []).map((f) => FLAGS[f] ? `<a class="tag ${FLAGS[f][1]}" href="/?tag=${f}" title="${esc(FLAGS[f][2])}">${FLAGS[f][0]}</a>` : "").join("")
   + (p.suggested ? `<span class="tag">suggested</span>` : "");
 
 export const when = (t) => new Date(t).toISOString().slice(0, 10);
@@ -46,9 +46,11 @@ export const ncom = (ctx, id) => Math.max(0, Number(ctx.counts[id]) || 0);
 
 export function voteBox(ctx, id) {
   const m = Number(ctx.mine[id]) || 0;
+  // Counts stay hidden until a problem has a few votes, so a new list doesn't read as a column of zeros.
+  const shown = m !== 0 || up(ctx, id) + down(ctx, id) >= 3;
   return `<div class="vote" data-id="${esc(id)}">
     <button type="button" data-v="1" aria-pressed="${m === 1}" aria-label="Upvote">▲</button>
-    <b title="${up(ctx, id)} up, ${down(ctx, id)} down">${score(ctx, id)}</b>
+    ${shown ? `<b title="${up(ctx, id)} up, ${down(ctx, id)} down">${score(ctx, id)}</b>` : `<b class="few" title="Fewer than 3 votes so far"></b>`}
     <button type="button" data-v="-1" aria-pressed="${m === -1}" aria-label="Downvote">▼</button>
   </div>`;
 }
@@ -76,10 +78,10 @@ export function rowHTML(ctx, p, i) {
 }
 
 // ---------- detail ----------
-function cite(e) {
+function cite(e, i) {
   const title = e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
   const venue = e.venue ? `, ${esc(String(e.venue).replace(/^In /, "in "))}` : "";
-  return `<li><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
+  return `<li id="works-${i}"><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
 }
 
 function archive(a) {
@@ -89,7 +91,43 @@ function archive(a) {
     ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}</li>`;
 }
 
-const para = (s) => s ? String(s).split(/\n\n+/).map((x) => `<p>${esc(x)}</p>`).join("") : "";
+const para = (s, link = (x) => x) => s ? String(s).split(/\n\n+/).map((x) => `<p>${link(esc(x))}</p>`).join("") : "";
+
+// ---------- citation previews ----------
+// Names in the prose that match an "Existing work" entry become a quiet button that opens a
+// preview card (app.js). Keys are the first author's surname, or "A and B" for two authors;
+// a surname shared by several entries links only when followed closely by one entry's year.
+const surname = (n) => n.replace(/\(eds?\.\)/g, "").trim().split(/\s+/).pop();
+function citeLinker(existing = []) {
+  const keys = new Map(); // escaped name -> [{ i, year }]
+  existing.forEach((e, i) => {
+    const names = String(e.authors || "").split(/,\s*|\s+and\s+/).map((n) => n.trim()).filter(Boolean);
+    if (!names.length || /\s/.test(surname(names[0])) || surname(names[0]).length < 3) return;
+    const forms = [surname(names[0])];
+    if (names.length === 2) forms.unshift(`${surname(names[0])} and ${surname(names[1])}`);
+    for (const f of forms) { const k = esc(f); keys.set(k, [...(keys.get(k) || []), { i, year: String(e.year) }]); }
+  });
+  if (!keys.size) return () => (x) => x;
+  const alt = [...keys.keys()].sort((a, b) => b.length - a.length).map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
+  const re = new RegExp(`(?<![\\p{L}\\p{M}])(${alt})(?![\\p{L}\\p{M}])`, "gu");
+  // one linker per section: each work links on its first mention only
+  return () => {
+    const seen = new Set();
+    return (html) => html.replace(re, (m, k, off, all) => {
+      const hits = keys.get(k);
+      const hit = hits.length === 1 ? hits[0] : hits.find((h) => all.slice(off + m.length, off + m.length + 16).includes(h.year));
+      if (!hit || seen.has(hit.i)) return m;
+      seen.add(hit.i);
+      return `<button type="button" class="cref" data-ref="${hit.i}" aria-describedby="cref-${hit.i}">${m}</button>`;
+    });
+  };
+}
+
+function citeCard(e, i) {
+  const title = e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
+  const venue = e.venue ? `, ${esc(String(e.venue).replace(/^In /, "in "))}` : "";
+  return `<div class="cref-src" id="cref-${i}" hidden><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div><a class="jump" href="#works-${i}">In existing work ↓</a></div>`;
+}
 const sec = (h, body, id = "") => body ? `<section${id ? ` id="${id}"` : ""}><h2>${h}</h2><div class="sbody">${body}</div></section>` : "";
 
 export function contributeForm(kind, pid, placeholder) {
@@ -108,7 +146,7 @@ function figure(m) {
   if (!m) return "";
   const lic = m.license_url ? `<a href="${esc(m.license_url)}" target="_blank" rel="noopener">${esc(m.license)}</a>` : esc(m.license);
   return `<figure class="pic">
-      <img src="${esc(m.src)}" alt="${esc(m.caption)}" width="960" height="720">
+      <img src="${esc(m.src)}" alt="${esc(m.caption)}" width="960" height="720" decoding="async">
       <figcaption>${esc(m.caption)}. <a href="${esc(m.commons)}" target="_blank" rel="noopener">${esc(m.author || "Wikimedia Commons")}</a>, ${lic}</figcaption>
     </figure>`;
 }
@@ -117,6 +155,8 @@ export function detailHTML(ctx, p) {
   const s = p.suggested;
   const pv = p.provenance || {};
   const approach = Array.isArray(p.approach) ? p.approach : p.approach ? [p.approach] : [];
+  const linker = citeLinker(s ? [] : p.existing);
+  const lpara = (x) => para(x, linker());
   return `
     <div class="backrow"><a class="back" href="/">← All problems</a><span class="pn" id="pn"></span></div>
     <article>
@@ -131,15 +171,15 @@ export function detailHTML(ctx, p) {
     </div>
     <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
-    ${sec("Why it matters", para(p.matters))}
-    ${sec("Why it is open", para(p.stuck))}
-    ${sec("What would count as a solution", para(p.solved))}
-    ${sec("Potential approach", `<ul class="steps">${approach.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>
+    ${sec("Why it matters", lpara(p.matters))}
+    ${sec("Why it is open", lpara(p.stuck))}
+    ${sec("What would count as a solution", lpara(p.solved))}
+    ${sec("Potential approach", `<ul class="steps">${((l) => approach.map((x) => `<li>${l(esc(x))}</li>`).join(""))(linker())}</ul>
       ${prov("Drafted", pv.drafted_by, pv.drafted_on, "Drafted the problem statement and approach")}
       <div id="ideas" class="ideas"></div>
       <button type="button" class="linkbtn idea-toggle" data-idea="${esc(p.id)}" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}
-    ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>` : "")}
+    ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}` : "")}
     ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
     </div>

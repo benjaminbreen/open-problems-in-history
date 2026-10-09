@@ -124,7 +124,7 @@ function renderRows() {
 async function loadComments(id, el = app.querySelector(`.cbox[data-for="${CSS.escape(id)}"]`), kind = "comment") {
   if (!el) return;
   let list = [];
-  try { list = await api(`/api/comments?id=${encodeURIComponent(id)}&kind=${kind}`); }
+  try { list = await api(`/api/comments?id=${encodeURIComponent(id)}&kind=${kind}${adminToken() ? "&fresh=1" : ""}`); }
   catch { el.innerHTML = `<p class="note">Could not be loaded.</p>`; return; }
   const admin = !!adminToken();
   const items = list.map((c) => `<div class="comment"><div class="who">${who(c)}${admin ? ` <button type="button" class="linkbtn del" data-del="${esc(c.cid)}" data-pid="${esc(id)}" data-kind="${kind}">delete</button>` : ""}</div><p>${esc(c.text)}</p></div>`).join("");
@@ -494,12 +494,13 @@ document.querySelector(".mode").addEventListener("click", () => {
 // Old hash links (#/p/id) still work.
 if (location.hash.startsWith("#/")) history.replaceState(null, "", location.hash.slice(1));
 
-const [p, s] = await Promise.all([
+const [p, s, mine] = await Promise.all([
   fetch("/data/problems.json").then((r) => r.json()),
   api("/api/state").catch(() => state),
+  api("/api/mine").catch(() => ({})),
 ]);
 problems = p;
-state = s;
+state = { ...s, mine };
 route();
 stats();
 
