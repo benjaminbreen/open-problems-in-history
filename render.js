@@ -250,3 +250,123 @@ export function aboutHTML() {
     </div>
   </article>`;
 }
+
+// ---------- sources: every work and archive across all problems ----------
+// Built from the problem files, so it stays current as problems gain works, archives and holdings.
+const fold = (s) => String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+const yearOf = (y) => { const m = String(y ?? "").match(/-?\d{1,4}/); return m ? Number(m[0]) : null; };
+const repoKey = (r) => fold(String(r).replace(/\s*\(via [^)]*\)/i, "")).replace(/^the\s+/, "").trim();
+
+export function collectSources(problems) {
+  const works = new Map(), archives = new Map();
+  for (const p of problems) {
+    const pr = { id: p.id, title: p.title };
+    for (const e of p.existing || []) {
+      const k = fold(e.url || `${e.title}|${e.year}`);
+      const w = works.get(k) || { ...e, y: yearOf(e.year), problems: [] };
+      if (!w.problems.some((x) => x.id === p.id)) w.problems.push(pr);
+      works.set(k, w);
+    }
+    for (const a of p.archives || []) {
+      const k = repoKey(a.repository);
+      const r = archives.get(k) || { repository: String(a.repository).replace(/\s*\(via [^)]*\)/i, ""), url: a.url, digitized: a.digitized, cited: [], holdings: new Map() };
+      if (!r.url && a.url) r.url = a.url;
+      const rank = { full: 2, partial: 1, none: 0 };
+      if ((rank[a.digitized] ?? -1) > (rank[r.digitized] ?? -1)) r.digitized = a.digitized;
+      r.cited.push({ ...pr, collection: a.collection, note: a.note });
+      for (const h of a.holdings || []) {
+        const hk = fold(h.ref || h.name);
+        const x = r.holdings.get(hk) || { ...h, problems: [] };
+        if (!x.url && h.url) x.url = h.url;
+        if (!x.problems.some((q) => q.id === p.id)) x.problems.push(pr);
+        r.holdings.set(hk, x);
+      }
+      archives.set(k, r);
+    }
+  }
+  for (const w of works.values()) {
+    const first = String(w.authors || "").replace(/\([^)]*\)/g, "").split(/,\s*|\s+and\s+|;\s*/)[0].trim() || w.title;
+    // names given with CJK characters ("Liang Fangzhong 梁方仲") are surname-first
+    const cjk = /[\u3040-\u30ff\u3400-\u9fff]/.test(first);
+    w.sortKey = fold(cjk ? first.replace(/[^\p{Script=Latin}\s-]/gu, "").trim().split(/\s+/)[0] || first : surname(first) || first);
+    w.text = fold([w.authors, w.title, w.venue, w.year, w.note].join(" "));
+  }
+  for (const r of archives.values()) {
+    r.holdings = [...r.holdings.values()];
+    r.problems = [...new Map(r.cited.map((c) => [c.id, c])).values()];
+    r.sortKey = repoKey(r.repository);
+    r.headText = fold([r.repository, ...r.cited.map((c) => c.collection)].join(" "));
+    r.holdText = fold(r.holdings.map((h) => [h.name, h.ref, h.note].join(" ")).join(" "));
+  }
+  return { works: [...works.values()], archives: [...archives.values()] };
+}
+
+const SORTS = {
+  works: [["az", "A–Z"], ["old", "Oldest"], ["new", "Newest"]],
+  archives: [["az", "A–Z"], ["most", "Most sources"]],
+};
+const letter = (k) => { const c = k.replace(/[^a-z]/g, "")[0]; return c ? c.toUpperCase() : "#"; };
+const yearBand = (y) => y == null ? "Undated" : y < 0 ? "BCE" : y < 1800 ? `${Math.floor(y / 100) * 100}s` : `${Math.floor(y / 10) * 10}s`;
+const chips = (ps) => `<span class="src-in">${ps.map((p) => `<a href="/p/${esc(p.id)}" title="${esc(p.title)}">${esc(p.title)}</a>`).join("")}</span>`;
+const DIGS = { full: "digitized", partial: "partly digitized", none: "not digitized" };
+
+function workRow(w) {
+  const venue = w.venue ? `, ${esc(String(w.venue).replace(/^In /, "in "))}` : "";
+  return `<li class="src-w"><span class="yr">${esc(w.year)}</span><div>${esc(w.authors)}, <span class="t">${extLink(w.url, esc(w.title))}</span>${venue}.${chips(w.problems)}</div></li>`;
+}
+
+function archiveRow(r, i, open) {
+  const n = r.holdings.length;
+  const hold = n ? `<ul class="holdings">${r.holdings.map((h) => `<li>${extLink(h.url, esc(h.name))}${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${esc(h.note)}</span>` : ""}${r.problems.length > 1 ? chips(h.problems) : ""}</li>`).join("")}</ul>` : "";
+  const cited = `<dl class="src-cited">${r.cited.map((c) => `<dt><a href="/p/${esc(c.id)}">${esc(c.title)}</a></dt><dd>${esc(c.collection || "")}</dd>`).join("")}</dl>`;
+  return `<li class="src-a">
+    <div class="src-a-head"><span class="rep">${extLink(r.url, esc(r.repository))}</span>${DIGS[r.digitized] ? `<span class="tag">${DIGS[r.digitized]}</span>` : ""}</div>
+    <div class="src-a-meta">${n ? `${n} source${n > 1 ? "s" : ""} · ` : ""}${r.problems.length} problem${r.problems.length > 1 ? "s" : ""}</div>
+    <button type="button" class="hold-toggle" aria-expanded="${open}" aria-controls="sa-${i}">${open ? "Collapse" : "Expand"} <span>${n ? `${n} source${n > 1 ? "s" : ""}` : "details"}</span></button>
+    <div class="slide${open ? " open" : ""}" id="sa-${i}"><div>${hold}<p class="src-sub">As cited in</p>${cited}</div></div>
+  </li>`;
+}
+
+// The list part only, so the page can re-render it on each keystroke without losing focus.
+export function sourcesBody(data, { tab = "works", sort = "az", q = "" } = {}) {
+  const terms = fold(q).split(/\s+/).filter(Boolean);
+  const hit = (t) => terms.every((x) => t.includes(x));
+  let items, key, row;
+  if (tab === "archives") {
+    items = data.archives.filter((r) => hit(r.headText + " " + r.holdText));
+    items.sort(sort === "most" ? (a, b) => b.holdings.length - a.holdings.length || b.problems.length - a.problems.length || a.sortKey.localeCompare(b.sortKey) : (a, b) => a.sortKey.localeCompare(b.sortKey));
+    key = sort === "most" ? (r) => r.holdings.length ? (r.holdings.length >= 6 ? "6 or more sources" : r.holdings.length >= 3 ? "3–5 sources" : "1–2 sources") : "Collections only" : (r) => letter(r.sortKey);
+    // a match that is only inside the holdings opens the entry so the match is visible
+    row = (r, i) => archiveRow(r, i, terms.length > 0 && !hit(r.headText) && hit(r.holdText));
+  } else {
+    items = data.works.filter((w) => hit(w.text));
+    const byYear = (a, b) => (a.y ?? 1e4) - (b.y ?? 1e4) || a.sortKey.localeCompare(b.sortKey);
+    items.sort(sort === "old" ? byYear : sort === "new" ? (a, b) => byYear(b, a) : (a, b) => a.sortKey.localeCompare(b.sortKey) || (a.y ?? 0) - (b.y ?? 0));
+    key = sort === "az" ? (w) => letter(w.sortKey) : (w) => yearBand(w.y);
+    row = workRow;
+  }
+  const groups = [];
+  items.forEach((x, i) => { const g = key(x); if (groups.at(-1)?.g !== g) groups.push({ g, rows: [] }); groups.at(-1).rows.push(row(x, i)); });
+  const slug = (g) => `g-${fold(g).replace(/[^a-z0-9]+/g, "-")}`;
+  const total = tab === "archives" ? data.archives.length : data.works.length;
+  return `<div class="src-status">${terms.length ? `${items.length} of ${total} ${tab === "archives" ? "archives" : "works"} match` : ""}</div>
+    ${groups.length > 1 ? `<nav class="src-jump" aria-label="Jump to">${groups.map((g) => `<a href="#${slug(g.g)}">${esc(g.g)}</a>`).join("")}</nav>` : ""}
+    ${items.length ? `<div class="src-grid">` + groups.map((g) => `<section class="src-group" id="${slug(g.g)}"><h2>${esc(g.g)}</h2><ol class="src-list ${tab === "archives" ? "archives" : "works"}">${g.rows.join("")}</ol></section>`).join("") + `</div>`
+      : `<p class="src-empty">Nothing matches “${esc(q)}”.</p>`}`;
+}
+
+export function sourcesHTML(data, opts = {}) {
+  const { tab = "works", sort = "az", q = "" } = opts;
+  const holdings = data.archives.reduce((n, r) => n + r.holdings.length, 0);
+  const tabBtn = (t, label, n) => `<button type="button" role="tab" data-tab="${t}" aria-selected="${tab === t}">${label}<span>${n}</span></button>`;
+  return `<div class="sources">
+    <h1 class="page-title">Sources</h1>
+    <p class="src-lead">Every work and archive cited across the problems, gathered in one place: ${data.works.length} books and articles, and ${data.archives.length} archives holding ${holdings} specific fonds, series and items. The index is rebuilt from the problem files, so it grows as they do.</p>
+    <div class="src-tabs" role="tablist">${tabBtn("works", "Works", data.works.length)}${tabBtn("archives", "Archives", data.archives.length)}</div>
+    <div class="tools src-tools">
+      <input type="search" value="${esc(q)}" placeholder="${tab === "archives" ? "Search archives, fonds, shelfmarks" : "Search authors, titles, venues"}" aria-label="Search sources">
+      <div class="seg" role="group" aria-label="Sort"><span>Sort</span>${SORTS[tab].map(([k, l]) => `<button type="button" data-ssort="${k}" aria-pressed="${sort === k}">${l}</button>`).join("")}</div>
+    </div>
+    <div id="src-body">${sourcesBody(data, opts)}</div>
+  </div>`;
+}

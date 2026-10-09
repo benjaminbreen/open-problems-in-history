@@ -1,4 +1,4 @@
-import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -398,6 +398,32 @@ function renderAbout() {
   app.innerHTML = aboutHTML();
 }
 
+// ---------- sources ----------
+let sources = null;
+function renderSources() {
+  document.title = "Sources · Open Problems in History";
+  sources ||= collectSources(problems);
+  const u = new URLSearchParams(location.search);
+  const sv = { tab: u.get("tab") === "archives" ? "archives" : "works", sort: u.get("sort") || "az", q: u.get("q") || "" };
+  if (!["az", "old", "new", "most"].includes(sv.sort) || (sv.tab === "archives" && !["az", "most"].includes(sv.sort))) sv.sort = "az";
+  app.innerHTML = sourcesHTML(sources, sv);
+  const body = app.querySelector("#src-body"), input = app.querySelector(".src-tools input");
+  const save = () => {
+    const q = new URLSearchParams();
+    if (sv.tab !== "works") q.set("tab", sv.tab);
+    if (sv.sort !== "az") q.set("sort", sv.sort);
+    if (sv.q) q.set("q", sv.q);
+    history.replaceState(null, "", `/sources${q.size ? `?${q}` : ""}`);
+  };
+  input.addEventListener("input", () => { sv.q = input.value; body.innerHTML = sourcesBody(sources, sv); save(); });
+  app.querySelector(".sources").addEventListener("click", (e) => {
+    const t = e.target.closest("[data-tab]"), s = e.target.closest("[data-ssort]"), j = e.target.closest(".src-jump a");
+    if (t && t.dataset.tab !== sv.tab) { sv.tab = t.dataset.tab; sv.sort = "az"; save(); return renderSources(); }
+    if (s) { sv.sort = s.dataset.ssort; save(); app.querySelectorAll("[data-ssort]").forEach((b) => b.setAttribute("aria-pressed", b === s)); body.innerHTML = sourcesBody(sources, sv); }
+    if (j) { e.preventDefault(); document.querySelector(j.getAttribute("href"))?.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" }); }
+  });
+}
+
 async function renderAdmin() {
   if (!adminToken()) {
     app.innerHTML = `<h1 class="page-title">Admin</h1>
@@ -462,6 +488,7 @@ function route() {
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
+  else if (path === "/sources") renderSources();
   else if (path === "/admin") renderAdmin();
   else if (path === "/rate") renderRate();
   else { readURL(); renderList(); }
