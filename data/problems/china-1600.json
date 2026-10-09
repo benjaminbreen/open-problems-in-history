@@ -119,7 +119,17 @@
       "collection": "Chinese local gazetteers and the Chinese Rare Books digitization project",
       "url": "https://curiosity.lib.harvard.edu/chinese-rare-books",
       "digitized": "partial",
-      "note": "One of the largest gazetteer holdings outside China; many Ming and Qing editions are freely viewable as page images."
+      "note": "One of the largest gazetteer holdings outside China; many Ming and Qing editions are freely viewable as page images.",
+      "aliases": [
+        "Harvard-Yenching Library"
+      ],
+      "holdings": [
+        {
+          "name": "Rare Local Gazetteers at Harvard-Yenching Library: open access collection (page images plus manually keyed full text, hosted with MPIWG)",
+          "url": "https://mpiwg-berlin.mpg.de/website/rare-local-gazetteers-harvard-yenching-library-open-access-collection",
+          "note": "Over 400 rare Ming and Qing gazetteer titles with scanned pages and full text, usable without a subscription for extracting household and mouth figures."
+        }
+      ]
     },
     {
       "repository": "Library of Congress, Asian Division, Washington, DC",
@@ -154,7 +164,18 @@
       "collection": "CHGIS time-series county and prefecture boundaries",
       "url": "https://chgis.fas.harvard.edu/",
       "digitized": "full",
-      "note": "Free boundary and place-name data needed to link gazetteer figures to consistent spatial units."
+      "note": "Free boundary and place-name data needed to link gazetteer figures to consistent spatial units.",
+      "aliases": [
+        "CHGIS",
+        "China Historical GIS"
+      ],
+      "holdings": [
+        {
+          "name": "CHGIS Version 6 on Harvard Dataverse",
+          "url": "https://dataverse.harvard.edu/dataverse/chgis_v6",
+          "note": "Time-series county and prefecture points and boundaries for keying gazetteer population figures to consistent places."
+        }
+      ]
     },
     {
       "repository": "First Historical Archives of China, Beijing",

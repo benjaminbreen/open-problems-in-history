@@ -147,37 +147,44 @@
         {
           "name": "Audiencia de México",
           "ref": "ES.41091.AGI//MEXICO",
-          "note": "Correspondence of the viceroys and audiencia with the Council of the Indies, including tribute assessments and reports on Indigenous population."
+          "note": "Correspondence of the viceroys and audiencia with the Council of the Indies, including tribute assessments and reports on Indigenous population.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1930212"
         },
         {
           "name": "Audiencia de Lima",
           "ref": "ES.41091.AGI//LIMA",
-          "note": "Peruvian government papers, including visitas and tribute reassessments (retasas) sent to Spain."
+          "note": "Peruvian government papers, including visitas and tribute reassessments (retasas) sent to Spain.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1859899"
         },
         {
           "name": "Audiencia de Charcas",
           "ref": "ES.41091.AGI//CHARCAS",
-          "note": "Upper Peru (Bolivia): visitas, mita and tribute records forwarded from the Audiencia of La Plata."
+          "note": "Upper Peru (Bolivia): visitas, mita and tribute records forwarded from the Audiencia of La Plata.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1859721"
         },
         {
           "name": "Contaduría",
           "ref": "ES.41091.AGI//CONTADURIA",
-          "note": "Royal treasury accounts from the Indies, including tribute receipts by province."
+          "note": "Royal treasury accounts from the Indies, including tribute receipts by province.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1859722"
         },
         {
           "name": "Justicia",
           "ref": "ES.41091.AGI//JUSTICIA",
-          "note": "Sixteenth-century lawsuits and residencias, often containing early tribute and population testimony."
+          "note": "Sixteenth-century lawsuits and residencias, often containing early tribute and population testimony.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1863031"
         },
         {
           "name": "Patronato",
           "ref": "ES.41091.AGI//PATRONATO",
-          "note": "Early conquest-era documents, including some of the first counts of tributaries."
+          "note": "Early conquest-era documents, including some of the first counts of tributaries.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1916099"
         },
         {
           "name": "Indiferente General",
           "ref": "ES.41091.AGI//INDIFERENTE",
-          "note": "Holds many of the relaciones geográficas answering the 1577 questionnaire."
+          "note": "Holds many of the relaciones geográficas answering the 1577 questionnaire.",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1931247"
         }
       ]
     },
@@ -190,6 +197,16 @@
       "aliases": [
         "Archivo General de la Nación (Mexico)",
         "Archivo General de la Nación"
+      ],
+      "holdings": [
+        {
+          "name": "Ramo Tributos",
+          "note": "Tribute counts and assessments for Indigenous towns of New Spain; indexed in Cayetano Reyes García, Catálogo del ramo Tributos (AGN, 1981)."
+        },
+        {
+          "name": "Fondo Hospital de Jesús",
+          "note": "Papers of the Hospital de Jesús, founded by Cortés, dated 1520 to 1925 and inscribed on the UNESCO Memory of the World register for Mexico in 2018; they include early estate and labour records of the Marquesado del Valle."
+        }
       ]
     },
     {
@@ -206,6 +223,11 @@
         {
           "name": "Derecho Indígena y Encomiendas",
           "note": "Colonial cases and records on Indigenous communities and encomiendas; a catalogue of the series was prepared in 2022."
+        },
+        {
+          "name": "Autos of the Yachas and mitmas of Huánuco against their encomendero Juan Sánchez Falcón, with the 1562 visita of Iñigo Ortiz de Zúñiga",
+          "url": "https://cdn.www.gob.pe/uploads/document/file/4214110/Autos%20seguidos%20por%20los%20Yachas%20-%20Visita%20I%C3%B1igo%20Ortiz%20de%20Z%C3%BA%C3%B1iga%20%20Cat%C3%A1logo%20%20R%201.pdf",
+          "note": "Example of a Derecho Indígena file (Real Audiencia of Lima, 1561-1568) that contains a full visita and disputes over successive tribute assessments; the 2022 AGN catalogue entry describes it."
         }
       ]
     },
@@ -241,7 +263,17 @@
       "collection": "Joaquín García Icazbalceta collection of Relaciones Geográficas of Mexico and Guatemala, 1578–1586 (43 of the 167 known responses)",
       "url": "https://sites.utexas.edu/llilasbensonds/?p=704",
       "digitized": "full",
-      "note": "Imaged manuscripts and painted maps answering the 1577 questionnaire, which asked about past and present population; most other responses are in Seville and at the Real Academia de la Historia, Madrid."
+      "note": "Imaged manuscripts and painted maps answering the 1577 questionnaire, which asked about past and present population; most other responses are in Seville and at the Real Academia de la Historia, Madrid.",
+      "holdings": [
+        {
+          "name": "Relaciones Geográficas of Mexico and Guatemala, Joaquín García Icazbalceta Manuscript Collection",
+          "url": "https://fromthepage.lib.utexas.edu/llilasbenson/relaciones-geograficas-of-mexico-and-guatemala",
+          "note": "Forty-three responses to the 1577 questionnaire (41 for Mexico, 2 for Guatemala), 26 with painted maps; transcriptions are in progress on FromThePage.",
+          "match": [
+            "relaciones geográficas"
+          ]
+        }
+      ]
     },
     {
       "repository": "The Huntington Library, San Marino, California",

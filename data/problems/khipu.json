@@ -122,42 +122,111 @@
       "collection": "khipu.db SQLite database and KH number registry",
       "url": "https://github.com/khipulab/open-khipu-repository",
       "digitized": "full",
-      "note": "MIT-licensed cord-level data for several hundred khipus from museums worldwide, recorded through 2017 and extended since; new submissions are reviewed by an advisory board."
+      "note": "MIT-licensed cord-level data for several hundred khipus from museums worldwide, recorded through 2017 and extended since; new submissions are reviewed by an advisory board.",
+      "aliases": [
+        "Open Khipu Repository",
+        "OKR"
+      ],
+      "holdings": [
+        {
+          "name": "khipu.db",
+          "url": "https://github.com/khipulab/open-khipu-repository/tree/master/data",
+          "note": "SQLite database of published khipu data and metadata recorded through 2017, with later additions."
+        },
+        {
+          "name": "OKR KH number list (okr-kh-numbers.csv)",
+          "url": "https://github.com/khipulab/open-khipu-repository/tree/master/data",
+          "note": "Master list of KH identifiers for khipus whose data are public, used to match specimens across schemes."
+        }
+      ]
     },
     {
       "repository": "Khipu Field Guide (Ashok Khosla, with Manuel Medrano)",
       "collection": "Schematic drawings, database and analyses of about 700 khipus, plus 'paper khipu' transcriptions from colonial documents",
       "url": "https://www.khipufieldguide.com/",
       "digitized": "full",
-      "note": "Open site that renders OKR-derived data visually and collects transcribed khipu-based colonial texts useful for matching."
+      "note": "Open site that renders OKR-derived data visually and collects transcribed khipu-based colonial texts useful for matching.",
+      "aliases": [
+        "Khipu Field Guide",
+        "KFG"
+      ],
+      "holdings": [
+        {
+          "name": "Textos Andinos recitations browser",
+          "url": "https://www.khipufieldguide.com/textosbook/index.html",
+          "note": "Digitized, annotated corpus of 65 sixteenth-century Spanish transcriptions of khipu-based testimony from Pärssinen and Kiviharju's Textos Andinos, built by Manuel Medrano."
+        },
+        {
+          "name": "Khipu catalog",
+          "url": "https://www.khipufieldguide.com/sketchbook/khipu_catalog.html",
+          "note": "Schematic renderings of the khipus in the Field Guide database."
+        }
+      ]
     },
     {
       "repository": "Ethnologisches Museum, Staatliche Museen zu Berlin",
       "collection": "Andean khipu collection (one of the largest museum holdings), searchable in SMB-digital",
       "url": "https://recherche.smb.museum/",
       "digitized": "partial",
-      "note": "Many Berlin khipus were recorded by Urton's project, but photographs and full structural records are not available for all; study requires museum permission."
+      "note": "Many Berlin khipus were recorded by Urton's project, but photographs and full structural records are not available for all; study requires museum permission.",
+      "aliases": [
+        "Berlin"
+      ],
+      "holdings": [
+        {
+          "name": "Khipu V A 63044",
+          "ref": "V A 63044",
+          "url": "https://smb.museum-digital.de/object/39418",
+          "note": "Cotton khipu of three tied khipus, attributed to Nasca, collected by Eduard Gaffron; museum-digital record."
+        },
+        {
+          "name": "Khipus V A 44677 a",
+          "ref": "V A 44677 a",
+          "url": "https://smb.museum-digital.de/object/35903",
+          "note": "Two khipus tied together in a ring, from Pisco, collected by Wilhelm Gretzer."
+        }
+      ]
     },
     {
       "repository": "Museo Nacional de Arqueología, Antropología e Historia del Perú, Lima",
       "collection": "Khipus from coastal and highland sites, including Puruchuco",
       "url": "https://mnaahp.cultura.pe/",
       "digitized": "partial",
-      "note": "Major Peruvian holding; parts have been recorded in the Khipu Database and OKR, with other specimens undocumented."
+      "note": "Major Peruvian holding; parts have been recorded in the Khipu Database and OKR, with other specimens undocumented.",
+      "aliases": [
+        "Lima"
+      ]
     },
     {
       "repository": "Archivo General de la Nación, Lima",
       "collection": "Colonial visitas, revisitas, tribute and court records, such as the Derecho Indígena and Real Audiencia series",
       "url": "https://www.gob.pe/agn",
       "digitized": "partial",
-      "note": "The likeliest source of further documents transcribed from khipus; many records are uncatalogued at item level, so finding matches is a search task suited to agents working with archivists."
+      "note": "The likeliest source of further documents transcribed from khipus; many records are uncatalogued at item level, so finding matches is a search task suited to agents working with archivists.",
+      "holdings": [
+        {
+          "name": "Derecho Indígena: autos of the Yachas and mitmas of Huánuco, with the 1562 visita of Iñigo Ortiz de Zúñiga",
+          "url": "https://cdn.www.gob.pe/uploads/document/file/4214110/Autos%20seguidos%20por%20los%20Yachas%20-%20Visita%20I%C3%B1igo%20Ortiz%20de%20Z%C3%BA%C3%B1iga%20%20Cat%C3%A1logo%20%20R%201.pdf",
+          "note": "Example of a Derecho Indígena file (1561-1568) containing a full visita and tribute disputes, of the kind searched for khipu-derived figures; the 2022 AGN catalogue entry is online."
+        }
+      ]
     },
     {
       "repository": "Community of San Juan de Collata, Huarochirí, Peru",
       "collection": "Two narrative khipus and associated community documents studied by Sabine Hyland",
       "url": "https://doi.org/10.1086/691682",
       "digitized": "none",
-      "note": "Held by the community, not a museum; any further recording or imaging depends on community consent."
+      "note": "Held by the community, not a museum; any further recording or imaging depends on community consent.",
+      "aliases": [
+        "Collata"
+      ],
+      "holdings": [
+        {
+          "name": "Collata narrative khipus",
+          "url": "https://research-portal.st-andrews.ac.uk/en/publications/writing-with-twisted-cords-the-inscriptive-capacity-of-andean-khi/",
+          "note": "Two khipus kept in the village, which Hyland examined in 2015 and argued contain about 95 distinct signs; the article is the primary publication."
+        }
+      ]
     }
   ],
   "provenance": {

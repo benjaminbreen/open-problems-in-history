@@ -98,21 +98,41 @@
       "collection": "Göttingen vellum copy of the 42-line Bible, with the Göttinger Musterbuch and Helmasperger Notarial Instrument",
       "url": "http://www.gutenbergdigital.de/",
       "digitized": "full",
-      "note": "Gutenberg Digital presents complete high-resolution images of the Göttingen copy and related documents; freely accessible."
+      "note": "Gutenberg Digital presents complete high-resolution images of the Göttingen copy and related documents; freely accessible.",
+      "holdings": [
+        {
+          "name": "Göttingen copy of the 42-line Bible (vellum)",
+          "url": "http://www.gutenbergdigital.de/",
+          "note": "Complete images of one of the few surviving vellum copies, usable for comparing glyph instances across copies."
+        }
+      ]
     },
     {
       "repository": "Keio University Library, Tokyo",
       "collection": "Keio copy of the 42-line Bible, volume 1 (imaged by the HUMI project)",
       "url": "https://dcollections.lib.keio.ac.jp/en/gutenberg",
       "digitized": "full",
-      "note": "Page images with an IIIF manifest; the copy used in the Agata studies of type statistics."
+      "note": "Page images with an IIIF manifest; the copy used in the Agata studies of type statistics.",
+      "holdings": [
+        {
+          "name": "Keio copy of the 42-line Bible, volume 1",
+          "url": "https://dcollections.lib.keio.ac.jp/en/gutenberg",
+          "note": "Page images with an IIIF manifest, suitable for glyph segmentation."
+        }
+      ]
     },
     {
       "repository": "Princeton University Library, Scheide Library",
       "collection": "Scheide copy of the 42-line Bible; Bulla Thurcorum (Latin, 1456, DK type, unique copy); 31-line Cyprus Indulgence (1454)",
       "url": "https://dpul.princeton.edu/gutenberg",
       "digitized": "partial",
-      "note": "The copies studied by Agüera y Arcas and Needham; selected items are online through the Princeton Digital Library."
+      "note": "The copies studied by Agüera y Arcas and Needham; selected items are online through the Princeton Digital Library.",
+      "holdings": [
+        {
+          "name": "Calixtus III, Bulla Thurcorum [Mainz: Gutenberg, late 1456]",
+          "note": "The unique copy of the Latin Turkish bull, set in the DK type."
+        }
+      ]
     },
     {
       "repository": "Library of Congress, Rare Book and Special Collections Division, Washington, DC",
@@ -126,21 +146,40 @@
       "collection": "Gutenberg Bible (paper copy, acquired 1978)",
       "url": "https://www.hrc.utexas.edu/gutenberg-bible/",
       "digitized": "full",
-      "note": "Complete copy, digitized and available through the Ransom Center's digital collections."
+      "note": "Complete copy, digitized and available through the Ransom Center's digital collections.",
+      "holdings": [
+        {
+          "name": "Gutenberg Bible, paper copy",
+          "url": "https://www.hrc.utexas.edu/gutenberg-bible/",
+          "note": "Complete paper copy of the 42-line Bible, useful against the vellum copies for testing paper effects on impressions."
+        }
+      ]
     },
     {
       "repository": "Staatsbibliothek zu Berlin and Gesamtkatalog der Wiegendrucke",
       "collection": "DK-type prints, including the German 'Bulla widder die Turcken' (1456) and Donatus fragments; GW records for all copies",
       "url": "https://www.gesamtkatalogderwiegendrucke.de/",
       "digitized": "partial",
-      "note": "GW lists every surviving DK-type fragment and its holding library, many of which hold only single leaves or binding fragments."
+      "note": "GW lists every surviving DK-type fragment and its holding library, many of which hold only single leaves or binding fragments.",
+      "holdings": [
+        {
+          "name": "Bulla widder die Turcken (German bull, 1456)",
+          "note": "The sole surviving copy of the German edition, printed in the DK type, per Princeton's record of the Latin bull."
+        }
+      ]
     },
     {
       "repository": "Gutenberg-Museum, Mainz",
       "collection": "Fragment vom Weltgericht (Sibyllenweissagung), DK type; museum copies of the 42-line Bible; reconstructed press and casting equipment",
       "url": "https://www.gutenberg-museum.de/",
       "digitized": "none",
-      "note": "Holds one of the earliest DK-type prints examined by Reske and is a natural partner for casting experiments."
+      "note": "Holds one of the earliest DK-type prints examined by Reske and is a natural partner for casting experiments.",
+      "holdings": [
+        {
+          "name": "Mainz Fragment of the Weltgericht (Sibyllenbuch fragment)",
+          "note": "Partial leaf found in 1892 in a binding at Mainz and printed in an early state of the DK type."
+        }
+      ]
     }
   ],
   "provenance": {

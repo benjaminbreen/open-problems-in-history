@@ -94,28 +94,63 @@
       "collection": "Cotton MS Vitellius A XV (Nowell Codex, ff. 94–209, containing Beowulf and Judith)",
       "url": "https://www.bl.uk/collection/digitised-manuscripts-archives?ref=Cotton_MS_Vitellius_A_XV",
       "digitized": "full",
-      "note": "The unique manuscript, fire-damaged in 1731; fully imaged, though British Library online services were disrupted after the 2023 cyberattack."
+      "note": "The unique manuscript, fire-damaged in 1731; fully imaged, though British Library online services were disrupted after the 2023 cyberattack.",
+      "aliases": [
+        "British Library"
+      ],
+      "holdings": [
+        {
+          "name": "Cotton MS Vitellius A XV (Southwick and Nowell codices)",
+          "ref": "Cotton MS Vitellius A XV",
+          "url": "https://searcharchives.bl.uk/catalog/040-001102971",
+          "note": "The Nowell Codex (ff. 94-209) is the only manuscript of Beowulf, copied around the year 1000; the catalogue record gives its description and fire damage."
+        },
+        {
+          "name": "Cotton MS Vitellius A XV, digitised volume (Internet Archive)",
+          "url": "https://archive.org/details/cotton_ms_vitellius_a_xv",
+          "note": "Page images of the manuscript volume for checking readings against the printed editions."
+        }
+      ]
     },
     {
       "repository": "University of Kentucky and British Library",
       "collection": "Electronic Beowulf, 5th edition",
       "url": "https://ebeowulf.uky.edu/",
       "digitized": "full",
-      "note": "Manuscript images under ordinary, ultraviolet and backlit conditions with textual, grammatical and metrical apparatus."
+      "note": "Manuscript images under ordinary, ultraviolet and backlit conditions with textual, grammatical and metrical apparatus.",
+      "holdings": [
+        {
+          "name": "Electronic Beowulf: The Thorkelin Transcripts",
+          "url": "https://ebeowulf.uky.edu/ebeo4.0/CD/kportico/thork.htm",
+          "note": "Images of both Thorkelin transcripts, the scribe's copy and Thorkelin's own, made before further losses at the fire-damaged edges."
+        }
+      ]
     },
     {
       "repository": "Royal Danish Library, Copenhagen",
       "collection": "Thorkelin transcripts A and B of Beowulf (1787–89)",
       "url": "https://www.kb.dk/",
       "digitized": "full",
-      "note": "Transcripts made before further fire-edge losses, which preserve readings now missing from the manuscript; images are included in Electronic Beowulf."
+      "note": "Transcripts made before further fire-edge losses, which preserve readings now missing from the manuscript; images are included in Electronic Beowulf.",
+      "holdings": [
+        {
+          "name": "Thorkelin transcripts of Beowulf",
+          "ref": "NKS 512 and 513 4°",
+          "url": "https://beowulf.dh.tamu.edu/detail?id=258",
+          "note": "Two late-1780s transcripts of the poem, the first by a copyist and the second by Thorkelin; they preserve some readings now lost from the manuscript."
+        }
+      ]
     },
     {
       "repository": "Dictionary of Old English, University of Toronto",
       "collection": "Dictionary of Old English Web Corpus and Dictionary A–I",
       "url": "https://doe.artsci.utoronto.ca/",
       "digitized": "full",
-      "note": "At least one copy of every surviving Old English text, about three million words; corpus access is by subscription."
+      "note": "At least one copy of every surviving Old English text, about three million words; corpus access is by subscription.",
+      "aliases": [
+        "Dictionary of Old English Corpus",
+        "Dictionary of Old English"
+      ]
     },
     {
       "repository": "Old English Poetry in Facsimile project",
@@ -129,7 +164,15 @@
       "collection": "Exeter Book (Exeter Cathedral Library MS 3501)",
       "url": "https://www.exeter-cathedral.org.uk/",
       "digitized": "partial",
-      "note": "The largest Old English poetic anthology, copied in the later tenth century; the principal comparison corpus for metrical and lexical dating."
+      "note": "The largest Old English poetic anthology, copied in the later tenth century; the principal comparison corpus for metrical and lexical dating.",
+      "holdings": [
+        {
+          "name": "The Exeter Book",
+          "ref": "Exeter Cathedral Library MS 3501",
+          "url": "https://www.exeter-cathedral.org.uk/?p=34131",
+          "note": "Complete high-resolution digital copy of the 123 leaves of the principal Old English verse anthology, the main comparison text for metre and vocabulary."
+        }
+      ]
     }
   ],
   "provenance": {

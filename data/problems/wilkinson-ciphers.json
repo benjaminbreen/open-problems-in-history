@@ -124,7 +124,21 @@
       "collection": "Papeles de Cuba (Papeles procedentes de la Isla de Cuba), especially legajos 2373–2375 on Wilkinson's relations with the Louisiana governors",
       "url": "https://pares.cultura.gob.es/",
       "digitized": "partial",
-      "note": "Originals of the correspondence of Miró, Carondelet and Gayoso de Lemos, with coded letters and contemporary decipherments; searchable through PARES."
+      "note": "Originals of the correspondence of Miró, Carondelet and Gayoso de Lemos, with coded letters and contemporary decipherments; searchable through PARES.",
+      "aliases": [
+        "Archivo General de Indias",
+        "AGI"
+      ],
+      "holdings": [
+        {
+          "name": "Papeles de Cuba, Wilkinson correspondence with the Louisiana governors",
+          "ref": "leg. 2373 (with legajos 2374–2375)",
+          "note": "Legajo 2373 holds Wilkinson's declaration and memorial of August 1787 to Miró; the group is the source for the coded letters.",
+          "match": [
+            "Papeles de Cuba legajos 2373–2375"
+          ]
+        }
+      ]
     },
     {
       "repository": "Archivo Histórico Nacional, Madrid",
@@ -138,14 +152,40 @@
       "collection": "Foreign Copying Program photostats of the Archivo General de Indias (Papeles de Cuba) and Archivo Histórico Nacional",
       "url": "https://www.loc.gov/manuscripts/",
       "digitized": "none",
-      "note": "Reproductions from which Chu, Valenti and Knight transcribed their corpus; page numbers in their dataset refer to these copies, which are not online."
+      "note": "Reproductions from which Chu, Valenti and Knight transcribed their corpus; page numbers in their dataset refer to these copies, which are not online.",
+      "aliases": [
+        "Library of Congress photostats",
+        "Library of Congress"
+      ]
     },
     {
       "repository": "GitHub (c2huc2hu/wilkinson)",
       "collection": "Transcriptions, wordbanks, evaluation pair and unsolved letters in the 1078 and 1096 systems",
       "url": "https://github.com/c2huc2hu/wilkinson",
       "digitized": "partial",
-      "note": "Open machine-readable transcriptions; the linked folder of manuscript scans is not public."
+      "note": "Open machine-readable transcriptions; the linked folder of manuscript scans is not public.",
+      "aliases": [
+        "public transcriptions and wordbanks"
+      ],
+      "holdings": [
+        {
+          "name": "data/eval: evaluation excerpt",
+          "ref": "LOC pp. 3044–3055",
+          "url": "https://github.com/c2huc2hu/wilkinson/tree/master/data/eval",
+          "note": "Held-out ciphertext (pp. 3044–3045) and ciphertext with plaintext (pp. 3048–3055) in the 1078 system."
+        },
+        {
+          "name": "data/unsolved: transcribed unsolved ciphers",
+          "ref": "unsolved.ciphers.1078, unsolved.ciphers.1096",
+          "url": "https://github.com/c2huc2hu/wilkinson/tree/master/data/unsolved",
+          "note": "Transcriptions of undeciphered letters, split by code system."
+        },
+        {
+          "name": "wordbanks: extracted code–word pairs",
+          "url": "https://github.com/c2huc2hu/wilkinson/tree/master/wordbanks",
+          "note": "Wordbanks extracted from solved letters, used as the training set."
+        }
+      ]
     },
     {
       "repository": "University of Pittsburgh Library System, Archives and Special Collections",

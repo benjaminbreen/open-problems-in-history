@@ -120,42 +120,130 @@
       "collection": "Archief van de Verenigde Oost-Indische Compagnie (VOC), inv. 1.04.02, especially the Overgekomen Brieven en Papieren",
       "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
       "digitized": "partial",
-      "note": "Many volumes are scanned and the OBP is being machine-transcribed by GLOBALISE (transcriptions.globalise.huygens.knaw.nl); slave purchases are scattered through letters, muster rolls and accounts."
+      "note": "Many volumes are scanned and the OBP is being machine-transcribed by GLOBALISE (transcriptions.globalise.huygens.knaw.nl); slave purchases are scattered through letters, muster rolls and accounts.",
+      "holdings": [
+        {
+          "name": "Overgekomen brieven en papieren",
+          "ref": "1.04.02, inv. 1053-4454, 7527-11024",
+          "url": "https://transcriptions.globalise.huygens.knaw.nl/",
+          "note": "Letters and papers received from Asia; GLOBALISE has machine-transcribed inventory numbers 1053-4454 and 7527-11024.",
+          "match": [
+            "Overgekomen Brieven en Papieren"
+          ]
+        }
+      ]
     },
     {
       "repository": "National Archives and Records Service of South Africa, Western Cape Archives and Records Service, Cape Town",
       "collection": "VOC Cape records (Council of Policy resolutions, slave transfer deeds, opgaafrolle) and British-period slave registers",
       "url": "https://www.nationalarchives.gov.za/",
       "digitized": "partial",
-      "note": "Records of slave imports into the Cape from Madagascar, Mozambique, South Asia and the archipelago; catalogued through the NAAIRS database."
+      "note": "Records of slave imports into the Cape from Madagascar, Mozambique, South Asia and the archipelago; catalogued through the NAAIRS database.",
+      "holdings": [
+        {
+          "name": "Council of Policy, 1651-1795",
+          "note": "Cape government records, including resolutions and deeds drawn up by the secretariat."
+        },
+        {
+          "name": "Slave Office, 1789-1845",
+          "note": "Cape records of slave registration and transfers under Dutch and British rule."
+        },
+        {
+          "name": "Inventory of the Cape Title Deeds, 1652-1825",
+          "ref": "Inventory 1/84",
+          "url": "https://docs.globalise.huygens.knaw.nl/tanap/archival-inventories/pdf/CapeTown_1.84.pdf",
+          "note": "Cape Town Archives Repository inventory no. 1/84 of the transfer deeds of the Council of Policy secretariat, in which slave transfers appear."
+        }
+      ]
     },
     {
       "repository": "Archives nationales d'outre-mer, Aix-en-Provence",
       "collection": "Fonds of Île de France (Mauritius) and Île Bourbon (Réunion), Compagnie des Indes, and colonial correspondence (série C)",
       "url": "https://recherche-anom.culture.gouv.fr/",
       "digitized": "partial",
-      "note": "Core French evidence for the Mascarene trade from Madagascar, Mozambique and the Swahili coast; civil registers are imaged online, administrative series mostly are not."
+      "note": "Core French evidence for the Mascarene trade from Madagascar, Mozambique and the Swahili coast; civil registers are imaged online, administrative series mostly are not.",
+      "holdings": [
+        {
+          "name": "Colonies, série C: correspondance à l'arrivée",
+          "ref": "COL C",
+          "note": "Incoming colonial correspondence 1610-1815, with sub-series C2 for the Compagnies des Indes (1649-1835) and files on the Île de France and Bourbon."
+        }
+      ]
     },
     {
       "repository": "Arquivo Histórico Ultramarino, Lisbon",
       "collection": "Moçambique and Índia caixas and códices (Conselho Ultramarino)",
       "url": "https://digitarq.arquivos.pt/",
       "digitized": "partial",
-      "note": "Portuguese administrative and customs records for Mozambique Island, Quelimane and Goa; catalogue online, most documents viewable only in Lisbon."
+      "note": "Portuguese administrative and customs records for Mozambique Island, Quelimane and Goa; catalogue online, most documents viewable only in Lisbon.",
+      "holdings": [
+        {
+          "name": "Conselho Ultramarino: Moçambique",
+          "ref": "PT/AHU/CU/064",
+          "note": "Series 064 of the Conselho Ultramarino, held in boxes; the AHU has not fully inventoried it."
+        },
+        {
+          "name": "Conselho Ultramarino: Índia",
+          "ref": "PT/AHU/CU/058",
+          "note": "Series 058 for the Estado da Índia, 1509-1833, about 499 boxes."
+        }
+      ]
     },
     {
       "repository": "The National Archives, Kew",
       "collection": "T 71 (Office of Registry of Colonial Slaves, including Mauritius and Cape registers from 1815) and FO 84 (Slave Trade Department correspondence)",
       "url": "https://www.nationalarchives.gov.uk/help-with-your-research/research-guides/british-transatlantic-slave-trade-records/",
       "digitized": "partial",
-      "note": "Mauritius and Cape slave registers record birthplace and age of enslaved people; FO 84 holds naval and consular reports on the East African and Gulf trades."
+      "note": "Mauritius and Cape slave registers record birthplace and age of enslaved people; FO 84 holds naval and consular reports on the East African and Gulf trades.",
+      "holdings": [
+        {
+          "name": "Office of Registry of Colonial Slaves and Slave Compensation Commission",
+          "ref": "T 71",
+          "url": "https://beta.nationalarchives.gov.uk/catalogue/id/C13808/",
+          "note": "Registers of 1813-1834 indexed mostly by owner or plantation, with the compensation records."
+        },
+        {
+          "name": "Slave Registers: Mauritius, personal slaves, Port Louis",
+          "ref": "T 71/632",
+          "url": "https://beta.nationalarchives.gov.uk/catalogue/id/C2584736/",
+          "note": "A 1832 indexed register, one of the Mauritius pieces in T 71."
+        },
+        {
+          "name": "Slave Trade Department and successors: general correspondence",
+          "ref": "FO 84",
+          "note": "Consular and naval reports, including the Zanzibar despatches of the 1880s such as FO 84/1982.",
+          "match": [
+            "British anti-slave-trade correspondence"
+          ]
+        }
+      ]
     },
     {
       "repository": "British Library, London, via Qatar Digital Library",
       "collection": "India Office Records, IOR/R/15 (Persian Gulf Political Residency), including manumission statements",
       "url": "https://www.qdl.qa/en",
       "digitized": "partial",
-      "note": "Digitized Gulf records with testimony of enslaved Africans and Baluchis seeking manumission, mostly late nineteenth and early twentieth century."
+      "note": "Digitized Gulf records with the statements of enslaved Africans and Baluchis seeking manumission, mostly from the 1920s and 1930s.",
+      "holdings": [
+        {
+          "name": "Bahrain manumission cases, 1924-1929",
+          "ref": "IOR/R/15/1/204",
+          "url": "https://searcharchives.bl.uk/catalog/040-000227645",
+          "note": "Forty-four cases heard at the Political Agency in Bahrain, each with the slave's statement of origin and history."
+        },
+        {
+          "name": "Manumission cases from Sharjah",
+          "ref": "IOR/R/15/1/208",
+          "url": "https://searcharchives.bl.uk/catalog/040-000227649",
+          "note": "Thirty-five cases, mostly manumission statements sent by the Residency Agent at Sharjah to the Bushire Resident."
+        },
+        {
+          "name": "Manumission of slaves on the Arab Coast, individual cases",
+          "ref": "IOR/R/15/1/210",
+          "url": "https://searcharchives.bl.uk/catalog/040-000227651",
+          "note": "Twenty-six cases sent to Bushire by the Political Agents on the Arab Coast."
+        }
+      ]
     }
   ],
   "provenance": {

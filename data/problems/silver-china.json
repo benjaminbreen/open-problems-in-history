@@ -135,42 +135,125 @@
       "collection": "Contaduría and Filipinas sections: Caja de Manila accounts, galleon registers, Acapulco and Manila customs records",
       "url": "https://pares.cultura.gob.es/inicio.html",
       "digitized": "partial",
-      "note": "Principal source for registered silver on the Acapulco–Manila route; many legajos imaged on PARES, the rest consultable in Seville."
+      "note": "Principal source for registered silver on the Acapulco–Manila route; many legajos imaged on PARES, the rest consultable in Seville.",
+      "aliases": [
+        "AGI",
+        "Archivo General de Indias"
+      ],
+      "holdings": [
+        {
+          "name": "Filipinas: general accounts of the Real Hacienda, 1726-1834",
+          "ref": "Filipinas, legs. 858-868 and 871",
+          "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
+          "note": "General accounts of the Manila treasury with detailed receipts (cargo) and expenditure (data); described in Heredia Herrera's guide to the Philippine fonds."
+        },
+        {
+          "name": "Filipinas: testimonies of registros de naos, 1657-1809",
+          "ref": "Filipinas, legs. 934-964 (selection)",
+          "url": "https://www.anabad.org/wp-content/uploads/2024/04/1989_6-Filipinas-en-el-Archivo-General-de-Indias.pdf",
+          "note": "Sewn registers formed at the Manila treasury for each galleon, with appraisal of goods, tonnage survey and the allotment of cargo space, sent to Spain; spread over legajos 934-964.",
+          "match": [
+            "galleon registers"
+          ]
+        },
+        {
+          "name": "Contaduría, Section II (pre-1726 Philippine accounts)",
+          "ref": "ES.41091.AGI//CONTADURIA",
+          "note": "Heredia Herrera places the Manila treasury accounts for years before 1726 in the Contaduría rather than in Filipinas."
+        }
+      ]
     },
     {
       "repository": "Archivo General de la Nación, Mexico City",
       "collection": "Real Hacienda, Casa de Moneda and Filipinas series",
       "url": "https://www.gob.mx/agn",
       "digitized": "partial",
-      "note": "Mint and treasury records for New Spain, the main source of Pacific silver; consultation onsite with partial digital access."
+      "note": "Mint and treasury records for New Spain, the main source of Pacific silver; consultation onsite with partial digital access.",
+      "aliases": [
+        "AGN",
+        "Archivo General de la Nación"
+      ],
+      "holdings": [
+        {
+          "name": "Ramo Filipinas",
+          "note": "Sixty-three volumes from 1718 on the Philippines and the Manila galleon trade, with a published guide (Guía del ramo Filipinas, 1980)."
+        },
+        {
+          "name": "Casa de Moneda",
+          "note": "Mint records for Mexico City from 1612 to 1856, a principal source for coinage and silver production in New Spain."
+        }
+      ]
     },
     {
       "repository": "Global Price and Income History Group, University of California, Davis",
       "collection": "Government budget series, including Klein and TePaske treasury accounts for Mexico, 1576–1816 (hosted on the European State Finance Database)",
       "url": "https://gpih.ucdavis.edu/Government.htm",
       "digitized": "full",
-      "note": "Free downloadable royal treasury series compiled from the Spanish American cajas."
+      "note": "Free downloadable royal treasury series compiled from the Spanish American cajas.",
+      "holdings": [
+        {
+          "name": "TePaske and Klein royal treasury accounts, Mexico, 1576-1816",
+          "note": "Treasury series compiled from the Spanish American cajas; the GPIH file points to the European State Finance Database, and the compiler's papers are at Duke University.",
+          "match": [
+            "TePaske's mint and treasury data"
+          ]
+        }
+      ]
     },
     {
       "repository": "Nationaal Archief, The Hague",
       "collection": "Archives of the Dutch East India Company (VOC), 1602–1795, including bullion shipments and Asian accounts",
       "url": "https://www.nationaalarchief.nl/",
       "digitized": "partial",
-      "note": "Records of VOC silver exports from Europe and Japanese silver traded through Deshima; much is inventoried and partly imaged."
+      "note": "Records of VOC silver exports from Europe and Japanese silver traded through Deshima; much is inventoried and partly imaged.",
+      "aliases": [
+        "VOC finding aids"
+      ],
+      "holdings": [
+        {
+          "name": "Archief van de Verenigde Oost-Indische Compagnie",
+          "ref": "1.04.02",
+          "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+          "note": "VOC head-office archive, 1602-1795, including the letters and papers received from Asia."
+        },
+        {
+          "name": "Nederlandse Factorij in Japan (Hirado and Deshima)",
+          "ref": "1.04.21",
+          "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.21",
+          "note": "Archive of the Dutch trading post in Japan, 1609-1860, with the Hirado and Deshima daybooks; needed for the Japanese silver and copper trade."
+        }
+      ]
     },
     {
       "repository": "British Library, London",
       "collection": "India Office Records: East India Company ledgers, Canton factory records and bullion export accounts",
       "url": "https://www.bl.uk/",
       "digitized": "partial",
-      "note": "Main source for English silver shipments to Canton in the eighteenth century; reading-room access, selected series digitized."
+      "note": "Main source for English silver shipments to Canton in the eighteenth century; reading-room access, selected series digitized.",
+      "holdings": [
+        {
+          "name": "Factory Records: China and Japan",
+          "ref": "IOR/G/12",
+          "url": "https://searcharchives.bl.uk/catalog/036-000175241",
+          "note": "Canton diaries and consultations 1751-1834, China Select Committee secret consultations 1793-1832 and ship diaries 1721-1751."
+        },
+        {
+          "name": "Records of the East India Company Factory at Canton",
+          "ref": "IOR/R/10",
+          "url": "https://searcharchives.bl.uk/catalog/033-000226869",
+          "note": "Commercial papers on the Company's China trade that partly duplicate G/12 and fill part of the gap 1754-1774."
+        }
+      ]
     },
     {
       "repository": "First Historical Archives of China, Beijing",
       "collection": "Qing palace memorials and Board of Revenue records on silver, copper cash exchange rates, grain prices and Guangdong maritime customs",
       "url": "https://www.fhac.com.cn/",
       "digitized": "partial",
-      "note": "Chinese-side evidence for timing and effects of silver inflows; access onsite by application, with some series online."
+      "note": "Chinese-side evidence for timing and effects of silver inflows; access onsite by application, with some series online.",
+      "aliases": [
+        "Qing archives"
+      ]
     }
   ],
   "provenance": {

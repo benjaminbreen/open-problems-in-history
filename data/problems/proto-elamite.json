@@ -131,14 +131,40 @@
       "collection": "Département des Antiquités orientales: Susa tablets (Sb inventory numbers), published in MDP 6, 17, 26 and Textes cunéiformes du Louvre 32 (Dahl 2019); Linear Elamite inscriptions from Susa",
       "url": "https://collections.louvre.fr/",
       "digitized": "partial",
-      "note": "Holds the great majority of Proto-Elamite tablets; many have been imaged for CDLI, while some joins and fragments remain unpublished."
+      "note": "Holds the great majority of Proto-Elamite tablets; many have been imaged for CDLI, while some joins and fragments remain unpublished.",
+      "aliases": [
+        "Louvre"
+      ],
+      "holdings": [
+        {
+          "name": "Susa tablet SB 15119 (MDP 6, 272)",
+          "ref": "SB 15119",
+          "url": "https://collections.louvre.fr/en/ark:/53355/cl010187450",
+          "note": "Proto-Elamite tablet excavated by de Morgan at Susa in 1901 and published by Scheil in MDP 6 (1905); a representative accounting tablet from the early Susa finds."
+        },
+        {
+          "name": "Tablet SB 15420 (MDP 31, 23)",
+          "ref": "SB 15420",
+          "url": "https://collections.louvre.fr/en/ark:/53355/cl010187750",
+          "note": "Tablet published in de Mecquenem and Rutten, Epigraphie proto-élamite (MDP 31, 1949), from the later Susa excavations."
+        },
+        {
+          "name": "Tablet SB 24509 (TCL 32, 11)",
+          "ref": "SB 24509",
+          "url": "https://collections.louvre.fr/en/ark:/53355/cl010431881",
+          "note": "Fragment from the 121 previously unpublished tablets and fragments edited by Dahl in Textes cunéiformes du Louvre 32 (2019)."
+        }
+      ]
     },
     {
       "repository": "Cuneiform Digital Library Initiative (CDLI)",
       "collection": "Proto-Elamite period artifacts (ca. 3100–2900 BC): transliterations, photographs and line art",
       "url": "https://cdli.earth/search?simple-value%5B0%5D=%2A&simple-field%5B0%5D=keyword&f%5Bperiod%5D%5B0%5D=Proto-Elamite+%28ca.+3100-2900+BC%29&limit=100",
       "digitized": "full",
-      "note": "Open access; the period filter returns about 1,750 entries, with transliteration conventions that differ across editors."
+      "note": "Open access; the period filter returns about 1,750 entries, with transliteration conventions that differ across editors.",
+      "aliases": [
+        "CDLI"
+      ]
     },
     {
       "repository": "CDLI Wiki, University of Oxford",
@@ -152,7 +178,10 @@
       "collection": "Proto-Elamite and Linear Elamite material from excavations in Iran",
       "url": "https://irannationalmuseum.ir/en/",
       "digitized": "partial",
-      "note": "Holds tablets from Iranian excavations that are less fully imaged than the Louvre material; recording them requires collaboration with Iranian institutions."
+      "note": "Holds tablets from Iranian excavations that are less fully imaged than the Louvre material; recording them requires collaboration with Iranian institutions.",
+      "aliases": [
+        "Iranian collections"
+      ]
     }
   ],
   "provenance": {

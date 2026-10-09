@@ -114,21 +114,48 @@
       "collection": "Codex Climaci Rescriptus (Green Collection), Syriac palimpsest with Greek astronomical undertext",
       "url": "https://www.museumofthebible.org/collections",
       "digitized": "partial",
-      "note": "Holds most leaves of the palimpsest that yielded Hipparchan coordinates; multispectral images have been made for part of the codex."
+      "note": "Holds most leaves of the palimpsest that yielded Hipparchan coordinates; multispectral images have been made for part of the codex.",
+      "aliases": [
+        "Codex Climaci Rescriptus",
+        "Museum of the Bible"
+      ],
+      "holdings": [
+        {
+          "name": "Codex Climaci Rescriptus (Syriac palimpsest, Green Collection)",
+          "note": "Most of its 146 leaves are here; the Greek undertext on folios 47-54 and 64 includes the Aratus material and the Hipparchan star coordinates recovered in 2022."
+        }
+      ]
     },
     {
       "repository": "UCLA Library and St Catherine's Monastery, Sinai",
       "collection": "Sinai Palimpsests Project (multispectral images of palimpsests from St Catherine's)",
       "url": "https://sinai.library.ucla.edu/",
       "digitized": "partial",
-      "note": "Open-access multispectral images of Sinai palimpsests, among which further Greek scientific undertexts may survive; free registration required."
+      "note": "Open-access multispectral images of Sinai palimpsests, among which further Greek scientific undertexts may survive; free registration required.",
+      "aliases": [
+        "Sinai palimpsests"
+      ]
     },
     {
       "repository": "Biblioteca Apostolica Vaticana, Vatican City",
       "collection": "Vat. gr. 1594 (ninth-century Almagest) and other Greek Almagest manuscripts",
       "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1594",
       "digitized": "full",
-      "note": "One of the oldest complete Greek witnesses of the catalogue, fully digitized on DigiVatLib."
+      "note": "One of the oldest complete Greek witnesses of the catalogue, fully digitized on DigiVatLib.",
+      "holdings": [
+        {
+          "name": "Vat. gr. 1594 (Heiberg's B)",
+          "ref": "Vat. gr. 1594",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.gr.1594",
+          "note": "Ninth-century Almagest with Theon's prolegomena and two layers of scholia, one of the oldest Greek witnesses to the catalogue text."
+        },
+        {
+          "name": "Vat. gr. 180 (Heiberg's D)",
+          "ref": "Vat. gr. 180",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.gr.180",
+          "note": "Tenth-century Almagest carrying essentially the same scholia as Vat. gr. 1594 and Marc. gr. 313, a further witness for the catalogue text."
+        }
+      ]
     },
     {
       "repository": "Bavarian Academy of Sciences, Munich",
@@ -142,7 +169,18 @@
       "collection": "Hipparcos and Tycho catalogues",
       "url": "https://www.cosmos.esa.int/web/hipparcos/catalogues",
       "digitized": "full",
-      "note": "Modern astrometry with proper motions used to compute where each star stood in 130 BC and AD 137."
+      "note": "Modern astrometry with proper motions used to compute where each star stood in 130 BC and AD 137.",
+      "aliases": [
+        "Hipparcos"
+      ],
+      "holdings": [
+        {
+          "name": "The Hipparcos and Tycho Catalogues (ESA 1997)",
+          "ref": "VizieR I/239",
+          "url": "https://cdsarc.cds.unistra.fr/viz-bin/cat/I/239",
+          "note": "Machine-readable positions, proper motions and photometry of 118,000 Hipparcos stars (Hipparcos main catalogue) for computing star positions at Hipparchan and Ptolemaic epochs."
+        }
+      ]
     }
   ],
   "provenance": {

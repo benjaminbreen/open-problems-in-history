@@ -105,28 +105,40 @@
       "collection": "Old Akkadian, Ur III and Old Babylonian texts mentioning Akkade/Agade; searchable catalogue and transliterations",
       "url": "https://cdli.earth/",
       "digitized": "partial",
-      "note": "Open catalogue of cuneiform artifacts with images for many tablets, the main entry point for compiling attestations of the toponym."
+      "note": "Open catalogue of cuneiform artifacts with images for many tablets, the main entry point for compiling attestations of the toponym.",
+      "aliases": [
+        "CDLI"
+      ]
     },
     {
       "repository": "ARCHIBAB (Archives babyloniennes), Collège de France / CNRS",
       "collection": "Old Babylonian letters and administrative texts, including the Mari corpus with itineraries and references to Akkade",
       "url": "https://www.archibab.fr/",
       "digitized": "partial",
-      "note": "Online database of Old Babylonian documents with editions; essential for the Mari and Eshnunna evidence on river crossings and routes."
+      "note": "Online database of Old Babylonian documents with editions; essential for the Mari and Eshnunna evidence on river crossings and routes.",
+      "aliases": [
+        "ARCHIBAB"
+      ]
     },
     {
       "repository": "ORACC, Royal Inscriptions of Assyria online and related projects",
       "collection": "RIAo and royal inscription corpora; Sargonic royal inscriptions as edited in RIME 2",
       "url": "https://oracc.museum.upenn.edu/riao/",
       "digitized": "full",
-      "note": "Lemmatized online editions of royal inscriptions useful for tracing later references to Akkade and its temples."
+      "note": "Lemmatized online editions of royal inscriptions useful for tracing later references to Akkade and its temples.",
+      "aliases": [
+        "ORACC"
+      ]
     },
     {
       "repository": "Center for Advanced Spatial Technologies, University of Arkansas",
       "collection": "CORONA Atlas and Referencing System (declassified 1960s–70s reconnaissance imagery, orthorectified)",
       "url": "https://corona.cast.uark.edu/",
       "digitized": "full",
-      "note": "Free orthorectified CORONA imagery of Iraq showing mounds and palaeochannels since obscured by agriculture and urban growth."
+      "note": "Free orthorectified CORONA imagery of Iraq showing mounds and palaeochannels since obscured by agriculture and urban growth.",
+      "aliases": [
+        "CORONA"
+      ]
     },
     {
       "repository": "U.S. Geological Survey, EarthExplorer",
@@ -138,9 +150,22 @@
     {
       "repository": "Institute for the Study of Ancient Cultures (ISAC), University of Chicago",
       "collection": "Diyala Project: records of the 1930s excavations at Tell Asmar (Eshnunna), Khafajah and Tell Agrab",
-      "url": "https://isac.uchicago.edu/research/projects/diyala-project",
+      "url": "https://isac.uchicago.edu/research-projects/diyala-project",
       "digitized": "partial",
-      "note": "Digitized excavation records and object data for the Diyala region, which textual evidence ties closely to Akkade."
+      "note": "Digitized excavation records and object data for the Diyala region, which textual evidence ties closely to Akkade.",
+      "holdings": [
+        {
+          "name": "Sargonic Texts from the Diyala Region (MAD 1, I. J. Gelb, 1952)",
+          "ref": "MAD 1",
+          "url": "https://isac.uchicago.edu/publications/sargonic-texts-diyala-region",
+          "note": "Transliterations of the Sargonic tablets from the Diyala excavations, with indices of names and a tablet catalogue; free PDF from ISAC."
+        },
+        {
+          "name": "Diyala Project database",
+          "url": "https://isac.uchicago.edu/research-projects/diyala-project",
+          "note": "Objects, excavation records, photographs and plans from the 1930s work at Tell Asmar, Tell Agrab, Ishchali and Khafaje."
+        }
+      ]
     },
     {
       "repository": "Iraq Museum, Baghdad",

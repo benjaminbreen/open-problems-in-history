@@ -131,35 +131,79 @@
       "collection": "Sanguozhi, Wei shu 30 (Wuhuan Xianbei Dongyi zhuan), the 'Account of the Wa'",
       "url": "https://ctext.org/sanguozhi",
       "digitized": "full",
-      "note": "Open full text of the transmitted Wei zhi; textual variants must be checked against the Song printed editions and the related accounts in the Hou Hanshu and Liang shu."
+      "note": "Open full text of the transmitted Wei zhi; textual variants must be checked against the Song printed editions and the related accounts in the Hou Hanshu and Liang shu.",
+      "holdings": [
+        {
+          "name": "Sanguozhi, Wei shu 30, Wuhuan Xianbei Dongyi zhuan: section on the Wa",
+          "ref": "Sanguozhi 30",
+          "url": "https://zh.wikisource.org/wiki/三國志/卷30",
+          "note": "The itinerary and the list of countries of the Wa, opening 'The people of Wa are in the ocean southeast of Daifang'; the link is the Wikisource transcription, not the Chinese Text Project copy.",
+          "match": [
+            "Account of the Wa"
+          ]
+        }
+      ]
     },
     {
       "repository": "Nara National Research Institute for Cultural Properties",
       "collection": "Comprehensive Database of Archaeological Site Reports in Japan (Zenkoku iseki hōkoku sōran)",
       "url": "https://sitereports.nabunken.go.jp/",
       "digitized": "partial",
-      "note": "Open archive of tens of thousands of excavation reports, including those for Makimuku, Yoshinogari and the early Kofun mounds, the basis for any georeferenced site database."
+      "note": "Open archive of tens of thousands of excavation reports, including those for Makimuku, Yoshinogari and the early Kofun mounds, the basis for any georeferenced site database.",
+      "aliases": [
+        "Nara National Research Institute"
+      ],
+      "holdings": [
+        {
+          "name": "Makimuku site excavation reports",
+          "note": "Reports by Sakurai City, the Nara Prefecture Archaeological Institute of Kashihara and others, including the 1992 Higashida and Hotoge report and the 169th-season report (2012)."
+        },
+        {
+          "name": "Yoshinogari site reports",
+          "note": "Saga Prefectural Board of Education reports from 1993 on, including the 1993 interim report and the 2016 park-development report no. 211."
+        }
+      ]
     },
     {
       "repository": "Sakurai City Research Center for Makimukugaku, Nara Prefecture",
       "collection": "Makimuku site excavation records, finds and the Makimukugaku kenkyū series",
       "url": "https://www.city.sakurai.lg.jp/",
       "digitized": "partial",
-      "note": "Holds the material from the large building complex and the peach-stone pit; samples for further dating are accessed through the centre."
+      "note": "Holds the material from the large building complex and the peach-stone pit; samples for further dating are accessed through the centre.",
+      "holdings": [
+        {
+          "name": "Peach stones from the pit beside the large building, Makimuku",
+          "url": "https://www.nagoya-u.ac.jp/about-nu/public-relations/researchinfo/upload_images/20180615_isee_1.pdf",
+          "note": "About 2,800 peach stones; Nagoya University and the centre radiocarbon-dated 12 to a calendar range of roughly 135-230 CE."
+        }
+      ]
     },
     {
       "repository": "National Museum of Japanese History (Rekihaku), Sakura, Chiba",
       "collection": "Radiocarbon dating programme for the Yayoi and early Kofun periods; samples and data from Hashihaka and Makimuku",
       "url": "https://www.rekihaku.ac.jp/",
       "digitized": "partial",
-      "note": "Source of the 240–260 CE estimate for Hashihaka and of much of the Japanese tree-ring calibration data."
+      "note": "Source of the 240–260 CE estimate for Hashihaka and of much of the Japanese tree-ring calibration data.",
+      "aliases": [
+        "Rekihaku"
+      ]
     },
     {
       "repository": "Imperial Household Agency, Tokyo",
       "collection": "Mausolea and tombs (ryōbo) under its management, including Hashihaka, designated the tomb of Yamatototohimomosohime",
       "url": "https://www.kunaicho.go.jp/ryobo/",
       "digitized": "none",
-      "note": "Controls access to Hashihaka; only limited surface observation by academic societies has been permitted, and collected sherds are held by the agency."
+      "note": "Controls access to Hashihaka; only limited surface observation by academic societies has been permitted, and collected sherds are held by the agency.",
+      "holdings": [
+        {
+          "name": "Hashihaka (Ōichi no haka)",
+          "url": "https://online.bunka.go.jp/db/heritages/detail/401661",
+          "note": "Designated by the Agency as the tomb of Yamatotohimomosohime no mikoto, c. 280 m long and dated to the third century; the moat and outer bank are known only from excavations on adjoining land.",
+          "match": [
+            "Hashihaka"
+          ]
+        }
+      ]
     },
     {
       "repository": "Yoshinogari Historical Park, Saga Prefecture",

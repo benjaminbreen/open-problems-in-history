@@ -138,49 +138,125 @@
       "collection": "CMG online editions, including the Supplementum Orientale of Arabic versions",
       "url": "https://cmg.bbaw.de/epubl/online/editionen.html",
       "digitized": "full",
-      "note": "Free PDFs of critical editions of Greek Galen and of Arabic versions, the reference texts for alignment."
+      "note": "Free PDFs of critical editions of Greek Galen and of Arabic versions, the reference texts for alignment.",
+      "aliases": [
+        "Corpus Medicorum Graecorum",
+        "CMG"
+      ],
+      "holdings": [
+        {
+          "name": "Galeni De optimo medico cognoscendo libelli versio Arabica (A. Z. Iskandar, 1988)",
+          "ref": "CMG Suppl. Or. IV",
+          "url": "https://dfg-viewer.de/show/?tx_dlf[page]=1&tx_dlf[id]=http%3A%2F%2Fcmg.bbaw.de%2Fepubl%2Fonline%2Fmets%2Fsuppl_or_04.xml&tx_dlf[double]=0&cHash=1",
+          "note": "Edition and English translation of the Arabic version of On Examinations by which the Best Physicians are Recognised, whose Greek is lost.",
+          "match": [
+            "On Examinations by which the Best Physicians are Recognised"
+          ]
+        },
+        {
+          "name": "Galen, In Hippocratis Epidemiarum librum II commentariorum I-VI versio Arabica (U. Vagelpohl, 2016)",
+          "ref": "CMG Suppl. Or. V 2",
+          "url": "https://dfg-viewer.de/show/?tx_dlf[page]=1&tx_dlf[id]=http%3A%2F%2Fcmg.bbaw.de%2Fepubl%2Fonline%2Fmets%2Fsuppl_or_05_02.xml&tx_dlf[double]=0&cHash=1",
+          "note": "Arabic text and English translation of the commentary on Epidemics II, preserved only in part in Greek."
+        },
+        {
+          "name": "Galen, In Hippocratis Epidemiarum librum VI commentariorum I-VIII versio Arabica (U. Vagelpohl, 2022)",
+          "ref": "CMG Suppl. Or. V 3",
+          "url": "https://dfg-viewer.de/show/?tx_dlf[page]=1&tx_dlf[id]=http%3A%2F%2Fcmg.bbaw.de%2Fepubl%2Fonline%2Fmets%2Fsuppl_or_05_03.xml&tx_dlf[double]=0&cHash=1",
+          "note": "Arabic text and English translation of the commentary on Epidemics VI, of which books VI-VIII survive only in Arabic."
+        }
+      ]
     },
     {
       "repository": "Berlin-Brandenburgische Akademie der Wissenschaften, Corpus Medicorum Graecorum",
       "collection": "Gerhard Fichtner, Corpus Galenicum: Bibliographie der galenischen und pseudogalenischen Werke (updated online)",
       "url": "https://cmg.bbaw.de/arbeitsmittel/hippokrates-und-galenbibliographie-fichtner/",
       "digitized": "full",
-      "note": "Work-by-work list recording which Galenic texts survive in Greek, Arabic, Syriac, Hebrew and Latin, with editions."
+      "note": "Work-by-work list recording which Galenic texts survive in Greek, Arabic, Syriac, Hebrew and Latin, with editions.",
+      "aliases": [
+        "Corpus Galenicum",
+        "Fichtner"
+      ],
+      "holdings": [
+        {
+          "name": "Fichtner, Corpus Galenicum: Galen-Bibliographie (PDF)",
+          "url": "https://cmg.bbaw.de/epubl/online/online-publikationen/Galen-Bibliographie.pdf",
+          "note": "Work-by-work bibliography of Galenic and pseudo-Galenic texts and their editions and translations.",
+          "match": [
+            "Fichtner's Corpus Galenicum bibliography"
+          ]
+        }
+      ]
     },
     {
       "repository": "Glossarium Graeco-Arabicum (Ruhr-Universität Bochum / BBAW TELOTA)",
       "collection": "Database of Greek–Arabic word correspondences in translated texts",
       "url": "https://telota.bbaw.de/glossga/",
       "digitized": "full",
-      "note": "Lexical correspondences drawn from Graeco-Arabic translations, usable to train or check alignment models."
+      "note": "Lexical correspondences drawn from Graeco-Arabic translations, usable to train or check alignment models.",
+      "aliases": [
+        "Glossarium Graeco-Arabicum"
+      ]
     },
     {
       "repository": "University of Manchester, Syriac Galen Palimpsest project",
       "collection": "Processed images and digital critical edition of Galen, On Simple Drugs in Syriac",
       "url": "https://figshare.manchester.ac.uk/articles/dataset/Syriac_Galen_Palimpsest_Processed_Images/28554083",
       "digitized": "full",
-      "note": "Open data from multispectral and synchrotron imaging of the privately owned palimpsest."
+      "note": "Open data from multispectral and synchrotron imaging of the privately owned palimpsest.",
+      "aliases": [
+        "Galen Palimpsest"
+      ]
     },
     {
       "repository": "OpenITI (Open Islamicate Texts Initiative)",
       "collection": "Machine-readable texts of al-Razi's al-Hawi fi al-tibb (0313IbnZakariyyaRazi.HawiFiTibb) and Ibn Abi Usaybi'a's ʿUyun al-anbaʾ",
       "url": "https://openiti.org/",
       "digitized": "full",
-      "note": "Open Arabic corpus for searching Galen quotations at scale, with uneven text quality inherited from printed editions."
+      "note": "Open Arabic corpus for searching Galen quotations at scale, with uneven text quality inherited from printed editions.",
+      "aliases": [
+        "OpenITI"
+      ],
+      "holdings": [
+        {
+          "name": "al-Razi, al-Hawi fi al-tibb",
+          "ref": "0313IbnZakariyyaRazi.HawiFiTibb",
+          "url": "https://github.com/OpenITI/RELEASE/tree/master/data/0313IbnZakariyyaRazi/0313IbnZakariyyaRazi.HawiFiTibb",
+          "note": "Machine-readable text versions (Shamela and JK) of the compendium that quotes Galen extensively.",
+          "match": [
+            "al-Razi's al-Hawi"
+          ]
+        },
+        {
+          "name": "Ibn Abi Usaybi'a, 'Uyun al-anba'",
+          "ref": "0668IbnAbiUsaybica.CuyunAnba",
+          "url": "https://github.com/OpenITI/RELEASE/tree/master/data/0668IbnAbiUsaybica/0668IbnAbiUsaybica.CuyunAnba",
+          "note": "Machine-readable text versions (JK, Shamela, Shia) of the biographical dictionary of physicians, with its lists of Galen's works.",
+          "match": [
+            "Ibn Abi Usaybi'a"
+          ]
+        }
+      ]
     },
     {
       "repository": "Süleymaniye Manuscript Library, Istanbul",
       "collection": "Arabic medical manuscripts in the Aya Sofya, Fatih and related collections, including unique copies of Galenic translations",
       "url": "https://portal.yek.gov.tr/",
       "digitized": "partial",
-      "note": "Holds many of the unique witnesses used for Supplementum Orientale editions; images are available through the Turkish manuscripts portal with registration."
+      "note": "Holds many of the unique witnesses used for Supplementum Orientale editions; images are available through the Turkish manuscripts portal with registration.",
+      "aliases": [
+        "Süleymaniye Library"
+      ]
     },
     {
       "repository": "Real Biblioteca del Monasterio de San Lorenzo de El Escorial",
       "collection": "Arabic manuscripts (Derenbourg–Renaud catalogue, medicine)",
       "url": "https://rbme.patrimonionacional.es/",
       "digitized": "partial",
-      "note": "One of the largest European holdings of Arabic medical manuscripts, with Galenic translations and compilations not all edited."
+      "note": "One of the largest European holdings of Arabic medical manuscripts, with Galenic translations and compilations not all edited.",
+      "aliases": [
+        "Escorial"
+      ]
     }
   ],
   "provenance": {

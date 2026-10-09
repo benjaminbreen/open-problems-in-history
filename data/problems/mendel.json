@@ -112,7 +112,10 @@
       "collection": "Mendel-related documents and collections of the Moravian Museum",
       "url": "https://www.mzm.cz/en/mendelianum/",
       "digitized": "none",
-      "note": "Moravian Museum department devoted to Mendel's legacy; holdings are described only partially online and access is by arrangement."
+      "note": "Moravian Museum department devoted to Mendel's legacy; holdings are described only partially online and access is by arrangement.",
+      "aliases": [
+        "Mendelianum"
+      ]
     },
     {
       "repository": "Mendel Museum of Masaryk University and Augustinian Abbey of St Thomas, Old Brno",
@@ -126,14 +129,44 @@
       "collection": "Original German text of Versuche über Pflanzen-Hybriden (Verhandlungen des naturforschenden Vereines in Brünn 4, 1866) with English translation",
       "url": "http://www.mendelweb.org/MWGerText.html",
       "digitized": "full",
-      "note": "Online edition of the paper and its data tables; the Verhandlungen volume is also on the Biodiversity Heritage Library."
+      "note": "Online edition of the paper and its data tables; the Verhandlungen volume is also on the Biodiversity Heritage Library.",
+      "aliases": [
+        "MendelWeb"
+      ],
+      "holdings": [
+        {
+          "name": "Versuche über Pflanzen-Hybriden, German text",
+          "url": "http://www.mendelweb.org/MWGerText.html",
+          "note": "Online transcription of Mendel's 1866 paper with the original data tables."
+        },
+        {
+          "name": "Experiments in Plant Hybridization, annotated English translation",
+          "url": "http://www.mendelweb.org/Mendel.html",
+          "note": "English text of the paper with annotations, for checking counts against the German."
+        },
+        {
+          "name": "Verhandlungen des naturforschenden Vereines in Brünn, vols 3–4 (1865–66)",
+          "url": "https://archive.org/details/verhandlungendes3418natu",
+          "note": "Page images of the journal volume containing the paper in Band IV.",
+          "match": [
+            "the 1866 paper"
+          ]
+        }
+      ]
     },
     {
       "repository": "University of Adelaide Library, Adelaide",
       "collection": "R. A. Fisher papers and digital archive",
       "url": "https://digital.library.adelaide.edu.au/",
       "digitized": "partial",
-      "note": "Fisher's correspondence and papers, relevant to how he constructed his 1936 analysis."
+      "note": "Fisher's correspondence and papers, relevant to how he constructed his 1936 analysis.",
+      "holdings": [
+        {
+          "name": "R. A. Fisher papers, 1911–2005",
+          "ref": "MSS 0013",
+          "note": "Fisher's research papers and correspondence, donated by his family after 1962."
+        }
+      ]
     }
   ],
   "provenance": {

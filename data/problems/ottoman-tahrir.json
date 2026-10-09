@@ -114,12 +114,13 @@
   "archives": [
     {
       "repository": "Presidency of the Republic of Türkiye, Directorate of State Archives, Ottoman Archives (BOA), Istanbul",
-      "collection": "Tapu Tahrir Defterleri (TT.d); avarız and cizye registers in Maliyeden Müdevver (MAD.d) and Kamil Kepeci (KK.d) series",
+      "collection": "Tapu Tahrir Defterleri (TT.d); Maliyeden Müdevver (MAD.d) and Kamil Kepeci Mevkufat (KK.d) series, which hold avarız-hane registers; cizye registers in MAD.d",
       "url": "https://katalog.devletarsivleri.gov.tr/",
       "digitized": "partial",
       "note": "Main holdings of fifteenth- and sixteenth-century survey registers and later fiscal registers; the online catalogue lists items and many are viewable as images by registered researchers.",
       "aliases": [
-        "Ottoman Archives"
+        "Ottoman Archives",
+        "BOA"
       ],
       "holdings": [
         {
@@ -133,7 +134,34 @@
         {
           "name": "Maliyeden Müdevver Defterleri",
           "ref": "MAD.d",
-          "note": "Financial registers transferred from the Finance Ministry in 1945; the series to search for later seventeenth-century avarız and cizye registers."
+          "note": "Financial registers transferred from the Finance Ministry in 1945; the series to search for later seventeenth-century avarız and cizye registers.",
+          "match": [
+            "avarız series"
+          ]
+        },
+        {
+          "name": "Kayseri tahrir, 1484",
+          "ref": "TT.d 38",
+          "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1484_12.pdf",
+          "note": "Early Kayseri survey; full transcription published by Kayseri Büyükşehir Belediyesi (2009), usable as a start for linking villages across the sixteenth-century series."
+        },
+        {
+          "name": "Kayseri tahrir, 1570",
+          "ref": "TT.d 976",
+          "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1570_14.pdf",
+          "note": "Later Kayseri survey of the same district; published transcription (2009) allows a two-point comparison with TT.d 38."
+        },
+        {
+          "name": "Haleb eyaleti mufassal avarız-hane register, 1678",
+          "ref": "MAD.d 678",
+          "url": "https://belleten.gov.tr/tam-metin/3523/tur",
+          "note": "Detailed avarız-hane register (556 pages) with entries updated to 1698-99; analysed for Antakya by Çakar (Belleten 2004), which gives the shelfmark."
+        },
+        {
+          "name": "Summary (icmal) of the 1678 avarız-hane register",
+          "ref": "KK.d 2684",
+          "url": "https://belleten.gov.tr/tam-metin/3523/tur",
+          "note": "Icmal counterpart of MAD.d 678 in the Kamil Kepeci Mevkufat classification, confirming that avarız-hane registers are split across both series."
         }
       ]
     },

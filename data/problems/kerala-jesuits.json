@@ -129,7 +129,29 @@
       "collection": "Assistentia Lusitaniae, Provinciae Goana et Malabarica (Goa series of letters and annual reports)",
       "url": "https://arsi.jesuits.global/",
       "digitized": "partial",
-      "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski's inventory and access requires accreditation."
+      "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski's inventory and access requires accreditation.",
+      "aliases": [
+        "ARSI"
+      ],
+      "holdings": [
+        {
+          "name": "Goana et Malabarica, Assistentia Lusitaniae",
+          "note": "Goa and Malabar province papers, listed in Gramatowski's Inventarium at pp. 36-46.",
+          "match": [
+            "ARSI Goa and Malabar volumes",
+            "ARSI Goa-Malabar letters",
+            "ARSI Goa series"
+          ]
+        },
+        {
+          "name": "Documenta Indica (Wicki, ed.)",
+          "url": "https://web.bc.edu/ricci/indexAuthor.php?id=8184",
+          "note": "Eighteen volumes, 1540-1594, printing the ARSI and other Jesuit letters from India; Boston College Ricci Library record.",
+          "match": [
+            "Documenta Indica"
+          ]
+        }
+      ]
     },
     {
       "repository": "Saint Louis University, Vatican Film Library, St. Louis",
@@ -143,28 +165,86 @@
       "collection": "APUG 529–530, correspondence of Christoph Clavius",
       "url": "https://unigre.it/en/historical-archive",
       "digitized": "partial",
-      "note": "Letters to Clavius, the mathematical centre of the Jesuit network, partly digitized through the Clavius on the Web project."
+      "note": "Letters to Clavius, the mathematical centre of the Jesuit network, partly digitized through the Clavius on the Web project.",
+      "holdings": [
+        {
+          "name": "Codices APUG 529-530, correspondence of Clavius",
+          "ref": "APUG 529-530",
+          "url": "https://www.ilc.cnr.it/en/progetti/clavius/",
+          "note": "The two codices that hold most of Clavius's surviving letters, edited by Baldini and Napolitani and digitized in the Clavius on the Web project.",
+          "match": [
+            "Clavius correspondence"
+          ]
+        },
+        {
+          "name": "Codices APUG 771-777, Clavius's autograph treatises",
+          "ref": "APUG 771-777",
+          "note": "Seven autograph codices of mathematical treatises written as textbooks for his courses."
+        }
+      ]
     },
     {
       "repository": "Oriental Research Institute and Manuscripts Library, University of Kerala, Thiruvananthapuram",
       "collection": "Palm-leaf manuscripts of Kerala astronomy and mathematics (Tantrasaṅgraha, Yuktibhāṣā, Karaṇapaddhati and commentaries)",
       "url": "https://orimssku.in/",
       "digitized": "none",
-      "note": "More than 65,000 manuscripts, mostly palm leaf, catalogued in print; on-site access only."
+      "note": "More than 65,000 manuscripts, mostly palm leaf, catalogued in print; on-site access only.",
+      "aliases": [
+        "Oriental Research Institute"
+      ],
+      "holdings": [
+        {
+          "name": "Alphabetical Index of the Sanskrit manuscripts in the University Manuscripts Library, Trivandrum",
+          "note": "Printed index of 1957 listing 26,173 Sanskrit manuscripts now held by the Institute; the route to Tantrasaṅgraha and Yuktibhāṣā copies."
+        }
+      ]
     },
     {
       "repository": "Royal Asiatic Society, London",
       "collection": "Whish Collection of South Indian manuscripts (gift of 1836)",
       "url": "https://royalasiaticsociety.org/south-indian-sanskrit-manuscripts-now-catalogued-online/",
       "digitized": "partial",
-      "note": "Manuscripts Whish used in 1834, including Tantrasaṅgraha commentaries in Sanskrit and Malayalam; catalogued online and being digitized."
+      "note": "Manuscripts Whish used in 1834, including Tantrasaṅgraha commentaries in Sanskrit and Malayalam; catalogued online and being digitized.",
+      "holdings": [
+        {
+          "name": "Whish MS 131, Tantrasaṅgraha",
+          "ref": "Whish MS 131",
+          "url": "https://archive.org/details/raswhishNA-131",
+          "note": "Palm-leaf copy with commentary and a note by C. M. Whish; digitized."
+        },
+        {
+          "name": "Whish MS 124, Yukti-bhāṣā",
+          "ref": "Whish MS 124",
+          "url": "https://archive.org/details/raswhishNA-124",
+          "note": "Palm-leaf Malayalam copy of Jyeṣṭhadeva's work, given by J. L. Whish in 1836; digitized."
+        },
+        {
+          "name": "Whish MS 138, Yukti-bhāṣā",
+          "ref": "Whish MS 138",
+          "url": "https://archive.org/details/raswhishNA-138",
+          "note": "Second palm-leaf copy, labelled as a Malayalam commentary on the Tantrasaṅgraha; digitized."
+        },
+        {
+          "name": "Whish MS 120, Tantrasaṅgraha-valiyabhāṣā",
+          "ref": "Whish MS 120",
+          "url": "https://royalasiaticcollections.org/?p=7190",
+          "note": "Malayalam commentary, with a note that it was copied at Calicut in 1827."
+        }
+      ]
     },
     {
       "repository": "Arquivo Nacional da Torre do Tombo, Lisbon",
       "collection": "Armário Jesuítico e Cartório dos Jesuítas (PT/TT/AJCJ), including records of overseas missions",
       "url": "https://digitarq.arquivos.pt/",
       "digitized": "partial",
-      "note": "Portuguese Jesuit administrative records, searchable through the DigitArq catalogue, with variable digitization."
+      "note": "Portuguese Jesuit administrative records, searchable through the DigitArq catalogue, with variable digitization.",
+      "holdings": [
+        {
+          "name": "Armário Jesuítico e Cartório dos Jesuítas",
+          "ref": "PT/TT/AJCJ",
+          "note": "Combined fonds of 34 books and 108 bundles, including papers on the Society's overseas missions; Torre do Tombo published a catalogue of the Armário Jesuítico in 2020 (ID L 782)."
+        }
+      ]
     }
   ],
   "provenance": {

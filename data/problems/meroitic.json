@@ -114,28 +114,67 @@
       "collection": "Répertoire d'épigraphie méroïtique, tomes I–III (REM 0001–1278)",
       "url": "https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845",
       "digitized": "full",
-      "note": "Open scanned corpus with transliterations and bibliography; not lemmatized or machine-structured, and it stops at 2000."
+      "note": "Open scanned corpus with transliterations and bibliography; not lemmatized or machine-structured, and it stops at 2000.",
+      "aliases": [
+        "REM"
+      ],
+      "holdings": [
+        {
+          "name": "Répertoire d'épigraphie méroïtique, Tome I",
+          "ref": "REM 0001-0387",
+          "url": "https://www.persee.fr/doc/rem_0000-0000_2000_num_1_1_845",
+          "note": "First volume of the printed corpus (Leclant et al., 2000), with texts and bibliography; Tomes II and III continue to REM 1278."
+        }
+      ]
     },
     {
       "repository": "British Museum, London",
       "collection": "Department of Egypt and Sudan: Meroitic inscriptions, including the long stela of Amanirenas and Akinidad from Hamadab",
       "url": "https://www.britishmuseum.org/collection",
       "digitized": "partial",
-      "note": "Online collection records with images for many objects; the Hamadab stela is one of the longest non-funerary Meroitic texts."
+      "note": "Online collection records with images for many objects; the Hamadab stela is one of the longest non-funerary Meroitic texts.",
+      "holdings": [
+        {
+          "name": "Hamadab stela of Amanirenas and Akinidad",
+          "ref": "EA 1650",
+          "note": "Sandstone stela excavated by Garstang in 1914, with 42 lines of Meroitic cursive, among the longest known texts; its twin was left at Hamadab."
+        }
+      ]
     },
     {
       "repository": "Penn Museum, Philadelphia",
       "collection": "Eckley B. Coxe Junior Expedition to Nubia: inscribed offering tables and stelae from Karanog, Shablul and Areika",
       "url": "https://www.penn.museum/collections/",
       "digitized": "partial",
-      "note": "Holds much of the material Griffith used to establish the script, with excavation records."
+      "note": "Holds much of the material Griffith used to establish the script, with excavation records.",
+      "holdings": [
+        {
+          "name": "Offering table from Karanog",
+          "ref": "E7093",
+          "url": "https://collections.penn.museum/collections/object/322910",
+          "note": "Meroitic funerary offering table from the Karanog cemetery, typical of the formulaic texts that dominate the corpus."
+        },
+        {
+          "name": "Griffith, Karanòg: the Meroitic inscriptions of Shablûl and Karanòg (1911)",
+          "ref": "Eckley B. Coxe Junior Expedition to Nubia 6",
+          "url": "https://archive.org/details/karanogmeroitici00grif",
+          "note": "Digitized edition of the Karanog and Shablul texts on which Griffith based his decipherment."
+        }
+      ]
     },
     {
       "repository": "Museum of Fine Arts, Boston",
       "collection": "Harvard University–Boston Museum of Fine Arts Expedition finds from the royal cemeteries of Meroe and other Kushite sites",
       "url": "https://www.mfa.org/collections",
       "digitized": "partial",
-      "note": "Royal and elite inscribed objects with excavation context from Reisner's expedition; online records vary in completeness."
+      "note": "Royal and elite inscribed objects with excavation context from Reisner's expedition; online records vary in completeness.",
+      "holdings": [
+        {
+          "name": "Offering table of King Amanitaraqide",
+          "ref": "21.11789",
+          "note": "Offering table excavated in 1921 at Meroe N 16 with Meroitic text around the perimeter; reference taken from a search snippet of the MFA record, which could not be opened."
+        }
+      ]
     },
     {
       "repository": "Ägyptisches Museum und Papyrussammlung, Staatliche Museen zu Berlin",

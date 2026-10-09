@@ -129,49 +129,122 @@
       "collection": "Relaciones Geográficas of Mexico and Guatemala (1577–1585), with painted maps",
       "url": "https://collections.lib.utexas.edu/?f%5Bmods_relatedItem_titleInfo_title_source_t%5D%5B%5D=Relaciones+Geogr%C3%A1ficas+of+Mexico+and+Guatemala",
       "digitized": "full",
-      "note": "Responses to the crown questionnaire, many of which report population loss and the 1576 epidemic town by town; digitized and openly accessible."
+      "note": "Responses to the crown questionnaire, many of which report population loss and the 1576 epidemic town by town; digitized and openly accessible.",
+      "holdings": [
+        {
+          "name": "Relaciones Geográficas of Mexico and Guatemala, Joaquín García Icazbalceta Manuscript Collection",
+          "url": "https://fromthepage.lib.utexas.edu/llilasbenson/relaciones-geograficas-of-mexico-and-guatemala",
+          "note": "Forty-three responses to the 1577 questionnaire, several of which report the epidemics and population loss; transcriptions are in progress on FromThePage.",
+          "match": [
+            "Relaciones geográficas"
+          ]
+        },
+        {
+          "name": "Relación geográfica map of Cholula (1581)",
+          "url": "https://www.loc.gov/item/2021668312/",
+          "note": "One of the painted maps from the same collection, catalogued item by item at the Library of Congress as part of the World Digital Library."
+        }
+      ]
     },
     {
       "repository": "Archivo General de Indias, Seville",
       "collection": "Relaciones geográficas held in Spain, Audiencia de México correspondence of viceroys and officials, and Mapas y Planos",
       "url": "https://pares.mcu.es/",
       "digitized": "partial",
-      "note": "Viceregal and ecclesiastical reports on the epidemics, tribute losses and remedies, searchable and partly imaged through PARES."
+      "note": "Viceregal and ecclesiastical reports on the epidemics, tribute losses and remedies, searchable and partly imaged through PARES.",
+      "holdings": [
+        {
+          "name": "Audiencia de México",
+          "ref": "ES.41091.AGI//MEXICO",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1930212",
+          "note": "Correspondence of viceroys, audiencia and officials with the Council of the Indies, the main Spanish-side source for reports on epidemics, tribute losses and remedies.",
+          "match": [
+            "viceregal correspondence"
+          ]
+        }
+      ]
     },
     {
       "repository": "Biblioteca Medicea Laurenziana, Florence",
       "collection": "Florentine Codex (Historia general de las cosas de Nueva España), Med. Palat. 218–220",
       "url": "https://florentinecodex.getty.edu/",
       "digitized": "full",
-      "note": "Sahagún's bilingual Nahuatl and Spanish encyclopedia, compiled with Nahua collaborators during the 1576 epidemic and including comments on it; fully digitized in the Getty's Digital Florentine Codex."
+      "note": "Sahagún's bilingual Nahuatl and Spanish encyclopedia, compiled with Nahua collaborators during the 1576 epidemic and including comments on it; fully digitized in the Getty's Digital Florentine Codex.",
+      "aliases": [
+        "Florentine Codex"
+      ],
+      "holdings": [
+        {
+          "name": "Florentine Codex (Historia general de las cosas de Nueva España)",
+          "ref": "Med. Palat. 218-220",
+          "url": "https://florentinecodex.getty.edu/codex",
+          "note": "Sahagún's twelve-book Nahuatl and Spanish encyclopedia, compiled with Nahua collaborators; the Getty edition gives the Laurenziana manuscript in full with transcription."
+        },
+        {
+          "name": "Florentine Codex, Book XII: The Conquest of Mexico",
+          "url": "https://www.loc.gov/item/2021667857/",
+          "note": "Nahua account of the 1520 smallpox epidemic, the baseline against which later epidemics were compared; World Digital Library scan at the Library of Congress."
+        }
+      ]
     },
     {
       "repository": "Bibliothèque nationale de France, Paris",
       "collection": "Manuscrits mexicains, including the Codex Mexicanus (Mexicain 23–24) and the Codex en Cruz",
       "url": "https://gallica.bnf.fr/",
       "digitized": "full",
-      "note": "Nahua annals that record the epidemic years in pictorial form, including a 1545 image of a figure bleeding from nose and mouth in the Codex Mexicanus."
+      "note": "Nahua annals that record the epidemic years in pictorial form, including a 1545 image of a figure bleeding from nose and mouth in the Codex Mexicanus.",
+      "aliases": [
+        "Codex Mexicanus",
+        "Codex en Cruz"
+      ],
+      "holdings": [
+        {
+          "name": "Codex Mexicanus",
+          "ref": "Mexicain 23-24",
+          "note": "Pictorial Nahua annals on amate bark paper (51 leaves) that record the 1545 epidemic; Mengin's 1952 commentary is the standard study."
+        }
+      ]
     },
     {
       "repository": "Archivo General de la Nación, Mexico City",
       "collection": "Ramos Indios, Mercedes, General de Parte and Hospital de Jesús; parish and tribute records",
       "url": "https://www.gob.mx/agn",
       "digitized": "partial",
-      "note": "Viceregal orders on tribute relief, hospitals and labour during the epidemics, and local petitions describing deaths."
+      "note": "Viceregal orders on tribute relief, hospitals and labour during the epidemics, and local petitions describing deaths.",
+      "holdings": [
+        {
+          "name": "Fondo Hospital de Jesús",
+          "note": "Papers of the Hospital de Jesús, 1520 to 1925, relevant to Indigenous labour, estates and hospital provision in the sixteenth century."
+        }
+      ]
     },
     {
       "repository": "Archivo Histórico de la Ciudad de México",
       "collection": "Actas de Cabildo del Ayuntamiento de México (published 1889 onward)",
       "url": "https://archive.org/search?query=%22Actas+de+Cabildo+del+Ayuntamiento+de+la+Ciudad+de+Mexico%22",
       "digitized": "partial",
-      "note": "Minutes of the Mexico City council recording food supply, burials and public health measures in the epidemic years; nineteenth-century printed volumes are online."
+      "note": "Minutes of the Mexico City council recording food supply, burials and public health measures in the epidemic years; nineteenth-century printed volumes are online.",
+      "aliases": [
+        "Mexico City cabildo minutes",
+        "cabildo records"
+      ],
+      "holdings": [
+        {
+          "name": "Actas de Cabildo del Ayuntamiento de la Ciudad de México (printed edition)",
+          "url": "https://archive.org/search?query=%22Actas+de+Cabildo+del+Ayuntamiento+de+la+Ciudad+de+Mexico%22",
+          "note": "Nineteenth-century printed transcription of the sixteenth-century council minutes, with scanned volumes on the Internet Archive; the volumes covering 1545-48 and 1576-80 should be identified from the printed indexes."
+        }
+      ]
     },
     {
       "repository": "Instituto Nacional de Antropología e Historia (INAH), Oaxaca and Mexico City",
       "collection": "Skeletal collections from the Teposcolula Yucundaa epidemic cemetery and other colonial burial assemblages",
       "url": "https://www.inah.gob.mx/",
       "digitized": "none",
-      "note": "The human remains on which any pathogen identification depends; sampling requires INAH permits and collaboration with Mexican researchers."
+      "note": "The human remains on which any pathogen identification depends; sampling requires INAH permits and collaboration with Mexican researchers.",
+      "aliases": [
+        "INAH"
+      ]
     }
   ],
   "provenance": {

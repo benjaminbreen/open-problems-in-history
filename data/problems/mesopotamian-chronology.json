@@ -121,7 +121,18 @@
       "collection": "K.160 and other Kuyunjik copies of Enūma Anu Enlil tablet 63 (the Venus Tablet of Ammisaduqa)",
       "url": "https://www.britishmuseum.org/collection/object/W_K-160",
       "digitized": "partial",
-      "note": "Principal Neo-Assyrian copy of the Venus observations from Ashurbanipal's library; about twenty copies and fragments are known in total."
+      "note": "Principal Neo-Assyrian copy of the Venus observations from Ashurbanipal's library; about twenty copies and fragments are known in total.",
+      "holdings": [
+        {
+          "name": "Venus Tablet of Ammisaduqa (Enūma Anu Enlil 63), Nineveh copy",
+          "ref": "K.160",
+          "url": "https://cdli.ox.ac.uk/wiki/venus_tablet_ammisaduqa",
+          "note": "Neo-Assyrian copy of the Venus observations attributed to the reign of Ammisaduqa; the URL is the CDLI Wiki entry for the tablet.",
+          "match": [
+            "Venus observations preserved in later copies of Enūma Anu Enlil tablet 63"
+          ]
+        }
+      ]
     },
     {
       "repository": "Old Assyrian Research Environment (OARE), OCHRE platform",
@@ -135,7 +146,14 @@
       "collection": "Kültepe Eponym Lists, Assyrian King List exemplars, Old Babylonian year-name and dated archival texts",
       "url": "https://cdli.earth/",
       "digitized": "partial",
-      "note": "Catalogue and images of tablets carrying king lists, eponym lists and dated documents used for month-length analyses."
+      "note": "Catalogue and images of tablets carrying king lists, eponym lists and dated documents used for month-length analyses.",
+      "holdings": [
+        {
+          "name": "Kültepe eponym list KEL G",
+          "ref": "kt 01/k 207",
+          "note": "Eponym list published by Günbattı (2008) preserving 143 eponyms across much of the later Old Assyrian period."
+        }
+      ]
     },
     {
       "repository": "ARCHIBAB, Collège de France / CNRS",

@@ -145,42 +145,87 @@
       "collection": "Duke Databank of Documentary Papyri, HGV metadata and APIS images for Egyptian papyri of the sixth and seventh centuries",
       "url": "https://papyri.info/",
       "digitized": "full",
-      "note": "Searchable texts and dates of documentary papyri, the main serial source for rents, wages, leases and legal activity before and after 541."
+      "note": "Searchable texts and dates of documentary papyri, the main serial source for rents, wages, leases and legal activity before and after 541.",
+      "aliases": [
+        "Papyrological Navigator",
+        "papyri.info"
+      ]
     },
     {
       "repository": "University of Wyoming College of Law, Annotated Justinian Code (Blume translation)",
       "collection": "Justinian's Code and Novels in Fred H. Blume's English translation, including the post-plague legislation of 544",
       "url": "https://www.uwyo.edu/lawlib/blume-justinian/",
       "digitized": "full",
-      "note": "Online text of the Novels used to argue for or against plague-driven labour and fiscal measures."
+      "note": "Online text of the Novels used to argue for or against plague-driven labour and fiscal measures.",
+      "aliases": [
+        "Annotated Justinian Code",
+        "Blume translation"
+      ],
+      "holdings": [
+        {
+          "name": "Justinian's Novels 121-140 (Blume translation)",
+          "ref": "Novels 121-140",
+          "url": "https://www.uwyo.edu/lawlib/blume-justinian/ajc-edition-2/novels/121-140/index.html",
+          "note": "English text of Novels 121-140, including Novel 128 of 545 on provincial fiscal administration, a source for arguments about fiscal responses in the plague years."
+        }
+      ]
     },
     {
       "repository": "Dumbarton Oaks, Washington, DC",
       "collection": "Byzantine coin collection and catalogue",
       "url": "https://www.doaks.org/resources/coins",
       "digitized": "partial",
-      "note": "Major reference collection for dating changes in sixth-century coin output and weight standards."
+      "note": "Major reference collection for dating changes in sixth-century coin output and weight standards.",
+      "aliases": [
+        "Dumbarton Oaks"
+      ]
     },
     {
       "repository": "Neotoma Paleoecology Database",
       "collection": "Fossil pollen records, including European Pollen Database cores spanning 500–800 CE",
       "url": "https://www.neotomadb.org/",
       "digitized": "full",
-      "note": "Open pollen data for testing agricultural abandonment and recovery around the plague waves."
+      "note": "Open pollen data for testing agricultural abandonment and recovery around the plague waves.",
+      "aliases": [
+        "Neotoma Paleoecology Database",
+        "Neotoma"
+      ]
     },
     {
       "repository": "European Nucleotide Archive (EMBL-EBI)",
       "collection": "Raw sequencing data for published ancient Y. pestis genomes from First Pandemic burials",
       "url": "https://www.ebi.ac.uk/ena/browser/home",
       "digitized": "full",
-      "note": "Reads deposited with the aDNA studies, allowing reanalysis of pathogen presence and phylogeny."
+      "note": "Reads deposited with the aDNA studies, allowing reanalysis of pathogen presence and phylogeny.",
+      "aliases": [
+        "European Nucleotide Archive",
+        "ENA"
+      ],
+      "holdings": [
+        {
+          "name": "Yersinia pestis Justinian historic genome sequencing",
+          "ref": "PRJNA231474",
+          "url": "https://www.ebi.ac.uk/ena/browser/view/PRJNA231474",
+          "note": "Sequencing project for a Y. pestis genome from the Justinianic period, deposited with the first published First Pandemic genome."
+        },
+        {
+          "name": "Genetic Evidence of Yersinia pestis from the First Pandemic",
+          "ref": "PRJNA1303691",
+          "url": "https://www.ebi.ac.uk/ena/browser/view/PRJNA1303691",
+          "note": "Archaeological, proteomic and genomic data from a mass burial at Jerash, Jordan, associated with the First Pandemic (541-767 CE)."
+        }
+      ]
     },
     {
       "repository": "Packard Humanities Institute, Searchable Greek Inscriptions",
       "collection": "Dated Greek inscriptions of the sixth and seventh centuries from the eastern Mediterranean",
       "url": "https://inscriptions.packhum.org/",
       "digitized": "full",
-      "note": "Texts used to count dated building and funerary inscriptions as a proxy for continuity or disruption."
+      "note": "Texts used to count dated building and funerary inscriptions as a proxy for continuity or disruption.",
+      "aliases": [
+        "Packard Humanities Institute",
+        "Searchable Greek Inscriptions"
+      ]
     }
   ],
   "provenance": {

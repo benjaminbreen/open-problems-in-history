@@ -128,49 +128,138 @@
       "collection": "Justicia and Escribanía de Cámara (freedom suits of indios esclavos, 1530s–1580s); Patronato; Audiencia de Chile and Audiencia de Guatemala correspondence",
       "url": "https://pares.cultura.gob.es/inicio.html",
       "digitized": "partial",
-      "note": "Lawsuits and royal inquiries naming enslaved Indigenous people; many legajos imaged on PARES but not described at the level of individuals."
+      "note": "Lawsuits and royal inquiries naming enslaved Indigenous people; many legajos imaged on PARES but not described at the level of individuals.",
+      "aliases": [
+        "Seville"
+      ],
+      "holdings": [
+        {
+          "name": "Justicia",
+          "ref": "ES.41091.AGI//JUSTICIA",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1863031",
+          "note": "Sixteenth-century lawsuits and residencias, including freedom suits of Indigenous people held as slaves."
+        },
+        {
+          "name": "Escribanía de Cámara de Justicia",
+          "ref": "ES.41091.AGI//ESCRIBANIA",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1866058",
+          "note": "Appeals and suits heard by the Council of the Indies, a second series in which freedom suits and complaints about enslavement may appear."
+        },
+        {
+          "name": "Audiencia de Guatemala",
+          "ref": "ES.41091.AGI//GUATEMALA",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1859869",
+          "note": "Correspondence and expedientes of the audiencia, relevant to enslavement in Central America."
+        },
+        {
+          "name": "Audiencia de Chile",
+          "ref": "ES.41091.AGI//CHILE",
+          "url": "https://pares.cultura.gob.es/ParesBusquedas20/catalogo/description/1859570",
+          "note": "Letters and expedientes of the president and oidores of Chile to the Council of the Indies, including reports on the war and on enslavement of Mapuche prisoners."
+        }
+      ]
     },
     {
       "repository": "Archivo General de la Nación, Mexico City",
       "collection": "Ramos Indios, Inquisición, Provincias Internas, Civil and Tierras",
       "url": "https://www.gob.mx/agn",
       "digitized": "partial",
-      "note": "Records of captives taken in the Chichimeca and northern frontier wars and of freedom petitions; indexed mostly through printed AGN catalogues."
+      "note": "Records of captives taken in the Chichimeca and northern frontier wars and of freedom petitions; indexed mostly through printed AGN catalogues.",
+      "aliases": [
+        "Mexico City"
+      ],
+      "holdings": [
+        {
+          "name": "Fondo Hospital de Jesús",
+          "note": "Papers of the Hospital de Jesús, 1520 to 1925, including labour and servile status of workers on the Cortés estates."
+        }
+      ]
     },
     {
       "repository": "Archivo Nacional Histórico, Santiago de Chile",
       "collection": "Real Audiencia, Capitanía General and Escribanos de Santiago (sales and registrations of Mapuche captives, 1608–1683 and after)",
       "url": "https://www.archivonacional.gob.cl/",
       "digitized": "partial",
-      "note": "Notarial and judicial evidence for the legal enslavement of Mapuche prisoners of war under the 1608 royal decree."
+      "note": "Notarial and judicial evidence for the legal enslavement of Mapuche prisoners of war under the 1608 royal decree.",
+      "aliases": [
+        "Santiago de Chile"
+      ],
+      "holdings": [
+        {
+          "name": "Escribanos de Santiago",
+          "url": "https://archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/2023-10/CUADRO_SINÓPTICO_DE_FONDOS_ANH2022_WEB.pdf",
+          "note": "Notarial protocols of Santiago, 1559 to 1800 (973 volumes), the main source for sales and deposits of captives; described in the ANH synoptic table of fondos."
+        },
+        {
+          "name": "Real Audiencia",
+          "url": "https://archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/2023-10/CUADRO_SINÓPTICO_DE_FONDOS_ANH2022_WEB.pdf",
+          "note": "Court records of the Audiencia of Santiago, 1600 to 1830 (3,254 volumes), including litigation over captives."
+        },
+        {
+          "name": "Capitanía General",
+          "url": "https://archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/2023-10/CUADRO_SINÓPTICO_DE_FONDOS_ANH2022_WEB.pdf",
+          "note": "Governors' papers, 1597 to 1823, relevant to the Mapuche frontier."
+        }
+      ]
     },
     {
       "repository": "Arquivo Público do Estado de São Paulo",
       "collection": "Inventários e Testamentos (probate inventories of the seventeenth century, partly published in a printed series from 1920)",
       "url": "https://www.arquivoestado.sp.gov.br/",
       "digitized": "partial",
-      "note": "Inventories listing Indigenous 'administrados' and 'negros da terra' held by bandeirante households; the basis of Monteiro's estimates."
+      "note": "Inventories listing Indigenous 'administrados' and 'negros da terra' held by bandeirante households; the basis of Monteiro's estimates.",
+      "aliases": [
+        "São Paulo"
+      ],
+      "holdings": [
+        {
+          "name": "Inventários e Testamentos",
+          "url": "https://archive.org/details/inventarios-e-testamentos-vol-01-a-31",
+          "note": "Published transcriptions of São Paulo probate inventories and wills, volume 1 issued in 1920; scans of volumes 1 to 31 are on the Internet Archive."
+        }
+      ]
     },
     {
       "repository": "New Mexico State Records Center and Archives, Santa Fe",
       "collection": "Spanish Archives of New Mexico I and II; Mexican Archives of New Mexico",
       "url": "https://www.srca.nm.gov/",
       "digitized": "partial",
-      "note": "Colonial and Mexican-period government records documenting captives and genízaros; microfilm editions exist, with church registers held separately by the Archdiocese of Santa Fe."
+      "note": "Colonial and Mexican-period government records documenting captives and genízaros; microfilm editions exist, with church registers held separately by the Archdiocese of Santa Fe.",
+      "aliases": [
+        "Santa Fe"
+      ],
+      "holdings": [
+        {
+          "name": "Spanish Archives of New Mexico II (SANM II)",
+          "ref": "SANM II",
+          "url": "https://nmarchives.unm.edu/repositories/17/resources/763",
+          "note": "Spanish colonial administrative, civil, military and ecclesiastical records, 1621 to 1821; the originals are in Santa Fe and the University of New Mexico holds microfilm."
+        }
+      ]
     },
     {
       "repository": "South Carolina Department of Archives and History, Columbia",
       "collection": "Journals of the Commissioners of the Indian Trade; Records of the Secretary of the Province (bills of sale)",
       "url": "https://scdah.sc.gov/",
       "digitized": "partial",
-      "note": "Evidence for the Carolina trade in Indigenous captives, c. 1670–1720."
+      "note": "Evidence for the Carolina trade in Indigenous captives, c. 1670–1720.",
+      "holdings": [
+        {
+          "name": "Journals of the Commissioners of the Indian Trade, 1710-1718",
+          "url": "https://scdah.sc.gov/node/253",
+          "note": "The Commissioners' manuscript journals as published by the Archives Department in 1955 (ed. W. L. McDowell); they record purchases and trade in Indigenous captives."
+        }
+      ]
     },
     {
       "repository": "Native Bound Unbound (Mellon Foundation-funded digital project)",
       "collection": "Digital repository of records of Indigenous captivity and slavery across the Americas (legal cases, censuses, wills, church registers, objects)",
       "url": "https://nativeboundunbound.org/",
       "digitized": "partial",
-      "note": "Assembling person-level records and transcriptions from archives in several countries; the nearest existing equivalent to a hemispheric database."
+      "note": "Assembling person-level records and transcriptions from archives in several countries; the nearest existing equivalent to a hemispheric database.",
+      "aliases": [
+        "Native Bound Unbound"
+      ]
     }
   ],
   "provenance": {

@@ -147,21 +147,58 @@
       "collection": "Li gui (利簋), excavated at Lintong, Shaanxi, in 1976; the only known bronze whose inscription refers directly to the conquest",
       "url": "https://www.chnmuseum.cn/",
       "digitized": "partial",
-      "note": "The inscription records King Wu's attack on Shang on a jiazi day and a celestial observation often read as the position of Jupiter; the object is on display and published in rubbings."
+      "note": "The inscription records King Wu's attack on Shang on a jiazi day and a phrase (suì dǐng 歲鼎) that some scholars, including Pankenier, read as a reference to Jupiter, though the reading is disputed; the object is on display and published in rubbings.",
+      "aliases": [
+        "Li gui"
+      ],
+      "holdings": [
+        {
+          "name": "Li gui 利簋, excavated at Lintong, Shaanxi, 1976",
+          "note": "Bronze vessel whose inscription gives the jiazi day of King Wu's attack on Shang; kept in Beijing, not available for loan abroad.",
+          "match": [
+            "Li gui"
+          ]
+        }
+      ]
     },
     {
       "repository": "Institute of History and Philology, Academia Sinica, Taipei",
       "collection": "Oracle bones and excavation records from the 1928–1937 Anyang (Yinxu) excavations",
       "url": "https://www1.ihp.sinica.edu.tw/",
       "digitized": "partial",
-      "note": "Holds the excavated Shang inscriptions, including eclipse records used to fix late Shang reigns, and the field archive of the pre-war excavations."
+      "note": "Holds the excavated Shang inscriptions, including eclipse records used to fix late Shang reigns, and the field archive of the pre-war excavations.",
+      "aliases": [
+        "Academia Sinica"
+      ],
+      "holdings": [
+        {
+          "name": "Anyang (Yinxu) excavation archive, 1928-1937 seasons, Hsiao-t'un and Hsi-pei-kang records",
+          "url": "https://www1.ihp.sinica.edu.tw/en/Research/Groups/anyangArchaeologicalSite",
+          "note": "Archive and finds from 15 IHP excavation seasons at Yinxu, held by the Anyang Research Group."
+        },
+        {
+          "name": "Oracle bone rubbings of the Institute of History and Philology (about 40,000 items)",
+          "url": "https://culture.teldap.tw/culture/detail.php?i=63",
+          "note": "Rubbings of excavated and purchased oracle bones, including the Hsiao-T'un Volume II inscription plates."
+        }
+      ]
     },
     {
       "repository": "Academia Sinica Digital Archives of Bronze Images and Inscriptions",
       "collection": "Database of Shang and Zhou bronze inscriptions (殷周金文暨青銅器資料庫), with transcriptions, rubbings and bibliography",
       "url": "https://bronze.asdc.sinica.edu.tw/",
       "digitized": "full",
-      "note": "Main searchable source for compiling bronze date formulas; recent finds must be added from excavation reports."
+      "note": "Main searchable source for compiling bronze date formulas; recent finds must be added from excavation reports.",
+      "aliases": [
+        "Academia Sinica bronze database"
+      ],
+      "holdings": [
+        {
+          "name": "Shang and Zhou Bronze Inscriptions and Bronzewares Database 殷周金文暨青銅器資料庫",
+          "url": "https://bronze.asdc.sinica.edu.tw/",
+          "note": "Covers some 12,000-14,000 inscribed bronzes from Yin Zhou jinwen jicheng and its supplement, with rubbings, dating and findspot data; free access on application."
+        }
+      ]
     },
     {
       "repository": "Anyang Normal University",
@@ -175,7 +212,16 @@
       "collection": "Zhushu jinian (Bamboo Annals, 'current' text) and other transmitted chronological sources",
       "url": "https://ctext.org/zhushu-jinian",
       "digitized": "full",
-      "note": "Open full text of the current Bamboo Annals; the 'ancient text' fragments must be gathered from later quotations and modern compilations."
+      "note": "Open full text of the current Bamboo Annals; the 'ancient text' fragments must be gathered from later quotations and modern compilations.",
+      "holdings": [
+        {
+          "name": "Zhushu jinian 竹書紀年 (current text)",
+          "note": "The 'current' Bamboo Annals, whose reign counts are compared with the 'ancient text' fragments in conquest chronology.",
+          "match": [
+            "Bamboo Annals"
+          ]
+        }
+      ]
     },
     {
       "repository": "Institute of Archaeology, Chinese Academy of Social Sciences, Beijing",

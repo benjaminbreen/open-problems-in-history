@@ -113,7 +113,16 @@
       "collection": "Huizhou documents published as Huizhou qiannian qiyue wenshu 徽州千年契約文書 (Huashan wenyi, 1991 and 1993; 40 vols.)",
       "url": "http://lishisuo.cssn.cn/",
       "digitized": "partial",
-      "note": "Facsimiles of Song-to-Republican contracts from Huizhou; originals held by the Institute, published volumes widely available in research libraries."
+      "note": "Facsimiles of Song-to-Republican contracts from Huizhou; originals held by the Institute, published volumes widely available in research libraries.",
+      "aliases": [
+        "Huizhou documents"
+      ],
+      "holdings": [
+        {
+          "name": "Huizhou qiannian qiyue wenshu 徽州千年契約文書 (40 vols., Song-Yuan-Ming and Qing-Republican series)",
+          "note": "Facsimile edition of about 2,820 loose documents and 90 volumes selected from the Institute's Huizhou holdings; publication year is given as 1991, 1992 or 1993 in different sources."
+        }
+      ]
     },
     {
       "repository": "Department of History, Shanghai Jiao Tong University, Shanghai",
@@ -141,14 +150,35 @@
       "collection": "Archives of Taiwan history: ancient documents (guwenshu), including the Anlishe documents (1714–1918)",
       "url": "https://archives.ith.sinica.edu.tw/",
       "digitized": "partial",
-      "note": "Imaged private contracts and official documents; online viewing with registration, some items onsite only."
+      "note": "Imaged private contracts and official documents; online viewing with registration, some items onsite only.",
+      "aliases": [
+        "Taiwan land deeds"
+      ],
+      "holdings": [
+        {
+          "name": "Institute of Taiwan History civil contracts and commercial data database",
+          "url": "https://culture.teldap.tw/culture/detail.php?i=80",
+          "note": "Describes the Institute's database of land, loan, family division and personal-relationship contracts (TELDAP record; the database itself requires login)."
+        }
+      ]
     },
     {
       "repository": "County archives of Qiandongnan Prefecture (Jinping, Tianzhu, Liping and others), Guizhou",
       "collection": "Qingshui River documents (Qingshui jiang wenshu 清水江文书)",
       "url": "https://doi.org/10.1007/978-981-33-4947-6",
       "digitized": "partial",
-      "note": "More than 200,000 catalogued contracts and related manuscripts, with selections published in facsimile; access to originals is restricted (link is to Jian Qu's study of the corpus)."
+      "note": "More than 200,000 catalogued contracts and related manuscripts, with selections published in facsimile; access to originals is restricted (link is to Jian Qu's study of the corpus).",
+      "aliases": [
+        "Qingshui River manuscripts",
+        "Qingshui River documents"
+      ],
+      "holdings": [
+        {
+          "name": "Qingshui River manuscripts (Qingshui jiang wenshu 清水江文书)",
+          "url": "https://perspectivia.net/receive/pnet_mods_00000910",
+          "note": "Short introduction to the Ming-Qing contract corpus of the Qingshui River basin in Guizhou, whose published facsimiles are a main source for signature coding."
+        }
+      ]
     }
   ],
   "provenance": {

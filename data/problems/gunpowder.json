@@ -112,21 +112,83 @@
       "collection": "Département des Manuscrits: Arabic military (furūsiyya) treatises, including copies of al-Rammāḥ, and Latin manuscripts of the Liber ignium",
       "url": "https://archivesetmanuscrits.bnf.fr/",
       "digitized": "partial",
-      "note": "Holds manuscripts used by nineteenth-century editors of both the Arabic and Latin traditions; many are on Gallica, others only described in the catalogue."
+      "note": "Holds manuscripts used by nineteenth-century editors of both the Arabic and Latin traditions; many are on Gallica, others only described in the catalogue.",
+      "aliases": [
+        "Paris"
+      ],
+      "holdings": [
+        {
+          "name": "Ḥasan al-Rammāḥ, al-Furūsiyya wa-l-manāṣib al-ḥarbiyya",
+          "ref": "Arabe 2825",
+          "note": "Copy of the Mamluk treatise with the Arabic gunpowder and incendiary recipes; some catalogues cite a range Arabe 2825-2829, so check the extent.",
+          "match": [
+            "Ḥasan al-Rammāḥ"
+          ]
+        },
+        {
+          "name": "Liber ignium, earliest Paris witness",
+          "ref": "Latin 7156",
+          "note": "Berthelot dated this copy of the Liber ignium to c. 1300 and used it as base text.",
+          "match": [
+            "Liber ignium"
+          ]
+        },
+        {
+          "name": "Liber ignium, later Paris copy",
+          "ref": "Latin 7158",
+          "note": "Fifteenth-century copy of the Liber ignium that Berthelot judged to be copied from Latin 7156."
+        }
+      ]
     },
     {
       "repository": "Bayerische Staatsbibliothek, Munich",
       "collection": "Latin and German manuscripts of the Liber ignium, Feuerwerkbuch and fifteenth-century Kriegsbücher",
       "url": "https://www.digitale-sammlungen.de/",
       "digitized": "partial",
-      "note": "Large holdings of German pyrotechnic and military manuscripts, many digitized through the Münchener Digitalisierungszentrum."
+      "note": "Large holdings of German pyrotechnic and military manuscripts, many digitized through the Münchener Digitalisierungszentrum.",
+      "aliases": [
+        "Bayerische Staatsbibliothek",
+        "BSB"
+      ],
+      "holdings": [
+        {
+          "name": "Feuerwerkbuch",
+          "ref": "Cgm 599",
+          "url": "https://www.digitale-sammlungen.de/en/view/bsb00045460",
+          "note": "Illustrated German firework book of the second half of the fifteenth century (135 leaves).",
+          "match": [
+            "Feuerwerkbuch"
+          ]
+        },
+        {
+          "name": "Büchsenmeisterbuch",
+          "ref": "Cgm 600",
+          "url": "https://www.digitale-sammlungen.de/en/view/bsb00113907",
+          "note": "Early fifteenth-century Bavarian gunner's book with coloured drawings."
+        },
+        {
+          "name": "Liber ignium, Munich copy",
+          "ref": "Clm 197",
+          "note": "Copy of c. 1488 with a text very different from the Paris witnesses (cited by Berthelot as Munich no. 197); a companion copy is Munich no. 267."
+        }
+      ]
     },
     {
       "repository": "Royal Armouries, Leeds",
       "collection": "Library manuscript RA I.34 (Firework Book) and related military manuscripts",
       "url": "https://www.royalarmouries.org/",
       "digitized": "none",
-      "note": "Witness edited by Müller (2024); access by appointment."
+      "note": "Witness edited by Müller (2024); access by appointment.",
+      "aliases": [
+        "Royal Armouries"
+      ],
+      "holdings": [
+        {
+          "name": "Firework Book",
+          "ref": "RA I.34",
+          "note": "South German illustrated manuscript of the mid-fifteenth century (140 folios); edited and translated by Müller (2024)."
+        }
+      ]
     },
     {
       "repository": "National Library of China, Beijing",

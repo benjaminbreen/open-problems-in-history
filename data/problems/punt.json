@@ -139,28 +139,58 @@
       "collection": "Punt reliefs of the southern middle portico: ships, Puntite settlement, the ruler Parahu and Ity, incense trees and cargo",
       "url": "https://pcma.uw.edu.pl/en/",
       "digitized": "partial",
-      "note": "The principal visual record of a Punt expedition, in situ and under long-term conservation and documentation by the Polish mission."
+      "note": "The principal visual record of a Punt expedition, in situ and under long-term conservation and documentation by the Polish mission.",
+      "aliases": [
+        "Deir el-Bahari reliefs"
+      ]
     },
     {
       "repository": "Internet Archive (Egypt Exploration Fund publications)",
       "collection": "Édouard Naville, The Temple of Deir el Bahari (1894–1908), Part III with the Punt colonnade plates",
       "url": "https://archive.org/details/the-temple-of-deir-el-bahari-pt.-3",
       "digitized": "full",
-      "note": "Facsimile drawings made before further deterioration of the reliefs, still the standard full publication of the Punt scenes."
+      "note": "Facsimile drawings made before further deterioration of the reliefs, still the standard full publication of the Punt scenes.",
+      "holdings": [
+        {
+          "name": "Naville, The Temple of Deir el Bahari, Part III (plates LVI-LXXXVI)",
+          "ref": "EEF, Part III",
+          "url": "https://archive.org/details/the-temple-of-deir-el-bahari-pt.-3",
+          "note": "Plates of the end of the northern half and the southern half of the middle platform, where the Punt colonnade lies."
+        }
+      ]
     },
     {
       "repository": "British Museum, London",
       "collection": "Department of Egypt and Sudan: mummified baboons EA 6736 and EA 6738, purchased from the Henry Salt estate in 1837",
       "url": "https://www.britishmuseum.org/collection",
       "digitized": "partial",
-      "note": "The two New Kingdom hamadryas specimens sampled for isotopes by Dominy et al. (2020); online catalogue with images."
+      "note": "The two New Kingdom hamadryas specimens sampled for isotopes by Dominy et al. (2020); online catalogue with images.",
+      "holdings": [
+        {
+          "name": "Mummified hamadryas baboon from the Temple of Khons, Thebes",
+          "ref": "EA6736",
+          "note": "Henry Salt estate specimen sampled for hair isotopes by Dominy et al. (eLife, 2020); late New Kingdom by provenance."
+        },
+        {
+          "name": "Mummified hamadryas baboon from Thebes",
+          "ref": "EA6738",
+          "note": "Hair, bone and enamel sampled by Dominy et al. (2020); enamel strontium ratios indicate early life outside Egypt."
+        }
+      ]
     },
     {
       "repository": "Musée des Confluences, Lyon",
       "collection": "Baboon mummies from Gabbanat el-Qurud, Thebes, excavated by Lortet and Gaillard in 1905 (e.g. MHNL 51000172, MHNL 90001206)",
       "url": "https://www.museedesconfluences.fr/en",
       "digitized": "none",
-      "note": "Largest dated assemblage of mummified baboons, used for radiocarbon, dental calculus, palaeopathology and ancient DNA studies; sampling by permission of the museum."
+      "note": "Largest dated assemblage of mummified baboons, used for radiocarbon, dental calculus, palaeopathology and ancient DNA studies; sampling by permission of the museum.",
+      "holdings": [
+        {
+          "name": "Baboon mummy from the Lortet and Gaillard assemblage",
+          "ref": "MHNL 90001206",
+          "note": "Radiocarbon dated to 803-544 BC (Porcier et al., 2019), so later than the New Kingdom specimens in the Punt argument."
+        }
+      ]
     },
     {
       "repository": "Natural history museum mammal collections (Natural History Museum London, Field Museum Chicago, MNHN Paris, Museum für Naturkunde Berlin, SMNS Stuttgart)",
@@ -174,7 +204,16 @@
       "collection": "Excavated ship timbers, cargo boxes, stelae, ostraca, obsidian and imported Eritrean–Sudanese and Yemeni pottery from the harbour",
       "url": "https://doi.org/10.1163/9789004379602",
       "digitized": "none",
-      "note": "Finds are stored in Egypt and published in the project monographs; further provenance sampling requires permission from the Egyptian antiquities authorities."
+      "note": "Finds are stored in Egypt and published in the project monographs; further provenance sampling requires permission from the Egyptian antiquities authorities.",
+      "aliases": [
+        "Mersa/Wadi Gawasis"
+      ],
+      "holdings": [
+        {
+          "name": "Harbour finds from Mersa/Wadi Gawasis (ship timbers, cargo boxes, stelae, ostraca, pottery)",
+          "note": "Published in Bard and Fattovich, Seafaring Expeditions to Punt in the Middle Kingdom (Brill, 2018); stored in Egypt."
+        }
+      ]
     }
   ],
   "provenance": {

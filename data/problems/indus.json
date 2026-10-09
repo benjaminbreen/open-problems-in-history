@@ -130,14 +130,39 @@
       "collection": "Corpus of Indus Seals and Inscriptions (CISI), vols. 1 (1987), 2 (1991), 3.1 (2010) and later parts",
       "url": "https://www.acadsci.fi/",
       "digitized": "partial",
-      "note": "Photographic corpus of seals and inscribed objects arranged by collection; published in print, with the underlying photographs not openly available online."
+      "note": "Photographic corpus of seals and inscribed objects arranged by collection; published in print, with the underlying photographs not openly available online.",
+      "aliases": [
+        "CISI"
+      ],
+      "holdings": [
+        {
+          "name": "CISI vol. 1: Collections in India (Joshi and Parpola, 1987)",
+          "ref": "Annales Academiae Scientiarum Fennicae B 239",
+          "url": "https://keibi.uni-tuebingen.de/Record/KEI00040937",
+          "note": "Photographic corpus of seals and inscribed objects in Indian collections; the URL is a bibliographic record."
+        },
+        {
+          "name": "CISI vol. 2: Collections in Pakistan (Shah and Parpola, 1991)",
+          "ref": "Annales Academiae Scientiarum Fennicae B 240",
+          "url": "https://keibi.uni-tuebingen.de/Record/KEI00036690",
+          "note": "Photographic corpus of inscribed objects in Pakistani collections, including Mohenjo-daro and Harappa finds; the URL is a bibliographic record."
+        },
+        {
+          "name": "CISI vol. 3, part 1: Mohenjo-daro and Harappa (Parpola, Pande and Koskikallio, 2010)",
+          "ref": "Annales Academiae Scientiarum Fennicae, Humaniora 359",
+          "note": "New and previously untraced material from the two largest sites."
+        }
+      ]
     },
     {
       "repository": "Interactive Corpus of Indus Texts (ICIT), Technische Universität Berlin",
       "collection": "Relational database of inscribed objects, texts and sign list compiled by Bryan K. Wells and Andreas Fuls",
       "url": "https://www.user.tu-berlin.de/fuls/Homepage/indus/menueindus.htm",
       "digitized": "full",
-      "note": "Over 4,500 inscribed objects and 5,500 texts with analysis tools; access is by request to the administrator."
+      "note": "Over 4,500 inscribed objects and 5,500 texts with analysis tools; access is by request to the administrator.",
+      "aliases": [
+        "ICIT"
+      ]
     },
     {
       "repository": "Harappa.com (Jonathan Mark Kenoyer, Richard H. Meadow and colleagues)",

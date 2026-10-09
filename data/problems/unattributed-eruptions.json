@@ -146,7 +146,17 @@
       "collection": "Sigl and Toohey, eVolv2k version 4 (2024): volcanic stratospheric sulfur injections, 500 BCE–1900 CE",
       "url": "https://doi.org/10.1594/PANGAEA.971968",
       "digitized": "full",
-      "note": "Current event table listing date, Greenland and Antarctic sulfate, estimated injection and attributed source; 1230, 1286, 1695 and 1809 carry no source and 1458 is attributed to Kuwae without tephra confirmation."
+      "note": "Current event table listing date, Greenland and Antarctic sulfate, estimated injection and attributed source; 1230, 1286, 1695 and 1809 carry no source and 1458 is attributed to Kuwae without tephra confirmation.",
+      "aliases": [
+        "eVolv2k"
+      ],
+      "holdings": [
+        {
+          "name": "eVolv2k version 4: volcanic stratospheric sulfur injections, 500 BCE-1900 CE (Sigl and Toohey 2024)",
+          "url": "https://doi.org/10.1594/PANGAEA.971968",
+          "note": "Event table of dated ice-core sulfate signals with injection estimates and attributed sources, including the unattributed events that frame this problem."
+        }
+      ]
     },
     {
       "repository": "NOAA National Centers for Environmental Information, World Data Service for Paleoclimatology",
@@ -160,7 +170,10 @@
       "collection": "Volcanoes of the World database (eruption histories, dating methods and references for Holocene volcanoes)",
       "url": "https://volcano.si.edu/",
       "digitized": "full",
-      "note": "The standard catalogue of candidate volcanoes and dated eruptions against which documentary and tephra evidence must be scored."
+      "note": "The standard catalogue of candidate volcanoes and dated eruptions against which documentary and tephra evidence must be scored.",
+      "aliases": [
+        "Smithsonian Global Volcanism Program"
+      ]
     },
     {
       "repository": "Biblioteca Nacional de Colombia (digitized copies via Universidad Distrital Francisco José de Caldas repository), Bogotá",
@@ -174,28 +187,51 @@
       "collection": "Audiencia de Santa Fe, Audiencia de Lima, Audiencia de Quito and Filipinas sections, correspondence of 1808–1810",
       "url": "https://pares.mcu.es/",
       "digitized": "partial",
-      "note": "Viceregal and audiencia correspondence that may report eruptions, ashfall or crop failure in the Andes and the Philippines; many legajos are imaged on PARES, others require a visit."
+      "note": "Viceregal and audiencia correspondence that may report eruptions, ashfall or crop failure in the Andes and the Philippines; many legajos are imaged on PARES, others require a visit.",
+      "aliases": [
+        "Spanish colonial correspondence"
+      ]
     },
     {
       "repository": "Max Planck Institute for the History of Science, Berlin",
       "collection": "LoGaRT (Local Gazetteers Research Tools), searchable Chinese local gazetteers",
       "url": "https://logart.mpiwg-berlin.mpg.de/",
       "digitized": "full",
-      "note": "Full-text search across thousands of difangzhi with records of anomalous skies, dimmed sun and harvest failures; some content requires institutional access."
+      "note": "Full-text search across thousands of difangzhi with records of anomalous skies, dimmed sun and harvest failures; some content requires institutional access.",
+      "aliases": [
+        "LoGaRT",
+        "Chinese local gazetteers"
+      ]
     },
     {
       "repository": "Open Islamicate Texts Initiative (OpenITI)",
       "collection": "Machine-readable corpus of premodern Arabic and Persian chronicles",
       "url": "https://openiti.org/",
       "digitized": "full",
-      "note": "Open corpus (released through Zenodo) for searching Mamluk and other chronicles for darkened sun and unusual twilight in the 1230s, 1280s and 1450s."
+      "note": "Open corpus (released through Zenodo) for searching Mamluk and other chronicles for darkened sun and unusual twilight in the 1230s, 1280s and 1450s.",
+      "aliases": [
+        "OpenITI",
+        "Arabic chronicles"
+      ]
     },
     {
       "repository": "DANS Data Station, Netherlands (KNMI dataset)",
       "collection": "CLIWOC: Climatological Database for the World's Oceans 1750–1850, release 2.1",
       "url": "https://doi.org/10.17026/dans-2bx-dutg",
       "digitized": "full",
-      "note": "Digitized British, Dutch, French and Spanish logbook observations, including weather remarks that may record haze or abnormal skies at sea in 1808–1809."
+      "note": "Digitized British, Dutch, French and Spanish logbook observations, including weather remarks that may record haze or abnormal skies at sea in 1808–1809.",
+      "aliases": [
+        "CLIWOC",
+        "ships' logs"
+      ],
+      "holdings": [
+        {
+          "name": "CLIWOC Climatological Database for the World's Oceans 1750-1850, release 2.1",
+          "ref": "doi:10.17026/DANS-2BX-DUTG",
+          "url": "https://doi.org/10.17026/dans-2bx-dutg",
+          "note": "More than 287,000 daily weather records from British, Dutch, French and Spanish logbooks, in an Access database and a text core file."
+        }
+      ]
     }
   ],
   "provenance": {

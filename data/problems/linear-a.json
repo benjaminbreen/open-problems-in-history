@@ -137,28 +137,81 @@
       "collection": "Linear A tablets, roundels, nodules and inscribed stone vessels, including the Hagia Triada archive (HT series)",
       "url": "https://heraklionmuseum.gr/en/",
       "digitized": "partial",
-      "note": "Holds the majority of Linear A documents; study of originals requires a permit from the Greek Ministry of Culture, and some Hagia Triada material is in Rome and Florence."
+      "note": "Holds the majority of Linear A documents; study of originals requires a permit from the Greek Ministry of Culture, and some Hagia Triada material is in Rome and Florence.",
+      "holdings": [
+        {
+          "name": "Hagia Triada tablets (HT series)",
+          "ref": "HT",
+          "note": "Largest single group of Linear A tablets (147 in GORILA vol. 1), including the commodity tallies with ku-ro totals; originals are divided between Heraklion, Rome and Florence."
+        }
+      ]
     },
     {
       "repository": "SigLA database (Cambridge / Rennes / University of Bologna INSCRIBE)",
       "collection": "Sign-level palaeographic database of Linear A inscriptions",
       "url": "https://sigla.phis.me/",
       "digitized": "partial",
-      "note": "Open access under CC BY-NC-SA 4.0, with hand drawings and sign, sequence and document search; coverage was still being extended after 2021."
+      "note": "Open access under CC BY-NC-SA 4.0, with hand drawings and sign, sequence and document search; coverage was still being extended after 2021.",
+      "aliases": [
+        "SigLA"
+      ],
+      "holdings": [
+        {
+          "name": "HT 13",
+          "ref": "HT 13",
+          "url": "https://sigla.phis.me/document/HT%2013/",
+          "note": "Hagia Triada tablet whose SigLA transcription ends in the total ku-ro, a test case for the commodity-sum analysis."
+        },
+        {
+          "name": "HT 85a",
+          "ref": "HT 85a",
+          "url": "https://sigla.phis.me/document/HT%2085a/",
+          "note": "Hagia Triada tablet whose transcription ends in ku-ro, with transaction signs, for checking totals against entries."
+        },
+        {
+          "name": "HT 94a",
+          "ref": "HT 94a",
+          "url": "https://sigla.phis.me/document/HT%2094a/",
+          "note": "Hagia Triada tablet with logograms and a ku-ro sequence, useful for the accounting-constraint work."
+        }
+      ]
     },
     {
       "repository": "lineara.xyz",
       "collection": "Interactive Linear A corpus with transliterations, findspot map and regular-expression search",
       "url": "https://lineara.xyz/",
       "digitized": "full",
-      "note": "Open browsing and search over transliterated inscriptions, with sister sites for Linear B, Cretan Hieroglyphic and Cypro-Minoan; transliterations derive from GORILA and John Younger's former Kansas site."
+      "note": "Open browsing and search over transliterated inscriptions, with sister sites for Linear B, Cretan Hieroglyphic and Cypro-Minoan; transliterations derive from GORILA and John Younger's former Kansas site.",
+      "aliases": [
+        "lineara.xyz"
+      ]
     },
     {
       "repository": "École française d'Athènes, Athens",
       "collection": "Recueil des inscriptions en linéaire A (GORILA, Études crétoises 21.1–5) and Supplément 1 (Études crétoises 21.6)",
       "url": "https://editions.efa.gr/?r=publication&id=1050",
       "digitized": "none",
-      "note": "The authoritative print edition with photographs and facsimiles; not openly digitized, so a machine-readable concordance against it is a first task."
+      "note": "The authoritative print edition with photographs and facsimiles; not openly digitized, so a machine-readable concordance against it is a first task.",
+      "aliases": [
+        "GORILA supplement",
+        "GORILA"
+      ],
+      "holdings": [
+        {
+          "name": "Recueil des inscriptions en linéaire A, Supplément 1 (RILA-S1)",
+          "ref": "Études crétoises 21.6",
+          "url": "https://editions.efa.gr/?r=publication&id=1050",
+          "note": "Del Freo and Zurbach's supplement adding texts found since 1985 and published to 2023, bringing the corpus to 1,534 inscriptions.",
+          "match": [
+            "GORILA supplement"
+          ]
+        },
+        {
+          "name": "Recueil des inscriptions en linéaire A (GORILA), vols. 1-5",
+          "ref": "Études crétoises 21.1-5",
+          "note": "Godart and Olivier's five-volume corpus (1976-1985) with photographs and drawings of each inscription."
+        }
+      ]
     },
     {
       "repository": "INSCRIBE project, University of Bologna",

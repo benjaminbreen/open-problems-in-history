@@ -138,35 +138,96 @@
       "collection": "DAM 01-27.1 (Ṣanʿāʾ 1 palimpsest) and other Qurʾān fragments found in the Great Mosque of Sanaa in 1972",
       "url": "",
       "digitized": "partial",
-      "note": "Holds the palimpsest whose lower text is the main non-Uthmanic witness; imaging from the 1980s–2000s exists but much remains unpublished, and access has been limited by the war in Yemen."
+      "note": "Holds the palimpsest whose lower text is the main non-Uthmanic witness; imaging from the 1980s–2000s exists but much remains unpublished, and access has been limited by the war in Yemen.",
+      "aliases": [
+        "Dār al-Makhṭūṭāt",
+        "DAM 01-27.1"
+      ],
+      "holdings": [
+        {
+          "name": "Ṣanʿāʾ palimpsest (Codex Ṣanʿāʾ 1)",
+          "ref": "DAM 01-27.1",
+          "note": "Palimpsest whose erased lower text departs from the Uthmanic consonantal text; the principal non-standard early witness.",
+          "match": [
+            "Sanaa lower text"
+          ]
+        }
+      ]
     },
     {
       "repository": "Cadbury Research Library, University of Birmingham",
       "collection": "Mingana Collection, Islamic Arabic 1572a (Birmingham Qurʾān leaves)",
       "url": "https://www.birmingham.ac.uk/facilities/cadbury/index.aspx",
       "digitized": "partial",
-      "note": "Two leaves radiocarbon dated in 2015; considered part of the same manuscript as leaves in BnF Arabe 328(c)."
+      "note": "Two leaves radiocarbon dated in 2015; considered part of the same manuscript as leaves in BnF Arabe 328(c).",
+      "aliases": [
+        "Mingana Collection"
+      ],
+      "holdings": [
+        {
+          "name": "Birmingham Qurʾān leaves",
+          "ref": "Islamic Arabic 1572a",
+          "url": "https://www.birmingham.ac.uk/facilities/cadbury/birmingham-quran-mingana-collection/index",
+          "note": "Two Hijazi parchment leaves (parts of suras 18 to 20), radiocarbon dated in 2015 to 568-645 CE at 95.4 percent; assigned to the same codex as BnF Arabe 328(c)."
+        }
+      ]
     },
     {
       "repository": "Bibliothèque nationale de France, Paris",
       "collection": "Arabe 328 (Codex Parisino-petropolitanus and associated fragments) and other early Hijazi and Kufic fragments",
       "url": "https://gallica.bnf.fr/",
       "digitized": "full",
-      "note": "Early Qurʾān fragments available through Gallica; the remaining leaves of the Parisino-petropolitanus are in the National Library of Russia, St Petersburg."
+      "note": "Early Qurʾān fragments available through Gallica; the remaining leaves of the Parisino-petropolitanus are in the National Library of Russia, St Petersburg.",
+      "aliases": [
+        "Bibliothèque nationale de France"
+      ],
+      "holdings": [
+        {
+          "name": "Codex Parisino-petropolitanus, Paris part",
+          "ref": "Arabe 328(a)-(b)",
+          "note": "The larger Paris portion of the Hijazi codex whose remaining leaves are in St Petersburg; dated palaeographically to the third quarter of the first Islamic century by Déroche."
+        },
+        {
+          "name": "Qurʾān leaves, Arabe 328(c)",
+          "ref": "Arabe 328(c)",
+          "note": "Sixteen leaves once bound with Arabe 328(a)-(b), now matched with the two Birmingham leaves of Islamic Arabic 1572a."
+        }
+      ]
     },
     {
       "repository": "Universitätsbibliothek Tübingen",
       "collection": "Ma VI 165 (Kufic Qurʾān fragment, suras 17–36)",
       "url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
       "digitized": "full",
-      "note": "Fully digitized fragment radiocarbon dated to 649–675 CE through the Coranica project."
+      "note": "Fully digitized fragment radiocarbon dated to 649–675 CE through the Coranica project.",
+      "aliases": [
+        "Tübingen"
+      ],
+      "holdings": [
+        {
+          "name": "Kufic Qurʾān fragment",
+          "ref": "Ma VI 165",
+          "url": "https://opendigi.ub.uni-tuebingen.de/opendigi/MaVI165",
+          "note": "Fully digitized fragment radiocarbon dated to 649-675 CE with over 95 percent probability."
+        }
+      ]
     },
     {
       "repository": "Corpus Coranicum, Berlin-Brandenburg Academy of Sciences and Humanities",
       "collection": "Manuscripta Coranica database of early manuscripts, variant readings (Variae Lectiones) and radiocarbon results",
       "url": "https://corpuscoranicum.de/",
       "digitized": "partial",
-      "note": "Open database with images, transliterations and metadata for many early Qurʾān manuscripts, the main platform for systematic comparison."
+      "note": "Open database with images, transliterations and metadata for many early Qurʾān manuscripts, the main platform for systematic comparison.",
+      "aliases": [
+        "Corpus Coranicum"
+      ],
+      "holdings": [
+        {
+          "name": "Manuscripta Coranica database",
+          "url": "https://corpuscoranicum.de/en/manuscripts",
+          "note": "Images, transcriptions and metadata for early Qurʾān manuscripts, the base for aligning variants across witnesses."
+        }
+      ]
     }
   ],
   "provenance": {

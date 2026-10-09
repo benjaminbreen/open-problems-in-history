@@ -144,28 +144,76 @@
       "collection": "Vat. gr. 211 (Byzantine astronomical collection with Ṭūsī-couple diagram) and other Vaticani graeci and ebraici astronomical manuscripts",
       "url": "https://digi.vatlib.it/view/MSS_Vat.gr.211",
       "digitized": "partial",
-      "note": "Vat. gr. 211 is digitized on DigiVatLib; many Greek and Hebrew astronomical miscellanies are digitized but poorly described at the text level."
+      "note": "Vat. gr. 211 is digitized on DigiVatLib; many Greek and Hebrew astronomical miscellanies are digitized but poorly described at the text level.",
+      "aliases": [
+        "Vatican"
+      ],
+      "holdings": [
+        {
+          "name": "Byzantine astronomical collection with Ṭūsī-couple diagram",
+          "ref": "Vat. gr. 211",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.gr.211",
+          "note": "Greek astronomical manuscript containing a diagram of the Ṭūsī couple, the one securely located carrier of the device in Italy.",
+          "match": [
+            "Vat. gr. 211"
+          ]
+        }
+      ]
     },
     {
       "repository": "Uppsala University Library, Uppsala",
       "collection": "Copernicana collection (books owned or annotated by Copernicus, taken from Frombork and Braniewo in 1626)",
       "url": "https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized",
       "digitized": "full",
-      "note": "About 46 volumes, including those bearing the Uppsala notes, fully digitized and searchable on the Alvin platform."
+      "note": "About 46 volumes, including those bearing the Uppsala notes, fully digitized and searchable on the Alvin platform.",
+      "aliases": [
+        "Uppsala"
+      ],
+      "holdings": [
+        {
+          "name": "Uppsala Raptularium",
+          "note": "Sixteen-leaf notebook of Copernicus's own mathematical and astronomical notes (c. 1495) appended to a volume of Regiomontanus's Tabulae directionum (1490)."
+        },
+        {
+          "name": "Kraków incunabula bound in two blocks",
+          "note": "Euclid, Elementa geometriae (1482), Haly Abenragel, Alfonso X's Tabulae and Regiomontanus bought by Copernicus in Kraków; later binding history matters for dating his annotations."
+        }
+      ]
     },
     {
       "repository": "Biblioteka Jagiellońska, Kraków",
       "collection": "BJ 10000 (autograph of De revolutionibus) and fifteenth-century astronomical manuscripts of the Kraków university",
       "url": "https://jbc.bj.uj.edu.pl/",
       "digitized": "partial",
-      "note": "Holds the autograph and the teaching manuscripts of the Kraków astronomical school Copernicus attended in 1491–1495; coverage on the Jagiellonian Digital Library is incomplete."
+      "note": "Holds the autograph and the teaching manuscripts of the Kraków astronomical school Copernicus attended in 1491–1495; coverage on the Jagiellonian Digital Library is incomplete.",
+      "aliases": [
+        "Jagiellonian Library"
+      ],
+      "holdings": [
+        {
+          "name": "Autograph of De revolutionibus",
+          "ref": "BJ 10000",
+          "note": "Copernicus's manuscript of De revolutionibus (written c. 1520-1541), showing what he changed or deleted on the lunar and planetary models."
+        }
+      ]
     },
     {
       "repository": "Bodleian Library, Oxford",
       "collection": "MS Marsh 139 (Ibn al-Shāṭir, Nihāyat al-sūl, copied 1366) and other Arabic astronomical manuscripts",
       "url": "https://www.fihrist.org.uk/catalog/manuscript_11512",
       "digitized": "none",
-      "note": "Catalogued in Fihrist; Marsh 139 passed through Golius's collection, so its presence in Europe is post-Copernican, but it is a key witness for the text."
+      "note": "Catalogued in Fihrist; Marsh 139 passed through Golius's collection, so its presence in Europe is post-Copernican, but it is a key witness for the text.",
+      "aliases": [
+        "Bodleian"
+      ],
+      "holdings": [
+        {
+          "name": "Ibn al-Shāṭir, Nihāyat al-sūl fī taṣḥīḥ al-uṣūl",
+          "ref": "MS Marsh 139",
+          "url": "https://www.fihrist.org.uk/catalog/manuscript_11512",
+          "note": "Copy dated 1366/1367 (64 folios) with the lunar and Mercury models; from the Golius collection, so it reached Europe after Copernicus."
+        }
+      ]
     },
     {
       "repository": "Max Planck Institute for the History of Science, Berlin / McGill University",

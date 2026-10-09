@@ -121,35 +121,110 @@
       "collection": "Girl with a Pearl Earring and View of Delft; technical data from The Girl in the Spotlight (2018)",
       "url": "https://mauritshuis.nl/en/discover/exhibitions/the-girl-in-the-spotlight",
       "digitized": "partial",
-      "note": "Project results are summarized online and published in Heritage Science; full scan datasets require request to the museum."
+      "note": "Project results are summarized online and published in Heritage Science; full scan datasets require request to the museum.",
+      "aliases": [
+        "Mauritshuis"
+      ],
+      "holdings": [
+        {
+          "name": "Girl with a Pearl Earring",
+          "ref": "inv. 670",
+          "note": "Subject of the 2018 Girl in the Spotlight imaging campaign (MA-XRF, OCT, microscopy)."
+        },
+        {
+          "name": "View of Delft",
+          "ref": "inv. 92",
+          "note": "Vermeer's Delft townscape, often cited in discussions of optical effects."
+        }
+      ]
     },
     {
       "repository": "Rijksmuseum, Amsterdam",
       "collection": "The Milkmaid (SK-A-2344), The Little Street, Woman Reading a Letter, The Love Letter; 2022–23 technical research (MA-XRF, RIS, SWIR)",
       "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2344",
       "digitized": "partial",
-      "note": "High-resolution images are open access; the 2022 Milkmaid study revealed an underpainting and painted-out jug holder and fire basket."
+      "note": "High-resolution images are open access; the 2022 Milkmaid study revealed an underpainting and painted-out jug holder and fire basket.",
+      "aliases": [
+        "Rijksmuseum"
+      ],
+      "holdings": [
+        {
+          "name": "The Milkmaid",
+          "ref": "SK-A-2344",
+          "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2344",
+          "note": "Subject of the 2022 technical study that revealed a painted-out jug holder and fire basket."
+        },
+        {
+          "name": "View of Houses in Delft, known as The Little Street",
+          "ref": "SK-A-2860",
+          "url": "https://www.rijksmuseum.nl/en/collection/SK-A-2860",
+          "note": "Exterior view with open-access high-resolution images."
+        },
+        {
+          "name": "The Love Letter",
+          "ref": "SK-A-1595",
+          "url": "https://www.rijksmuseum.nl/en/collection/SK-A-1595",
+          "note": "Interior painting with a strongly constructed perspective, in the Rijksmuseum collection."
+        }
+      ]
     },
     {
       "repository": "Royal Collection Trust, London",
       "collection": "Lady at the Virginals with a Gentleman ('The Music Lesson'), RCIN 405346",
       "url": "https://www.rct.uk/collection/exhibitions/masterpieces-from-buckingham-palace/the-queens-gallery-buckingham-palace/lady-at-the-virginals-with-a-gentleman",
       "digitized": "partial",
-      "note": "The painting at the centre of Steadman's room reconstruction and of Jenison's replication."
+      "note": "The painting at the centre of Steadman's room reconstruction and of Jenison's replication.",
+      "holdings": [
+        {
+          "name": "Lady at the Virginals with a Gentleman",
+          "ref": "RCIN 405346",
+          "url": "https://col.rct.uk/collection/405346/lady-at-the-virginals-with-a-gentleman",
+          "note": "Catalogue record for the painting used in Steadman's room reconstruction; dated early 1660s."
+        }
+      ]
     },
     {
       "repository": "Staatliche Kunstsammlungen Dresden, Gemäldegalerie Alte Meister",
       "collection": "Woman Reading a Letter at an Open Window and The Procuress; documentation from the restoration completed in 2021",
       "url": "https://gemaeldegalerie.skd.museum/",
       "digitized": "partial",
-      "note": "Restoration removed later overpaint revealing a Cupid painting on the back wall, altering the room geometry used in optical reconstructions."
+      "note": "Restoration removed later overpaint revealing a Cupid painting on the back wall, altering the room geometry used in optical reconstructions.",
+      "holdings": [
+        {
+          "name": "Brieflesendes Mädchen am offenen Fenster (Girl Reading a Letter at an Open Window)",
+          "ref": "Gal.-Nr. 1336",
+          "url": "https://skd-online-collection.skd.museum/Details/Index/415429",
+          "note": "Record for the painting from which overpaint over the Cupid on the back wall was removed in the restoration."
+        },
+        {
+          "name": "Bei der Kupplerin (The Procuress)",
+          "ref": "Gal.-Nr. 1335",
+          "url": "https://skd-online-collection.skd.museum/Details/Index/415421",
+          "note": "Vermeer's 1656 painting, in the Dresden collection."
+        }
+      ]
     },
     {
       "repository": "Stadsarchief Delft",
       "collection": "Notarial archives, including the 29 February 1676 inventory of Vermeer's household drawn up for notary J. van Veen; guild, church and burial records",
       "url": "https://zoeken.stadsarchiefdelft.nl/",
       "digitized": "partial",
-      "note": "Source base for Montias's documentary reconstruction; many notarial protocols are indexed online and imaged on request."
+      "note": "Source base for Montias's documentary reconstruction; many notarial protocols are indexed online and imaged on request.",
+      "aliases": [
+        "Stadsarchief Delft",
+        "Delft notarial, guild and Jesuit records"
+      ],
+      "holdings": [
+        {
+          "name": "Inventory of movable goods in the house on the Oude Langendijk, 29 February 1676, notary J. van Veen",
+          "ref": "Notary J. van Veen, no. 2224",
+          "url": "https://www.essentialvermeer.com/inventory.html",
+          "note": "Room-by-room list drawn up after Vermeer's death; the link is a transcription, not the archive catalogue.",
+          "match": [
+            "the 1676 inventory"
+          ]
+        }
+      ]
     },
     {
       "repository": "Frick Art Reference Library, New York, with RKD",

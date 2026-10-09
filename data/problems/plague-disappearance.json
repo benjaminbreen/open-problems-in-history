@@ -147,21 +147,58 @@
       "collection": "Sous-série 200 E, Intendance sanitaire de Marseille (1640–1986), including captains' health declarations for arriving ships, 1709–1852",
       "url": "https://www.archives13.fr/",
       "digitized": "partial",
-      "note": "Records of the Marseille health office, the main western gate for Levant trade; more than 100,000 images of ship declarations (origin, ports of call, cargo, health on board) are online."
+      "note": "Records of the Marseille health office, the main western gate for Levant trade; more than 100,000 images of ship declarations (origin, ports of call, cargo, health on board) are online.",
+      "aliases": [
+        "health office archives of Marseille",
+        "Archives départementales des Bouches-du-Rhône"
+      ],
+      "holdings": [
+        {
+          "name": "Intendance sanitaire de Marseille (1640-1986)",
+          "ref": "200 E",
+          "url": "https://www.archives13.fr/archive/fonds/FRAD013_12831/view:283359",
+          "note": "Records of the Marseille health board, including deliberations, bills of health (patentes de santé), quarantine and lazaretto registers, and the captains' declarations of arriving ships.",
+          "match": [
+            "Marseille captains' declarations of 1709–1852"
+          ]
+        }
+      ]
     },
     {
       "repository": "Archivio di Stato di Venezia",
       "collection": "Provveditori e sopraprovveditori alla sanità: deliberations, lazaretto records, bills of health, necrologi and reports from Venetian consuls in the Levant",
       "url": "https://www.archiviodistatovenezia.it/",
       "digitized": "none",
-      "note": "The oldest and most continuous health magistracy archive in Europe, recording intelligence on plague in Ottoman and Adriatic ports and the quarantine of ships and goods."
+      "note": "The oldest and most continuous health magistracy archive in Europe, recording intelligence on plague in Ottoman and Adriatic ports and the quarantine of ships and goods.",
+      "aliases": [
+        "Archivio di Stato di Venezia"
+      ],
+      "holdings": [
+        {
+          "name": "Provveditori e Sopraprovveditori alla sanità (1486-1798)",
+          "url": "https://projetos.dhlab.fcsh.unl.pt/s/wsdroadmap/item/5513",
+          "note": "Fonds of the Venetian health magistracy, about 88 linear metres in 1,103 units; a catalogue record is given by the Western Sephardic Diaspora Roadmap project."
+        }
+      ]
     },
     {
       "repository": "Državni arhiv u Dubrovniku (State Archives of Dubrovnik)",
       "collection": "Records of the Ragusan health office and the Ploče lazaretto, on the overland caravan and maritime routes from the Ottoman Balkans",
       "url": "http://www.dad.hr/",
       "digitized": "none",
-      "note": "Ragusa operated at the frontier with Ottoman plague and kept detailed health and quarantine records; access on site."
+      "note": "Ragusa operated at the frontier with Ottoman plague and kept detailed health and quarantine records; access on site.",
+      "aliases": [
+        "Državni arhiv u Dubrovniku",
+        "State Archives of Dubrovnik"
+      ],
+      "holdings": [
+        {
+          "name": "Uprava lazareta u Dubrovniku (Administration of the Dubrovnik lazarets)",
+          "ref": "HR-DADU-107",
+          "url": "https://dad.hr/wp-content/uploads/2024/12/HR-DADU-107-Sumarni-inventar-Uprava-Lazareta-u-Dubrovniku.pdf",
+          "note": "Summary inventory of the lazaret administration, 1814-1873 (36 boxes, 25 volumes), later than the early modern Ragusan health office but covering the nineteenth-century quarantine system."
+        }
+      ]
     },
     {
       "repository": "Chambre de commerce et d'industrie Aix-Marseille-Provence, archives and heritage collections",
@@ -175,14 +212,32 @@
       "collection": "SP 105 (Levant Company records); PC 2 (Privy Council registers) with quarantine orders; customs and port records",
       "url": "https://www.nationalarchives.gov.uk/",
       "digitized": "partial",
-      "note": "English Levant shipping and the orders imposing and lifting quarantine, including the response to Marseille in 1720–22."
+      "note": "English Levant shipping and the orders imposing and lifting quarantine, including the response to Marseille in 1720–22.",
+      "aliases": [
+        "The National Archives"
+      ]
     },
     {
       "repository": "Archives municipales de Marseille",
       "collection": "Municipal records of the 1720–22 epidemic, including deliberations of the échevins and burial and hospital records",
       "url": "https://archives.marseille.fr/",
       "digitized": "partial",
-      "note": "The local record of the last major western European outbreak, needed to reconstruct its spread within the city and Provence."
+      "note": "The local record of the last major western European outbreak, needed to reconstruct its spread within the city and Provence.",
+      "aliases": [
+        "Archives municipales de Marseille"
+      ],
+      "holdings": [
+        {
+          "name": "Registre de peste: police ordinances of 1720-22",
+          "ref": "FF 292",
+          "note": "Ordinances of the Marseille police issued during the epidemic, cited by Criminocorpus-published research on plague-time justice."
+        },
+        {
+          "name": "Judgments of the police during the plague of 1720",
+          "ref": "GG 426",
+          "note": "Judgments rendered by the police court during the epidemic, one of the GG plague-time series."
+        }
+      ]
     }
   ],
   "provenance": {

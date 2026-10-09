@@ -134,28 +134,109 @@
       "collection": "1641 Depositions, TCD MSS 809–841 (some 8,000 depositions, examinations and associated papers, 19,010 pages in 31 volumes)",
       "url": "https://www.tcd.ie/library/research-collections/subject-strengths/1641-depositions.php",
       "digitized": "full",
-      "note": "Images and full transcriptions are freely searchable at 1641.tcd.ie; includes both the 1641–44 refugee statements and the 1650s examinations taken for prosecutions."
+      "note": "Images and full transcriptions are freely searchable at 1641.tcd.ie; includes both the 1641–44 refugee statements and the 1650s examinations taken for prosecutions.",
+      "aliases": [
+        "1641.tcd.ie",
+        "1641 Depositions"
+      ],
+      "holdings": [
+        {
+          "name": "1641 Depositions, full collection",
+          "ref": "TCD MSS 809–841",
+          "url": "https://www.tcd.ie/library/research-collections/subject-strengths/1641-depositions.php",
+          "note": "The 31 bound volumes of depositions and examinations, transcribed and imaged at 1641.tcd.ie."
+        },
+        {
+          "name": "Depositions for County Armagh",
+          "ref": "TCD MS 836",
+          "note": "Ulster testimony from the county where the first killings of the rising are reported; printed in IMC volume I with Louth and Monaghan."
+        },
+        {
+          "name": "Depositions for Kildare and Meath",
+          "ref": "TCD MS 813 (Kildare), MS 816 (Meath)",
+          "note": "Includes notes of interviews taken at Athy in April 1642 and the later 1652–54 examinations into murders."
+        },
+        {
+          "name": "Depositions for County Wexford, with 1652 commission material",
+          "ref": "TCD MSS 818–819",
+          "note": "Wexford depositions together with examinations taken by the commissioners appointed in 1652 for the prosecution of killings."
+        }
+      ]
     },
     {
       "repository": "Irish Manuscripts Commission, Dublin",
       "collection": "The 1641 Depositions, 12 vols. (2014–2020), ed. Aidan Clarke et al.",
       "url": "https://www.irishmanuscripts.ie/",
       "digitized": "partial",
-      "note": "Print edition by county with indexes of persons and places, useful for checking the online transcriptions and for name normalisation."
+      "note": "Print edition by county with indexes of persons and places, useful for checking the online transcriptions and for name normalisation.",
+      "aliases": [
+        "Irish Manuscripts Commission"
+      ],
+      "holdings": [
+        {
+          "name": "1641 Depositions, Volume IV: Dublin",
+          "ref": "TCD MSS 809–810, 840",
+          "url": "https://www.irishmanuscripts.ie/product/1641-depositions-vol-4-dublin/",
+          "note": "Print edition of the Dublin depositions with associated miscellaneous papers."
+        },
+        {
+          "name": "1641 Depositions, Volume V: Kildare and Meath",
+          "ref": "TCD MSS 813, 816",
+          "url": "https://www.irishmanuscripts.ie/product/1641-depositions-volume-v-kildare-meath/",
+          "note": "Edited depositions for Kildare and Meath, including the 1652–54 investigations of murders and massacres."
+        },
+        {
+          "name": "1641 Depositions, Volume VII: Wexford",
+          "ref": "TCD MSS 818–819",
+          "url": "https://www.irishmanuscripts.ie/product/1641-vol-7/",
+          "note": "Edited Wexford depositions and examinations."
+        }
+      ]
     },
     {
       "repository": "Bodleian Library, Oxford",
       "collection": "Carte Papers, esp. MSS. Carte 2 and 68 (Ormond correspondence, including letters of the Lords Justices and Council, 1641–43)",
       "url": "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/7688",
       "digitized": "none",
-      "note": "Government and military correspondence that records army reprisals and casualties not captured in the depositions; item-level catalogue online."
+      "note": "Government and military correspondence that records army reprisals and casualties not captured in the depositions; item-level catalogue online.",
+      "aliases": [
+        "Ormond correspondence"
+      ],
+      "holdings": [
+        {
+          "name": "Correspondence and papers of the 1st Duke of Ormond on Irish affairs, 1642–83, including Lords Justices and Council letters 1641–43",
+          "ref": "MS. Carte 68",
+          "url": "https://archives.bodleian.ox.ac.uk/repositories/2/archival_objects/7688",
+          "note": "Large series of letters from the Lords Justices and Council of Ireland; 642 leaves."
+        },
+        {
+          "name": "Ormond correspondence, October 1641 to March 1642",
+          "ref": "MS. Carte 2",
+          "note": "Volume of Ormond correspondence from the first months of the rising; 511 leaves per the Bodleian catalogue."
+        }
+      ]
     },
     {
       "repository": "The National Archives, Kew",
       "collection": "SP 63, State Papers Ireland (1641–42 volumes)",
       "url": "https://discovery.nationalarchives.gov.uk/details/r/C13605",
       "digitized": "partial",
-      "note": "Dispatches from Dublin to Westminster on the course of the rising; images available through State Papers Online (Gale, subscription) and some free downloads."
+      "note": "Dispatches from Dublin to Westminster on the course of the rising; images available through State Papers Online (Gale, subscription) and some free downloads.",
+      "aliases": [
+        "State Papers"
+      ],
+      "holdings": [
+        {
+          "name": "State Papers, Ireland, Charles I, August 1641 to December 1645",
+          "ref": "SP 63/260",
+          "note": "Dispatches from the Dublin government to Westminster covering the rising."
+        },
+        {
+          "name": "Warrants by the Lords Justices and Council, November 1641 to December 1642",
+          "ref": "SP 63/265A",
+          "note": "Council warrants issued during the first year of the rising."
+        }
+      ]
     },
     {
       "repository": "Early English Books Online / Text Creation Partnership",

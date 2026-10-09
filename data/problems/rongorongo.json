@@ -147,42 +147,115 @@
       "collection": "Tablets A (Tahua), B (Aruku Kurenga), C (Mamari) and D (Échancrée), from Bishop Jaussen's collection",
       "url": "https://www.inscribercproject.com/3d_viewer_home.php",
       "digitized": "partial",
-      "note": "The four tablets dated by Ferrara et al.; 3D models were made by the ERC INSCRIBE project, with access to the data on request."
+      "note": "The four tablets dated by Ferrara et al.; 3D models were made by the ERC INSCRIBE project, with access to the data on request. Échancrée (D) was lent to Tahiti in 1975 and was still there in 1997 according to Wikipedia's summary of Fischer; its present location was not confirmed.",
+      "holdings": [
+        {
+          "name": "Tablet C (Mamari)",
+          "note": "Carries the sequence read by Guy as a lunar calendar; Fischer regards it as one of two tablets with a documented pre-mission provenance.",
+          "match": [
+            "Mamari"
+          ]
+        },
+        {
+          "name": "Tablet D (Échancrée)",
+          "note": "The tablet with the fifteenth-century radiocarbon result, on non-native wood.",
+          "match": [
+            "Échancrée"
+          ]
+        }
+      ]
     },
     {
       "repository": "Smithsonian Institution, National Museum of Natural History, Washington, DC",
       "collection": "Tablets R (Small Washington) and S (Large Washington), collected by William J. Thomson in 1886",
       "url": "https://collections.si.edu/search/results.htm?q=rongorongo",
       "digitized": "partial",
-      "note": "Tablet S shares an imported conifer wood with tablets N and P and may come from the same board."
+      "note": "Tablet S shares an imported conifer wood with tablets N and P and may come from the same board.",
+      "aliases": [
+        "Washington"
+      ],
+      "holdings": [
+        {
+          "name": "Small Washington tablet (R), also called Atua Mata Riri",
+          "ref": "USNM A129773",
+          "url": "https://www.si.edu/object/inscribed-wooden-tablet%3Anmnhanthropology_8010183",
+          "note": "Bought by Thomson in December 1886 and accessioned 1890 (accession 023098); the record cites Horley (2021) and notes plaster casts."
+        },
+        {
+          "name": "Large Washington tablet (S)",
+          "ref": "USNM A129774",
+          "note": "Driftwood board of Podocarpus latifolius wood, cut down for use as a canoe plank, from the same 1886 Thomson accession."
+        }
+      ]
     },
     {
       "repository": "Peter the Great Museum of Anthropology and Ethnography (Kunstkamera), St Petersburg",
       "collection": "Tablets P (Large St Petersburg) and Q (Small St Petersburg)",
       "url": "https://www.kunstkamera.ru/en/",
       "digitized": "none",
-      "note": "Tablet P is of the same imported conifer wood as N and S; the St Petersburg tablets have been sampled for wood identification and dating."
+      "note": "Tablet P is of the same imported conifer wood as N and S; the St Petersburg tablets have been sampled for wood identification and dating.",
+      "aliases": [
+        "St Petersburg"
+      ],
+      "holdings": [
+        {
+          "name": "Large St Petersburg tablet (P)",
+          "ref": "403/13-2",
+          "note": "Well-preserved unfluted tablet, given by Jaussen to Miklukho-Maklai, with reproductions in Paris, Berlin and New York."
+        }
+      ]
     },
     {
       "repository": "Museo Nacional de Historia Natural, Santiago de Chile",
       "collection": "Santiago Staff (I) and tablets G (Small Santiago) and H (Large Santiago)",
       "url": "https://www.mnhn.gob.cl/",
       "digitized": "partial",
-      "note": "Holds the Santiago Staff, the longest text in the corpus, and the only tablets held in Chile."
+      "note": "Holds the Santiago Staff, the longest text in the corpus, and the only tablets held in Chile.",
+      "aliases": [
+        "Santiago"
+      ],
+      "holdings": [
+        {
+          "name": "Santiago Staff (I)",
+          "ref": "5.499 (316)",
+          "note": "Carved staff, 126 cm long, roughly 2,900 signs by one count, and the longest rongorongo text; shares short phrases with texts G and T."
+        }
+      ]
     },
     {
       "repository": "Ethnologisches Museum, Staatliche Museen zu Berlin",
       "collection": "Tablet O (Berlin)",
       "url": "https://www.smb.museum/en/museums-institutions/ethnologisches-museum/home/",
       "digitized": "partial",
-      "note": "Dated by Wieczorek et al. (2021) to the early nineteenth century."
+      "note": "Radiocarbon dating with fitting to ethnographic data by Wieczorek et al. (2021) places carving of Tablet O between about 1830 and 1870 (one report gives 1810 to 1870); the wood was identified as local Thespesia populnea, not drift conifer.",
+      "aliases": [
+        "Berlin"
+      ],
+      "holdings": [
+        {
+          "name": "Tablet O (Boomerang)",
+          "ref": "VI 4878 (Inventory I 3/83)",
+          "url": "https://ccc.deutsche-digitale-bibliothek.de/en/item/7Y4R2VZZNTHYDG6DURDCAO2PYSETIHMC",
+          "note": "103 cm fluted driftwood piece acquired in 1882 via Schlubach; the museum record lists it as kohau rongorongo from Rapa Nui before 1883."
+        }
+      ]
     },
     {
       "repository": "British Museum, London",
       "collection": "Tablet K (London) and Mana Expedition to Easter Island (1913–15) photographs and drawings",
       "url": "https://www.britishmuseum.org/collection/search?keyword=rongorongo",
       "digitized": "partial",
-      "note": "Holds Tablet K and expedition records of rongorongo objects made when islanders who remembered the script were still alive."
+      "note": "Holds Tablet K and expedition records of rongorongo objects made when islanders who remembered the script were still alive.",
+      "aliases": [
+        "London"
+      ],
+      "holdings": [
+        {
+          "name": "Tablet K (London)",
+          "ref": "AOA 1903-150",
+          "note": "Rongorongo tablet in the Department of Africa, Oceania and the Americas; reference as given in Wikipedia's tablet list, not checked against the museum's online record."
+        }
+      ]
     }
   ],
   "provenance": {

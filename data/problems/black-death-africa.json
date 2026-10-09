@@ -128,35 +128,90 @@
       "collection": "Digitized Timbuktu and Malian manuscript collections (SAVAMA-DCI and private libraries)",
       "url": "https://www.vhmml.org/readingRoom/",
       "digitized": "partial",
-      "note": "Imaged Arabic and Ajami manuscripts from Mali, mostly later than the fourteenth century but including chronicles and medical texts that may record earlier epidemics; free registration."
+      "note": "Imaged Arabic and Ajami manuscripts from Mali, mostly later than the fourteenth century but including chronicles and medical texts that may record earlier epidemics; free registration.",
+      "aliases": [
+        "Timbuktu",
+        "vHMML",
+        "Hill Museum & Manuscript Library"
+      ],
+      "holdings": [
+        {
+          "name": "Aboubacar Ben Said Library (SAVAMA-DCI project)",
+          "ref": "SAV ABS 00001-07612",
+          "url": "https://hmml.org/collections/repositories/mali/aboubacar-ben-said-library/",
+          "note": "Private Timbuktu family library of about 7,000 items, with 7,563 digital surrogates catalogued in the Reading Room."
+        },
+        {
+          "name": "Mamma Haidara Library (SAVAMA-DCI project)",
+          "ref": "SAV BMH",
+          "note": "Family library of SAVAMA's founder, Abdel Kader Haidara, digitized by HMML and partly available in the Reading Room."
+        }
+      ]
     },
     {
       "repository": "British Library, Endangered Archives Programme, London",
       "collection": "Ethiopian monastic and church manuscript surveys (Ge'ez hagiographies, chronicles and magical-protective texts)",
       "url": "https://eap.bl.uk/",
       "digitized": "partial",
-      "note": "Open-access images of Ethiopian manuscript collections relevant to Derat's lexical and talismanic evidence for plague."
+      "note": "Open-access images of Ethiopian manuscript collections relevant to Derat's lexical and talismanic evidence for plague.",
+      "aliases": [
+        "Endangered Archives Programme",
+        "EAP"
+      ],
+      "holdings": [
+        {
+          "name": "EAP286: Institute of Ethiopian Studies manuscript digitization, Addis Ababa",
+          "ref": "EAP286/1/1",
+          "note": "General collection of imaged Ethiopian manuscripts, mainly Ge'ez, with Amharic, Arabic, Harari and Oromo items; access is for research purposes only."
+        }
+      ]
     },
     {
       "repository": "British Institute in Eastern Africa, Nairobi",
       "collection": "Archaeological archive, including Neville Chittick's excavation records for Kilwa Kisiwani, Aksum and Mogadishu (1961–1983)",
       "url": "https://biea.ac.uk/archives/",
       "digitized": "partial",
-      "note": "Field notes, plans and photographs from Swahili coast and Horn excavations, partly digitized via the Archaeology Data Service; access by appointment."
+      "note": "Field notes, plans and photographs from Swahili coast and Horn excavations, partly digitized via the Archaeology Data Service; access by appointment.",
+      "aliases": [
+        "British Institute in Eastern Africa",
+        "BIEA"
+      ],
+      "holdings": [
+        {
+          "name": "BIEA Digital Archives: Kilwa Kisiwani",
+          "ref": "doi:10.5284/1090373",
+          "url": "https://doi.org/10.5284/1090373",
+          "note": "Images and slides from Neville Chittick's excavations at Kilwa Kisiwani, Tanzania, hosted by the Archaeology Data Service."
+        },
+        {
+          "name": "BIEA Digital Archives: Aksum",
+          "ref": "doi:10.5284/1090372",
+          "url": "https://doi.org/10.5284/1090372",
+          "note": "Images and documents from excavations at Aksum, Ethiopia, hosted by the Archaeology Data Service."
+        }
+      ]
     },
     {
       "repository": "European Nucleotide Archive, EMBL-EBI, Hinxton",
       "collection": "Raw sequencing data from published ancient DNA studies of African individuals (e.g. Swahili coast, Nubia, Ethiopia)",
       "url": "https://www.ebi.ac.uk/ena/browser/home",
       "digitized": "full",
-      "note": "Public shotgun data from existing aDNA studies that can be re-screened computationally for Y. pestis reads before new sampling."
+      "note": "Public shotgun data from existing aDNA studies that can be re-screened computationally for Y. pestis reads before new sampling.",
+      "aliases": [
+        "European Nucleotide Archive",
+        "ENA"
+      ]
     },
     {
       "repository": "Arquivo Nacional da Torre do Tombo, Lisbon",
       "collection": "Corpo Cronológico and chancery records for fifteenth-century Portuguese voyages to West Africa",
       "url": "https://digitarq.arquivos.pt/",
       "digitized": "partial",
-      "note": "Earliest European eyewitness accounts of the West African coast, useful for testing claims of depopulation in the century after 1350."
+      "note": "Earliest European eyewitness accounts of the West African coast, useful for testing claims of depopulation in the century after 1350.",
+      "aliases": [
+        "Arquivo Nacional da Torre do Tombo",
+        "Torre do Tombo"
+      ]
     }
   ],
   "provenance": {

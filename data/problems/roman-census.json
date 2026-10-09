@@ -129,21 +129,62 @@
       "collection": "Res Gestae 8 (census of 28 BCE, 8 BCE and 14 CE) from the Monumentum Ancyranum, Ankara",
       "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html",
       "digitized": "full",
-      "note": "Latin text and translation of the census totals 4,063,000, 4,233,000 and 4,937,000; the inscription itself survives on the Temple of Augustus and Roma in Ankara."
+      "note": "Latin text and translation of the census totals 4,063,000, 4,233,000 and 4,937,000; the inscription itself survives on the Temple of Augustus and Roma in Ankara.",
+      "aliases": [
+        "Res Gestae",
+        "Res Gestae Divi Augusti"
+      ],
+      "holdings": [
+        {
+          "name": "Res Gestae Divi Augusti, chapter 8 (Monumentum Ancyranum)",
+          "ref": "Res Gestae 8",
+          "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html",
+          "note": "Augustus' own statement of the citizen totals of 28 BCE (4,063,000), 8 BCE (4,233,000) and 14 CE (4,937,000).",
+          "match": [
+            "Augustus' Res Gestae"
+          ]
+        }
+      ]
     },
     {
       "repository": "British School at Rome, Archive",
       "collection": "South Etruria Survey (John Ward-Perkins) records and Tiber Valley Project materials",
       "url": "https://www.bsr.ac.uk/archive",
       "digitized": "partial",
-      "note": "Site cards, maps and photographs from the foundational survey of Rome's northern hinterland; consultation by appointment."
+      "note": "Site cards, maps and photographs from the foundational survey of Rome's northern hinterland; consultation by appointment.",
+      "aliases": [
+        "British School at Rome"
+      ],
+      "holdings": [
+        {
+          "name": "South Etruria Survey records (John Ward-Perkins), survey cards and records",
+          "note": "Survey cards and records from the 1950s to 1970s survey of the countryside north of Rome, with about 7,300 related images in the Photographic Archive; consultation through the archivist.",
+          "match": [
+            "site cards"
+          ]
+        }
+      ]
     },
     {
       "repository": "Fasti Online Survey, AIAC",
       "collection": "Database of archaeological field surveys in Italy and the Mediterranean",
       "url": "https://www.fastionline.org/survey/",
       "digitized": "partial",
-      "note": "Records of survey projects, including the Pontine Region Project, with bibliographic and spatial metadata."
+      "note": "Records of survey projects, including the Pontine Region Project, with bibliographic and spatial metadata.",
+      "aliases": [
+        "Fasti Online"
+      ],
+      "holdings": [
+        {
+          "name": "Pontine Region Project (record AIAC_454)",
+          "ref": "AIAC_454",
+          "url": "https://fastionline.org/survey/site/AIAC_454",
+          "note": "Dutch survey of the Pontine region south of Rome, with sub-survey records for the Republican and Roman periods.",
+          "match": [
+            "Pontine Region"
+          ]
+        }
+      ]
     },
     {
       "repository": "Epigraphik-Datenbank Clauss/Slaby (EDCS)",
@@ -164,7 +205,22 @@
       "collection": "Livy, Periochae 96–100 (Periocha 98: the census of 70/69 BCE)",
       "url": "https://www.livius.org/sources/content/livy/livy-periochae-96-100/",
       "digitized": "full",
-      "note": "Translation of the epitome that transmits the 70/69 BCE total; compare Phlegon of Tralles' 910,000."
+      "note": "Translation of the epitome that transmits the 70/69 BCE total; compare Phlegon of Tralles' 910,000.",
+      "aliases": [
+        "Livy's Periochae",
+        "Livius.org"
+      ],
+      "holdings": [
+        {
+          "name": "Livy, Periochae 98 (census of 70/69 BCE)",
+          "ref": "Per. 98",
+          "url": "https://www.livius.org/sources/content/livy/livy-periochae-96-100/",
+          "note": "Epitome entry recording that the censors of 70/69 BCE registered 900,000 citizens.",
+          "match": [
+            "the Periocha for 70/69 BCE"
+          ]
+        }
+      ]
     }
   ],
   "provenance": {

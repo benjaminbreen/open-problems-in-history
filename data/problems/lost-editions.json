@@ -103,42 +103,85 @@
       "collection": "Incunabula Short Title Catalogue (ISTC), begun 1980",
       "url": "https://data.cerl.org/istc/_search",
       "digitized": "full",
-      "note": "Edition-level records of about 30,000 fifteenth-century editions with copy locations; the main base for copy-count survival models."
+      "note": "Edition-level records of about 30,000 fifteenth-century editions with copy locations; the main base for copy-count survival models.",
+      "aliases": [
+        "ISTC"
+      ]
     },
     {
       "repository": "Staatsbibliothek zu Berlin",
       "collection": "Gesamtkatalog der Wiegendrucke (GW), begun 1904",
       "url": "https://www.gesamtkatalogderwiegendrucke.de/",
       "digitized": "full",
-      "note": "Detailed descriptive catalogue of incunabula including fragments, with a long printed and online revision history useful for dating discoveries."
+      "note": "Detailed descriptive catalogue of incunabula including fragments, with a long printed and online revision history useful for dating discoveries.",
+      "aliases": [
+        "GW"
+      ]
     },
     {
       "repository": "University of St Andrews",
       "collection": "Universal Short Title Catalogue (USTC)",
       "url": "https://www.ustc.ac.uk/",
       "digitized": "full",
-      "note": "Edition records for European printing to 1650 with copy locations, including editions recorded only from documentary evidence of lost books."
+      "note": "Edition records for European printing to 1650 with copy locations, including editions recorded only from documentary evidence of lost books.",
+      "aliases": [
+        "USTC"
+      ]
     },
     {
       "repository": "Bayerische Staatsbibliothek, Munich, and Herzog August Bibliothek, Wolfenbüttel",
       "collection": "VD16 (German-speaking lands, 1501–1600) and VD17",
       "url": "https://www.bsb-muenchen.de/sammlungen/historische-drucke/recherche/vd-16/",
       "digitized": "full",
-      "note": "National retrospective bibliographies with copy holdings, many linked to full digitizations."
+      "note": "National retrospective bibliographies with copy holdings, many linked to full digitizations.",
+      "aliases": [
+        "VD16"
+      ],
+      "holdings": [
+        {
+          "name": "VD 16 database",
+          "url": "https://www.vd16.de/",
+          "note": "Retrospective bibliography of German-language prints of the sixteenth century with copy locations."
+        }
+      ]
     },
     {
       "repository": "CERL",
       "collection": "Material Evidence in Incunabula (MEI)",
       "url": "https://data.cerl.org/mei/_search",
       "digitized": "partial",
-      "note": "Copy-specific provenance and use evidence that can show how survival depended on ownership and institutional paths."
+      "note": "Copy-specific provenance and use evidence that can show how survival depended on ownership and institutional paths.",
+      "holdings": [
+        {
+          "name": "Heritage of the Printed Book Database (HPB)",
+          "url": "https://www.cerl.org/resources/hpb/main",
+          "note": "Aggregated catalogue records of European printed books to 1830 from many libraries, a source for copy counts and holdings."
+        }
+      ]
     },
     {
       "repository": "GitHub (Kestemont et al.)",
       "collection": "Data and code for 'Forgotten books' (2022)",
       "url": "https://github.com/mikekestemont/forgotten-books",
       "digitized": "full",
-      "note": "Openly released datasets and model implementations that can be adapted to print catalogues."
+      "note": "Openly released datasets and model implementations that can be adapted to print catalogues.",
+      "holdings": [
+        {
+          "name": "datasets/master",
+          "url": "https://github.com/mikekestemont/forgotten-books/tree/main/datasets/master",
+          "note": "Spreadsheets of work and document counts for six medieval vernaculars, the input to the unseen-species estimates."
+        },
+        {
+          "name": "notebooks/analysis.ipynb",
+          "url": "https://github.com/mikekestemont/forgotten-books/blob/main/notebooks/analysis.ipynb",
+          "note": "Python code for the unseen-species models, adaptable to edition-level copy counts."
+        },
+        {
+          "name": "copia package",
+          "url": "https://github.com/mikekestemont/copia",
+          "note": "Python library implementing the unseen-species estimators used in the paper."
+        }
+      ]
     }
   ],
   "provenance": {

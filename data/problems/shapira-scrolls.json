@@ -148,21 +148,54 @@
       "collection": "Add MS 41294: papers relating to M. W. Shapira's manuscript of Deuteronomy, 1883–1884, presented by C. D. Ginsburg",
       "url": "https://searcharchives.bl.uk/",
       "digitized": "none",
-      "note": "The main documentary file on the affair, assembled by Ginsburg, with correspondence and working papers from 1883–1884; consultable in the Manuscripts Reading Room."
+      "note": "The main documentary file on the affair, assembled by Ginsburg, with correspondence and working papers from 1883–1884; consultable in the Manuscripts Reading Room.",
+      "aliases": [
+        "British Library"
+      ],
+      "holdings": [
+        {
+          "name": "Papers Relative to M. W. Shapira's Forged MS. of Deuteronomy, 1883-1884",
+          "ref": "Add MS 41294",
+          "note": "Ginsburg's file of correspondence, reports and press cuttings on the fragments.",
+          "match": [
+            "British Library Add MS 41294"
+          ]
+        }
+      ]
     },
     {
       "repository": "Staatsbibliothek zu Berlin",
       "collection": "Shapira's handwritten inventory of the Hebrew manuscripts he collected, containing his preliminary transcription of the Deuteronomy text",
       "url": "https://stabikat.de/",
       "digitized": "none",
-      "note": "Where Dershowitz found the transcription pages with Shapira's own corrections; the library also holds Yemenite Hebrew manuscripts bought from Shapira."
+      "note": "Where Dershowitz found the transcription pages with Shapira's own corrections; the library also holds Yemenite Hebrew manuscripts bought from Shapira.",
+      "aliases": [
+        "Berlin State Library",
+        "Staatsbibliothek zu Berlin"
+      ],
+      "holdings": [
+        {
+          "name": "Shapira's handwritten inventory of his Hebrew manuscripts",
+          "note": "Bound volume containing three sheets with Shapira's preliminary transcription of the text, found by Dershowitz.",
+          "match": [
+            "Berlin Shapira inventory"
+          ]
+        }
+      ]
     },
     {
       "repository": "Palestine Exploration Fund, London",
       "collection": "Quarterly Statement for 1883 and the Fund's archive of correspondence with Shapira's contemporaries",
       "url": "https://archive.org/details/palestine-exploration-quarterly_1883-10",
       "digitized": "partial",
-      "note": "The printed Quarterly Statement for October 1883 is online; the unpublished archive is consulted at the PEF in London by appointment."
+      "note": "The printed Quarterly Statement for October 1883 is online; the unpublished archive is consulted at the PEF in London by appointment.",
+      "holdings": [
+        {
+          "name": "Quarterly Statement, October 1883",
+          "url": "https://archive.org/details/palestine-exploration-quarterly_1883-10",
+          "note": "Printed PEF report of 1883 on the fragments, scanned in full."
+        }
+      ]
     },
     {
       "repository": "The Times Digital Archive (Gale)",
@@ -176,7 +209,17 @@
       "collection": "Clermont-Ganneau, Les fraudes archéologiques en Palestine (1885), with drawings of the strips",
       "url": "https://archive.org/details/lesfraudesarcho00gangoog",
       "digitized": "full",
-      "note": "Free scan of the main published account by the French examiner, including his facsimiles."
+      "note": "Free scan of the main published account by the French examiner, including his facsimiles.",
+      "holdings": [
+        {
+          "name": "Clermont-Ganneau, Les fraudes archéologiques en Palestine (1885)",
+          "url": "https://archive.org/details/lesfraudesarcho00gangoog",
+          "note": "Scan of the examiner's account of the strips, with his drawings.",
+          "match": [
+            "Clermont-Ganneau's published drawings"
+          ]
+        }
+      ]
     }
   ],
   "provenance": {

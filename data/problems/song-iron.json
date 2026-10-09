@@ -112,7 +112,17 @@
       "collection": "Song huiyao jigao 宋會要輯稿 manuscript (Xu Song's compilation from the Yongle dadian) and Song–Yuan editions",
       "url": "http://read.nlc.cn/thematDataSearch/toGujiIndex",
       "digitized": "partial",
-      "note": "Holds the manuscript underlying printed editions of the Song huiyao; selected rare books viewable online."
+      "note": "Holds the manuscript underlying printed editions of the Song huiyao; selected rare books viewable online.",
+      "aliases": [
+        "Song huiyao jigao",
+        "Song huiyao"
+      ],
+      "holdings": [
+        {
+          "name": "Song huiyao jigao 宋會要輯稿, manuscript copy from the Yongle dadian compilation",
+          "note": "The manuscript compilation of Song fiscal and administrative documents on which printed editions of the Song huiyao rest; call number not confirmed."
+        }
+      ]
     },
     {
       "repository": "Chinese Text Project",
@@ -133,7 +143,10 @@
       "collection": "Standing Song-period blast furnace and associated slag deposits",
       "url": "https://hmsjournal.org/index.php/home/article/view/259",
       "digitized": "none",
-      "note": "One of the few Song furnaces preserved in situ; fieldwork requires collaboration with Hebei provincial cultural-relics authorities (link is Wagner's description of the site)."
+      "note": "One of the few Song furnaces preserved in situ; fieldwork requires collaboration with Hebei provincial cultural-relics authorities (link is Wagner's description of the site).",
+      "aliases": [
+        "Kuangshancun"
+      ]
     },
     {
       "repository": "Donald B. Wagner, online resources (Copenhagen)",

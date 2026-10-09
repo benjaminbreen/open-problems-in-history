@@ -147,49 +147,114 @@
       "collection": "Geoff Wade, Southeast Asia in the Ming Shi-lu (translated entries browsable by Western and reign date, with a name index)",
       "url": "https://epress.nus.edu.sg/msl/",
       "digitized": "full",
-      "note": "Free English translations with Chinese reign dates for every Southeast Asian entry, including missions from Lamri and Samudera; bulk harvesting requires permission from NUS Press."
+      "note": "Free English translations with Chinese reign dates for every Southeast Asian entry, including missions from Lamri and Samudera; bulk harvesting requires permission from NUS Press.",
+      "aliases": [
+        "Geoff Wade's open-access translations",
+        "Ming Shilu"
+      ],
+      "holdings": [
+        {
+          "name": "Southeast Asia in the Ming Shi-lu (translated entries, browsable by Western date or reign date)",
+          "url": "https://epress.nus.edu.sg/msl/",
+          "note": "English translations of every Southeast Asian entry in the Veritable Records, including the Lamri and Samudera missions, with a name index.",
+          "match": [
+            "Geoff Wade's open-access translations"
+          ]
+        }
+      ]
     },
     {
       "repository": "Academia Sinica, Institute of History and Philology, Taipei",
       "collection": "Scripta Sinica (Hanji dianzi wenxian) full-text Ming Shilu, with the collated edition",
       "url": "https://hanchi.ihp.sinica.edu.tw/ihp/hanji.htm",
       "digitized": "full",
-      "note": "Searchable Chinese text of the Veritable Records for checking entries outside Wade's selection, such as notices of envoys, storms and floods; limited free access, full access by subscription."
+      "note": "Searchable Chinese text of the Veritable Records for checking entries outside Wade's selection, such as notices of envoys, storms and floods; limited free access, full access by subscription.",
+      "aliases": [
+        "the Chinese full text"
+      ]
     },
     {
       "repository": "Chinese Wikisource",
       "collection": "Ma Huan, Yingya shenglan (瀛涯勝覽), including the chapters on Sumendala and Nanboli; Ming Shilu text",
       "url": "https://zh.wikisource.org/wiki/瀛涯勝覽",
       "digitized": "full",
-      "note": "Open transcriptions of the Zheng He-era accounts; editions should be checked against the printed collated texts before citation."
+      "note": "Open transcriptions of the Zheng He-era accounts; editions should be checked against the printed collated texts before citation.",
+      "aliases": [
+        "Ma Huan's chapter on Nanboli"
+      ],
+      "holdings": [
+        {
+          "name": "Ma Huan, Yingya shenglan (瀛涯勝覽)",
+          "url": "https://zh.wikisource.org/wiki/瀛涯勝覽",
+          "note": "Transcription of Ma Huan's account, with the chapters on Sumendala (Samudera) and Nanboli (Lamri) as visited in the 1410s.",
+          "match": [
+            "Ma Huan's chapter on Nanboli"
+          ]
+        }
+      ]
     },
     {
       "repository": "Royal Asiatic Society of Great Britain and Ireland, London",
       "collection": "Raffles Malay 67 (Hikayat Raja Pasai, the principal manuscript) and Raffles Malay 68 (Sejarah Melayu, dated 1808)",
-      "url": "https://royalasiaticsociety.org/category/malay-manuscripts/",
+      "url": "https://royalasiaticcollections.org/",
       "digitized": "partial",
-      "note": "Raffles Malay manuscripts are being added to the Society's digital library; Raffles Malay 68 is online, and the Hikayat Raja Pasai is available in printed editions by Hill (1961) and Jones."
+      "note": "Raffles Malay manuscripts are being added to the Society's online collections; Raffles Malay 68 is online, and the Hikayat Raja Pasai is available in printed editions by Hill (1961) and Jones (1987).",
+      "holdings": [
+        {
+          "name": "Raffles Malay 67, Hikayat Raja Pasai",
+          "ref": "RAS Raffles Malay 67",
+          "note": "The principal manuscript of the Hikayat Raja Pasai, a copy dated 1815 from Raffles' scriptorium, and the basis of Hill's 1961 edition."
+        },
+        {
+          "name": "Raffles Malay 68, Sejarah Melayu",
+          "ref": "RAS Raffles Malay 68",
+          "url": "https://royalasiaticcollections.org/ras-raffles-malay-68-sejarah-melayu/",
+          "note": "Copy of the Sejarah Melayu dated AH 1223 (1808), received with the Raffles collection in 1830."
+        }
+      ]
     },
     {
       "repository": "British Library, London",
       "collection": "Or 14350, Hikayat Raja Handik and Hikayat Raja Pasai (incomplete), copied 1797",
       "url": "https://searcharchives.bl.uk/catalog/032-002480085",
       "digitized": "partial",
-      "note": "An earlier, incomplete witness of the Hikayat Raja Pasai; the catalogue links to images that are currently unavailable."
+      "note": "An earlier, incomplete witness of the Hikayat Raja Pasai; the catalogue links to images that are currently unavailable.",
+      "holdings": [
+        {
+          "name": "Hikayat Raja Handik and Hikayat Raja Pasai (incomplete)",
+          "ref": "Or 14350",
+          "url": "https://searcharchives.bl.uk/catalog/032-002480085",
+          "note": "Copy made in Semarang in 1797 (ff. 45v-83v hold the Hikayat Raja Pasai), lacking the last fifth of the text when compared with Raffles Malay 67."
+        }
+      ]
     },
     {
       "repository": "Leiden University Libraries",
       "collection": "Malay, Acehnese and Arabic manuscripts (Cod. Or.), including chronicles of Aceh and Pasai",
       "url": "https://digitalcollections.universiteitleiden.nl/",
       "digitized": "partial",
-      "note": "The largest European holding of Acehnese manuscripts, with a growing share of digitized items."
+      "note": "The largest European holding of Acehnese manuscripts, with a growing share of digitized items.",
+      "aliases": [
+        "Acehnese chronicles"
+      ],
+      "holdings": [
+        {
+          "name": "Hikayat Aceh",
+          "ref": "Or. 1954",
+          "url": "https://digitalcollections.universiteitleiden.nl/view/item/3218405",
+          "note": "Seventeenth-century Malay chronicle of Aceh centred on Iskandar Muda, fully digitized; edited by Iskandar (1958)."
+        }
+      ]
     },
     {
       "repository": "Open Islamicate Texts Initiative (OpenITI)",
       "collection": "Machine-readable corpus of Arabic geographical, nautical and historical works",
       "url": "https://openiti.org/",
       "digitized": "full",
-      "note": "Allows full-text search of Arabic sources for Lamri, Fansur, Mandara and reports of sea floods in the Indian Ocean."
+      "note": "Allows full-text search of Arabic sources for Lamri, Fansur, Mandara and reports of sea floods in the Indian Ocean.",
+      "aliases": [
+        "OpenITI"
+      ]
     }
   ],
   "provenance": {
