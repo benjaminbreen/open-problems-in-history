@@ -355,3 +355,15 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .cref-card .t { font-style: italic; }
 .cref-card .n { display: block; margin-top: 6px; font-size: 14px; color: var(--ink-2); }
 .cref-card .jump { grid-column: 2; justify-self: start; margin-top: 6px; font: 11.5px var(--mono); color: var(--muted); }
+.works li { scroll-margin: 80px; }
+.works li.flash { animation: cref-flash 2.4s ease-out; }
+@keyframes cref-flash {
+  0%, 25% { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  100% { background: transparent; }
+}
+.cref-back {
+  position: fixed; right: 24px; bottom: 24px; z-index: 40; padding: 8px 12px; cursor: pointer;
+  font: 12px var(--mono); color: var(--ink); background: var(--bg); border: 1px solid var(--ink);
+}
+.cref-back:hover { color: var(--accent); border-color: var(--accent); }
+.cref-back[hidden] { display: none; }

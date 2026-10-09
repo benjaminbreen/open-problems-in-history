@@ -592,6 +592,28 @@ stats();
     cur?.setAttribute("aria-expanded", "false");
     cur = null;
   }
+  // desktop click: scroll to the entry, flash it, and offer a way back to the reading spot
+  const back = document.createElement("button");
+  back.type = "button"; back.className = "cref-back"; back.hidden = true;
+  back.textContent = "↑ Back to text";
+  document.body.append(back);
+  let from = null;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+  function jump(btn) {
+    const li = document.getElementById(`works-${btn.dataset.ref}`);
+    if (!li) return;
+    close();
+    from = btn;
+    li.scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth", block: "center" });
+    li.classList.remove("flash"); void li.offsetWidth; li.classList.add("flash");
+    back.hidden = false;
+  }
+  back.addEventListener("click", () => {
+    from?.scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth", block: "center" });
+    from?.focus({ preventScroll: true });
+    back.hidden = true; from = null;
+  });
+  addEventListener("popstate", () => { back.hidden = true; from = null; });
   const later = () => { clearTimeout(tClose); if (!pinned) tClose = setTimeout(close, 180); };
 
   document.addEventListener("pointerover", (e) => {
@@ -606,7 +628,7 @@ stats();
   });
   document.addEventListener("click", (e) => {
     const btn = e.target.closest(".cref");
-    if (btn) { e.preventDefault(); return cur === btn && pinned ? close() : open(btn, true); }
+    if (btn) { e.preventDefault(); if (hover.matches) return jump(btn); return cur === btn && pinned ? close() : open(btn, true); }
     if (!card.hidden && !card.contains(e.target)) close();
   });
   document.addEventListener("focusin", (e) => {
