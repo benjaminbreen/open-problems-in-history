@@ -200,7 +200,7 @@ export function aboutHTML() {
       <p>It is loosely inspired by the ${ext("https://www.claymath.org/millennium-problems/", "Millennium Prize Problems")}, a list of highly significant and challenging open problems in mathematics. This site, however, is much more oriented toward crowdsourcing: collectively exploring not just how these problems might be answered, but also what historical &ldquo;millennium problems&rdquo; <em>should be in the first place</em>. You can <a href="/suggest">suggest new problems</a> and comment on any of the existing ones.</p>
     </div>
 
-    <section class="donate">
+    <section class="accent-box donate">
       <div>
         <h2>Support this project</h2>
       </div>

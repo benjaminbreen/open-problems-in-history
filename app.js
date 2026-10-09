@@ -547,3 +547,153 @@ stats();
     busy = false;
   });
 })();
+
+// ---------- citation previews ----------
+// .cref buttons (render.js) open a card with the matching "Existing work" entry: hover on
+// desktop after a short delay, click/tap to pin, focus for keyboard; Esc or an outside click closes.
+(() => {
+  const card = document.createElement("div");
+  card.className = "cref-card";
+  card.setAttribute("role", "tooltip");
+  card.hidden = true;
+  document.body.append(card);
+  let cur = null, pinned = false, tOpen = 0, tClose = 0;
+  const hover = matchMedia("(hover: hover) and (pointer: fine)");
+
+  function place(btn) {
+    const r = btn.getClientRects()[0] || btn.getBoundingClientRect();
+    const w = Math.min(420, innerWidth - 32);
+    card.style.width = `${w}px`;
+    const left = Math.max(16, Math.min(r.left, innerWidth - w - 16));
+    const below = r.bottom + 8;
+    const h = card.offsetHeight;
+    const top = below + h > innerHeight - 8 && r.top - h - 8 > 8 ? r.top - h - 8 : below;
+    card.style.left = `${left + scrollX}px`;
+    card.style.top = `${top + scrollY}px`;
+  }
+  function open(btn, pin = false) {
+    clearTimeout(tOpen); clearTimeout(tClose);
+    const src = document.getElementById(`cref-${btn.dataset.ref}`);
+    if (!src) return;
+    if (cur !== btn) {
+      cur?.setAttribute("aria-expanded", "false");
+      card.innerHTML = src.innerHTML;
+      card.querySelector(".jump")?.addEventListener("click", () => close());
+      cur = btn;
+    }
+    pinned = pinned || pin;
+    btn.setAttribute("aria-expanded", "true");
+    card.hidden = false;
+    place(btn);
+  }
+  function close() {
+    clearTimeout(tOpen); clearTimeout(tClose);
+    card.hidden = true; pinned = false;
+    cur?.setAttribute("aria-expanded", "false");
+    cur = null;
+  }
+  const later = () => { clearTimeout(tClose); if (!pinned) tClose = setTimeout(close, 180); };
+
+  document.addEventListener("pointerover", (e) => {
+    if (!hover.matches) return;
+    const btn = e.target.closest?.(".cref");
+    if (btn) { clearTimeout(tClose); clearTimeout(tOpen); tOpen = setTimeout(() => open(btn), cur ? 0 : 220); }
+    else if (card.contains(e.target)) clearTimeout(tClose);
+  });
+  document.addEventListener("pointerout", (e) => {
+    if (!hover.matches) return;
+    if (e.target.closest?.(".cref") || card.contains(e.target)) { clearTimeout(tOpen); later(); }
+  });
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".cref");
+    if (btn) { e.preventDefault(); return cur === btn && pinned ? close() : open(btn, true); }
+    if (!card.hidden && !card.contains(e.target)) close();
+  });
+  document.addEventListener("focusin", (e) => {
+    const btn = e.target.closest?.(".cref");
+    if (btn && btn.matches(":focus-visible")) open(btn);
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !card.hidden) { const b = cur; close(); b?.focus(); }
+  });
+  addEventListener("resize", () => cur && !card.hidden && place(cur));
+  addEventListener("popstate", close);
+})();
+
+// ---------- rolling squares: on hover a red square tumbles face over face along a path; on leave it rolls home ----------
+// Accent boxes: clockwise round the border, looping. Footer: the logo square climbs to the top rule, runs east, then drops to the bottom.
+(() => {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const SPEED = 70, HOME = 3;                   // rolling speed (px/s), return speed multiplier
+  const ease = (f) => (f < .5 ? 4 * f ** 3 : 1 - (-2 * f + 2) ** 3 / 2);
+  const kinds = [
+    { sel: ".accent-box", loop: true, setup: (el) => ({ S: 14, path: () => {
+      const W = el.offsetWidth - 14, H = el.offsetHeight - 14, x = -2, y = -2;
+      return [[x, y], [x + W, y], [x + W, y + H], [x, y + H], [x, y]];
+    } }) },
+    { sel: "footer.foot", loop: false, setup: (el) => {
+      const mark = el.querySelector(".mark"), S = 11;
+      return { S, path: () => {
+        const f = el.getBoundingClientRect(), m = mark.getBoundingClientRect();
+        const bt = el.clientTop, x0 = m.left - f.left, y0 = m.top - f.top - bt + (m.height - S) / 2 + .5, top = -bt / 2 - S / 2;
+        return [[x0, y0], [x0, top], [f.width - S, top], [f.width - S, f.height - bt - S]];
+      } };
+    } },
+  ];
+  const state = new WeakMap();
+
+  function place(b) {
+    const pts = b.path(), segs = [];
+    let P = 0;
+    for (let i = 1; i < pts.length; i++) {
+      const [ax, ay] = pts[i - 1], [bx, by] = pts[i], len = Math.hypot(bx - ax, by - ay);
+      segs.push({ ax, ay, ux: (bx - ax) / len, uy: (by - ay) / len, from: P, len }); P += len;
+    }
+    const steps = b.d / b.S, k = Math.floor(steps), f = ease(steps - k);
+    let t = (k + f) * b.S;
+    t = b.loop ? ((t % P) + P) % P : Math.min(Math.max(t, 0), P);
+    const g = segs.find((s) => t <= s.from + s.len) || segs.at(-1);
+    const lift = (b.S / Math.SQRT2) * Math.sin(Math.PI / 4 + (f * Math.PI) / 2) - b.S / 2; // pivots over its corner, away from the path's left side
+    const x = g.ax + g.ux * (t - g.from) + g.uy * lift, y = g.ay + g.uy * (t - g.from) - g.ux * lift;
+    b.sq.style.transform = `translate(${x}px, ${y}px) rotate(${(k + f) * 90}deg)`;
+    return P;
+  }
+
+  function frame(b, now) {
+    const dt = Math.min(.05, (now - b.last) / 1000); b.last = now;
+    const P = place(b);
+    if (b.hover) {
+      if (!b.loop && b.d >= P) { b.d = P; b.raf = 0; return; }
+      b.d += SPEED * dt;
+    } else {
+      const m = b.loop ? ((b.d % P) + P) % P : Math.min(b.d, P);
+      const dir = b.loop && m > P / 2 ? 1 : -1, step = SPEED * HOME * dt;   // loops head home whichever way is shorter
+      if ((dir > 0 ? P - m : m) <= step) { b.d = 0; place(b); b.raf = 0; return; }
+      b.d = m + dir * step;
+    }
+    b.raf = requestAnimationFrame((t) => frame(b, t));
+  }
+
+  function get(el, kind) {
+    let b = state.get(el);
+    if (!b || !b.sq.isConnected) {
+      const sq = document.createElement("span");
+      sq.className = "roller"; sq.setAttribute("aria-hidden", "true");
+      el.append(sq); el.classList.add("has-roller");
+      state.set(el, (b = { el, sq, d: 0, hover: false, raf: 0, last: 0, loop: kind.loop, ...kind.setup(el) }));
+    }
+    return b;
+  }
+
+  const toggle = (on) => (e) => {
+    for (const kind of kinds) {
+      const el = e.target.closest?.(kind.sel);
+      if (!el || (e.relatedTarget && el.contains(e.relatedTarget))) continue;
+      const b = get(el, kind);
+      b.hover = on;
+      if (!b.raf) { b.last = performance.now(); b.raf = requestAnimationFrame((t) => frame(b, t)); }
+    }
+  };
+  document.addEventListener("mouseover", toggle(true));
+  document.addEventListener("mouseout", toggle(false));
+})();

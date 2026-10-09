@@ -239,11 +239,15 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .prose p { font: 19.5px/1.6 var(--serif); margin: 0 0 16px; }
 .prose a { text-decoration-color: var(--accent); }
 .prose h2 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .08em; margin: 40px 0 14px; padding: 16px 0 0; border: 0; border-top: 1px solid var(--rule); color: var(--ink); }
-.donate {
-  display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap;
-  margin: 30px 0 18px; padding: 22px 24px; border: 2px solid var(--ink); position: relative;
-}
-.donate::before { content: ""; position: absolute; left: -2px; top: -2px; width: 14px; height: 14px; background: var(--accent); }
+/* accent box: a bordered callout with the red square in its corner; on hover the square rolls round the border (app.js) */
+.accent-box { margin: 30px 0 18px; padding: 22px 24px; border: 2px solid var(--ink); position: relative; }
+.accent-box::before, .accent-box > .roller { content: ""; position: absolute; left: -2px; top: -2px; width: 14px; height: 14px; background: var(--accent); pointer-events: none; }
+.accent-box.has-roller::before { content: none; }
+.accent-box > .roller { left: 0; top: 0; }
+.foot { position: relative; }
+.foot > .roller { position: absolute; left: 0; top: 0; width: 11px; height: 11px; background: var(--accent); pointer-events: none; z-index: 1; }
+.foot.has-roller .mark::before { visibility: hidden; }
+.donate { display: flex; align-items: center; justify-content: space-between; gap: 16px 32px; flex-wrap: wrap; }
 .donate h2 { font: 500 25px/1.2 var(--serif); margin: 0; padding: 0; border: 0; text-transform: none; letter-spacing: -.005em; color: var(--ink); }
 .donate-btn {
   display: inline-flex; align-items: center; gap: 10px; padding: 12px 22px; font: 600 14px var(--mono); letter-spacing: .04em; text-transform: uppercase;
@@ -330,3 +334,24 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .cube-m b:nth-child(4) { transform: rotateX(-270deg) translateZ(5.5px); filter: brightness(.82); }
 .cube-m b:nth-child(5) { transform: rotateY(90deg) translateZ(5.5px); filter: brightness(.9); }
 .cube-m b:nth-child(6) { transform: rotateY(-90deg) translateZ(5.5px); filter: brightness(.9); }
+
+/* citation previews: names in the prose linked to "Existing work" */
+.cref {
+  font: inherit; color: inherit; background: none; border: 0; padding: 0; margin: 0; cursor: pointer;
+  text-decoration: underline dotted; text-decoration-thickness: 1px; text-underline-offset: 4px;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+.cref:hover, .cref[aria-expanded=true] { text-decoration-color: var(--accent); }
+.cref-src { display: none; }
+.cref-card {
+  position: absolute; z-index: 50; box-sizing: border-box; padding: 14px 16px 12px;
+  background: var(--bg); color: var(--ink); border: 1px solid var(--ink);
+  box-shadow: 0 6px 24px rgb(0 0 0 / .12);
+  display: grid; grid-template-columns: auto 1fr; gap: 4px 12px;
+  font: 15px/1.45 var(--serif);
+}
+.cref-card[hidden] { display: none; }
+.cref-card .yr { font: 12px/1.9 var(--mono); color: var(--muted); }
+.cref-card .t { font-style: italic; }
+.cref-card .n { display: block; margin-top: 6px; font-size: 14px; color: var(--ink-2); }
+.cref-card .jump { grid-column: 2; justify-self: start; margin-top: 6px; font: 11.5px var(--mono); color: var(--muted); }

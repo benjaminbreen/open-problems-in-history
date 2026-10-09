@@ -4,6 +4,7 @@
 //   p/<id>/index.html    one pre-rendered page per problem (readable without JavaScript)
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
+import crypto from "node:crypto";
 import { esc, rowHTML, detailHTML, aboutHTML } from "../render.js";
 
 const dir = "data/problems";
@@ -23,7 +24,10 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
 }
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
 
-const template = fs.readFileSync("template.html", "utf8");
+// Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
+const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
+const template = fs.readFileSync("template.html", "utf8")
+  .replace('href="/style.css"', `href="/style.css?v=${ver}"`).replace('src="/app.js"', `src="/app.js?v=${ver}"`);
 const page = ({ title, description, head = "", main }) => template
   .replace("{{title}}", esc(title)).replace("{{description}}", esc(description))
   .replace("{{head}}", head).replace("{{main}}", main);
