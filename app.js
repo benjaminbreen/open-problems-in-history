@@ -578,7 +578,6 @@ stats();
     if (cur !== btn) {
       cur?.setAttribute("aria-expanded", "false");
       card.innerHTML = src.innerHTML;
-      card.querySelector(".jump")?.addEventListener("click", () => close());
       cur = btn;
     }
     pinned = pinned || pin;
@@ -599,14 +598,25 @@ stats();
   document.body.append(back);
   let from = null;
   const reduce = matchMedia("(prefers-reduced-motion: reduce)");
-  function jump(btn) {
-    const li = document.getElementById(`works-${btn.dataset.ref}`);
+  // expand or collapse an archive's holdings list
+  function expand(toggle, on = toggle.getAttribute("aria-expanded") !== "true") {
+    toggle.setAttribute("aria-expanded", String(on));
+    toggle.firstChild.textContent = on ? "Collapse " : "Expand ";
+    document.getElementById(toggle.getAttribute("aria-controls"))?.classList.toggle("open", on);
+  }
+  function jump(ref, origin) {
+    const li = document.getElementById(`src-${ref}`);
     if (!li) return;
     close();
-    from = btn;
-    li.scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth", block: "center" });
-    li.classList.remove("flash"); void li.offsetWidth; li.classList.add("flash");
-    back.hidden = false;
+    const slide = li.closest(".slide");
+    if (slide && !slide.classList.contains("open")) expand(slide.previousElementSibling, true);
+    if (origin) from = origin;
+    // wait a frame so a list that is opening has its height before scrolling
+    requestAnimationFrame(() => setTimeout(() => {
+      li.scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth", block: "center" });
+      li.classList.remove("flash"); void li.offsetWidth; li.classList.add("flash");
+    }, slide ? 320 : 0));
+    if (from) back.hidden = false;
   }
   back.addEventListener("click", () => {
     from?.scrollIntoView({ behavior: reduce.matches ? "auto" : "smooth", block: "center" });
@@ -628,7 +638,11 @@ stats();
   });
   document.addEventListener("click", (e) => {
     const btn = e.target.closest(".cref");
-    if (btn) { e.preventDefault(); if (hover.matches) return jump(btn); return cur === btn && pinned ? close() : open(btn, true); }
+    if (btn) { e.preventDefault(); if (hover.matches) return jump(btn.dataset.ref, btn); return cur === btn && pinned ? close() : open(btn, true); }
+    const j = e.target.closest(".cref-card .jump");
+    if (j) { e.preventDefault(); return jump(j.dataset.ref, cur); }
+    const t = e.target.closest(".hold-toggle");
+    if (t) return expand(t);
     if (!card.hidden && !card.contains(e.target)) close();
   });
   document.addEventListener("focusin", (e) => {
@@ -718,4 +732,24 @@ stats();
   };
   document.addEventListener("mouseover", toggle(true));
   document.addEventListener("mouseout", toggle(false));
+})();
+
+// ---------- sticky header: hide on scroll down, show on scroll up; sort headings sit just below it ----------
+(() => {
+  const top = document.querySelector("header.top"), root = document.documentElement;
+  let last = scrollY, away = false;
+  const set = (hide) => {
+    away = hide;
+    top.classList.toggle("away", hide);
+    root.style.setProperty("--head-h", hide ? "0px" : `${top.offsetHeight}px`);
+  };
+  set(false);
+  addEventListener("resize", () => set(away));
+  addEventListener("scroll", () => {
+    const y = scrollY, dy = y - last;
+    if (Math.abs(dy) < 6) return;
+    last = y;
+    if (dy > 0 && y > top.offsetHeight && !away && !top.contains(document.activeElement)) set(true);
+    else if (dy < 0 && away) set(false);
+  }, { passive: true });
 })();

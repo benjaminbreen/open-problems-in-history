@@ -81,53 +81,75 @@ export function rowHTML(ctx, p, i) {
 function cite(e, i) {
   const title = e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
   const venue = e.venue ? `, ${esc(String(e.venue).replace(/^In /, "in "))}` : "";
-  return `<li id="works-${i}"><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
+  return `<li id="src-w${i}"><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
 }
 
-function archive(a) {
-  const dig = { full: "digitized", partial: "partly digitized", none: "not digitized" }[a.digitized] || "";
-  const rep = a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.repository)}</a>` : esc(a.repository);
-  return `<li><span class="rep">${rep}</span>${dig ? `<span class="tag">${dig}</span>` : ""}
-    ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}</li>`;
+function archive(a, i) {
+  const dig = DIG[a.digitized] || "";
+  const hs = a.holdings || [];
+  const list = hs.length ? `<button type="button" class="hold-toggle" aria-expanded="false" aria-controls="hold-${i}">Expand <span>${hs.length} source${hs.length > 1 ? "s" : ""}</span></button>
+    <div class="slide" id="hold-${i}"><div><ul class="holdings">${hs.map((h, j) => `<li id="src-a${i}.${j}">${extLink(h.url, esc(h.name))}${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${esc(h.note)}</span>` : ""}</li>`).join("")}</ul></div></div>` : "";
+  return `<li id="src-a${i}"><span class="rep">${extLink(a.url, esc(a.repository))}</span>${dig ? `<span class="tag">${dig}</span>` : ""}
+    ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}${list}</li>`;
 }
 
 const para = (s, link = (x) => x) => s ? String(s).split(/\n\n+/).map((x) => `<p>${link(esc(x))}</p>`).join("") : "";
 
 // ---------- citation previews ----------
-// Names in the prose that match an "Existing work" entry become a quiet button that opens a
-// preview card (app.js). Keys are the first author's surname, or "A and B" for two authors;
-// a surname shared by several entries links only when followed closely by one entry's year.
+// Names in the prose that match an "Existing work" entry, an archive or one of an archive's
+// holdings become a quiet button that opens a preview card (app.js). Refs: w<i> work, a<i>
+// archive, a<i>.<j> holding; each has a list item id="src-<ref>" and a hidden card id="cref-<ref>".
+// Works match on the first author's surname (or "A and B"); a surname shared by several works
+// links only when followed closely by one entry's year. Archives match on their aliases (default:
+// the name before the first comma or parenthesis); holdings only on their explicit "match" list.
 const surname = (n) => n.replace(/\(eds?\.\)/g, "").trim().split(/\s+/).pop();
-function citeLinker(existing = []) {
-  const keys = new Map(); // escaped name -> [{ i, year }]
+const archiveNames = (a) => a.aliases?.length ? a.aliases : [String(a.repository || "").split(/,|\s\(/)[0].trim()];
+export const ARCHIVE = `<svg class="arc" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.2" y="1.6" width="9.6" height="3" rx=".5" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 4.6v5.2a.6.6 0 0 0 .6.6h6.8a.6.6 0 0 0 .6-.6V4.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M4.6 6.6h2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>`;
+
+function citeLinker(existing = [], archives = []) {
+  const keys = new Map(); // escaped phrase -> [{ ref, year?, kind }]
+  const add = (phrase, hit) => { const k = esc(String(phrase).trim()); if (k.length >= 3) keys.set(k, [...(keys.get(k) || []), hit]); };
   existing.forEach((e, i) => {
     const names = String(e.authors || "").split(/,\s*|\s+and\s+/).map((n) => n.trim()).filter(Boolean);
-    if (!names.length || /\s/.test(surname(names[0])) || surname(names[0]).length < 3) return;
-    const forms = [surname(names[0])];
-    if (names.length === 2) forms.unshift(`${surname(names[0])} and ${surname(names[1])}`);
-    for (const f of forms) { const k = esc(f); keys.set(k, [...(keys.get(k) || []), { i, year: String(e.year) }]); }
+    if (!names.length || /\s/.test(surname(names[0]))) return;
+    if (names.length === 2) add(`${surname(names[0])} and ${surname(names[1])}`, { ref: `w${i}`, year: String(e.year), kind: "w" });
+    add(surname(names[0]), { ref: `w${i}`, year: String(e.year), kind: "w" });
+  });
+  archives.forEach((a, i) => {
+    archiveNames(a).forEach((n) => add(n, { ref: `a${i}`, kind: "a" }));
+    (a.holdings || []).forEach((h, j) => (h.match || []).forEach((n) => add(n, { ref: `a${i}.${j}`, kind: "a" })));
   });
   if (!keys.size) return () => (x) => x;
   const alt = [...keys.keys()].sort((a, b) => b.length - a.length).map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|");
   const re = new RegExp(`(?<![\\p{L}\\p{M}])(${alt})(?![\\p{L}\\p{M}])`, "gu");
-  // one linker per section: each work links on its first mention only
+  // one linker per section: each source links on its first mention only
   return () => {
     const seen = new Set();
     return (html) => html.replace(re, (m, k, off, all) => {
       const hits = keys.get(k);
-      const hit = hits.length === 1 ? hits[0] : hits.find((h) => all.slice(off + m.length, off + m.length + 16).includes(h.year));
-      if (!hit || seen.has(hit.i)) return m;
-      seen.add(hit.i);
-      return `<button type="button" class="cref" data-ref="${hit.i}" aria-describedby="cref-${hit.i}">${m}</button>`;
+      const hit = hits.length === 1 || hits[0].kind === "a" ? hits[0] : hits.find((h) => all.slice(off + m.length, off + m.length + 16).includes(h.year));
+      if (!hit || seen.has(hit.ref)) return m;
+      seen.add(hit.ref);
+      return `<button type="button" class="cref${hit.kind === "a" ? " cref-a" : ""}" data-ref="${hit.ref}" aria-describedby="cref-${hit.ref}">${hit.kind === "a" ? ARCHIVE : ""}${m}</button>`;
     });
   };
 }
 
+const extLink = (url, text) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${text}</a>` : text;
+const DIG = { full: "digitized", partial: "partly digitized", none: "not digitized" };
+
 function citeCard(e, i) {
-  const title = e.url ? `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.title)}</a>` : esc(e.title);
   const venue = e.venue ? `, ${esc(String(e.venue).replace(/^In /, "in "))}` : "";
-  return `<div class="cref-src" id="cref-${i}" hidden><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div><a class="jump" href="#works-${i}">In existing work ↓</a></div>`;
+  return `<div class="cref-src" id="cref-w${i}" hidden><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${extLink(e.url, esc(e.title))}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div><a class="jump" href="#src-w${i}" data-ref="w${i}">In existing work ↓</a></div>`;
 }
+
+function archiveCards(a, i) {
+  const n = a.holdings?.length || 0;
+  const head = `<span class="yr">${ARCHIVE}</span>`;
+  const card = `<div class="cref-src" id="cref-a${i}" hidden>${head}<div><span class="rep">${extLink(a.url, esc(a.repository))}</span>${DIG[a.digitized] ? ` <span class="dig">${DIG[a.digitized]}</span>` : ""}${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}</div><a class="jump" href="#src-a${i}" data-ref="a${i}">${n ? `${n} source${n > 1 ? "s" : ""} in archives ↓` : "In archives ↓"}</a></div>`;
+  return card + (a.holdings || []).map((h, j) => `<div class="cref-src" id="cref-a${i}.${j}" hidden>${head}<div><span class="in">${esc(a.repository)}</span><span class="rep">${extLink(h.url, esc(h.name))}</span>${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${esc(h.note)}</span>` : ""}</div><a class="jump" href="#src-a${i}.${j}" data-ref="a${i}.${j}">In archives ↓</a></div>`).join("");
+}
+
 const sec = (h, body, id = "") => body ? `<section${id ? ` id="${id}"` : ""}><h2>${h}</h2><div class="sbody">${body}</div></section>` : "";
 
 export function contributeForm(kind, pid, placeholder) {
@@ -155,7 +177,7 @@ export function detailHTML(ctx, p) {
   const s = p.suggested;
   const pv = p.provenance || {};
   const approach = Array.isArray(p.approach) ? p.approach : p.approach ? [p.approach] : [];
-  const linker = citeLinker(s ? [] : p.existing);
+  const linker = s ? () => (x) => x : citeLinker(p.existing, p.archives);
   const lpara = (x) => para(x, linker());
   return `
     <div class="backrow"><a class="back" href="/">← All problems</a><span class="pn" id="pn"></span></div>
@@ -180,7 +202,7 @@ export function detailHTML(ctx, p) {
       <button type="button" class="linkbtn idea-toggle" data-idea="${esc(p.id)}" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}
     ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}` : "")}
-    ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
+    ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
     </div>
     </article>`;

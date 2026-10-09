@@ -138,14 +138,103 @@
       "collection": "Contaduría (tribute accounts), Justicia, Audiencias de México, Lima and Charcas (visitas, tasaciones), Patronato; relaciones geográficas held in Indiferente General",
       "url": "https://pares.cultura.gob.es/inicio.html",
       "digitized": "partial",
-      "note": "The core source for early tribute assessments and visitas; many legajos are imaged on PARES but item-level description and transcription are thin."
+      "note": "The core source for early tribute assessments and visitas; many legajos are imaged on PARES but item-level description and transcription are thin.",
+      "aliases": [
+        "Archivo General de Indias",
+        "AGI"
+      ],
+      "holdings": [
+        {
+          "name": "Audiencia de México",
+          "ref": "ES.41091.AGI//MEXICO",
+          "note": "Correspondence of the viceroys and audiencia with the Council of the Indies, including tribute assessments and reports on Indigenous population."
+        },
+        {
+          "name": "Audiencia de Lima",
+          "ref": "ES.41091.AGI//LIMA",
+          "note": "Peruvian government papers, including visitas and tribute reassessments (retasas) sent to Spain."
+        },
+        {
+          "name": "Audiencia de Charcas",
+          "ref": "ES.41091.AGI//CHARCAS",
+          "note": "Upper Peru (Bolivia): visitas, mita and tribute records forwarded from the Audiencia of La Plata."
+        },
+        {
+          "name": "Contaduría",
+          "ref": "ES.41091.AGI//CONTADURIA",
+          "note": "Royal treasury accounts from the Indies, including tribute receipts by province."
+        },
+        {
+          "name": "Justicia",
+          "ref": "ES.41091.AGI//JUSTICIA",
+          "note": "Sixteenth-century lawsuits and residencias, often containing early tribute and population testimony."
+        },
+        {
+          "name": "Patronato",
+          "ref": "ES.41091.AGI//PATRONATO",
+          "note": "Early conquest-era documents, including some of the first counts of tributaries."
+        },
+        {
+          "name": "Indiferente General",
+          "ref": "ES.41091.AGI//INDIFERENTE",
+          "note": "Holds many of the relaciones geográficas answering the 1577 questionnaire."
+        }
+      ]
     },
     {
       "repository": "Archivo General de la Nación, Mexico City",
       "collection": "Ramos Tributos, Indios, Padrones, Tierras and Hospital de Jesús",
       "url": "https://www.gob.mx/agn",
       "digitized": "partial",
-      "note": "Sixteenth- and seventeenth-century tribute counts and padrones for New Spain, indexed mainly by printed AGN catalogues; digitization is incomplete."
+      "note": "Sixteenth- and seventeenth-century tribute counts and padrones for New Spain, indexed mainly by printed AGN catalogues; digitization is incomplete.",
+      "aliases": [
+        "Archivo General de la Nación (Mexico)",
+        "Archivo General de la Nación"
+      ]
+    },
+    {
+      "repository": "Archivo General de la Nación del Perú, Lima",
+      "aliases": [
+        "Archivo General de la Nación del Perú",
+        "Lima"
+      ],
+      "collection": "Derecho Indígena y Encomiendas; colonial visitas and tribute records",
+      "url": "https://www.gob.pe/agn",
+      "digitized": "partial",
+      "note": "Holds Peruvian visitas and litigation over tribute and land; finding aids are mainly older card and spreadsheet catalogues consulted on site.",
+      "holdings": [
+        {
+          "name": "Derecho Indígena y Encomiendas",
+          "note": "Colonial cases and records on Indigenous communities and encomiendas; a catalogue of the series was prepared in 2022."
+        }
+      ]
+    },
+    {
+      "repository": "Archivo y Biblioteca Nacionales de Bolivia, Sucre",
+      "aliases": [
+        "Archivo y Biblioteca Nacionales de Bolivia",
+        "ABNB",
+        "Sucre"
+      ],
+      "collection": "Revisitas; Expedientes Coloniales of the Audiencia of La Plata (Charcas)",
+      "url": "https://www.archivoybibliotecanacionales.org.bo/",
+      "digitized": "partial",
+      "note": "The archive of the Audiencia of Charcas; its revisita padrones are the main serial source for Andean tributary populations from the late sixteenth century onward.",
+      "holdings": [
+        {
+          "name": "Revisitas",
+          "ref": "ABNB, Revisitas",
+          "note": "Padrones of tributaries from periodic recounts of Indigenous towns in Upper Peru, cited by volume number.",
+          "match": [
+            "revisitas"
+          ]
+        },
+        {
+          "name": "Expedientes Coloniales",
+          "ref": "ABNB, EC",
+          "note": "Case files of the Audiencia of La Plata, including disputes over tribute assessments and visitas."
+        }
+      ]
     },
     {
       "repository": "Benson Latin American Collection, University of Texas at Austin",

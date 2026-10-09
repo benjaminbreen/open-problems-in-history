@@ -355,8 +355,8 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .cref-card .t { font-style: italic; }
 .cref-card .n { display: block; margin-top: 6px; font-size: 14px; color: var(--ink-2); }
 .cref-card .jump { grid-column: 2; justify-self: start; margin-top: 6px; font: 11.5px var(--mono); color: var(--muted); }
-.works li { scroll-margin: 80px; }
-.works li.flash { animation: cref-flash 2.4s ease-out; }
+.works li, .archives li { scroll-margin: 80px; }
+.works li.flash, .archives li.flash { animation: cref-flash 2.4s ease-out; }
 @keyframes cref-flash {
   0%, 25% { background: color-mix(in srgb, var(--accent) 14%, transparent); }
   100% { background: transparent; }
@@ -367,3 +367,31 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 }
 .cref-back:hover { color: var(--accent); border-color: var(--accent); }
 .cref-back[hidden] { display: none; }
+
+/* archive mentions: red drawer glyph before the name */
+.cref .arc, .cref-card .arc { width: .72em; height: .72em; color: var(--accent); margin-right: .22em; vertical-align: -.02em; }
+.cref-card .yr .arc { width: 13px; height: 13px; margin: 3px 0 0; }
+.cref-card .rep { font-weight: 600; }
+.cref-card .dig { font: 10px var(--mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin-left: 4px; }
+.cref-card .col { display: block; }
+.cref-card .in { display: block; font: 11px/1.5 var(--mono); color: var(--muted); margin-bottom: 2px; }
+.cref-card .ref, .holdings .ref { display: block; font: 11.5px/1.5 var(--mono); color: var(--muted); }
+
+/* archive holdings: expandable list of specific fonds, series and items */
+.hold-toggle {
+  display: inline-block; margin-top: 6px; padding: 0; background: none; border: 0; cursor: pointer;
+  font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .06em; color: var(--accent);
+}
+.hold-toggle span { font-weight: 400; color: var(--muted); text-transform: none; letter-spacing: 0; margin-left: 4px; }
+.hold-toggle::after { content: "+"; display: inline-block; margin-left: 6px; transition: transform .2s ease; }
+.hold-toggle[aria-expanded=true]::after { transform: rotate(45deg); }
+.hold-toggle:hover { text-decoration: underline; text-underline-offset: 3px; }
+ul.holdings { list-style: none; margin: 4px 0 0; padding: 0 0 0 14px; border-left: 2px solid var(--accent); }
+ul.holdings li { padding: 4px 8px 8px; font: 15px/1.45 var(--serif); }
+ul.holdings li:last-child { padding-bottom: 4px; }
+
+/* sticky header: hides while scrolling down, returns on scroll up (app.js); the list's sort headings stick beneath it */
+.top { position: sticky; top: 0; z-index: 20; background: var(--bg); box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); transition: transform .3s cubic-bezier(.3,0,.2,1); }
+.top.away { transform: translateY(-100%); }
+.thead { position: sticky; top: var(--head-h, 0px); z-index: 10; background: var(--bg); transition: top .3s cubic-bezier(.3,0,.2,1); }
+@media (prefers-reduced-motion: reduce) { .top, .thead { transition: none; } }
