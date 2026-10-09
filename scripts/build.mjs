@@ -25,7 +25,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
-const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
+const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
 const template = fs.readFileSync("template.html", "utf8")
   .replace('href="/style.css"', `href="/style.css?v=${ver}"`).replace('src="/app.js"', `src="/app.js?v=${ver}"`);
 const page = ({ title, description, head = "", main }) => template

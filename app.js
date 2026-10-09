@@ -43,6 +43,10 @@ async function api(path, opts = {}) {
   return r.json();
 }
 
+// The build stamps app.js with a content hash that covers the data too; pass it on so a
+// cached problems.json from before a deploy is never used with newer page code.
+const DATA_V = (() => { const v = new URL(import.meta.url).searchParams.get("v"); return v ? `?v=${v}` : ""; })();
+
 function all() {
   const sugg = state.suggestions.map((s) => ({ id: s.id, title: s.title, short: s.details?.split("\n")[0] || "", suggested: s, flags: [], region: "", field: "", start: null }));
   return problems.concat(sugg);
@@ -420,7 +424,47 @@ async function thanks() {
 function renderFor(slug) {
   document.title = `${slug ? NEED[slug]?.title || "Not found" : "Who can help"} · Open Problems in History`;
   app.innerHTML = slug ? forHTML(slug, all()) : forIndexHTML(all());
+  character();
 }
+
+// ---------- speciality characters: walk in from the right, idle, cheer on "Get in touch" ----------
+const SEQ = { idle: [0, 1, 0, 1, 0, 1, 2, 3], walk: [4, 5, 6, 7, 8, 9], win: [10, 11, 12, 11, 12, 11, 12, 11] };
+const PACE = { idle: 960, walk: 210, win: 150 };
+let stopCharacter = () => {}, cheer = () => {};
+function character() {
+  stopCharacter();
+  const el = app.querySelector(".sprite");
+  if (!el) return;
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let mode = "idle", i = 0, timer = 0, entered = false, alive = true;
+  const tick = () => {
+    if (!alive) return;
+    const seq = SEQ[mode];
+    el.style.setProperty("--f", seq[i % seq.length]);
+    if (++i >= seq.length && mode === "win") { mode = "idle"; i = 0; }
+    if (!calm || mode !== "idle") timer = setTimeout(tick, PACE[mode]);
+  };
+  const play = (m) => { mode = m; i = 0; clearTimeout(timer); tick(); };
+  const enter = () => {
+    if (entered) return;
+    entered = true;
+    el.classList.add("on");
+    if (calm) return play("idle");
+    const dx = window.innerWidth - el.getBoundingClientRect().left + 8;
+    el.classList.add("flip");
+    play("walk");
+    const walk = el.animate([{ translate: `${dx}px 0` }, { translate: "0 0" }],
+      { duration: Math.min(6800, Math.max(3000, dx * 8)), easing: "linear", fill: "backwards" });
+    walk.onfinish = () => { el.classList.remove("flip"); play("idle"); };
+  };
+  const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); setTimeout(() => alive && enter(), 350); } }, { threshold: .5 });
+  const sheet = new Image();
+  sheet.onload = () => { if (!alive) return; el.style.backgroundImage = `url("${sheet.src}")`; io.observe(el); };
+  sheet.src = `/img/sprites/${el.dataset.sprite}.png${DATA_V}`;
+  cheer = () => { if (entered && mode !== "walk") play("win"); };
+  stopCharacter = () => { alive = false; clearTimeout(timer); io.disconnect(); cheer = () => {}; };
+}
+document.addEventListener("click", (e) => { if (e.target.closest?.("[data-cheer], .sprite")) cheer(); });
 
 function renderMethods() {
   document.title = "Methods · Open Problems in History";
@@ -513,6 +557,7 @@ function stats() {
 
 // ---------- router ----------
 function route() {
+  stopCharacter();
   const path = location.pathname.replace(/\/+$/, "") || "/";
   document.title = "Open Problems in History";
   const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.split("/")[1];
@@ -556,7 +601,7 @@ document.querySelector(".mode").addEventListener("click", () => {
 if (location.hash.startsWith("#/")) history.replaceState(null, "", location.hash.slice(1));
 
 const [p, s, mine] = await Promise.all([
-  fetch("/data/problems.json").then((r) => r.json()),
+  fetch(`/data/problems.json${DATA_V}`).then((r) => r.json()),
   api("/api/state").catch(() => state),
   api("/api/mine").catch(() => ({})),
 ]);

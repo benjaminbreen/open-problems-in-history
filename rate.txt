@@ -28,83 +28,83 @@ Ratings are reviewed before they count. Historians' and AI models' ratings are c
 
 ## Problems (random order)
 
-- plague-disappearance: Why did plague disappear from western Europe after the early eighteenth century?
-  After nearly four centuries of recurring epidemics, plague retreated from western and central Europe between the 1660s and the 1720s while persisting in the Ottoman Mediterranean, and no explanation commands agreement.
-- galen-arabic: Which lost works of Galen survive unrecognised in Arabic and Syriac?
-  Many Galenic works lost in Greek were translated into Syriac and Arabic in ninth-century Baghdad; some may survive in unedited manuscripts or in quotations not yet traced to their source.
-- americas-1492: How many people lived in the Americas in 1492?
-  Estimates of the hemisphere's population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.
-- vermeer: Did Vermeer use a camera obscura or other optical aids?
-  Optical effects, perspective geometry and technical imaging have been read for and against Vermeer's use of a camera obscura, with no documentary evidence either way.
-- meroitic: Can the Meroitic language be translated beyond its funerary formulae?
-  Meroitic script has been readable since Griffith's work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.
-- punt: Where was the land of Punt?
-  Egypt traded by sea with Punt for over a thousand years, for incense, ebony, gold and baboons, but whether it lay in Africa, Arabia or both remains disputed.
-- lost-editions: How many early printed editions have been lost without trace?
-  Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.
-- yamatai: Where was Yamatai, the realm of Queen Himiko?
-  A third-century Chinese account describes the Wa polity ruled by Himiko, but its itinerary cannot be followed literally and the Kyushu and Nara candidates have been argued since the Edo period.
-- wilkinson-ciphers: What do James Wilkinson's unread coded dispatches to Spanish officials say?
-  Letters between the US Army's senior general and Spanish Louisiana, written in a code keyed to an unidentified printed dictionary, remain partly or wholly unread.
-- ptolemy: Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's?
-  Ptolemy's catalogue of about 1,025 stars claims his own observations; statistical anomalies suggest much of it derives from Hipparchus three centuries earlier.
-- justinianic-plague: How many people did the Justinianic Plague kill, and did it change late antique society?
-  Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.
-- rongorongo: Was rongorongo an independent invention of writing?
-  The undeciphered glyphs carved on about two dozen wooden objects from Rapa Nui may be a pre-contact invention of writing or a nineteenth-century response to European literacy.
 - indian-ocean-slave-trade: How many people were carried in the Indian Ocean slave trades, 1500–1850?
   European slave trading in the Indian Ocean has been tentatively counted, but the combined volume of Dutch, Portuguese, French, British, Arab, Swahili and South Asian trades remains unknown.
-- mendel: Were Mendel's pea-hybrid data too close to expectation, and if so, why?
-  Fisher showed in 1936 that Mendel's ratios fit theory improbably well; a century of explanations has not produced documentary evidence of how the counts were made.
-- irish-1641: How many people were killed in the Irish rising of 1641?
-  Contemporary claims of 154,000 to 300,000 Protestant victims are rejected, but the modern figure of roughly 4,000 killed has never been built from a full victim-level count.
-- linear-a: What language does Linear A record, and can any proposed family beat chance?
-  Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.
-- ottoman-tahrir: Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?
-  Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.
-- khipu: Do khipus record more than numbers, and can their non-numerical signs be read?
-  Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.
+- gutenberg-type: How did Gutenberg cast his type?
+  Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.
+- gunpowder: By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century?
+  Gunpowder formulas appear in China by 1044 and in Arabic and Latin texts by the later 1200s, but the path between them is unattested.
+- unattributed-eruptions: Which volcanoes caused the great unattributed sulfate spikes in polar ice, above all 1809?
+  Several of the largest volcanic sulfate deposits of the last millennium, in 1230, 1286, 1458, 1695 and 1809, have no securely identified source volcano.
+- black-death-africa: Did the Black Death reach sub-Saharan Africa in the fourteenth century?
+  Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.
+- beowulf: When was Beowulf composed?
+  Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.
 - indus: Does the Indus script encode language, or a non-linguistic sign system?
   Whether the short Harappan inscriptions record speech at all has been argued with entropy statistics for two decades; no test yet separates writing from emblem systems decisively.
 - zhou-conquest: In what year did the Zhou conquer the Shang?
   More than forty proposed dates for King Wu's victory over the last Shang king span over a century, and the official choice of 1046 BCE remains disputed.
-- agade: Where was Agade, the capital of the Sargonic empire?
-  The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.
-- unattributed-eruptions: Which volcanoes caused the great unattributed sulfate spikes in polar ice, above all 1809?
-  Several of the largest volcanic sulfate deposits of the last millennium, in 1230, 1286, 1458, 1695 and 1809, have no securely identified source volcano.
-- beowulf: When was Beowulf composed?
-  Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.
-- china-1600: How many people lived in China around 1600, and how many died between 1620 and 1680?
-  Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.
-- indigenous-slavery: How many Indigenous people were enslaved in the Americas between 1492 and 1900?
-  The best current estimate, 2.5 to 5 million enslaved Indigenous people, is the only hemispheric figure, and it rests on regional extrapolation rather than a count.
-- qing-literacy: How literate was the population of late imperial China?
-  Rawski's 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.
-- shapira-scrolls: Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery?
-  Leather strips offered to Berlin and the British Museum in 1883 were dismissed as forgeries and then lost; since 2021 scholars have again argued they preserved a pre-biblical text.
-- copernicus-maragha: How, if at all, did Copernicus learn of the Maragha-school planetary models?
-  Copernicus used devices found earlier in al-Ṭūsī and Ibn al-Shāṭir, but no document shows how a text containing them reached him or his teachers.
-- black-death-africa: Did the Black Death reach sub-Saharan Africa in the fourteenth century?
-  Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.
-- proto-elamite: Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?
-  Iran's earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.
-- song-iron: How much iron did Song China produce in the eleventh century?
-  Robert Hartwell's estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.
-- gutenberg-type: How did Gutenberg cast his type?
-  Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.
-- silver-china: How much American silver reached China between 1550 and 1800?
-  Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.
-- cocoliztli: What caused the cocoliztli epidemics of 1545 and 1576 in New Spain?
-  Two epidemics that Nahua and Spanish observers called cocoliztli killed a large share of central Mexico's Indigenous population, and their cause, whether a native haemorrhagic fever, enteric fever or something else, is disputed.
-- gunpowder: By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century?
-  Gunpowder formulas appear in China by 1044 and in Arabic and Latin texts by the later 1200s, but the path between them is unattested.
-- roman-census: How large was the Roman citizen population in the late Republic and under Augustus?
-  Roman census totals jump from about 910,000 in 70/69 BCE to 4,063,000 in 28 BCE; whether this reflects a change in who was counted or real growth remains disputed.
+- americas-1492: How many people lived in the Americas in 1492?
+  Estimates of the hemisphere's population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.
+- meroitic: Can the Meroitic language be translated beyond its funerary formulae?
+  Meroitic script has been readable since Griffith's work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.
 - indian-ocean-tsunamis: Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450?
   Geology and archaeology show two great tsunamis struck northern Sumatra around 1394 and 1450, but no contemporary text describing either has been identified.
+- proto-elamite: Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?
+  Iran's earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.
 - mesopotamian-chronology: What is the absolute chronology of early second-millennium BCE Mesopotamia?
   Competing High, Middle, Low and Ultra-Low chronologies place Hammurabi and the fall of Babylon up to about 150 years apart; no single model integrates all the evidence.
-- kerala-jesuits: Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries?
-  Madhava's school derived power series for π, sine and cosine before 1500; whether Jesuits in Kerala carried them to Europe remains undocumented.
+- mendel: Were Mendel's pea-hybrid data too close to expectation, and if so, why?
+  Fisher showed in 1936 that Mendel's ratios fit theory improbably well; a century of explanations has not produced documentary evidence of how the counts were made.
+- ottoman-tahrir: Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?
+  Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.
+- silver-china: How much American silver reached China between 1550 and 1800?
+  Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.
+- agade: Where was Agade, the capital of the Sargonic empire?
+  The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.
+- wilkinson-ciphers: What do James Wilkinson's unread coded dispatches to Spanish officials say?
+  Letters between the US Army's senior general and Spanish Louisiana, written in a code keyed to an unidentified printed dictionary, remain partly or wholly unread.
+- copernicus-maragha: How, if at all, did Copernicus learn of the Maragha-school planetary models?
+  Copernicus used devices found earlier in al-Ṭūsī and Ibn al-Shāṭir, but no document shows how a text containing them reached him or his teachers.
+- yamatai: Where was Yamatai, the realm of Queen Himiko?
+  A third-century Chinese account describes the Wa polity ruled by Himiko, but its itinerary cannot be followed literally and the Kyushu and Nara candidates have been argued since the Edo period.
+- lost-editions: How many early printed editions have been lost without trace?
+  Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.
+- punt: Where was the land of Punt?
+  Egypt traded by sea with Punt for over a thousand years, for incense, ebony, gold and baboons, but whether it lay in Africa, Arabia or both remains disputed.
+- ptolemy: Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's?
+  Ptolemy's catalogue of about 1,025 stars claims his own observations; statistical anomalies suggest much of it derives from Hipparchus three centuries earlier.
 - quran-standardization: When was the consonantal text of the Qurʾān standardized?
   Islamic tradition credits the caliph ʿUthmān (c. 650); some scholars place closure under ʿAbd al-Malik and al-Ḥajjāj (c. 700) or later. Manuscript evidence is now testing these positions.
+- qing-literacy: How literate was the population of late imperial China?
+  Rawski's 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.
+- cocoliztli: What caused the cocoliztli epidemics of 1545 and 1576 in New Spain?
+  Two epidemics that Nahua and Spanish observers called cocoliztli killed a large share of central Mexico's Indigenous population, and their cause, whether a native haemorrhagic fever, enteric fever or something else, is disputed.
+- vermeer: Did Vermeer use a camera obscura or other optical aids?
+  Optical effects, perspective geometry and technical imaging have been read for and against Vermeer's use of a camera obscura, with no documentary evidence either way.
+- khipu: Do khipus record more than numbers, and can their non-numerical signs be read?
+  Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.
+- rongorongo: Was rongorongo an independent invention of writing?
+  The undeciphered glyphs carved on about two dozen wooden objects from Rapa Nui may be a pre-contact invention of writing or a nineteenth-century response to European literacy.
+- justinianic-plague: How many people did the Justinianic Plague kill, and did it change late antique society?
+  Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.
+- irish-1641: How many people were killed in the Irish rising of 1641?
+  Contemporary claims of 154,000 to 300,000 Protestant victims are rejected, but the modern figure of roughly 4,000 killed has never been built from a full victim-level count.
+- song-iron: How much iron did Song China produce in the eleventh century?
+  Robert Hartwell's estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.
+- roman-census: How large was the Roman citizen population in the late Republic and under Augustus?
+  Roman census totals jump from about 910,000 in 70/69 BCE to 4,063,000 in 28 BCE; whether this reflects a change in who was counted or real growth remains disputed.
+- plague-disappearance: Why did plague disappear from western Europe after the early eighteenth century?
+  After nearly four centuries of recurring epidemics, plague retreated from western and central Europe between the 1660s and the 1720s while persisting in the Ottoman Mediterranean, and no explanation commands agreement.
+- kerala-jesuits: Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries?
+  Madhava's school derived power series for π, sine and cosine before 1500; whether Jesuits in Kerala carried them to Europe remains undocumented.
+- shapira-scrolls: Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery?
+  Leather strips offered to Berlin and the British Museum in 1883 were dismissed as forgeries and then lost; since 2021 scholars have again argued they preserved a pre-biblical text.
+- china-1600: How many people lived in China around 1600, and how many died between 1620 and 1680?
+  Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.
+- linear-a: What language does Linear A record, and can any proposed family beat chance?
+  Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.
+- indigenous-slavery: How many Indigenous people were enslaved in the Americas between 1492 and 1900?
+  The best current estimate, 2.5 to 5 million enslaved Indigenous people, is the only hemispheric figure, and it rests on regional extrapolation rather than a count.
+- galen-arabic: Which lost works of Galen survive unrecognised in Arabic and Syriac?
+  Many Galenic works lost in Greek were translated into Syriac and Arabic in ninth-century Baghdad; some may survive in unedited manuscripts or in quotations not yet traced to their source.

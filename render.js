@@ -81,8 +81,8 @@ export const NEEDS = [
     "short": "philologists",
     "label": "philologists and epigraphers",
     "title": "Philologists and epigraphers",
-    "covers": "specialist languages and scripts: Arabic, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and others",
-    "pitch": "Much of the evidence lies in texts that few people can read: Arabic, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and other languages and scripts. Philologists and epigraphers are needed to read, edit and check these sources, including whatever AI tools extract from them."
+    "covers": "historical languages, scripts and manuscripts: medieval Arabic and Persian, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and others",
+    "pitch": "Much of the evidence lies in manuscripts, inscriptions and early printed texts whose languages, scripts and conventions take specialist training to read: medieval Arabic and Persian manuscripts, Classical Chinese, Sanskrit, Ge'ez, cuneiform, Meroitic and more. Philologists and epigraphers are needed to read, edit and check these sources, including whatever AI tools extract from them."
   },
   {
     "slug": "cryptographers",
@@ -302,35 +302,56 @@ export function needCounts(problems) {
   return c;
 }
 
+// Pixel-art characters for the speciality pages: img/sprites/<key>.png, 13 frames of 32x48
+// (idle 0-3, walk 4-9 facing right, victory 10-12). app.js animates them.
+export const SPRITES = new Set(["historians", "archivists", "astronomers", "statisticians", "conservation-scientists", "archaeologists", "geneticists", "epidemiologists", "computational-linguists", "philologists", "cryptographers", "demographers", "geoscientists", "gis", "economists"]);
+const stage = (key, name) => SPRITES.has(key)
+  ? `<aside class="stage" aria-hidden="true"><button class="sprite" type="button" tabindex="-1" data-sprite="${key}" title="${esc(name)}"></button></aside>`
+  : "";
+const MAIL = "mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History";
+
 export function forIndexHTML(problems) {
   const c = needCounts(problems);
   return `
+  <div class="for-wrap">
   <article class="about for">
     <h1 class="page-title">Who can help</h1>
     <div class="prose">
       <p>Most of these problems cannot be solved by historians alone. Each one lists the specialities whose methods or knowledge could move it forward. If you work in one of these fields, start with its page: it lists the problems where your expertise is needed and what, specifically, you could do.</p>
     </div>
     <ul class="for-list">${NEEDS.map((n) => `<li><a href="/for/${n.slug}">${esc(n.title)}</a><span>${esc(n.covers)}</span><b>${c[n.slug] ? `${c[n.slug]} ${c[n.slug] === 1 ? "problem" : "problems"}` : "none yet"}</b></li>`).join("")}</ul>
-  </article>`;
+  </article>
+  ${stage("historians", "A historian")}
+  </div>`;
 }
 
 export function forHTML(slug, problems) {
   const n = NEED[slug];
   if (!n) return `<p class="empty">No such speciality. <a href="/for">See all specialities</a>.</p>`;
   const rows = problems.flatMap((p) => needsOf(p).filter((x) => x.who === slug).map((x) => ({ p, ask: x.ask })));
+  const i = NEEDS.indexOf(n);
+  const prev = NEEDS[(i + NEEDS.length - 1) % NEEDS.length], next = NEEDS[(i + 1) % NEEDS.length];
+  const others = (p) => needsOf(p).filter((x) => x.who !== slug).map((x) => `<a href="/for/${x.who}">${esc(NEED[x.who].short)}</a>`);
   return `
   <div class="backrow"><a class="back" href="/for">← Who can help</a></div>
+  <div class="for-wrap">
   <article class="about for">
     <h1 class="page-title">${esc(n.title)}</h1>
     <p class="for-covers">${esc(n.covers)}</p>
     <div class="prose"><p>${esc(n.pitch)}</p></div>
-    ${rows.length ? `<ol class="for-problems">${rows.map(({ p, ask }) => `<li><a class="t" href="/p/${p.id}">${esc(p.title)}</a><p>${esc(ask)}</p><span class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</span></li>`).join("")}</ol>`
+    ${rows.length ? `<p class="for-count"><b>${rows.length}</b> ${rows.length === 1 ? "problem needs" : "problems need"} ${esc(n.label)}</p>
+    <ol class="for-problems">${rows.map(({ p, ask }, k) => `<li><span class="k">${String(k + 1).padStart(2, "0")}</span><div><a class="t" href="/p/${p.id}">${esc(p.title)}</a><p>${esc(ask)}</p><span class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}${others(p).length ? `<span class="also">also needs ${andList(others(p))}</span>` : ""}</span></div></li>`).join("")}</ol>`
       : `<p class="note">No problems on the list need this speciality yet. If you know of one that does, <a href="/suggest">suggest it</a>.</p>`}
-    <div class="prose">
-      <p>To contribute, propose an approach or leave a comment on any problem page, or <a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">get in touch</a>.</p>
-      <p class="prov">Drafted by ${agent("Claude Opus 5.5", "Drafted this page; reviewed by Benjamin Breen.")}</p>
-    </div>
-  </article>`;
+    <section class="for-cta">
+      <h2>Can you help?</h2>
+      <p>Propose an approach or leave a comment on any problem above, or write to say what you could contribute.</p>
+      <div class="for-cta-row"><a class="btn" data-cheer href="${MAIL}">Get in touch</a><a class="btn ghost" href="/suggest">Suggest a problem</a></div>
+    </section>
+    <nav class="for-pn"><a href="/for/${prev.slug}">← ${esc(prev.title)}</a><a href="/for/${next.slug}">${esc(next.title)} →</a></nav>
+    <p class="prov">Drafted by ${agent("Claude Opus 5.5", "Drafted this page; reviewed by Benjamin Breen.")}</p>
+  </article>
+  ${stage(slug, n.title)}
+  </div>`;
 }
 
 export function detailHTML(ctx, p) {
