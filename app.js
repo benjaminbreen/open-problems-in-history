@@ -1,4 +1,4 @@
-import { esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -10,6 +10,20 @@ let problems = [];
 let state = { tally: {}, counts: {}, mine: {}, suggestions: [], impact: {} };
 const imp = (id) => state.impact?.[id]?.score ?? -99;
 const view = { q: "", sort: store.get("op.sort2", "impact"), show: "all" };
+
+// The list's filter and search live in the URL (/?tag=decipherment&q=plague) so a filtered view can be linked.
+function readURL() {
+  const s = new URLSearchParams(location.search);
+  view.show = FLAGS[s.get("tag")] ? s.get("tag") : "all";
+  view.q = s.get("q") || "";
+}
+function writeURL() {
+  const s = new URLSearchParams();
+  if (view.show !== "all") s.set("tag", view.show);
+  if (view.q.trim()) s.set("q", view.q.trim());
+  const url = "/" + (s.size ? `?${s}` : "");
+  if (url !== location.pathname + location.search) history.replaceState(null, "", url);
+}
 const open = new Set();
 const adminToken = () => store.get("op.admin", "");
 const ctx = () => ({ ...state, open });
@@ -86,7 +100,7 @@ function renderList() {
     </div>
     <ol class="list" id="list"></ol>`;
   const q = app.querySelector("#q");
-  q.addEventListener("input", () => { view.q = q.value; renderRows(); });
+  q.addEventListener("input", () => { view.q = q.value; writeURL(); renderRows(); });
   renderRows();
 }
 
@@ -179,12 +193,12 @@ function toggleIdea(force) {
 app.addEventListener("click", async (e) => {
   const a = e.target.closest("a");
   if (a && internal(a, e)) {
-    e.preventDefault(); return go(a.pathname);
+    e.preventDefault(); return go(a.pathname + a.search);
   }
   const t = e.target.closest("button");
   if (!t) return;
   if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort2", view.sort); return renderList(); }
-  if (t.dataset.show) { view.show = t.dataset.show; return renderList(); }
+  if (t.dataset.show) { view.show = t.dataset.show; writeURL(); return renderList(); }
   if (t.dataset.idea) return toggleIdea();
   if (t.dataset.rate) {
     const d = draft(); d.scores ||= {};
@@ -450,7 +464,7 @@ function route() {
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
   else if (path === "/admin") renderAdmin();
   else if (path === "/rate") renderRate();
-  else renderList();
+  else { readURL(); renderList(); }
 }
 
 // Links handled by the client router: same-origin pages only, not files (llms.txt, images) or the API.
@@ -460,7 +474,7 @@ function internal(a, e) {
 }
 
 function go(path) {
-  if (path !== location.pathname) history.pushState(null, "", path);
+  if (path !== location.pathname + location.search) history.pushState(null, "", path);
   window.scrollTo(0, 0);
   route();
 }
@@ -488,3 +502,47 @@ problems = p;
 state = s;
 route();
 stats();
+
+// ---------- mark: a cube that turns one face every five seconds; hover does one of three things ----------
+(() => {
+  const mark = document.querySelector("header .mark");
+  if (!mark || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cube = document.createElement("span");
+  cube.className = "cube-m";
+  cube.setAttribute("aria-hidden", "true");
+  cube.innerHTML = `<span class="in">${"<b></b>".repeat(6)}</span>`;
+  mark.prepend(cube);
+  mark.classList.add("cube");
+  const inner = cube.firstElementChild;
+  let rx = 0, ry = 0, busy = false;
+  const ease = "cubic-bezier(.65,0,.35,1)";
+  const set = (ms, curve = ease) => {
+    inner.style.transition = `transform ${ms}ms ${curve}`;
+    inner.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+  };
+  const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+  setInterval(() => { if (!busy && !document.hidden) { rx += 90; set(1400); } }, 5000);
+
+  const tricks = [
+    // spin: a full turn sideways
+    async () => { ry += 360; set(900, "cubic-bezier(.3,0,.2,1)"); await wait(900); },
+    // tumble: rolls forward through three faces, slowing down
+    async () => { for (const ms of [260, 340, 520]) { rx += 90; set(ms); await wait(ms); } },
+    // hop: jumps, turns a face in the air, lands with a small squash
+    async () => {
+      rx += 90; set(520);
+      await cube.animate([
+        { transform: "translateY(0)" },
+        { transform: "translateY(-7px)", offset: .4 },
+        { transform: "translateY(0) scale(1.15,.8)", offset: .8 },
+        { transform: "translateY(0)" },
+      ], { duration: 640, easing: "ease-out" }).finished;
+    },
+  ];
+  mark.addEventListener("mouseenter", async () => {
+    if (busy) return;
+    busy = true;
+    await tricks[Math.floor(Math.random() * tricks.length)]();
+    busy = false;
+  });
+})();
