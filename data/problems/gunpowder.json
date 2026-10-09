@@ -13,8 +13,12 @@
   "stuck": "The Chinese Wujing zongyao (compiled c. 1040–1044) gives the earliest surviving formulas, but the next datable recipes appear almost simultaneously in the 1260s–1290s in Latin (Roger Bacon's allusions in the Opus maius and Opus tertium, c. 1267; the Liber ignium attributed to Marcus Graecus) and in Arabic (Ḥasan al-Rammāḥ, c. 1270s–1280s), with no text recording a transfer. Arabic terms such as naft and Latin descriptions of incendiaries are ambiguous about whether they mean gunpowder, and the dating of many recipe collections rests on late manuscript copies. Bacon's supposed anagram recipe has been regarded as doubtful since the early twentieth century.",
   "solved": "A securely dated text, or a stemma of dated manuscripts, that shows one of the Latin or Arabic gunpowder recipe traditions copying or translating from an identifiable earlier source in another language, so that the direction and approximate date of transfer can be stated. A dated Persian, Arabic or Latin witness of a saltpetre-based recipe earlier than the 1260s outside China would also count.",
   "approach": [
-    "Agents can assemble a comparative corpus of every dated gunpowder and saltpetre recipe in Chinese, Arabic, Persian, Hebrew and Latin, normalising ingredient proportions, technical vocabulary and purification methods, and then test for textual dependence between traditions.",
-    "This requires digitizing and transcribing Arabic and Persian furūsiyya and military manuscripts in Paris, Istanbul, Cairo and elsewhere, and the earliest Latin Liber ignium and Feuerwerkbuch witnesses, with codicologists dating the copies."
+    "Start from the recipe evidence historians have already gathered: the Chinese tradition from the Wujing zongyao onward in Needham (1986), the Latin Liber ignium as edited by Berthelot (1893) and dated by Partington (1960), the Arabic treatises of Ḥasan al-Rammāḥ discussed by al-Hassan (2003), and the fifteenth-century Feuerwerkbuch tradition now edited by Müller (2024). Note for each which manuscripts or printings the dating rests on.",
+    "Build a comparative corpus of every dated gunpowder and saltpetre recipe in Chinese, Arabic, Persian, Hebrew and Latin, transcribed from page images such as those in the Chinese Text Project and on Gallica, with specialists in each language checking agent transcriptions.",
+    "Normalise each recipe into structured data: ingredient proportions, technical vocabulary and purification method. Terms such as Arabic bārūd or Latin sal petrosum shifted in meaning, so each should carry its attested senses rather than a single modern equivalent.",
+    "Test the rival accounts against this corpus: direct transmission from China through the Mongols, as Needham (1986) and Andrade (2016) propose; an Arabic-Islamic intermediary stage, as al-Hassan (2003) argues; and the more cautious readings of Ayalon (1956), Hall (1997) and Haw (2013). Shared proportions, borrowed terms and common errors would indicate textual dependence; independent purification methods would weigh against it.",
+    "Even if the route stays uncertain, a dated, collated table of the earliest saltpetre purification methods and gunpowder ratios across traditions would sharpen the chronology. Because many witnesses are later copies, the dates of first appearance will often remain ranges.",
+    "Going further depends on libraries digitizing Arabic and Persian furūsiyya and military manuscripts in Paris, Istanbul, Cairo and elsewhere, and the earliest Latin Liber ignium and Feuerwerkbuch witnesses in the Bayerische Staatsbibliothek and the Royal Armouries, and on codicologists dating the copies."
   ],
   "existing": [
     {
@@ -88,6 +92,14 @@
       "venue": "New Delhi: Oxford University Press",
       "url": "https://openlibrary.org/isbn/0195665260",
       "note": "Traced gunpowder into South Asia with the Mongols in the thirteenth century, supporting a Mongol-era diffusion model."
+    },
+    {
+      "year": 2008,
+      "authors": "Peter A. Lorge",
+      "title": "The Asian Military Revolution: From Gunpowder to the Bomb",
+      "venue": "Cambridge: Cambridge University Press (New Approaches to Asian History)",
+      "url": "https://openlibrary.org/isbn/9780521609548",
+      "note": "Survey of gunpowder weapons across Asia that treats their development there on its own terms rather than as a prelude to Europe."
     },
     {
       "year": 2013,

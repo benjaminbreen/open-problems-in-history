@@ -11,8 +11,12 @@
   "stuck": "The figures in circulation were produced for polemic: the Lords Justices relayed a claim of 154,000 dead in 1643, Sir John Temple in 1646 wrote of over 300,000 British and Protestants murdered or expelled, and Sir William Petty later proposed about 37,000. Modern estimates, generally around 4,000 killed directly and perhaps 10,000–12,000 including deaths from exposure, hunger and disease, are largely concentrated on Ulster and rest on partial readings rather than a systematic count; Aidan Clarke argued in 2013 that even this consensus needs re-examination. The depositions are dominated by hearsay, the same killings are reported by many deponents with varying names and numbers, and Catholic victims of settler and army reprisals are poorly represented in a source collected from Protestants.",
   "solved": "A published, deduplicated database of every death reported in the 1641 Depositions, each linked to the depositions that mention it and coded for eyewitness versus hearsay, place, date and manner, yielding a reproducible minimum count and a stated range for Protestant deaths, with Catholic deaths assessed from other sources.",
   "approach": [
-    "The full transcription at 1641.tcd.ie and the twelve-volume Irish Manuscripts Commission edition make it feasible for AI agents to extract every reported killing, normalise personal and place names against seventeenth-century gazetteers and the Down Survey, and cluster reports of the same event across depositions.",
-    "Historians would set the rules for matching and for weighting hearsay, review uncertain clusters, and cross-check against State Papers, the Ormond correspondence and the 1650s High Court of Justice examinations, then add reprisal killings of Catholics from army and pamphlet sources to give a two-sided total."
+    "Build on the transcription and imaging of the depositions at 1641.tcd.ie and the county-by-county Irish Manuscripts Commission edition, Clarke (2014), and on the arguments over their reliability in Perceval-Maxwell (1978), Clarke (2013), the essays in Darcy (2012) and Gibney (2013). The Down Survey project, Ó Siochrú (2013), has already mapped many reported murders and assaults, and the Aberdeen corpus work of MacLeod (2012) shows how the testimony can be read linguistically.",
+    "Turn each deposition into structured records of reported killings: victims, perpetrators, place, date and, above all, whether the deponent was an eyewitness or repeating hearsay. That grading matters most, since much of the inflation in Temple (1646) and later counts rests on second-hand reports.",
+    "Normalise personal and place names against seventeenth-century gazetteers and the Down Survey parish and barony maps, then cluster reports of the same event across depositions so that one killing told by five refugees is counted once.",
+    "Before attempting any national figure, build a deduplicated, graded register for a single well-documented county such as Armagh, from TCD MS 836, and test it against the 1650s High Court of Justice examinations taken for prosecutions. That alone would show how far eyewitness and hearsay totals diverge.",
+    "Weigh the rival estimates, from the tens or hundreds of thousands claimed in print by Temple (1646) and Hickson (1884) to the low thousands proposed by modern historians, against the register. Add reprisal killings of Catholics from army reports in the State Papers, the Ormond correspondence and the pamphlet literature, so the total is two-sided; it will remain a range bounded by how hearsay is treated.",
+    "Historians of early modern Ireland should set the matching and weighting rules and review uncertain clusters and every agent-produced record. The work depends on Trinity College Dublin keeping the 1641 data open and on access to the Bodleian and Kew papers, which are not yet fully digitized."
   ],
   "existing": [
     {
@@ -80,6 +84,14 @@
       "note": "Essays from the 1641 Depositions Project, including corpus-linguistic work from the Aberdeen team."
     },
     {
+      "year": 2012,
+      "authors": "Nicci MacLeod and Barbara Fennell",
+      "title": "Lexico-Grammatical Portraits of Vulnerable Women in War: The 1641 Depositions",
+      "venue": "Journal of Historical Pragmatics 13, no. 2",
+      "url": "https://abdn.elsevierpure.com/en/publications/lexico-grammatical-portraits-of-vulnerable-women-in-war-the-1641-",
+      "note": "Corpus-assisted discourse analysis of the depositions from the AHRC project Language and Linguistic Evidence in the 1641 Depositions (Aberdeen)."
+    },
+    {
       "year": 2013,
       "authors": "Aidan Clarke",
       "title": "The '1641 Massacres'",
@@ -102,6 +114,14 @@
       "venue": "Madison: University of Wisconsin Press",
       "url": "https://muse.jhu.edu/book/21859",
       "note": "History of the rival Protestant (general massacre) and Catholic (no massacre) traditions of interpreting 1641."
+    },
+    {
+      "year": 2013,
+      "authors": "Micheál Ó Siochrú (project director)",
+      "title": "The Down Survey of Ireland",
+      "venue": "Trinity College Dublin (online resource)",
+      "url": "https://downsurvey.tcd.ie/",
+      "note": "Georeferenced Down Survey maps (1656–58) with a landowner database and a mapping of murders and assaults reported in the 1641 depositions."
     },
     {
       "year": 2014,
@@ -149,7 +169,10 @@
         {
           "name": "Depositions for County Armagh",
           "ref": "TCD MS 836",
-          "note": "Ulster testimony from the county where the first killings of the rising are reported; printed in IMC volume I with Louth and Monaghan."
+          "note": "Ulster testimony from the county where the first killings of the rising are reported; printed in IMC volume I with Louth and Monaghan.",
+          "match": [
+            "TCD MS 836"
+          ]
         },
         {
           "name": "Depositions for Kildare and Meath",
@@ -200,7 +223,8 @@
       "digitized": "none",
       "note": "Government and military correspondence that records army reprisals and casualties not captured in the depositions; item-level catalogue online.",
       "aliases": [
-        "Ormond correspondence"
+        "Ormond correspondence",
+        "Bodleian"
       ],
       "holdings": [
         {
@@ -223,7 +247,8 @@
       "digitized": "partial",
       "note": "Dispatches from Dublin to Westminster on the course of the rising; images available through State Papers Online (Gale, subscription) and some free downloads.",
       "aliases": [
-        "State Papers"
+        "State Papers",
+        "Kew"
       ],
       "holdings": [
         {
@@ -243,7 +268,10 @@
       "collection": "1641–1646 pamphlet literature on the Irish rebellion (including Temple's The Irish Rebellion and the Thomason Tracts)",
       "url": "https://www.textpartnership.net/tcp-texts/eebo-tcp-early-english-books-online/",
       "digitized": "full",
-      "note": "Keyed texts of many atrocity pamphlets, needed to trace how specific deposition reports were inflated in print."
+      "note": "Keyed texts of many atrocity pamphlets, needed to trace how specific deposition reports were inflated in print.",
+      "aliases": [
+        "pamphlet literature"
+      ]
     }
   ],
   "provenance": {

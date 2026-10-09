@@ -13,8 +13,12 @@
   "stuck": "Fisher's chi-square analysis found an overall fit with a probability of roughly 7 in 100,000 and also argued that Mendel's 2:1 ratios in the progeny tests should have been biased toward 1.7:1. Mendel's experimental notebooks do not survive, and many of his papers are reported to have been burned after his death in 1884, so only the published paper and a handful of letters to Nägeli constrain explanations. Proposed solutions (a too-eager assistant, sequential stopping, selective reporting, a different sampling model, botanical factors such as pollen tetrads) are each compatible with the summary numbers and therefore hard to discriminate.",
   "solved": "Either discovery of primary records (field notes, seed counts, or correspondence) that show how Mendel collected and selected his counts, or a statistical analysis that specifies a historically documented procedure and shows that it reproduces both Fisher's goodness-of-fit anomaly and the 2:1 progeny-test anomaly at conventional significance, while competing procedures do not.",
   "approach": [
-    "Agents can encode every count in the 1866 paper and the Nägeli letters, reproduce the main published statistical models (Fisher, Edwards, Pires and Branco and others) in a single framework, and test which assumptions each depends on.",
-    "They can also search monastery, school, horticultural society and Brno natural-history society records for references to Mendel's assistants, seed exchanges and garden practice, and search the papers of Nägeli and other correspondents for unpublished material."
+    "Begin from the statistical literature that already exists: Weldon (1902) and Fisher (1936) on the excess of good fits, Edwards (1986) on the distribution of chi-square values, Novitski (2004) on the 2:1 progeny tests, Pires and Branco (2010) on repeated experiments, and the reassessment of the segregation ratios by Ellis et al. (2019). The collected papers in Franklin et al. (2008) give a common starting point.",
+    "Encode every count in the 1866 paper and the letters to Nägeli as a single dataset, checking the German text and page images on MendelWeb against the manuscript held by the Mendel Museum. Much depends on how one divides the reported totals into experimental units, since the chi-square results depend on whether counts are treated per plant, per experiment or pooled.",
+    "Reproduce the published models in one shared framework and state which assumptions each depends on. That alone would be a useful intermediate result: a public, rerunnable comparison of the main explanations on identical data.",
+    "Test the rival hypotheses against both anomalies at once: an assistant who knew the expected ratios, sequential stopping or repetition of deviant experiments, selective reporting, a different sampling model for the progeny tests, and botanical effects such as tetrad pollen, which Fairbanks and Schaalje (2007) tested experimentally and did not find. Without new documents the answer is likely to remain a set of procedures compatible with the data rather than a single verdict, and Radick (2022) is a reminder that the framing of the question has its own history.",
+    "Search the records of the abbey, the Brno natural-history society, local schools and horticultural societies for mentions of assistants, seed exchanges and garden practice, and the papers of Nägeli and other correspondents for unpublished material, with Czech and German specialists reviewing any candidate finds.",
+    "Progress on the documentary side depends on the Mendelianum, the Augustinian Abbey and Czech and German archives making their holdings searchable and digitized, and on plant geneticists willing to run growing and counting trials that test the botanical explanations directly."
   ],
   "existing": [
     {
@@ -66,6 +70,14 @@
       "note": "Argued that Fisher's 2:1 versus 1.7:1 objection rests on assumptions about Mendel's procedure that need not hold."
     },
     {
+      "year": 2007,
+      "authors": "Daniel J. Fairbanks and G. Bruce Schaalje",
+      "title": "The Tetrad-Pollen Model Fails to Explain the Bias in Mendel's Pea (Pisum sativum) Experiments",
+      "venue": "Genetics 177 (4): 2531–2534",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2219470/",
+      "note": "Experimental test showing that pollen sampling in self-pollinated peas is binomial, with no tetrad-pollen effect to explain the bias."
+    },
+    {
       "year": 2008,
       "authors": "Allan Franklin, A. W. F. Edwards, Daniel J. Fairbanks, Daniel L. Hartl and Teddy Seidenfeld",
       "title": "Ending the Mendel–Fisher Controversy",
@@ -112,6 +124,22 @@
       "venue": "Genetics 210 (2): 347–355",
       "url": "https://doi.org/10.1534/genetics.118.300916",
       "note": "Located Mendel's experiments in Moravian plant-breeding culture, relevant to how and why he gathered and reported counts."
+    },
+    {
+      "year": 2019,
+      "authors": "T. H. Noel Ellis, Julie M. I. Hofer, Eleni Vikeli, Michael J. Ambrose, Paola Higuera-Poveda, Luzie U. Wingen and Noam Chayut",
+      "title": "Mendel's Pea Crosses: Varieties, Traits and Statistics",
+      "venue": "Hereditas 156: 33",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6823958/",
+      "note": "Comprehensive re-examination of Mendel's segregation ratios, concluding that they do not differ remarkably from expectation."
+    },
+    {
+      "year": 2022,
+      "authors": "Gregory Radick",
+      "title": "Mendel the Fraud? A Social History of Truth in Genetics",
+      "venue": "Studies in History and Philosophy of Science 93: 39–46",
+      "url": "https://eprints.whiterose.ac.uk/184529/",
+      "note": "Argues that the too-good-to-be-true debate became intense only from the 1960s, shaped by Cold War politics as much as by statistics."
     }
   ],
   "archives": [
@@ -130,7 +158,11 @@
       "collection": "Abbey site, garden and Mendel-related collections, including the manuscript of the 1866 paper",
       "url": "https://mendelmuseum.muni.cz/en",
       "digitized": "partial",
-      "note": "The abbey where the experiments took place; the museum links to a digital presentation of Mendel's manuscript."
+      "note": "The abbey where the experiments took place; the museum links to a digital presentation of Mendel's manuscript.",
+      "aliases": [
+        "Mendel Museum",
+        "Augustinian Abbey"
+      ]
     },
     {
       "repository": "MendelWeb",

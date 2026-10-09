@@ -13,8 +13,12 @@
   "stuck": "There is no voyage-level dataset for the Indian Ocean comparable to the SlaveVoyages trans-Atlantic database, and much of the traffic moved in small numbers aboard ships whose main cargo was something else, so it left little trace in shipping records. The evidence is spread across Dutch, Portuguese, French, English, Arabic, Persian, Gujarati and Swahili sources in archives on four continents, and many local trades (for example within the Indonesian archipelago or along the Swahili coast) were never systematically recorded. Existing estimates either cover only European traders, as in Richard Allen's tentative figure of roughly 570,000 to 730,000 people for 1500–1850, or rest on extrapolations from scattered nineteenth-century observations, as in Ralph Austen's census of the East African trade.",
   "solved": "An open, record-level database of documented slave voyages and transfers in the Indian Ocean for 1500–1850, with each record linked to its archival source, from which minimum counts by route, carrier and decade can be computed and gaps quantified, so that a total for all carriers can be stated with an explicit uncertainty range.",
   "approach": [
-    "AI agents can extract mentions of enslaved people from large digitized series, beginning with the VOC Overgekomen Brieven en Papieren being transcribed by GLOBALISE, Cape and Batavia records, French Mascarene port records and British anti-slave-trade correspondence, and assemble them into voyage and transfer records reviewed by historians.",
-    "Progress beyond the Dutch and British material requires new digitization in partnership with the Archives nationales d'outre-mer, the Arquivo Histórico Ultramarino, the National Archives of Mauritius and the Zanzibar National Archives, and with scholars able to read Arabic, Gujarati and Swahili commercial papers."
+    "Start from the carrier-by-carrier reconstructions historians have already built: Vink (2003) and Shell (1994) for the Dutch trade to Batavia and the Cape, Alpers (1975) and Machado (2014) for Mozambique and its Gujarati financiers, Sheriff (1987) and Vernet (2009) for the Swahili coast, Hopper (2015) for the Gulf, and Allen (2014) for all European carriers. Record the sources, method and coverage behind each figure, so that routes and decades with no count at all are explicit.",
+    "Define the unit of record before extracting anything. A voyage-level format suited to the Atlantic will miss most of this traffic, so the database should also hold small transfers, purchases and deeds aboard ships whose main cargo was something else, each linked to its archival source.",
+    "Pilot on the VOC Overgekomen Brieven en Papieren now searchable through GLOBALISE (2022), together with the Slave Office and transfer deeds in the Western Cape Archives. Agents can flag mentions of enslaved people and draft transfer records, with historians of the VOC reviewing them and checking totals against the estimates of Vink (2003) and Ward (2009). A documented minimum count for Dutch carriers by route and decade would be the first useful result.",
+    "Extend the method to the French Mascarene records, the T 71 slave registers for Mauritius and the Cape, and the FO 84 correspondence on the East African and Gulf trades, then test competing claims: that the Dutch trade was far larger than once assumed, as Vink (2003) argued, and that nineteenth-century exports from East Africa were of the order Austen (1988) inferred from scattered observations.",
+    "Model the all-carrier total as a range built route by route, with stated assumptions about the share of traffic that left no record, and publish the records and code so that specialists can revise any segment.",
+    "Progress beyond the Dutch and British material depends on new digitization with the Archives nationales d'outre-mer, the Arquivo Histórico Ultramarino, the National Archives of Mauritius and the Zanzibar National Archives, and on scholars who read Arabic, Gujarati, Persian and Swahili commercial papers."
   ],
   "existing": [
     {
@@ -74,6 +78,14 @@
       "note": "Placed slave trading within the VOC's wider system of forced migration, including convicts and exiles, between Batavia and the Cape."
     },
     {
+      "year": 2009,
+      "authors": "Thomas Vernet",
+      "title": "Slave Trade and Slavery on the Swahili Coast (1500–1750)",
+      "venue": "In B. A. Mirzai, I. M. Montana and P. Lovejoy (eds.), Slavery, Islam and Diaspora, Trenton: Africa World Press, 37–76",
+      "url": "https://halshs.archives-ouvertes.fr/halshs-00671040",
+      "note": "Reappraises Swahili coast slave trading before the mid-eighteenth century from Portuguese archival sources, a period with very little quantitative work."
+    },
+    {
       "year": 2010,
       "authors": "Richard B. Allen",
       "title": "Satisfying the \"Want for Labouring People\": European Slave Trading in the Indian Ocean, 1500–1850",
@@ -106,8 +118,16 @@
       "note": "Shows Gujarati Vaniya merchants financing and supplying the Mozambique slave trade, a part of the traffic largely invisible in European shipping records."
     },
     {
+      "year": 2015,
+      "authors": "Matthew S. Hopper",
+      "title": "Slaves of One Master: Globalization and Slavery in Arabia in the Age of Empire",
+      "venue": "New Haven: Yale University Press",
+      "url": "https://openlibrary.org/isbn/9780300192018",
+      "note": "Links the nineteenth-century East Africa to Gulf trade to global demand for dates and pearls, drawing on British Gulf records and manumission statements."
+    },
+    {
       "year": 2022,
-      "authors": "GLOBALISE project (Huygens Institute, Amsterdam)",
+      "authors": "GLOBALISE (Huygens Institute, Amsterdam)",
       "title": "GLOBALISE: Enriching the VOC Archives",
       "venue": "NWO-funded research infrastructure, 2022–2026",
       "url": "https://globalise.huygens.knaw.nl/",
@@ -146,14 +166,23 @@
         },
         {
           "name": "Slave Office, 1789-1845",
-          "note": "Cape records of slave registration and transfers under Dutch and British rule."
+          "note": "Cape records of slave registration and transfers under Dutch and British rule.",
+          "match": [
+            "Slave Office"
+          ]
         },
         {
           "name": "Inventory of the Cape Title Deeds, 1652-1825",
           "ref": "Inventory 1/84",
           "url": "https://docs.globalise.huygens.knaw.nl/tanap/archival-inventories/pdf/CapeTown_1.84.pdf",
-          "note": "Cape Town Archives Repository inventory no. 1/84 of the transfer deeds of the Council of Policy secretariat, in which slave transfers appear."
+          "note": "Cape Town Archives Repository inventory no. 1/84 of the transfer deeds of the Council of Policy secretariat, in which slave transfers appear.",
+          "match": [
+            "transfer deeds"
+          ]
         }
+      ],
+      "aliases": [
+        "Western Cape Archives"
       ]
     },
     {
@@ -200,7 +229,10 @@
           "name": "Office of Registry of Colonial Slaves and Slave Compensation Commission",
           "ref": "T 71",
           "url": "https://beta.nationalarchives.gov.uk/catalogue/id/C13808/",
-          "note": "Registers of 1813-1834 indexed mostly by owner or plantation, with the compensation records."
+          "note": "Registers of 1813-1834 indexed mostly by owner or plantation, with the compensation records.",
+          "match": [
+            "T 71 slave registers"
+          ]
         },
         {
           "name": "Slave Registers: Mauritius, personal slaves, Port Louis",
@@ -213,7 +245,7 @@
           "ref": "FO 84",
           "note": "Consular and naval reports, including the Zanzibar despatches of the 1880s such as FO 84/1982.",
           "match": [
-            "British anti-slave-trade correspondence"
+            "FO 84 correspondence"
           ]
         }
       ]

@@ -13,8 +13,12 @@
   "stuck": "The mathematical parallels have been clear since Kennedy and Roberts (1959) and Swerdlow and Neugebauer (1984), but Copernicus cites no Arabic author for these devices, and no Latin translation of al-Ṭūsī's Tadhkira or Ibn al-Shāṭir's Nihāyat al-sūl is known. The one securely located carrier, a Ṭūsī-couple diagram in a Byzantine Greek astronomical text in Vat. gr. 211, proves the device reached Italy but not that Copernicus saw it. Skeptics (Di Bono 1995, Blåsjö 2014, 2018) argue that the devices could have been derived independently or from Latin sources such as Proclus, so parallels alone cannot settle the question.",
   "solved": "A dated document (a manuscript, annotation, library inventory, loan record or letter) that places a text describing the Ṭūsī couple or Ibn al-Shāṭir's models in the hands of Copernicus, one of his teachers, or a scholar demonstrably in contact with him in Kraków, Bologna, Rome, Padua or Ferrara before about 1514. Alternatively, a documented exhaustive search of the relevant manuscript holdings that finds no such carrier would narrow the hypothesis to independent invention or oral transmission.",
   "approach": [
-    "Agents can build a census of every Greek, Hebrew, Latin and Arabic manuscript known to contain the Ṭūsī couple or Ibn al-Shāṭir-type models, then cross-reference provenance, ownership marks and library inventories against the prosopography of Copernicus's teachers and Paduan contemporaries such as Amico and Fracastoro, and against Morrison's Jewish intermediaries such as Moses Galeano.",
-    "Much of the Vatican, Bodleian and Uppsala material is already online, but progress requires digitizing and cataloguing uncatalogued Hebrew and Greek astronomical miscellanies in Italian, Polish and Central European libraries, and working with curators to read ownership notes and binding evidence."
+    "Start from the technical and textual work already done: the parallels established by Kennedy (1959) and Swerdlow and Neugebauer (1984), Ragep's (2017) survey of the versions of the Ṭūsī couple in Arabic, Greek, Hebrew and Latin, Nikfahm-Khubravan (2019) on the Mercury models, and Morrison (2025) on intermediaries such as Moses Galeano. Set beside them the objections of Di Bono (1995) and Blåsjö (2014), so that the documentary standard the skeptics ask for is stated before the search begins.",
+    "Build a census of every manuscript known to contain the Ṭūsī couple or an Ibn al-Shāṭir-type model, in any language, using ISMI and the Ptolemaeus Arabus et Latinus catalogues as starting points. Each witness should be recorded by the specific device and variant it carries, since a rectilinear couple, a curvilinear one and a full lunar model point to different routes.",
+    "Cross-reference provenance, ownership marks, binding evidence and library inventories for these witnesses against a prosopography of Copernicus's teachers in Kraków and Bologna, his Paduan contemporaries such as Amico and Fracastoro, and the Greek and Jewish scholars in contact with them. Agents can draft the links, but specialists in palaeography and codicology should confirm each one.",
+    "Short of finding a carrier, a dated map of where each variant of the device is attested in Italy and Central Europe before 1514 would already narrow the question; it can start from Vat. gr. 211 and Bessarion's books in the Marciana. Later Paduan uses, such as the reciprocation mechanism in Luchini's treatise studied by Omodeo (2025), help show which variants were circulating in the region.",
+    "Test the rival hypotheses against that map: a Byzantine Greek route, a Hebrew route via texts such as the one discussed by Nosonovsky (2018), oral transmission through Galeano's circle, and independent derivation from Latin sources. If no carrier is found, the outcome will be a documented negative that shifts the weight between these explanations rather than a proof either way.",
+    "Progress depends on libraries digitizing and describing uncatalogued Greek and Hebrew astronomical miscellanies in Italian, Polish and Central European collections, including the Jagiellonian Library's fifteenth-century teaching manuscripts, and on curators willing to examine ownership notes and bindings that images alone cannot show."
   ],
   "existing": [
     {
@@ -51,7 +55,7 @@
     },
     {
       "year": 1995,
-      "authors": "Mario di Bono",
+      "authors": "Mario Di Bono",
       "title": "Copernicus, Amico, Fracastoro and Ṭūsī's Device: Observations on the Use and Transmission of a Model",
       "venue": "Journal for the History of Astronomy 26 (2): 133–154",
       "url": "https://doi.org/10.1177/002182869502600203",
@@ -136,6 +140,14 @@
       "venue": "Stanford: Stanford University Press",
       "url": "https://doi.org/10.1515/9781503642690",
       "note": "Book-length study of Jewish and other intermediaries carrying Islamic astronomy between the Ottoman world and Italy around 1500."
+    },
+    {
+      "year": 2025,
+      "authors": "Pietro Daniel Omodeo and Razieh S. Mousavi",
+      "title": "An Unknown Astronomical Work on Planetary Theory from the Renaissance: Giulio Cesare Luchini's Delle revolutioni delle sfere celesti libri IX (ca. 1581)",
+      "venue": "Journal for the History of Astronomy 56 (2): 172–206",
+      "url": "https://doi.org/10.1177/00218286241297967",
+      "note": "Studies a Paduan manuscript that adapts Copernicus's reciprocation mechanism (the Ṭūsī couple), evidence for how the device was understood and circulated in the Veneto after Copernicus."
     }
   ],
   "archives": [
@@ -220,14 +232,30 @@
       "collection": "Islamic Scientific Manuscripts Initiative (ISMI) database of authors, works and witnesses",
       "url": "https://ismi.mpiwg-berlin.mpg.de/",
       "digitized": "partial",
-      "note": "Union inventory of Arabic and Persian scientific manuscripts and their locations, the best starting point for locating witnesses of al-Ṭūsī and Ibn al-Shāṭir."
+      "note": "Union inventory of Arabic and Persian scientific manuscripts and their locations, the best starting point for locating witnesses of al-Ṭūsī and Ibn al-Shāṭir.",
+      "aliases": [
+        "ISMI"
+      ]
     },
     {
       "repository": "Biblioteca Nazionale Marciana, Venice",
       "collection": "Fondo antico greco (Bessarion bequest, 1468) astronomical manuscripts",
       "url": "https://www.internetculturale.it/",
       "digitized": "partial",
-      "note": "Bessarion's Greek library, the largest Byzantine scientific collection in fifteenth-century Italy, is only partly digitized and is a prime place to search for further carriers."
+      "note": "Bessarion's Greek library, the largest Byzantine scientific collection in fifteenth-century Italy, is only partly digitized and is a prime place to search for further carriers.",
+      "aliases": [
+        "Marciana"
+      ]
+    },
+    {
+      "repository": "Bayerische Akademie der Wissenschaften, Munich / University of Würzburg",
+      "collection": "Ptolemaeus Arabus et Latinus (PAL): catalogues of Arabic and Latin Ptolemaic manuscripts, works and transcriptions",
+      "url": "https://ptolemaeus.badw.de/",
+      "digitized": "partial",
+      "note": "Online catalogue of Arabic and Latin manuscripts of Ptolemaic astronomy and astrology, with codicological detail useful for tracing which astronomical texts circulated in Latin Europe before 1543.",
+      "aliases": [
+        "Ptolemaeus Arabus et Latinus"
+      ]
     }
   ],
   "provenance": {

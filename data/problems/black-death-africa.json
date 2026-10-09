@@ -13,8 +13,12 @@
   "stuck": "Written sources from sub-Saharan Africa for the fourteenth century are few, and Arabic chroniclers who described plague in Egypt and the Maghrib were largely silent about lands beyond the Sahara, a silence that can be read either as absence of plague or absence of reporting. Archaeological signs such as abandonments, mass burials or population decline have other possible causes (drought, war, trade shifts), and few sites are dated precisely enough to tie them to the 1340s–1400s. No medieval Y. pestis genome has yet been published from sub-Saharan Africa, so the genetic argument rests on inferences from the phylogeny of modern African strains.",
   "solved": "Recovery of Yersinia pestis DNA, radiocarbon-dated to c. 1340–1500, from human remains at one or more sub-Saharan sites, placed on the second-pandemic phylogeny; or, conversely, systematic negative screening of well-dated fourteenth- and fifteenth-century burials across several regions combined with a full survey of the textual evidence showing no plague references.",
   "approach": [
-    "AI agents can survey Arabic, Ge'ez, Portuguese and oral-traditional sources for references to epidemic mortality in the fourteenth and fifteenth centuries, including Ethiopian hagiographies and talismanic texts and West African manuscripts now digitized from Timbuktu, and compile a geo-referenced, dated register of candidate sites from the archaeological literature.",
-    "Confirmation needs collaboration with ancient-DNA laboratories and African museums and heritage authorities to screen dated burials (for example from Swahili coast towns, the Ethiopian highlands, Nubia and the West African forest and Sahel) for Y. pestis, with radiocarbon dating to fix the chronology, under protocols agreed with descendant communities."
+    "Start from the regional work already done: Chouin (2018) on the fourteenth-century abandonment of earthwork settlements in southern Ghana and at Ife, Gallagher (2018) on which archaeological signatures can and cannot distinguish plague from drought or war, Derat (2018) on Ge'ez lexical and talismanic evidence from the Horn, and Green (2018) on what the phylogeny of modern African strains does and does not show. Chapelain de Seréville-Niel (2022) and Chapelain de Seréville-Niel (2024) set out what the already excavated skeletal material from Benin City and Ile-Ife can bear, including a mass grave opened in the early 1960s.",
+    "Build from the archaeological literature a geo-referenced register of candidate sites and of human remains, with radiocarbon determinations recorded as calibrated ranges and with the original laboratory codes. The choice that shapes everything after it is whether a candidate is defined by settlement disruption or by dated human remains whose range overlaps c. 1340-1500; these are different classes of evidence and should be kept separate rather than merged into one map of 'plague sites'.",
+    "In parallel, compile a dated register of references to epidemic mortality, and of the places and years for which sources are silent, from Arabic and Ge'ez texts, fifteenth-century Portuguese accounts in the Torre do Tombo, and the West African manuscripts imaged from Timbuktu and the Ethiopian collections in the Endangered Archives Programme. Most of these manuscripts are later copies, so each reference needs its witness dated by specialists before it counts as fourteenth-century testimony.",
+    "Some progress needs no new excavation: re-screening the published shotgun data from African ancient-DNA studies held in the European Nucleotide Archive, including the medieval Swahili coast individuals sequenced by Brielle (2023), with authentication workflows such as the one described by Pochon (2023), and reporting coverage and detection limits for each individual. Even a set of negatives establishes how many dated burials have now been tested and how deeply.",
+    "The two hypotheses can be stated so that evidence separates them. Chouin (2018) and Green (2020) argue for fourteenth-century introductions south of the Sahara, while Mas Fiol (2024), working from a large collection of modern isolates, dates the spread of the 1.ANT lineage into continental Africa to the late seventeenth century and after; a medieval genome from a sub-Saharan burial, placed on the second-pandemic framework of Spyrou (2019), would decide between them, and its absence would not. Until then the honest output is region by region, plague attested, screened without detection, or untested, rather than a single continental verdict.",
+    "Everything beyond the computational re-screening depends on institutions: ancient-DNA laboratories, and museums and heritage authorities in Nigeria, Ghana, Tanzania and Ethiopia, which hold both the remains and the excavation records, among them the Kilwa Kisiwani and Aksum field archives of the British Institute in Eastern Africa. Sampling and radiocarbon dating should proceed under protocols agreed with those authorities and with descendant communities, and with African archaeologists and bioarchaeologists reviewing both the registers and any laboratory result."
   ],
   "existing": [
     {
@@ -114,12 +118,44 @@
       "note": "Located the second pandemic's ancestral strain in the Tian Shan c. 1338, fixing the starting point from which any spread to Africa must be measured."
     },
     {
+      "year": 2022,
+      "authors": "Cécile Chapelain de Seréville-Niel and Gérard Chouin",
+      "title": "Témoins africains de crises sanitaires ?",
+      "venue": "Les Nouvelles de l'Archéologie 169: 57–63",
+      "url": "https://doi.org/10.4000/nda.14255",
+      "note": "Reassesses human remains excavated at Benin City and Ile-Ife since the 1960s, including a mass grave, for signs of a medieval health crisis."
+    },
+    {
       "year": 2023,
       "authors": "Esther S. Brielle et al.",
       "title": "Entwined African and Asian Genetic Roots of Medieval Peoples of the Swahili Coast",
       "venue": "Nature 615: 866–873",
       "url": "https://doi.org/10.1038/s41586-023-05754-w",
       "note": "Human aDNA from medieval and early modern Swahili coast burials, showing that suitable dated remains and sequencing data already exist for pathogen screening."
+    },
+    {
+      "year": 2023,
+      "authors": "Zoé Pochon et al.",
+      "title": "aMeta: An Accurate and Memory-Efficient Ancient Metagenomic Profiling Workflow",
+      "venue": "Genome Biology 24: 242",
+      "url": "https://doi.org/10.1186/s13059-023-03083-9",
+      "note": "Open workflow for detecting and authenticating microbial DNA in ancient shotgun data, of the kind needed to re-screen published African sequencing data for Y. pestis."
+    },
+    {
+      "year": 2024,
+      "authors": "Cécile Chapelain de Seréville-Niel, Gérard Chouin and Adisa Ogunfolakan",
+      "title": "Retour sur l'archéologie funéraire médiévale du Sud-Ouest du Nigeria",
+      "venue": "Afrique: Archéologie & Arts 20: 37–62",
+      "url": "https://doi.org/10.4000/12meo",
+      "note": "Examines the stratigraphy, body positions and bone markings of the Benin City and Ile-Ife remains against both the plague hypothesis and pre-Atlantic mortuary practice."
+    },
+    {
+      "year": 2024,
+      "authors": "Guillem Mas Fiol et al.",
+      "title": "Global Evolutionary Patterns of Yersinia pestis and Its Spread into Africa",
+      "venue": "bioRxiv preprint",
+      "url": "https://doi.org/10.1101/2024.11.26.625443",
+      "note": "Sequenced over a thousand modern isolates from the Institut Pasteur collection and dated the spread of the 1.ANT lineage into continental Africa to the late seventeenth century onward, against a medieval introduction; preprint, not yet peer reviewed."
     }
   ],
   "archives": [
@@ -181,13 +217,19 @@
           "name": "BIEA Digital Archives: Kilwa Kisiwani",
           "ref": "doi:10.5284/1090373",
           "url": "https://doi.org/10.5284/1090373",
-          "note": "Images and slides from Neville Chittick's excavations at Kilwa Kisiwani, Tanzania, hosted by the Archaeology Data Service."
+          "note": "Images and slides from Neville Chittick's excavations at Kilwa Kisiwani, Tanzania, hosted by the Archaeology Data Service.",
+          "match": [
+            "Kilwa Kisiwani"
+          ]
         },
         {
           "name": "BIEA Digital Archives: Aksum",
           "ref": "doi:10.5284/1090372",
           "url": "https://doi.org/10.5284/1090372",
-          "note": "Images and documents from excavations at Aksum, Ethiopia, hosted by the Archaeology Data Service."
+          "note": "Images and documents from excavations at Aksum, Ethiopia, hosted by the Archaeology Data Service.",
+          "match": [
+            "Aksum"
+          ]
         }
       ]
     },
