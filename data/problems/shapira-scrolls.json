@@ -168,7 +168,7 @@
       "collection": "Shapira's handwritten inventory of the Hebrew manuscripts he collected, containing his preliminary transcription of the Deuteronomy text",
       "url": "https://stabikat.de/",
       "digitized": "none",
-      "note": "Where Dershowitz found the transcription pages with Shapira's own corrections; the library also holds Yemenite Hebrew manuscripts bought from Shapira.",
+      "note": "Where Dershowitz (2021) found the transcription pages with Shapira's own corrections; the library also holds Yemenite Hebrew manuscripts bought from Shapira.",
       "aliases": [
         "Berlin State Library",
         "Staatsbibliothek zu Berlin"
@@ -176,7 +176,7 @@
       "holdings": [
         {
           "name": "Shapira's handwritten inventory of his Hebrew manuscripts",
-          "note": "Bound volume containing three sheets with Shapira's preliminary transcription of the text, found by Dershowitz.",
+          "note": "Bound volume containing three sheets with Shapira's preliminary transcription of the text, found by Dershowitz (2021).",
           "match": [
             "Berlin Shapira inventory"
           ]

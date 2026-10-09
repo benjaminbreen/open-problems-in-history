@@ -44,6 +44,14 @@
       "note": "Ethnography and archival history of the patrimonial khipus of Tupicocha, linking cords to colonial and later village records."
     },
     {
+      "year": 2004,
+      "authors": "Martti Pärssinen and Jukka Kiviharju",
+      "title": "Textos andinos: Corpus de textos khipu incaicos y coloniales",
+      "venue": "Madrid: Instituto Iberoamericano de Finlandia and Universidad Complutense, Tomo I (2004), Tomo II (2010)",
+      "url": "https://researchportal.helsinki.fi/en/publications/textos-andinos-corpus-de-textos-khipu-incaicos-y-coloniales-tomo-/",
+      "note": "Edition of Spanish transcriptions of khipu-based testimony from Inca and colonial documents."
+    },
+    {
       "year": 2005,
       "authors": "Gary Urton and Carrie J. Brezine",
       "title": "Khipu Accounting in Ancient Peru",
@@ -154,7 +162,7 @@
         {
           "name": "Textos Andinos recitations browser",
           "url": "https://www.khipufieldguide.com/textosbook/index.html",
-          "note": "Digitized, annotated corpus of 65 sixteenth-century Spanish transcriptions of khipu-based testimony from Pärssinen and Kiviharju's Textos Andinos, built by Manuel Medrano."
+          "note": "Digitized, annotated corpus of 65 sixteenth-century Spanish transcriptions of khipu-based testimony from the Textos Andinos of Pärssinen and Kiviharju (2004), built by Manuel Medrano."
         },
         {
           "name": "Khipu catalog",
@@ -224,7 +232,7 @@
         {
           "name": "Collata narrative khipus",
           "url": "https://research-portal.st-andrews.ac.uk/en/publications/writing-with-twisted-cords-the-inscriptive-capacity-of-andean-khi/",
-          "note": "Two khipus kept in the village, which Hyland examined in 2015 and argued contain about 95 distinct signs; the article is the primary publication."
+          "note": "Two khipus kept in the village, which Hyland (2017) examined in 2015 and argued contain about 95 distinct signs; the article is the primary publication."
         }
       ]
     }

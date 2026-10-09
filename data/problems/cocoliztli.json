@@ -19,6 +19,14 @@
   ],
   "existing": [
     {
+      "year": 1952,
+      "authors": "Ernest Mengin",
+      "title": "Commentaire du Codex Mexicanus nos 23-24 de la Bibliothèque Nationale de Paris",
+      "venue": "Journal de la Société des Américanistes 41 (2): 387–498",
+      "url": "https://doi.org/10.3406/jsa.1952.3743",
+      "note": "Standard commentary on the Codex Mexicanus, whose annals record epidemic years in pictorial form."
+    },
+    {
       "year": 1991,
       "authors": "Noble David Cook and W. George Lovell (eds.)",
       "title": "\"Secret Judgments of God\": Old World Disease in Colonial Spanish America",
@@ -201,7 +209,7 @@
         {
           "name": "Codex Mexicanus",
           "ref": "Mexicain 23-24",
-          "note": "Pictorial Nahua annals on amate bark paper (51 leaves) that record the 1545 epidemic; Mengin's 1952 commentary is the standard study."
+          "note": "Pictorial Nahua annals on amate bark paper (51 leaves) that record the 1545 epidemic; Mengin (1952) is the standard study."
         }
       ]
     },

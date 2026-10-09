@@ -21,6 +21,14 @@
   ],
   "existing": [
     {
+      "year": 1898,
+      "authors": "Édouard Naville",
+      "title": "The Temple of Deir el Bahari, Part III: End of the Northern Half and Southern Half of the Middle Platform",
+      "venue": "Egypt Exploration Fund Memoir 16. London",
+      "url": "https://digi.ub.uni-heidelberg.de/diglit/naville1898bd3",
+      "note": "Facsimile publication of the Punt colonnade reliefs at Deir el-Bahari."
+    },
+    {
       "year": 1969,
       "authors": "D. M. Dixon",
       "title": "The Transplantation of Punt Incense Trees in Egypt",
@@ -149,7 +157,7 @@
       "collection": "Édouard Naville, The Temple of Deir el Bahari (1894–1908), Part III with the Punt colonnade plates",
       "url": "https://archive.org/details/the-temple-of-deir-el-bahari-pt.-3",
       "digitized": "full",
-      "note": "Facsimile drawings made before further deterioration of the reliefs, still the standard full publication of the Punt scenes.",
+      "note": "Naville (1898) gives facsimile drawings made before further deterioration of the reliefs, still the standard full publication of the Punt scenes.",
       "holdings": [
         {
           "name": "Naville, The Temple of Deir el Bahari, Part III (plates LVI-LXXXVI)",
@@ -169,7 +177,7 @@
         {
           "name": "Mummified hamadryas baboon from the Temple of Khons, Thebes",
           "ref": "EA6736",
-          "note": "Henry Salt estate specimen sampled for hair isotopes by Dominy et al. (eLife, 2020); late New Kingdom by provenance."
+          "note": "Henry Salt estate specimen sampled for hair isotopes by Dominy et al. (2020); late New Kingdom by provenance."
         },
         {
           "name": "Mummified hamadryas baboon from Thebes",
@@ -188,7 +196,7 @@
         {
           "name": "Baboon mummy from the Lortet and Gaillard assemblage",
           "ref": "MHNL 90001206",
-          "note": "Radiocarbon dated to 803-544 BC (Porcier et al., 2019), so later than the New Kingdom specimens in the Punt argument."
+          "note": "Radiocarbon dated to 803-544 BC, so later than the New Kingdom specimens in the Punt argument."
         }
       ]
     },
@@ -211,7 +219,7 @@
       "holdings": [
         {
           "name": "Harbour finds from Mersa/Wadi Gawasis (ship timbers, cargo boxes, stelae, ostraca, pottery)",
-          "note": "Published in Bard and Fattovich, Seafaring Expeditions to Punt in the Middle Kingdom (Brill, 2018); stored in Egypt."
+          "note": "Published in Bard and Fattovich (2018), Seafaring Expeditions to Punt in the Middle Kingdom; stored in Egypt."
         }
       ]
     }

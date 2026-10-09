@@ -51,6 +51,14 @@
       "note": "Influential collected volume presenting the pandemic as a major demographic and historical turning point."
     },
     {
+      "year": 2009,
+      "authors": "Fred H. Blume",
+      "title": "Annotated Justinian Code, 2nd edition, translated by Blume and edited by Timothy Kearley",
+      "venue": "University of Wyoming College of Law (online)",
+      "url": "https://www.uwyo.edu/lawlib/blume-justinian/",
+      "note": "English translation of the Code and Novels, used here for the post-plague legislation of the 540s."
+    },
+    {
       "year": 2013,
       "authors": "Michaela Harbeck, Lisa Seifert, Stephanie Hänsch, David M. Wagner and others",
       "title": "Yersinia pestis DNA from Skeletal Remains from the 6th Century AD Reveals Insights into Justinianic Plague",
@@ -156,7 +164,7 @@
       "collection": "Justinian's Code and Novels in Fred H. Blume's English translation, including the post-plague legislation of 544",
       "url": "https://www.uwyo.edu/lawlib/blume-justinian/",
       "digitized": "full",
-      "note": "Online text of the Novels used to argue for or against plague-driven labour and fiscal measures.",
+      "note": "Online text of Blume (2009) for the Novels used to argue for or against plague-driven labour and fiscal measures.",
       "aliases": [
         "Annotated Justinian Code",
         "Blume translation"
@@ -166,7 +174,7 @@
           "name": "Justinian's Novels 121-140 (Blume translation)",
           "ref": "Novels 121-140",
           "url": "https://www.uwyo.edu/lawlib/blume-justinian/ajc-edition-2/novels/121-140/index.html",
-          "note": "English text of Novels 121-140, including Novel 128 of 545 on provincial fiscal administration, a source for arguments about fiscal responses in the plague years."
+          "note": "English text of Novels 121-140 in Blume (2009), including Novel 128 of 545 on provincial fiscal administration, a source for arguments about fiscal responses in the plague years."
         }
       ]
     },

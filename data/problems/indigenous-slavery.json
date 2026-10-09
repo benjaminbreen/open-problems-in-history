@@ -26,6 +26,14 @@
       "note": "First survey of Indigenous enslavement in the English, French and Spanish colonies north of Mexico."
     },
     {
+      "year": 1955,
+      "authors": "W. L. McDowell (ed.)",
+      "title": "Journals of the Commissioners of the Indian Trade, September 20, 1710-August 29, 1718",
+      "venue": "Columbia: South Carolina Archives Department (Colonial Records of South Carolina)",
+      "url": "https://scdah.sc.gov/node/253",
+      "note": "Printed edition of the Commissioners' journals, which record purchases of and trade in Indigenous captives in Carolina."
+    },
+    {
       "year": 1971,
       "authors": "William L. Sherman",
       "title": "Indian Slavery and the Cerrato Reforms",
@@ -247,7 +255,7 @@
         {
           "name": "Journals of the Commissioners of the Indian Trade, 1710-1718",
           "url": "https://scdah.sc.gov/node/253",
-          "note": "The Commissioners' manuscript journals as published by the Archives Department in 1955 (ed. W. L. McDowell); they record purchases and trade in Indigenous captives."
+          "note": "The Commissioners' manuscript journals as edited by McDowell (1955) for the Archives Department; they record purchases and trade in Indigenous captives."
         }
       ]
     },

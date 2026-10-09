@@ -43,6 +43,14 @@
       "note": "Systematic review of textual clues that placed Agade near the Tigris–Diyala confluence and proposed Tell Mohammed in southeastern Baghdad, while admitting no Sargonic remains were known there."
     },
     {
+      "year": 1993,
+      "authors": "Douglas Frayne",
+      "title": "Sargonic and Gutian Periods (2334-2113 BC)",
+      "venue": "The Royal Inscriptions of Mesopotamia, Early Periods 2. Toronto: University of Toronto Press",
+      "url": "https://oeaw.ac.at/resources/Record/5004670271",
+      "note": "Standard edition of the Sargonic royal inscriptions, including the texts and year names that mention Akkade."
+    },
+    {
       "year": 1998,
       "authors": "Raphael Kutscher",
       "title": "Toward the Location of Akkade",
@@ -125,7 +133,7 @@
       "collection": "RIAo and royal inscription corpora; Sargonic royal inscriptions as edited in RIME 2",
       "url": "https://oracc.museum.upenn.edu/riao/",
       "digitized": "full",
-      "note": "Lemmatized online editions of royal inscriptions useful for tracing later references to Akkade and its temples.",
+      "note": "Lemmatized online editions of royal inscriptions, including the Sargonic texts edited by Frayne (1993), useful for tracing later references to Akkade and its temples.",
       "aliases": [
         "ORACC"
       ]

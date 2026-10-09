@@ -52,6 +52,14 @@
       "note": "Surveyed the Arabic Galen and listed known manuscripts of individual translations, many still unedited."
     },
     {
+      "year": 1997,
+      "authors": "Gerhard Fichtner",
+      "title": "Corpus Galenicum: Verzeichnis der galenischen und pseudogalenischen Schriften",
+      "venue": "Tübingen: Institut für Geschichte der Medizin; later editions updated online by the Berlin-Brandenburg Academy (CMG)",
+      "url": "https://cmg.bbaw.de/fileadmin/Webdateien/Dateien/Galen-Bibliographie.pdf",
+      "note": "Work-by-work bibliography of Galenic and pseudo-Galenic texts and their editions and translations, the starting inventory for tracing which survive in Arabic."
+    },
+    {
       "year": 2005,
       "authors": "Véronique Boudon-Millot and Antoine Pietrobelli",
       "title": "De l'arabe au grec: un nouveau témoin du texte de Galien (le Vlatadon 14)",
@@ -172,7 +180,7 @@
       "collection": "Gerhard Fichtner, Corpus Galenicum: Bibliographie der galenischen und pseudogalenischen Werke (updated online)",
       "url": "https://cmg.bbaw.de/arbeitsmittel/hippokrates-und-galenbibliographie-fichtner/",
       "digitized": "full",
-      "note": "Work-by-work list recording which Galenic texts survive in Greek, Arabic, Syriac, Hebrew and Latin, with editions.",
+      "note": "Fichtner (1997) lists, work by work, which Galenic texts survive in Greek, Arabic, Syriac, Hebrew and Latin, with editions.",
       "aliases": [
         "Corpus Galenicum",
         "Fichtner"

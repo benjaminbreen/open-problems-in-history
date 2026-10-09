@@ -36,6 +36,14 @@
       "note": "First volume of the photographic corpus (CISI); later volumes cover Pakistan (1991) and new material and collections elsewhere (2010 onward)."
     },
     {
+      "year": 1991,
+      "authors": "Sayid Ghulam Mustafa Shah and Asko Parpola (eds.)",
+      "title": "Corpus of Indus Seals and Inscriptions, 2: Collections in Pakistan",
+      "venue": "Helsinki: Suomalainen Tiedeakatemia (Annales Academiae Scientiarum Fennicae B 240)",
+      "url": "https://katalog.muni.cz/Record/MUB01000016036/Description",
+      "note": "Photographic corpus of Indus inscribed objects in Pakistani collections, including Mohenjo-daro and Harappa finds."
+    },
+    {
       "year": 1994,
       "authors": "Asko Parpola",
       "title": "Deciphering the Indus Script",
@@ -84,6 +92,14 @@
       "note": "Criticized the entropy argument and showed that non-linguistic systems can produce similar values; Rao et al. replied in the following issue."
     },
     {
+      "year": 2010,
+      "authors": "Asko Parpola, B. M. Pande and Petteri Koskikallio (eds.)",
+      "title": "Corpus of Indus Seals and Inscriptions, 3.1: New Material, Untraced Objects and Collections outside India and Pakistan, Mohenjo-daro and Harappa",
+      "venue": "Helsinki: Suomalainen Tiedeakatemia (Annales Academiae Scientiarum Fennicae Humaniora 359)",
+      "url": "https://list.indology.info/pipermail/indology/2010-October/034729.html",
+      "note": "Adds new and previously untraced inscribed material from Mohenjo-daro and Harappa to the corpus."
+    },
+    {
       "year": 2014,
       "authors": "Richard Sproat",
       "title": "A Statistical Comparison of Written Language and Nonlinguistic Symbol Systems",
@@ -130,7 +146,7 @@
       "collection": "Corpus of Indus Seals and Inscriptions (CISI), vols. 1 (1987), 2 (1991), 3.1 (2010) and later parts",
       "url": "https://www.acadsci.fi/",
       "digitized": "partial",
-      "note": "Photographic corpus of seals and inscribed objects arranged by collection; published in print, with the underlying photographs not openly available online.",
+      "note": "Photographic corpus of seals and inscribed objects arranged by collection (Joshi and Parpola (1987), Shah and Parpola (1991), Parpola et al. (2010)); published in print, with the underlying photographs not openly available online.",
       "aliases": [
         "CISI"
       ],

@@ -21,6 +21,22 @@
   ],
   "existing": [
     {
+      "year": 1905,
+      "authors": "Vincent Scheil",
+      "title": "Textes élamites-sémitiques, troisième série",
+      "venue": "Mémoires de la Délégation en Perse 6. Paris: Leroux",
+      "url": "https://archive.org/details/mmoires06franuoft",
+      "note": "Publishes the first proto-Elamite tablets from the 1901 Susa excavations."
+    },
+    {
+      "year": 1949,
+      "authors": "Roland de Mecquenem and Marguerite Rutten",
+      "title": "Épigraphie proto-élamite",
+      "venue": "Mémoires de la Mission archéologique en Iran 31 (MDP 31). Paris: Presses Universitaires de France",
+      "url": "https://ocb.uni-tuebingen.de/Record/KEI00109051",
+      "note": "Publishes proto-Elamite tablets from the later Susa excavations."
+    },
+    {
       "year": 2004,
       "authors": "Robert K. Englund",
       "title": "The State of Decipherment of Proto-Elamite",
@@ -85,6 +101,14 @@
       "note": "Applied unsupervised clustering and topic models to the CDLI transliterations to group signs by distribution and identify document types."
     },
     {
+      "year": 2019,
+      "authors": "Jacob L. Dahl",
+      "title": "Tablettes et fragments proto-élamites / Proto-Elamite Tablets and Fragments",
+      "venue": "Textes cunéiformes du Louvre 32. Paris: Éditions Khéops and Louvre éditions",
+      "url": "https://cdli.earth/artifacts/368543",
+      "note": "Edits 121 previously unpublished proto-Elamite tablets and fragments from Susa in the Louvre."
+    },
+    {
       "year": 2021,
       "authors": "Logan Born, Kathryn Kelley, M. Willis Monroe and Anoop Sarkar",
       "title": "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models",
@@ -140,19 +164,19 @@
           "name": "Susa tablet SB 15119 (MDP 6, 272)",
           "ref": "SB 15119",
           "url": "https://collections.louvre.fr/en/ark:/53355/cl010187450",
-          "note": "Proto-Elamite tablet excavated by de Morgan at Susa in 1901 and published by Scheil in MDP 6 (1905); a representative accounting tablet from the early Susa finds."
+          "note": "Proto-Elamite tablet excavated by de Morgan at Susa in 1901 and published by Scheil (1905) in MDP 6; a representative accounting tablet from the early Susa finds."
         },
         {
           "name": "Tablet SB 15420 (MDP 31, 23)",
           "ref": "SB 15420",
           "url": "https://collections.louvre.fr/en/ark:/53355/cl010187750",
-          "note": "Tablet published in de Mecquenem and Rutten, Epigraphie proto-élamite (MDP 31, 1949), from the later Susa excavations."
+          "note": "Tablet published in Mecquenem and Rutten (1949), Epigraphie proto-élamite (MDP 31), from the later Susa excavations."
         },
         {
           "name": "Tablet SB 24509 (TCL 32, 11)",
           "ref": "SB 24509",
           "url": "https://collections.louvre.fr/en/ark:/53355/cl010431881",
-          "note": "Fragment from the 121 previously unpublished tablets and fragments edited by Dahl in Textes cunéiformes du Louvre 32 (2019)."
+          "note": "Fragment from the 121 previously unpublished tablets and fragments edited by Dahl (2019) in Textes cunéiformes du Louvre 32."
         }
       ]
     },

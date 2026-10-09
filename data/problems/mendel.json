@@ -18,6 +18,14 @@
   ],
   "existing": [
     {
+      "year": 1866,
+      "authors": "Gregor Mendel",
+      "title": "Versuche über Pflanzen-Hybriden",
+      "venue": "Verhandlungen des naturforschenden Vereines in Brünn 4: 3–47",
+      "url": "https://www.biodiversitylibrary.org/bibliography/4532",
+      "note": "The original paper reporting the pea-hybrid crosses whose counts Fisher later analysed."
+    },
+    {
       "year": 1902,
       "authors": "W. F. R. Weldon",
       "title": "Mendel's Laws of Alternative Inheritance in Peas",
@@ -137,7 +145,7 @@
         {
           "name": "Versuche über Pflanzen-Hybriden, German text",
           "url": "http://www.mendelweb.org/MWGerText.html",
-          "note": "Online transcription of Mendel's 1866 paper with the original data tables."
+          "note": "Online transcription of Mendel (1866) with the original data tables."
         },
         {
           "name": "Experiments in Plant Hybridization, annotated English translation",

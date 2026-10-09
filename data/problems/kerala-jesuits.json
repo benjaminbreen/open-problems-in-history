@@ -35,6 +35,22 @@
       "note": "Edited and analysed the series for π, sine and cosine and established their Kerala attribution for modern historians of mathematics."
     },
     {
+      "year": 1992,
+      "authors": "Wiktor Gramatowski",
+      "title": "Inventarium Archivi Romani Societatis Iesu: Manuscripta Antiquae Societatis",
+      "venue": "Rome: Archivum Romanum Societatis Iesu (photocopy)",
+      "url": "https://web.bc.edu/ricci/indexAuthor.php?id=12394",
+      "note": "Inventory of the oldest manuscript series of the Jesuit archive, with the Goa and Malabar provincial papers at pp. 36-46."
+    },
+    {
+      "year": 1992,
+      "authors": "Ugo Baldini and Pier Daniele Napolitani (eds.)",
+      "title": "Christoph Clavius: Corrispondenza",
+      "venue": "Pisa: Università di Pisa, Dipartimento di Matematica (Quaderni della Sezione di Didattica e Storia della Matematica), 7 vols.",
+      "url": "https://echo.mpiwg-berlin.mpg.de/content/mpiwglib/clavius.html",
+      "note": "Critical edition of Clavius's surviving correspondence, the hub of the Jesuit mathematical network."
+    },
+    {
       "year": 2001,
       "authors": "C. K. Raju",
       "title": "Computers, Mathematics Education, and the Alternative Epistemology of the Calculus in the Yuktibhāṣā",
@@ -129,14 +145,14 @@
       "collection": "Assistentia Lusitaniae, Provinciae Goana et Malabarica (Goa series of letters and annual reports)",
       "url": "https://arsi.jesuits.global/",
       "digitized": "partial",
-      "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski's inventory and access requires accreditation.",
+      "note": "Central Jesuit archive; the Goa-Malabar volumes are listed in Gramatowski (1992) and access requires accreditation.",
       "aliases": [
         "ARSI"
       ],
       "holdings": [
         {
           "name": "Goana et Malabarica, Assistentia Lusitaniae",
-          "note": "Goa and Malabar province papers, listed in Gramatowski's Inventarium at pp. 36-46.",
+          "note": "Goa and Malabar province papers, listed in Gramatowski (1992) at pp. 36-46.",
           "match": [
             "ARSI Goa and Malabar volumes",
             "ARSI Goa-Malabar letters",
@@ -171,7 +187,7 @@
           "name": "Codices APUG 529-530, correspondence of Clavius",
           "ref": "APUG 529-530",
           "url": "https://www.ilc.cnr.it/en/progetti/clavius/",
-          "note": "The two codices that hold most of Clavius's surviving letters, edited by Baldini and Napolitani and digitized in the Clavius on the Web project.",
+          "note": "The two codices that hold most of Clavius's surviving letters, edited by Baldini and Napolitani (1992) and digitized in the Clavius on the Web project.",
           "match": [
             "Clavius correspondence"
           ]

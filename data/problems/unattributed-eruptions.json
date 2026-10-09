@@ -132,6 +132,14 @@
       "note": "Compared South Pole and other Antarctic records with Greenland to show that the thirteenth century contains five large eruptions, Samalas among them, most with bipolar signals pointing to low-latitude sources."
     },
     {
+      "year": 2024,
+      "authors": "Michael Sigl and Matthew Toohey",
+      "title": "Volcanic stratospheric sulfur injections from 500 BCE to 1900 CE, eVolv2k_version4",
+      "venue": "PANGAEA dataset",
+      "url": "https://doi.pangaea.de/10.1594/PANGAEA.971968",
+      "note": "Current event table of dated ice-core sulfate signals with injection estimates and attributed sources, including the unattributed events of this problem."
+    },
+    {
       "year": 2025,
       "authors": "William Hutchison, Patrick Sugden, Andrea Burke et al.",
       "title": "The 1831 CE mystery eruption identified as Zavaritskii caldera, Simushir Island (Kurils)",
@@ -146,7 +154,7 @@
       "collection": "Sigl and Toohey, eVolv2k version 4 (2024): volcanic stratospheric sulfur injections, 500 BCE–1900 CE",
       "url": "https://doi.org/10.1594/PANGAEA.971968",
       "digitized": "full",
-      "note": "Current event table listing date, Greenland and Antarctic sulfate, estimated injection and attributed source; 1230, 1286, 1695 and 1809 carry no source and 1458 is attributed to Kuwae without tephra confirmation.",
+      "note": "Sigl and Toohey (2024) give a current event table listing date, Greenland and Antarctic sulfate, estimated injection and attributed source; 1230, 1286, 1695 and 1809 carry no source and 1458 is attributed to Kuwae without tephra confirmation.",
       "aliases": [
         "eVolv2k"
       ],

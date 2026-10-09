@@ -84,13 +84,13 @@ function cite(e, i) {
   return `<li id="src-w${i}"><span class="yr">${esc(e.year)}</span><div>${esc(e.authors)}, <span class="t">${title}</span>${venue}.${e.note ? `<span class="n">${esc(e.note)}</span>` : ""}</div></li>`;
 }
 
-function archive(a, i) {
+function archive(a, i, link = (x) => x) {
   const dig = DIG[a.digitized] || "";
   const hs = a.holdings || [];
   const list = hs.length ? `<button type="button" class="hold-toggle" aria-expanded="false" aria-controls="hold-${i}">Expand <span>${hs.length} source${hs.length > 1 ? "s" : ""}</span></button>
-    <div class="slide" id="hold-${i}"><div><ul class="holdings">${hs.map((h, j) => `<li id="src-a${i}.${j}">${extLink(h.url, esc(h.name))}${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${esc(h.note)}</span>` : ""}</li>`).join("")}</ul></div></div>` : "";
+    <div class="slide" id="hold-${i}"><div><ul class="holdings">${hs.map((h, j) => `<li id="src-a${i}.${j}">${extLink(h.url, esc(h.name))}${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${link(esc(h.note))}</span>` : ""}</li>`).join("")}</ul></div></div>` : "";
   return `<li id="src-a${i}"><span class="rep">${extLink(a.url, esc(a.repository))}</span>${dig ? `<span class="tag">${dig}</span>` : ""}
-    ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${esc(a.note)}</span>` : ""}${list}</li>`;
+    ${a.collection ? `<span class="col">${esc(a.collection)}</span>` : ""}${a.note ? `<span class="n">${link(esc(a.note))}</span>` : ""}${list}</li>`;
 }
 
 const para = (s, link = (x) => x) => s ? String(s).split(/\n\n+/).map((x) => `<p>${link(esc(x))}</p>`).join("") : "";
@@ -102,7 +102,7 @@ const para = (s, link = (x) => x) => s ? String(s).split(/\n\n+/).map((x) => `<p
 // Works match on the first author's surname (or "A and B"); a surname shared by several works
 // links only when followed closely by one entry's year. Archives match on their aliases (default:
 // the name before the first comma or parenthesis); holdings only on their explicit "match" list.
-const surname = (n) => n.replace(/\(eds?\.\)/g, "").trim().split(/\s+/).pop();
+const surname = (n) => n.replace(/\([^)]*\)|\bet al\.?/g, "").trim().split(/\s+/).pop() || "";
 const archiveNames = (a) => a.aliases?.length ? a.aliases : [String(a.repository || "").split(/,|\s\(/)[0].trim()];
 export const ARCHIVE = `<svg class="arc" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.2" y="1.6" width="9.6" height="3" rx=".5" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 4.6v5.2a.6.6 0 0 0 .6.6h6.8a.6.6 0 0 0 .6-.6V4.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M4.6 6.6h2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg>`;
 
@@ -110,7 +110,7 @@ function citeLinker(existing = [], archives = []) {
   const keys = new Map(); // escaped phrase -> [{ ref, year?, kind }]
   const add = (phrase, hit) => { const k = esc(String(phrase).trim()); if (k.length >= 3) keys.set(k, [...(keys.get(k) || []), hit]); };
   existing.forEach((e, i) => {
-    const names = String(e.authors || "").split(/,\s*|\s+and\s+/).map((n) => n.trim()).filter(Boolean);
+    const names = String(e.authors || "").replace(/\([^)]*\)|\bet al\.?/g, "").split(/,\s*|\s+and\s+|;\s*/).map((n) => n.trim()).filter(Boolean);
     if (!names.length || /\s/.test(surname(names[0]))) return;
     if (names.length === 2) add(`${surname(names[0])} and ${surname(names[1])}`, { ref: `w${i}`, year: String(e.year), kind: "w" });
     add(surname(names[0]), { ref: `w${i}`, year: String(e.year), kind: "w" });
@@ -134,6 +134,9 @@ function citeLinker(existing = [], archives = []) {
     });
   };
 }
+
+// notes inside the archive list link works only (an archive's own note naming it would be noise)
+const noteLinker = (existing) => citeLinker(existing, []);
 
 const extLink = (url, text) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${text}</a>` : text;
 const DIG = { full: "digitized", partial: "partly digitized", none: "not digitized" };
@@ -202,7 +205,7 @@ export function detailHTML(ctx, p) {
       <button type="button" class="linkbtn idea-toggle" data-idea="${esc(p.id)}" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}
     ${sec("Existing work", p.existing?.length ? `<ol class="works">${p.existing.map(cite).join("")}</ol>${p.existing.map(citeCard).join("")}` : "")}
-    ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map(archive).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
+    ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map((a, i) => archive(a, i, noteLinker(p.existing)())).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
     </div>
     </article>`;

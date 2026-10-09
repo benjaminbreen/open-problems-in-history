@@ -95,6 +95,30 @@
       "note": "Combined late tahrir and seventeenth-century avarız registers to argue for a severe and lasting decline in rural Anatolian population from the late sixteenth century."
     },
     {
+      "year": 2004,
+      "authors": "Enver Çakar",
+      "title": "17. Yüzyılın İkinci Yarısında Antakya Kazasında İskân ve Nüfus (1678/1089 Tarihli Avârız-Hâne Defterine Göre)",
+      "venue": "Belleten 68 (252): 431–460",
+      "url": "https://doi.org/10.37879/belleten.2004.431",
+      "note": "Analyses the 1678 avarız-hane register for the district of Antakya."
+    },
+    {
+      "year": 2009,
+      "authors": "Mehmet İnbaşı",
+      "title": "Kayseri Tapu-Tahrir Defteri 38, 1484 tarihli",
+      "venue": "Kayseri: Kayseri Büyükşehir Belediyesi Kültür Yayınları 61",
+      "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1484_12.pdf",
+      "note": "Transcription of the 1484 Kayseri survey register, the early point for linking villages across sixteenth-century registers."
+    },
+    {
+      "year": 2009,
+      "authors": "Mehmet İnbaşı",
+      "title": "976 (1570) tarihli Kayseri Tapu-Tahrir Defteri",
+      "venue": "Kayseri: Kayseri Büyükşehir Belediyesi Kültür Yayınları 60",
+      "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1570_14.pdf",
+      "note": "Transcription of the 1570 Kayseri survey register, allowing a two-point comparison with the 1484 survey."
+    },
+    {
       "year": 2011,
       "authors": "Sam White",
       "title": "The Climate of Rebellion in the Early Modern Ottoman Empire",
@@ -143,19 +167,19 @@
           "name": "Kayseri tahrir, 1484",
           "ref": "TT.d 38",
           "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1484_12.pdf",
-          "note": "Early Kayseri survey; full transcription published by Kayseri Büyükşehir Belediyesi (2009), usable as a start for linking villages across the sixteenth-century series."
+          "note": "Early Kayseri survey; full transcription published by İnbaşı (2009), usable as a start for linking villages across the sixteenth-century series."
         },
         {
           "name": "Kayseri tahrir, 1570",
           "ref": "TT.d 976",
           "url": "https://kayseri.bel.tr/uploads/pdf/tahrir1570_14.pdf",
-          "note": "Later Kayseri survey of the same district; published transcription (2009) allows a two-point comparison with TT.d 38."
+          "note": "Later Kayseri survey of the same district; published transcription (İnbaşı (2009)) allows a two-point comparison with TT.d 38."
         },
         {
           "name": "Haleb eyaleti mufassal avarız-hane register, 1678",
           "ref": "MAD.d 678",
           "url": "https://belleten.gov.tr/tam-metin/3523/tur",
-          "note": "Detailed avarız-hane register (556 pages) with entries updated to 1698-99; analysed for Antakya by Çakar (Belleten 2004), which gives the shelfmark."
+          "note": "Detailed avarız-hane register (556 pages) with entries updated to 1698-99; analysed for Antakya by Çakar (2004), which gives the shelfmark."
         },
         {
           "name": "Summary (icmal) of the 1678 avarız-hane register",

@@ -18,6 +18,14 @@
   ],
   "existing": [
     {
+      "year": 1893,
+      "authors": "Marcellin Berthelot",
+      "title": "Histoire des sciences: La chimie au moyen âge, tome 1",
+      "venue": "Paris: Imprimerie nationale",
+      "url": "https://archive.org/details/b24877797_0001",
+      "note": "Includes Berthelot's edition of the Liber ignium of Marcus Graecus with his collation of the Paris and Munich manuscripts."
+    },
+    {
       "year": 1956,
       "authors": "David Ayalon",
       "title": "Gunpowder and Firearms in the Mamluk Kingdom: A Challenge to a Mediaeval Society",
@@ -128,7 +136,7 @@
         {
           "name": "Liber ignium, earliest Paris witness",
           "ref": "Latin 7156",
-          "note": "Berthelot dated this copy of the Liber ignium to c. 1300 and used it as base text.",
+          "note": "Berthelot (1893) dated this copy of the Liber ignium to c. 1300 and used it as base text.",
           "match": [
             "Liber ignium"
           ]
@@ -136,7 +144,7 @@
         {
           "name": "Liber ignium, later Paris copy",
           "ref": "Latin 7158",
-          "note": "Fifteenth-century copy of the Liber ignium that Berthelot judged to be copied from Latin 7156."
+          "note": "Fifteenth-century copy of the Liber ignium that Berthelot (1893) judged to be copied from Latin 7156."
         }
       ]
     },
@@ -169,7 +177,7 @@
         {
           "name": "Liber ignium, Munich copy",
           "ref": "Clm 197",
-          "note": "Copy of c. 1488 with a text very different from the Paris witnesses (cited by Berthelot as Munich no. 197); a companion copy is Munich no. 267."
+          "note": "Copy of c. 1488 with a text very different from the Paris witnesses (cited as Munich no. 197 by Berthelot (1893)); a companion copy is Munich no. 267."
         }
       ]
     },

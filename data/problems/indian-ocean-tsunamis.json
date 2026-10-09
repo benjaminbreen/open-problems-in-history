@@ -21,6 +21,22 @@
   ],
   "existing": [
     {
+      "year": 1958,
+      "authors": "Teuku Iskandar (ed.)",
+      "title": "De Hikajat Atjéh",
+      "venue": "Verhandelingen van het Koninklijk Instituut voor Taal-, Land- en Volkenkunde 26. 's-Gravenhage: Nijhoff",
+      "url": "https://library.oapen.org/handle/20.500.12657/32197",
+      "note": "Edition of the Malay Hikayat Aceh from the Leiden manuscripts, a chronicle of Aceh under Iskandar Muda."
+    },
+    {
+      "year": 1961,
+      "authors": "A. H. Hill",
+      "title": "Hikayat Raja-Raja Pasai: a revised romanised version of Raffles MS 67, together with an English translation",
+      "venue": "Journal of the Malayan Branch of the Royal Asiatic Society 33 (2), no. 190",
+      "url": "https://ci.nii.ac.jp/ncid/BD18650646",
+      "note": "Romanised edition and translation of the Pasai chronicle from Raffles Malay 67."
+    },
+    {
       "year": 1970,
       "authors": "J. V. G. Mills (trans.)",
       "title": "Ma Huan, Ying-yai sheng-lan: 'The Overall Survey of the Ocean's Shores' [1433]",
@@ -35,6 +51,14 @@
       "venue": "Leiden: Brill",
       "url": "https://doi.org/10.1163/9789004658776",
       "note": "Compiled the Arabic geographical and nautical references to Lamri and northern Sumatra, the basis for later arguments about the port's decline and replacement by Mandara."
+    },
+    {
+      "year": 1987,
+      "authors": "Russell Jones (ed.)",
+      "title": "Hikayat Raja Pasai",
+      "venue": "Petaling Jaya: Penerbit Fajar Bakti (Siri Sastera Fajar Bakti)",
+      "url": "https://www.cambridge.org/core/journals/bulletin-of-the-school-of-oriental-and-african-studies/article/russell-jones-ed-hikayat-raja-pasai-siri-sastera-fajar-bakti-xv-124-pp-2-maps-petaling-jaya-penerbit-fajar-bakti-sdn-bhd-1987/8C289A47E5F7B6DA8E261A062ECC21E9",
+      "note": "Later edition of the Hikayat Raja Pasai, the Malay chronicle of the Pasai sultanate."
     },
     {
       "year": 1988,
@@ -203,7 +227,7 @@
         {
           "name": "Raffles Malay 67, Hikayat Raja Pasai",
           "ref": "RAS Raffles Malay 67",
-          "note": "The principal manuscript of the Hikayat Raja Pasai, a copy dated 1815 from Raffles' scriptorium, and the basis of Hill's 1961 edition."
+          "note": "The principal manuscript of the Hikayat Raja Pasai, a copy dated 1815 from Raffles' scriptorium, and the basis of the edition by Hill (1961)."
         },
         {
           "name": "Raffles Malay 68, Sejarah Melayu",
