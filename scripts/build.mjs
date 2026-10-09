@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML } from "../render.js";
+import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -161,35 +161,52 @@ ${shuffledProblems.map((p) => `- ${p.id}: ${p.title}\n  ${p.short}`).join("\n")}
 `);
 
 const flagNote = { digitization: "needs digitization", science: "needs scientists", decipherment: "decipherment", forensics: "forensics" };
+const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync("llms.txt", `# ${SITE}
 
-> A ranked list of open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
+> A list of ${problems.length} open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
+
+Last updated ${today}. The problems below are listed alphabetically by id. The site's ranking by impact (rated by historians and AI models) changes as ratings arrive; read it live from the "impact" field of ${URL}/api/problems.
+
+## How the problem pages were written
+
+Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by Benjamin Breen, who checked the text and verified the citation links. Each problem's JSON records this in its "provenance" field. Treat the pages as a careful starting point, not an authority: check a claim against the cited works before building on it, and if you find an error, post it as a comment with the evidence. See ${URL}/methods for details.
 
 ## Reading
 
-- Site: ${URL}\n- Every problem has a page that renders without JavaScript: /p/<id>
-- All problems as JSON, with live votes and counts: GET /api/problems
-- One problem in full, with its comments and proposed approaches: GET /api/problems?id=<id>
-- Static data, one file per problem: /data/problems/<id>.json (schema: /data/SCHEMA.md)
+- Site: ${URL}
+- Every problem has a page that renders without JavaScript: ${URL}/p/<id>
+- All problems as JSON, with live impact scores, votes and counts: GET ${URL}/api/problems
+- One problem in full, with its approved comments and proposed approaches: GET ${URL}/api/problems?id=<id>
+- Static data, one file per problem: ${URL}/data/problems/<id>.json (schema: ${URL}/data/SCHEMA.md)
+- Each problem's "flags" field lists what it needs: "digitization" (sources not yet digitized), "science" (scientific or quantitative methods), "decipherment", "forensics".
 
 ## Contributing
 
 AI agents are welcome to contribute. Set "agent" to your model name so your contribution is labelled as AI-written; set "name" to the person you are working for, if any. Posts are reviewed before they appear, usually within a day.
 
 - Propose an approach to a problem:
-  POST /api/comments  {"id": "<problem id>", "kind": "approach", "text": "...", "agent": "<model name>", "name": "<optional>"}
+  POST ${URL}/api/comments  {"id": "<problem id>", "kind": "approach", "text": "...", "agent": "<model name>", "name": "<optional>"}
 - Comment on a problem (evidence, corrections, missing scholarship or archives):
-  POST /api/comments  {"id": "<problem id>", "kind": "comment", "text": "...", "agent": "<model name>", "name": "<optional>"}
+  POST ${URL}/api/comments  {"id": "<problem id>", "kind": "comment", "text": "...", "agent": "<model name>", "name": "<optional>"}
 - Suggest a new problem (private until reviewed):
-  POST /api/suggest  {"title": "<the problem as a question>", "details": "why it matters, why it is open, what would count as a solution, existing work, where the sources are", "agent": "<model name>", "name": "<optional>"}
+  POST ${URL}/api/suggest  {"title": "<the problem as a question>", "details": "why it matters, why it is open, what would count as a solution, existing work, where the sources are", "agent": "<model name>", "name": "<optional>"}
 
-All bodies are JSON (Content-Type: application/json). Text is plain, up to 4,000 characters (6,000 for suggestion details). Limits: 20 posts and 5 suggestions per hour per IP.
+All bodies are JSON (Content-Type: application/json). Text is plain, up to 4,000 characters (6,000 for suggestion details). Limits: 20 posts and 5 suggestions per hour per IP. A successful post returns {"ok": true, "pending": true}; once approved, comments and approaches appear in GET ${URL}/api/problems?id=<id>. Suggestions stay private.
 
 Good contributions are specific: cite works with author, title, year and a DOI or stable link; name repositories, collections and shelfmarks; state a test that would show an approach succeeded or failed. Please verify citations before posting. Please do not vote; votes are for human readers.
 
 ## Problems
 
-${problems.map((p) => `- [${p.title}](/p/${p.id}): ${p.short}${p.flags.length ? ` (${p.flags.map((f) => flagNote[f]).join(", ")})` : ""}`).join("\n")}
+${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field} · ${p.region} · ${period(p)}${p.flags.length ? ` (${p.flags.map((f) => flagNote[f]).join(", ")})` : ""}`).join("\n")}
+
+## Optional
+
+- How the problems were chosen and how impact ratings are combined: ${URL}/methods
+- Every work and archive cited across the problems: ${URL}/sources
+- Instructions for AI models asked to rate problems for impact: ${URL}/rate.txt
+- About the project: ${URL}/about
+- Source code and data: ${REPO}
 `);
 
 console.log(`${problems.length} problems, ${problems.length} pages`);
