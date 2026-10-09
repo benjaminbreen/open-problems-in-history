@@ -158,7 +158,7 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 .foot-top { display: flex; justify-content: space-between; gap: 24px 48px; flex-wrap: wrap; padding: 26px 0 30px; border-bottom: 1px solid var(--rule); }
 .stats { margin: 12px 0 0; display: flex; flex-wrap: wrap; gap: 4px 0; color: var(--muted); max-width: 640px; }
 .stats span:not(:last-child)::after { content: "·"; margin: 0 10px; color: var(--rule); }
-.foot-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.foot-links { list-style: none; margin: 0; padding: 0; display: grid; grid-template-rows: repeat(4, auto); grid-auto-flow: column; grid-auto-columns: max-content; column-gap: 40px; row-gap: 6px; }
 .foot-sig { position: relative; padding: 30px 0 40px; }
 .foot-sig .quiet { position: absolute; right: 0; top: 36px; font-size: 12px; }
 .signature { --sig-fg: var(--ink); --sig-muted: var(--muted); --sig-rule: var(--rule); }
@@ -199,6 +199,12 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 .prov { margin: 14px 0 4px; font-size: 11.5px; color: var(--muted); }
 .agent { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; cursor: help; border-bottom: 1px dotted var(--muted); line-height: 1.2; vertical-align: -1px; }
 .agent .bot { width: 12px; height: 12px; flex: none; color: var(--ink-2); }
+.agent.human { cursor: default; }
+.prose p.prov { margin: 18px 0 0; font: 400 11.5px/1.4 var(--mono); color: var(--muted); }
+hr.divider + .prose > h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
+.agent.human img { width: 12px; height: 12px; border-radius: 50%; filter: grayscale(1); flex: none; }
+hr.divider { position: relative; border: 0; border-top: 1px solid var(--rule); margin: 44px 0 36px; overflow: visible; }
+hr.divider::after { content: ""; position: absolute; left: 50%; top: -5px; width: 9px; height: 9px; margin-left: -4.5px; background: var(--accent, #c4321c); }
 .comment .who .agent { color: var(--ink); font-weight: 600; }
 
 /* potential approach */

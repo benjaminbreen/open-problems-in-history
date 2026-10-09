@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Methods · Open Problems in History</title>
+<meta name="description" content="How impact ratings from historians and AI models are standardised, weighted and combined.">
+<link rel="canonical" href="https://historyproblems.com/methods">
+<meta property="og:site_name" content="Open Problems in History">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Methods · Open Problems in History">
+<meta property="og:description" content="How the impact ranking is calculated.">
+<meta property="og:url" content="https://historyproblems.com/methods">
+<meta property="og:image" content="https://historyproblems.com/og/index.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Methods · Open Problems in History">
+<meta name="twitter:description" content="How the impact ranking is calculated.">
+<meta name="twitter:image" content="https://historyproblems.com/og/index.jpg">
+<link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt">
+<script>try { const t = localStorage.getItem("op.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/signature.css">
+<link rel="stylesheet" href="/style.css?v=e39ce16b">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>">
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/">Open Problems in History</a>
+  <nav>
+    <a href="/" data-nav="list">Problems</a>
+    <a href="/suggest" data-nav="suggest">Suggest a problem</a>
+    <a href="/sources" data-nav="sources">Sources</a>
+    <a href="/about" data-nav="about">About</a>
+    <button class="mode" type="button" aria-label="Switch light or dark">◐</button>
+  </nav>
+</header>
+<main id="app" tabindex="-1">
+  <article class="about">
+    <h1 class="page-title">Methods</h1>
+    <div class="prose">
+      <p>This site is currently a prototype. Most of the questions on it are ones I chose based on my own research and on conversations with other historians. It also includes several questions suggested directly by GPT-6 Pro and Claude Opus 5.5, after I prompted these models to &ldquo;cast a wide net&rdquo; across historiography and digitized archives in search of important open questions that might prove tractable to collaborative teams of historians and interested amateurs using AI tools for data mining and quantitative analysis at scale. As of October 2026, I am crowdsourcing additional questions from colleagues and members of the public, and you can <a href="/suggest">suggest one here</a>. New questions will be added to the site and then rated by professional historians to arrive at a final set of problems.</p>
+      <p>The individual pages for each open question were overseen by me (Benjamin Breen), but they are mostly the product of research into the available sources conducted in October 2026 by Claude Opus 5.5. I edited and checked all of the text and verified every link to a citation. If you would like to make a correction or suggest an improvement, you can <a href="https://github.com/benjaminbreen/open-problems-in-history/issues/new" target="_blank" rel="noopener">open an issue here</a> or <a href="mailto:breen85@gmail.com?subject=Open%20Problems%20in%20History">email me</a>.</p>
+      <p>To make clear which parts of this site are human-written and which were drafted by an AI model and then edited by a human (me!), I have added attribution labels like the one below. For more on the project as a whole, see the <a href="/about">About</a> page.</p>
+      <p class="prov">Drafted by <span class="agent human" title="Written by Benjamin Breen."><img src="/shared/res-obscura.webp" alt="" width="14" height="14">Benjamin Breen</span></p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="prose">
+      <h2>How ratings work</h2>
+      <p>The list can be sorted by <strong>impact</strong>: how much a solution to each problem would change historical understanding. Two kinds of raters score problems from 1 to 5: professional historians, who submit ratings through the site, and AI models, which receive the same instructions (published as <a href="/rate.txt">rate.txt</a>) and are asked to read each problem before scoring it. Raters judge impact only, not tractability, fame, or how interesting a topic is, and are asked to use the full scale and to skip any problem they cannot judge. Every rating is reviewed by hand before it counts.</p>
+
+      <h2>How scores are combined</h2>
+      <p>Each rater&rsquo;s scores are first standardised against that rater&rsquo;s own average and spread, so harsh and generous graders carry equal weight. Repeated runs of the same model are averaged and count as a single judge. Historians and AI models are then averaged separately, and each average includes one imaginary neutral rating, so a problem praised by a single enthusiast cannot outrank one rated highly by many.</p>
+      <p>Where both groups have rated a problem, historians count for two-thirds of the final score and the AI judges together for one-third; otherwise the one group&rsquo;s score is used alone. Unrated problems are ordered by period. Scores update whenever a new rating is approved.</p>
+
+      <h2>Limitations</h2>
+      <p>The panel is small and the ratings are judgements, not measurements. Impact scores are a rough guide to where the field sees the most at stake, not a verdict. The full code is in <a href="https://github.com/benjaminbreen/open-problems-in-history/blob/main/lib/impact.js" target="_blank" rel="noopener">lib/impact.js</a>.</p>
+
+      <h2>Contribute ratings</h2>
+      <p>Historians who would like to rate problems can <a href="mailto:breen85@gmail.com?subject=Rating%20open%20problems" target="_blank" rel="noopener">get in touch</a> or use the <a href="/rate">rating form</a>.</p>
+      <p class="prov">Drafted by <span class="agent" title="AI model: Claude Opus 5.5. Drafted this section; edited by Benjamin Breen."><svg class="bot" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1.2v2.1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="6" cy="1.2" r=".8" fill="currentColor"/><rect x="1.8" y="3.6" width="8.4" height="6.6" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.1"/><circle cx="4.6" cy="6.8" r=".95" fill="currentColor"/><circle cx="7.4" cy="6.8" r=".95" fill="currentColor"/></svg>Claude Opus 5.5</span></p>
+    </div>
+  </article></main>
+<footer class="foot">
+  <div class="foot-top">
+    <div>
+      <a class="mark" href="/">Open Problems in History</a>
+      <p class="stats" id="stats"></p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="/">Problems</a></li>
+      <li><a href="/suggest">Suggest a problem</a></li>
+      <li><a href="/sources">Sources</a></li>
+      <li><a href="/methods">Methods</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="https://buy.stripe.com/5kQaEXfJLgRGbqrf1L4F201">Donate</a></li>
+      <li><a href="/llms.txt">For AI agents</a></li>
+      <li><a href="https://github.com/benjaminbreen/open-problems-in-history">Source and data</a></li>
+    </ul>
+  </div>
+  <div class="foot-sig">
+    <p class="signature">Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"><img src="/shared/res-obscura.webp" alt="" width="28" height="28" loading="lazy" decoding="async"></a></p>
+    <a href="/admin" class="quiet">Admin</a>
+  </div>
+</footer>
+<script src="/app.js?v=e39ce16b" type="module"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

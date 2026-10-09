@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { esc, rowHTML, detailHTML, aboutHTML, collectSources, sourcesHTML } from "../render.js";
+import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML } from "../render.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -93,6 +93,14 @@ fs.writeFileSync("about/index.html", page({
   main: aboutHTML(),
 }));
 
+fs.mkdirSync("methods", { recursive: true });
+fs.writeFileSync("methods/index.html", page({
+  title: `Methods · ${SITE}`,
+  description: "How impact ratings from historians and AI models are standardised, weighted and combined.",
+  head: social({ title: `Methods · ${SITE}`, description: "How the impact ranking is calculated.", url: `${URL}/methods`, image: `${URL}/og/index.jpg` }),
+  main: methodsHTML(),
+}));
+
 fs.mkdirSync("sources", { recursive: true });
 fs.writeFileSync("sources/index.html", page({
   title: `Sources · ${SITE}`,
@@ -105,6 +113,7 @@ fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>${URL}/</loc></url>
 <url><loc>${URL}/about</loc></url>
+<url><loc>${URL}/methods</loc></url>
 <url><loc>${URL}/sources</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
