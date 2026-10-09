@@ -13,8 +13,12 @@
   "stuck": "Indigenous slavery was frequently illegal or ambiguously legal, so it was recorded under euphemisms (criados, piezas, naborías, administrados, captives) or not recorded at all, and it was dispersed across many small transactions rather than concentrated in shipping. The surviving evidence is scattered among notarial protocols, lawsuits, baptismal registers, probate inventories, military reports and Indigenous testimony in Spanish, Portuguese, French, English and Indigenous languages, mostly undigitized or uncatalogued at item level. Reséndez's 2.5–5 million figure, which he presents as a cautious range, therefore aggregates regional estimates of very different quality, and several regions (Amazonia, the Río de la Plata, Central America after 1550) have no systematic count.",
   "solved": "A published, source-linked database of individual enslaved Indigenous people and enslaving events, organized by region and period, from which documented minimums can be computed and combined with explicit, testable multipliers for under-recording, producing a hemispheric range that others can recompute region by region.",
   "approach": [
-    "AI agents could read digitized notarial protocols, baptismal and burial registers, freedom suits and probate inventories, flag every person described by terms associated with Indigenous bondage, and link repeated appearances of the same individual across record types for historians to review.",
-    "The main obstacle is access: progress depends on digitizing and indexing notarial and judicial series in Seville, Mexico City, Santiago de Chile, São Paulo, Lima and Santa Fe in partnership with those archives, and on working with Indigenous communities and projects such as Native Bound Unbound that are already assembling records."
+    "Start from the regional reconstructions historians have already built, among them Jara (1971) on Mapuche captives in Chile, Monteiro (1988) on the Paulista captive economy, Gallay (2002) on the English Southeast, Trudel's (1990) name-by-name register of enslaved people in French Canada, roughly two-thirds of them Indigenous, and Stone (2021) on the early Spanish Caribbean. Record for each the sources, method and coverage behind the figures that Reséndez (2016) aggregates, so that the regions with no systematic count are explicit.",
+    "Build with regional specialists a glossary of the terms under which bondage was recorded (indio esclavo, pieza, naboría, criado, administrado, panis, gentio da terra), dated and placed, since many of these terms also described free or semi-free people and the same word could mean different statuses in different places.",
+    "Pilot on series that are partly digitized and already well studied, such as the Escribanos de Santiago and Real Audiencia records for the period of legal Mapuche slavery (1608–1683), on which Valenzuela Márquez (2017) and his collaborators have worked, or the Spanish Archives of New Mexico. Agents can transcribe, flag candidate entries and link the same person across sales, baptisms, lawsuits and inventories, with historians reviewing each link and checking totals against published regional counts.",
+    "Use the overlap between record types in these pilots to estimate how many enslaved people a given series misses. That correction is what turns a list of documented individuals into a population estimate.",
+    "Model the hemispheric total as a range built up region by region, each with stated assumptions about record survival and under-registration, and publish the linked records and code so that other teams can revise any region.",
+    "Extending this beyond the pilots depends on archives digitizing notarial and judicial series in Seville, Mexico City, Lima, São Paulo and Santa Fe, and on working with Indigenous communities, and with projects such as Native Bound Unbound that are already assembling records of enslaved people, on how those records are described and used."
   ],
   "existing": [
     {
@@ -42,6 +46,14 @@
       "note": "Showed the scale of Indian slavery in Guatemala and the effects of the New Laws' enforcement in the 1540s."
     },
     {
+      "year": 1971,
+      "authors": "Álvaro Jara",
+      "title": "Guerra y sociedad en Chile: la transformación de la Guerra de Arauco y la esclavitud de los indios",
+      "venue": "Santiago: Editorial Universitaria (first published Paris, 1961)",
+      "url": "https://www.memoriachilena.gob.cl/602/w3-article-8219.html",
+      "note": "The foundational study of the legal enslavement of Mapuche prisoners of war after the 1608 decree."
+    },
+    {
       "year": 1978,
       "authors": "Stuart B. Schwartz",
       "title": "Indian Labor and New World Plantations: European Demands and Indian Responses in Northeastern Brazil",
@@ -64,6 +76,14 @@
       "venue": "Slavery & Abolition 9 (2): 105–127",
       "url": "https://doi.org/10.1080/01440398808574952",
       "note": "Used São Paulo probate inventories to show the scale of bandeirante enslavement; expanded in Negros da terra (1994)."
+    },
+    {
+      "year": 1990,
+      "authors": "Marcel Trudel",
+      "title": "Dictionnaire des esclaves et de leurs propriétaires au Canada français",
+      "venue": "Montreal: Hurtubise HMH",
+      "url": "https://www.familysearch.org/search/catalog/400879",
+      "note": "A name-by-name register of enslaved people and their owners in French Canada, most of them Indigenous panis; reviewers have questioned some of its identifications."
     },
     {
       "year": 2002,
@@ -128,6 +148,22 @@
       "venue": "Ethnohistory 64 (1): 1–17",
       "url": "https://doi.org/10.1215/00141801-3688327",
       "note": "Introduces a special issue on seventeenth-century Indigenous slavery and surveys the hemispheric literature in several languages."
+    },
+    {
+      "year": 2017,
+      "authors": "Jaime Valenzuela Márquez (ed.)",
+      "title": "América en diásporas: esclavitudes y migraciones forzadas en Chile y otras regiones americanas (siglos XVI–XIX)",
+      "venue": "Santiago: RIL editores and Instituto de Historia, Pontificia Universidad Católica de Chile",
+      "url": "https://www.uc.cl/noticias/migraciones-forzadas-y-esclavitud-en-america-historias-de-desarraigo-y-resiliencia-son-dadas-a-conocer-en-nuevo-libro/",
+      "note": "Collected studies of Indigenous and African slavery and forced migration, including Valenzuela's work on enslaved Mapuche women before the Real Audiencia of Chile."
+    },
+    {
+      "year": 2021,
+      "authors": "Erin Woodruff Stone",
+      "title": "Captives of Conquest: Slavery in the Early Modern Spanish Caribbean",
+      "venue": "Philadelphia: University of Pennsylvania Press",
+      "url": "https://doi.org/10.9783/9780812299588",
+      "note": "Argues that upwards of 250,000 Indigenous people were enslaved in the Spanish Caribbean between the 1490s and the New Laws of 1542."
     }
   ],
   "archives": [
@@ -196,12 +232,18 @@
         {
           "name": "Escribanos de Santiago",
           "url": "https://archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/2023-10/CUADRO_SINÓPTICO_DE_FONDOS_ANH2022_WEB.pdf",
-          "note": "Notarial protocols of Santiago, 1559 to 1800 (973 volumes), the main source for sales and deposits of captives; described in the ANH synoptic table of fondos."
+          "note": "Notarial protocols of Santiago, 1559 to 1800 (973 volumes), the main source for sales and deposits of captives; described in the ANH synoptic table of fondos.",
+          "match": [
+            "Escribanos de Santiago"
+          ]
         },
         {
           "name": "Real Audiencia",
           "url": "https://archivonacional.gob.cl/sites/www.archivonacional.gob.cl/files/2023-10/CUADRO_SINÓPTICO_DE_FONDOS_ANH2022_WEB.pdf",
-          "note": "Court records of the Audiencia of Santiago, 1600 to 1830 (3,254 volumes), including litigation over captives."
+          "note": "Court records of the Audiencia of Santiago, 1600 to 1830 (3,254 volumes), including litigation over captives.",
+          "match": [
+            "Real Audiencia"
+          ]
         },
         {
           "name": "Capitanía General",
@@ -241,7 +283,10 @@
           "name": "Spanish Archives of New Mexico II (SANM II)",
           "ref": "SANM II",
           "url": "https://nmarchives.unm.edu/repositories/17/resources/763",
-          "note": "Spanish colonial administrative, civil, military and ecclesiastical records, 1621 to 1821; the originals are in Santa Fe and the University of New Mexico holds microfilm."
+          "note": "Spanish colonial administrative, civil, military and ecclesiastical records, 1621 to 1821; the originals are in Santa Fe and the University of New Mexico holds microfilm.",
+          "match": [
+            "Spanish Archives of New Mexico"
+          ]
         }
       ]
     },
