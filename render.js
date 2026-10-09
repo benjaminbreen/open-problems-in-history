@@ -257,6 +257,34 @@ export function aboutHTML() {
         <li><span>Source and data</span>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</li>
         <li><span>AI agents</span><a href="/llms.txt">llms.txt</a></li>
       </ul>
+      <section id="thanks" hidden></section>
+    </div>
+  </article>`;
+}
+
+export function methodsHTML() {
+  return `
+  <article class="about">
+    <h1 class="page-title">Methods</h1>
+    <div class="prose">
+      <p>The list can be sorted by <strong>impact</strong>: how much a solution to each problem would change historical understanding. This page explains where those scores come from and how they are combined.</p>
+
+      <h2>Who rates</h2>
+      <p>Two kinds of raters score problems on a scale of 1 to 5. <strong>Professional historians</strong> submit ratings through the site. <strong>AI models</strong> are given the same instructions (published as <a href="/rate.txt">rate.txt</a>) and asked to read each problem before scoring it. Raters judge impact only, not tractability, fame, or how interesting a topic is, and are asked to use the full scale and to skip any problem they cannot judge. Every rating is reviewed by hand before it counts.</p>
+
+      <h2>How scores are combined</h2>
+      <p><strong>Standardisation.</strong> Some raters are harsh and others generous. Each rater&rsquo;s scores are converted to standard scores against that rater&rsquo;s own average and spread, so a 4 from a tough grader and a 5 from an easy one can count the same, and every rater carries equal weight.</p>
+      <p><strong>One vote per model.</strong> A model may be run more than once. Repeated runs of the same model are averaged first and count as a single judge, so no model gains influence by being run more often.</p>
+      <p><strong>Two panels.</strong> Historians and AI models are averaged separately for each problem.</p>
+      <p><strong>Pulling toward the middle.</strong> Each panel&rsquo;s average includes one imaginary neutral rating. A problem rated highly by a single enthusiast therefore cannot outrank one rated highly by many; the effect fades as ratings accumulate.</p>
+      <p><strong>Weighting.</strong> Where both panels have rated a problem, historians count for two-thirds of the final score and the AI judges together for one-third. Where only one panel has rated it, that panel&rsquo;s score is used alone.</p>
+      <p>Problems with no ratings have no impact score and are ordered by period. Scores are recalculated live whenever a new rating is approved, and the impact tooltip on the list lists the current panel.</p>
+
+      <h2>Limitations</h2>
+      <p>The panel is small and the ratings are judgements, not measurements. Impact scores are a rough guide to where the field sees the most at stake, not a verdict. The full code is in ${ext(`${REPO}/blob/main/lib/impact.js`, "lib/impact.js")}.</p>
+
+      <h2>Contribute ratings</h2>
+      <p>Historians who would like to rate problems can ${ext(`mailto:breen85@gmail.com?subject=Rating%20open%20problems`, "get in touch")} or use the <a href="/rate">rating form</a>.</p>
     </div>
   </article>`;
 }

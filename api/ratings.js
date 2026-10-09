@@ -1,5 +1,7 @@
 // Impact ratings: each rater scores problems 1–5 ("how much would a solution change historical understanding?").
-// POST { name, affiliation, agent, scores: { <id>: 1-5 }, notes: { <id>: text }, website }   submit for review
+// POST { name, affiliation, agent, credit, scores: { <id>: 1-5 }, notes: { <id>: text }, website }   submit for review;
+//   credit = rater opts in to being thanked by name and affiliation on the About page
+// GET ?thanks=1             public: [{ name, affiliation }] of approved human raters who opted in, by surname
 // Admin only (x-admin-token header):
 // GET                      { pending: [...], approved: [...] }
 // PATCH { rid, action: "approve" | "reject" | "remove" }
@@ -13,7 +15,7 @@ export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
 
   if (req.method === "POST") {
-    const { name, affiliation, agent, scores, notes, website } = req.body || {};
+    const { name, affiliation, agent, credit, scores, notes, website } = req.body || {};
     if (website) return res.status(200).json({ ok: true, pending: true });
     const s = {};
     for (const [id, v] of Object.entries(scores || {})) if (ids.has(id) && [1, 2, 3, 4, 5].includes(v)) s[id] = v;
@@ -24,9 +26,20 @@ export default async function handler(req, res) {
     for (const [id, v] of Object.entries(notes || {})) if (ids.has(id) && clean(v, 1000)) n[id] = clean(v, 1000);
     const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), scores: s, notes: n };
     if (clean(agent, 80)) r.agent = clean(agent, 80);
+    else if (credit) r.credit = true;
     await db.hset("rpend", { [r.rid]: JSON.stringify(r) });
     await notify(`New impact rating from ${r.agent || r.name}`, `${Object.keys(s).length} problems scored${r.affiliation ? ` · ${r.affiliation}` : ""}`);
     return res.status(200).json({ ok: true, pending: true });
+  }
+
+  if (req.method === "GET" && req.query.thanks) {
+    const seen = new Map();
+    for (const r of Object.values((await db.hgetall("ratings")) || {}).map(parse)) {
+      if (r.credit && !r.agent && !seen.has(r.name.toLowerCase())) seen.set(r.name.toLowerCase(), { name: r.name, affiliation: r.affiliation || "" });
+    }
+    const key = (n) => n.name.trim().split(/\s+/).pop().toLowerCase();
+    res.setHeader("Cache-Control", "public, s-maxage=300, stale-while-revalidate=3600");
+    return res.status(200).json([...seen.values()].sort((a, b) => key(a).localeCompare(key(b)) || a.name.localeCompare(b.name)));
   }
 
   if (!isAdmin(req)) return res.status(403).json({ error: "forbidden" });

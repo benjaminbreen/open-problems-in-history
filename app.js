@@ -1,4 +1,4 @@
-import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -79,7 +79,9 @@ function seg(name, label, options) {
 }
 
 function renderList() {
-  const col = (k, l) => `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" data-tip="${esc(tips[k])}" aria-description="${esc(tips[k])}">${l}</button>`;
+  const col = (k, l) => k === "impact"
+    ? `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" aria-description="${esc(tips[k])} ${METHODS_NOTE}">${l}<span class="tip" aria-hidden="true">${esc(tips[k])}<em>${METHODS_NOTE}</em></span></button>`
+    : `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" data-tip="${esc(tips[k])}" aria-description="${esc(tips[k])}">${l}</button>`;
   const tips = {
     impact: impactTip(),
     votes: "Readers' upvotes minus downvotes. One vote per browser per problem.",
@@ -104,13 +106,15 @@ function renderList() {
   renderRows();
 }
 
+const METHODS_NOTE = "For more information, see the Methods page.";
+
 function impactTip() {
   const { historians = 0, models = {} } = state.panel || {};
   const n = (k, one, many) => `${k} ${k === 1 ? one : many}`;
   const ai = Object.entries(models).map(([m, k]) => `${n(k, "rating", "ratings")} from ${m}`);
   if (!historians && !ai.length) return "How much a solution would change historical understanding, rated 1–5 by historians and AI models. No ratings yet, so problems are ordered by period.";
   const who = [historians ? n(historians, "professional historian", "professional historians") : "", ai.length ? `AI judges (${ai.join(", ")})` : ""].filter(Boolean).join(" and ");
-  return `How much a solution would change historical understanding, rated 1–5 by ${who}. Each rater's scores are standardised against their own average. Historians count for two-thirds of the ranking and the AI judges together for one-third; repeated runs of one model count as a single judge. Problems with few ratings are pulled toward the middle.`;
+  return `How much a solution would change historical understanding, rated 1–5 by ${who}. Historians count for two-thirds of the ranking and the AI judges together for one-third; repeated runs of one model count as a single judge.`;
 }
 
 function renderRows() {
@@ -306,6 +310,7 @@ function renderRate() {
           <input type="text" name="affiliation" maxlength="160" placeholder="Field and institution" aria-label="Field and institution" value="${esc(d.affiliation || "")}">
           <input type="text" name="agent" maxlength="80" placeholder="AI model, if you are an agent" aria-label="AI model" value="${esc(d.agent || "")}">
         </div>
+        <label class="rf-credit"><input type="checkbox" name="credit" value="1"${d.credit ? " checked" : ""}><span>Thank me by name and affiliation on the <a href="/about" target="_blank" rel="noopener">About</a> page. Leave unchecked to stay anonymous.</span></label>
         <ol class="rate-list">${order.map((id, i) => {
           const p = byId[id];
           return `<li>
@@ -339,6 +344,7 @@ app.addEventListener("input", (e) => {
   const d = draft();
   d.notes ||= {};
   if (t.dataset.note) d.notes[t.dataset.note] = t.value;
+  else if (t.name === "credit") d.credit = t.checked;
   else if (["name", "affiliation", "agent"].includes(t.name)) d[t.name] = t.value;
   saveDraft(d);
 });
@@ -397,6 +403,23 @@ function renderSuggest() {
 function renderAbout() {
   document.title = "About · Open Problems in History";
   app.innerHTML = aboutHTML();
+  thanks();
+}
+
+// approved raters who opted in to being thanked by name
+async function thanks() {
+  let list = [];
+  try { list = await api("/api/ratings?thanks=1"); } catch { return; }
+  const el = app.querySelector("#thanks");
+  if (!el || !list.length) return;
+  el.innerHTML = `<h2>Thank you</h2><p>To the following historians who contributed ratings:</p>
+    <ul class="thanks-list">${list.map((r) => `<li>${esc(r.name)}${r.affiliation ? `<span class="note">, ${esc(r.affiliation)}</span>` : ""}</li>`).join("")}</ul>`;
+  el.hidden = false;
+}
+
+function renderMethods() {
+  document.title = "Methods · Open Problems in History";
+  app.innerHTML = methodsHTML();
 }
 
 // ---------- sources ----------
@@ -444,7 +467,7 @@ async function renderAdmin() {
     </div>`;
   const title = (id) => problems.find((p) => p.id === id)?.title || id;
   const rater = (r, pending) => `<div class="admin-item">
-      <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}
+      <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}${r.credit ? ` <span class="note">· wants credit</span>` : ""}
       <div class="note">${Object.keys(r.scores).length} scored · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
       <details><summary class="note">Scores</summary><ol class="admin-scores">${Object.entries(r.scores).sort((a, b) => b[1] - a[1])
         .map(([id, v]) => `<li><b>${v}</b> ${esc(title(id))}${r.notes?.[id] ? `<span class="note"> — ${esc(r.notes[id])}</span>` : ""}</li>`).join("")}</ol></details>
@@ -491,6 +514,7 @@ function route() {
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
+  else if (path === "/methods") renderMethods();
   else if (path === "/sources") renderSources();
   else if (path === "/admin") renderAdmin();
   else if (path === "/rate") renderRate();

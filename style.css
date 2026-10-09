@@ -269,6 +269,9 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .rate-q { font: 500 22px/1.35 var(--serif); margin: 0 0 14px; max-width: 34em; }
 .scale { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 13px; color: var(--ink-2); }
 .scale b { color: var(--accent); margin-right: 6px; }
+.rf-credit { display: flex; gap: 8px; align-items: baseline; font-size: 13px; margin: 0 0 10px; }
+.thanks-list { list-style: none; padding: 0; columns: 2 16em; }
+.thanks-list li { break-inside: avoid; margin: 0 0 4px; }
 .rf-who { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin: 18px 0 8px; }
 .rate-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
 .rate-list li { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; gap: 0 16px; padding: 14px 0; border-bottom: 1px solid var(--rule); align-items: start; }
@@ -308,6 +311,20 @@ ul.steps { margin: 0; padding: 0; list-style: none; max-width: 42em; }
 .thead button[data-tip]:hover::before, .thead button[data-tip]:focus-visible::before { opacity: 1; transition-delay: .25s; }
 .thead button[data-sort="discussed"]::after { left: auto; right: 0; }
 .thead button[data-sort="discussed"]::before { left: auto; right: 12px; }
+.thead button .tip {
+  position: absolute; top: calc(100% + 10px); left: 0; z-index: 20; width: max-content; max-width: 340px;
+  padding: 9px 11px; background: var(--ink); color: var(--bg);
+  font: 400 12px/1.5 var(--mono); letter-spacing: 0; text-transform: none; text-align: left; white-space: normal;
+  opacity: 0; transform: translateY(-3px); pointer-events: none; transition: opacity .15s, transform .15s;
+}
+.thead button .tip em { display: block; margin-top: 8px; font-size: 11px; font-style: italic; opacity: .75; }
+.thead button:has(.tip) { position: relative; }
+.thead button:has(.tip)::before {
+  content: ""; position: absolute; top: calc(100% + 4px); left: 12px; border: 6px solid transparent; border-bottom-color: var(--ink); border-top: 0;
+  opacity: 0; transition: opacity .15s; pointer-events: none; z-index: 20;
+}
+.thead button:hover .tip, .thead button:focus-visible .tip, .thead button:has(.tip):hover::before, .thead button:has(.tip):focus-visible::before { opacity: 1; transform: none; transition-delay: .25s; }
+@media (hover: none) { .thead button .tip, .thead button:has(.tip)::before { display: none; } }
 @media (hover: none) { .thead button[data-tip]::after, .thead button[data-tip]::before { display: none; } }
 
 /* method tags: outlined, in muted inks */
