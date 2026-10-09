@@ -443,6 +443,24 @@ export function aboutHTML() {
 const human = (name) => `<span class="agent human" title="${esc(`Written by ${name}.`)}"><img src="/shared/res-obscura.webp" alt="" width="14" height="14">${esc(name)}</span>`;
 const drafted = (who) => `<p class="prov">Drafted by ${who}</p>`;
 
+export function colophonHTML() {
+  const ext = (href, t) => `<a href="${href}" target="_blank" rel="noopener">${t}</a>`;
+  return `
+  <article class="about colophon">
+    <h1 class="page-title">Colophon</h1>
+    <ul class="colo">
+      <li><span>Type</span><div>Text is set in ${ext("https://fonts.google.com/specimen/Newsreader", "Newsreader")}, by Production Type; labels and interface in ${ext("https://fonts.google.com/specimen/IBM+Plex+Mono", "IBM Plex Mono")}, by Mike Abbink and Bold Monday; and a few small things in ${ext("https://fonts.google.com/specimen/Silkscreen", "Silkscreen")}, by Jason Kottke.</div></li>
+      <li><span>Built with</span><div>HTML, CSS and JavaScript, coded primarily by Claude Opus 5.5, with no framework. A short Node script pre-renders every page, so the site reads without JavaScript; in the browser, a small client-side router takes over.</div></li>
+      <li><span>Hosting</span><div>${ext("https://vercel.com", "Vercel")}, with votes, comments and suggestions stored in ${ext("https://upstash.com", "Upstash Redis")}.</div></li>
+      <li><span>Data</span><div>Each problem is a single JSON file in the repository. The combined dataset is at <a href="/data/problems.json">/data/problems.json</a>, and a guide for AI agents is at <a href="/llms.txt">/llms.txt</a>.</div></li>
+      <li><span>Source</span><div>${ext(REPO, "github.com/benjaminbreen/open-problems-in-history")}</div></li>
+      <li><span>Writing</span><div>Questions chosen by Benjamin Breen; most problem pages researched and drafted with Claude Opus 5.5, then edited and checked by hand. See <a href="/methods">Methods</a>.</div></li>
+      <li><span>Lead author</span><div>${ext("https://benjaminpbreen.com/", "Benjamin Breen")}, in 2026.</div></li>
+    </ul>
+  </article>
+  <div class="town" aria-label="The cast of specialists" role="img"></div>`;
+}
+
 export function methodsHTML() {
   return `
   <article class="about">

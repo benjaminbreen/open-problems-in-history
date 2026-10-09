@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
+import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -99,6 +99,14 @@ fs.writeFileSync("methods/index.html", page({
   description: "How impact ratings from historians and AI models are standardised, weighted and combined.",
   head: social({ title: `Methods · ${SITE}`, description: "How the impact ranking is calculated.", url: `${URL}/methods`, image: `${URL}/og/index.jpg` }),
   main: methodsHTML(),
+}));
+
+fs.mkdirSync("colophon", { recursive: true });
+fs.writeFileSync("colophon/index.html", page({
+  title: `Colophon · ${SITE}`,
+  description: "Typefaces, tools, hosting and data behind Open Problems in History.",
+  head: social({ title: `Colophon · ${SITE}`, description: "Typefaces, tools, hosting and data behind the site.", url: `${URL}/colophon`, image: `${URL}/og/index.jpg` }),
+  main: colophonHTML(),
 }));
 
 fs.mkdirSync("for", { recursive: true });

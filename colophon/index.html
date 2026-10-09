@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colophon · Open Problems in History</title>
+<meta name="description" content="Typefaces, tools, hosting and data behind Open Problems in History.">
+<link rel="canonical" href="https://historyproblems.com/colophon">
+<meta property="og:site_name" content="Open Problems in History">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Colophon · Open Problems in History">
+<meta property="og:description" content="Typefaces, tools, hosting and data behind the site.">
+<meta property="og:url" content="https://historyproblems.com/colophon">
+<meta property="og:image" content="https://historyproblems.com/og/index.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Colophon · Open Problems in History">
+<meta name="twitter:description" content="Typefaces, tools, hosting and data behind the site.">
+<meta name="twitter:image" content="https://historyproblems.com/og/index.jpg">
+<link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt">
+<script>try { const t = localStorage.getItem("op.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/shared/signature.css">
+<link rel="stylesheet" href="/style.css?v=d44eb78f">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>">
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="/">Open Problems in History</a>
+  <nav>
+    <a href="/" data-nav="list">Problems</a>
+    <a href="/suggest" data-nav="suggest">Suggest a problem</a>
+    <a href="/sources" data-nav="sources">Sources</a>
+    <a href="/about" data-nav="about">About</a>
+    <button class="mode" type="button" aria-label="Switch light or dark">◐</button>
+  </nav>
+</header>
+<main id="app" tabindex="-1">
+  <article class="about colophon">
+    <h1 class="page-title">Colophon</h1>
+    <ul class="colo">
+      <li><span>Type</span><div>Text is set in <a href="https://fonts.google.com/specimen/Newsreader" target="_blank" rel="noopener">Newsreader</a>, by Production Type; labels and interface in <a href="https://fonts.google.com/specimen/IBM+Plex+Mono" target="_blank" rel="noopener">IBM Plex Mono</a>, by Mike Abbink and Bold Monday; and a few small things in <a href="https://fonts.google.com/specimen/Silkscreen" target="_blank" rel="noopener">Silkscreen</a>, by Jason Kottke.</div></li>
+      <li><span>Built with</span><div>HTML, CSS and JavaScript, coded primarily by Claude Opus 5.5, with no framework. A short Node script pre-renders every page, so the site reads without JavaScript; in the browser, a small client-side router takes over.</div></li>
+      <li><span>Hosting</span><div><a href="https://vercel.com" target="_blank" rel="noopener">Vercel</a>, with votes, comments and suggestions stored in <a href="https://upstash.com" target="_blank" rel="noopener">Upstash Redis</a>.</div></li>
+      <li><span>Data</span><div>Each problem is a single JSON file in the repository. The combined dataset is at <a href="/data/problems.json">/data/problems.json</a>, and a guide for AI agents is at <a href="/llms.txt">/llms.txt</a>.</div></li>
+      <li><span>Source</span><div><a href="https://github.com/benjaminbreen/open-problems-in-history" target="_blank" rel="noopener">github.com/benjaminbreen/open-problems-in-history</a></div></li>
+      <li><span>Writing</span><div>Questions chosen by Benjamin Breen; most problem pages researched and drafted with Claude Opus 5.5, then edited and checked by hand. See <a href="/methods">Methods</a>.</div></li>
+      <li><span>Lead author</span><div><a href="https://benjaminpbreen.com/" target="_blank" rel="noopener">Benjamin Breen</a>, in 2026.</div></li>
+    </ul>
+  </article>
+  <div class="town" aria-label="The cast of specialists" role="img"></div></main>
+<footer class="foot">
+  <div class="foot-top">
+    <div>
+      <a class="mark" href="/">Open Problems in History</a>
+      <p class="stats" id="stats"></p>
+    </div>
+    <ul class="foot-links">
+      <li><a href="/">Problems</a></li>
+      <li><a href="/suggest">Suggest a problem</a></li>
+      <li><a href="/sources">Sources</a></li>
+      <li><a href="/for">Who can help</a></li>
+      <li><a href="/methods">Methods</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="https://buy.stripe.com/5kQaEXfJLgRGbqrf1L4F201">Donate</a></li>
+      <li><a href="/llms.txt">For AI agents</a></li>
+      <li><a href="https://github.com/benjaminbreen/open-problems-in-history">Source and data</a></li>
+      <li><a href="/colophon">Colophon</a></li>
+    </ul>
+  </div>
+  <div class="foot-sig">
+    <p class="signature">Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"><img src="/shared/res-obscura.webp" alt="" width="28" height="28" loading="lazy" decoding="async"></a></p>
+    <a href="/admin" class="quiet">Admin</a>
+  </div>
+</footer>
+<script src="/app.js?v=d44eb78f" type="module"></script>
+<script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

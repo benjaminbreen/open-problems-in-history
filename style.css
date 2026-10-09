@@ -522,3 +522,19 @@ body { overflow-x: clip; }
   .stage { position: static; height: auto; margin: 10px 0 0; padding: 20px 0 6px; }
   .sprite { --s: 2; }
 }
+
+/* colophon */
+ul.colo { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid var(--rule); }
+.colo li { display: grid; grid-template-columns: 9em 1fr; gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+.colo span { font: 500 12px/1.9 var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--muted); }
+.colo div { font: 18px/1.55 var(--serif); }
+@media (max-width: 640px) { .colo li { grid-template-columns: 1fr; } }
+.town { position: relative; height: 112px; margin: 56px 0 0; overflow: hidden; }
+.walker { position: absolute; left: 0; bottom: 6px; width: 48px; display: flex; flex-direction: column; align-items: center; will-change: transform; }
+.walker .sprite { --s: 1.5; }
+.walker .sprite::after { opacity: .1; }
+.tag8 { order: -1; margin-bottom: 4px; padding: 2px 5px 1px; font: 8px/1.2 "Silkscreen", var(--mono); text-transform: uppercase; white-space: nowrap;
+  background: var(--ink); color: var(--bg); text-decoration: none; opacity: 0; transform: translateY(3px); transition: opacity .15s, transform .15s; }
+.walker:hover .tag8, .walker:focus-within .tag8 { opacity: 1; transform: none; }
+.tag8:hover { background: var(--accent); color: var(--accent-ink); }
+@media (hover: none) { .tag8 { opacity: .85; transform: none; } }

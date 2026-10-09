@@ -1,4 +1,4 @@
-import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, forHTML, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
+import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
 const store = {
@@ -466,6 +466,71 @@ function character() {
 }
 document.addEventListener("click", (e) => { if (e.target.closest?.("[data-cheer], .sprite")) cheer(); });
 
+// ---------- colophon: the whole cast wanders a strip of ground ----------
+const CAST = {
+  historians: "Historian", archivists: "Archivist", archaeologists: "Archaeologist", geneticists: "Geneticist",
+  epidemiologists: "Epidemiologist", demographers: "Demographer", geoscientists: "Geoscientist", astronomers: "Astronomer",
+  statisticians: "Data scientist", "computational-linguists": "Linguist", philologists: "Philologist",
+  cryptographers: "Cryptographer", "conservation-scientists": "Conservator", gis: "Mapmaker", economists: "Economist",
+};
+function renderColophon() {
+  document.title = "Colophon · Open Problems in History";
+  app.innerHTML = colophonHTML();
+  town();
+}
+function town() {
+  const el = app.querySelector(".town");
+  if (!el) return;
+  const calm = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const keys = Object.keys(CAST).filter((k) => SPRITES.has(k)).sort(() => Math.random() - .5);
+  const SIZE = 48, SPEED = .03;               // walker width in px; walking speed in px per ms
+  const make = (k) => {
+    const a = document.createElement("div");
+    a.className = "walker";
+    a.innerHTML = `<button class="sprite on" type="button" tabindex="-1" style="background-image:url('/img/sprites/${k}.png${DATA_V}')"></button><a class="tag8" href="/for${k === "historians" ? "" : `/${k}`}">${CAST[k]}</a>`;
+    el.append(a);
+    const f = { k, a, sp: a.firstElementChild, x: 0, dir: -1, mode: "idle", i: 0, frameAt: 0, phase: "in", target: 0, until: 0 };
+    f.sp.addEventListener("click", () => { if (f.mode !== "walk") { f.mode = "win"; f.i = 0; f.winUntil = performance.now() + 1300; } });
+    return f;
+  };
+  const draw = (f) => {
+    f.a.style.transform = `translateX(${Math.round(f.x)}px)`;
+    f.sp.classList.toggle("flip", f.mode === "walk");
+    const seq = SEQ[f.mode];
+    f.sp.style.setProperty("--f", seq[f.i % seq.length]);
+  };
+  if (calm) {                                 // one character, standing still
+    const f = make(keys[0]); f.x = (el.clientWidth - SIZE) / 2; draw(f); return;
+  }
+  let n = 0;
+  const enter = (t) => {
+    const f = make(keys[n++ % keys.length]);
+    f.x = el.clientWidth + 4; f.mode = "walk"; f.frameAt = t;
+    f.target = el.clientWidth / 2 - SIZE / 2 + (Math.random() - .5) * 80;
+    return f;
+  };
+  let folk = [], last = performance.now(), raf = 0;
+  const step = (t) => {
+    const dt = Math.min(64, t - last); last = t;
+    if (!folk.length) folk.push(enter(t));
+    for (const f of folk) {
+      if (f.phase === "in" && f.x <= f.target) { f.phase = "stay"; f.mode = "idle"; f.i = 0; f.until = t + 4500 + Math.random() * 2500; }
+      if (f.phase === "stay" && f.mode === "win" && t > f.winUntil) f.mode = "idle";
+      if (f.phase === "stay" && t > f.until && f.mode !== "win") {
+        f.phase = "out"; f.mode = "walk"; f.i = 0;
+        folk.push(enter(t));                  // the next one walks in as this one leaves
+      }
+      if (f.mode === "walk") f.x -= dt * SPEED;
+      if (t - f.frameAt > PACE[f.mode]) { f.i++; f.frameAt = t; }
+      draw(f);
+    }
+    folk = folk.filter((f) => f.x > -SIZE - 8 || (f.a.remove(), false));
+    raf = requestAnimationFrame(step);
+  };
+  raf = requestAnimationFrame(step);
+  stopCharacter = () => cancelAnimationFrame(raf);
+}
+
 function renderMethods() {
   document.title = "Methods · Open Problems in History";
   app.innerHTML = methodsHTML();
@@ -566,6 +631,7 @@ function route() {
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
   else if (path === "/methods") renderMethods();
+  else if (path === "/colophon") renderColophon();
   else if (path === "/for" || path.startsWith("/for/")) renderFor(decodeURIComponent(path.slice(5)));
   else if (path === "/sources") renderSources();
   else if (path === "/admin") renderAdmin();
