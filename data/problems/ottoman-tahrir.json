@@ -117,35 +117,68 @@
       "collection": "Tapu Tahrir Defterleri (TT.d); avarız and cizye registers in Maliyeden Müdevver (MAD.d) and Kamil Kepeci (KK.d) series",
       "url": "https://katalog.devletarsivleri.gov.tr/",
       "digitized": "partial",
-      "note": "Main holdings of fifteenth- and sixteenth-century survey registers and later fiscal registers; the online catalogue lists items and many are viewable as images by registered researchers."
+      "note": "Main holdings of fifteenth- and sixteenth-century survey registers and later fiscal registers; the online catalogue lists items and many are viewable as images by registered researchers.",
+      "aliases": [
+        "Ottoman Archives"
+      ],
+      "holdings": [
+        {
+          "name": "Tapu Tahrir Defterleri",
+          "ref": "TT.d",
+          "note": "Fifteenth- and sixteenth-century provincial survey registers listing taxable household heads by village; the base series for the regional comparison.",
+          "match": [
+            "Tapu Tahrir (TT.d)"
+          ]
+        },
+        {
+          "name": "Maliyeden Müdevver Defterleri",
+          "ref": "MAD.d",
+          "note": "Financial registers transferred from the Finance Ministry in 1945; the series to search for later seventeenth-century avarız and cizye registers."
+        }
+      ]
     },
     {
       "repository": "General Directorate of Land Registry and Cadastre (TKGM), Kuyûd-ı Kadîme Archive, Ankara",
       "collection": "Detailed (mufassal) tahrir registers, many the final provincial copies of surveys also partly held in Istanbul",
       "url": "https://www.tkgm.gov.tr/",
       "digitized": "partial",
-      "note": "Access requires permission; the archive's tahrir holdings are essential for districts whose Istanbul copies are lost."
+      "note": "Access requires permission; the archive's tahrir holdings are essential for districts whose Istanbul copies are lost.",
+      "aliases": [
+        "Kuyûd-ı Kadîme"
+      ],
+      "holdings": [
+        {
+          "name": "Kuyûd-ı Kadîme tahrir registers",
+          "note": "Detailed (mufassal) tahrir registers, including final provincial copies of surveys for districts whose Istanbul copies are lost.",
+          "match": [
+            "Kuyûd-ı Kadîme registers"
+          ]
+        }
+      ]
     },
     {
       "repository": "Directorate of State Archives, Ankara (publications)",
       "collection": "Published facsimile and transcription editions of selected tahrir and muhasebe registers",
       "url": "https://www.devletarsivleri.gov.tr/",
       "digitized": "partial",
-      "note": "Facsimile editions of selected registers that can serve as training and validation data for transcription."
+      "note": "Facsimile editions of selected registers that can serve as training and validation data for transcription.",
+      "aliases": []
     },
     {
       "repository": "Türk Tarih Kurumu (Turkish Historical Society), Ankara",
       "collection": "Published editions and monographs on individual sancak registers",
       "url": "https://www.ttk.gov.tr/",
       "digitized": "partial",
-      "note": "Many district-level transcriptions of tahrir registers, a ready-made corpus for linking villages across registers."
+      "note": "Many district-level transcriptions of tahrir registers, a ready-made corpus for linking villages across registers.",
+      "aliases": []
     },
     {
       "repository": "İSAM (Center for Islamic Studies), Istanbul",
       "collection": "Copies of Ottoman kadı sicilleri (court registers) and bibliographic databases",
       "url": "https://isamveri.org/",
       "digitized": "partial",
-      "note": "Court registers record flight, abandoned villages and tax disputes, an independent check on register-based population series; holdings for Anatolian courts are uneven."
+      "note": "Court registers record flight, abandoned villages and tax disputes, an independent check on register-based population series; holdings for Anatolian courts are uneven.",
+      "aliases": []
     }
   ],
   "provenance": {
