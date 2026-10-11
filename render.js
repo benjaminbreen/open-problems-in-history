@@ -384,7 +384,7 @@ export function needCounts(problems) {
 
 // Pixel-art characters for the speciality pages: img/sprites/<key>.png, 13 frames of 32x48
 // (idle 0-3, walk 4-9 facing right, victory 10-12). app.js animates them.
-export const SPRITES = new Set(["historians", "archivists", "astronomers", "statisticians", "conservation-scientists", "archaeologists", "geneticists", "epidemiologists", "computational-linguists", "philologists", "cryptographers", "demographers", "geoscientists", "gis", "economists"]);
+export const SPRITES = new Set(["historians", "archivists", "astronomers", "statisticians", "conservation-scientists", "archaeologists", "geneticists", "epidemiologists", "computational-linguists", "philologists", "cryptographers", "demographers", "geoscientists", "gis", "economists", "musicologists"]);
 const stage = (key, name) => SPRITES.has(key)
   ? `<aside class="stage" aria-hidden="true"><button class="sprite" type="button" tabindex="-1" data-sprite="${key}" title="${esc(name)}"></button></aside>`
   : "";

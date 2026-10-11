@@ -471,7 +471,7 @@ const CAST = {
   historians: "Historian", archivists: "Archivist", archaeologists: "Archaeologist", geneticists: "Geneticist",
   epidemiologists: "Epidemiologist", demographers: "Demographer", geoscientists: "Geoscientist", astronomers: "Astronomer",
   statisticians: "Data scientist", "computational-linguists": "Linguist", philologists: "Philologist",
-  cryptographers: "Cryptographer", "conservation-scientists": "Conservator", gis: "Mapmaker", economists: "Economist",
+  cryptographers: "Cryptographer", "conservation-scientists": "Conservator", gis: "Mapmaker", economists: "Economist", musicologists: "Musicologist",
 };
 function renderColophon() {
   document.title = "Colophon · Open Problems in History";
