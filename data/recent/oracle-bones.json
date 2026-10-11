@@ -1,0 +1,226 @@
+{
+  "compiled_by": "Claude Opus 5.5",
+  "compiled_on": "2026-10-11",
+  "items": [
+    {
+      "date": "2016-10",
+      "kind": "prize",
+      "title": "Oracle-bone decipherment award: 100,000 yuan per new reading, 50,000 yuan per disputed graph",
+      "who": "National Museum of Chinese Writing, Anyang",
+      "venue": "Central News Agency (reporting Xinhua)",
+      "url": "https://www.cna.com.tw/news/acn/201610285015.aspx",
+      "note": "Open call for readings of unread graphs, each submission backed by two senior referees and judged by an expert committee convened through the national social-science planning office.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2016-10",
+      "kind": "grant",
+      "title": "Decipherment of oracle-bone graphs supported by big data and cloud platforms",
+      "who": "Li Xueqin (chief expert) and ten sub-projects",
+      "venue": "National Social Science Fund of China, major commissioned project",
+      "url": "https://www.xinhuanet.com/politics/2017-11/14/c_1121950905.htm",
+      "note": "National project begun in late October 2016 linking CASS, Tsinghua, Peking and Fudan universities to build full-text and image databases of the inscriptions.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2019",
+      "kind": "data",
+      "title": "Yinqi Wenyuan 殷契文渊 oracle-bone big-data platform opened to the public",
+      "who": "Anyang Normal University",
+      "venue": "jgw.aynu.edu.cn",
+      "url": "https://jgw.aynu.edu.cn/",
+      "note": "Combined graph, catalogue and literature databases; by 2024 it reported 153 published catalogues, about 239,000 images and over 33,000 studies.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2019-11",
+      "kind": "paper",
+      "title": "The Oracle Bone Inscriptions from Huayuanzhuang East",
+      "who": "A. C. Schwartz",
+      "venue": "De Gruyter",
+      "url": "https://doi.org/10.1515/9781501505294",
+      "note": "Annotated English translation of the non-royal inscriptions excavated in 1991, a complete, provenanced group for testing readings in context.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2020-10",
+      "kind": "paper",
+      "title": "Joining jades and linking pearls: 120 Years of rejoining fragmented oracle bone inscriptions",
+      "who": "Jiang Yubin",
+      "venue": "Chinese Studies in History",
+      "url": "https://doi.org/10.1080/00094633.2020.1834815",
+      "note": "Survey of a century of fragment joins, the work that restores the context on which readings of rare graphs depend.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2022",
+      "kind": "prize",
+      "title": "First awards: 100,000 yuan to Jiang Yubin, 50,000 yuan to Wang Ziyang",
+      "who": "National Museum of Chinese Writing, Anyang",
+      "venue": "Xinmin Weekly (2024)",
+      "url": "https://img1.xinmin.cn/xmzk/2024-04-08/580408.pdf",
+      "note": "The first batch, announced at the end of 2022, six years after the call: one first-class award (Fudan) and one second-class award (Tsinghua).",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2022-12",
+      "kind": "data",
+      "title": "Jiaguwen moben daxi 甲骨文摹本大系",
+      "who": "Huang Tianshu (chief ed.), Tsinghua University",
+      "venue": "Peking University Press",
+      "url": "https://www.sinoss.net/c/2022-12-20/628020.shtml",
+      "note": "Forty-three-volume facsimile corpus of 70,659 inscribed pieces, deduplicated, with joins to 2020 and each piece assigned to a script group.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2023",
+      "kind": "prize",
+      "title": "Second awards: two first-class (Chen Jian, Zhou Zhongbing) and three second-class prizes",
+      "who": "National Museum of Chinese Writing, Anyang",
+      "venue": "Xinmin Weekly (2024)",
+      "url": "https://img1.xinmin.cn/xmzk/2024-04-08/580408.pdf",
+      "note": "Announced at the end of 2023; Chen Jian's winning paper identifies a variant of 徹 from differences between diviner groups, and the others go to Wang Ziyang, Xie Mingwen and Li Chuntao.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2023-09",
+      "kind": "paper",
+      "title": "The \"graphic design\" for 旅 'troops' and 車 'chariot' in oracle-bone and bronze inscriptions",
+      "who": "C. Maréchal and K. Takashima",
+      "venue": "Journal of Chinese Linguistics",
+      "url": "https://doi.org/10.1353/jcl.2017.a906754",
+      "note": "Traces how two graphs were composed and changed from oracle-bone to bronze inscriptions, the kind of form-tracing that decipherment arguments depend on.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-01",
+      "kind": "data",
+      "title": "An open dataset for the evolution of oracle bone characters: EVOBC",
+      "who": "H. Guan, J. Wan, Y. Liu et al.",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2401.12467",
+      "note": "Image dataset linking graphs across six stages from oracle-bone to later scripts, intended for machine tracing of forms forward through time.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-06",
+      "kind": "paper",
+      "title": "Deciphering Oracle Bone Language with Diffusion Models",
+      "who": "H. Guan, H. Yang, X. Wang et al.",
+      "venue": "ACL 2024",
+      "url": "https://aclanthology.org/2024.acl-long.831/",
+      "note": "Conditional diffusion model that generates candidate modern forms as decipherment clues; won an ACL 2024 Best Paper award, though tested on known graphs.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024-07",
+      "kind": "event",
+      "title": "International conference marking 125 years since the discovery of the oracle-bone inscriptions",
+      "who": "Oracle-bone specialists convened in Jinan",
+      "venue": "Jinan",
+      "url": "https://www.cssn.cn/skgz/bwyc/202408/t20240806_5768933.shtml",
+      "note": "Papers on new readings drew on joins, scraping, partial graphs and carving technique; the report puts the inventory at nearly 4,400 graphs, about 1,700 read.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-09",
+      "kind": "data",
+      "title": "An open dataset for oracle bone character recognition and decipherment (HUST-OBC)",
+      "who": "P. Wang, K. Zhang, X. Wang et al.",
+      "venue": "Scientific Data",
+      "url": "https://doi.org/10.1038/s41597-024-03807-x",
+      "note": "Openly released 140,053 images of 1,588 deciphered and 9,411 undeciphered graph categories; the common benchmark for later AI work.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2024-12",
+      "kind": "paper",
+      "title": "OBI-Bench: Can LMMs Aid in Study of Ancient Script on Oracle Bones?",
+      "who": "Z. Chen, T. Chen, W. Zhang et al.",
+      "venue": "ICLR 2025 (arXiv)",
+      "url": "https://arxiv.org/abs/2412.01175",
+      "note": "Benchmark of 5,523 images on recognition, rejoining, classification, retrieval and decipherment; general multimodal models performed far below experts.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-04",
+      "kind": "event",
+      "title": "AI-assisted oracle-bone research invitational competition",
+      "who": "Henan Provincial Administration of Cultural Heritage, Anyang government, Anyang Normal University and Tencent SSV",
+      "venue": "China (Anyang) International Conference of Chinese Characters",
+      "url": "https://www.chinaservicesinfo.com/s/202505/23/WS682fcda9498eec7e1f7377d9/race-on-to-decipher-oracle-bone-characters-with-ai.html",
+      "note": "Research, algorithm (fragment joining and duplicate-rubbing detection) and creative tracks; 22 decipherment teams entered and 8 were shortlisted by October 2025.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-08",
+      "kind": "data",
+      "title": "InteChar: A Unified Oracle Bone Character List for Ancient Chinese Language Modeling",
+      "who": "X. Diao, Z. Zhou, L. Shi et al.",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2508.15791",
+      "note": "Character list encoding unencoded oracle-bone graphs alongside traditional and modern Chinese, with a corpus for training language models on the inscriptions.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-10",
+      "kind": "tool",
+      "title": "Yinqi Xingzhi 殷契行止 oracle-bone agent",
+      "who": "Anyang Normal University, Tencent SSV, Tencent Youtu Lab and Xiamen University",
+      "venue": "China Daily",
+      "url": "https://cn.chinadaily.com.cn/a/202510/30/WS6903138fa310c4deea5ef258.html",
+      "note": "Free recognition, comparison and retrieval tool built on 1.43 million graph records; its makers report leads on more than ten unread graphs, not yet reviewed.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-10",
+      "kind": "tool",
+      "title": "OracleAgent: A Multimodal Reasoning Agent for Oracle Bone Script Research",
+      "who": "C. Li, Z. Ding, X. Hu et al.",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2510.26114",
+      "note": "LLM agent orchestrating oracle-bone analysis tools over an expert-annotated knowledge base of over 1.4 million single-graph rubbing images.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-06",
+      "kind": "paper",
+      "title": "Oracle Bone Inscriptions: A New Exploration of the Three-Thousand-Year-Old Chinese Writing System",
+      "who": "Chen Tingzhu",
+      "venue": "Routledge",
+      "url": "https://doi.org/10.4324/9781003667292",
+      "note": "Study of variants, graph structure, components and character frequency across the corpus, offering quantitative baselines for judging new readings.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-06",
+      "kind": "paper",
+      "title": "AlphaOracle: Oracle bone script decipherment via human-workflow-inspired deep learning",
+      "who": "Y. Liu, H. Guan, P. Wang et al.",
+      "venue": "The Innovation",
+      "url": "https://doi.org/10.1016/j.xinn.2026.101462",
+      "note": "Pipeline producing evidence chains from form, context and classical texts; its readings agreed with experts on test graphs, and it proposes 'Lao' as a place or clan name.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

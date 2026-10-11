@@ -1,0 +1,226 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-11",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Nutritional Standards of Living in England and the Yangtze Delta (Jiangnan), circa 1644–circa 1840: Clarifying Data for Reciprocal Comparisons",
+   "who": "K. Deng and P. O'Brien",
+   "venue": "Journal of World History",
+   "url": "https://doi.org/10.1353/jwh.2016.0039",
+   "note": "Recalibrates the evidence into kilocalories and rejects the inference-derived statistics cited for Jiangnan's parity with England.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-03",
+   "kind": "paper",
+   "title": "Establishing statistical foundations of a chronology for the great divergence: a survey and critique of the primary sources for the construction of relative wage levels for Ming–Qing China",
+   "who": "K. Deng and P. O'Brien",
+   "venue": "Economic History Review",
+   "url": "https://doi.org/10.1111/ehr.12281",
+   "note": "Surveys the Chinese sources behind real-wage comparisons and places most of the evidence between guesswork and plausible conjecture.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-12",
+   "kind": "paper",
+   "title": "Chinese National Income, ca. 1661–1933",
+   "who": "Y. Xu, Z. Shi, B. van Leeuwen et al.",
+   "venue": "Australian Economic History Review",
+   "url": "https://doi.org/10.1111/aehr.12127",
+   "note": "Estimates Chinese GDP per head from 1661 and finds a persistent decline from the seventeenth to the nineteenth century.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-09",
+   "kind": "paper",
+   "title": "China, Europe, and the Great Divergence: A Study in Historical National Accounting, 980–1850",
+   "who": "S. Broadberry, H. Guan and D. D. Li",
+   "venue": "Journal of Economic History",
+   "url": "https://doi.org/10.1017/S0022050718000529",
+   "note": "First historical national accounts for China, dating the divergence earlier than the California School but later than older Eurocentric accounts.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "Early Portuguese Data for Wage Developments in India: Kannur (Cananor), 1516-1517",
+   "who": "P. T. de Matos and J. Lucassen",
+   "venue": "Ler História",
+   "url": "https://doi.org/10.4000/lerhistoria.5640",
+   "note": "Adds wage and price data from unpublished Portuguese records, suggesting Indian real wages rose to a peak around 1600.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-06",
+   "kind": "paper",
+   "title": "Poverty or prosperity in northern India? New evidence on real wages, 1590s–1870s",
+   "who": "P. de Zwart and J. Lucassen",
+   "venue": "Economic History Review",
+   "url": "https://doi.org/10.1111/ehr.12996",
+   "note": "New wage dataset from Gujarat to Bengal dating the Anglo-Indian divergence to the late seventeenth century, widening after the 1720s.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "China, Europe, and the Great Divergence: A Restatement",
+   "who": "S. Broadberry, H. Guan and D. D. Li",
+   "venue": "Journal of Economic History",
+   "url": "https://doi.org/10.1017/S0022050721000292",
+   "note": "Replies to Peter Solar's critique, holding that China's leading region matched Europe's until the eighteenth century and that divergence began around 1700.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "China: The Start of the Great Divergence",
+   "who": "C. M. Isett",
+   "venue": "Cambridge Economic History of the Modern World",
+   "url": "https://doi.org/10.1017/9781316671566.006",
+   "note": "Argues that Chinese output per head shrank after about 1740 as food production fell behind population growth.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-12",
+   "kind": "paper",
+   "title": "Wage Earners in India 1500–1900: Regional Approaches in an International Context",
+   "who": "J. Lucassen and R. Seshan (eds)",
+   "venue": "Sage",
+   "url": "https://doi.org/10.4135/978-93-5479-364-6",
+   "note": "Edited volume introducing previously unused wage material for several Indian regions and reinterpreting older data.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "data",
+   "title": "GLOBALISE: transcription of the VOC Overgekomen Brieven en Papieren",
+   "who": "Huygens Institute and partners",
+   "venue": "GLOBALISE",
+   "url": "https://globalise.huygens.knaw.nl/",
+   "note": "Project running 2022 to 2026 applying handwritten text recognition to over five million VOC pages, including Bengal and Coromandel records.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-11",
+   "kind": "paper",
+   "title": "After da Gama: real wages in Western India, c. 1500–c. 1650",
+   "who": "H. Carvalhal, J. Lucassen and P. de Zwart",
+   "venue": "European Review of Economic History",
+   "url": "https://doi.org/10.1093/ereh/head026",
+   "note": "Uses 2,710 wage observations from nine Western Indian locations to argue the gap with north-western Europe was visible by the early 1500s.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-11",
+   "kind": "paper",
+   "title": "The long-run evolution of global real wages",
+   "who": "P. de Zwart",
+   "venue": "Journal of Economic Surveys",
+   "url": "https://doi.org/10.1111/joes.12592",
+   "note": "Reviews two decades of comparative real-wage research, which places England and the Low Countries ahead of Asia from about 1720.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Wages, labour markets, and living standards in China, 1530–1840",
+   "who": "Z. Liu",
+   "venue": "Explorations in Economic History",
+   "url": "https://doi.org/10.1016/j.eeh.2023.101569",
+   "note": "Extends Chinese wage series back to 1530 and finds the Lower Yangzi–England wage gap widening after 1700.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2025-07",
+   "kind": "paper",
+   "title": "Weak data nullify bold claims about economic trends in Qing China",
+   "who": "T. G. Rawski",
+   "venue": "Asia-Pacific Economic History Review",
+   "url": "https://doi.org/10.1111/aehr.70010",
+   "note": "Argues that plausible error margins on Qing grain output allow stable, rising or falling output per head, undermining claims of decline.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-12",
+   "kind": "paper",
+   "title": "Real wages around the world: Insights from linear programming and accounting for climate differences",
+   "who": "M. Moatsos and P. de Zwart",
+   "venue": "Economics & Human Biology",
+   "url": "https://doi.org/10.1016/j.ehb.2025.101544",
+   "note": "Recomputes real wages for 86 markets with climate-adjusted, cost-minimising baskets, shifting levels and trends in the Great Divergence comparisons.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-01",
+   "kind": "paper",
+   "title": "Wages of Men, Women, and All the Others: Comparisons of the Standard of Living Based on Welfare Ratios Must Consider Household Complexity",
+   "who": "S. Öberg",
+   "venue": "Social Science History",
+   "url": "https://doi.org/10.1017/ssh.2025.10117",
+   "note": "Shows that male-wage welfare ratios overstate gaps where complex households relied less on the head's income than nuclear English ones.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-02",
+   "kind": "paper",
+   "title": "Economic trends in Qing China: A response to Rawski's bold claims",
+   "who": "S. Broadberry, H. Guan and D. D. Li",
+   "venue": "Asia-Pacific Economic History Review",
+   "url": "https://doi.org/10.1111/aehr.70019",
+   "note": "Rejects Rawski's wider error margins and argues that other indicators support declining per capita grain supply after 1700.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-02",
+   "kind": "paper",
+   "title": "Long-run housing price indices and determinants: New data from Huizhou, China, 1570–1949",
+   "who": "S. Pan",
+   "venue": "Economic History Review",
+   "url": "https://doi.org/10.1111/ehr.70096",
+   "note": "Builds housing price indices from over 1,000 Huizhou transaction contracts, showing the price evidence these documents can yield.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-04",
+   "kind": "paper",
+   "title": "Agricultural growth in the Yangzi Delta: 1393–1953",
+   "who": "R. Zhai",
+   "venue": "Explorations in Economic History",
+   "url": "https://doi.org/10.1016/j.eeh.2026.101763",
+   "note": "Long-run reconstruction of Yangzi delta agricultural output bearing on the region's income trajectory before and after 1700.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-08",
+   "kind": "paper",
+   "title": "Innovation and the great divergence",
+   "who": "S. Broadberry and R. Zhai",
+   "venue": "Economic History Review",
+   "url": "https://doi.org/10.1111/ehr.70151",
+   "note": "Argues north-west Europe passed the Yangzi delta only after 1700, but that the opposing trends were continuations of paths begun in the fourteenth century.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

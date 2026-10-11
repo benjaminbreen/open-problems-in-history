@@ -1,0 +1,11 @@
+{
+  "id": "oracle-bones",
+  "file": "data/images/src/oracle-bones.jpg",
+  "caption": "Inscribed ox scapula, diviner Zheng, reign of Wu Ding, c. 1200 BCE",
+  "commons": "https://commons.wikimedia.org/wiki/File:Shang_dynasty_inscribed_scapula.jpg",
+  "author": "BabelStone (Andrew West)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+  "crop": "center",
+  "zoom": 1.3
+}

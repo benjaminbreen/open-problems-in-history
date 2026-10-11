@@ -1,0 +1,246 @@
+{
+  "id": "ibn-battuta",
+  "title": "Which of the journeys in Ibn Baṭṭūṭa's Riḥla did he actually make?",
+  "short": "The account of thirty years' travel dictated to Ibn Juzayy in 1354–55 mixes eyewitness report with borrowed passages, and several legs, from the Volga to China, remain doubted.",
+  "region": "Global",
+  "field": "Texts & authorship",
+  "start": 1325,
+  "end": 1355,
+  "flags": [],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Collate the Paris manuscripts, starting with BnF Arabe 2291, against the Defrémery–Sanguinetti text, and mark which passages Ibn Juzayy signals as his own additions or quotations."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Run passim-style text-reuse detection of the Riḥla against OpenITI, report precision and recall on the known Ibn Jubayr borrowings, then list every other candidate source passage."
+    },
+    {
+      "who": "gis",
+      "ask": "Build a dated itinerary of each stated leg and test it against plausible travel speeds by land and sea, monsoon seasons and the stated departure and arrival dates."
+    }
+  ],
+  "matters": "The Riḥla is a principal or sole narrative source for the Maldives, the Sultanate of Delhi under Muḥammad b. Tughluq, the Golden Horde, the Swahili coast and the empire of Mali in the 1320s–1350s, and historians of each region cite it as eyewitness testimony. If parts were compiled from earlier books or hearsay, the details taken from those parts (court ceremonial, prices, names of officials, reports of the Black Death) need different handling from those he witnessed. The case also bears on how riḥla literature was composed: Ibn Juzayy was a court secretary working to a sultan's commission, and the text shows how a fourteenth-century Maghribi editor combined testimony, literary models and older geography.",
+  "stuck": "The Riḥla is the only record of most of the journey, so there is rarely an independent document placing Ibn Baṭṭūṭa anywhere, and he says he lost notes when robbed on the way. Borrowings were shown passage by passage by hand (Ibn Jubayr for Syria and the Hijaz, earlier descriptions for Palestine), but nobody has compared the whole text systematically with the surviving Arabic geographical and travel literature. Its internal dates are often inconsistent, and the chronologies of Hrbek (1962) and Gibb and Beckingham disagree, so a leg judged impossible under one chronology can fit under another.",
+  "solved": "A published passage-by-passage classification of the full Riḥla, each passage labelled as borrowed (with the source and its parallel passage), independently corroborated (by a dated official, event or physical feature attested elsewhere), or unverifiable. The method should first recover the Ibn Jubayr borrowings already identified by hand, with reported error rates, and the resulting leg-by-leg verdicts should be consistent with a single explicit chronology.",
+  "approach": [
+    "Begin from the existing scholarship: Janicsek (1929) on the Bulghār excursion, Elad (1987) on Palestine, Mattock (1981) on the use of Ibn Jubayr, the chronology of Hrbek (1962), the notes of Gibb (1958) and Beckingham (1993), and the assessments of Dunn (1986), Elger (2010) and Tresso (2021). Each already-identified borrowing becomes a labelled test case.",
+    "Align the Riḥla in OpenITI (several digital witnesses of the Defrémery–Sanguinetti and later editions) with the rest of the corpus using passim, the same aligner KITAB has run across OpenITI, and check first that it recovers the Ibn Jubayr parallels at the passage level. Collation against BnF Arabe 2291 and the other Paris manuscripts, whose provenance Ahmed, Dumothier and McGinn (2024) traced, guards against artefacts of the printed text.",
+    "Then extend the search to the geographies and travel works Ibn Juzayy could have used (al-Idrīsī, Yāqūt, al-ʿUmarī, al-ʿAbdarī and others), keeping paraphrase and shared formulae separate from verbatim reuse, since a loose parallel does not prove that a journey was invented.",
+    "For passages without textual parallels, list every named ruler, judge, preacher and merchant with the dates the Riḥla implies, and check them against chronicles, biographical dictionaries and coins, as Tresso (2021) did for the Black Death and Fauvelle-Aymar and Hirsch (2003) did for Mali; each match or mismatch is evidence for or against presence at that date.",
+    "Model each leg's travel time from stated departure and arrival dates, distances and monsoon seasons, and test the doubted segments (Bulghār, Yemen and Oman, eastern Anatolia, northern China, and the Constantinople excursion, which most accept but which strains the chronology) under both the Hrbek and the Gibb–Beckingham chronologies.",
+    "The result is a graded map of the journey in which each leg carries its evidence and its uncertainty; the final judgements require Arabists and regional historians reviewing the machine-proposed parallels and identifications."
+  ],
+  "existing": [
+    {
+      "year": 1853,
+      "authors": "C. Defrémery and B. R. Sanguinetti",
+      "title": "Voyages d'Ibn Batoutah, texte arabe accompagné d'une traduction",
+      "venue": "4 vols. Paris: Société asiatique / Imprimerie impériale, 1853–1858",
+      "url": "https://opendata.uni-halle.de/handle/1981185920/102470",
+      "note": "First complete edition and French translation, based on the five Paris manuscripts; still the base text of most later editions and digital versions."
+    },
+    {
+      "year": 1929,
+      "authors": "Stephen Janicsek",
+      "title": "Ibn Baṭṭūṭa's Journey to Bulghàr: Is It a Fabrication?",
+      "venue": "Journal of the Royal Asiatic Society 61 (4): 791–800",
+      "url": "https://doi.org/10.1017/S0035869X00070015",
+      "note": "Argued from the time allowed and the content of the description that the excursion from the Golden Horde to Bulghār on the Volga was not made."
+    },
+    {
+      "year": 1958,
+      "authors": "H. A. R. Gibb (vols. I–III); C. F. Beckingham (vol. IV)",
+      "title": "The Travels of Ibn Baṭṭūṭa, A.D. 1325–1354",
+      "venue": "Hakluyt Society, Second Series. Cambridge, 1958–1994 (index 2000)",
+      "url": "https://doi.org/10.4324/9781315085050",
+      "note": "Standard annotated English translation, whose notes identify many borrowings, including the passages taken from Ibn Jubayr, and flag implausible dates."
+    },
+    {
+      "year": 1962,
+      "authors": "Ivan Hrbek",
+      "title": "The Chronology of Ibn Baṭṭūṭa's Travels",
+      "venue": "Archiv Orientální 30: 409–486",
+      "url": "",
+      "note": "Reconstructed the itinerary from internal dates and external events, finding many inconsistencies and proposing a revised sequence that differs from Gibb's."
+    },
+    {
+      "year": 1981,
+      "authors": "J. N. Mattock",
+      "title": "Ibn Baṭṭūṭa's Use of Ibn Jubayr's Riḥla",
+      "venue": "In R. Peters (ed.), Proceedings of the Ninth Congress of the Union Européenne des Arabisants et Islamisants. Leiden: Brill, 209–218",
+      "url": "https://openlibrary.org/books/OL3527827M",
+      "note": "Examined how passages from Ibn Jubayr's twelfth-century Riḥla were taken over and adapted, the best-documented case of borrowing in the text."
+    },
+    {
+      "year": 1986,
+      "authors": "Ross E. Dunn",
+      "title": "The Adventures of Ibn Battuta: A Muslim Traveler of the 14th Century",
+      "venue": "London: Croom Helm; revised ed. Berkeley: University of California Press, 2005",
+      "url": "https://doi.org/10.1525/9780520951617",
+      "note": "Narrative reconstruction that accepts most of the journey while judging the Bulghār trip doubtful and noting problems with the China section and the chronology."
+    },
+    {
+      "year": 1987,
+      "authors": "Amikam Elad",
+      "title": "The description of the travels of Ibn Baṭṭūṭa in Palestine: is it original?",
+      "venue": "Journal of the Royal Asiatic Society 119 (2): 256–272",
+      "url": "https://doi.org/10.1017/S0035869X00140651",
+      "note": "Argued that much of the Palestine section reproduces earlier written descriptions rather than first-hand observation."
+    },
+    {
+      "year": 1993,
+      "authors": "C. F. Beckingham",
+      "title": "The Riḥla: Fact or Fiction?",
+      "venue": "In I. R. Netton (ed.), Golden Roads: Migration, Pilgrimage and Travel in Mediaeval and Modern Islam. Richmond: Curzon, 86–94",
+      "url": "https://doi.org/10.4324/9781003572701-10",
+      "note": "The completer of the Hakluyt translation weighed the evidence for invention and borrowing; elsewhere he judged the Bulghār, Yemen, Oman and eastern Anatolian movements not credible."
+    },
+    {
+      "year": 1993,
+      "authors": "Stephan Conermann",
+      "title": "Die Beschreibung Indiens in der Riḥla des Ibn Baṭṭūṭa",
+      "venue": "Berlin: Klaus Schwarz",
+      "url": "https://doi.org/10.1515/9783112401101",
+      "note": "Monograph on the India section, the longest part of the work, reading it as a composed literary description to be tested against Indo-Persian sources."
+    },
+    {
+      "year": 2003,
+      "authors": "François-Xavier Fauvelle-Aymar and Bertrand Hirsch",
+      "title": "Voyage aux frontières du monde: topographie narrative de l'Afrique subsaharienne d'Ibn Baṭṭūṭa",
+      "venue": "Afrique & histoire 1 (1): 75–122",
+      "url": "https://doi.org/10.3917/afhi.001.0075",
+      "note": "Read the East African and Malian sections as narrative constructions of the edge of the Islamic world, separating literary structure from usable observation."
+    },
+    {
+      "year": 2010,
+      "authors": "Ralf Elger",
+      "title": "Lying, Forging, Plagiarism: Some Narrative Techniques in Ibn Baṭṭūṭa's Travelogue",
+      "venue": "In R. Elger and Y. Köse (eds.), Many Ways of Speaking about the Self. Wiesbaden: Harrassowitz",
+      "url": "https://www.harrassowitz-verlag.de/title_3865.ahtml?NKLN=141_A",
+      "note": "Argued that borrowing, anachronism and invention are pervasive in the text and should be read as narrative techniques, the most sceptical recent position."
+    },
+    {
+      "year": 2010,
+      "authors": "David Waines",
+      "title": "The Odyssey of Ibn Battuta: Uncommon Tales of a Medieval Adventurer",
+      "venue": "London: I. B. Tauris",
+      "url": "https://doi.org/10.5040/9780755699681",
+      "note": "Thematic study treating the Riḥla as a crafted narrative while defending the substantial reality of most of the journey."
+    },
+    {
+      "year": 2017,
+      "authors": "Hadrien Collet",
+      "title": "Deviser les merveilles du monde",
+      "venue": "Annales islamologiques 51: 85–109",
+      "url": "https://doi.org/10.4000/anisl.3355",
+      "note": "Rereads the Mali journey in light of the work's literary project, a jointly written text built around a typology of marvels, with Ibn Jubayr quoted at length elsewhere."
+    },
+    {
+      "year": 2021,
+      "authors": "Claudia Maria Tresso",
+      "title": "Two-year Journey under the Arrows of the Black Death",
+      "venue": "Journal of Arabic and Islamic Studies 21: 137–189",
+      "url": "https://doi.org/10.5617/jais.9292",
+      "note": "Tested the 1348–50 return journey against Arabic plague chronicles and asked whether its plague passages report experience or draw on other sources."
+    },
+    {
+      "year": 2024,
+      "authors": "Sumayya Ahmed, Theo Dumothier and Kai Miyabayashi McGinn",
+      "title": "The Colonial Adventures of Confiscated Arabic Texts: Ibn Battuta's Rihla Manuscript from North Africa to the French National Library",
+      "venue": "Library Trends 72 (3): 463–477",
+      "url": "https://doi.org/10.1353/lib.2024.a944675",
+      "note": "Traced from French archival sources how the Paris manuscripts, including the copy believed to be Ibn Juzayy's, reached the Bibliothèque nationale in the nineteenth century."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Bibliothèque nationale de France, Paris",
+      "collection": "Département des Manuscrits, Arabe 2287–2291 (formerly Supplément arabe 907–911): the five Paris manuscripts of the Tuḥfat al-nuẓẓār",
+      "url": "https://archivesetmanuscrits.bnf.fr/",
+      "digitized": "partial",
+      "note": "The manuscripts used by de Slane and by Defrémery and Sanguinetti, acquired in the 1830s–40s; Arabe 2291 is viewable on Gallica.",
+      "aliases": ["Bibliothèque nationale", "BnF", "Paris manuscripts"],
+      "holdings": [
+        {
+          "name": "Second part of the Riḥla, dated 757/1356, believed to be Ibn Juzayy's autograph",
+          "ref": "BnF Arabe 2291 (Supplément arabe 907)",
+          "url": "https://gallica.bnf.fr/ark:/12148/btv1b52521475z",
+          "note": "The earliest witness, covering the journey from Sind onward; the base for testing whether passages were present in the text Ibn Juzayy finished.",
+          "match": ["BnF Arabe 2291", "Arabe 2291"]
+        },
+        {
+          "name": "Other Paris copies, two of them complete",
+          "ref": "BnF Arabe 2287 (Supplément arabe 909), Arabe 2288 (Supp. ar. 911), Arabe 2289 (Supp. ar. 910), Arabe 2290 (Supp. ar. 908)",
+          "note": "Later copies, Arabe 2287 acquired from the former French consul in Morocco Delaporte according to Defrémery and Sanguinetti; needed to separate scribal variants from Ibn Juzayy's text."
+        }
+      ]
+    },
+    {
+      "repository": "Open Islamicate Texts Initiative (OpenITI)",
+      "collection": "Machine-readable corpus of premodern Arabic and Persian texts, including several witnesses of the Riḥla of Ibn Baṭṭūṭa and of Ibn Jubayr",
+      "url": "https://openiti.org/",
+      "digitized": "full",
+      "note": "Open corpus on GitHub and Zenodo with versioned releases; texts derive from digital editions of varying quality and need checking against print and manuscript.",
+      "aliases": ["OpenITI"],
+      "holdings": [
+        {
+          "name": "Riḥla of Ibn Baṭṭūṭa (four digital witnesses)",
+          "ref": "0779IbnBattuta.Rihla",
+          "url": "https://github.com/OpenITI/0800AH/tree/master/data/0779IbnBattuta/0779IbnBattuta.Rihla",
+          "note": "Text files from Shamela, Rafed and JK sources, one marked as a completed, vetted transcription.",
+          "match": ["Riḥla in OpenITI"]
+        },
+        {
+          "name": "Riḥla of Ibn Jubayr (seven digital witnesses)",
+          "ref": "0614IbnJubayr.Rihla",
+          "url": "https://github.com/OpenITI/0625AH/tree/master/data/0614IbnJubayr/0614IbnJubayr.Rihla",
+          "note": "The known source text for borrowed passages, needed to validate any text-reuse method."
+        },
+        {
+          "name": "OpenITI corpus release, primary version 2025.1.9",
+          "ref": "doi:10.5281/zenodo.18613982",
+          "url": "https://doi.org/10.5281/zenodo.18613982",
+          "note": "Versioned snapshot of the corpus, citable for reproducible text-reuse runs."
+        }
+      ]
+    },
+    {
+      "repository": "KITAB project, Aga Khan University, London",
+      "collection": "Text reuse data generated by running passim over the OpenITI corpus",
+      "url": "https://kitab-project.org/",
+      "digitized": "full",
+      "note": "Pairwise alignment files per book, released on Zenodo; the existing infrastructure on which a Riḥla-wide reuse study can build.",
+      "aliases": ["KITAB"],
+      "holdings": [
+        {
+          "name": "KITAB Text Reuse Data, version 2023.1.8",
+          "ref": "doi:10.5281/zenodo.11501559",
+          "url": "https://doi.org/10.5281/zenodo.11501559",
+          "note": "Passim alignments for the 2023.1.8 OpenITI release, organised by book."
+        },
+        {
+          "name": "passim (text-reuse aligner)",
+          "url": "https://github.com/dasmiq/passim",
+          "note": "Open-source software for detecting and aligning similar passages, adapted for Arabic by KITAB.",
+          "match": ["passim"]
+        }
+      ]
+    },
+    {
+      "repository": "Universitäts- und Landesbibliothek Sachsen-Anhalt, Halle",
+      "collection": "Digitized Defrémery–Sanguinetti edition, Voyages d'Ibn Batoutah (1853–1858)",
+      "url": "https://opendata.uni-halle.de/handle/1981185920/102470",
+      "digitized": "full",
+      "note": "Open scans of the edition on which most digital texts of the Riḥla ultimately depend, with the editors' variant notes."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-11",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-11",
+    "needs_on": "2026-10-11"
+  }
+}

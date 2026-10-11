@@ -111,6 +111,13 @@ export const NEEDS = [
     "title": "Economists",
     "covers": "historical money, prices and production",
     "pitch": "Historical money flows and production figures are reconstructed from partial and often inconsistent records. Economists can test whether the estimates are consistent with prices, trade and output elsewhere."
+  },
+  {
+    "slug": "musicologists",
+    "label": "musicologists",
+    "title": "Musicologists",
+    "covers": "notation, chant and the transmission of melodies",
+    "pitch": "Melodies were copied, remembered and adapted much as texts were, and their manuscripts can be compared the same way. Musicologists can read early notations, encode melodies for comparison and judge whether a proposed line of transmission makes musical sense."
   }
 ];
 for (const n of NEEDS) n.short ??= n.label;

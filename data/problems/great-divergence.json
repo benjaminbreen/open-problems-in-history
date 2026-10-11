@@ -1,0 +1,291 @@
+{
+  "id": "great-divergence",
+  "title": "Were real wages in the Yangzi delta and Bengal comparable to England's before 1750?",
+  "short": "Whether the richest regions of China and India matched England before 1750 depends on wage series built from a few scattered price and wage quotations.",
+  "region": "Global",
+  "field": "Economy",
+  "start": 1500,
+  "end": 1850,
+  "flags": ["digitization"],
+  "needs": [
+    {
+      "who": "economists",
+      "ask": "Rebuild Yangzi delta and Bengal welfare ratios decade by decade for 1600 to 1800 under several baskets and deflators, reporting where each places the crossover with England."
+    },
+    {
+      "who": "archivists",
+      "ask": "Identify and image the Huizhou account books and Bengal factory diaries that record wages and prices, with item-level finding aids so each quotation can be traced."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Fit a model that pools wage and price quotations of different kinds, places and units, and propagate measurement and conversion uncertainty into each decade's welfare ratio."
+    }
+  ],
+  "matters": "The date of the Great Divergence decides between rival explanations of why industrialisation began in north-western Europe. If the Yangzi delta and Bengal matched England until about 1750 or 1800, as Pomeranz and Parthasarathi argued, the divergence is best explained by late and contingent factors such as coal and access to New World land and markets; if they had fallen behind by 1600 or 1700, longer-run explanations based on institutions, demography or innovation gain ground. The answer also shapes judgments about the economic effects of Qing rule and of East India Company rule in Bengal after 1757.",
+  "stuck": "The Chinese and Indian real-wage series rest on comparatively few quotations, often for different occupations, places and decades, drawn from construction regulations, merchant account books, gazetteers and European company records. Wages paid partly in kind, uncertain days worked per year, multiple monies (silver by weight, copper cash, rupees of varying standard) and local units of grain make each observation hard to convert. Results also move with the choice of consumption basket and deflator, so silver wages, grain wages and welfare ratios have supported different conclusions from much the same evidence, and critics such as Deng and O'Brien question whether the data can bear the comparison at all.",
+  "solved": "Welfare-ratio series for the Yangzi delta and for Bengal, each built from at least two independent record types that agree within stated error, decade by decade from 1600 to 1800, with the point at which they fall below England located within a stated interval that holds under alternative baskets and deflators.",
+  "approach": [
+    "The positions are well defined. Pomeranz (2000) and Parthasarathi (1998, 2011) argued that the advanced regions of Asia matched England until the later eighteenth century; Broadberry and Gupta (2006) answered that grain wages were similar but silver wages much lower, and Allen et al. (2011) placed eighteenth-century Chinese building workers alongside the poorer parts of Europe. Allen (2009), Li and van Zanden (2012) and Broadberry, Guan and Li (2018) compared the Yangzi delta directly with England and the Netherlands, while Roy (2010), Sivramkrishna (2009) and de Zwart and Lucassen (2020) did the same for Bengal and other Indian regions.",
+    "The first step is a single, citable register of every wage and price quotation already used, linked to its archival source, with original units and currencies recorded. Deng and O'Brien (2016) showed how thin and heterogeneous the Chinese base is, and the files gathered by the Global Price and Income History Group and the Historical Prices and Wages archive, including the Qing wage regulations, are the obvious starting point.",
+    "AI research agents could then extract new quotations at scale from records that are digitized but not tabulated: prices from the Qing Grain Price Database and the palace memorials in the First Historical Archives, wages and purchases in Huizhou documents, and payments to labourers, weavers and boatmen in the Kasimbazar, Dacca and Hugli factory diaries and in the VOC's Overgekomen Brieven en Papieren now being transcribed by GLOBALISE. Every conversion of units and monies should be stated and reversible.",
+    "Independent series should then be tested against each other: official construction wages against wages paid in merchant account books, company wages against Mughal and regional price data, and grain-price trends against silver-copper exchange rates. Liu (2023) extended Chinese wages back to 1530 by combining sources, and the disagreement between Rawski (2025) and Broadberry, Guan and Li over error margins shows why uncertainty must be modelled explicitly.",
+    "With the series in hand, the crossover with England can be estimated under the respectability and bare-bones baskets, with and without climate and household adjustments, to see whether the date is robust. Progress depends on wider imaging of Huizhou account books and Bengal factory records and on economic historians who read classical Chinese, Persian, Bengali and early modern Dutch checking extracted values before they enter the series."
+  ],
+  "existing": [
+    {
+      "year": 1998,
+      "authors": "Prasannan Parthasarathi",
+      "title": "Rethinking Wages and Competitiveness in the Eighteenth Century: Britain and South India",
+      "venue": "Past & Present 158: 79–109",
+      "url": "https://doi.org/10.1093/past/158.1.79",
+      "note": "Argued that the grain earnings of South Indian weavers and labourers were equal to or above those of their British counterparts in the eighteenth century."
+    },
+    {
+      "year": 2000,
+      "authors": "Kenneth Pomeranz",
+      "title": "The Great Divergence: China, Europe, and the Making of the Modern World Economy",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.1515/9781400823499",
+      "note": "Founding statement of the late-divergence case, arguing that the Yangzi delta and England had comparable living standards until about 1750 and diverged mainly after 1800 through coal and colonies."
+    },
+    {
+      "year": 2006,
+      "authors": "Stephen Broadberry and Bishnupriya Gupta",
+      "title": "The Early Modern Great Divergence: Wages, Prices and Economic Development in Europe and Asia, 1500–1800",
+      "venue": "Economic History Review 59 (1): 2–31",
+      "url": "https://doi.org/10.1111/j.1468-0289.2005.00331.x",
+      "note": "Found grain wages in advanced India and China comparable to north-western Europe but silver wages far lower, and argued that divergence was under way before 1800."
+    },
+    {
+      "year": 2009,
+      "authors": "Robert C. Allen",
+      "title": "Agricultural Productivity and Rural Incomes in England and the Yangtze Delta, c.1620–c.1820",
+      "venue": "Economic History Review 62 (3): 525–550",
+      "url": "https://doi.org/10.1111/j.1468-0289.2008.00443.x",
+      "note": "Estimated Yangzi output per day worked at about 90 per cent of England's c. 1820 and peasant family income similar to an English farm labourer's, but falling since 1620."
+    },
+    {
+      "year": 2009,
+      "authors": "Sashi Sivramkrishna",
+      "title": "Ascertaining Living Standards in Erstwhile Mysore, Southern India, from Francis Buchanan's Journey of 1800–01: An Empirical Contribution to the Great Divergence Debate",
+      "venue": "Journal of the Economic and Social History of the Orient 52 (4): 695–733",
+      "url": "https://doi.org/10.1163/002249909X12574071689177",
+      "note": "Assembled the prices and wages scattered through Buchanan's survey into an aggregate welfare ratio for Mysore on the eve of colonial rule."
+    },
+    {
+      "year": 2010,
+      "authors": "Tirthankar Roy",
+      "title": "Economic Conditions in Early Modern Bengal: A Contribution to the Divergence Debate",
+      "venue": "Journal of Economic History 70 (1): 179–194",
+      "url": "https://doi.org/10.1017/S0022050710000094",
+      "note": "Estimated that average income in pre-colonial Bengal was well below western Europe's and that the evidence cannot show growth or decline across the eighteenth century."
+    },
+    {
+      "year": 2011,
+      "authors": "Robert C. Allen, Jean-Pascal Bassino, Debin Ma, Christine Moll-Murata and Jan Luiten van Zanden",
+      "title": "Wages, Prices, and Living Standards in China, 1738–1925: In Comparison with Europe, Japan, and India",
+      "venue": "Economic History Review 64 (S1): 8–38",
+      "url": "https://doi.org/10.1111/j.1468-0289.2010.00515.x",
+      "note": "Built wage and price series for Beijing, Canton and Suzhou/Shanghai and found eighteenth-century real wages like those of backward Europe and far below London and Amsterdam."
+    },
+    {
+      "year": 2011,
+      "authors": "Prasannan Parthasarathi",
+      "title": "Why Europe Grew Rich and Asia Did Not: Global Economic Divergence, 1600–1850",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9780511993398",
+      "note": "Argued from the Indian case that advanced Europe and Asia were alike until the later eighteenth century and attributed divergence to competitive and ecological pressures."
+    },
+    {
+      "year": 2012,
+      "authors": "Bozhong Li and Jan Luiten van Zanden",
+      "title": "Before the Great Divergence? Comparing the Yangzi Delta and the Netherlands at the Beginning of the Nineteenth Century",
+      "venue": "Journal of Economic History 72 (4): 956–989",
+      "url": "https://doi.org/10.1017/S0022050712000654",
+      "note": "Found Dutch GDP per head almost twice that of part of the Yangzi delta in the 1820s, with similar agricultural productivity but large gaps in industry and services."
+    },
+    {
+      "year": 2015,
+      "authors": "Stephen Broadberry, Johann Custodis and Bishnupriya Gupta",
+      "title": "India and the Great Divergence: An Anglo-Indian Comparison of GDP per Capita, 1600–1871",
+      "venue": "Explorations in Economic History 55: 58–75",
+      "url": "https://doi.org/10.1016/j.eeh.2014.04.003",
+      "note": "Historical national accounts for India from 1600, offering an output-based check on wage-based comparisons with Britain."
+    },
+    {
+      "year": 2016,
+      "authors": "Kent Deng and Patrick O'Brien",
+      "title": "Establishing Statistical Foundations of a Chronology for the Great Divergence: A Survey and Critique of the Primary Sources for the Construction of Relative Wage Levels for Ming–Qing China",
+      "venue": "Economic History Review 69 (4): 1057–1082",
+      "url": "https://doi.org/10.1111/ehr.12281",
+      "note": "Surveyed the Chinese sources behind real-wage comparisons and judged much of the evidence to lie between guesswork and plausible conjecture."
+    },
+    {
+      "year": 2018,
+      "authors": "Stephen Broadberry, Hanhui Guan and David Daokui Li",
+      "title": "China, Europe, and the Great Divergence: A Study in Historical National Accounting, 980–1850",
+      "venue": "Journal of Economic History 78 (4): 955–1000",
+      "url": "https://doi.org/10.1017/S0022050718000529",
+      "note": "GDP per head estimates for China from 980 that date the divergence earlier than the California School proposed but later than older Eurocentric accounts; a 2021 restatement placed its start around 1700."
+    },
+    {
+      "year": 2020,
+      "authors": "Pim de Zwart and Jan Lucassen",
+      "title": "Poverty or Prosperity in Northern India? New Evidence on Real Wages, 1590s–1870s",
+      "venue": "Economic History Review 73 (3): 644–667",
+      "url": "https://doi.org/10.1111/ehr.12996",
+      "note": "New wage dataset from Gujarat to Bengal, adjusted for climate and body size, dating the divergence to the late seventeenth century with widening after the 1720s."
+    },
+    {
+      "year": 2023,
+      "authors": "Ziang Liu",
+      "title": "Wages, Labour Markets, and Living Standards in China, 1530–1840",
+      "venue": "Explorations in Economic History 92: 101569",
+      "url": "https://doi.org/10.1016/j.eeh.2023.101569",
+      "note": "Long-run Chinese wage series showing real-wage falls in the 1620s–1650s and 1740s–1760s and a Lower Yangzi–England gap that widens after 1700."
+    },
+    {
+      "year": 2025,
+      "authors": "Thomas G. Rawski",
+      "title": "Weak Data Nullify Bold Claims about Economic Trends in Qing China",
+      "venue": "Asia-Pacific Economic History Review 65 (2): 273–299",
+      "url": "https://doi.org/10.1111/aehr.70010",
+      "note": "Argued that the error margins in Broadberry, Guan and Li's grain series are unrealistically tight and that the data fit stable, rising or falling Qing output per head."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Institute of Modern History, Academia Sinica, Taipei",
+      "collection": "Qing Dynasty Grain Price Database (清代糧價資料庫), monthly prefectural grain price reports from 1736, compiled from the project begun by Wang Yeh-chien",
+      "url": "https://mhdb.mh.sinica.edu.tw/foodprice/about.php",
+      "digitized": "full",
+      "note": "Prices reported to the throne in silver taels per shi, drawn from memorials in the National Palace Museum, Taipei, and the First Historical Archives; online after free registration.",
+      "aliases": ["Qing Grain Price Database"]
+    },
+    {
+      "repository": "First Historical Archives of China, Beijing",
+      "collection": "Qing palace memorials and Grand Council copies, including monthly grain price lists, Board of Works and Board of Revenue records",
+      "url": "https://www.fhac.com.cn/",
+      "digitized": "partial",
+      "note": "Holds the originals behind most published Qing price series and many unextracted reports on wages, rations and silver-copper exchange rates; access onsite by application.",
+      "aliases": ["First Historical Archives"],
+      "holdings": [
+        {
+          "name": "Palace memorials (Gongzhong zhupi zouzhe) and Grand Council record copies (Junjichu lufu zouzhe)",
+          "note": "Provincial memorials with attached grain price lists and reports on prices, rations and exchange rates, the main source for Qing price data.",
+          "match": ["palace memorials"]
+        }
+      ]
+    },
+    {
+      "repository": "Huizhou document collections, Anhui and Beijing",
+      "collection": "Huizhou documents (徽州文书): land deeds, contracts, lineage and merchant account books, household ledgers, Ming to Republican periods",
+      "url": "https://scalar.fas.harvard.edu/ming-qing-documents/deeds-and-contracts",
+      "digitized": "partial",
+      "note": "Several hundred thousand items are reported to be held by Anhui University, Huangshan University, Renmin University of China and other institutions, only a fraction published; the link is a Harvard guide to the printed facsimiles.",
+      "aliases": ["Huizhou documents", "Huizhou account books"],
+      "holdings": [
+        {
+          "name": "Huizhou qiannian qiyue wenshu (徽州千年契約文書), Song–Yuan–Ming and Qing–Republican series",
+          "ref": "Shijiazhuang: Huashan wenyi chubanshe, 1991 and 1993, 2 × 20 vols.",
+          "url": "https://scalar.fas.harvard.edu/ming-qing-documents/deeds-and-contracts",
+          "note": "Facsimiles of Huizhou land deeds, leases, pawn contracts and other agreements, the most widely available set for extracting land, labour and commodity prices."
+        }
+      ]
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "India Office Records: East India Company factory records for Bengal",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "partial",
+      "note": "Diaries and consultations of the Company's Bengal factories record purchases, wages and payments to weavers, labourers and boatmen; reading-room access, selected volumes digitized.",
+      "aliases": ["India Office Records"],
+      "holdings": [
+        {
+          "name": "Factory Records: Kasimbazar",
+          "ref": "IOR/G/23",
+          "url": "https://searcharchives.bl.uk/catalog/036-000177123",
+          "note": "Diaries and consultations 1676–1701 and consultations 1733–1759 of the factory at the centre of the Bengal silk trade.",
+          "match": ["Kasimbazar"]
+        },
+        {
+          "name": "Factory Records: Dacca",
+          "ref": "IOR/G/15",
+          "url": "https://searcharchives.bl.uk/catalog/036-000175804",
+          "note": "Diary and consultations 1678–1691, consultations 1736–1748 and Provincial Council of Revenue consultations 1773–1779.",
+          "match": ["Dacca"]
+        },
+        {
+          "name": "Factory Records: Hugli",
+          "ref": "IOR/G/20",
+          "url": "https://searcharchives.bl.uk/catalog/036-000177030",
+          "note": "Diaries and consultations, including Balasore, 1663–1682, with letters despatched and received.",
+          "match": ["Hugli"]
+        },
+        {
+          "name": "Factory Records: Calcutta",
+          "ref": "IOR/G/7",
+          "url": "https://searcharchives.bl.uk/catalog/036-000173393",
+          "note": "Diaries and consultations 1690–1708 with letters despatched and received, from the first years of the Calcutta settlement."
+        }
+      ]
+    },
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Archives of the Dutch East India Company (VOC), 1602–1795, including letters and papers from the Bengal directorate",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+      "digitized": "partial",
+      "note": "The Overgekomen Brieven en Papieren are scanned, and the GLOBALISE project (2022–2026) is transcribing over five million pages with handwritten text recognition.",
+      "aliases": ["VOC"],
+      "holdings": [
+        {
+          "name": "Archief van de Verenigde Oost-Indische Compagnie: Overgekomen Brieven en Papieren",
+          "ref": "1.04.02",
+          "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+          "note": "Letters and papers sent from Asia to the Netherlands, including accounts and reports from Bengal, Coromandel and the China trade.",
+          "match": ["Overgekomen Brieven en Papieren"]
+        },
+        {
+          "name": "GLOBALISE transcriptions",
+          "url": "https://globalise.huygens.knaw.nl/source-corpus/",
+          "note": "Huygens Institute project producing machine transcriptions and entity extraction for the Overgekomen Brieven en Papieren, with a searchable viewer.",
+          "match": ["GLOBALISE"]
+        }
+      ]
+    },
+    {
+      "repository": "Global Price and Income History Group, University of California, Davis",
+      "collection": "Price, wage and income data files for China and India, with the archived IISG Historical Prices and Wages files",
+      "url": "https://gpih.ucdavis.edu/Datafilelist.htm",
+      "digitized": "full",
+      "note": "Free spreadsheets underlying most published Asian real-wage comparisons; the IISG Historical Prices and Wages site survives as a DataverseNL deposit.",
+      "aliases": ["Global Price and Income History Group"],
+      "holdings": [
+        {
+          "name": "Beijing prices 1738–1923 and data for Allen et al. (2011)",
+          "url": "https://gpih.ucdavis.edu/files/China_1730-1933_Allen_et_al.xls",
+          "note": "The price and wage series behind the main eighteenth-century Chinese welfare-ratio estimates."
+        },
+        {
+          "name": "India prices and wages 1595–1930 (Allen and Studer)",
+          "url": "https://gpih.ucdavis.edu/files/India_Allen-Studer_v2,pl.xls",
+          "note": "Compiled Indian price and wage series used in Anglo-Indian comparisons."
+        },
+        {
+          "name": "Historical Prices and Wages Dataset (IISG), including Qing wage regulation files",
+          "ref": "doi:10.34894/6XKTMN",
+          "url": "https://doi.org/10.34894/6XKTMN",
+          "note": "Remaining files of the IISG site, including Canton and Suzhou-Peking price and wage series and wages from Qing official regulations compiled by Moll-Murata and colleagues.",
+          "match": ["Historical Prices and Wages", "Qing wage regulations"]
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-11",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-11",
+    "needs_on": "2026-10-11"
+  }
+}

@@ -1,0 +1,313 @@
+{
+  "id": "gregorian-chant",
+  "title": "Did Gregorian chant descend from Old Roman chant, or did both come from a common ancestor?",
+  "short": "Frankish 'Gregorian' and city-of-Rome 'Old Roman' chant share texts and melodic outlines but differ in detail, and Roman melodies were written down only from 1071.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 680,
+  "end": 1250,
+  "flags": [],
+  "needs": [
+    {
+      "who": "musicologists",
+      "ask": "Encode the Old Roman Mass propers of Bodmer 74, Vat. lat. 5319 and San Pietro F 22 in volpiano, aligned chant by chant with Gregorian sources through Cantus Index identifiers."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Pre-register rival transmission models (Roman-derived, common ancestor, later Roman reworking of Gregorian) and score each by how well it predicts held-out readings in early pitched sources."
+    },
+    {
+      "who": "philologists",
+      "ask": "Classify the psalter and biblical text variants in shared chant texts as Roman, Gallican or Vulgate forms, as independent evidence for which repertory kept the older wording."
+    }
+  ],
+  "matters": "Gregorian chant is the foundation of Western music writing, modal theory and the later polyphonic tradition, and from the ninth century it was presented as the authentic chant of Rome. Whether it records the Roman repertory imported under Pippin III and Charlemagne, a Frankish re-composition of it, or a fusion with Gallican chant decides what the Carolingian 'romanization' of liturgy actually involved. Because the Roman melodies were written down roughly three centuries after the transfer, the answer is also a test case for how faithfully unnotated melody can be transmitted, which bears on oral-tradition arguments well beyond chant.",
+  "stuck": "The decisive period is undocumented in pitch. The Frankish chant books of about 800 have texts only; the neumed graduals of about 900 to 970, such as Cod. Sang. 359, Laon 239 and Einsiedeln 121, record melodic shape but not exact pitch; and Roman melodies survive only from Bodmer 74 (1071) and a handful of later books. The same differences can be explained in opposite directions: the Franks may have simplified an ornate Roman style, the Romans may have drifted into formulaic uniformity during three centuries of oral transmission, or the Romans may have reworked imported Gregorian melodies in their own idiom. Comparison has proceeded genre by genre and chant by chant with qualitative judgement, and most Old Roman melodies are still not encoded in machine-readable form.",
+  "solved": "A pre-registered comparison of rival transmission models (Old Roman ancestral to Gregorian, independent descent from a common eighth-century Roman tradition, and Roman reworking of imported Gregorian chant), fitted to aligned melodies of all shared Mass propers and scored by how well each predicts held-out readings in early pitched and neumed sources, with decision margins fixed before the test. A model that wins across genres by the agreed margin settles the question for practical purposes; a result that differs by genre is also an answer, showing that layers of the repertory have different histories.",
+  "approach": [
+    "The comparative literature is the starting point: Apel (1956) framed the 'central problem', Stäblein and Landwehr-Melnicki (1970) edited Vat. lat. 5319, Treitler (1974) and Hucke (1980) recast both repertories as products of oral transmission, and genre studies by Dyer (1998) on offertories, Hornby (2002) on eighth-mode tracts and Maloy (2010) on offertories supply chant-by-chant judgements about which readings look older.",
+    "The rival positions should be stated as testable predictions before any data are fitted: Roman priority in a Frankish adaptation, as in Hucke (1980) and McKinnon (2000); Old Roman as a later, formulaic development of the common tradition, as in Pfisterer (2002) and Maloy (2010); and Levy (2003), in which the Franks drew on Gallican material and the Romans later absorbed and remodelled Gregorian melodies. Each predicts a different direction of change for ornament, cadence formulas and melodic range.",
+    "Teams could encode every Old Roman Mass proper in Bodmer 74, Vat. lat. 5319 and San Pietro F 22 (and Office chants in San Pietro B 79 and Add MS 29988) in volpiano, link them to Gregorian melodies already in the Cantus Database through Cantus Index identifiers, and add the neume contours of Cod. Sang. 359, Laon 239 and Einsiedeln 121 as partial observations of pitch direction.",
+    "The phylogenetic methods of Hajič, Lanz and Ballen (2025) and the ancestral melody reconstruction of Ballen, Mühlová and Hajič (2026), which so far cover Gregorian sources only, can be extended to the two repertories, with care taken that formulaic convergence (shared stock cadences) is not mistaken for shared descent; Haas (1997) is an earlier computer-assisted study of Old Roman formulas to build on.",
+    "Held-out testing gives the decision: hide a set of early pitched witnesses and the neumed contours of the earliest Frankish graduals, and score each model on how well it predicts them, with thresholds, genres and alignment rules published in advance so that the result cannot be tuned after the fact.",
+    "Text evidence can serve as an independent check: the psalter forms and biblical variants in shared chant texts, which Pfisterer (2002) used, date the wording of each repertory without depending on the melodies."
+  ],
+  "existing": [
+    {
+      "year": 1956,
+      "authors": "Willi Apel",
+      "title": "The Central Problem of Gregorian Chant",
+      "venue": "Journal of the American Musicological Society 9 (2): 118–127",
+      "url": "https://doi.org/10.2307/829676",
+      "note": "Named the coexistence of the Gregorian and Old Roman repertories the central problem of chant history and argued that the Roman melodies were the later and less authentic tradition."
+    },
+    {
+      "year": 1970,
+      "authors": "Bruno Stäblein and Margareta Landwehr-Melnicki",
+      "title": "Die Gesänge des altrömischen Graduale Vat. lat. 5319",
+      "venue": "Monumenta Monodica Medii Aevi 2. Kassel: Bärenreiter",
+      "url": "https://find.library.upenn.edu/catalog/9983593503681",
+      "note": "Transcription of an Old Roman gradual with Stäblein's introduction, which characterised the Roman style and proposed that both repertories originated in Rome."
+    },
+    {
+      "year": 1974,
+      "authors": "Leo Treitler",
+      "title": "Homer and Gregory: The Transmission of Epic Poetry and Plainchant",
+      "venue": "The Musical Quarterly 60 (3): 333–372",
+      "url": "https://doi.org/10.1093/mq/lx.3.333",
+      "note": "Applied oral-formulaic theory to chant, arguing that melodies were reconstructed in performance from formulas and that the Roman and Frankish versions are separate realisations of a shared oral tradition."
+    },
+    {
+      "year": 1980,
+      "authors": "Helmut Hucke",
+      "title": "Toward a New Historical View of Gregorian Chant",
+      "venue": "Journal of the American Musicological Society 33 (3): 437–467",
+      "url": "https://doi.org/10.2307/831302",
+      "note": "Rejected the legend of Gregory the Great's authorship and argued that Gregorian chant took shape when the Franks received and fixed Roman chant transmitted orally in the eighth century."
+    },
+    {
+      "year": 1987,
+      "authors": "Kenneth Levy",
+      "title": "Charlemagne's Archetype of Gregorian Chant",
+      "venue": "Journal of the American Musicological Society 40 (1): 1–30",
+      "url": "https://doi.org/10.2307/831580",
+      "note": "Argued from the agreement of the earliest neumed sources that a notated Gregorian archetype existed by about 800, which would make the Frankish melodies fixed far earlier than the Roman ones."
+    },
+    {
+      "year": 1997,
+      "authors": "Max Haas",
+      "title": "Mündliche Überlieferung und altrömischer Choral: Historische und analytische computergestützte Untersuchungen",
+      "venue": "Bern: Peter Lang",
+      "url": "https://openlibrary.org/works/OL2841689W",
+      "note": "Computer-assisted analysis of the formulaic construction of Old Roman melodies, treating them as the product of oral transmission."
+    },
+    {
+      "year": 1998,
+      "authors": "Joseph Dyer",
+      "title": "Tropis semper variantibus: Compositional Strategies in the Offertories of Old Roman Chant",
+      "venue": "Early Music History 17: 1–60",
+      "url": "https://doi.org/10.1017/S0261127900001601",
+      "note": "Analysed how Old Roman offertories vary and recombine stock melodic material, setting the Roman style against its Gregorian counterparts."
+    },
+    {
+      "year": 2000,
+      "authors": "James McKinnon",
+      "title": "The Advent Project: The Later-Seventh-Century Creation of the Roman Mass Proper",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://doi.org/10.1525/9780520924338",
+      "note": "Argued that the Roman schola cantorum created the annual cycle of Mass propers as a planned project in the late seventh century, giving both repertories a datable Roman starting point."
+    },
+    {
+      "year": 2002,
+      "authors": "Andreas Pfisterer",
+      "title": "Cantilena Romana: Untersuchungen zur Überlieferung des gregorianischen Chorals",
+      "venue": "Beiträge zur Geschichte der Kirchenmusik 11. Paderborn: Schöningh",
+      "url": "https://www.digitale-sammlungen.de/de/view/bsb00043723",
+      "note": "Argued from patterns of melodic variants for a long, stable oral phase in the Frankish tradition and concluded that Old Roman chant is not archaic but a later, decadent form of the common tradition."
+    },
+    {
+      "year": 2002,
+      "authors": "Emma Hornby",
+      "title": "Gregorian and Old Roman Eighth-Mode Tracts: A Case Study in the Transmission of Western Chant",
+      "venue": "Aldershot: Ashgate (reissued Routledge, 2019)",
+      "url": "https://doi.org/10.4324/9781315192086",
+      "note": "Compared the two traditions' eighth-mode tracts phrase by phrase, treating them as two expressions of a single shared melodic system, each altered in transmission."
+    },
+    {
+      "year": 2003,
+      "authors": "Kenneth Levy",
+      "title": "Gregorian Chant and the Romans",
+      "venue": "Journal of the American Musicological Society 56 (1): 5–41",
+      "url": "https://doi.org/10.1525/jams.2003.56.1.5",
+      "note": "Proposed that the Franks rejected improvisatory Roman chant in favour of Gallican melodies, and that Gregorian chant later reached Rome, where singers remodelled parts of it in Roman style."
+    },
+    {
+      "year": 2010,
+      "authors": "Rebecca Maloy",
+      "title": "Inside the Offertory: Aspects of Chronology and Transmission",
+      "venue": "New York: Oxford University Press",
+      "url": "https://doi.org/10.1093/acprof:oso/9780195315172.001.0001",
+      "note": "Edition and study of the offertories arguing that three centuries of oral transmission made the Old Roman versions more formulaic, so they do not simply preserve the eighth-century state of the melodies."
+    },
+    {
+      "year": 2018,
+      "authors": "Susan Rankin",
+      "title": "Writing Sounds in Carolingian Europe: The Invention of Musical Notation",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/9781108368605",
+      "note": "Reconstructs how and when neume notation emerged in Carolingian centres, the evidence against which claims of an early notated Gregorian archetype must be judged."
+    },
+    {
+      "year": 2025,
+      "authors": "Jan Hajič jr, Vojtěch Lanz and Gustavo A. Ballen",
+      "title": "Genome of melody: applying bioinformatics to study the evolution of Gregorian chant",
+      "venue": "Philosophical Transactions of the Royal Society B 380 (1940)",
+      "url": "https://doi.org/10.1098/rstb.2024.0274",
+      "note": "Showed that phylogenetic models fitted to aligned chant melodies recover historically plausible patterns of melodic change among Gregorian sources, with some institutional networks mattering more than geography."
+    },
+    {
+      "year": 2026,
+      "authors": "Gustavo A. Ballen, Klára Hedvika Mühlová and Jan Hajič jr",
+      "title": "What did the dove sing to Pope Gregory? Ancestral melody reconstruction in Gregorian chant using Bayesian phylogenetics",
+      "venue": "PLOS ONE 21 (5): e0350014",
+      "url": "https://doi.org/10.1371/journal.pone.0350014",
+      "note": "Reconstructed ancestral melodies on a time-calibrated tree of fourteen Gregorian sources, and named the encoding of Old Roman sources as the next step for testing their relation to Gregorian chant."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Fondation Martin Bodmer, Cologny, and Swiss abbey libraries via e-codices",
+      "collection": "Cod. Bodmer 74 (Old Roman gradual of Santa Cecilia in Trastevere, 1071); St. Gallen, Stiftsbibliothek, Cod. Sang. 359 (Cantatorium, early tenth century); Einsiedeln, Stiftsbibliothek, Codex 121 (neumed gradual, later tenth century)",
+      "url": "https://www.e-codices.unifr.ch/",
+      "digitized": "full",
+      "note": "e-codices hosts full colour images and descriptions of the earliest dated Old Roman book and two of the principal early neumed Gregorian sources, with IIIF manifests.",
+      "aliases": [
+        "e-codices"
+      ],
+      "holdings": [
+        {
+          "name": "Gradual, Tropary, Sequentiary of Santa Cecilia in Trastevere",
+          "ref": "Cologny, Fondation Martin Bodmer, Cod. Bodmer 74",
+          "url": "https://www.e-codices.unifr.ch/en/list/one/fmb/cb-0074",
+          "note": "Dated 20 May 1071 by its colophon; the oldest surviving source of Old Roman melodies in readable pitch notation.",
+          "match": [
+            "Bodmer 74"
+          ]
+        },
+        {
+          "name": "Cantatorium of St Gall",
+          "ref": "St. Gallen, Stiftsbibliothek, Cod. Sang. 359",
+          "url": "https://www.e-codices.unifr.ch/en/list/one/csg/0359",
+          "note": "Solo chants of the Mass with St Gall neumes, the earliest complete neumed chant book and a key witness for Frankish rhythmic and melodic detail.",
+          "match": [
+            "Cod. Sang. 359"
+          ]
+        },
+        {
+          "name": "Graduale with Notker's sequences",
+          "ref": "Einsiedeln, Stiftsbibliothek, Codex 121(1151)",
+          "url": "https://www.e-codices.unifr.ch/en/list/one/sbe/0121",
+          "note": "The oldest complete surviving neumed Mass antiphoner, a standard reference for Gregorian melodic shape.",
+          "match": [
+            "Einsiedeln 121"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Biblioteca Apostolica Vaticana, Vatican City",
+      "collection": "Vat. lat. 5319 (Old Roman gradual); Archivio del Capitolo di San Pietro F 22 (gradual), F 11 and B 79 (antiphoner)",
+      "url": "https://digi.vatlib.it/",
+      "digitized": "partial",
+      "note": "Holds most of the surviving Old Roman books, several of them viewable in DigiVatLib; dates for Vat. lat. 5319 range in the literature from the late eleventh to the twelfth century.",
+      "aliases": [
+        "DigiVatLib"
+      ],
+      "holdings": [
+        {
+          "name": "Old Roman gradual",
+          "ref": "Vat. lat. 5319",
+          "url": "https://digi.vatlib.it/view/MSS_Vat.lat.5319",
+          "note": "Old Roman Mass chants, transcribed by Landwehr-Melnicki with Stäblein's introduction (1970).",
+          "match": [
+            "Vat. lat. 5319"
+          ]
+        },
+        {
+          "name": "Gradual of St Peter's",
+          "ref": "Arch. Cap. S. Pietro F 22",
+          "url": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.F.22",
+          "note": "Later Old Roman Mass book from St Peter's, inventoried with F 11 by Paul Cutter (1979).",
+          "match": [
+            "San Pietro F 22"
+          ]
+        },
+        {
+          "name": "Antiphoner of St Peter's",
+          "ref": "Arch. Cap. S. Pietro B 79",
+          "url": "https://digi.vatlib.it/view/MSS_Arch.Cap.S.Pietro.B.79",
+          "note": "Twelfth-century Old Roman Office antiphoner, the main source for Roman Office chant.",
+          "match": [
+            "San Pietro B 79"
+          ]
+        },
+        {
+          "name": "Old Roman Mass source",
+          "ref": "Arch. Cap. S. Pietro F 11",
+          "note": "Further St Peter's Mass book inventoried by Cutter (1979); not located in DigiVatLib at the time of compiling."
+        }
+      ]
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "Add MS 29988 (Old Roman antiphoner, twelfth century)",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "none",
+      "note": "The second surviving Old Roman Office antiphoner, probably from a Roman basilica; online imaging was not confirmed at the time of compiling.",
+      "aliases": [
+        "British Library"
+      ],
+      "holdings": [
+        {
+          "name": "Old Roman antiphoner",
+          "ref": "Add MS 29988",
+          "note": "Office chants of the Roman tradition, comparable with San Pietro B 79.",
+          "match": [
+            "Add MS 29988"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Bibliothèque municipale de Laon (Bibliothèque Suzanne Martinet)",
+      "collection": "Ms 239, neumed gradual in Messine (Lorraine) notation, c. 900–930",
+      "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/004D01020719",
+      "digitized": "full",
+      "note": "Digitized in the Europeana Regia project and viewable through the city's digital library; its neumes are printed in the Graduale Triplex.",
+      "aliases": [
+        "Bibliothèque municipale de Laon"
+      ],
+      "holdings": [
+        {
+          "name": "Graduale (Laon gradual)",
+          "ref": "Laon, BM, Ms 239",
+          "url": "https://ccfr.bnf.fr/portailccfr/ark:/16871/004D01020719",
+          "note": "Messine neumes that record ornament and rhythm independently of the St Gall family, so agreement between the two is strong evidence for the Frankish reading.",
+          "match": [
+            "Laon 239"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Cantus Database and Cantus Index",
+      "collection": "Chant inventories with Cantus ID identifiers and volpiano melody encodings from thousands of Gregorian sources",
+      "url": "https://cantusdatabase.org/",
+      "digitized": "partial",
+      "note": "The shared identifier system that lets Old Roman encodings be linked to Gregorian melodies; Old Roman sources are thinly represented and few of their melodies are encoded.",
+      "aliases": [
+        "Cantus Database",
+        "Cantus Index"
+      ],
+      "holdings": [
+        {
+          "name": "Cantus Index",
+          "url": "https://cantusindex.org/",
+          "note": "Catalogue of chant texts by Cantus ID linking the Cantus Database and allied databases."
+        },
+        {
+          "name": "Cantus Ultimus",
+          "url": "https://cantus.simssa.ca/",
+          "note": "Viewer combining manuscript images with Cantus inventories and melodic search."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-11",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-11",
+    "needs_on": "2026-10-11"
+  }
+}

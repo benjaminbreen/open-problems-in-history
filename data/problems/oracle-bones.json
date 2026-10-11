@@ -1,0 +1,259 @@
+{
+  "id": "oracle-bones",
+  "title": "What do the thousands of unread Shang oracle-bone graphs mean?",
+  "short": "Of roughly 4,000 to 4,500 distinct graphs in the Shang divination inscriptions, only about 1,100 to 1,700 are generally accepted as read; most of the rest are rare and unread.",
+  "region": "East Asia",
+  "field": "Languages & scripts",
+  "start": -1250,
+  "end": -1046,
+  "flags": [
+    "decipherment",
+    "digitization"
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "For each candidate graph, compile every attestation by diviner group with its bronze and Warring States descendants, and fix proposed readings in writing before they are tested."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Build held-out tests in which a proposed reading must predict an unread graph's slot, collocations and parallel charges in inscriptions withheld from the analysis."
+    },
+    {
+      "who": "archivists",
+      "ask": "Link rubbings, photographs and catalogue numbers for the same piece across the Heji, the Mobendaxi, Yinqi Wenyuan and museum databases into one open concordance."
+    }
+  ],
+  "matters": "The oracle-bone inscriptions from Anyang, written between about 1250 and 1046 BCE, are the earliest substantial body of Chinese writing and the main contemporary source for Shang kingship, ancestor cult, warfare, agriculture, kinship, calendar and geography. Most unread graphs are rare, but many are personal names, place names, sacrifice names and verbs, so each secure reading can fix a lineage, a site or a ritual practice that is otherwise known only from later texts. The readings also bear on how the Chinese script was formed and on the relation of Shang writing to the bronze inscriptions and Warring States manuscripts.",
+  "stuck": "Counts differ with the criteria used: Jiang Yubin gives about 4,000 graphs with about 1,160 widely accepted, Liu Yuan about 4,400 with nearly 1,700 read, and computer-science papers about 4,500 with 1,500 to 1,600 read. The unread graphs are mostly hapax or rare forms, many of them proper names, so there is little context to test a reading and often no descendant form in later script. The corpus is scattered among about 70,000 published pieces held in many institutions, much of it fragmentary and published under different numbering systems, and identification has long rested on individual philologists' arguments rather than on stated criteria. Since 2016 the National Museum of Chinese Writing at Anyang has offered 100,000 yuan for each accepted new decipherment, but only a handful of awards had been reported by the end of 2023.",
+  "solved": "A set of readings for previously unread graphs, each fixed in writing before testing, that (a) passes the Anyang prize panel's expert review or equivalent peer review, (b) predicts how the graph is used in inscriptions withheld from the analysis (its grammatical slot, collocations and parallels in matching charges), and (c) is consistent with a traceable form in bronze or Warring States script. Readings of proper names that cannot meet (b) or (c) should be reported as such rather than counted.",
+  "approach": [
+    "The corpus is largely fixed in print and increasingly online. Guo Moruo (1978) and the facsimile corpus of Huang Tianshu (2022), with 70,659 pieces sorted by script group, supply the texts; Yu Xingwu (1996) gathers earlier interpretations graph by graph, and Liu Zhao (2014) lists the graph forms. A first task is a single concordance linking these to the Yinqi Wenyuan database at Anyang Normal University and to museum catalogue numbers.",
+    "Context comparison should follow script-group chronology. Huang Tianshu (1991) and the typology built on it let each attestation be dated by diviner group, and the pairing of positive and negative charges described by Keightley (1978) and Takashima and Serruys (2010) gives natural parallels in which an unread graph sits in the same slot as a read one.",
+    "Takashima (2000) set out criteria for a rigorous decipherment, and Qiu Xigui (1988) the method of tracing a graph through later forms. Teams can apply these systematically, aligning each unread graph with candidate descendants in the bronze and Warring States corpora and recording where the chain breaks. The Huayuanzhuang East inscriptions edited by Schwartz (2019) are a well-documented test bed, since they were excavated as a group and fully published.",
+    "AI work so far is strongest at the visual layer. The HUST-OBC dataset of Wang et al. (2024), the diffusion model of Guan et al. (2024) and the multi-stage AlphaOracle system of Liu et al. (2026) propose candidate modern equivalents from form; agents could combine these with corpus-wide context search, but every proposed reading should be registered before it is scored on withheld inscriptions.",
+    "Smith (2011) showed that practice inscriptions and scribal habits affect graph forms, so forms that look new may be variants. Results should go to oracle-bone specialists and, where they claim a new decipherment, to the Anyang prize panel, whose first two rounds (2022 and 2023) give a benchmark for what counts as accepted."
+  ],
+  "existing": [
+    {
+      "year": 1978,
+      "authors": "David N. Keightley",
+      "title": "Sources of Shang History: The Oracle-Bone Inscriptions of Bronze Age China",
+      "venue": "Berkeley: University of California Press",
+      "url": "https://archive.org/details/sourcesofshanghi0000keig",
+      "note": "The standard English guide to the bones as artefacts and texts: preparation, cracking, charge forms, dating and the use of the inscriptions as historical evidence."
+    },
+    {
+      "year": 1978,
+      "authors": "Guo Moruo (ed.), Hu Houxuan (chief editor)",
+      "title": "Jiaguwen heji 甲骨文合集",
+      "venue": "13 vols. Beijing: Zhonghua shuju, 1978–1982",
+      "url": "https://openlibrary.org/works/OL44410281W",
+      "note": "Collected rubbings and facsimiles of the then-known corpus arranged by period and subject; its numbering ('Heji') is still the standard reference for most inscriptions."
+    },
+    {
+      "year": 1988,
+      "authors": "Qiu Xigui",
+      "title": "Wenzixue gaiyao 文字學概要",
+      "venue": "Beijing: Shangwu yinshuguan; English trans. by Gilbert L. Mattos and Jerry Norman as Chinese Writing (Society for the Study of Early China, 2000)",
+      "url": "https://id.lib.harvard.edu/alma/990069710850203941/catalog",
+      "note": "Systematic account of how Chinese graphs are formed and change, the methodological basis for tracing oracle-bone forms into later scripts."
+    },
+    {
+      "year": 1991,
+      "authors": "Huang Tianshu",
+      "title": "Yinxu wang buci de fenlei yu duandai 殷墟王卜辭的分類與斷代",
+      "venue": "Taipei: Wenjin chubanshe",
+      "url": "https://id.lib.harvard.edu/alma/990079420700203941/catalog",
+      "note": "Classified the royal inscriptions by script group before dating them, the typology now used to place each attestation of a graph in time."
+    },
+    {
+      "year": 1996,
+      "authors": "Yu Xingwu (ed.), with commentary by Yao Xiaosui",
+      "title": "Jiagu wenzi gulin 甲骨文字詁林",
+      "venue": "4 vols. Beijing: Zhonghua shuju",
+      "url": "https://id.lib.harvard.edu/alma/990074129800203941/catalog",
+      "note": "Compendium of published interpretations of each oracle-bone graph, with editorial judgements; the starting point for knowing what has already been proposed."
+    },
+    {
+      "year": 2000,
+      "authors": "Ken-ichi Takashima",
+      "title": "Towards a More Rigorous Methodology of Deciphering Oracle-Bone Inscriptions",
+      "venue": "T'oung Pao 86 (4): 363–399",
+      "url": "https://doi.org/10.1163/15685320051072753",
+      "note": "Argued that decipherment must combine graphic, phonological and syntactic evidence and set out criteria for testing a proposed reading."
+    },
+    {
+      "year": 2010,
+      "authors": "Ken-ichi Takashima and Paul L-M. Serruys",
+      "title": "Studies of Fascicle Three of Inscriptions from the Yin Ruins",
+      "venue": "2 vols. Taipei: Institute of History and Philology, Academia Sinica",
+      "url": "https://id.lib.harvard.edu/alma/990126951430203941/catalog",
+      "note": "Full translation and grammatical commentary on the Bingbian plastra from pit YH127, a model of close reading of complete charge sets."
+    },
+    {
+      "year": 2011,
+      "authors": "Adam Smith",
+      "title": "The Evidence for Scribal Training at Anyang",
+      "venue": "In Li Feng and David Prager Branner (eds.), Writing and Literacy in Early China. Seattle: University of Washington Press, 181–213",
+      "url": "https://doi.org/10.1515/9780295804507-009",
+      "note": "Identified practice inscriptions and copying exercises, showing how scribal training shaped graph forms and variants."
+    },
+    {
+      "year": 2014,
+      "authors": "Liu Zhao (chief ed.)",
+      "title": "Xin jiaguwen bian 新甲骨文編 (revised edition)",
+      "venue": "Fuzhou: Fujian renmin chubanshe (first ed. 2009)",
+      "url": "https://openlibrary.org/works/OL45901511W",
+      "note": "Graph list giving the attested forms of each recognized graph with their sources; widely used as an inventory of read graphs."
+    },
+    {
+      "year": 2019,
+      "authors": "Adam C. Schwartz",
+      "title": "The Oracle Bone Inscriptions from Huayuanzhuang East",
+      "venue": "Boston and Berlin: De Gruyter",
+      "url": "https://doi.org/10.1515/9781501505294",
+      "note": "Annotated translation of the non-royal inscriptions excavated in 1991, a complete and well-provenanced corpus for testing readings in context."
+    },
+    {
+      "year": 2022,
+      "authors": "Huang Tianshu (chief ed.)",
+      "title": "Jiaguwen moben daxi 甲骨文摹本大系",
+      "venue": "43 vols. Beijing: Peking University Press",
+      "url": "https://www.sinoss.net/c/2022-12-20/628020.shtml",
+      "note": "Facsimile corpus of 70,659 inscribed pieces with duplicates removed, joins incorporated to 2020 and each piece assigned to a script group; the largest edition to date."
+    },
+    {
+      "year": 2024,
+      "authors": "Pengjie Wang, Kaile Zhang, Xinyu Wang et al.",
+      "title": "An open dataset for oracle bone character recognition and decipherment",
+      "venue": "Scientific Data 11: 976",
+      "url": "https://doi.org/10.1038/s41597-024-03807-x",
+      "note": "HUST-OBC: 140,053 images covering 1,588 deciphered graphs and 9,411 undeciphered graph categories, openly released for machine-learning work."
+    },
+    {
+      "year": 2024,
+      "authors": "Haisu Guan, Huanxin Yang, Xinyu Wang, Shengwei Han, Yongge Liu, Lianwen Jin et al.",
+      "title": "Deciphering Oracle Bone Language with Diffusion Models",
+      "venue": "Proceedings of the 62nd Annual Meeting of the ACL: 15554–15567",
+      "url": "https://aclanthology.org/2024.acl-long.831/",
+      "note": "Image-to-image model that generates candidate modern forms for oracle-bone graphs as decipherment clues; an ACL 2024 Best Paper, evaluated on known rather than unread graphs."
+    },
+    {
+      "year": 2026,
+      "authors": "Yuliang Liu, Haisu Guan, Pengjie Wang et al.",
+      "title": "AlphaOracle: Oracle bone script decipherment via human-workflow-inspired deep learning",
+      "venue": "The Innovation 7 (11): 101462",
+      "url": "https://doi.org/10.1016/j.xinn.2026.101462",
+      "note": "Multi-stage system combining form analysis, diachronic modelling, context retrieval and checks against classical texts; proposes a reading of one graph as a place or clan name, not yet independently reviewed."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Institute of History and Philology, Academia Sinica, Taipei",
+      "collection": "Oracle bones from the fifteen Anyang excavations of 1928–1937, including pit YH127 (published as Jiabian, Yibian and Bingbian)",
+      "url": "https://museum.sinica.edu.tw/collection/32/",
+      "digitized": "partial",
+      "note": "Holds more than 25,000 excavated pieces with recorded findspots; selected pieces are online with photographs and transcriptions through the Institute's museum.",
+      "aliases": [
+        "Academia Sinica"
+      ],
+      "holdings": [
+        {
+          "name": "Plastron with millet-harvest divination, Bingbian 8",
+          "ref": "R044295",
+          "url": "https://museum.sinica.edu.tw/collection/32/item/1213/",
+          "note": "Complete plastron from pit YH127 with positive and negative charges and the king's prognostication, an example of paired charges.",
+          "match": [
+            "Bingbian plastra"
+          ]
+        },
+        {
+          "name": "Set of plastra, Bingbian 28 and 30",
+          "ref": "R041285, R041286",
+          "url": "https://museum.sinica.edu.tw/collection/32/item/268/",
+          "note": "Third and fourth plastra of a set recording the same divination by the diviner 㱿, useful for testing how parallel copies treat the same graph."
+        },
+        {
+          "name": "Plastron with filled inscriptions, Bingbian 1",
+          "ref": "R043986",
+          "url": "https://museum.sinica.edu.tw/collection/32/item/59/",
+          "note": "YH127 plastron combining double-cut and single-cut graphs on a military divination, relevant to how carving technique alters graph form.",
+          "match": [
+            "pit YH127"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Yinqi Wenyuan 殷契文渊, Anyang Normal University",
+      "collection": "Oracle-bone big-data platform: graph database, catalogue of publications and literature database",
+      "url": "https://jgw.aynu.edu.cn/",
+      "digitized": "partial",
+      "note": "Opened to the public in 2019; by 2024 it reported 153 published catalogues, about 239,000 images and over 33,000 studies, with free registration.",
+      "aliases": [
+        "Yinqi Wenyuan"
+      ]
+    },
+    {
+      "repository": "National Library of China, Beijing",
+      "collection": "Oracle-bone pieces and rubbings from early private collections",
+      "url": "https://www.nlc.cn/web/index.shtml",
+      "digitized": "partial",
+      "note": "Reported as the largest single holding of Yinxu oracle bones; some rubbings and images are available through its digital ancient-books services.",
+      "aliases": [
+        "National Library of China"
+      ]
+    },
+    {
+      "repository": "Palace Museum, Beijing",
+      "collection": "About 22,463 pieces (1960s estimate), mainly James Mellon Menzies' former collection, with gifts from Ma Heng and others",
+      "url": "https://www.dpm.org.cn/",
+      "digitized": "partial",
+      "note": "Only about 1,440 of its pieces appeared in the Heji; a cataloguing and publication project began in 2014, so much remains unpublished.",
+      "aliases": [
+        "Palace Museum"
+      ]
+    },
+    {
+      "repository": "Shandong Museum, Jinan",
+      "collection": "About 10,588 Yinxu oracle-bone pieces, largely from Menzies' collection",
+      "url": "https://www.sdmuseum.com/",
+      "digitized": "partial",
+      "note": "One of the largest holdings in mainland China; the 2024 conference marking 125 years since the discovery of the inscriptions was held in Jinan with the museum as a host institution.",
+      "aliases": [
+        "Shandong Museum"
+      ]
+    },
+    {
+      "repository": "Institute of Archaeology, Chinese Academy of Social Sciences (Anyang Work Station), Anyang",
+      "collection": "Excavated groups from Xiaotun South (1973, 5,335 pieces) and Huayuanzhuang East (1991, 1,583 pieces)",
+      "url": "http://kaogu.cssn.cn/",
+      "digitized": "partial",
+      "note": "Holds the scientifically excavated post-1949 groups, published as Xiaotun nandi jiagu and Yinxu Huayuanzhuang dongdi jiagu; access to originals is by permission.",
+      "aliases": [
+        "Anyang Work Station"
+      ],
+      "holdings": [
+        {
+          "name": "Huayuanzhuang East inscriptions",
+                    "note": "Non-royal divination group edited in English by Schwartz (2019), excavated together and fully published.",
+          "match": [
+            "Huayuanzhuang East inscriptions"
+          ]
+        },
+        {
+          "name": "Xiaotun South (Xiaotun nandi) finds",
+                    "note": "Excavated royal inscriptions with stratigraphic context, important for dating script groups."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-11",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-11",
+    "needs_on": "2026-10-11"
+  }
+}

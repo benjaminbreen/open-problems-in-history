@@ -1,0 +1,182 @@
+{
+  "compiled_by": "Claude Opus 5.5",
+  "compiled_on": "2026-10-11",
+  "items": [
+    {
+      "date": "2016-08",
+      "kind": "paper",
+      "title": "Ibn Baṭṭūṭa",
+      "who": "D. Waines",
+      "venue": "Encyclopaedia of Islam, THREE",
+      "url": "https://doi.org/10.1163/1573-3912_ei3_com_30741",
+      "note": "Reference survey of the traveller and the Riḥla, summarising the debate over borrowed passages and doubtful legs.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2017",
+      "kind": "paper",
+      "title": "Deviser les merveilles du monde",
+      "who": "H. Collet",
+      "venue": "Annales islamologiques",
+      "url": "https://doi.org/10.4000/anisl.3355",
+      "note": "Rereads the Mali journey within the jointly authored work's literary design built around marvels and the spread of Islam.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2018-05",
+      "kind": "grant",
+      "title": "KITAB: Knowledge, Information Technology, and the Arabic Book",
+      "who": "S. B. Savant (Aga Khan University)",
+      "venue": "European Research Council, grant 772989",
+      "url": "https://cordis.europa.eu/project/id/772989",
+      "note": "ERC grant of about €1.99 million (2018 to 2023) that adapted passim for Arabic and produced text-reuse data across the OpenITI corpus.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2019-08",
+      "kind": "paper",
+      "title": "Ibn Baṭṭūṭa's Buddhists: Monuments, Memory, and the Materiality of Travel",
+      "who": "T. I. Sears",
+      "venue": "Encountering Buddhism and Islam in Premodern Central and South Asia (De Gruyter)",
+      "url": "https://doi.org/10.1515/9783110631685-005",
+      "note": "Examines the Chinese embassy to Delhi that Ibn Baṭṭūṭa was sent to escort, setting his account against monuments and other evidence.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2020-01",
+      "kind": "paper",
+      "title": "Ibn Juzayy, Abū ʿAbdallāh",
+      "who": "R. Elger",
+      "venue": "Encyclopaedia of Islam, THREE",
+      "url": "https://doi.org/10.1163/1573-3912_ei3_com_30849",
+      "note": "Entry on the Granadan scholar who wrote up the Riḥla, relevant to which parts reflect his editing and borrowing.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2020-11",
+      "kind": "paper",
+      "title": "At the Edge of the World of Islam: Ibn Baṭṭūṭa in the Malay Archipelago",
+      "who": "A. Iankovskaia",
+      "venue": "Entangled Religions",
+      "url": "https://doi.org/10.46586/er.11.2020.8673",
+      "note": "Analyses the narrative techniques of the Sumatra and archipelago sections of the 1340s and what they reveal about early Islamisation.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2021",
+      "kind": "paper",
+      "title": "\"Le voyageur des Arabes et des Persans\": une approche cognitive de la riḥla d'Ibn Baṭṭūṭa (1325-1355)",
+      "who": "Y. Dejugnat",
+      "venue": "Ausonius Éditions",
+      "url": "https://doi.org/10.4000/13v9t",
+      "note": "Questions the 'great explorer' reading of the Riḥla and treats it as a construction of knowledge about the Islamic world.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2021-04",
+      "kind": "paper",
+      "title": "Ibn Baṭṭūṭa's \"Prayer of Damascus:\" A window on to Damascus in the hell of the Black Death (Part 1)",
+      "who": "C. M. Tresso",
+      "venue": "Kervan",
+      "url": "https://doi.org/10.13135/1825-263x/5785",
+      "note": "Compares the Riḥla's account of the 1348 plague procession in Damascus with Arabic chronicles of the same event.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2021-12",
+      "kind": "paper",
+      "title": "Two-year Journey under the Arrows of the Black Death",
+      "who": "C. M. Tresso",
+      "venue": "Journal of Arabic and Islamic Studies",
+      "url": "https://doi.org/10.5617/jais.9292",
+      "note": "Tests the 1348 to 1350 return journey against plague chronicles and asks whether its plague passages were taken from other sources.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2023-02",
+      "kind": "paper",
+      "title": "India's epidemics in the Riḥla of Ibn Baṭṭūṭa: plague, cholera or lexical muddle?",
+      "who": "C. M. Tresso",
+      "venue": "Bulletin of the School of Oriental and African Studies",
+      "url": "https://doi.org/10.1017/s0041977x23000204",
+      "note": "Checks the Riḥla's Indian epidemics of 1334–35 and 1344 against Indo-Persian chronicles and translations, finding errors introduced by translators.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-02",
+      "kind": "paper",
+      "title": "The Colonial Adventures of Confiscated Arabic Texts: Ibn Battuta's Rihla Manuscript from North Africa to the French National Library",
+      "who": "S. Ahmed, T. Dumothier and K. M. McGinn",
+      "venue": "Library Trends",
+      "url": "https://doi.org/10.1353/lib.2024.a944675",
+      "note": "Uses French archival sources to reconstruct how the Paris manuscripts, including the copy believed to be Ibn Juzayy's, left North Africa.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024-06",
+      "kind": "data",
+      "title": "KITAB Text Reuse Data, version 2023.1.8",
+      "who": "D. Smith, S. B. Savant, M. Romanov et al.",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.11501559",
+      "note": "Passim alignments across an OpenITI release, the kind of corpus-wide reuse output from which Riḥla parallels can be extracted.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-05",
+      "kind": "paper",
+      "title": "Princess Urduja From Tawalisi: Arabic Mirabilia And Philippine History",
+      "who": "I. Donoso",
+      "venue": "Tashwirul Afkar",
+      "url": "https://doi.org/10.51716/ta.v44i1.662",
+      "note": "Reads Tawālisī, a land known only from the Riḥla, as Arabic mirabilia and traces how Philippine historiography adopted it.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-02",
+      "kind": "data",
+      "title": "OpenITI: a Machine-Readable Corpus of Islamicate Texts; Primary Version 2025.1.9",
+      "who": "L. Nigst, M. Romanov, S. B. Savant et al.",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.18613982",
+      "note": "Current versioned release of the corpus holding digital witnesses of the Riḥlas of Ibn Baṭṭūṭa and Ibn Jubayr.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-08",
+      "kind": "paper",
+      "title": "Ibn Baṭṭūṭa's Calicut: An Archaeological Investigation Through Ibn Baṭṭūṭa's and Other Historical Accounts",
+      "who": "M. Shokoohy and N. H. Shokoohy",
+      "venue": "Faith, Commerce, and Cultural Exchange in the World of Ibn Battuta (Springer), ed. A. Panakkal",
+      "url": "https://doi.org/10.1007/978-3-031-97883-8_5",
+      "note": "Sets the Riḥla's description of Calicut against surviving buildings and other accounts, in a 2026 volume of regional case studies.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-09",
+      "kind": "event",
+      "title": "Manuscript of the first part of the Riḥla sold at the Abu Dhabi International Book Fair",
+      "who": "Peter Harrington (dealer)",
+      "venue": "Khaleej Times",
+      "url": "https://www.khaleejtimes.com/uae/rare-700-year-old-ibn-battuta-rihla-manuscript-sold-abu-dhabi-book-fair",
+      "note": "Press report of a sale for close to Dh1 million of a copy covering the journeys of 1325 to 1333; its date and new location are not stated.",
+      "advances": false,
+      "cited": false
+    }
+  ]
+}

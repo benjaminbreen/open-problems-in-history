@@ -1,0 +1,149 @@
+{
+  "compiled_by": "Claude Opus 5.5",
+  "compiled_on": "2026-10-11",
+  "items": [
+    {
+      "date": "2017-10",
+      "kind": "paper",
+      "title": "Comparing Offertory Melodies of Five Medieval Christian Chant Traditions",
+      "who": "P. van Kranenburg and G. Maessen",
+      "venue": "ISMIR 2017 Proceedings",
+      "url": "https://doi.org/10.5281/zenodo.1415507",
+      "note": "Applies computational melodic comparison to offertories shared across five Latin chant traditions, including the Old Roman and Gregorian versions.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2017-10",
+      "kind": "paper",
+      "title": "The Earliest Antiphons of the Roman Office",
+      "who": "E. Nowacki",
+      "venue": "Chant, Liturgy, and the Inheritance of Rome (Boydell)",
+      "url": "https://doi.org/10.1017/9781787441460.006",
+      "note": "Uses Old Roman and Gregorian Office antiphons comparatively to identify the oldest layer of the Roman Office, in a volume of essays honouring Joseph Dyer.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2018-11",
+      "kind": "paper",
+      "title": "Writing Sounds in Carolingian Europe: The Invention of Musical Notation",
+      "who": "S. Rankin",
+      "venue": "Cambridge University Press",
+      "url": "https://doi.org/10.1017/9781108368605",
+      "note": "Reconstructs the ninth-century emergence of neume notation, constraining when Frankish melodies could first have been fixed in writing.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2020-10",
+      "kind": "tool",
+      "title": "Studying Large Plainchant Corpora Using chant21",
+      "who": "B. Cornelissen, W. Zuidema and J. A. Burgoyne",
+      "venue": "DLfM 2020",
+      "url": "https://doi.org/10.1145/3424911.3425514",
+      "note": "Python library for parsing Cantus volpiano and GABC chant encodings into music21, making corpus-scale melodic analysis practicable.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2021-06",
+      "kind": "paper",
+      "title": "Renewal, Heritage, and Exchange in Eleventh-Century Roman Chant Traditions",
+      "who": "L. Nardini",
+      "venue": "Urban Developments in Late Antique and Medieval Rome (Amsterdam UP)",
+      "url": "https://doi.org/10.1017/9789048541492.010",
+      "note": "Examines the eleventh-century Roman chant books, the period when Old Roman melodies were first written down, as products of local renewal and exchange.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2022-04",
+      "kind": "paper",
+      "title": "Revisiting 'Toledo, Rome, and the Legacy of Gaul': new evidence from the Divine Office",
+      "who": "R. Maloy et al.",
+      "venue": "Plainsong and Medieval Music",
+      "url": "https://doi.org/10.1017/S096113712200002X",
+      "note": "Identifies nearly two dozen Franco-Roman responsories shared with the Old Hispanic rite, extending Levy's case for non-Roman material in the Gregorian repertory.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2023-01",
+      "kind": "tool",
+      "title": "ChantLab and Genome of Melody code repositories",
+      "who": "Genome of Melody project (J. Hajič jr et al.)",
+      "venue": "GitHub",
+      "url": "https://github.com/Genome-of-Melody",
+      "note": "Open code for aligning volpiano chant melodies and running MrBayes phylogenetic analyses, released alongside the group's chant phylogeny papers.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-07",
+      "kind": "paper",
+      "title": "Gregorian melody, modality, and memory: Segmenting chant with Bayesian nonparametrics",
+      "who": "V. Lanz and J. Hajič jr",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2507.00380",
+      "note": "Tests the centonisation idea that chant is built from reusable melodic segments, relevant to separating formulaic convergence from shared descent.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-12",
+      "kind": "paper",
+      "title": "Genome of melody: applying bioinformatics to study the evolution of Gregorian chant",
+      "who": "J. Hajič jr, V. Lanz and G. A. Ballen",
+      "venue": "Philosophical Transactions of the Royal Society B",
+      "url": "https://doi.org/10.1098/rstb.2024.0274",
+      "note": "Shows that phylogenetic models on aligned melodies recover historically plausible patterns among Gregorian sources; Old Roman sources are not included.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2026",
+      "kind": "paper",
+      "title": "A variánsalkotás mintázatai órómai és gregorián kéziratokban (Patterns of variants in Old Roman and Gregorian chant manuscripts)",
+      "who": "L. D. Varga",
+      "venue": "Magyar Zene 64 (1)",
+      "url": "https://doi.org/10.71099/mz.22903",
+      "note": "Applies digital stemmatics and descriptive statistics to melodic variants in the Old Roman sources, read against their Gregorian analogues, to infer sub-traditions among the Roman books.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-04",
+      "kind": "data",
+      "title": "Making Chant Computing Easy: CantusCorpus v1.0 and the PyCantus Library",
+      "who": "A. Dvořáková, T. Eipert, D. Lacoste and J. Hajič jr",
+      "venue": "Transactions of the International Society for Music Information Retrieval",
+      "url": "https://doi.org/10.5334/tismir.321",
+      "note": "Releases a single dataset combining the Cantus Database and allied Cantus Index databases (nearly 900,000 chants in over 2,000 sources) with a Python library.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2026-05",
+      "kind": "paper",
+      "title": "What did the dove sing to Pope Gregory? Ancestral melody reconstruction in Gregorian chant using Bayesian phylogenetics",
+      "who": "G. A. Ballen, K. H. Mühlová and J. Hajič jr",
+      "venue": "PLOS ONE",
+      "url": "https://doi.org/10.1371/journal.pone.0350014",
+      "note": "Reconstructs ancestral melodies on a time-calibrated tree of fourteen sources and proposes encoding Old Roman sources to test their chronology against Gregorian.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2026-06",
+      "kind": "tool",
+      "title": "Towards a foundational model for recognising diastematic Gregorian notation",
+      "who": "D. Kurek and J. Hajič jr",
+      "venue": "arXiv",
+      "url": "https://arxiv.org/abs/2606.31454",
+      "note": "Unifies four optical music recognition datasets for pitched chant notation in one encoding and trains a shared model, a route to transcribing pitched sources at scale.",
+      "advances": false,
+      "cited": false
+    }
+  ]
+}
