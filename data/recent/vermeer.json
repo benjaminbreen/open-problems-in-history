@@ -1,0 +1,160 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Vermeer and the Problem of Painting Inside the Camera Obscura",
+   "who": "P. Steadman",
+   "venue": "Instrumente des Sehens (De Gruyter)",
+   "url": "https://doi.org/10.1515/9783110547214-010",
+   "note": "Steadman returns to his room-geometry case and addresses how a painter could have worked from a projection inside a darkened booth.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-07",
+   "kind": "paper",
+   "title": "Traces of Vermeer",
+   "who": "J. Jelley",
+   "venue": "Oxford University Press",
+   "url": "https://www.oup.com.au/books/others/9780198789727-traces-of-vermeer",
+   "note": "A painter's experimental reconstruction proposing that Vermeer traced projected images onto oiled paper and transferred them as monochrome underpaintings.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-02",
+   "kind": "event",
+   "title": "The Girl in the Spotlight: public technical examination of Girl with a Pearl Earring",
+   "who": "Mauritshuis, The Hague",
+   "venue": "Mauritshuis",
+   "url": "https://mauritshuis.nl/en/discover/exhibitions/the-girl-in-the-spotlight",
+   "note": "Two-week in-gallery campaign of MA-XRF, reflectance imaging, OCT and 3D scanning that produced the data for the 2019–20 Heritage Science series.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-09",
+   "kind": "field",
+   "title": "Revealing the painterly technique beneath the surface of Vermeer's Girl with a Pearl Earring using macro- and microscale imaging",
+   "who": "A. Vandivere et al.",
+   "venue": "Heritage Science",
+   "url": "https://doi.org/10.1186/s40494-019-0308-4",
+   "note": "Imaging identified ground, fine black outlines and underlayers, giving a sequence of construction against which tracing hypotheses can be tested.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "This Artificial Eye: The Camera Obscura in Artistic Practice of the Seventeenth and Eighteenth Centuries",
+   "who": "A. Baccin",
+   "venue": "Carleton University (MA thesis)",
+   "url": "https://doi.org/10.22215/etd/2020-14074",
+   "note": "Treats the camera obscura as a historical object and metaphor for vision, with Vermeer and Canaletto as the main case studies of artistic use.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-03",
+   "kind": "paper",
+   "title": "The Girl in the Spotlight: Vermeer at work, his materials and techniques in Girl with a Pearl Earring",
+   "who": "A. Vandivere, J. Wadum and E. Leonhardt",
+   "venue": "Heritage Science",
+   "url": "https://doi.org/10.1186/s40494-020-0359-6",
+   "note": "Synthesizes the Mauritshuis results into a stage-by-stage account of how the painting was built up, from sketch and underpaint to final glazes.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-11",
+   "kind": "paper",
+   "title": "Did Tim Paint a Vermeer?",
+   "who": "D. G. Stork, C. W. Tyler and S. J. Schechner",
+   "venue": "Journal of Imaging Science and Technology",
+   "url": "https://doi.org/10.2352/J.ImagingSci.Technol.2020.64.6.060403",
+   "note": "Critique of Tim Jenison's mirror-comparator method in the film Tim's Vermeer, concluding that Vermeer was very unlikely to have used it.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-09",
+   "kind": "field",
+   "title": "SWIR imaging reveals a painted-out jug rack and fire basket in The Milkmaid",
+   "who": "Rijksmuseum, with the Mauritshuis",
+   "venue": "Rijksmuseum announcement",
+   "url": "https://news.artnet.com/art-world/vermeer-milkmaid-x-ray-2172132",
+   "note": "Infrared and MA-XRPD scans showed objects sketched in black paint and later suppressed, plus a quick initial line under the arm, evidence of freehand revision.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-10",
+   "kind": "field",
+   "title": "First Steps in Vermeer's Creative Process: New Findings from the National Gallery of Art",
+   "who": "E. M. Gifford, D. Anchin, A. Libby and M. Wieseman",
+   "venue": "Journal of Historians of Netherlandish Art",
+   "url": "https://doi.org/10.5092/jhna.2021.14.2.1",
+   "note": "Reflectance and XRF imaging of Woman Holding a Balance and A Lady Writing show loose, spontaneous painted sketches, hard to square with tracing from a projection.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2022-10",
+   "kind": "paper",
+   "title": "Experimentation and Innovation in Vermeer's Girl with the Red Hat: New Findings from the National Gallery of Art",
+   "who": "A. Libby, E. M. Gifford, D. Anchin and M. Wieseman",
+   "venue": "Journal of Historians of Netherlandish Art",
+   "url": "https://doi.org/10.5092/jhna.2022.14.2.2",
+   "note": "Technical study of the small panel often cited for camera-like highlights, painted over an abandoned portrait; documents experimental, freely reworked paint layers.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-10",
+   "kind": "paper",
+   "title": "Vermeer's Studio and the Girl with a Flute: New Findings from the National Gallery of Art",
+   "who": "M. E. Wieseman et al.",
+   "venue": "Journal of Historians of Netherlandish Art",
+   "url": "https://doi.org/10.5092/jhna.2022.14.2.3",
+   "note": "Reassigned Girl with a Flute to Vermeer's studio, which bears on whether 'optical' features belong to Vermeer alone or to a workshop practice.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-01",
+   "kind": "paper",
+   "title": "Johannes Vermeer: Faith, Light and Reflection",
+   "who": "G. J. M. Weber",
+   "venue": "Rijksmuseum / nai010",
+   "url": "https://www.nai010.com/en/publicaties/johannes-vermeer-english/246075",
+   "note": "Argues that the Jesuit painter Isaac van der Mye, Vermeer's neighbour, used a camera obscura, placing the device near Vermeer; the link to Vermeer remains circumstantial.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2023-02",
+   "kind": "event",
+   "title": "Vermeer (exhibition, 10 February–4 June 2023)",
+   "who": "Rijksmuseum, Amsterdam",
+   "venue": "Rijksmuseum",
+   "url": "https://www.rijksmuseum.nl/en/whats-on/exhibitions/past/vermeer",
+   "note": "Largest Vermeer exhibition to date, bringing 28 paintings together with new technical research and presenting the camera obscura argument from Weber's study.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-04",
+   "kind": "field",
+   "title": "Comparing Vermeer's painting techniques in Woman Holding a Balance and A Lady Writing using chemical imaging spectroscopy",
+   "who": "K. A. Dooley, E. M. Gifford, D. Anchin et al.",
+   "venue": "npj Heritage Science",
+   "url": "https://doi.org/10.1038/s40494-026-02420-y",
+   "note": "Imaging spectroscopy shows brushmarked underpaint laid in quickly, revising the view that Vermeer worked slowly and smoothly throughout.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

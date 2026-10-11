@@ -1,0 +1,248 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017-08",
+   "kind": "paper",
+   "title": "From Linear B to Linear A: the problem of the backward projection of sound values",
+   "who": "P. M. Steele and T. Meißner",
+   "venue": "Understanding Relations Between Scripts (Oxbow)",
+   "url": "https://doi.org/10.2307/j.ctvh1dr51.11",
+   "note": "Examines how far Linear B phonetic values can safely be projected back onto Linear A signs, the basis of every reading attempt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "grant",
+   "title": "INSCRIBE: Invention of Scripts and their Beginnings (ERC Consolidator Grant)",
+   "who": "S. Ferrara, University of Bologna",
+   "venue": "European Research Council",
+   "url": "https://cordis.europa.eu/project/id/771127",
+   "note": "Five-year ERC project on Aegean and other early scripts that produced the SigLA database and several Linear A studies.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "grant",
+   "title": "Giving Voice to the Minoan People: The Decipherment of Linear A",
+   "who": "F. Perono Cacciafoco (NTU Singapore)",
+   "venue": "Singapore Ministry of Education AcRF Tier 1 (2017-T1-002-193)",
+   "url": "https://scholar.xjtlu.edu.cn/en/projects/giving-voice-to-the-minoan-people-the-decipherment-of-linear-a",
+   "note": "Singapore MOE grant (2018 to 2021) for systematic corpus analysis and a Python brute-force cryptanalytic test of candidate languages for Linear A.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-06",
+   "kind": "field",
+   "title": "Some unpublished Linear A documents from Khania",
+   "who": "E. Hallager and M. Andreadaki-Vlazaki",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2018-0004",
+   "note": "Publishes new tablet fragments excavated on Kastelli Hill, Khania, between 2007 and 2014, adding to the small western Cretan corpus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-04",
+   "kind": "paper",
+   "title": "Drawing lines: The palaeography of Linear A and Linear B",
+   "who": "E. Salgarella",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2019-0004",
+   "note": "Compares sign shapes across the two scripts to clarify how Linear A was adapted into Linear B.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-04",
+   "kind": "tool",
+   "title": "lineara.xyz",
+   "who": "R. Hogan (mwenge)",
+   "venue": "GitHub / web",
+   "url": "https://github.com/mwenge/lineara.xyz",
+   "note": "Open-source interactive corpus browser with transliterations, findspot map and regular-expression search, maintained through 2026.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-07",
+   "kind": "tool",
+   "title": "Neural Decipherment via Minimum-Cost Flow: From Ugaritic to Linear B",
+   "who": "J. Luo, Y. Cao and R. Barzilay",
+   "venue": "ACL 2019",
+   "url": "https://aclanthology.org/P19-1303/",
+   "note": "Automatic cognate-matching method validated on known decipherments, a template for testing Linear A against candidate languages.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "data",
+   "title": "SigLA: The Signs of Linear A. A Palaeographical Database",
+   "who": "E. Salgarella and S. Castellan",
+   "venue": "sigla.phis.me",
+   "url": "https://sigla.phis.me/",
+   "note": "Searchable sign-by-sign database of Linear A inscriptions with drawn sign tracings for palaeographic analysis.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-04",
+   "kind": "paper",
+   "title": "Some reflections on morphology in the language of the Linear A libation formula",
+   "who": "R. Thomas",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2020-0001",
+   "note": "Assuming VSO order and a polysynthetic verb, proposes nominal and verbal morphology from variants of the libation formula.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "paper",
+   "title": "Aegean Linear Script(s): Rethinking the Relationship between Linear A and Linear B",
+   "who": "E. Salgarella",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108783477",
+   "note": "Systematic palaeographic and structural comparison arguing for a closer, more continuous relationship between the two scripts.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-01",
+   "kind": "paper",
+   "title": "The mathematical values of fraction signs in the Linear A script: A computational, statistical and typological approach",
+   "who": "M. Corazza et al.",
+   "venue": "Journal of Archaeological Science",
+   "url": "https://doi.org/10.1016/j.jas.2020.105214",
+   "note": "Assigns probable numerical values to Linear A fraction signs using combinatorial and statistical constraints.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-02",
+   "kind": "tool",
+   "title": "Deciphering Undersegmented Ancient Scripts Using Phonetic Prior",
+   "who": "J. Luo et al.",
+   "venue": "Transactions of the ACL",
+   "url": "https://doi.org/10.1162/tacl_a_00354",
+   "note": "Extends neural decipherment to unsegmented texts and tests closeness of undeciphered languages to known families.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Rebus compositions in Linear A?",
+   "who": "B. Montecchi",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2022-0004",
+   "note": "Argues some logograms were used phonetically in rebus spellings at Hagia Triada, which would yield clues to Minoan word sounds.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Some observations on the language of Linear A",
+   "who": "O. Monti",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2022-0005",
+   "note": "Argues the corpus records a single language and identifies a prefix and probable verbal root in the libation formula.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-03",
+   "kind": "field",
+   "title": "A Linear A Inscription from the Cave (INA Zb 1)",
+   "who": "M. Perna",
+   "venue": "Honors to Eileithyia at Ancient Inatos (INSTAP)",
+   "url": "https://doi.org/10.2307/j.ctv2f4v5x3.13",
+   "note": "Publishes an inscribed object from the Eileithyia cave at Tsoutsouros, adding to the corpus of religious Linear A texts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-01",
+   "kind": "paper",
+   "title": "Minoan Cryptanalysis: Computational Approaches to Deciphering Linear A and Assessing Its Connections with Language Families from the Mediterranean and the Black Sea Areas",
+   "who": "A. Nepal and F. Perono Cacciafoco",
+   "venue": "Information",
+   "url": "https://doi.org/10.3390/info15020073",
+   "note": "Compares Linear A sign sequences computationally with several candidate language families; results remain inconclusive.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-09",
+   "kind": "paper",
+   "title": "Design and Origins of Linear A Picture-Based Signs",
+   "who": "B. Montecchi",
+   "venue": "Writing from Invention to Decipherment (Oxford)",
+   "url": "https://doi.org/10.1093/oso/9780198908746.003.0010",
+   "note": "Reassesses the relationship of Linear A pictorial signs to Cretan Hieroglyphic, questioning a simple evolutionary sequence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025",
+   "kind": "data",
+   "title": "Recueil des inscriptions en linéaire A. Supplément 1 (RILA-S1)",
+   "who": "M. Del Freo and J. Zurbach",
+   "venue": "École française d'Athènes",
+   "url": "https://editions.efa.gr/?r=publication&id=1050",
+   "note": "First supplement to GORILA since the 1980s, editing Linear A documents found or published after the original corpus.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2025-03",
+   "kind": "field",
+   "title": "An archaeological and epigraphical overview of some inscriptions found in the Cult Center of the city of Knossos (Anetaki plot)",
+   "who": "A. Kanta, D. Nakassis, T. G. Palaima and M. Perna",
+   "venue": "Ariadne Supplements 5",
+   "url": "https://doi.org/10.26248/ariadne.vi.1841",
+   "note": "Publishes an inscribed ivory sceptre from Knossos carrying about 119 signs, the longest known Linear A inscription, without numerals.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2025-10",
+   "kind": "paper",
+   "title": "On Aegean spices: decipherment prospects on Linear A and B spice-related signs",
+   "who": "S. Ferrara, E. Salgarella and L. Bellinato",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2025-0002",
+   "note": "Proposes identifications for undeciphered spice monograms in Linear B perfume tablets and traces them back to Linear A.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-10",
+   "kind": "paper",
+   "title": "Industrial plants and palatial culture in Bronze Age Crete: olive in Linear A documents",
+   "who": "R. Pierini",
+   "venue": "Kadmos",
+   "url": "https://doi.org/10.1515/kadmos-2025-0001",
+   "note": "First systematic survey of the olive logogram and its ligatures across Linear A documents, by site and date.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-03",
+   "kind": "paper",
+   "title": "The Undeciphered Aegean Scripts: Linguistic Investigations into the Languages They Encode",
+   "who": "B. Davis",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781009562331",
+   "note": "Applies syllabotactic and statistical methods to Linear A and related scripts to characterize the underlying languages.",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}

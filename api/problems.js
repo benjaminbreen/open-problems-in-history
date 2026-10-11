@@ -25,6 +25,6 @@ export default async function handler(req, res) {
   }
 
   res.status(200).json(problems
-    .map((p) => ({ id: p.id, title: p.title, short: p.short, field: p.field, region: p.region, start: p.start, end: p.end, flags: p.flags, url: `/p/${p.id}`, json: `/api/problems?id=${p.id}`, ...live(p.id) }))
+    .map((p) => ({ id: p.id, title: p.title, short: p.short, field: p.field, region: p.region, start: p.start, end: p.end, flags: p.flags, recent_items: p.recent?.items?.length || 0, last_moved: p.recent?.items?.map((r) => String(r.date)).sort().at(-1) || null, url: `/p/${p.id}`, json: `/api/problems?id=${p.id}`, ...live(p.id) }))
     .sort((a, b) => (b.impact ?? -99) - (a.impact ?? -99) || b.score - a.score));
 }

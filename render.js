@@ -265,6 +265,79 @@ function archiveCards(a, i) {
   return card + (a.holdings || []).map((h, j) => `<div class="cref-src" id="cref-a${i}.${j}" hidden>${head}<div><span class="in">${esc(a.repository)}</span><span class="rep">${extLink(h.url, esc(h.name))}</span>${h.ref ? `<span class="ref">${esc(h.ref)}</span>` : ""}${h.note ? `<span class="n">${esc(h.note)}</span>` : ""}</div><a class="jump" href="#src-a${i}.${j}" data-ref="a${i}.${j}">In archives ↓</a></div>`).join("");
 }
 
+// ---------- recent work ----------
+// A dated log of what has moved a problem since 2016 (data/recent/<id>.json): a compact strip of
+// glyphs on a time axis that expands into the full list. Glyphs are .cref buttons, so they share the
+// citation cards' hover preview and click-to-jump behaviour in app.js.
+const glyph = (d) => `<svg class="rwg" viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round">${d}</svg>`;
+export const RW_KINDS = [
+  ["paper", "Paper", "papers", glyph(`<path d="M2.8 1.2h4.3l2.1 2.1v7.5H2.8z"/><path d="M7 1.2v2.2h2.2M4.5 6h3M4.5 8.1h3"/>`)],
+  ["data", "Data", "data", glyph(`<ellipse cx="6" cy="2.7" rx="3.7" ry="1.4"/><path d="M2.3 2.7v6.6c0 .8 1.7 1.4 3.7 1.4s3.7-.6 3.7-1.4V2.7M2.3 6c0 .8 1.7 1.4 3.7 1.4S9.7 6.8 9.7 6"/>`)],
+  ["field", "Field & lab", "field & lab", glyph(`<path d="M4.4 1.2h3.2M5 1.2v3.4L2 9.7a.75.75 0 0 0 .65 1.1h6.7a.75.75 0 0 0 .65-1.1L7 4.6V1.2M3.3 7.6h5.4"/>`)],
+  ["tool", "Tool", "tools", glyph(`<path d="M3.9 3.4 1.4 6l2.5 2.6M8.1 3.4 10.6 6 8.1 8.6M6.8 2.4 5.2 9.6"/>`)],
+  ["event", "Event", "events", glyph(`<rect x="1.5" y="2.3" width="9" height="8.5" rx="1"/><path d="M1.5 5h9M4 1.2v2.1M8 1.2v2.1"/>`)],
+  ["grant", "Grant", "grants", glyph(`<path d="M6 10.8V5.4M6 7.6C6 5.4 4.5 4 2.2 4c0 2.2 1.5 3.6 3.8 3.6zM6 5.4c0-2.1 1.4-3.5 3.7-3.5 0 2.1-1.4 3.5-3.7 3.5z"/>`)],
+  ["prize", "Prize", "prizes", glyph(`<circle cx="6" cy="6" r="4.9"/><path d="M7.5 4.6c-.3-.5-.8-.8-1.5-.8-.8 0-1.4.4-1.4 1.1 0 1.5 2.9.9 2.9 2.4 0 .7-.7 1.1-1.5 1.1-.7 0-1.2-.3-1.6-.8M6 2.9v.9M6 8.4v.9"/>`)],
+];
+const ADV = glyph(`<path d="M2.6 9.4 9.4 2.6M4.4 2.6h5v5"/>`);
+const RW = Object.fromEntries(RW_KINDS.map(([k, one, many, g]) => [k, { one, many, g }]));
+const RW_FROM = 2016;
+const ym = (d) => { const [y, m] = String(d).split("-").map(Number); return { y, m: m || 6 }; };
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const rwDate = (d) => { const [y, m] = String(d).split("-"); return m ? `${MON[m - 1]} ${y}` : y; };
+export const recentItems = (p) => (p.recent?.items || []).filter((r) => RW[r.kind]);
+
+function recentWork(p) {
+  const items = recentItems(p).map((r, i) => ({ ...r, i }));
+  if (!items.length) return "";
+  const to = Math.max(new Date().getFullYear(), ...items.map((r) => ym(r.date).y)) + 1;
+  const span = to - RW_FROM;
+  const x = (d) => { const { y, m } = ym(d); return ((y - RW_FROM + (m - .5) / 12) / span) * 100; };
+  // stack glyphs that would overlap: each takes the lowest level whose last glyph is far enough left
+  const levels = [];
+  for (const r of [...items].sort((a, b) => x(a.date) - x(b.date))) {
+    r.x = x(r.date);
+    let l = levels.findIndex((last) => r.x - last >= 2.1);
+    if (l < 0) l = levels.length;
+    levels[l] = r.x; r.l = l;
+  }
+  const count = Object.fromEntries(RW_KINDS.map(([k]) => [k, items.filter((r) => r.kind === k).length]));
+  const adv = items.filter((r) => r.advances).length;
+  const last = items.reduce((a, b) => (String(b.date) > String(a.date) ? b : a));
+  const norm = (t) => String(t).toLowerCase().replace(/^(the|a|an)\s+/, "").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+  const cites = (r) => r.cited ? (p.existing || []).findIndex((e) => (r.url && e.url === r.url) || norm(e.title) === norm(r.title)) : -1;
+  const title = (r) => r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.title)}</a>` : esc(r.title);
+  const by = (r) => [r.who, r.venue].filter(Boolean).map(esc).join(" · ");
+  const kind = (r) => `<span class="rw-kind">${RW[r.kind].g}${esc(RW[r.kind].one)}</span>`;
+  const advTag = `<span class="rw-adv">${ADV}Advances the problem</span>`;
+  const years = Array.from({ length: span }, (_, k) => RW_FROM + k);
+  const newest = [...items].sort((a, b) => String(b.date).localeCompare(String(a.date)));
+  let prevY = null;
+  const rows = newest.map((r) => {
+    const y = ym(r.date).y, first = y !== prevY; prevY = y;
+    const w = cites(r);
+    return `<li id="src-r${r.i}" class="k-${r.kind}${r.advances ? " adv" : ""}${first ? " y1" : ""}"><span class="rw-d">${esc(rwDate(r.date))}</span>${kind(r)}<div><span class="t">${title(r)}</span>${by(r) ? `<span class="w">${by(r)}</span>` : ""}${r.note ? `<span class="n">${esc(r.note)}</span>` : ""}${r.advances || w >= 0 ? `<span class="rw-flags">${r.advances ? advTag : ""}${w >= 0 ? `<button type="button" class="cref rw-cited" data-ref="w${w}" aria-expanded="false">In existing work</button>` : ""}</span>` : ""}</div></li>`;
+  }).join("");
+  const cards = items.map((r) => `<div class="cref-src" id="cref-r${r.i}" hidden><span class="yr">${esc(rwDate(r.date))}</span><div class="rw-card k-${r.kind}${r.advances ? " adv" : ""}"><span class="rw-tags">${kind(r)}${r.advances ? advTag : ""}</span><span class="t">${title(r)}</span>${by(r) ? `<span class="w">${by(r)}</span>` : ""}${r.note ? `<span class="n">${esc(r.note)}</span>` : ""}</div><a class="jump" href="#src-r${r.i}" data-ref="r${r.i}">In recent work ↓</a></div>`).join("");
+  const pv = p.recent;
+  const pct = (v) => `${v.toFixed(2)}%`;
+  return `<div class="rw" data-rw style="--lv:${levels.length}">
+      <div class="rw-top">
+        <h2 class="rw-h">Recent work</h2>
+        <div class="rw-legend" role="group" aria-label="Show only">${RW_KINDS.filter(([k]) => count[k]).map(([k, , , g]) => `<button type="button" class="rw-k k-${k}" data-rwk="${k}" aria-pressed="false" title="Show only ${esc(RW[k].many)}">${g}<b>${count[k]}</b>${esc(count[k] === 1 ? RW[k].one.toLowerCase() : RW[k].many)}</button>`).join("")}${adv ? `<button type="button" class="rw-k k-adv" data-rwk="adv" aria-pressed="false" title="Show only what advanced the problem">${ADV}<b>${adv}</b>advance${adv === 1 ? "" : "s"}</button>` : ""}</div>
+        <span class="rw-last">last moved <b>${esc(rwDate(last.date))}</b></span>
+        <button type="button" class="rw-more" aria-expanded="false" aria-controls="rw-list"><span>All ${items.length}</span><i aria-hidden="true">↓</i></button>
+      </div>
+      <div class="rw-track">${years.map((y) => `<span class="rw-yr${y % 2 ? " odd" : ""}" style="left:${pct(((y - RW_FROM) / span) * 100)};width:${pct(100 / span)}"><i><b class="full">${y}</b><b class="abbr">’${String(y).slice(2)}</b></i></span>`).join("")}${items.map((r) => `<button type="button" class="cref rw-m k-${r.kind}${r.advances ? " adv" : ""}" data-ref="r${r.i}" data-k="${r.kind}" style="left:${pct(r.x)};--l:${r.l}" aria-expanded="false" aria-label="${esc(`${rwDate(r.date)}, ${RW[r.kind].one}${r.advances ? ", advances the problem" : ""}: ${r.title}`)}">${RW[r.kind].g}${r.advances ? `<span class="rw-up">${ADV}</span>` : ""}</button>`).join("")}</div>
+      <div class="slide" id="rw-list"><div>
+        <ol class="rw-list">${rows}</ol>
+        <p class="rw-foot">${pv.compiled_by ? `<span>Compiled by ${agent(pv.compiled_by, "Gathered these entries and checked each against Crossref, OpenAlex, GitHub, DataCite or the publisher's page")}, ${esc(pv.compiled_on)}</span>` : ""}<button type="button" class="linkbtn idea-toggle" data-idea="recent-form" aria-expanded="false">Know of recent work that belongs here? Tell us</button></p>
+        <div class="slide" id="recent-form"><div>${contributeForm("work", p.id, "What happened (a paper, dataset, digitization, lab result, tool or event), when, and a link")}</div></div>
+      </div></div>
+      ${cards}
+    </div>`;
+}
+
 const sec = (h, body, id = "") => body ? `<section${id ? ` id="${id}"` : ""}><h2>${h}</h2><div class="sbody">${body}</div></section>` : "";
 
 export function contributeForm(kind, pid, placeholder) {
@@ -373,6 +446,7 @@ export function detailHTML(ctx, p) {
       </div>
       ${figure(p.image)}
     </div>
+    ${s ? "" : recentWork(p)}
     <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
     ${sec("Why it matters", lpara(p.matters))}

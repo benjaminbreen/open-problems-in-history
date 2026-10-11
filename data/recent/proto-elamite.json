@@ -1,0 +1,248 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Proto-Elamite Writing in Iran",
+   "who": "F. Desset",
+   "venue": "Archéo-Nil 26",
+   "url": "https://doi.org/10.3406/arnil.2016.1104",
+   "note": "Survey of the corpus and its sites setting out Desset's case for continuity between Proto-Elamite and later Iranian writing.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "The Proto-Elamite Writing System",
+   "who": "J. L. Dahl",
+   "venue": "The Elamite World (Routledge)",
+   "url": "https://doi.org/10.4324/9781315658032-20",
+   "note": "Handbook overview of the script's numerical systems, sign repertoire and administrative function.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "Linear Elamite Writing",
+   "who": "F. Desset",
+   "venue": "The Elamite World (Routledge)",
+   "url": "https://doi.org/10.4324/9781315658032-21",
+   "note": "Companion overview of the later Linear Elamite corpus, laying out the comparison with Proto-Elamite signs.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-02",
+   "kind": "field",
+   "title": "A New Proto-Elamite Seal Impression from Tappeh Sofalin, Central Iranian Plateau",
+   "who": "M. Hessari",
+   "venue": "Übergangszeiten (edited volume)",
+   "url": "https://doi.org/10.2307/jj.18654742.14",
+   "note": "Publishes a sealing from Tappeh Sofalin, one of the plateau sites that has also yielded Proto-Elamite tablets outside Susa.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-07",
+   "kind": "data",
+   "title": "Nine Linear Elamite Texts Inscribed on Silver 'Gunagi' Vessels (X, Y, Z, F', H', I', J', K' and L'): New Data on Linear Elamite Writing and the History of the Sukkalmaḫ Dynasty",
+   "who": "F. Desset",
+   "venue": "Iran 56 (2)",
+   "url": "https://doi.org/10.1080/05786967.2018.1471861",
+   "note": "Adds nine inscribed silver vessels to the small Linear Elamite corpus, part of the material behind the 2022 decipherment claim.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019",
+   "kind": "data",
+   "title": "Tablettes et fragments proto-élamites / Proto-Elamite Tablets and Fragments (TCL 32)",
+   "who": "J. L. Dahl",
+   "venue": "Louvre éditions / Khéops",
+   "url": "https://cdli.earth/artifacts/368543",
+   "note": "Edits 121 previously unpublished Louvre tablets and fragments from Susa, enlarging the corpus available for structural analysis.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-04",
+   "kind": "tool",
+   "title": "pe-decipher-toolkit",
+   "who": "Simon Fraser University Natural Language Lab",
+   "venue": "GitHub",
+   "url": "https://github.com/sfu-natlang/pe-decipher-toolkit",
+   "note": "Python notebooks for basic NLP analysis over the CDLI Proto-Elamite transliterations, released with the group's computational studies.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-06",
+   "kind": "tool",
+   "title": "Sign Clustering and Topic Extraction in Proto-Elamite",
+   "who": "L. Born, K. Kelley, N. Kambhatla, C. Chen and A. Sarkar",
+   "venue": "SIGHUM Workshop, NAACL",
+   "url": "https://doi.org/10.18653/v1/w19-2516",
+   "note": "Clustering, n-gram and topic models replicate manual sign groupings and suggest new relationships between signs.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-06",
+   "kind": "field",
+   "title": "Application of Scanning Electron and Atomic Force Mode Microscopy on inscription from Proto-Elamite period in Tappeh Sofalin",
+   "who": "M. Emami and M. Hessari",
+   "venue": "Journal of Research on Archaeometry 6 (1)",
+   "url": "https://doi.org/10.29252/jra.6.1.33",
+   "note": "Microscopic imaging of an inscribed Sofalin tablet to study stylus impressions and the physical making of signs.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-08",
+   "kind": "tool",
+   "title": "Compositionality of Complex Graphemes in the Undeciphered Proto-Elamite Script using Image and Text Embedding Models",
+   "who": "L. Born, K. Kelley, M. W. Monroe and A. Sarkar",
+   "venue": "Findings of ACL-IJCNLP 2021",
+   "url": "https://doi.org/10.18653/v1/2021.findings-acl.362",
+   "note": "Tests whether complex signs behave as combinations of their components using image and distributional embeddings; code released on GitHub.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-06",
+   "kind": "paper",
+   "title": "Iran's first state? The Proto-Elamite horizon, 3200–2900 BC",
+   "who": "R. Matthews and H. Fazeli Nashli",
+   "venue": "The Archaeology of Iran from the Palaeolithic to the Achaemenid Empire (Routledge)",
+   "url": "https://doi.org/10.4324/9781003224129-7",
+   "note": "Archaeological synthesis of the Proto-Elamite horizon across Iran, framing the tablets within settlement and administrative networks.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "The Decipherment of Linear Elamite Writing",
+   "who": "F. Desset, K. Tabibzadeh, M. Kervran, G. P. Basello and G. Marchesi",
+   "venue": "Zeitschrift für Assyriologie 112 (1)",
+   "url": "https://doi.org/10.1515/za-2022-0003",
+   "note": "Proposes phonetic values for Linear Elamite from royal names on silver vessels and argues the script descends from Proto-Elamite.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2022-08",
+   "kind": "data",
+   "title": "pe-sign-value-data",
+   "who": "Simon Fraser University Natural Language Lab",
+   "venue": "GitHub",
+   "url": "https://github.com/sfu-natlang/pe-sign-value-data",
+   "note": "Proto-Elamite corpus with hypothetical sound values inserted, a test bed for checking proposed phonetic readings against the texts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-12",
+   "kind": "tool",
+   "title": "Sequence Models for Document Structure Identification in an Undeciphered Script",
+   "who": "L. Born, M. Monroe, K. Kelley and A. Sarkar",
+   "venue": "Proceedings of EMNLP 2022",
+   "url": "https://doi.org/10.18653/v1/2022.emnlp-main.620",
+   "note": "Unsupervised sequence models give independent evidence for the 'header' signs that experts identified at the start of Proto-Elamite accounts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023",
+   "kind": "tool",
+   "title": "Disambiguating Numeral Sequences to Decipher Ancient Accounting Corpora",
+   "who": "L. Born, M. W. Monroe, K. Kelley and A. Sarkar",
+   "venue": "Workshop on Computation and Written Language (CAWL 2023)",
+   "url": "https://doi.org/10.18653/v1/2023.cawl-1.9",
+   "note": "Models the ambiguous numerical notations of Proto-Elamite accounts to infer which counting system each sequence uses.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-02",
+   "kind": "data",
+   "title": "proto-elamite_data",
+   "who": "Cuneiform Digital Library Initiative",
+   "venue": "GitHub",
+   "url": "https://github.com/cdli-gh/proto-elamite_data",
+   "note": "CDLI release of Proto-Elamite transliteration data in machine-readable form for computational work.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-07",
+   "kind": "paper",
+   "title": "Proto-Elamite and Linear Elamite, a Misunderstood Relationship?",
+   "who": "J. L. Dahl",
+   "venue": "Akkadica 144 (2)",
+   "url": "https://doi.org/10.21825/akkadica.99694",
+   "note": "Argues that resemblances across more than 500 years reflect late third-millennium borrowing rather than direct descent.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Applications of Natural Language Processing to Archaeological Decipherment: A Survey of Proto-Elamite",
+   "who": "L. Born",
+   "venue": "Thesis, Simon Fraser University",
+   "url": "https://summit.sfu.ca/_flysystem/fedora/2023-12/etd22782.pdf",
+   "note": "Gathers the group's computational work on signs, headers and numerals into a survey of what NLP can and cannot establish about the script.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024",
+   "kind": "paper",
+   "title": "New insights into the chronology of six Linear Elamite clay artifacts from Susa: A re-examination of Roland de Mecquenem's archaeological reports",
+   "who": "M. Surdi",
+   "venue": "Akkadica",
+   "url": "https://doi.org/10.21825/akkadica.96846",
+   "note": "Re-dates Linear Elamite objects from old Susa excavations, bearing on the chronological gap between the two scripts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-05",
+   "kind": "data",
+   "title": "Some new Linear Elamite inscriptions",
+   "who": "M. Mäder",
+   "venue": "BAF-Online: Proceedings of the Berner Altorientalisches Forum",
+   "url": "https://doi.org/10.22012/baf.2016.18",
+   "note": "Publishes about ten Linear Elamite inscriptions and fragments first presented at Hamburg in 2016.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-12",
+   "kind": "paper",
+   "title": "Recent Progress in Deciphering Proto-Elamite",
+   "who": "M. W. Monroe, K. Kelley, L. Born and A. Sarkar",
+   "venue": "Near Eastern Archaeology 88 (4)",
+   "url": "https://doi.org/10.1086/738240",
+   "note": "Reports results of the combined mathematical, computational and philological approach to the script's structure.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "Proto-Elamite",
+   "who": "K. Kelley",
+   "venue": "Cambridge Elements (Cambridge University Press)",
+   "url": "https://doi.org/10.1017/9781009614559",
+   "note": "Synthesis describing about 1,700 tablets dated c. 3300–2900 BCE and the current state of interdisciplinary decipherment.",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}

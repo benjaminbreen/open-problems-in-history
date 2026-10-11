@@ -1,0 +1,160 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-02",
+   "kind": "paper",
+   "title": "Two hitherto unknown Indonesian tsunamis of the seventeenth century: Probabilities and context",
+   "who": "A. Reid",
+   "venue": "Journal of Southeast Asian Studies",
+   "url": "https://doi.org/10.1017/S002246341500048X",
+   "note": "Shows that Dutch and Malay texts can yield otherwise unknown tsunamis, a method model for searching earlier sources for the Aceh events.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-03",
+   "kind": "field",
+   "title": "High-frequency Coastal Overwash Deposits from Phra Thong Island, Thailand",
+   "who": "C. Gouramanis et al.",
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/srep43742",
+   "note": "Ground-penetrating radar and trenching on Phra Thong Island find more frequent overwash layers than the four-event medieval record had suggested.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-07",
+   "kind": "field",
+   "title": "Highly variable recurrence of tsunamis in the 7,400 years before the 2004 Indian Ocean tsunami",
+   "who": "C. M. Rubin, B. P. Horton, K. Sieh et al.",
+   "venue": "Nature Communications",
+   "url": "https://doi.org/10.1038/ncomms16019",
+   "note": "Coastal cave deposits in Aceh record at least 11 tsunamis between 7,400 and 2,900 years ago, with intervals from a century to over 2,000 years.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "The Historic Trading Port of Lamri on the North Sumatran Coast",
+   "who": "P. Daly, E. E. McKinnon, R. M. Feener et al.",
+   "venue": "Bulletin de l'École française d'Extrême-Orient",
+   "url": "https://doi.org/10.3406/befeo.2019.6298",
+   "note": "Describes the Lamreh site and argues for its identification with the port of Lamri known from Arabic, Chinese and Malay references.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-05",
+   "kind": "field",
+   "title": "Archaeological evidence that a late 14th-century tsunami devastated the coast of northern Sumatra and redirected history",
+   "who": "P. Daly, K. Sieh, T. Y. Seng et al.",
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.1902241116",
+   "note": "Survey of ceramics and over 5,000 gravestones along 40 km of the Aceh coast dates the destruction of nine settlements to about 1394, sparing hilltop Lamri.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-07",
+   "kind": "field",
+   "title": "An Investigation of Archaeological Remains at Lamreh Site, Aceh, Indonesia and Their Context Within the Lamuri Kingdom",
+   "who": "Husni et al.",
+   "venue": "International Journal of Asia Pacific Studies",
+   "url": "https://doi.org/10.21315/ijaps2019.15.2.3",
+   "note": "Records 15th-century plak-pling gravestones, imported ceramics, glass and Chinese coins at Lamreh, including an inscription naming a possible Lamuri official.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-12",
+   "kind": "field",
+   "title": "Tsunami records of the last 8000 years in the Andaman Island, India, from mega and large earthquakes: Insights on recurrence interval",
+   "who": "J. N. Malik et al.",
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/s41598-019-54750-6",
+   "note": "Sand sheets on southern Andaman Island include a tsunami dated 1300–1400 CE, extending the footprint of the late medieval event north along the 2004 rupture.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-03",
+   "kind": "field",
+   "title": "The impact of Ming and Qing dynasty maritime bans on trade ceramics recovered from coastal settlements in northern Sumatra, Indonesia",
+   "who": "Y. S. Tai, P. Daly, E. E. McKinnon et al.",
+   "venue": "Archaeological Research in Asia",
+   "url": "https://doi.org/10.1016/j.ara.2019.100174",
+   "note": "Shows Chinese ceramics in Aceh fell during the 1371–1509 Ming ban, with Burmese and Thai wares substituting; relevant to reading silence in Chinese texts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-08",
+   "kind": "paper",
+   "title": "Segmentation and supercycles: A catalog of earthquake rupture patterns from the Sumatran Sunda Megathrust and other well-studied faults worldwide",
+   "who": "B. Philibosian and A. J. Meltzner",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2020.106390",
+   "note": "Compiles paleogeodetic and historical rupture histories for the Sunda megathrust and other faults, the framework into which the Aceh–Andaman events are placed.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-01",
+   "kind": "paper",
+   "title": "Islamisation and the formation of vernacular Muslim material culture in 15th-century northern Sumatra",
+   "who": "R. M. Feener, P. Daly, E. E. McKinnon et al.",
+   "venue": "Indonesia and the Malay World",
+   "url": "https://doi.org/10.1080/13639811.2021.1873564",
+   "note": "Typology of over 200 plak-pling gravestones with dated Arabic inscriptions, tying them to early 15th-century Lamri; gives dated epigraphy for the post-1394 period.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-11",
+   "kind": "data",
+   "title": "Gempa Nusantara: A Database of 7380 Macroseismic Observations for 1200 Historical Earthquakes in Indonesia from 1546 to 1950",
+   "who": "S. S. Martin, P. R. Cummins, A. J. Meltzner",
+   "venue": "Bulletin of the Seismological Society of America",
+   "url": "https://doi.org/10.1785/0120220047",
+   "note": "Systematic text-derived catalogue of Indonesian earthquakes and tsunamis; begins in 1546, so it models the kind of search needed but does not reach the windows.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-07",
+   "kind": "field",
+   "title": "Sedimentological observations and geochemical characteristics of paleo-tsunami deposits along the east coast of Sri Lanka in the Indian Ocean",
+   "who": "A. S. Ratnayake et al.",
+   "venue": "Quaternary International",
+   "url": "https://doi.org/10.1016/j.quaint.2023.02.015",
+   "note": "Characterises paleotsunami sand layers on Sri Lanka's east coast, one of the far-field coasts where a trans-basin wave of the 1390s or 1450s should register.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-12",
+   "kind": "paper",
+   "title": "Insights into tectonic hazards since the 2004 Indian Ocean earthquake and tsunami",
+   "who": "G. M. Sarkawi, L. Feng, J. W. McCaughey, A. J. Meltzner",
+   "venue": "Nature Reviews Earth & Environment",
+   "url": "https://doi.org/10.1038/s43017-024-00613-2",
+   "note": "Twenty-year review of geological and geodetic work since 2004, including the evidence for the 2004 rupture's predecessors.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-02",
+   "kind": "field",
+   "title": "A 7500-year paleotsunami record from the coastal sediment of Sri Lanka and Indian Ocean trans-basin tsunami history",
+   "who": "P. N. Ranasinghe, J. D. Ortiz, A. Moore et al.",
+   "venue": "Research Square (preprint)",
+   "url": "https://doi.org/10.21203/rs.3.rs-8757939/v1",
+   "note": "Unreviewed preprint presenting a long Sri Lankan paleotsunami sequence correlated with events across the basin.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

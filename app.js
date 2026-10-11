@@ -773,7 +773,7 @@ stats();
   // expand or collapse an archive's holdings list
   function expand(toggle, on = toggle.getAttribute("aria-expanded") !== "true") {
     toggle.setAttribute("aria-expanded", String(on));
-    toggle.firstChild.textContent = on ? "Collapse " : "Expand ";
+    if (toggle.matches(".hold-toggle")) toggle.firstChild.textContent = on ? "Collapse " : "Expand ";
     document.getElementById(toggle.getAttribute("aria-controls"))?.classList.toggle("open", on);
   }
   function jump(ref, origin) {
@@ -781,7 +781,7 @@ stats();
     if (!li) return;
     close();
     const slide = li.closest(".slide");
-    if (slide && !slide.classList.contains("open")) expand(slide.previousElementSibling, true);
+    if (slide && !slide.classList.contains("open")) expand(document.querySelector(`[aria-controls="${slide.id}"]`) || slide.previousElementSibling, true);
     if (origin) from = origin;
     // wait a frame so a list that is opening has its height before scrolling
     requestAnimationFrame(() => setTimeout(() => {
@@ -813,8 +813,10 @@ stats();
     if (btn) { e.preventDefault(); if (hover.matches) return jump(btn.dataset.ref, btn); return cur === btn && pinned ? close() : open(btn, true); }
     const j = e.target.closest(".cref-card .jump");
     if (j) { e.preventDefault(); return jump(j.dataset.ref, cur); }
-    const t = e.target.closest(".hold-toggle");
+    const t = e.target.closest(".hold-toggle, .rw-more");
     if (t) return expand(t);
+    const k = e.target.closest(".rw-k");
+    if (k) return rwFilter(k);
     if (!card.hidden && !card.contains(e.target)) close();
   });
   document.addEventListener("focusin", (e) => {
@@ -824,6 +826,21 @@ stats();
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && !card.hidden) { const b = cur; close(); b?.focus(); }
   });
+  // recent work legend: show only one kind (or only advances); pressing it again shows all
+  function rwFilter(k) {
+    const rw = k.closest(".rw"), on = k.getAttribute("aria-pressed") !== "true", want = k.dataset.rwk;
+    rw.querySelectorAll(".rw-k").forEach((b) => b.setAttribute("aria-pressed", String(on && b === k)));
+    const hit = (el) => !on || (want === "adv" ? el.matches(".adv") : el.matches(`.k-${want}, [data-k="${want}"]`));
+    rw.querySelectorAll(".rw-m").forEach((m) => m.classList.toggle("dim", !hit(m)));
+    let y = null;
+    rw.querySelectorAll(".rw-list li").forEach((li) => {
+      li.hidden = !hit(li);
+      if (li.hidden) return;
+      const ly = li.querySelector(".rw-d").textContent.slice(-4);
+      li.classList.toggle("y1", ly !== y); y = ly;
+    });
+    rw.classList.toggle("filtered", on);
+  }
   addEventListener("resize", () => cur && !card.hidden && place(cur));
   addEventListener("popstate", close);
 })();

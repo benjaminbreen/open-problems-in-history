@@ -1,0 +1,105 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-01",
+   "kind": "paper",
+   "title": "The Gunpowder Age: China, Military Innovation, and the Rise of the West in World History",
+   "who": "T. Andrade",
+   "venue": "Princeton University Press",
+   "url": "https://doi.org/10.2307/j.ctvc77j74",
+   "note": "Global synthesis that places the arrival of gunpowder in Europe in the context of Mongol-era contact.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-07",
+   "kind": "paper",
+   "title": "The Gunpowder Age: China, Military Innovation, and the Rise of the West in World History (review forum), with Culture and Context: Reflections on The Gunpowder Age",
+   "who": "P. Hoffman, I. Inkster, S. Morillo, D. Parrott, K. Pomeranz; reply by T. Andrade",
+   "venue": "Journal of Chinese History",
+   "url": "https://doi.org/10.1017/jch.2018.19",
+   "note": "Historians of European warfare and technology assess Andrade's account of early gunpowder and its westward spread; Andrade's reply follows (doi:10.1017/jch.2018.18).",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-10",
+   "kind": "paper",
+   "title": "An Earth-shattering kaboom!: The Mongols and the use and transmission of gunpowder",
+   "who": "T. May",
+   "venue": "Central Eurasian Studies Society conference, Pittsburgh",
+   "url": "https://nomadit.co.uk/conference/cess2018/paper/43484",
+   "note": "Revisits whether the Mongols used gunpowder outside East Asia, how Roger Bacon got his recipe, and why early European guns resemble Yuan ones.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "Confucian Statecraft and the Production of Saltpeter and Sulfur in Song Dynasty China",
+   "who": "P. Lorge",
+   "venue": "Science and Confucian Statecraft in East Asia (Brill)",
+   "url": "https://doi.org/10.1163/9789004392908_003",
+   "note": "Examines how the Song state organised saltpetre and sulphur supply, the production base that any account of westward transmission starts from.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-05",
+   "kind": "paper",
+   "title": "Revisiting the Dazu \"Bombard\" and the World's Earliest Representation of a Gun",
+   "who": "B. A. K. Sinvany",
+   "venue": "Journal of Chinese Military History",
+   "url": "https://doi.org/10.1163/22127453-12341355",
+   "note": "Argues that the evidence for reading the Dazu cave sculpture as a c. 1128 gun is inadequate, unsettling an early anchor in the Chinese chronology.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-06",
+   "kind": "paper",
+   "title": "Four Misunderstood Gunpowder Recipes of the Fourteenth Century",
+   "who": "C. J. Rogers",
+   "venue": "Journal of Medieval Military History 18",
+   "url": "https://doi.org/10.1017/9781787449152.007",
+   "note": "Re-reads four fourteenth-century European gunpowder recipes, arguing that earlier interpretations of their proportions and purpose were mistaken.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-06",
+   "kind": "paper",
+   "title": "The Earliest Middle English Recipes for Gunpowder",
+   "who": "T. R. Smith",
+   "venue": "Journal of Medieval Military History 18",
+   "url": "https://doi.org/10.1017/9781787449152.008",
+   "note": "Presents the earliest gunpowder recipes in Middle English, adding vernacular witnesses to the early European recipe record.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-02",
+   "kind": "paper",
+   "title": "Gunpowder Technology in the Fifteenth Century: A Study, Edition and Translation of the Firework Book",
+   "who": "A. E. W. Müller",
+   "venue": "Boydell Press (Royal Armouries Research Series)",
+   "url": "https://doi.org/10.1515/9781805431756",
+   "note": "First full edition and translation of a Feuerwerkbuch manuscript, clarifying the later European recipe tradition against which earlier sources must be read.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-12",
+   "kind": "paper",
+   "title": "Joseph Needham and the Theory of the Origin of Gunpowder in Tang Dynasty",
+   "who": "J. Wang and X. Qiu",
+   "venue": "Studies in the History of Natural Sciences",
+   "url": "https://doi.org/10.3724/shns.2024.04.005",
+   "note": "Reassesses how Needham built the case for a Tang-dynasty alchemical origin of gunpowder, the starting point of the transmission chronology.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

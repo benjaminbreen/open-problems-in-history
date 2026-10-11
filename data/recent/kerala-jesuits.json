@@ -1,0 +1,116 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Indian Mathematics: Engaging with the World from Ancient to Modern Times",
+   "who": "G. G. Joseph",
+   "venue": "World Scientific",
+   "url": "https://doi.org/10.1142/q0018",
+   "note": "Survey including the Kerala school, restating the case that Jesuit intermediaries plausibly carried series results to Europe.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "Karaṇapaddhati of Putumana Somayājī",
+   "who": "V. Pai, K. Ramasubramanian, M. S. Sriram and M. D. Srinivas",
+   "venue": "Springer, Sources and Studies in the History of Mathematics",
+   "url": "https://doi.org/10.1007/978-981-10-6814-0",
+   "note": "Critical edition and translation of a later Kerala computational manual, widening the documented corpus of the school.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "The Mathematics of India: Concepts, Methods, Connections",
+   "who": "P. P. Divakaran",
+   "venue": "Springer",
+   "url": "https://doi.org/10.1007/978-981-13-1774-3",
+   "note": "Reconstructs the conceptual development of Kerala calculus-like methods and discusses their relation to European analysis.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-04",
+   "kind": "paper",
+   "title": "Jesuit Mathematics",
+   "who": "R. Gatto",
+   "venue": "Oxford Handbook of the Jesuits",
+   "url": "https://doi.org/10.1093/oxfordhb/9780190639631.013.36",
+   "note": "Overview of the Jesuit mathematical curriculum and networks around Clavius, the institutional channel any transmission would have used.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "Testing Ground for Jesuit Accommodation in Early Modern India: Francisco Ros SJ in Malabar (16th–17th Centuries)",
+   "who": "A. Mecherry",
+   "venue": "Institutum Historicum Societatis Iesu",
+   "url": "https://catalogue.bnf.fr/ark:/12148/cb46535096v",
+   "note": "Archival study of the Malabar Jesuits around Ros, documenting their linguistic and scholarly contacts in Kerala, though not mathematics.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "Jost Bürgi's methods of calculating sines, and possible transmission from India",
+   "who": "R. Wagner and S. Hunziker",
+   "venue": "Archive for History of Exact Sciences",
+   "url": "https://doi.org/10.1007/s00407-019-00225-z",
+   "note": "Reconstructs Bürgi's sine-table algorithm and weighs whether it could derive from Indian methods; no documentary channel is identified.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-09",
+   "kind": "paper",
+   "title": "The Untapped Wealth of Manuscripts on Indian Astronomy and Mathematics",
+   "who": "M. D. Srinivas",
+   "venue": "Indian Journal of History of Science",
+   "url": "https://doi.org/10.16943/ijhs/2019/v54i3/49738",
+   "note": "Surveys the large body of unedited Sanskrit and Malayalam astronomical manuscripts, many from Kerala, still awaiting study.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-09",
+   "kind": "paper",
+   "title": "Use of the concept of derivative in the computation of vyatīpāta in two Kerala texts",
+   "who": "V. Pai R. and M. S. Sriram",
+   "venue": "Indian Journal of History of Science",
+   "url": "https://doi.org/10.1007/s43539-023-00090-4",
+   "note": "Shows Kerala astronomers using instantaneous rates of change in a practical computation, extending the evidence for their analytical methods.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-03",
+   "kind": "paper",
+   "title": "Jesuit Missions in Coastal and South India (1543–1773)",
+   "who": "I. G. Županov",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004727397",
+   "note": "Synthesis of Jesuit missions in Kerala and the south, useful for mapping which missionaries had the access and training to acquire Kerala texts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026",
+   "kind": "paper",
+   "title": "Tantrasaṅgraha of Nīlakaṇṭha Somayājī",
+   "who": "K. Ramasubramanian and M. S. Sriram",
+   "venue": "Springer",
+   "url": "https://doi.org/10.1007/978-981-95-4857-6",
+   "note": "Springer edition of the translation and technical commentary of Nīlakaṇṭha's 1500 treatise, a core Kerala-school text.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

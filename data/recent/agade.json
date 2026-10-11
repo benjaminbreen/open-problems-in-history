@@ -1,0 +1,105 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Holocene avulsion history of the Euphrates and Tigris rivers in the Mesopotamian floodplain",
+   "who": "J. Jotheri",
+   "venue": "PhD thesis, Durham University",
+   "url": "http://etheses.dur.ac.uk/11752/",
+   "note": "Maps palaeochannels from satellite imagery, coring and dating to reconstruct shifting river courses, the framework any Tigris-side placement of Agade depends on.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Age of Agade: Inventing Empire in Ancient Mesopotamia",
+   "who": "B. R. Foster",
+   "venue": "Routledge",
+   "url": "https://doi.org/10.4324/9781315686561",
+   "note": "Standard synthesis of the Sargonic period that summarizes the textual case for a location on the Tigris and leaves the site unidentified.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "New Insights on the Role of Environmental Dynamics Shaping Southern Mesopotamia: From the Pre-Ubaid to the Early Islamic Period",
+   "who": "M. R. Altaweel, A. Marsh, J. Jotheri et al.",
+   "venue": "Iraq",
+   "url": "https://doi.org/10.1017/irq.2019.2",
+   "note": "Reviews geoarchaeological evidence for channel migration, marine incursion and sedimentation across the alluvium, including the uncertain third-millennium courses of the Tigris.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "Fluch über Akkade",
+   "who": "P. Attinger",
+   "venue": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.4275910",
+   "note": "New annotated German translation of the Curse of Agade, the main literary source on the city's rise, fall and cultic topography.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-10",
+   "kind": "paper",
+   "title": "The Kingdom of Akkad in Contact with the World",
+   "who": "P. Michałowski",
+   "venue": "The Oxford History of the Ancient Near East, vol. 1",
+   "url": "https://doi.org/10.1093/oso/9780190687854.003.0011",
+   "note": "Handbook account of the Sargonic state that treats the capital as still unlocated and stresses how little of its administration survives.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-03",
+   "kind": "paper",
+   "title": "GIS and Historical Geographical Analyses of the Reconstructed Ancient Course of the Tigris in the Northern Part of Southern Mesopotamia",
+   "who": "N. Kawakami",
+   "venue": "al-Rāfidān 43",
+   "url": "https://kokushikan.repo.nii.ac.jp/records/15607",
+   "note": "Tests earlier claims of an eastern ancient Tigris against SRTM and ALOS elevation models, CORONA imagery and textual topography to reconstruct the river's course.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "Searching for the location of the ancient city of Akkade in relation to the ancient course of the Tigris using historical and GIS analyses",
+   "who": "N. Kawakami",
+   "venue": "Akkadica",
+   "url": "https://doi.org/10.21825/akkadica.99688",
+   "note": "Combines the reconstructed Tigris course with textual itineraries to narrow a candidate search zone for Akkade, the first explicitly GIS-based proposal.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "The Location of the Ancient City of Akkade: Review of Past Theories and Identification of Issues for Formulating a Specific Methodology for Searching Akkade",
+   "who": "N. Kawakami",
+   "venue": "al-Rāfidān 44",
+   "url": "https://kokushikan.repo.nii.ac.jp/records/15919",
+   "note": "Reviews the main location theories since the nineteenth century and sets out the problems a field search would need to resolve.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-05",
+   "kind": "paper",
+   "title": "Capital of the World's First Empire",
+   "who": "D. Weiss",
+   "venue": "Archaeology (magazine)",
+   "url": "https://archaeology.org/issues/may-june-2024/collection/capital-of-the-worlds-first-empire/",
+   "note": "Popular survey of the search; reports N. Ziegler's preference for the Adhaim-Tigris confluence based on an Old Babylonian convoy itinerary from Eshnunna to Mari.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

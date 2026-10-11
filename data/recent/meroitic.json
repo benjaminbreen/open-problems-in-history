@@ -1,0 +1,236 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Meroitic Inscriptions from Qasr Ibrim III: Inscriptions on Stone, Wood, Parchment and Gourd",
+   "who": "J. Hallof",
+   "venue": "J.H. Röll (SRaT 9.6)",
+   "url": "https://roell-verlag.de/Hallof-Jochen-The-Meroitic-Inscriptions-Vol-III-SRaT-96/en",
+   "note": "Continues the edition of more than 700 Meroitic texts from Qasr Ibrim, a large body of non-funerary documents (ostraca, papyri, objects) for lexical work.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2016-11",
+   "kind": "paper",
+   "title": "Amun in Meroitic Nubia: The Case of the Hamadab Stela",
+   "who": "M. Baldi",
+   "venue": "Journal of Ancient Egyptian Interconnections",
+   "url": "https://openalex.org/W2563253162",
+   "note": "Discusses the Hamadab stela, one of the longest royal Meroitic inscriptions, as evidence for the Amun cult in Meroitic Nubia.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Toponymic Strata in Ancient Nubia until the Common Era",
+   "who": "J. C. Cooper",
+   "venue": "Dotawo: A Journal of Nubian Studies 4",
+   "url": "https://doi.org/10.5070/d64110028",
+   "note": "Sorts Nubian place names in Egyptian and Meroitic sources into linguistic layers, giving external evidence for Meroitic and Nubian vocabulary and distribution.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "grant",
+   "title": "Meroitisches analytisches Wörterbuch (Meroitic Analytic Dictionary), DFG project 2017–2022",
+   "who": "H. Beinlich, University of Würzburg",
+   "venue": "Deutsche Forschungsgemeinschaft",
+   "url": "https://gepris.dfg.de/gepris/projekt/392412163",
+   "note": "DFG research grant (2017–2022) for a bilingual analytic dictionary of about 23,000 entries drawn from roughly 2,300 Meroitic texts, most of them non-funerary.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-03",
+   "kind": "field",
+   "title": "Funerary stelae and lintels with Meroitic texts excavated at Sedeinga",
+   "who": "French mission at Sedeinga (C. Rilly, V. Francigny)",
+   "venue": "CNRS press release",
+   "url": "https://www.cnrs.fr/en/press/ancient-nubia-present-day-sudan-footsteps-napata-and-meroe-kingdoms",
+   "note": "The 2017 campaign added inscriptions for Maliwarase, Adatalabe and Ataqeloula, with kinship and office titles that enlarge the prosopographic corpus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-09",
+   "kind": "paper",
+   "title": "A Study of the Meroitic Inscription REM 1141",
+   "who": "G. Ferrandino",
+   "venue": "Nubian Archaeology in the XXIst Century (Peeters)",
+   "url": "https://doi.org/10.2307/j.ctv1q26wt1.68",
+   "note": "Re-examines Amanishakheto's stela from Qasr Ibrim, one of the few long royal texts, building on the Edwards and Rilly transcription.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "Où en est le déchiffrement du méroïtique, langue ancienne du Soudan ?",
+   "who": "C. Rilly",
+   "venue": "Comptes rendus de l'Académie des Inscriptions et Belles-Lettres",
+   "url": "https://doi.org/10.3406/crai.2019.96830",
+   "note": "Stock-taking of what can and cannot yet be translated, setting out the comparative Northern East Sudanic method and its limits.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-05",
+   "kind": "paper",
+   "title": "Languages of Ancient Nubia",
+   "who": "C. Rilly",
+   "venue": "Handbook of Ancient Nubia (De Gruyter)",
+   "url": "https://doi.org/10.1515/9783110420388-007",
+   "note": "Places Meroitic among the attested and inferred languages of the Middle Nile.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "Potential Old Nubian Cognates for Meroitic 'aleqese'",
+   "who": "G. Ferrandino and V. W. J. van Gerven Oei",
+   "venue": "Humanities Commons",
+   "url": "https://doi.org/10.17613/5bcpr-z7z82",
+   "note": "Tests three Old Nubian candidates for a recurrent Meroitic word, an example of word-by-word comparative translation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "Personal Markers and Verbal Number in Meroitic",
+   "who": "C. Rilly",
+   "venue": "Dotawo 7",
+   "url": "https://doi.org/10.5070/d67052246",
+   "note": "Reconstructs verbal morphology through comparison with Nubian and other Northern East Sudanic languages.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "Morphological Evidence for the Coherence of East Sudanic",
+   "who": "R. Blench",
+   "venue": "Dotawo 7",
+   "url": "https://doi.org/10.2307/jj.2353780.8",
+   "note": "Assesses whether East Sudanic is a valid genetic unit, the comparative framework on which Meroitic reconstruction depends.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "Calling Out to Isis: The Enduring Nubian Presence at Philae",
+   "who": "S. Ashby",
+   "venue": "Gorgias Press",
+   "url": "https://doi.org/10.31826/9781463239688-011",
+   "note": "Study of Nubian votive inscriptions at Philae, with an appendix gathering the Meroitic-language texts from the site.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-01",
+   "kind": "paper",
+   "title": "Language and Writing in the Kingdom of Meroe",
+   "who": "C. Rilly",
+   "venue": "Oxford Handbook of Ancient Nubia",
+   "url": "https://doi.org/10.1093/oxfordhb/9780190496272.013.30",
+   "note": "Handbook summary of the script, the state of translation and the comparative evidence.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-10",
+   "kind": "paper",
+   "title": "Le déchiffrement du méroïtique",
+   "who": "C. Rilly",
+   "venue": "Déchiffrements / Decipherments (IFAO)",
+   "url": "https://doi.org/10.2307/jj.20785734.9",
+   "note": "Places Meroitic in a comparative volume on decipherments as a script read since Griffith but a language only partly understood.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-12",
+   "kind": "paper",
+   "title": "Quand lire n'est pas comprendre… Le déchiffrement inachevé du méroïtique",
+   "who": "C. Rilly",
+   "venue": "Bulletin de la Société française d'égyptologie 207",
+   "url": "https://doi.org/10.3917/bsfe.207.0071",
+   "note": "Lecture on why reading the script has not yielded translation beyond formulaic texts, and on the prospects of the comparative method.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-05",
+   "kind": "paper",
+   "title": "The Linguistic Prehistory of Nubia",
+   "who": "G. J. Dimmendaal",
+   "venue": "UCLA Encyclopedia of Egyptology",
+   "url": "https://doi.org/10.5070/g9.3931",
+   "note": "Reviews the Nilo-Saharan and Afroasiatic background of Nubian languages, including the case for Meroitic as Northern East Sudanic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-03",
+   "kind": "paper",
+   "title": "Amanishakheto in Meroitic Royal Texts",
+   "who": "G. Ferrandino",
+   "venue": "Proceedings of the 14th International Conference for Nubian Studies (IFAO)",
+   "url": "https://doi.org/10.2307/jj.21275883.30",
+   "note": "Surveys the queen's attestations across Meroitic royal inscriptions, part of a wider effort to read the royal texts beyond names and titles.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-05",
+   "kind": "data",
+   "title": "Meroitic-Corpus",
+   "who": "J. Otten",
+   "venue": "GitHub",
+   "url": "https://github.com/Joshua-Otten/Meroitic-Corpus",
+   "note": "Repository for the first machine-readable Meroitic corpus, with transliterated texts and data for embedding and alignment experiments.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "event",
+   "title": "13th International Conference for Meroitic Studies, Münster",
+   "who": "University of Münster (A. Lohwasser)",
+   "url": "https://sudansurvey.gwi.uni-muenchen.de/wp-content/uploads/2024/09/MeroiticConference2024_Final_statement.pdf",
+   "note": "First meeting of the series since 2016, held in hybrid form because of the war in Sudan; its final statement addressed looting of Sudanese collections.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025",
+   "kind": "tool",
+   "title": "Towards Ancient Meroitic Decipherment: A Computational Approach",
+   "who": "J. Otten and A. Anastasopoulos",
+   "venue": "Proceedings of the Second Workshop on Ancient Language Processing (ACL)",
+   "url": "https://doi.org/10.18653/v1/2025.alp-1.11",
+   "note": "Frames Meroitic decipherment as a computational task, trains word embeddings on a new machine-readable corpus and tests cross-lingual alignment with Late Egyptian.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026",
+   "kind": "paper",
+   "title": "The Meroitic Inscriptions from Gebel Adda",
+   "who": "J. Hallof",
+   "venue": "J.H. Röll (SRaT 30)",
+   "url": "https://roell-verlag.de/Unsere-Themenschwerpunkte/Aegyptologie/SRaT/Meroitic-Inscriptions",
+   "note": "Edition of the Meroitic texts from the Gebel Adda excavations in Lower Nubia, a large group long known only in part.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

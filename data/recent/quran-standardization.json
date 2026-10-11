@@ -1,0 +1,215 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "The Sanaa Palimpsest: The Transmission of the Qur'an in the First Centuries AH",
+   "who": "A. Hilali",
+   "venue": "Oxford University Press / Institute of Ismaili Studies",
+   "url": "https://iis.ac.uk/publications-listing/2017/the-sanaa-palimpsest",
+   "note": "Edition of DAM 01-27.1 that reads the lower text as possibly a teaching or exercise text rather than a complete rival codex.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-09",
+   "kind": "paper",
+   "title": "The Qur'an: A Historical-Critical Introduction",
+   "who": "N. Sinai",
+   "venue": "Edinburgh University Press",
+   "url": "https://doi.org/10.1515/9780748695782",
+   "note": "Historical-critical introduction that weighs early-closure and later-codification views of the rasm, broadly favouring closure in the mid-seventh century.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "Codex Amrensis 1",
+   "who": "É. Cellard",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004375499",
+   "note": "Reconstruction and edition of an early Hijazi-script codex whose leaves are dispersed among Cairo, Paris, St Petersburg and other collections.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "In Search of Ali Ibn Abi Talib's Codex: History and Traditions of the Earliest Copy of the Qur'an",
+   "who": "S. Kara",
+   "venue": "Gerlach Press",
+   "url": "https://doi.org/10.2307/j.ctv4ncp48",
+   "note": "Studies Sunni and Shi'i reports about ʿAli's codex, one of the companion codices the tradition sets against the ʿUthmanic recension.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "Le Coran, une histoire plurielle: Essai sur la formation du texte coranique",
+   "who": "F. Déroche",
+   "venue": "Seuil",
+   "url": "https://openlibrary.org/works/OL45028352W",
+   "note": "Argues from early manuscripts that the written text took shape through a longer, plural process that continued into the Umayyad period.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-06",
+   "kind": "paper",
+   "title": "\"The Grace of God\" as evidence for a written Uthmanic archetype: the importance of shared orthographic idiosyncrasies",
+   "who": "M. van Putten",
+   "venue": "Bulletin of SOAS",
+   "url": "https://doi.org/10.1017/S0041977X19000338",
+   "note": "Shows that early manuscripts share arbitrary spellings best explained by descent from one written archetype.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-06",
+   "kind": "field",
+   "title": "Radiocarbon (14C) Dating of Qurʾān Manuscripts",
+   "who": "M. J. Marx and T. J. Jocham",
+   "venue": "Brill (Qurʾān Quotations Preserved on Papyrus Documents)",
+   "url": "https://doi.org/10.1163/9789004376977_007",
+   "note": "Reports the Corpus Coranicum radiocarbon programme, with seventh-century ranges for several Hijazi-script codices, and discusses its interpretive limits.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-11",
+   "kind": "paper",
+   "title": "Arabe 334a. A Vocalized Kufic Quran in a Non-canonical Hijazi Reading",
+   "who": "M. van Putten",
+   "venue": "Journal of Islamic Manuscripts",
+   "url": "https://doi.org/10.1163/1878464x-01003003",
+   "note": "Edits a BnF manuscript whose vocalization records a non-canonical, probably Medinan reading on the standard rasm, separating rasm fixity from reading variety.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-07",
+   "kind": "paper",
+   "title": "Digital Humanities and Qurʾānic Manuscript Studies: New Perspectives and Challenges for Collaborative Spaces and Plural Views",
+   "who": "A. Fedeli",
+   "venue": "Journal of College of Sharia and Islamic Studies",
+   "url": "https://doi.org/10.29117/jcsis.2020.0260",
+   "note": "Reviews imaging, text encoding and phylogenetic approaches to early manuscripts and argues for collaborative digital editions.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-04",
+   "kind": "paper",
+   "title": "The Ṣanʿāʾ Palimpsest: Materializing the Codices",
+   "who": "É. Cellard",
+   "venue": "Journal of Near Eastern Studies",
+   "url": "https://doi.org/10.1086/713473",
+   "note": "Codicological study of how the lower and upper codices of the Sanaa palimpsest were made, bearing on the status of its non-ʿUthmanic text.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-11",
+   "kind": "paper",
+   "title": "On the Regionality of Qurʾānic Codices",
+   "who": "H. Sidky",
+   "venue": "Journal of the International Qur'anic Studies Association 5",
+   "url": "https://doi.org/10.5913/jiqsa.5.2020.a005",
+   "note": "Matches variants in early manuscripts to the regional codices described in the tradition, supporting a stemma of regionally distributed copies.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2021-11",
+   "kind": "paper",
+   "title": "From Coptic to Arabic: A New Palimpsest and the Early Transmission History of the Qurʾān",
+   "who": "É. Cellard and C. Louis",
+   "venue": "Journal of the International Qur'anic Studies Association 5",
+   "url": "https://doi.org/10.5913/jiqsa.5.2020.a003",
+   "note": "Publishes a newly identified palimpsest whose Qurʾān text was copied over an erased Coptic manuscript, adding a witness to early copying practice.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Quranic Arabic: From its Hijazi Origins to its Classical Reading Traditions",
+   "who": "M. van Putten",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004506251",
+   "note": "Reconstructs the language of the rasm from early manuscripts and reading traditions, locating it in the Hijaz.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "Creating the Qur'an: A Historical-Critical Study",
+   "who": "S. J. Shoemaker",
+   "venue": "University of California Press",
+   "url": "https://doi.org/10.1525/luminos.128",
+   "note": "Argues for standardization under ʿAbd al-Malik and al-Ḥajjāj and questions whether radiocarbon dates can fix the text earlier.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-01",
+   "kind": "grant",
+   "title": "QurCan: The Canonisation of the Quranic Reading Traditions",
+   "who": "M. van Putten, Leiden University",
+   "venue": "European Research Council",
+   "url": "https://cordis.europa.eu/project/id/101044127",
+   "note": "ERC grant (2023–2027, €2.0 million) on how the canonical reading traditions took shape over the standard consonantal text; concerns readings more than the rasm itself.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-02",
+   "kind": "field",
+   "title": "Radiocarbon dating of manuscripts kept in the Central Library of the University of Tehran",
+   "who": "A. Aghaei, A. Bahrololoumi, I. Hajdas et al.",
+   "venue": "Radiocarbon",
+   "url": "https://doi.org/10.1017/rdc.2023.2",
+   "note": "Adds a dated Kufic parchment Qurʾān fragment to the Corpus Coranicum dating campaign through the Irankoran project.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Consonantal Dotting and the Oral Quran",
+   "who": "H. Sidky",
+   "venue": "Journal of the American Oriental Society",
+   "url": "https://doi.org/10.7817/jaos.143.4.2023.ar029",
+   "note": "Statistical study of dotting differences among the canonical readings finds distinct Medinan, Meccan-Basran and Kufan oral traditions alongside the written rasm.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-11",
+   "kind": "paper",
+   "title": "Consonantal Dotting in Early Qurʾānic Manuscripts: a Fully Dotted Qurʾān Fragment from the First/Seventh Century",
+   "who": "É. Cellard",
+   "venue": "The Qurʾan and Its Handwritten Transmission (ed. F. Déroche, Brill)",
+   "url": "https://doi.org/10.1163/9789004706934_003",
+   "note": "Presents a fully dotted fragment assigned to the first Islamic century, evidence that diacritic practice could be systematic very early.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-04",
+   "kind": "paper",
+   "title": "Scepticism as method in the study of Quranic origins: A review article of Stephen J. Shoemaker, Creating the Qur'an",
+   "who": "B. Fudge",
+   "venue": "Bulletin of SOAS",
+   "url": "https://doi.org/10.1017/s0041977x25000242",
+   "note": "Critical review of the case for an early eighth-century Marwanid canon and of the methodological scepticism behind it.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

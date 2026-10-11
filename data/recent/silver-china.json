@@ -1,0 +1,149 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017-09",
+   "kind": "paper",
+   "title": "Silver by Fire, Silver by Mercury: A Chemical History of Silver Refining in New Spain and Mexico, 16th to 19th Centuries",
+   "who": "S. Guerrero",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004343832",
+   "note": "Reconstructs refining chemistry and mercury consumption in New Spain and offers production estimates by treasury district, a check on registered output series.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "Global Quantification and Inventory Demand for Silver in China",
+   "who": "J. Cao and D. O. Flynn",
+   "venue": "Revista de Historia Económica",
+   "url": "https://doi.org/10.1017/S0212610919000181",
+   "note": "Uses Qing wealth-confiscation records for a partial estimate of silver held in China around 1750, proposing stocks as a check on legal and contraband import flows.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "The Changing Significance of Latin American Silver in the Chinese Economy, 16th–19th Centuries",
+   "who": "R. von Glahn",
+   "venue": "Revista de Historia Económica",
+   "url": "https://doi.org/10.1017/S0212610919000193",
+   "note": "Updated synthesis of import estimates and of silver's changing monetary role in China across three centuries.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "paper",
+   "title": "Creating Global Demand: Polycentric Approaches, Crossroads of Silk and Silver in China and Iberian Empires during the Early Modern Era",
+   "who": "M. Perez-Garcia",
+   "venue": "Revista de Historia Económica",
+   "url": "https://doi.org/10.1017/S0212610919000284",
+   "note": "Introduces a themed issue on silver accumulation by Chinese merchants and demand for goods across the Manila and Macao routes.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-11",
+   "kind": "field",
+   "title": "Global circulation of silver between Ming–Qing China and the Americas: Combining historical texts and scientific analyses",
+   "who": "L. Sun, G. Yang, R. Liu, A. M. Pollard et al.",
+   "venue": "Archaeometry",
+   "url": "https://doi.org/10.1111/arcm.12617",
+   "note": "Pilot compositional study finding Ming and Qing bullion purer than American coins, and proposing chemical analysis as an independent source on silver flows.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-02",
+   "kind": "paper",
+   "title": "Empire of Silver: A New Monetary History of China",
+   "who": "J. Xu",
+   "venue": "Yale University Press",
+   "url": "https://doi.org/10.12987/9780300258271",
+   "note": "English translation of a Chinese monetary history that treats Ming silverization and foreign silver within a long-run account of the currency system.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-10",
+   "kind": "paper",
+   "title": "The economics of the Manila Galleon",
+   "who": "J. Mejia",
+   "venue": "Journal of Chinese Economic and Foreign Trade Studies",
+   "url": "https://doi.org/10.1108/JCEFTS-04-2021-0019",
+   "note": "Reviews the quantitative and qualitative evidence on the galleon trade for economists and frames its impact in a world-systems model.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "The Cambridge Economic History of China, vol. 1: To 1800",
+   "who": "D. Ma and R. von Glahn (eds.)",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108587334",
+   "note": "Reference volume with chapters on Ming and Qing money, trade and fiscal systems, synthesizing current views of imported silver to 1800.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-06",
+   "kind": "field",
+   "title": "Overlooked Silver: Reassessing Ming–Qing Silver Supplies",
+   "who": "Y. Yang and N. Kim",
+   "venue": "Harvard Journal of Asiatic Studies",
+   "url": "https://doi.org/10.1353/jas.2023.a922621",
+   "note": "Estimates from slag dumps at southwestern mines an output of 20,000–50,000 tons of silver, a domestic supply that would reduce the share of imports.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2023-08",
+   "kind": "paper",
+   "title": "Spending a Windfall: American Precious Metals and Euro-Asian Trade",
+   "who": "N. Palma and A. C. Silva",
+   "venue": "International Economic Review",
+   "url": "https://doi.org/10.1111/iere.12662",
+   "note": "Quantified how American bullion financed European imports from Asia, a key link in the Cape-route component of flows to China.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Current Debates about the Colonial Economy and Government from the Spanish Royal Treasury Records",
+   "who": "H. S. Klein",
+   "venue": "Hispanic American Historical Review",
+   "url": "https://doi.org/10.1215/00182168-11085749",
+   "note": "Surveys what the TePaske–Klein treasury accounts can and cannot show, including inter-treasury transfers relevant to Acapulco remittances.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-06",
+   "kind": "field",
+   "title": "Seeing is believing: The colour of silver alloys and the global silver circulation in the Chinese Ming and Qing dynasties",
+   "who": "L. Sun, G. Yang, R. Guo et al.",
+   "venue": "Archaeometry",
+   "url": "https://doi.org/10.1111/arcm.12990",
+   "note": "Models how copper and lead content affected the visible colour of silver, linking assaying by eye to the circulation of foreign and domestic silver.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-11",
+   "kind": "data",
+   "title": "The Manila correspondencia and the institutional underpinnings of the trans-Pacific silver trade in the long eighteenth century",
+   "who": "J. J. Rivas Moreno and G. Ruiz-Stovel",
+   "venue": "Revista de Historia Económica",
+   "url": "https://doi.org/10.1017/S0212610925100803",
+   "note": "Builds a database of all extant respondentia contracts in Manila notarial records, 1736–1800, tracing how the silver trade was financed.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

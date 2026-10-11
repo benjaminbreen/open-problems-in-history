@@ -1,0 +1,182 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Copernicus, the Tusi Couple and East-West Exchange in the Fifteenth Century",
+   "who": "P. Barker and T. Heidarzadeh",
+   "venue": "Unifying Heaven and Earth (Universitat de Barcelona), 19–58",
+   "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=5964743",
+   "note": "Surveys fifteenth-century contacts between Byzantine, Islamic and Latin scholars as plausible channels by which the Ṭūsī couple could have reached Copernicus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-11",
+   "kind": "paper",
+   "title": "Ibn al-Shāṭir and Copernicus: The Uppsala Notes Revisited",
+   "who": "F. J. Ragep",
+   "venue": "Journal for the History of Astronomy",
+   "url": "https://doi.org/10.1177/0021828616678508",
+   "note": "Re-reads Copernicus's notes in an Uppsala volume and argues that Ibn al-Shāṭir's models had features that made them useful for a heliocentric transformation.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-02",
+   "kind": "paper",
+   "title": "Copernicus's Derivation of the Heliocentric Theory from Regiomontanus's Eccentric Models of the Second Inequality of the Superior and Inferior Planets",
+   "who": "N. M. Swerdlow",
+   "venue": "Journal for the History of Astronomy",
+   "url": "https://doi.org/10.1177/0021828617691203",
+   "note": "Traces the heliocentric step to Regiomontanus's eccentric models in the Epitome, a Latin source route that does not depend on Maragha material.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-04",
+   "kind": "data",
+   "title": "Nicolaus Copernicus' books digitized",
+   "who": "Uppsala University Library",
+   "venue": "Alvin",
+   "url": "https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized",
+   "note": "The Copernicana collection, books from Copernicus's library with his annotations, put online in full, opening the marginalia used in transmission arguments to direct inspection.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-06",
+   "kind": "paper",
+   "title": "From Tūn to Toruń: The Twists and Turns of the Ṭūsī-Couple",
+   "who": "F. J. Ragep",
+   "venue": "Before Copernicus (McGill-Queen's University Press)",
+   "url": "https://doi.org/10.1515/9780773550117-011",
+   "note": "Traces versions of the Ṭūsī couple across Arabic, Greek, Hebrew and Latin sources and the routes by which they could have reached Europe.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-09",
+   "kind": "paper",
+   "title": "La Nihāya al-sūl fī taṣḥīḥ al-uṣūl d'Ibn al-Shāṭir: édition, traduction et commentaire mathématique",
+   "who": "E. Penchèvre",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/1709.04965",
+   "note": "Critical edition and French translation of Ibn al-Shāṭir's main theoretical treatise, with reconstruction of its models, giving an openly available base text for comparison with Copernicus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-12",
+   "kind": "paper",
+   "title": "Where Did Copernicus Obtain the Tools to Build His Heliocentric Model? Historical Considerations and a Guiding Translation of Valentin Rose's \"Ptolemaeus und die Schule von Toledo\" (1874)",
+   "who": "K. Krisciunas and B. Bistué",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/1712.05437",
+   "note": "Translates Rose's 1874 study of Toledan transmission and revisits Iberian and Latin channels through which Arabic geometrical devices might have reached Copernicus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "Abner of Burgos: The Missing Link between Nasir al-Din al-Tusi and Nicolaus Copernicus?",
+   "who": "M. Nosonovsky",
+   "venue": "Zutot",
+   "url": "https://doi.org/10.1163/18750214-12151070",
+   "note": "Proposes a Hebrew route via a fourteenth-century Castilian text describing a Ṭūsī-type device.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "A Rebuttal of Recent Arguments for Maragha Influence on Copernicus",
+   "who": "V. Blåsjö",
+   "venue": "Studia Historiae Scientiarum",
+   "url": "https://doi.org/10.4467/2543702XSHS.18.017.9337",
+   "note": "Replies to Ragep, Barker and Heidarzadeh, and Bala, maintaining that no documentary route has been shown and that independent invention remains adequate.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "The Mercury Models of Ibn al-Šāṭir and Copernicus",
+   "who": "S. Nikfahm-Khubravan and F. J. Ragep",
+   "venue": "Arabic Sciences and Philosophy",
+   "url": "https://doi.org/10.1017/S0957423918000085",
+   "note": "Argues from detailed model structure and parameters that Copernicus's Mercury model is too close to Ibn al-Shāṭir's to be independent.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "L'ombre de la science arabe : dans les marges de la bibliothèque de Copernic",
+   "who": "É. Mehl",
+   "venue": "La Revue de la BNU",
+   "url": "https://doi.org/10.4000/rbnu.4812",
+   "note": "Reviews the Maragha-transmission dispute through the books and marginalia surviving from Copernicus's library.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-04",
+   "kind": "paper",
+   "title": "Out of Maragha: Observations, Teachings, and Translations",
+   "who": "C. Roughan",
+   "venue": "Mediterranea",
+   "url": "https://doi.org/10.21071/mijtk.v7i.13676",
+   "note": "Places the late thirteenth-century Greek translations of Maragha and Tabriz astronomy in the teaching practice of those centres, the start of the Byzantine route.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "Islamic Astronomy and Copernicus",
+   "who": "F. J. Ragep",
+   "venue": "Turkish Academy of Sciences (TÜBA)",
+   "url": "https://doi.org/10.53478/tuba.978-625-8352-02-3",
+   "note": "Open-access collection of fifteen of Ragep's articles making the case for an Islamic background to Copernicus's models.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023",
+   "kind": "paper",
+   "title": "The Origin of the Reciprocation Device in Copernicus: Proclus In and Ṭūsī Out",
+   "who": "K. Takahashi",
+   "venue": "Historia Scientiarum 33 (1)",
+   "url": "https://www.jstage.jst.go.jp/article/historiascientiarum/33/1/33_1/_article/-char/en",
+   "note": "Argues from Copernicus's allusion to Proclus's Euclid commentary and from Rheticus that the reciprocation device came via the Proclus tradition and Paduan astronomers, not Maragha.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-03",
+   "kind": "paper",
+   "title": "Merchants of Knowledge: Intellectual Exchange in the Ottoman Empire and Renaissance Europe",
+   "who": "R. Morrison",
+   "venue": "Stanford University Press",
+   "url": "https://doi.org/10.1515/9781503642690",
+   "note": "Book-length study of Jewish and other intermediaries, including Moses Galeano, who carried Islamic astronomy between the Ottoman world and Italy around 1500.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-05",
+   "kind": "paper",
+   "title": "An Unknown Astronomical Work on Planetary Theory from the Renaissance: Giulio Cesare Luchini's Delle revolutioni delle sfere celesti libri IX (ca. 1581)",
+   "who": "P. D. Omodeo and R. S. Mousavi",
+   "venue": "Journal for the History of Astronomy",
+   "url": "https://doi.org/10.1177/00218286241297967",
+   "note": "Studies a Paduan manuscript adapting Copernicus's reciprocation mechanism, evidence for how the device was understood and circulated in the Veneto.",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}

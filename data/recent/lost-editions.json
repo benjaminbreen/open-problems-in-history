@@ -1,0 +1,226 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Lost Books: Reconstructing the Print World of Pre-Industrial Europe",
+   "who": "F. Bruni and A. Pettegree (eds.)",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004311824",
+   "note": "Collected volume that set the agenda for counting and recovering lost editions from archival, catalogue and statistical evidence.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Legion of the Lost: Recovering the Lost Books of Early Modern Europe",
+   "who": "A. Pettegree",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_002",
+   "note": "Argues that whole categories of cheap and ephemeral print are systematically missing from surviving collections.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Gutenberg Galaxy's Dark Matter: Lost Incunabula, and Ways to Retrieve Them",
+   "who": "F. Eisermann",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_003",
+   "note": "Surveys documentary and fragmentary traces of lost fifteenth-century editions, especially single-sheet and occasional print.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Lost Incunable Editions: Closing in on an Estimate",
+   "who": "J. Green and F. McIntyre",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_004",
+   "note": "Refines their statistical model of incunable survival, estimating the share of editions surviving in no copy.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Lost Print in England: Entries in the Stationers' Company Register, 1557–1640",
+   "who": "A. Hill",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_008",
+   "note": "Matches Stationers' Register entries against surviving copies to measure loss in English print.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Publicity and Its Uses. Lost Books as Revealed in Newspaper Advertisements in the Seventeenth-Century Dutch Republic",
+   "who": "A. der Weduwen and A. Pettegree",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_010",
+   "note": "Uses newspaper book advertisements to identify Dutch editions with no surviving copy.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Survival Factors of Seventeenth-Century Hand-Press Books Published in the Southern Netherlands",
+   "who": "G. Proot",
+   "venue": "Lost Books (Brill)",
+   "url": "https://doi.org/10.1163/9789004311824_009",
+   "note": "Shows survival depends strongly on sheet count, binding in Sammelbände and institutional collecting.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-06",
+   "kind": "paper",
+   "title": "Fifty Thousand Veronicas. Print Runs of Broadsheets in the Fifteenth and Early Sixteenth Centuries",
+   "who": "F. Eisermann",
+   "venue": "Broadsheets (Brill)",
+   "url": "https://doi.org/10.1163/9789004340312_005",
+   "note": "Documents very large print runs of single-sheet items that now survive in few or no copies.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-04",
+   "kind": "paper",
+   "title": "Lost Books and Printing in London, 1557–1640",
+   "who": "A. Hill",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004349209",
+   "note": "Monograph-length analysis of lost English editions by genre, finding ballads and cheap religious print most affected.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-04",
+   "kind": "paper",
+   "title": "The Bookshop of the World: Making and Trading Books in the Dutch Golden Age",
+   "who": "A. Pettegree and A. der Weduwen",
+   "venue": "Yale University Press",
+   "url": "https://doi.org/10.2307/j.ctvcb5c8p",
+   "note": "Reconstructs Dutch output from catalogues, advertisements and archives, arguing surviving copies greatly understate production.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-02",
+   "kind": "paper",
+   "title": "Printing R-Evolution and Society 1450–1500: Fifty Years that Changed Europe",
+   "who": "C. Dondi (ed.)",
+   "venue": "Edizioni Ca' Foscari",
+   "url": "https://doi.org/10.30687/978-88-6969-332-8",
+   "note": "Results of the ERC 15cBOOKTRADE project, using copy-level provenance data on surviving incunabula to study production and circulation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "paper",
+   "title": "Tracing Lost Editions of Parisian Printers in the Sixteenth Century: The Case of Jean Bonfons and his Widow Catherine Sergent",
+   "who": "R. Adam",
+   "venue": "The Library",
+   "url": "https://doi.org/10.1093/library/21.3.328",
+   "note": "Case study of a romance-printing family with low survival, asking how far bibliographies and survival rates distort output.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-11",
+   "kind": "paper",
+   "title": "Estimating the Loss of Medieval Literature with an Unseen Species Model from Ecodiversity",
+   "who": "M. Kestemont and F. Karsdorp",
+   "venue": "CHR 2020 (CEUR-WS)",
+   "url": "https://ceur-ws.org/Vol-2723/short10.pdf",
+   "note": "First application of ecological richness estimators to the loss of medieval texts.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-04",
+   "kind": "tool",
+   "title": "copia: bias correction for richness in abundance data",
+   "who": "M. Kestemont and F. Karsdorp",
+   "venue": "GitHub / PyPI",
+   "url": "https://github.com/mikekestemont/copia",
+   "note": "Python package implementing Chao1 and related unseen-species estimators for cultural datasets, maintained through 2026.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-05",
+   "kind": "paper",
+   "title": "Book Trade Catalogues in Early Modern Europe",
+   "who": "A. der Weduwen, A. Pettegree and G. Kemp (eds.)",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004422247",
+   "note": "Essays treating booksellers' and auction catalogues as sources for editions that no longer survive.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Forgotten books: The application of unseen species models to the survival of culture",
+   "who": "M. Kestemont et al.",
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.abl7655",
+   "note": "Estimates survival rates of medieval narrative manuscripts and works across six literatures with unseen-species models.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2022-03",
+   "kind": "paper",
+   "title": "Demystifying Chao1 with Good-Turing",
+   "who": "F. Karsdorp",
+   "venue": "OSF Preprints",
+   "url": "https://doi.org/10.31219/osf.io/tb9w2",
+   "note": "Explains the assumptions behind the Chao1 estimator, relevant to judging when such models suit book-survival data.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-11",
+   "kind": "paper",
+   "title": "The Quaderneto of Padua: A 1480 List of Incunabula for Sale",
+   "who": "E. C. Peric",
+   "venue": "Spotlights on Incunabula (Brill)",
+   "url": "https://doi.org/10.1163/9789004681378_005",
+   "note": "Edits a bookseller's list of 1480, a type of document that can reveal editions with no surviving copy.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-05",
+   "kind": "paper",
+   "title": "On the transmission of texts: written cultures as complex systems",
+   "who": "J.-B. Camps, J. Randon-Furling and U. Godreau",
+   "venue": "arXiv; PNAS Nexus (2026)",
+   "url": "https://arxiv.org/abs/2505.19246",
+   "note": "Models copying and loss as a stochastic process to explain observed stemma shapes and survival; published in PNAS Nexus, June 2026.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026",
+   "kind": "paper",
+   "title": "Saved in translation? Diversity shared in French and Dutch medieval literature",
+   "who": "M. Kestemont, F. Karsdorp, J.-B. Camps and R. Sleiderink",
+   "venue": "Evolutionary Human Sciences",
+   "url": "https://doi.org/10.1017/ehs.2026.10036",
+   "note": "Extends unseen-species estimation to diversity shared between two literatures, using translated works as a test case.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

@@ -1,0 +1,193 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-05",
+   "kind": "paper",
+   "title": "Marsa Gawasis (Wadi Gawasis) and the Egyptian Seafaring Expeditions to Punt",
+   "who": "R. Fattovich and K. A. Bard",
+   "venue": "Abgadiyat",
+   "url": "https://doi.org/10.1163/22138609-90000040",
+   "note": "Summary of the harbour excavations, where ship timbers, cargo boxes and inscribed stelae document Middle Kingdom voyages to Punt and Bia-Punt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-06",
+   "kind": "paper",
+   "title": "Punt: Die Suche nach dem \"Gottesland\"",
+   "who": "F. Breyer",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004322615",
+   "note": "Comprehensive review of the ancient Egyptian sources and modern searches for Punt, with a full discussion of the competing locations.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-07",
+   "kind": "paper",
+   "title": "Hatshepsut's expedition to the land of Punt: novelty or tradition?",
+   "who": "F. Taterka",
+   "venue": "Current Research in Egyptology 2015",
+   "url": "https://doi.org/10.2307/j.ctvh1dgn6.17",
+   "note": "Asks whether the Deir el-Bahari expedition broke new ground or continued earlier practice, which bears on how literally its scenes can be read geographically.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-06",
+   "kind": "paper",
+   "title": "Punt in the 'Northern' Topographical Lists",
+   "who": "J. Cooper",
+   "venue": "Journal of Egyptian Archaeology",
+   "url": "https://doi.org/10.1177/0307513318790202",
+   "note": "Philological analysis of the Punt section of the New Kingdom topographical lists as a source for the placenames and peoples Egyptians associated with Punt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-06",
+   "kind": "paper",
+   "title": "Egyptian and Imported Pottery from the Red Sea port of Mersa Gawasis, Egypt",
+   "who": "S. Wallace-Jones",
+   "venue": "Archaeopress",
+   "url": "https://doi.org/10.2307/j.ctv170x4mk",
+   "note": "Corpus of Egyptian and foreign wares from the harbour, including southern Red Sea imports used to trace the expeditions' contacts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "Seafaring Expeditions to Punt in the Middle Kingdom: Excavations at Mersa/Wadi Gawasis, Egypt",
+   "who": "K. A. Bard and R. Fattovich",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004379602",
+   "note": "Final synthesis of the harbour excavations and long-distance routes, favouring a Punt in the African lowlands of the southern Red Sea.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "The Archaeology of Punt",
+   "who": "R. Fattovich",
+   "venue": "Journal of Egyptian Archaeology",
+   "url": "https://doi.org/10.1177/0307513319858321",
+   "note": "Posthumously published review of the archaeological cultures of the African Red Sea hinterland proposed as Punt and their links with Egypt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-10",
+   "kind": "paper",
+   "title": "Review of Bard and Fattovich, Seafaring Expeditions to Punt in the Middle Kingdom",
+   "who": "D. Meeks",
+   "venue": "Orientalistische Literaturzeitung",
+   "url": "https://doi.org/10.1515/olzg-2019-0099",
+   "note": "Review by the main proponent of an Arabian Punt, engaging the excavators' African identification.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-07",
+   "kind": "field",
+   "title": "The provenance of obsidian artefacts from the Middle Kingdom harbour of Mersa/Wadi Gawasis",
+   "who": "G. Lucarini, D. Barca and A. Manzo",
+   "venue": "Quaternary International",
+   "url": "https://doi.org/10.1016/j.quaint.2020.03.015",
+   "note": "LA-ICP-MS sourcing matches harbour obsidian to both Eritrean and Yemeni sources, implying contacts with both shores of the southern Red Sea.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-08",
+   "kind": "paper",
+   "title": "Toponymy on the Periphery: Placenames of the Eastern Desert, Red Sea, and South Sinai in Egyptian Documents",
+   "who": "J. Cooper",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004422216",
+   "note": "Systematic study of Egyptian peripheral placenames, placing Punt within a mapped Red Sea toponymy and weighing etymologies.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-12",
+   "kind": "field",
+   "title": "Mummified baboons reveal the far reach of early Egyptian mariners",
+   "who": "N. J. Dominy et al.",
+   "venue": "eLife",
+   "url": "https://doi.org/10.7554/eLife.60860",
+   "note": "Strontium and oxygen isotopes place two New Kingdom baboon mummies' birthplaces in a zone spanning Eritrea, Ethiopia, Djibouti and parts of Somalia and Yemen.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2021-01",
+   "kind": "paper",
+   "title": "Hidden in Plain Sight, or Where to Look for the Mysterious Land of Bia-Punt",
+   "who": "F. Taterka",
+   "venue": "Chronique d'Égypte",
+   "url": "https://doi.org/10.1484/j.cde.5.128164",
+   "note": "Reconsiders the location of Bia-Punt, the variant toponym recorded on Middle Kingdom monuments at Mersa/Wadi Gawasis.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-02",
+   "kind": "paper",
+   "title": "From Tenochtitlán to Punt: When People Encounter the Distant and Unknown, a Cognitive Approach",
+   "who": "G. Miniaci",
+   "venue": "Journal of Egyptian History",
+   "url": "https://doi.org/10.1163/18741665-12340066",
+   "note": "Compares Hatshepsut's Punt reliefs with early modern contact accounts to ask how far encounter imagery reflects observation rather than expectation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-09",
+   "kind": "field",
+   "title": "Adulis and the transshipment of baboons during classical antiquity",
+   "who": "F. Grathwol et al.",
+   "venue": "eLife",
+   "url": "https://doi.org/10.7554/eLife.87513",
+   "note": "A mitogenome from a Late Period baboon mummy groups with populations of Eritrea and northeastern Sudan; the authors link this to Adulis and, more tentatively, to Punt.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "field",
+   "title": "Palaeopathological and demographic data reveal conditions of keeping of the ancient baboons at Gabbanat el-Qurud (Thebes, Egypt)",
+   "who": "W. Van Neer et al.",
+   "venue": "PLOS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0294934",
+   "note": "Pathologies and age profiles show the Theban baboons were kept and bred in captivity, which constrains how far they can source Punt.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-08",
+   "kind": "paper",
+   "title": "Egyptian Geography of the Southern Red Sea: The Land of Wetenet",
+   "who": "J. Cooper",
+   "venue": "Journal of Egyptian History",
+   "url": "https://doi.org/10.1163/18741665-bja10025",
+   "note": "Distinguishes Wetenet, visited for ebony and baboons, from Punt and locates it on the Sudanese or Eritrean coast.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-05",
+   "kind": "paper",
+   "title": "Esarhaddon in Yemen, Punt, and the Horn of Africa",
+   "who": "S. C. Compton",
+   "venue": "Journal of Ancient Near Eastern History",
+   "url": "https://doi.org/10.1515/janeh-2025-0001",
+   "note": "Locates Esarhaddon's Bāzu in South Arabia and argues that the coastal power of Pudaʾ on Wadi Zabid in Yemen was Punt.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

@@ -25,3 +25,7 @@ Rules
 - "holdings" (optional, 2–8 per archive): the specific fonds, series and items a researcher should open first. Prefer deep catalogue links (PARES, ArchivesSpace, digitized-item viewers) over institution home pages; omit "url" rather than guess. "match" links a holding only through the phrases listed, so ambiguous words like city names belong under the archive's "aliases" instead.
 - Prose: plain, precise, scholarly. No hype, no rhetorical questions, no "crucially/notably/fascinating", minimal em dashes. State contested figures as ranges with attribution. Hedge where the record is uncertain.
 - Correct any factual error in the framing you were given; framing is a starting point, not a source.
+
+# Recent work (optional: data/recent/<id>.json)
+
+A dated log of what has moved the problem since 2016, shown as a strip on the problem page and merged into the problem as "recent" by `npm run data`. Format, kinds and verification rules: data/recent/BRIEF.md.

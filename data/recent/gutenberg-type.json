@@ -1,0 +1,116 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-06",
+   "kind": "paper",
+   "title": "Ad Fontes: A New Look at the Watermarks on Paper Copies of the Gutenberg Bible",
+   "who": "I. Feder McCarthy",
+   "venue": "The Library",
+   "url": "https://doi.org/10.1093/library/17.2.115",
+   "note": "Re-examines paper stocks across B42 copies, refining the production sequence against which changes in the type and its casting have to be dated.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Editio Princeps: A History of the Gutenberg Bible",
+   "who": "E. M. White",
+   "venue": "Harvey Miller / Brepols",
+   "url": "https://www.brepols.net/products/IS-9781909400849-1",
+   "note": "History and census of the 49 surviving copies and fragments of at least 14 others, the reference point for locating copies to compare.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-03",
+   "kind": "paper",
+   "title": "Gutenberg",
+   "who": "S. Füssel",
+   "venue": "Haus Publishing",
+   "url": "https://doi.org/10.2307/jj.17072703",
+   "note": "English edition of the Mainz printing historian's synthesis, with chapters on DK-type print runs and the B42 and a list of digitized Gutenberg Bibles.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "Did Johannes Gutenberg invent the hand mould? Conclusions drawn from microscopic type comparisons of early prints",
+   "who": "C. Reske",
+   "venue": "JGU Mainz Open Science (English translation of Gutenberg-Jahrbuch 2015)",
+   "url": "https://doi.org/10.25358/openscience-5699",
+   "note": "Microscopic comparison of letter variants in early prints, concluding they are consistent with a punch-matrix-hand-mould system, against the temporary-matrix hypothesis.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "Statistical Analysis of the Gutenberg 42-line Bible Types: Special Focus on Letters with a Suspension Stroke",
+   "who": "M. Agata and T. Agata",
+   "venue": "Papers of the Bibliographical Society of America",
+   "url": "https://doi.org/10.1086/713981",
+   "note": "Statistical measurement of letters with suspension strokes in the Keio B42 copy, read as evidence for how sorts and their matrices were made.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2021-10",
+   "kind": "event",
+   "title": "Princeton acquires 21 fifteenth-century printing types from Lyons",
+   "who": "Princeton University Library",
+   "venue": "Princeton Special Collections",
+   "url": "https://specialcollections.princeton.edu/2023/08/early-printing-types-lyons-ca-1473-1500",
+   "note": "Bought at auction a group of Guillaume de Roy's types recovered from the Saône in 1868, among the very few physical fifteenth-century sorts available for study.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "paper",
+   "title": "Two corrections to recent censuses of the Gutenberg 42-line bible",
+   "who": "L. M. Rangel and A. Alabert",
+   "venue": "Journal of the Printing Historical Society, n.s. 3",
+   "url": "https://investigacion.unir.net/documentos/69a0159a2cb38428f3fc0b75",
+   "note": "Corrects copy-level details in the Needham and White censuses and discusses the print-run increase, relevant to any multi-copy comparison of B42 type.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-01",
+   "kind": "grant",
+   "title": "Werck der bücher: Transitions, experimentation, and collaboration in reprographic technologies, 1440-1470",
+   "who": "S. Mossman et al. (Manchester, with Mainz and Erlangen)",
+   "venue": "AHRC (AH/W010615/1) and DFG (468415227)",
+   "url": "https://gtr.ukri.org/projects?ref=AH%2FW010615%2F1",
+   "note": "AHRC-DFG project (UK share £213,395; 2021/22 to 2026) to pattern-match every movable-type edition of 1440 to 1470 and test how many distinct typecasting technologies existed.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "Analysis of the Gutenberg 42-line Bible types aided by type-image recognition",
+   "who": "M. Agata and T. Agata",
+   "venue": "Digital Humanities 2022 (ADHO), Tokyo",
+   "url": "https://dh-abstracts.library.virginia.edu/works/11916",
+   "note": "OCR-assisted measurement of about 120,000 letters on 46 Keio pages; stroke-to-letter distances differ between 40- and 42-line pages, suggesting separately punched strokes.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "The Typefounder's Hand Mould",
+   "who": "R. S. Nelson",
+   "venue": "Legacy Press / Norwich Printing Museum",
+   "url": "https://www.aepm.eu/news/new-monograph-on-the-typefounders-hand-mould/",
+   "note": "Historical and practical study of surviving hand moulds and how to build and cast with one, by a maker of about fifty years' experience; useful for testing casting hypotheses.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

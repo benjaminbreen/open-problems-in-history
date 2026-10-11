@@ -1,0 +1,270 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-04",
+   "kind": "paper",
+   "title": "Private slave trade in the Dutch Indian Ocean world: a study into the networks and backgrounds of the slavers and the enslaved in South Asia and South Africa",
+   "who": "L. Mbeki and M. van Rossum",
+   "venue": "Slavery & Abolition",
+   "url": "https://doi.org/10.1080/0144039x.2016.1159004",
+   "note": "Uses two sets of VOC records on the Cape and Cochin to show officials, soldiers, free citizens and Asians trading slaves privately, outside company accounts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-05",
+   "kind": "paper",
+   "title": "Mozambique Island, Cape Town and the Organisation of the Slave Trade in the South-West Indian Ocean, c.1797–1807",
+   "who": "P. Harries",
+   "venue": "Journal of Southern African Studies",
+   "url": "https://doi.org/10.1080/03057070.2016.1178000",
+   "note": "Reconstructs the Mozambique-to-Cape trade under the first British occupation, tracing ships, merchants and routes linking the Indian Ocean and Atlantic trades.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-06",
+   "kind": "field",
+   "title": "Dynamics of Indian Ocean Slavery Revealed through Isotopic Data from the Colonial Era Cobern Street Burial Site, Cape Town, South Africa (1750-1827)",
+   "who": "L. M. Kootker, L. Mbeki, A. G. Morris et al.",
+   "venue": "PLOS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0157750",
+   "note": "Strontium, carbon and nitrogen isotopes identify first-generation forced migrants among the Cape Town burials, an independent check on documented origins.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Slave Trade Profiteers in the Western Indian Ocean: Suppression and Resistance in the Nineteenth Century",
+   "who": "H. Suzuki",
+   "venue": "Palgrave Macmillan",
+   "url": "https://doi.org/10.1007/978-3-319-59803-1",
+   "note": "Studies the merchants and networks that kept the western Indian Ocean trade running under British suppression, using Omani, British and French records.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-05",
+   "kind": "paper",
+   "title": "Ending the history of silence: reconstructing European slave trading in the Indian Ocean",
+   "who": "R. B. Allen",
+   "venue": "Tempo",
+   "url": "https://doi.org/10.1590/tem-1980-542x2017v230206",
+   "note": "Restates and defends Allen's European-carrier estimates, laying out the sources and the gaps that keep the all-carrier total out of reach.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-12",
+   "kind": "field",
+   "title": "The Genetic Legacy of the Indian Ocean Slave Trade: Recent Admixture and Post-admixture Selection in the Makranis of Pakistan",
+   "who": "R. Laso-Jadart et al.",
+   "venue": "American Journal of Human Genetics",
+   "url": "https://doi.org/10.1016/j.ajhg.2017.09.025",
+   "note": "Detects recent Bantu-related African admixture in the Makrani population of Pakistan, attributing it to the Indian Ocean slave trade to the Makran coast.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "grant",
+   "title": "Exploring Slave Trade in Asia (ESTA): NWO Internationalisation in the Humanities grant",
+   "who": "M. van Rossum, U. Bosma and F. Ribeiro da Silva (IISH)",
+   "venue": "NWO",
+   "url": "https://iisg.amsterdam/en/research/projects/slave-trade-asia",
+   "note": "Dutch Research Council grant that funded the first phase of the ESTA voyage database for the Indian Ocean and maritime Asia slave trades.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "Africa and the Indian Ocean World from Early Times to Circa 1900",
+   "who": "G. Campbell",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781139028769",
+   "note": "Long-run synthesis placing East African and Malagasy slave exports within Indian Ocean economic and environmental cycles.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "Towards an Indian Ocean and Maritime Asia Slave Trade Database: An Exploration of Concepts, Lessons and Models",
+   "who": "S. Sint Nicolaas, M. van Rossum and U. Bosma",
+   "venue": "Esclavages & Post-esclavages",
+   "url": "https://doi.org/10.4000/slaveries.2946",
+   "note": "Argues the Atlantic voyage model fits poorly and proposes a data model with voyages, subvoyages and small transfers for Indian Ocean and Asian trades.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "paper",
+   "title": "Being a Slave: Histories and Legacies of European Slavery in the Indian Ocean",
+   "who": "A. Schrikker and N. Wickramasinghe (eds.)",
+   "venue": "Leiden University Press",
+   "url": "https://doi.org/10.24415/9789087283445",
+   "note": "Open-access volume of case studies on Dutch and British slavery in Sri Lanka, the Cape and the archipelago, including small-scale Ceylon–Cape trading.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "Towards a global perspective on early modern slave trade: prices of the enslaved in the Indian Ocean, Indonesian Archipelago and Atlantic worlds",
+   "who": "M. van Rossum",
+   "venue": "Journal of Global History",
+   "url": "https://doi.org/10.1017/s1740022821000139",
+   "note": "Compiles slave price series across Asian and Atlantic markets, giving a basis for linking local trades and testing demand-side volume estimates.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-09",
+   "kind": "paper",
+   "title": "VOC Slave Trading Strategies on the Madagascar to Cape Slave Route, 1676-1781",
+   "who": "M. C. Reidy",
+   "venue": "HumaNetten",
+   "url": "https://doi.org/10.15626/hn.20214702",
+   "note": "Examines VOC company voyages from the Cape to Madagascar and the trading strategies behind them, from ship journals and Cape records.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-11",
+   "kind": "paper",
+   "title": "Abolition and the Registration of Slaves and Libertos in Portuguese Mozambique, 1856–76",
+   "who": "D. B. Domingues da Silva and E. A. Alpers",
+   "venue": "Journal of African History",
+   "url": "https://doi.org/10.1017/s0021853721000554",
+   "note": "Analyses Mozambican slave registers to describe the enslaved population, its origins and its transition to liberto status under Portuguese abolition.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "data",
+   "title": "GLOBALISE: Enriching the VOC Archives",
+   "who": "Huygens Institute, Amsterdam",
+   "venue": "GLOBALISE",
+   "url": "https://globalise.huygens.knaw.nl/",
+   "note": "Machine transcription of the VOC Overgekomen Brieven en Papieren makes scattered slave purchases and transports in company letters full-text searchable.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-01",
+   "kind": "grant",
+   "title": "NEH grant to add Indian Ocean and maritime Asia voyages to SlaveVoyages",
+   "who": "D. B. Domingues da Silva, R. B. Allen, M. S. Hopper, J. Hooper",
+   "venue": "National Endowment for the Humanities / Rice University",
+   "url": "https://news.rice.edu/news/2023/research-televised-opera-slave-voyages-honored-national-endowment-humanities-grants",
+   "note": "Three-year project to build an Indian Ocean and Asia voyage database for 1500–1940 within SlaveVoyages, pooling the investigators' existing voyage datasets.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-04",
+   "kind": "paper",
+   "title": "Exploring Slave Trade in Asia",
+   "who": "P. Konings, M. Hids, S. J. Miske and M. van Rossum",
+   "venue": "TSEG",
+   "url": "https://doi.org/10.52024/tseg.13647",
+   "note": "Describes the ESTA database design, sources and coverage, and the voyage and subvoyage units used to record small and mixed-cargo transports.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-12",
+   "kind": "data",
+   "title": "Exploring Slave Trade in Asia (ESTA) Database: first public release",
+   "who": "International Institute of Social History (IISG)",
+   "venue": "esta.iisg.nl",
+   "url": "https://esta.iisg.nl/",
+   "note": "First open record-level database of slave voyages across the Indian Ocean, archipelago and East Asian seas, launched with about 4,000 voyages and a map viewer.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "paper",
+   "title": "Is the SlaveVoyages database useful for scholars of slave trading in the wider Indian Ocean World?",
+   "who": "D. Eltis",
+   "venue": "International Journal of Maritime History",
+   "url": "https://doi.org/10.1177/08438714241272611",
+   "note": "Compares Atlantic and Indian Ocean evidence and argues that non-African captives were probably the majority of Indian Ocean World traffic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-10",
+   "kind": "field",
+   "title": "The Indian Ocean slave trade and colonial expansion resulted in strong sex-biased admixture in South Africa",
+   "who": "A. W. Reynolds et al.",
+   "venue": "American Journal of Human Genetics",
+   "url": "https://doi.org/10.1016/j.ajhg.2025.08.012",
+   "note": "Genetic data from over 1,400 people trace South Asian, Indonesian and East African ancestry from the Cape slave trade and its sex-biased pattern.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-12",
+   "kind": "data",
+   "title": "ESTA Database second data launch and TIDES data-entry system",
+   "who": "International Institute of Social History (IISG)",
+   "venue": "esta.iisg.nl",
+   "url": "https://iisg.amsterdam/en/blog/new-launch-exploring-slave-trade-asia-esta-database",
+   "note": "Expands ESTA to about 5,300 voyages and 9,155 subvoyages referring to at least 440,000 enslaved people, adding China, Mascarene, Mozambique and East India datasets.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2025-12",
+   "kind": "paper",
+   "title": "Shifting the Tide: Data, Findings and Future of the Exploring Slave Trade in Asia Database",
+   "who": "P. Konings, M. Tosun and M. van Rossum",
+   "venue": "Colonial Encounters and Slavery in Early Modern Asia (Leiden University Press)",
+   "url": "https://doi.org/10.24415/9789400605107-012",
+   "note": "Reports what the expanded ESTA data show about routes and volumes and what coverage gaps remain.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-05",
+   "kind": "paper",
+   "title": "Slave Trade in the Indian Ocean: Expanding the SlaveVoyages Database",
+   "who": "D. B. Domingues da Silva and J. Hooper",
+   "venue": "History Compass",
+   "url": "https://doi.org/10.1111/hic3.70030",
+   "note": "Presents preliminary findings of the NEH-funded effort to extend SlaveVoyages to the Indian Ocean and maritime Asia.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "'[We] Cannot Exist Properly without Slaves': New Insights into Early Dutch Slave Trade in Asia from the ESTA Database, 1621–1660",
+   "who": "B. van Duijvenvoorde and P. Konings",
+   "venue": "e-Journal of Portuguese History",
+   "url": "https://doi.org/10.1163/16456432-bja10041",
+   "note": "Uses the expanded 2025 ESTA corpus to trace early VOC slave shipments, finding high volumes in the 1620s, a contraction in the 1630s and renewed growth after 1640.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-08",
+   "kind": "paper",
+   "title": "'As Many People with the Ships as can be Gotten': Revisiting Enslavement and the Slave Trade on the Coromandel Coast",
+   "who": "B. van Duijvenvoorde",
+   "venue": "Slavery & Abolition",
+   "url": "https://doi.org/10.1080/0144039x.2026.2684978",
+   "note": "Uses VOC archives on Arakan, Bengal and Coromandel to argue that company-linked violent slaving, not famine cycles alone, drove seventeenth-century exports.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

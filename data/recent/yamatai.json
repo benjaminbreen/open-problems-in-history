@@ -1,0 +1,182 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Silla Annals' Anachronistic Reference to Queen Himiko, the Wa Ruler of Yamatai",
+   "who": "J. W. Best",
+   "venue": "Seoul Journal of Korean Studies",
+   "url": "https://doi.org/10.1353/seo.2016.0009",
+   "note": "Examines the Samguk sagi's reference to a Himiko embassy dated to 173 CE and argues that the entry is anachronistic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-05",
+   "kind": "paper",
+   "title": "Kōkogaku kara mite Yamataikoku Yamato-setsu wa naritatsu ka? (Does the Yamato theory of Yamatai hold up archaeologically?)",
+   "who": "Sekigawa Hisayoshi",
+   "venue": "Kikan Yamataikoku",
+   "url": "https://cir.nii.ac.jp/crid/1522543654848285696",
+   "note": "A former Kashihara Institute archaeologist questions whether the archaeology of the Nara basin can support the Yamato theory.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "field",
+   "title": "Makimuku iseki shutsudo no momo no kaku no AMS 14C nendai sokutei (AMS radiocarbon dating of peach stones from the Makimuku site)",
+   "who": "Nakamura Toshio",
+   "venue": "Makimukugaku kenkyū 6",
+   "url": "https://cir.nii.ac.jp/crid/1520017035724023680",
+   "note": "Dated twelve peach stones from a pit by the large Makimuku building complex to roughly 135–230 CE, presented as support for a Makimuku Yamatai.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "Jiji koron 8: Makimuku iseki shutsudo no momo no kaku nendai sokutei (zenpen)",
+   "who": "Yasumoto Biten",
+   "venue": "Kikan Yamataikoku 135",
+   "url": "https://cir.nii.ac.jp/crid/1522543655420245632",
+   "note": "Detailed rebuttal of the peach-stone interpretation by a leading Kyushu-theory advocate, continued in 2019 and expanded into a book.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-03",
+   "kind": "field",
+   "title": "Namari dōitaihi ni yoru sankakuen shinjūkyō seisakuchi no kentō (The production place of triangular-rimmed mirrors examined through lead isotope ratios)",
+   "who": "Ōga Katsuhiko",
+   "venue": "Kodaigaku 11",
+   "url": "https://cir.nii.ac.jp/crid/1050289145406155776",
+   "note": "Uses lead isotope data to address whether the triangular-rimmed mirrors were made in Wei China or Japan, the crux of their value as evidence for Yamatai.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "paper",
+   "title": "Kōkogaku kara mita Yamataikoku Yamato-setsu: Kinai de wa arienu Yamataikoku",
+   "who": "Sekigawa Hisayoshi",
+   "venue": "Azusa Shoin",
+   "url": "https://cir.nii.ac.jp/crid/1970867909859485740",
+   "note": "Book-length archaeological case against a Kinai Yamatai, drawing on decades of excavation in Nara; widely discussed as an insider critique.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-10",
+   "kind": "grant",
+   "title": "Sankakubuchi shinjūkyō seisakuchi dōtei e mukete (Toward identifying where the triangular-rimmed deity-and-beast mirrors were made), KAKEN JP20KK0010",
+   "who": "Shimizu Yasuji, Kashihara Archaeological Institute",
+   "venue": "JSPS KAKENHI",
+   "url": "https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-20KK0010/",
+   "note": "JSPS grant (2020–2026, ¥18.59 million) surveying Han–Jin mirrors in Shandong with lead-isotope analysis to settle whether the mirrors linked to Himiko's Wei gift were made in China.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "field",
+   "title": "Makimuku iseki no shutsudozai nenrin nendai kettei ni mukete: sanso dōitaihi no nensōnai hendō kaiseki",
+   "who": "Nakatsuka Takeshi",
+   "venue": "Makimukugaku kenkyū 10",
+   "url": "https://cir.nii.ac.jp/crid/1010302693905507594",
+   "note": "Applies intra-ring oxygen isotope analysis to Makimuku timbers as a route to calendar dates independent of radiocarbon calibration.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "field",
+   "title": "Makimuku iseki shutsudo momo kaku no AMS 14C nendai no saishinban kōsei dēta IntCal20 ni yoru reki-nen kōsei",
+   "who": "Nakamura Toshio",
+   "venue": "Makimukugaku kenkyū 10",
+   "url": "https://cir.nii.ac.jp/crid/1520017035727571712",
+   "note": "Recalibrated the Makimuku peach-stone dates with IntCal20, showing how the calendar range depends on the calibration curve used.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "Himiko to Yamato ōken (Himiko and the Yamato kingship)",
+   "who": "Terasawa Kaoru",
+   "venue": "Chūōkōron-Shinsha",
+   "url": "https://cir.nii.ac.jp/crid/1971149384827898498",
+   "note": "The director of the Makimuku research centre sets out the Kinai case, reading Makimuku as the seat of a confederated Wa kingship under Himiko.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-06",
+   "kind": "field",
+   "title": "Stone-lined coffin opened in the 'mysterious area' of Yoshinogari",
+   "who": "Saga Prefecture",
+   "venue": "Yoshinogari site",
+   "url": "https://www.nippon.com/fr/news/yjj2023060500074/",
+   "note": "A large, isolated late Yayoi cist with incised lid stones and red pigment revived Kyushu claims; reports indicated no grave goods were recovered.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "event",
+   "title": "Kōkogaku ga kaimei suru Yamataikoku no jidai (public symposium)",
+   "who": "Japanese Archaeological Association",
+   "venue": "Japanese Archaeological Association",
+   "url": "https://cir.nii.ac.jp/crid/1970023484924953863",
+   "note": "Symposium on mirrors, Lelang trade, Yayoi settlements and early mounded tombs, with Terasawa, Fukunaga, Okamura and others; published as a volume.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-08",
+   "kind": "paper",
+   "title": "Ronsō Yamataikoku (The Yamatai debate)",
+   "who": "Miyamoto Kazuo (ed.)",
+   "venue": "Yūzankaku",
+   "url": "https://cir.nii.ac.jp/crid/1971712899829762721",
+   "note": "Edited volume issued with the Japanese Archaeological Association that sets competing Kinai and Kyushu arguments alongside current evidence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-04",
+   "kind": "grant",
+   "title": "3-seiki Harima no Wajin shokoku ni kansuru bunken shigaku・kōkogaku no tōgōteki kenkyū (Integrated textual and archaeological study of the third-century Wa states in Harima), KAKEN JP26K04293",
+   "who": "Nishimoto Masahiro, Kansai University",
+   "venue": "JSPS KAKENHI",
+   "url": "https://kaken.nii.ac.jp/en/grant/KAKENHI-PROJECT-26K04293/",
+   "note": "JSPS grant (2026–2029, ¥1.56 million) testing the placement of Weizhi states between Tōma (Kibi) and Yamatai (Yamato) in Harima, with a re-edited Weizhi text.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-06",
+   "kind": "paper",
+   "title": "Yamataikoku no kōkogaku: Gishi Tōiden ga kataru sekai",
+   "who": "Azuma Ushio",
+   "venue": "Yoshikawa Kōbunkan",
+   "url": "https://cir.nii.ac.jp/crid/1970589942157248939",
+   "note": "Archaeological study of the Yamatai period framed by the Wei zhi account of the eastern peoples and its wider East Asian setting.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-07",
+   "kind": "field",
+   "title": "Hashihaka kofun no myūon rajiogurafī ni yoru kenkyū (Muon radiography of the Hashihaka mound)",
+   "who": "Ishiguro Katsumi and Nishifuji Kiyohide",
+   "venue": "Kōkogaku jānaru 826",
+   "url": "https://cir.nii.ac.jp/crid/1520309226896264448",
+   "note": "Reports non-invasive muon imaging of the Imperial Household Agency-controlled mound often proposed as Himiko's tomb, where excavation is not permitted.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

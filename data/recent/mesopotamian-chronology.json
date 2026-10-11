@@ -1,0 +1,171 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-07",
+   "kind": "field",
+   "title": "Integrated Tree-Ring-Radiocarbon High-Resolution Timeframe to Resolve Earlier Second Millennium BCE Mesopotamian Chronology",
+   "who": "S. W. Manning, C. B. Griggs, B. Lorentzen, G. Barjamovic et al.",
+   "venue": "PLOS ONE 11 (7)",
+   "url": "https://doi.org/10.1371/journal.pone.0157144",
+   "note": "Wiggle-matched tree-ring sequences from the Kültepe and Acemhöyük palaces, tied to Old Assyrian eponyms, and found them compatible only with the Middle Chronology.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2016-08",
+   "kind": "paper",
+   "title": "Anchoring historical sequences using a new source of astro-chronological tie-points",
+   "who": "M. W. Dee and B. J. S. Pope",
+   "venue": "Proceedings of the Royal Society A 472",
+   "url": "https://doi.org/10.1098/rspa.2016.0263",
+   "note": "Proposes using Miyake-type radiocarbon spikes in short-lived plant material as exact-year anchors for floating historical chronologies of the ancient Near East.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Dating by Month-Lengths Revisited",
+   "who": "P. J. Huber",
+   "venue": "Studies on the Ancient Exact Sciences in Honour of Lis Brack-Bernsen (Edition Topoi)",
+   "url": "https://www.topoi.org/publication/43918",
+   "note": "Re-analyses Old Babylonian and Ur III month-length data and argues they favour the High Chronology over the Middle at high confidence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Further Astronomical Fine-tuning of the Old Assyrian and Old Babylonian Chronologies",
+   "who": "T. de Jong",
+   "venue": "Jaarbericht Ex Oriente Lux 46: 127–143",
+   "url": "https://dare.uva.nl/id/f84694a6-a8f2-408f-a3dc-d5e1368523e7",
+   "note": "Uses Venus visibility and the Old Assyrian intercalation pattern at Kanesh to argue for the Low Middle Chronology, with Ammi-saduqa year 1 in 1638 BC.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "The Origins of the Assyrian King List",
+   "who": "J. Valk",
+   "venue": "Journal of Ancient Near Eastern History 6 (1)",
+   "url": "https://doi.org/10.1515/janeh-2017-0009",
+   "note": "Argues from internal evidence for a fifteenth-century terminus post quem for the King List, bearing on how far its regnal figures can be trusted for absolute dating.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-08",
+   "kind": "field",
+   "title": "Radiocarbon offsets and old world chronology as relevant to Mesopotamia, Egypt, Anatolia and Thera (Santorini)",
+   "who": "S. W. Manning, L. Wacker, U. Büntgen et al.",
+   "venue": "Scientific Reports 10",
+   "url": "https://doi.org/10.1038/s41598-020-69287-2",
+   "note": "New annual radiocarbon measurements and the IntCal20 curve refine the Anatolian tree-ring placement and reinforce a Middle Chronology fit for Šamšī-Adad I.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2020-08",
+   "kind": "data",
+   "title": "The IntCal20 Northern Hemisphere Radiocarbon Age Calibration Curve (0–55 cal kBP)",
+   "who": "P. J. Reimer et al.",
+   "venue": "Radiocarbon 62 (4)",
+   "url": "https://doi.org/10.1017/RDC.2020.41",
+   "note": "Revised calibration curve with more annual data in the second millennium BCE, against which the Anatolian wiggle-matches were rerun.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-07",
+   "kind": "paper",
+   "title": "Studies on the Old Babylonian Kings of Isin and Their Dynasties with an Updated List of Isin Year Names",
+   "who": "R. de Boer",
+   "venue": "Zeitschrift für Assyriologie 111 (1)",
+   "url": "https://doi.org/10.1515/za-2021-0003",
+   "note": "Five micro-studies on Isin's kings with an updated year-name list, tightening the relative chronology that any absolute anchor must carry.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-09",
+   "kind": "paper",
+   "title": "Third Millennium BC Chronology and Clock-Time Correction",
+   "who": "P. J. Huber",
+   "venue": "Cuneiform Digital Library Preprints 22 (published as ISAW Papers 25, 2023)",
+   "url": "https://cdli.earth/articles/cdlp/22.0",
+   "note": "Argues that eclipse and month-length data give Akkad and Ur III dates about 50 years above conventional ones, consistent with a High Chronology for Babylon I.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-09",
+   "kind": "paper",
+   "title": "The Assyrian Distanzangaben in Relation to the Regnal Years Recorded in the Assyrian King List",
+   "who": "B. Mahieu",
+   "venue": "Iraq 83",
+   "url": "https://doi.org/10.1017/irq.2021.8",
+   "note": "Analyses how the 'distance numbers' in Assyrian royal inscriptions were composed and how far they agree with King List regnal years.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-01",
+   "kind": "paper",
+   "title": "A Synchronized Early Middle Bronze Age Chronology for Egypt, the Levant, and Mesopotamia",
+   "who": "F. Höflmayer and S. W. Manning",
+   "venue": "Journal of Near Eastern Studies 81 (1)",
+   "url": "https://doi.org/10.1086/718498",
+   "note": "Combines Mesopotamian texts, Egyptian chronology and radiocarbon into a single synchronized Middle Bronze Age framework favouring Middle Chronology variants.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-08",
+   "kind": "paper",
+   "title": "Establishing an Absolute Chronology of the Middle Bronze Age",
+   "who": "F. Höflmayer",
+   "venue": "The Oxford History of the Ancient Near East, vol. II",
+   "url": "https://doi.org/10.1093/oso/9780190687571.003.0011",
+   "note": "Survey of historical, stratigraphic and radiocarbon chronologies for the Middle Bronze Age and how recent radiocarbon work loosens dependence on Egypt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-01",
+   "kind": "paper",
+   "title": "A New Old Babylonian Date List with Year Names of Hammurabi",
+   "who": "A. Khwshnaw",
+   "venue": "Journal of Cuneiform Studies 75",
+   "url": "https://doi.org/10.1086/725193",
+   "note": "Publishes a newly identified date list of Hammurabi's year names, adding a source for the internal sequence of the First Dynasty of Babylon.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-03",
+   "kind": "field",
+   "title": "New evidence for Middle Bronze Age chronology from the Syro-Anatolian frontier",
+   "who": "V. R. Herrmann, S. W. Manning, K. R. Morgan, S. Soldi and D. Schloen",
+   "venue": "Antiquity 97",
+   "url": "https://doi.org/10.15184/aqy.2023.30",
+   "note": "Bayesian model of short-lived samples dates a late MB II destruction at Zincirli to c. 1632–1610 BC, linked to Ḫattušili I and fitting High- or Low-Middle Chronology.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-06",
+   "kind": "field",
+   "title": "Towards a Radiocarbon-Based Chronology of Urban Northern Mesopotamia in the Early to Mid-Second Millennium BC: Initial Results from Kurd Qaburstan",
+   "who": "L. Webster, A. Smith, M. W. Dee, I. Hajdas and G. Schwartz",
+   "venue": "Radiocarbon",
+   "url": "https://doi.org/10.1017/rdc.2023.36",
+   "note": "First Bayesian radiocarbon sequence for Old Babylonian-period strata on the Erbil plain, placing the fortified Middle Bronze Age city in the early eighteenth century BC.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

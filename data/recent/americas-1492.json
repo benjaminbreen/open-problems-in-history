@@ -1,0 +1,160 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-01",
+   "kind": "paper",
+   "title": "Native American depopulation, reforestation, and fire regimes in the Southwest United States, 1492–1900 CE",
+   "who": "M. J. Liebmann, J. Farella, C. I. Roos et al.",
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.1521744113",
+   "note": "Dates Pueblo depopulation in the Jemez Mountains with tree rings and links it to forest regrowth and fire, a regional test of contact-era decline.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-11",
+   "kind": "field",
+   "title": "A time transect of exomes from a Native American population before and after European contact",
+   "who": "J. Lindo, E. Huerta-Sánchez, S. Nakagome et al.",
+   "venue": "Nature Communications",
+   "url": "https://doi.org/10.1038/ncomms13175",
+   "note": "Ancient and modern exomes from the Prince Rupert Harbour region model a post-contact population contraction of roughly 57 percent.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-03",
+   "kind": "field",
+   "title": "Pre-Columbian earth-builders settled along the entire southern rim of the Amazon",
+   "who": "J. G. de Souza, D. P. Schaan, M. Robinson et al.",
+   "venue": "Nature Communications",
+   "url": "https://doi.org/10.1038/s41467-018-03510-7",
+   "note": "Survey of fortified villages and earthworks in the upper Tapajós, with a model suggesting up to about a million people in the southern-rim belt.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-09",
+   "kind": "field",
+   "title": "Ancient lowland Maya complexity as revealed by airborne laser scanning of northern Guatemala",
+   "who": "M. A. Canuto, F. Estrada-Belli, T. G. Garrison et al.",
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.aau0137",
+   "note": "PACUNAM lidar over 2,144 km² yields Late Classic population estimates of 7 to 11 million for the lowlands, a reminder of how much earlier densities exceeded contact-era ones.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-09",
+   "kind": "data",
+   "title": "Earth system impacts of European colonization of the Americas",
+   "who": "A. Koch",
+   "venue": "Mendeley Data",
+   "url": "https://doi.org/10.17632/dpw79g6nj3.1",
+   "note": "Released compilation of 119 regional population estimates and land-use parameters underlying the Koch et al. hemispheric reconstruction.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-01",
+   "kind": "paper",
+   "title": "Earth System Impacts of the European Arrival and Great Dying in the Americas after 1492",
+   "who": "A. Koch, C. Brierley, M. M. Maslin and S. L. Lewis",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2018.12.004",
+   "note": "Meta-analysis giving about 60.5 million for 1492 (IQR 44.8–78.2 million) and roughly 90 percent mortality by 1600, tied to a CO2 drop.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "Spatiotemporal patterns of pre-Columbian people in Amazonia",
+   "who": "C. N. H. McMichael and M. B. Bush",
+   "venue": "Quaternary Research",
+   "url": "https://doi.org/10.1017/qua.2018.152",
+   "note": "Distribution models built on radiocarbon-dated sites place late pre-contact Amazonian populations mainly in peripheral and riverine zones rather than across the interior.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-12",
+   "kind": "field",
+   "title": "A genetic history of the pre-contact Caribbean",
+   "who": "D. M. Fernandes, K. A. Sirak, H. Ringbauer et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-020-03053-2",
+   "note": "Genomes of 174 individuals; shared-segment analysis implies Caribbean populations in the low tens of thousands, far below chroniclers' millions for Hispaniola.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "Non-uniform tropical forest responses to the 'Columbian Exchange' in the Neotropics and Asia-Pacific",
+   "who": "R. Hamilton, J. Wolfhagen, N. Amano et al.",
+   "venue": "Nature Ecology & Evolution",
+   "url": "https://doi.org/10.1038/s41559-021-01474-4",
+   "note": "Palaeoecological records show no consistent forest regrowth after contact, questioning reforestation-based inferences about the scale of depopulation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-01",
+   "kind": "data",
+   "title": "p3k14c, a synthetic global database of archaeological radiocarbon dates",
+   "who": "D. Bird, L. Miranda, M. Vander Linden et al.",
+   "venue": "Scientific Data",
+   "url": "https://doi.org/10.1038/s41597-022-01118-7",
+   "note": "Open compilation of over 180,000 dates, heavily weighted to the Americas, used for summed-probability population proxies before contact.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-05",
+   "kind": "field",
+   "title": "Lidar reveals pre-Hispanic low-density urbanism in the Bolivian Amazon",
+   "who": "H. Prümers, C. Jaimes Betancourt, J. Iriarte et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-022-04780-4",
+   "note": "Lidar maps Casarabe-culture settlement networks in the Llanos de Mojos, supporting larger Amazonian populations, though the culture predates 1492.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-10",
+   "kind": "paper",
+   "title": "More than 10,000 pre-Columbian earthworks are still hidden throughout Amazonia",
+   "who": "V. Peripato, C. Levis, G. A. Moreira et al.",
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.ade2541",
+   "note": "Lidar transects and a predictive model estimate 10,000 to 24,000 undiscovered earthworks, implying a larger and more widespread pre-contact Amazonian population.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-01",
+   "kind": "field",
+   "title": "Two thousand years of garden urbanism in the Upper Amazon",
+   "who": "S. Rostain, A. Dorison, G. de Saulieu et al.",
+   "venue": "Science",
+   "url": "https://doi.org/10.1126/science.adi6317",
+   "note": "Lidar of the Upano Valley, Ecuador, reveals dense platform settlements and roads occupied c. 500 BCE to 300–600 CE, abandoned well before contact.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-02",
+   "kind": "paper",
+   "title": "Spatiotemporal distribution of the North American Indigenous population prior to European contact",
+   "who": "R. L. Kelly, M. Mackie, S. Pelton and E. Robinson",
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.2419454122",
+   "note": "Uses over 61,000 radiocarbon dates to model a continental peak around 1150 CE and substantial decline before 1492, lowering the contact baseline for the United States.",
+   "advances": true,
+   "cited": true
+  }
+ ]
+}

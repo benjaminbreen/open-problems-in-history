@@ -1,0 +1,116 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017-02",
+   "kind": "tool",
+   "title": "Deep Learning the Indus Script",
+   "who": "S. Palaniappan and R. Adhikari",
+   "venue": "arXiv",
+   "url": "https://arxiv.org/abs/1702.00523",
+   "note": "Presents a neural pipeline that segments photographs of inscribed objects and outputs grapheme strings, a step toward reproducible corpus building.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "The Indus Script and Economics: A Role for Indus Seals and Tablets in Rationing and Administration of Labor",
+   "who": "R. P. N. Rao",
+   "venue": "Walking with the Unicorn (Archaeopress)",
+   "url": "https://doi.org/10.2307/j.ctv19vbgkc.38",
+   "note": "One of the 2009 entropy authors proposes an administrative reading of seals and tablets as records of rations and labour, without phonetic values.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "Interrogating Indus inscriptions to unravel their mechanisms of meaning conveyance",
+   "who": "B. A. Mukhopadhyay",
+   "venue": "Palgrave Communications",
+   "url": "https://doi.org/10.1057/s41599-019-0274-1",
+   "note": "Argues from co-occurrence, collocation and positional patterns that seals and tablets were formalised data-carriers, like proto-cuneiform tablets, mixing document and linguistic syntax.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-02",
+   "kind": "paper",
+   "title": "A method of identifying allographs in undeciphered scripts and its application to the Indus Valley Script",
+   "who": "S. Daggumati and P. Z. Revesz",
+   "venue": "Humanities and Social Sciences Communications",
+   "url": "https://doi.org/10.1057/s41599-021-00713-0",
+   "note": "Uses sign positions to show that many mirrored signs are directional variants, implying a smaller sign list and affecting entropy-based comparisons.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-09",
+   "kind": "paper",
+   "title": "Linguistic Hegemony and Latent Typology: The Case of Harappan Script Scholarship",
+   "who": "P. Gokhale",
+   "venue": "South Asian Studies",
+   "url": "https://doi.org/10.1080/02666030.2022.2111092",
+   "note": "Historiographical critique arguing that the field has been dominated by the assumption that the signs encode language, and tracing its causes.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023",
+   "kind": "data",
+   "title": "A Catalog of Indus Signs",
+   "who": "A. Fuls",
+   "venue": "Harappa.com",
+   "url": "https://www.harappa.com/content/catalog-indus-signs",
+   "note": "Published sign catalogue from the ICIT project, giving a documented sign list and variants against which corpus statistics can be checked.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Semantic scope of Indus inscriptions comprising taxation, trade and craft licensing, commodity control and access control: archaeological and script-internal evidence",
+   "who": "B. A. Mukhopadhyay",
+   "venue": "Humanities and Social Sciences Communications",
+   "url": "https://doi.org/10.1057/s41599-023-02320-7",
+   "note": "Argues the inscriptions encode no proper names and served semasiographic or logographic administrative functions, a middle position between full writing and emblem.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-01",
+   "kind": "prize",
+   "title": "Tamil Nadu offers US$1 million prize for Indus script decipherment",
+   "who": "Government of Tamil Nadu",
+   "venue": "Indus Civilisation centenary seminar, Chennai",
+   "url": "https://www.smithsonianmag.com/smart-news/officials-are-offering-1-million-to-anyone-who-can-decode-this-ancient-script-180985922/",
+   "note": "Announced with a state archaeology study comparing about 15,000 graffiti-marked sherds from Tamil Nadu sites with Indus signs; the prize presumes a decipherable script.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-04",
+   "kind": "paper",
+   "title": "How Non-Linguistic Is the Indus Sign System? A Synthetic-Baseline Scorecard",
+   "who": "A. Nair",
+   "venue": "arXiv (preprint)",
+   "url": "https://arxiv.org/abs/2604.17828",
+   "note": "Scores 1,916 deduplicated inscriptions against synthetic heraldic and administrative baselines and finds the corpus matches neither cleanly.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-08",
+   "kind": "paper",
+   "title": "On the Non-Specificity of Statistical Measures Used in Script Decipherment",
+   "who": "N. Raghavendra",
+   "venue": "arXiv (preprint)",
+   "url": "https://arxiv.org/abs/2608.02999",
+   "note": "Builds a synthetic emblem system with no phonology and, using a pre-compiled registry of 54 methods, finds it classed with the Indus corpus on every reproducible test.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

@@ -1,0 +1,149 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-07",
+   "kind": "paper",
+   "title": "Anatomising Irish rebellion: the Cromwellian delinquency commissions, the books of discrimination and the 1641 depositions",
+   "who": "J. Cunningham",
+   "venue": "Irish Historical Studies",
+   "url": "https://doi.org/10.1017/ihs.2016.3",
+   "note": "Explains the 1653–4 'delinquency depositions' within the collection, which were gathered to assign guilt for the land settlement and must be weighed differently from 1641–2 testimony.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-05",
+   "kind": "paper",
+   "title": "Portadown, 1641: Memory and the 1641 Depositions",
+   "who": "N. McAreavey",
+   "venue": "Irish University Review",
+   "url": "https://doi.org/10.3366/iur.2017.0254",
+   "note": "Separates eyewitness, hearsay and later testimony on the Portadown drownings, showing how one atrocity was reported in divergent versions and numbers.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-09",
+   "kind": "paper",
+   "title": "Religion, ethnicity and \"conversion\" in the 1641 Irish Rebellion",
+   "who": "J. Redmond",
+   "venue": "The Seventeenth Century",
+   "url": "https://doi.org/10.1080/0268117x.2019.1658618",
+   "note": "Uses the depositions to examine forced and voluntary conversion during the rising, which bears on who was counted as a Protestant victim.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "Children's Experiences of Violence during the Irish Rebellion of 1641",
+   "who": "N. McAreavey",
+   "venue": "Parergon",
+   "url": "https://doi.org/10.1353/pgn.2021.0071",
+   "note": "Studies how deponents recorded violence against and witnessed by children, a category often folded into aggregate claims of the dead.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-01",
+   "kind": "data",
+   "title": "Publication of Volume VI of the 1641 Depositions series (King's and Queen's Counties)",
+   "who": "Irish Manuscripts Commission (A. Clarke et al.)",
+   "venue": "Irish Manuscripts Commission",
+   "url": "https://irishmanuscripts.ie/publication-of-volume-vi-of-the-1641-depositions-series",
+   "note": "Continues the twelve-volume print edition of the depositions; the IMC's announcements suggest some volumes, such as Wexford, appeared as late as 2024.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-05",
+   "kind": "paper",
+   "title": "Religion, civility and the 'British' of Ireland in the 1641 Irish rebellion",
+   "who": "J. Redmond",
+   "venue": "Irish Historical Studies",
+   "url": "https://doi.org/10.1017/ihs.2021.27",
+   "note": "Analyses a neglected 1643 treatise by Henry Jones and fellow deposition commissioners, the men who shaped how the testimony was collected and framed.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-11",
+   "kind": "paper",
+   "title": "Crowds and political violence in early modern Ireland: Galway and the 1641 depositions",
+   "who": "J. Walter",
+   "venue": "Irish Historical Studies",
+   "url": "https://doi.org/10.1017/ihs.2021.51",
+   "note": "Reconstructs crowd violence in Galway from the depositions, showing patterns of attack, restraint and plunder outside Ulster.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-08",
+   "kind": "paper",
+   "title": "1641 Depositions [review of the digital edition]",
+   "who": "M. K. Smith",
+   "venue": "Early Modern Digital Review",
+   "url": "https://doi.org/10.33137/emdr.v5i3.41477",
+   "note": "Reviews the Trinity College Dublin online edition, the transcribed and searchable base on which any victim-level database would be built.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-03",
+   "kind": "paper",
+   "title": "Reading the 1641 Irish Rebellion",
+   "who": "E. Darcy",
+   "venue": "Exciting News! (Brill)",
+   "url": "https://doi.org/10.1163/9789004689831_009",
+   "note": "Examines how news pamphlets reported the rising in England, the channel through which inflated death tolls circulated.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-05",
+   "kind": "paper",
+   "title": "Women and Sexual Violence in the \"1641 Depositions\"",
+   "who": "J. Ohlmeyer",
+   "venue": "Law and History Review",
+   "url": "https://doi.org/10.1017/S0738248025101089",
+   "note": "Reads the depositions for evidence of sexual violence against women, attending to the legal framing and silences of the testimony.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-09",
+   "kind": "paper",
+   "title": "Rereading Rape and Sexual Violence in the Irish Rebellion of 1641",
+   "who": "N. McAreavey",
+   "venue": "Early Modern Women",
+   "url": "https://doi.org/10.1086/736762",
+   "note": "Reassesses reports of rape in the depositions and how historians have discounted or used them.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-06",
+   "kind": "paper",
+   "title": "Religion, Rebellion and Violence in Ireland, c. 1603-1649",
+   "who": "J. Redmond",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781009612203",
+   "note": "First full study of religious violence in early Stuart Ireland, centred on the 1641 rebellion and the depositions.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "The 1641 Depositions and the textual record of historical Irish English",
+   "who": "T. Fanego and S. Johnston",
+   "venue": "Research in Corpus Linguistics",
+   "url": "https://doi.org/10.32714/ricl.14.01.02",
+   "note": "Treats the depositions as a linguistic corpus, showing that clerical mediation of testimony can be analysed systematically, relevant to coding deponents' voices.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

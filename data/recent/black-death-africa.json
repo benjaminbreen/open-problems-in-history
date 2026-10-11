@@ -1,0 +1,171 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-06",
+   "kind": "field",
+   "title": "Changing Crafts in the Spaces Between States: Formal, Functional, and Decorative Transformations in Fifteenth-Century CE Ceramics at Kirikongo, Burkina Faso",
+   "who": "S. A. Dueppen and D. E. Gallagher",
+   "venue": "African Archaeological Review",
+   "url": "https://doi.org/10.1007/s10437-016-9219-x",
+   "note": "Documents ceramic change at Kirikongo after its fourteenth-century contraction, one of the West African disruptions later weighed as a possible plague signature.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "Reflections on Plague in African History (14th–19th c.)",
+   "who": "G. Chouin",
+   "venue": "Afriques 09",
+   "url": "https://doi.org/10.4000/afriques.2228",
+   "note": "Lead article of a special issue arguing that plague reached West Africa in the fourteenth century, citing site abandonments in the forest zone and breaks in oral tradition.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "Putting Africa on the Black Death Map: Narratives from Genetics and History",
+   "who": "M. H. Green",
+   "venue": "Afriques 09",
+   "url": "https://doi.org/10.4000/afriques.2125",
+   "note": "Reads the phylogeny of modern African Y. pestis strains as consistent with medieval introductions and sets out what ancient DNA would need to show.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "Recognizing Plague Epidemics in the Archaeological Record of West Africa",
+   "who": "D. E. Gallagher and S. A. Dueppen",
+   "venue": "Afriques 09",
+   "url": "https://doi.org/10.4000/afriques.2198",
+   "note": "Cautions that abandonment and contraction cannot by themselves distinguish plague from other causes, and identifies signatures that could.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "Du lexique aux talismans : occurrences de la peste dans la Corne de l'Afrique du XIIIe au XVe siècle",
+   "who": "M.-L. Derat",
+   "venue": "Afriques 09",
+   "url": "https://doi.org/10.4000/afriques.2090",
+   "note": "Identifies Ge'ez epidemic vocabulary, hagiographic episodes and protective texts in medieval Ethiopia that may refer to plague, without fixing the disease.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "A Fistful of Shells: West Africa from the Rise of the Slave Trade to the Age of Revolution",
+   "who": "T. Green",
+   "venue": "University of Chicago Press",
+   "url": "https://openlibrary.org/isbn/9780226644578",
+   "note": "Synthesis of West African history that treats fourteenth-century epidemic disruption as a plausible but unproven background to Atlantic contact.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "The Black Death may have transformed medieval societies in sub-Saharan Africa",
+   "who": "L. Wade",
+   "venue": "Science (news)",
+   "url": "https://doi.org/10.1126/science.aax2478",
+   "note": "Reports the case from Ghana, Burkina Faso and Ethiopia alongside sceptics, and notes that early ancient DNA screening of African samples had found no Y. pestis.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-10",
+   "kind": "field",
+   "title": "Phylogeography of the second plague pandemic revealed through analysis of historical Yersinia pestis genomes",
+   "who": "M. A. Spyrou et al.",
+   "venue": "Nature Communications",
+   "url": "https://doi.org/10.1038/s41467-019-12154-0",
+   "note": "Thirty-four ancient genomes from European sites trace second-pandemic diversification, the framework into which any African genome would have to fit.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "The Four Black Deaths",
+   "who": "M. H. Green",
+   "venue": "American Historical Review",
+   "url": "https://doi.org/10.1093/ahr/rhaa511",
+   "note": "Reframes the pandemic as thirteenth-century Mongol-era spread from new reservoirs, with one branch of the 'Big Bang' radiation linked to routes toward Africa.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022",
+   "kind": "field",
+   "title": "Témoins africains de crises sanitaires ?",
+   "who": "C. Chapelain de Seréville-Niel and G. Chouin",
+   "venue": "Les Nouvelles de l'Archéologie",
+   "url": "https://doi.org/10.4000/nda.14255",
+   "note": "Reports ongoing analysis of a 1961 Benin City mass grave of about forty individuals and a child from Ile-Ife excavated in 2019, as candidate plague evidence.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-06",
+   "kind": "field",
+   "title": "The source of the Black Death in fourteenth-century central Eurasia",
+   "who": "M. A. Spyrou et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-022-04800-3",
+   "note": "Genomes from Tian Shan burials of 1338–39 place the second pandemic's ancestral strain there, fixing the starting point for any route to Africa.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-03",
+   "kind": "field",
+   "title": "Entwined African and Asian genetic roots of medieval peoples of the Swahili coast",
+   "who": "E. S. Brielle et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-023-05754-w",
+   "note": "Human genomes from medieval and early modern Swahili burials; the released data could be screened for pathogen DNA.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-10",
+   "kind": "tool",
+   "title": "aMeta: an accurate and memory-efficient ancient metagenomic profiling workflow",
+   "who": "Z. Pochon et al.",
+   "venue": "Genome Biology",
+   "url": "https://doi.org/10.1186/s13059-023-03083-9",
+   "note": "Open workflow for detecting and authenticating microbial DNA in ancient shotgun data, applicable to re-screening African sequencing data for Y. pestis.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024",
+   "kind": "field",
+   "title": "Retour sur l’archéologie mortuaire d’époque médiévale dans le sud-ouest du Nigéria",
+   "who": "C. Chapelain de Seréville-Niel, G. Chouin and A. Ogunfolakan",
+   "venue": "Afrique : Archéologie & Arts",
+   "url": "https://doi.org/10.4000/12meo",
+   "note": "Examines stratigraphy, body positions and bone markings of the Benin City and Ile-Ife remains against both the plague hypothesis and local mortuary practice.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-11",
+   "kind": "field",
+   "title": "Global evolutionary patterns of Yersinia pestis and its spread into Africa",
+   "who": "G. Mas Fiol et al.",
+   "venue": "bioRxiv preprint",
+   "url": "https://doi.org/10.1101/2024.11.26.625443",
+   "note": "Genomes of 1,124 modern isolates date the 1.ANT lineage's spread into and within Africa to the late seventeenth century onward, against a medieval introduction.",
+   "advances": true,
+   "cited": true
+  }
+ ]
+}

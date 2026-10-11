@@ -1,0 +1,149 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Beowulf Unlocked: New Evidence from Lexomic Analysis",
+   "who": "M. D. C. Drout, Y. Kisor, L. Smith et al.",
+   "venue": "Palgrave Macmillan",
+   "url": "https://doi.org/10.1007/978-3-319-30628-5",
+   "note": "Cluster analysis of vocabulary distribution finds lexically distinct segments, which the authors read as traces of the poet's varied sources rather than multiple authors.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "The Evolution of Verse Structure in Old and Middle English Poetry",
+   "who": "G. Russom",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781316562925",
+   "note": "Traces metrical change across alliterative verse and treats Beowulf's meter as representative of an early stage of the tradition.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-05",
+   "kind": "paper",
+   "title": "The Transmission of Beowulf: Language, Culture, and Scribal Behavior",
+   "who": "L. Neidorf",
+   "venue": "Cornell University Press",
+   "url": "https://muse.jhu.edu/book/52637",
+   "note": "Separates scribal modernization and error from the poet's archaic language, arguing the text preserves an early eighth-century composition.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-04",
+   "kind": "paper",
+   "title": "Communal Creativity in the Making of the 'Beowulf' Manuscript: Towards a History of Reception for the Nowell Codex",
+   "who": "S. C. Thomson",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004360860",
+   "note": "Close study of the two scribes and the codex's making around 1000, relevant to how far the copy reflects a much older exemplar.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-11",
+   "kind": "paper",
+   "title": "Metrics, Scribes, and Beowulf: A Response to Neidorf (2017), The Transmission of Beowulf",
+   "who": "N. Goering",
+   "venue": "Neophilologus",
+   "url": "https://doi.org/10.1007/s11061-018-9583-7",
+   "note": "Critical response questioning parts of Neidorf's metrical reasoning about scribal alteration, a sign the early-date case is still being tested in detail.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-04",
+   "kind": "tool",
+   "title": "Large-scale quantitative profiling of the Old English verse tradition",
+   "who": "L. Neidorf, M. S. Krieger, M. Yakubek, P. Chaudhuri and J. P. Dexter",
+   "venue": "Nature Human Behaviour",
+   "url": "https://doi.org/10.1038/s41562-019-0570-1",
+   "note": "Computational profiling of metrical, lexical and stylistic features across Old English verse finds Beowulf stylistically uniform, supporting single authorship over late compilation.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-07",
+   "kind": "paper",
+   "title": "Old Norse Influence on the Language of Beowulf: A Reassessment",
+   "who": "L. Neidorf and R. J. Pascual",
+   "venue": "Journal of Germanic Linguistics",
+   "url": "https://doi.org/10.1017/s1470542718000144",
+   "note": "Tests each alleged Nordicism proposed by R. Frank and argues all are better explained as archaic features, removing a main linguistic support for a Viking-age date.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2022-04",
+   "kind": "paper",
+   "title": "The Nordic Beowulf",
+   "who": "B. Gräslund",
+   "venue": "Arc Humanities Press",
+   "url": "https://doi.org/10.1017/9781802700237",
+   "note": "Archaeologist argues the poem's material and social world was created orally in sixth-century Scandinavia, shifting the question toward the age of the underlying tradition.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-08",
+   "kind": "paper",
+   "title": "Beowulf and the North before the Vikings",
+   "who": "T. Shippey",
+   "venue": "Arc Humanities Press",
+   "url": "https://doi.org/10.1017/9781802700541",
+   "note": "Argues the poem's consistent picture of fifth- and sixth-century northern history is corroborated by archaeology, which sits more easily with early composition.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-01",
+   "kind": "paper",
+   "title": "The Art and Thought of the Beowulf Poet",
+   "who": "L. Neidorf",
+   "venue": "Cornell University Press",
+   "url": "https://doi.org/10.7591/cornell/9781501766909.001.0001",
+   "note": "Literary study that reads the poet's ethics and theology against an early eighth-century Anglo-Saxon setting assumed from the linguistic dating.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-04",
+   "kind": "paper",
+   "title": "Prosody in Medieval English and Norse",
+   "who": "N. Goering",
+   "venue": "British Academy / Oxford University Press",
+   "url": "https://doi.org/10.5871/bacad/9780197267462.001.0001",
+   "note": "Reanalyses Old English and Norse metre in terms of bimoraism, including a chapter on Kaluza's law in Beowulf, the central metrical argument for an early date.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-10",
+   "kind": "paper",
+   "title": "Beowulf as a Source Text for Archaic Features",
+   "who": "R. D. Fulk",
+   "venue": "The New Cambridge History of the English Language",
+   "url": "https://doi.org/10.1017/9781009205443.017",
+   "note": "Handbook chapter setting out the archaic phonological, morphological and metrical features that underpin the case for composition before about 725.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026",
+   "kind": "data",
+   "title": "Electronic Beowulf, fifth edition",
+   "who": "K. Kiernan (University of Kentucky)",
+   "venue": "University of Kentucky",
+   "url": "https://ebeowulf.uky.edu/",
+   "note": "New edition of the digital facsimile and edition, adding full-word transcript search, metrical analyses and comparison with the Thorkelin transcripts and collations.",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}

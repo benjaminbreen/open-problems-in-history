@@ -7,6 +7,8 @@ A ranked list of open problems in history, with voting, comments and suggestions
 One file per problem in `data/problems/` (schema in `data/SCHEMA.md`).
 After editing, run `npm run data`. It rebuilds `data/problems.json`, the pre-rendered pages (`index.html`, `p/<id>/index.html`) and `llms.txt` from `template.html` and `render.js`. Commit the output.
 
+Recent work for each problem (papers, datasets, digitization, lab and field results, tools, events since 2016) lives in `data/recent/<id>.json`; see `data/recent/BRIEF.md`.
+
 ## Images
 
 Source images come from Wikimedia Commons. Each problem has `data/images/<id>.json` (caption, author, licence, crop, optional `zoom`, `invert`, `style`); the downloaded originals in `data/images/src/` are not committed. `python3 scripts/images.py` makes the red halftones in `img/` and the share cards in `og/`; then run `npm run data`.

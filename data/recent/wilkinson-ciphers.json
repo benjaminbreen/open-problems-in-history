@@ -1,0 +1,61 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Borderland Diplomacy: Western Elites and the \"Spanish Conspiracy\"",
+   "who": "S. G. Stearns",
+   "venue": "Register of the Kentucky Historical Society",
+   "url": "https://doi.org/10.1353/khs.2016.0065",
+   "note": "Reads the Kentucky dealings with Spanish Louisiana, in which Wilkinson was the central go-between, as western elite diplomacy rather than simple treason.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-10",
+   "kind": "paper",
+   "title": "The Burr Conspiracy: Uncovering the Story of an Early American Crisis",
+   "who": "J. E. Lewis Jr.",
+   "venue": "Princeton University Press",
+   "url": "https://doi.org/10.1515/9781400888825",
+   "note": "Includes a chapter on the 1806 cipher letter as a narrative that Wilkinson decoded, altered and circulated, the best-studied of his coded documents.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-02",
+   "kind": "paper",
+   "title": "Spanish Attempts to Apprehend Lewis and Clark",
+   "who": "D. Sturdevant and J. H. Buckley",
+   "venue": "We Proceeded On",
+   "url": "https://scholarsarchive.byu.edu/facpub/7416",
+   "note": "Traces how Wilkinson's secret reports to Spanish officials prompted expeditions to intercept Lewis and Clark, showing what his dispatches could set in motion.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-10",
+   "kind": "data",
+   "title": "wilkinson: deciphering the Wilkinson cipher",
+   "who": "C. Chu",
+   "venue": "GitHub",
+   "url": "https://github.com/c2huc2hu/wilkinson",
+   "note": "Public transcriptions of Library of Congress photostat letters, extracted wordbanks, an evaluation pair and unsolved letters split by the 1078 and 1096 code systems.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-11",
+   "kind": "tool",
+   "title": "Solving Historical Dictionary Codes with a Neural Language Model",
+   "who": "C. Chu, R. Valenti and K. Knight",
+   "venue": "EMNLP 2020",
+   "url": "https://doi.org/10.18653/v1/2020.emnlp-main.471",
+   "note": "Lattice search with a neural language model recovered about 75% of word tokens in a held-out letter without identifying the printed dictionary behind the code.",
+   "advances": true,
+   "cited": true
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017-03",
+   "kind": "paper",
+   "title": "Newest Sources of Western Zhou History: Inscribed Bronze Vessels, 2000–2010",
+   "who": "E. L. Shaughnessy",
+   "venue": "Imprints of Kinship (Chinese University Press)",
+   "url": "https://doi.org/10.2307/j.ctv2n7r6s.10",
+   "note": "Surveys inscribed bronzes found in 2000–2010, the new dated inscriptions against which any reconstructed Western Zhou calendar is now tested.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-07",
+   "kind": "paper",
+   "title": "The Nivison Annals: Selected Works of David S. Nivison on Early Chinese Chronology, Astronomy, and Historiography",
+   "who": "D. S. Nivison (ed. A. C. Schwartz)",
+   "venue": "De Gruyter",
+   "url": "https://doi.org/10.1515/9781501505393",
+   "note": "Collected papers, including a record of the Nivison–Shaughnessy debate on the Bamboo Annals and Nivison's later arguments for a conquest in the 1040s.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "data",
+   "title": "Yinqi wenyuan (殷契文渊) oracle-bone inscription data platform",
+   "who": "Anyang Normal University and CASS",
+   "venue": "jgw.aynu.edu.cn",
+   "url": "https://jgw.aynu.edu.cn/",
+   "note": "Free online corpus of some 230,000 oracle-bone images and 150 publications, the base for late Shang reign sequences and eclipse records; upgraded in 2024.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-10",
+   "kind": "field",
+   "title": "Radiocarbon Dating of Oracle Bones of Late Shang Period in Ancient China",
+   "who": "K. Liu, X. Wu, Z. Guo et al.",
+   "venue": "Radiocarbon",
+   "url": "https://doi.org/10.1017/rdc.2020.90",
+   "note": "Sequenced AMS dates on oracle bones assigned to successive kings place Wu Ding at about 1254–1197 BC and the end of Shang around 1041 BC.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "Xia Shang Zhou duandai gongcheng baogao (夏商周断代工程报告)",
+   "who": "Xia-Shang-Zhou Chronology Project expert group",
+   "venue": "Science Press, Beijing",
+   "url": "https://www.rujiazg.com/article/23768",
+   "note": "Final report of the state chronology project, launched in July 2022, keeping 1046 BCE (dated to 20 January) for the conquest as in the 2000 summary.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-05",
+   "kind": "paper",
+   "title": "The Chronology of Western Zhou",
+   "who": "Zhang Pengcheng",
+   "venue": "Early China",
+   "url": "https://doi.org/10.1017/eac.2022.5",
+   "note": "Rebuilds the lunar-phase terms from fully dated bronzes and argues for an initial campaign in 1046 and Zhòu's defeat in 1044 BCE, rejecting the current Bamboo Annals.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2023-09",
+   "kind": "paper",
+   "title": "The Xia Shang Zhou duandai gongcheng baogao and Its Chronology of the Western Zhou Dynasty",
+   "who": "E. L. Shaughnessy",
+   "venue": "Early China",
+   "url": "https://doi.org/10.1017/eac.2024.2",
+   "note": "Review of the Project's 2022 final report, arguing that bronzes published since 2000 show its Western Zhou absolute chronology to be fundamentally flawed and that the report left it uncorrected.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "field",
+   "title": "A View from the Countryside: Radiocarbon Chronology for Zaolinhetan of the Pre-Zhou Culture in Early Dynastic China",
+   "who": "X. Li, W. Liu, Y. Xu et al.",
+   "venue": "Radiocarbon",
+   "url": "https://doi.org/10.1017/rdc.2023.121",
+   "note": "High-resolution dates from a pre-Zhou settlement in the Jing valley show abandonment around 1100 BCE as Zhouyuan expanded, constraining the pre-conquest sequence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-01",
+   "kind": "field",
+   "title": "A modeling radiocarbon dating for the founding of Yan Vassal State in Western Zhou Dynasty",
+   "who": "X. Ouyang, X. Wu, J. Wang et al.",
+   "venue": "Radiocarbon",
+   "url": "https://doi.org/10.1017/rdc.2024.117",
+   "note": "Wiggle-matched skeletal samples from a Liulihe tomb whose bronze records the founding of Yan's capital give a death date of about 1045–1010 BC, close to the conquest.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

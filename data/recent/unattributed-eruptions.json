@@ -1,0 +1,303 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2017-01",
+   "kind": "paper",
+   "title": "Climate response to the Samalas volcanic eruption in 1257 revealed by proxy records",
+   "who": "S. Guillet, C. Corona, M. Stoffel, M. Khodri et al.",
+   "venue": "Nature Geoscience",
+   "url": "https://doi.org/10.1038/ngeo2875",
+   "note": "Combined tree rings with medieval European chronicles to reconstruct the aftermath of 1257, showing how documentary series can test an attribution.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-11",
+   "kind": "data",
+   "title": "Volcanic stratospheric sulfur injections and aerosol optical depth from 500 BCE to 1900 CE",
+   "who": "M. Toohey and M. Sigl",
+   "venue": "Earth System Science Data",
+   "url": "https://doi.org/10.5194/essd-9-809-2017",
+   "note": "The eVolv2k database of sulfur injection estimates per event, assigning unidentified bipolar events a default equatorial source.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-02",
+   "kind": "field",
+   "title": "First identification of cryptotephra from the Kamchatka Peninsula in a Greenland ice core: Implications of a widespread marker deposit that links Greenland to the Pacific northwest",
+   "who": "E. Cook, M. Portnyagin, V. Ponomareva et al.",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2017.11.036",
+   "note": "First Kamchatkan glass found in Greenland ice, showing that North Pacific volcanoes must be considered as sources of Greenland signals.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-02",
+   "kind": "grant",
+   "title": "VEILA: Identifying the source of unknown volcanic eruptions in Late Antiquity",
+   "who": "University of Cambridge",
+   "venue": "EU Horizon 2020 (Marie Skłodowska-Curie fellowship)",
+   "url": "https://cordis.europa.eu/project/id/800204",
+   "note": "Fellowship (2019–2021, €183,455) to locate the sources of unattributed sixth- and seventh-century eruptions through tephra in polar ice and equatorial lake cores.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-03",
+   "kind": "grant",
+   "title": "THERA: Timing of Holocene volcanic eruptions and their radiative aerosol forcing",
+   "who": "M. Sigl, University of Bern",
+   "venue": "European Research Council",
+   "url": "https://cordis.europa.eu/project/id/820047",
+   "note": "ERC grant (2019–2024, €1.98 million) to fix the timing, sulfate magnitude and source location of all major Holocene eruptions from bipolar ice-core arrays.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-09",
+   "kind": "field",
+   "title": "Stratospheric eruptions from tropical and extra-tropical volcanoes constrained using high-resolution sulfur isotopes in ice cores",
+   "who": "A. Burke, K. A. Moore, M. Sigl et al.",
+   "venue": "Earth and Planetary Science Letters",
+   "url": "https://doi.org/10.1016/j.epsl.2019.06.006",
+   "note": "Uses mass-independent sulfur isotopes to tell stratospheric from tropospheric sulfate, so that bipolar spikes need not be assumed tropical.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-10",
+   "kind": "field",
+   "title": "Volcanic glass properties from 1459 C.E. volcanic event in South Pole ice core dismiss Kuwae caldera as a potential source",
+   "who": "L. H. Hartman, A. V. Kurbatov, D. A. Winski et al.",
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/s41598-019-50939-x",
+   "note": "Glass from the 1458 sulfate layer at South Pole is chemically unlike Kuwae products; Mount Reclus is named as one possible contributor.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "grant",
+   "title": "Taking Earth's volcanic pulse: understanding global volcanic hazards by unlocking the ice core archive",
+   "who": "W. Hutchison, University of St Andrews",
+   "venue": "UKRI Future Leaders Fellowship",
+   "url": "https://gtr.ukri.org/projects?ref=MR%2FS033505%2F1",
+   "note": "Fellowship of £468,072 (2019–2023), renewed for 2023–2027 (£594,675), for ice-core tephra and sulfur-isotope work; Hutchison led the 2024 Zavaritskii attribution of 1831.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-04",
+   "kind": "grant",
+   "title": "DFG Research Unit VolImpact: Revisiting the volcanic impact on atmosphere and climate",
+   "who": "C. von Savigny, C. Timmreck et al.",
+   "venue": "Meteorologische Zeitschrift",
+   "url": "https://doi.org/10.1127/metz/2019/0999",
+   "note": "Describes a German multi-institution research unit on volcanic forcing of atmosphere and climate whose members include authors of the 1809 'cold case' review.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-04",
+   "kind": "paper",
+   "title": "Climatic and societal impacts of a \"forgotten\" cluster of volcanic eruptions in 1108–1110 CE",
+   "who": "S. Guillet, C. Corona, F. Ludlow, C. Oppenheimer et al.",
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/s41598-020-63339-3",
+   "note": "Used European and Japanese written sources with ice cores and tree rings to identify an overlooked cluster, a template for documentary attribution.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-06",
+   "kind": "field",
+   "title": "Smoking guns and volcanic ash: the importance of sparse tephras in Greenland ice cores",
+   "who": "G. Plunkett, M. Sigl, J. R. Pilcher, J. R. McConnell et al.",
+   "venue": "Polar Research",
+   "url": "https://doi.org/10.33265/polar.v39.3511",
+   "note": "Argues that sparse glass shards in Greenland ice can still fingerprint the volcanoes behind sulfate signals and should be sought systematically.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-03",
+   "kind": "field",
+   "title": "Cryptotephra from the Icelandic Veiðivötn 1477 CE eruption in a Greenland ice core: confirming the dating of volcanic events in the 1450s CE and assessing the eruption's climatic impact",
+   "who": "P. M. Abbott, G. Plunkett, C. Corona et al.",
+   "venue": "Climate of the Past",
+   "url": "https://doi.org/10.5194/cp-17-565-2021",
+   "note": "A tephra tie-point confirms the ice-core chronology around the 1450s, fixing the date of the 1458 spike independently of its source.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-07",
+   "kind": "paper",
+   "title": "The unidentified eruption of 1809: a climatic cold case",
+   "who": "C. Timmreck, M. Toohey, D. Zanchettin et al.",
+   "venue": "Climate of the Past",
+   "url": "https://doi.org/10.5194/cp-17-1455-2021",
+   "note": "Reviewed ice-core, instrumental and documentary evidence and modelled the climate response, concluding that source, season and exact year remain unknown.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-08",
+   "kind": "paper",
+   "title": "The blue suns of 1831: was the eruption of Ferdinandea, near Sicily, one of the largest volcanic climate forcing events of the nineteenth century?",
+   "who": "C. S. Garrison, C. R. J. Kilburn, D. E. Smart et al.",
+   "venue": "Climate of the Past Discussions",
+   "url": "https://doi.org/10.5194/cp-2021-78",
+   "note": "Discussion paper using reports of a blue and green sun in August 1831 to trace the aerosol plume to Ferdinandea, a claim later superseded by the Zavaritskii match.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-05",
+   "kind": "paper",
+   "title": "Climatic, weather, and socio-economic conditions corresponding to the mid-17th-century eruption cluster",
+   "who": "M. Stoffel, C. Corona, F. Ludlow et al.",
+   "venue": "Climate of the Past",
+   "url": "https://doi.org/10.5194/cp-18-1083-2022",
+   "note": "Combines tree rings and written sources for the 1640s cluster, where candidate volcanoes such as Parker and Komaga-take lack tephra confirmation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-07",
+   "kind": "data",
+   "title": "Volcanic stratospheric sulfur injections and aerosol optical depth during the Holocene (past 11 500 years) from a bipolar ice-core array",
+   "who": "M. Sigl, M. Toohey, J. R. McConnell et al.",
+   "venue": "Earth System Science Data",
+   "url": "https://doi.org/10.5194/essd-14-3167-2022",
+   "note": "HolVol v1.0 extends the event list to 9500 BCE with magnitudes and approximate source latitudes for each sulfate signal.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-02",
+   "kind": "field",
+   "title": "The significance of volcanic ash in Greenland ice cores during the Common Era",
+   "who": "G. Plunkett, M. Sigl, J. R. McConnell et al.",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2022.107936",
+   "note": "Systematic survey of tephra in Greenland sulfate layers of the Common Era, including the 1809 interval, often finding several sources per layer.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-04",
+   "kind": "paper",
+   "title": "Lunar eclipses illuminate timing and climate impact of medieval volcanism",
+   "who": "S. Guillet, C. Corona, C. Oppenheimer et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-023-05751-z",
+   "note": "Uses dark total lunar eclipses in medieval chronicles to date stratospheric aerosol veils of 1100–1300, tightening timing for several unattributed events.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-11",
+   "kind": "field",
+   "title": "High sensitivity of summer temperatures to stratospheric sulfur loading from volcanoes in the Northern Hemisphere",
+   "who": "A. Burke, H. M. Innes, L. Crick, K. J. Anchukaitis et al.",
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.2221810120",
+   "note": "Sulfur isotopes across the 540s, 1450s and 1600s link the strongest cooling to extratropical eruptions, complicating a single tropical Kuwae source for 1458.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Evidence at source for the mid-fifteenth century eruption of Kuwae, Vanuatu",
+   "who": "C. Ballard, S. Bedford, S. J. Cronin and S. Stern",
+   "venue": "Journal of Applied Volcanology",
+   "url": "https://doi.org/10.1186/s13617-023-00138-1",
+   "note": "Reviews historical, archaeological and volcanological evidence at Kuwae and argues for a major regional eruption while noting its global signature is unresolved.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024",
+   "kind": "data",
+   "title": "Volcanic stratospheric sulfur injections from 500 BCE to 1900 CE, eVolv2k_version4",
+   "who": "M. Sigl and M. Toohey",
+   "venue": "PANGAEA",
+   "url": "https://doi.pangaea.de/10.1594/PANGAEA.971968",
+   "note": "Current event table with injection estimates and attributed sources; 1230, 1286, 1695 and 1809 remain without a source.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-06",
+   "kind": "field",
+   "title": "Five Large 13th Century C.E. Volcanic Eruptions Recorded in Antarctica Ice Cores",
+   "who": "J. Cole-Dai, D. L. Brandis, D. G. Ferris et al.",
+   "venue": "Atmosphere",
+   "url": "https://doi.org/10.3390/atmos15060661",
+   "note": "Antarctic and Greenland records show five large thirteenth-century eruptions, Samalas among them, most with bipolar signals suggesting low-latitude sources.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-12",
+   "kind": "field",
+   "title": "The 1831 CE mystery eruption identified as Zavaritskii caldera, Simushir Island (Kurils)",
+   "who": "W. Hutchison, P. Sugden, A. Burke et al.",
+   "venue": "PNAS",
+   "url": "https://doi.org/10.1073/pnas.2416699122",
+   "note": "Matched cryptotephra in Greenland ice to proximal deposits of a remote Kuril caldera, resolving a nineteenth-century unattributed spike.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2025",
+   "kind": "paper",
+   "title": "La mémoire orale du peuple de Kuwae, île mythique du Vanuatu",
+   "who": "A. François and S. Bessis",
+   "venue": "Journal de la Société des Océanistes",
+   "url": "https://doi.org/10.4000/14pfd",
+   "note": "Studies oral traditions of the Kuwae eruption among Vanuatu communities, the main non-geological evidence for the event at source.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-04",
+   "kind": "grant",
+   "title": "VOLTESSO: Volcanic climate forcing over the onset of the Little Ice Age through tephra geochemistry and stratospheric sulfate isotope analyses in polar ice cores",
+   "who": "University of St Andrews",
+   "venue": "EU Horizon Europe (Marie Skłodowska-Curie fellowship)",
+   "url": "https://cordis.europa.eu/project/id/101282447",
+   "note": "Fellowship (2026–2028, €260,348) using tephra and sulfur isotopes in polar ice to identify the sources of thirteen poorly attributed eruptions of 1150–1350 CE.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-09",
+   "kind": "field",
+   "title": "Precise dating of the 686 ± 2 CE Newberry Pumice eruption and insights into 7th century volcanism from cryptotephra and sulfur isotopes in Greenland ice",
+   "who": "H. M. Innes, W. Hutchison, M. Sigl, J. R. McConnell et al.",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2026.110036",
+   "note": "Ties a Greenland sulfate signal to Newberry volcano, Oregon, extending the cryptotephra-plus-isotope attribution method to the seventh century.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-10",
+   "kind": "field",
+   "title": "Revisiting the eruptive nature of the 1108–1110 CE volcanic episode: Insights from sulfur isotopes and cryptotephra in Greenland ice cores",
+   "who": "S. Ro, F. Brouillet, W. Hutchison, P. Sugden et al.",
+   "venue": "EGUsphere (preprint)",
+   "url": "https://doi.org/10.5194/egusphere-2026-6056",
+   "note": "Preprint applying sulfur isotopes and cryptotephra to one of the largest sulfate events of 2,500 years to separate its eruptions and their altitude.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

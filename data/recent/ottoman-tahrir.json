@@ -1,0 +1,171 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-02",
+   "kind": "paper",
+   "title": "The Collapse of Rural Order in Ottoman Anatolia: Amasya 1576–1643",
+   "who": "O. Özel",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004311244",
+   "note": "Village-by-village reading of tahrir and detailed avarız registers for Amasya documenting mass abandonment of rural settlements around 1600.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2018-03",
+   "kind": "paper",
+   "title": "The 'Celâlî effect' on rural production and demography in central Anatolia",
+   "who": "K. Orbay",
+   "venue": "Acta Orientalia Academiae Scientiarum Hungaricae 71 (1)",
+   "url": "https://doi.org/10.1556/062.2018.71.1.3",
+   "note": "Uses serial waqf account books, which survive across the gap between tahrir and avarız registers, to trace rural output and population during the Celali years.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-04",
+   "kind": "paper",
+   "title": "Problems in the Interpretations of Ottoman Rebellions in the Early Modern Period: An Analysis and Evaluation of Existing Literature on the Ottoman Celali Rebellions",
+   "who": "B. Gündoğdu",
+   "venue": "Osmanlı Araştırmaları",
+   "url": "https://doi.org/10.18589/oa.591842",
+   "note": "Historiographical review of explanations for the Celali rebellions, from population pressure to fiscal and climatic causes.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-02",
+   "kind": "paper",
+   "title": "Osmanlı Anadolusu'nda Bir İskân Hikâyesi: Bozok Sancağı'nda Aşiretler, Köylüler ve Celâlîler (16–19. Yüzyıllar)",
+   "who": "S. Gülten",
+   "venue": "History Studies 11 (1)",
+   "url": "https://doi.org/10.9737/hist.2019.711",
+   "note": "Follows settlement in Bozok across tahrir, avarız and later registers, tracing desertion during the Celali period and later tribal resettlement.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-09",
+   "kind": "paper",
+   "title": "Coping with famines in Ottoman Anatolia (1650–1850)",
+   "who": "S. Çelik",
+   "venue": "An Economic History of Famine Resilience (Routledge)",
+   "url": "https://doi.org/10.4324/9780429200632-4",
+   "note": "Examines famine episodes and state and local responses in Anatolia after 1650, relevant to whether seventeenth-century losses were recovered.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-02",
+   "kind": "event",
+   "title": "Ottoman Text Recognition Network founded after workshop on automatic recognition of Ottoman manuscripts",
+   "who": "University of Vienna",
+   "venue": "OTRN",
+   "url": "https://otrn.univie.ac.at/",
+   "note": "Network building Transkribus models and transcription standards for handwritten Ottoman Turkish, a prerequisite for machine-reading fiscal registers at scale.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-05",
+   "kind": "paper",
+   "title": "Osmanlı İmparatorluğu'nda Celali İsyanları: Chayanovyan Bakış Açısıyla Bir Değerlendirme",
+   "who": "Ö. Teoman and C. Bozpınar",
+   "venue": "Akdeniz Üniversitesi İİBF Dergisi",
+   "url": "https://doi.org/10.25294/auiibfd.869396",
+   "note": "Reads the Celali uprisings through a Chayanovian model of the peasant household, an economic alternative to Malthusian population-pressure explanations.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "tool",
+   "title": "Automated Transcription of Non-Latin Script Periodicals: A Case Study in the Ottoman Turkish Print Archive",
+   "who": "S. Kirmizialtin and D. Wrisley",
+   "venue": "Digital Humanities Quarterly 16 (2)",
+   "url": "https://digitalhumanities.org/dhq/vol/16/2/000577/000577.html",
+   "note": "Trains text-recognition models for Ottoman Turkish print, a methodological step toward machine-reading Ottoman sources.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-09",
+   "kind": "paper",
+   "title": "Making of a mid-nineteenth century Ottoman gazetteer and mapping and examining late Ottoman population geography",
+   "who": "M. E. Kabadayı, A. Sefer, G. Boykov and P. Gerrits",
+   "venue": "Journal of the Ottoman and Turkish Studies Association 9 (2)",
+   "url": "https://doi.org/10.2979/tur.2022.a902201",
+   "note": "Explains how the projects geolocated populated places from nüfus registers, the method behind the open gazetteer used to link earlier registers to space.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-11",
+   "kind": "data",
+   "title": "Ottoman NFS Gazetteer (16,296 populated places), version 1",
+   "who": "M. E. Kabadayı, G. Boykov, A. Sefer and P. Gerrits",
+   "venue": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.7351936",
+   "note": "Open geolocated gazetteer of Ottoman settlements that allows tahrir and avarız place names to be matched and mapped.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-12",
+   "kind": "paper",
+   "title": "Tahrir ve Avârız Kayıtlarına Göre Seyyid Gazi'nin Nüfus ve İskân Yapısı",
+   "who": "M. Alandağlı",
+   "venue": "Hacettepe Üniversitesi Türkiyat Araştırmaları Dergisi",
+   "url": "https://doi.org/10.20427/turkiyat.1265533",
+   "note": "One of many recent district studies comparing fifteenth- and sixteenth-century tahrir counts with seventeenth-century avarız registers.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-04",
+   "kind": "paper",
+   "title": "The Christian Population of 16th-Century Ottoman Anatolia: An Overview and Preliminary Observations on Its Location and Numbers in the 1520s",
+   "who": "K. Moustakas, A. Kontopanagou and P. Kastrinakis",
+   "venue": "Turkish Historical Review 15",
+   "url": "https://doi.org/10.1163/18775462-bja10064",
+   "note": "A first systematic overview of where Christians lived in Anatolia and in what numbers according to the 1520s registers, refining the sixteenth-century baseline.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-03",
+   "kind": "paper",
+   "title": "Digital History, GIS, and Spatial Humanities",
+   "who": "M. E. Kabadayı, G. Boykov and P. Gerrits",
+   "venue": "The Cambridge Companion to Ottoman History",
+   "url": "https://doi.org/10.1017/9781009086202.017",
+   "note": "Surveys GIS and database approaches to Ottoman fiscal and population registers, including the gazetteers needed for comparing surveys over time.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-07",
+   "kind": "grant",
+   "title": "AGRDEMAND: Markets, urban demand and agriculture in the 16th-century Eastern Mediterranean",
+   "who": "University of Cambridge (P. Warde, supervisor)",
+   "venue": "UKRI Horizon Europe Guarantee (MSCA fellowship)",
+   "url": "https://gtr.ukri.org/projects?ref=EP%2FZ533488%2F1",
+   "note": "Fellowship (2025–2027, £206,086) building a large dataset from Ottoman tax registers to map agricultural systems in the Balkans, Anatolia and the Levant during sixteenth-century demographic growth.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-12",
+   "kind": "paper",
+   "title": "Plague and Migration: Rural Depopulation in the Ottoman Balkans and Anatolia during the Little Ice Age",
+   "who": "N. Varlık",
+   "venue": "Journal of Early Modern History 29",
+   "url": "https://doi.org/10.1163/15700658-bja10111",
+   "note": "Argues from archival letters, fiscal surveys and avarız registers that rural plague mortality and flight, not only rebellion, drove abandonment of villages.",
+   "advances": true,
+   "cited": false
+  }
+ ]
+}

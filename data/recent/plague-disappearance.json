@@ -1,0 +1,226 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-01",
+   "kind": "field",
+   "title": "Eighteenth century Yersinia pestis genomes reveal the long-term persistence of an historical plague focus",
+   "who": "K. I. Bos, A. Herbig et al.",
+   "venue": "eLife 5",
+   "url": "https://doi.org/10.7554/eLife.12994",
+   "note": "Genomes from the 1720–22 Marseille epidemic descend from Black Death strains, implying a persistent focus somewhere in or near Europe rather than fresh Asian introductions.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-09",
+   "kind": "field",
+   "title": "Yersinia pestis DNA identified in 1665 Great Plague burials at the Bedlam burial ground, London",
+   "who": "Museum of London Archaeology and MPI for the Science of Human History",
+   "venue": "Crossrail excavation",
+   "url": "https://www.smithsonianmag.com/smart-news/dna-17th-century-teeth-confirms-cause-londons-great-plague-180960405/",
+   "note": "First molecular confirmation that London's last major epidemic was caused by Y. pestis, from teeth in a mass burial pit at Liverpool Street.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-10",
+   "kind": "paper",
+   "title": "Navigable rivers facilitated the spread and recurrence of plague in pre-industrial Europe",
+   "who": "R. P. H. Yue, H. F. Lee and C. Y. H. Wu",
+   "venue": "Scientific Reports 6",
+   "url": "https://doi.org/10.1038/srep34867",
+   "note": "Spatial statistics on georeferenced outbreak records linking recurrence to river networks, part of a series on transport and plague persistence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-02",
+   "kind": "paper",
+   "title": "Plague and Lethal Epidemics in the Pre-Industrial World",
+   "who": "G. Alfani and T. E. Murphy",
+   "venue": "Journal of Economic History 77 (1)",
+   "url": "https://doi.org/10.1017/s0022050717000092",
+   "note": "Review of environmental and institutional factors shaping plague's spread and impact up to 1800, including the role of public-health institutions in its retreat.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-10",
+   "kind": "paper",
+   "title": "Trade routes and plague transmission in pre-industrial Europe",
+   "who": "R. P. H. Yue, H. F. Lee and C. Y. H. Wu",
+   "venue": "Scientific Reports 7",
+   "url": "https://doi.org/10.1038/s41598-017-13481-2",
+   "note": "Tests the trade-route hypothesis against 6,656 georeferenced outbreaks and finds outbreaks clustered along major routes.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "Dangers of Noncritical Use of Historical Plague Data",
+   "who": "J. Roosen and D. R. Curtis",
+   "venue": "Emerging Infectious Diseases 24 (1)",
+   "url": "https://doi.org/10.3201/eid2401.170477",
+   "note": "Warns that digitized outbreak lists derived from Biraben carry gaps and biases that can mislead climate and reintroduction models.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "Human ectoparasites and the spread of plague in Europe during the Second Pandemic",
+   "who": "K. R. Dean, F. Krauer et al.",
+   "venue": "PNAS 115 (6)",
+   "url": "https://doi.org/10.1073/pnas.1715640115",
+   "note": "Compartmental models fitted to nine outbreaks favour human fleas and lice over rats as the main vector, which would shift explanations for plague's end.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "field",
+   "title": "Phylogeography of the second plague pandemic revealed through analysis of historical Yersinia pestis genomes",
+   "who": "M. A. Spyrou, M. Keller et al.",
+   "venue": "Nature Communications 10",
+   "url": "https://doi.org/10.1038/s41467-019-12154-0",
+   "note": "New genomes trace a single Black Death lineage diversifying in Europe, with a late branch persisting into the eighteenth century.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-03",
+   "kind": "paper",
+   "title": "The Yellow Flag: Quarantine and the British Mediterranean World, 1780–1860",
+   "who": "A. Chase-Levenson",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108751773",
+   "note": "Study of lazarettos and quarantine practice in Malta and the British Mediterranean during the long period without western European plague.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-04",
+   "kind": "paper",
+   "title": "Biraben's lists of the plague epidemics of the second plague pandemic, 1346 – c. 1690: problems, basis, uses",
+   "who": "O. J. Benedictow",
+   "venue": "Annales de démographie historique 138",
+   "url": "https://doi.org/10.3917/adh.138.0213",
+   "note": "Source-critical assessment of the outbreak inventory on which most quantitative work on plague's retreat depends.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "field",
+   "title": "Yersinia pestis strains from Latvia show depletion of the pla virulence gene at the end of the second plague pandemic",
+   "who": "J. Susat, J. H. Bonczarowska et al.",
+   "venue": "Scientific Reports 10",
+   "url": "https://doi.org/10.1038/s41598-020-71530-9",
+   "note": "Genomes from Latvia dating to the end of the second pandemic show reduced copy number of the pla virulence gene, an early sign of pathogen change.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-10",
+   "kind": "field",
+   "title": "A genomic and historical synthesis of plague in 18th century Eurasia",
+   "who": "M. Guellil, O. Kersten et al.",
+   "venue": "PNAS 117 (45)",
+   "url": "https://doi.org/10.1073/pnas.2009677117",
+   "note": "Nine late second-pandemic genomes, including the first from the Caucasus, support introductions from reservoirs outside Europe rather than a European focus.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-04",
+   "kind": "field",
+   "title": "No particular genomic features underpin the dramatic economic consequences of 17th century plague epidemics in Italy",
+   "who": "A. Seguin-Orlando, C. Costedoat et al.",
+   "venue": "iScience 24",
+   "url": "https://doi.org/10.1016/j.isci.2021.102383",
+   "note": "Genomes from the 1630–31 Italian epidemic show no distinctive pathogen traits, pointing to social and ecological rather than bacterial causes of severity.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-04",
+   "kind": "paper",
+   "title": "Perceptions of plague in eighteenth-century Europe",
+   "who": "P. Slack",
+   "venue": "Economic History Review 75 (1)",
+   "url": "https://doi.org/10.1111/ehr.13080",
+   "note": "Compares the last great epidemics in Germany, France and Moscow and the official consensus that contagion and its control explained plague's retreat.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-05",
+   "kind": "field",
+   "title": "Palaeogenomic analysis of black rat (Rattus rattus) reveals multiple European introductions associated with human economic history",
+   "who": "H. Yu, A. Jamieson, A. Hulme-Beaman et al.",
+   "venue": "Nature Communications 13",
+   "url": "https://doi.org/10.1038/s41467-022-30009-z",
+   "note": "Ancient rat genomes point to separate Roman and medieval introductions to Europe, giving direct data for the old rodent-replacement argument.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-06",
+   "kind": "paper",
+   "title": "End of a Pandemic? Contemporary Explanations for the End of Plague in 18th-Century England",
+   "who": "P. Slack",
+   "venue": "Centaurus 64",
+   "url": "https://doi.org/10.1484/j.cnt.5.129440",
+   "note": "Examines how eighteenth-century English writers accounted for plague's absence, from providence and climate to quarantine.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-11",
+   "kind": "paper",
+   "title": "The Great Plague Scare of 1720: Disaster and Diplomacy in the Eighteenth-Century Atlantic World",
+   "who": "C. Ermus",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108784733",
+   "note": "Shows how the Provence epidemic triggered coordinated quarantine and cordon measures across Europe and the Atlantic, the policy response credited with containing it.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-12",
+   "kind": "paper",
+   "title": "No evidence for persistent natural plague reservoirs in historical and modern Europe",
+   "who": "N. C. Stenseth, Y. Tao, C. Zhang et al.",
+   "venue": "PNAS 119 (51)",
+   "url": "https://doi.org/10.1073/pnas.2209816119",
+   "note": "Ecological and outbreak analysis arguing Europe never held long-lived wild-rodent reservoirs, so plague's end depended on interrupted reintroduction.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2024-04",
+   "kind": "grant",
+   "title": "Synergy-Plague: Reconstructing the environmental, biological, and societal drivers of plague outbreaks in Eurasia between 1300 and 1900 CE",
+   "who": "University of Oslo (coordinator) et al.",
+   "venue": "European Research Council (Synergy Grant)",
+   "url": "https://cordis.europa.eu/project/id/101118880",
+   "note": "ERC Synergy Grant (2024–2030, €8.38 million); one of its four questions is why plague disappeared from Europe and the Middle East in the eighteenth and nineteenth centuries.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-05",
+   "kind": "field",
+   "title": "Attenuation of virulence in Yersinia pestis across three plague pandemics",
+   "who": "R. K. Sidhu, M. Mas Fiol, P. Lê-Bury et al.",
+   "venue": "Science 388",
+   "url": "https://doi.org/10.1126/science.adt3880",
+   "note": "Finds pla copy-number depletion in late first- and second-pandemic strains and shows it lowers bubonic lethality in mice, a candidate biological factor in late-pandemic dynamics.",
+   "advances": true,
+   "cited": false
+  }
+ ]
+}

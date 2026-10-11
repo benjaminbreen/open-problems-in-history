@@ -1,0 +1,127 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-12",
+   "kind": "data",
+   "title": "CHGIS, Version 6",
+   "who": "Harvard University and Fudan University",
+   "venue": "Harvard Dataverse",
+   "url": "https://doi.org/10.7910/DVN/6CHSR7",
+   "note": "Release of the time-series county and prefecture boundary data used to map prefecture-level population reconstructions for Ming and Qing benchmark years.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "paper",
+   "title": "Climate, disasters, wars and the collapse of the Ming Dynasty",
+   "who": "Q. Liu, G. Li, D. Kong and B. Huang",
+   "venue": "Environmental Earth Sciences",
+   "url": "https://doi.org/10.1007/s12665-017-7194-4",
+   "note": "Sets late Ming temperature and precipitation series against disaster and war records to argue for compounding climatic and military pressures behind the collapse.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-07",
+   "kind": "paper",
+   "title": "On the Trail of the Yellow Tiger: War, Trauma, and Social Dislocation in Southwest China during the Ming-Qing Transition",
+   "who": "K. M. Swope",
+   "venue": "University of Nebraska Press",
+   "url": "https://doi.org/10.2307/j.ctvvndx4",
+   "note": "Study of Sichuan's devastation that attributes much of the loss to decades of war, banditry, famine and disease after Zhang Xianzhong's death in 1647.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "China, Europe, and the Great Divergence: A Study in Historical National Accounting, 980–1850",
+   "who": "S. Broadberry, H. Guan and D. D. Li",
+   "venue": "Journal of Economic History",
+   "url": "https://doi.org/10.1017/S0022050718000529",
+   "note": "Historical national accounts for China whose per capita estimates rest on population series drawn partly from Cao Shuji's Ming reconstruction.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-07",
+   "kind": "tool",
+   "title": "Local Gazetteers Research Tools: Overview and Research Application",
+   "who": "S.-P. Chen, K. J. Hammond, A. Gerritsen et al.",
+   "venue": "Journal of Chinese History",
+   "url": "https://doi.org/10.1017/jch.2020.26",
+   "note": "Describes LoGaRT, the Max Planck Institute's search and tagging tool across thousands of digitized gazetteers, the main source for prefecture-level household figures.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Population Change",
+   "who": "S. Cao, D. Yan and R. von Glahn",
+   "venue": "The Cambridge Economic History of China, vol. 1",
+   "url": "https://doi.org/10.1017/9781108587334.010",
+   "note": "Synthesis of population change from 1000 to 1800, including the late Ming peak and the seventeenth-century decline.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "The Little Ice Age and the Fall of the Ming Dynasty: A Review",
+   "who": "K.-W. Fan",
+   "venue": "Climate",
+   "url": "https://doi.org/10.3390/cli11030071",
+   "note": "Reviews English-language climate-collapse studies and cautions against simple models linking cold, drought and population decline uniformly across the empire.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-11",
+   "kind": "paper",
+   "title": "The Price of Collapse: The Little Ice Age and the Fall of Ming China",
+   "who": "T. Brook",
+   "venue": "Princeton University Press",
+   "url": "https://doi.org/10.1515/9780691253701",
+   "note": "Uses grain prices recorded in local sources to trace the subsistence crises of the 1610s and 1640s that drove late Ming mortality.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-01",
+   "kind": "paper",
+   "title": "The Population History of China (1368–1953)",
+   "who": "S. Cao",
+   "venue": "Brill",
+   "url": "https://www.cqh.hku.hk/?p=16930",
+   "note": "Prefecture-level figures for 1393, 1580, 1630, 1680 and later benchmarks, with models and databases, including a chapter on the rapid Ming-Qing decline.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2024-10",
+   "kind": "paper",
+   "title": "The spatio-temporal evolution of the Chongzhen drought (1627–1644) in China and its impact on famine",
+   "who": "S. Chen, Y. Su, X. Chen and L. E. Yang",
+   "venue": "Climate of the Past",
+   "url": "https://doi.org/10.5194/cp-20-2287-2024",
+   "note": "Maps 1,802 drought and 1,977 famine records to reconstruct where and when the Chongzhen drought struck, the main climatic driver of 1640s mortality.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025",
+   "kind": "paper",
+   "title": "Crunching Numbers in Ming Times: What Population Censuses Can Tell about Chinese Migration towards the South",
+   "who": "J. C. Schneider",
+   "venue": "Journal of the European Association for Chinese Studies",
+   "url": "https://doi.org/10.25365/jeacs.2025.6.2.schneider",
+   "note": "Compares Ming census figures across the Shilu, Mingshi, Da Ming huidian and gazetteers, finding stagnant or negative registered growth in parts of the south.",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}

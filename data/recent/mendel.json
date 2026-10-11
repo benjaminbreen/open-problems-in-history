@@ -1,0 +1,138 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-10",
+   "kind": "paper",
+   "title": "Experiments on Plant Hybrids by Gregor Mendel",
+   "who": "S. Abbott and D. J. Fairbanks",
+   "venue": "Genetics",
+   "url": "https://doi.org/10.1534/genetics.116.195198",
+   "note": "New annotated English translation of the 1866 paper, correcting errors in the long-standard Bateson-based version.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-10",
+   "kind": "paper",
+   "title": "Darwin's Influence on Mendel: Evidence from a New Translation of Mendel's Paper",
+   "who": "D. J. Fairbanks and S. Abbott",
+   "venue": "Genetics",
+   "url": "https://doi.org/10.1534/genetics.116.194613",
+   "note": "Argues from wording in the German text that Mendel wrote with Darwin's Origin in mind.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-12",
+   "kind": "paper",
+   "title": "The Full Breadth of Mendel's Genetics",
+   "who": "P. J. van Dijk and T. H. N. Ellis",
+   "venue": "Genetics",
+   "url": "https://doi.org/10.1534/genetics.116.196626",
+   "note": "Reads the 1866 paper as a broader theory of hybrid development than the textbook laws, recasting what the counts were meant to show.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-10",
+   "kind": "paper",
+   "title": "How Mendel's Interest in Inheritance Grew out of Plant Improvement",
+   "who": "P. J. van Dijk, F. J. Weissing and T. H. N. Ellis",
+   "venue": "Genetics",
+   "url": "https://doi.org/10.1534/genetics.118.300916",
+   "note": "Places Mendel's experiments in Moravian plant-breeding debates, relevant to how and why he selected and reported data.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "paper",
+   "title": "Mendel's Pea Crosses: Varieties, Traits and Statistics",
+   "who": "T. H. N. Ellis et al.",
+   "venue": "Hereditas",
+   "url": "https://doi.org/10.1186/s41065-019-0111-y",
+   "note": "Identifies likely varieties and genes behind Mendel's traits and reassesses the statistical structure of his reported crosses.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-11",
+   "kind": "paper",
+   "title": "Once Should Have Been Enough: Gregor Mendel, \"Experiments in Plant Hybridization\"",
+   "who": "A. Franklin and R. Laymon",
+   "venue": "Once Can Be Enough (Springer)",
+   "url": "https://doi.org/10.1007/978-3-030-62565-8_5",
+   "note": "Treats Mendel's work as a case of decisive single experiments and revisits the reception and criticism of his data.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022",
+   "kind": "paper",
+   "title": "Gregor Mendel: His Life and Legacy",
+   "who": "D. J. Fairbanks",
+   "venue": "Prometheus Books",
+   "url": "https://openlibrary.org/works/OL27592411W",
+   "note": "Bicentenary biography by a principal participant in the Fisher debate, summarizing the case that Mendel's data were not fabricated.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-06",
+   "kind": "paper",
+   "title": "Mendel the fraud? A social history of truth in genetics",
+   "who": "G. Radick",
+   "venue": "Studies in History and Philosophy of Science",
+   "url": "https://doi.org/10.1016/j.shpsa.2021.12.012",
+   "note": "Traces how suspicion of Mendel's data was raised, contested and normalized from Weldon to the present.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-07",
+   "kind": "paper",
+   "title": "How did Mendel arrive at his discoveries?",
+   "who": "P. J. van Dijk, A. P. Jessop and T. H. N. Ellis",
+   "venue": "Nature Genetics",
+   "url": "https://doi.org/10.1038/s41588-022-01109-9",
+   "note": "Reconstructs the development of Mendel's experimental programme and theory, drawing on his breeding background and the structure of the 1866 paper.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023",
+   "kind": "paper",
+   "title": "Disputed Inheritance: The Battle over Mendel and the Future of Biology",
+   "who": "G. Radick",
+   "venue": "University of Chicago Press",
+   "url": "https://doi.org/10.7208/chicago/9780226822716.001.0001",
+   "note": "History of the Bateson–Weldon dispute, including Weldon's 1902 doubts about Mendel's ratios, arguing for an alternative genetics.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024",
+   "kind": "data",
+   "title": "Gregor Mendel (Klassische Texte der Wissenschaft): critically annotated original texts",
+   "who": "M. Mielewczik, M. V. Šimůnek and U. Hoßfeld",
+   "venue": "Springer",
+   "url": "https://doi.org/10.1007/978-3-662-57976-3",
+   "note": "Critical German edition of Mendel's writings with commentary, biography and a full publication list, a new textual basis for the debate.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-04",
+   "kind": "field",
+   "title": "Genomic and genetic insights into Mendel's pea genes",
+   "who": "C. Feng et al.",
+   "venue": "Nature",
+   "url": "https://doi.org/10.1038/s41586-025-08891-6",
+   "note": "Genomic analysis of a large pea diversity panel identifies genes and variants for all seven of Mendel's traits, including the three not previously characterized.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

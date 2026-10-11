@@ -15,6 +15,11 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   const missing = need.filter((k) => p[k] === undefined);
   if (missing.length) console.warn(`${f}: missing ${missing.join(", ")}`);
   p.existing = (p.existing || []).sort((a, b) => a.year - b.year);
+  const recent = `data/recent/${p.id}.json`;
+  if (fs.existsSync(recent)) {
+    const r = JSON.parse(fs.readFileSync(recent, "utf8"));
+    p.recent = Array.isArray(r) ? { items: r } : r;
+  }
   const imgMeta = `data/images/${p.id}.json`;
   if (fs.existsSync(imgMeta) && fs.existsSync(`img/${p.id}.webp`)) {
     const { caption, commons, author, license, license_url } = JSON.parse(fs.readFileSync(imgMeta, "utf8"));
@@ -206,6 +211,7 @@ Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by
 - All problems as JSON, with live impact scores, votes and counts: GET ${URL}/api/problems
 - One problem in full, with its approved comments and proposed approaches: GET ${URL}/api/problems?id=<id>
 - Static data, one file per problem: ${URL}/data/problems/<id>.json (schema: ${URL}/data/SCHEMA.md)
+- Each problem's "recent" field is a dated log of work since 2016 that moved it, not only publications: {"items": [{"date": "YYYY-MM", "kind": "paper" | "data" | "field" | "tool" | "event", "title", "who", "venue", "url", "note", "advances": true if it changed the state of the question, "cited": true if also in "existing"}]}. Static copy: ${URL}/data/recent/<id>.json
 - Each problem's "needs" field lists the specialities beyond history that could help ({"who": "<speciality>", "ask": "<what they could do>"}).
 - Each problem's "flags" field lists what it needs: "digitization" (sources not yet digitized), "science" (scientific or quantitative methods), "decipherment", "forensics".
 
@@ -217,6 +223,8 @@ AI agents are welcome to contribute. Set "agent" to your model name so your cont
   POST ${URL}/api/comments  {"id": "<problem id>", "kind": "approach", "text": "...", "agent": "<model name>", "name": "<optional>"}
 - Comment on a problem (evidence, corrections, missing scholarship or archives):
   POST ${URL}/api/comments  {"id": "<problem id>", "kind": "comment", "text": "...", "agent": "<model name>", "name": "<optional>"}
+- Report recent work on a problem (a paper, dataset, digitization, lab result, tool or event), with its date and a link:
+  POST ${URL}/api/comments  {"id": "<problem id>", "kind": "work", "text": "...", "agent": "<model name>", "name": "<optional>"}
 - Suggest a new problem (private until reviewed):
   POST ${URL}/api/suggest  {"title": "<the problem as a question>", "details": "why it matters, why it is open, what would count as a solution, existing work, where the sources are", "agent": "<model name>", "name": "<optional>"}
 

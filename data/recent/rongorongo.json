@@ -1,0 +1,215 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-08",
+   "kind": "paper",
+   "title": "Putative duplication glyph in the rongorongo script",
+   "who": "R. M. Wieczorek",
+   "venue": "Cryptologia",
+   "url": "https://doi.org/10.1080/01611194.2016.1196052",
+   "note": "Argues from the genealogy section of the Small Santiago Tablet and wider syntax that the 'split circles' glyph marks reduplication.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-03",
+   "kind": "paper",
+   "title": "Allographs, graphic variants and iconic formulae in the kohau rongorongo script of Rapa Nui (Easter Island)",
+   "who": "A. Davletshin",
+   "venue": "Journal of the Polynesian Society",
+   "url": "https://doi.org/10.15286/jps.126.1.61-92",
+   "note": "Defines allograph, graphic variant and iconic formula for rongorongo and proposes an inverse substitution method for testing sign equivalences.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-10",
+   "kind": "grant",
+   "title": "ERC project INSCRIBE: Invention of Scripts and their Beginnings (2018–2024)",
+   "who": "S. Ferrara, University of Bologna",
+   "venue": "European Research Council",
+   "url": "https://cordis.europa.eu/project/id/771127",
+   "note": "Six-year grant on the independent invention of writing that funded 3D modelling and radiocarbon dating of the Rome rongorongo tablets.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-11",
+   "kind": "data",
+   "title": "3D modelling of the Mamari tablet from the rongorongo corpus: acquisition, processing issues, and outcomes",
+   "who": "L. Lastilla, R. Ravanelli, M. Valério and S. Ferrara",
+   "venue": "ISPRS Archives",
+   "url": "https://doi.org/10.5194/isprs-archives-xlii-2-w18-85-2019",
+   "note": "First high-resolution 3D digitization of Tablet C (Mamari) in Rome, as a basis for palaeographic study independent of older editions.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "tool",
+   "title": "rongopy: ideas for the decipherment of Easter Island's rongorongo writing",
+   "who": "J. Gregório de Souza",
+   "venue": "GitHub",
+   "url": "https://github.com/jgregoriods/rongopy",
+   "note": "Open Python code and a reduced transliteration of the corpus for statistical and algorithmic decipherment experiments, later tested by other researchers.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021",
+   "kind": "data",
+   "title": "Rongorongo: Inscribed Objects from Rapa Nui",
+   "who": "P. Horley",
+   "venue": "Rapanui Press",
+   "url": "https://www.si.edu/object/siris_sil_1158019",
+   "note": "Corpus edition with photographs and drawings of all known rongorongo inscribed objects.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-04",
+   "kind": "data",
+   "title": "Modelling the Rongorongo tablets: A new transcription of the Échancrée tablet and the foundation for decipherment attempts",
+   "who": "L. Lastilla, R. Ravanelli, M. Valério and S. Ferrara",
+   "venue": "Digital Scholarship in the Humanities",
+   "url": "https://doi.org/10.1093/llc/fqab045",
+   "note": "Used 3D models to produce a revised transcription of Tablet D, correcting readings in earlier editions.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-06",
+   "kind": "paper",
+   "title": "Hatching in the Hieroglyphic Script and Iconography of Easter Island (Rapa Nui): Comparison with Maya and Nahuatl Scripts",
+   "who": "A. Davletshin",
+   "venue": "Journal of the Polynesian Society",
+   "url": "https://doi.org/10.15286/jps.130.2.103-136",
+   "note": "Compares the use of hatching in rongorongo signs and Rapa Nui iconography with Mesoamerican scripts to infer its graphic function.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-08",
+   "kind": "field",
+   "title": "The rongorongo tablet from Berlin and the time-depth of Easter Island's writing system",
+   "who": "R. M. Wieczorek, K. E. Frankiewicz, A. A. Oskolski and P. Horley",
+   "venue": "Journal of Island and Coastal Archaeology",
+   "url": "https://doi.org/10.1080/15564894.2021.1950874",
+   "note": "Identified the Berlin Tablet's wood as locally grown Thespesia populnea, not driftwood, and radiocarbon-dated it to the early nineteenth century.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2022-03",
+   "kind": "paper",
+   "title": "A wooden hand from Easter Island (Rapa Nui), part I",
+   "who": "R. M. Schoch and T. S. Melka",
+   "venue": "Res: Anthropology and Aesthetics",
+   "url": "https://doi.org/10.1086/721156",
+   "note": "Describes the 'Kell Hand', a carved hand collected during the 1868 HMS Topaze visit that bears a short rongorongo inscription.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-06",
+   "kind": "paper",
+   "title": "The script of Rapa Nui (Easter Island) is logosyllabic, the language is East Polynesian: evidence from cross-readings",
+   "who": "A. Davletshin",
+   "venue": "Journal of the Polynesian Society",
+   "url": "https://doi.org/10.15286/jps.131.2.185-220",
+   "note": "Argues from cross-readings between parallel passages that the script is logosyllabic and records an East Polynesian language.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-02",
+   "kind": "field",
+   "title": "The invention of writing on Rapa Nui (Easter Island). New radiocarbon dates on the Rongorongo script",
+   "who": "S. Ferrara et al.",
+   "venue": "Scientific Reports",
+   "url": "https://doi.org/10.1038/s41598-024-53063-7",
+   "note": "Dated four Rome tablets; three are late, but Tablet D's non-native wood gave a fifteenth-century felling date, read by the authors as suggesting pre-contact writing.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2024-03",
+   "kind": "paper",
+   "title": "Was rongorongo an independent invention of writing?",
+   "who": "K. Gorman and R. Sproat",
+   "venue": "Language Log",
+   "url": "https://languagelog.ldc.upenn.edu/nll/?p=63139",
+   "note": "Replied that a felling date is only a terminus post quem for carving and that rongorongo has not been shown to encode language.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2024-07",
+   "kind": "paper",
+   "title": "The \"Topaze stick fragment\": a newly discovered rongorongo-inscribed artifact collected during the Rapa Nui (Easter Island) visit of HMS Topaze in 1868",
+   "who": "T. S. Melka and R. M. Schoch",
+   "venue": "Cryptologia",
+   "url": "https://doi.org/10.1080/01611194.2024.2340478",
+   "note": "Documents and analyses a second short inscription on a wooden object from the 1868 Topaze visit, previously unknown to the literature.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "paper",
+   "title": "The Rongorongo 'Lunar Calendar' of Rapa Nui (Easter Island) and the Type of Script",
+   "who": "M. Valério",
+   "venue": "Writing from Invention to Decipherment (Oxford University Press)",
+   "url": "https://doi.org/10.1093/oso/9780198908746.003.0011",
+   "note": "Re-examines Guy's Mamari calendar passage and what it implies about the typology of the script.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-09",
+   "kind": "paper",
+   "title": "A statistical reassessment of rongorongo texts I, Gv, and T: implications for genre and content",
+   "who": "J. Gregório de Souza",
+   "venue": "Digital Scholarship in the Humanities",
+   "url": "https://doi.org/10.1093/llc/fqaf101",
+   "note": "Collocation analysis suggests the Santiago Staff contains personal names and that Gv parallels the Atua-Mata-Riri creation chant, reopening Fischer's procreation reading for that text.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-05",
+   "kind": "paper",
+   "title": "A Computational Evaluation of Syllabic Hypotheses for Rongorongo: Evidence from N-gram Analysis",
+   "who": "E. V. Korovina",
+   "venue": "LREC 2026",
+   "url": "https://doi.org/10.63317/2os436inpm37",
+   "note": "Genetic-algorithm tests against Rapa Nui n-gram statistics find no simple one-sign-one-syllable signal in the CEIPP transliteration, with ambiguous results for rongopy's.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "A rongorongo-inscribed artifact collected by Pascal Boucher, a crewmember of the whaling ship Margaret Rait during her call to Easter Island (Rapa Nui) in December 1843",
+   "who": "T. S. Melka and R. M. Schoch",
+   "venue": "Cryptologia",
+   "url": "https://doi.org/10.1080/01611194.2026.2668384",
+   "note": "Publishes a privately held inscribed pendant reportedly collected in 1843, which would place it before the missionary period if the provenance holds.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "Computational analysis reveals historical trajectory of East Polynesian lunar calendars",
+   "who": "M. Valério, F. Tamburini, M. Corazza et al.",
+   "venue": "PLoS ONE",
+   "url": "https://doi.org/10.1371/journal.pone.0353287",
+   "note": "Phylogenetic analysis of 48 'nights of the moon' lists groups Rapa Nui with Mangareva and the Marquesas, relevant to reading calendrical passages on the tablets.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

@@ -1,0 +1,226 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Hunayn ibn Ishaq on His Galen Translations",
+   "who": "J. C. Lamoreaux (ed. and trans.)",
+   "venue": "Brigham Young University Press",
+   "url": "https://doi.org/10.7817/jaos.140.3.2020.rev046",
+   "note": "New edition and English translation of Ḥunayn's Risāla, the master list of Galen titles in Syriac and Arabic; the link is to a JAOS review.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-01",
+   "kind": "paper",
+   "title": "Continuing research on the Syriac Galen Palimpsest: collaborative implementation within the framework of two European projects",
+   "who": "N. Afif, C. Arsene, S. Bhayro et al.",
+   "venue": "Semitica et Classica",
+   "url": "https://doi.org/10.1484/j.sec.5.112740",
+   "note": "Reports progress in imaging, transcribing and aligning the Syriac On Simple Drugs undertext with the Greek and Arabic witnesses.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2016-06",
+   "kind": "paper",
+   "title": "Galeni In Hippocratis Epidemiarum librum II commentariorum I–VI versio Arabica",
+   "who": "U. Vagelpohl (ed.)",
+   "venue": "Corpus Medicorum Graecorum, Supplementum Orientale",
+   "url": "https://doi.org/10.1515/9783110454055",
+   "note": "Edits Ḥunayn's Arabic version of Galen's commentary on Epidemics II, whose Greek original is lost.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Galen in Syriac: Rethinking Old Assumptions",
+   "who": "S. Bhayro",
+   "venue": "Aramaic Studies",
+   "url": "https://doi.org/10.1163/17455227-01502003",
+   "note": "Challenges the view that sixth-century Syriac translations of Galen were poor, arguing that Syriac witnesses deserve weight in reconstructing lost and damaged texts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "data",
+   "title": "The Galen Palimpsest and the Modest Ambitions of the Digital Data Set",
+   "who": "D. Emery",
+   "venue": "Manuscript Studies",
+   "url": "https://doi.org/10.1353/mns.2018.0004",
+   "note": "Describes the openly licensed digital data set of Syriac Galen Palimpsest images and metadata, released by the Walters and expanded as new leaves were imaged.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "The Syriac Galen Palimpsest: A Tale of Two Texts",
+   "who": "N. Afif, S. Bhayro, G. Kessel et al.",
+   "venue": "Manuscript Studies",
+   "url": "https://doi.org/10.1353/mns.2018.0005",
+   "note": "Describes the imaging, codicology and recovered content of the palimpsest and its value for the Greek text.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-03",
+   "kind": "field",
+   "title": "X-ray fluorescence imaging of a Syriac Galen Palimpsest leaf at SLAC",
+   "who": "SLAC National Accelerator Laboratory and University of Manchester",
+   "venue": "SLAC news",
+   "url": "https://www6.slac.stanford.edu/news/2018-03-22-hidden-medical-text-read-first-time-thousand-years",
+   "note": "Synchrotron X-ray imaging recovered undertext of the sixth-century Syriac On Simple Drugs on leaves that multispectral imaging could not fully read.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-03",
+   "kind": "paper",
+   "title": "Brill's Companion to the Reception of Galen",
+   "who": "P. Bouras-Vallianatos and B. Zipser (eds.)",
+   "venue": "Brill",
+   "url": "https://doi.org/10.1163/9789004394353",
+   "note": "Includes surveys of Galen in Syriac (Bhayro), Ḥunayn's Arabic Galen (Cooper) and Hebrew Galen (Caballero-Navas), mapping where translated witnesses survive.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "A Literary History of Medicine: The ʿUyūn al-anbāʾ fī ṭabaqāt al-aṭibbāʾ of Ibn Abī Uṣaybiʿah",
+   "who": "E. Savage-Smith, S. Swain and G. J. van Gelder (eds.)",
+   "venue": "Brill (open access)",
+   "url": "https://doi.org/10.1163/9789004545564",
+   "note": "Critical edition and translation of the biographical dictionary whose Galen entry lists works and preserves quotations.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-07",
+   "kind": "paper",
+   "title": "The Syriac Text of Book Nine of On Simple Drugs: New Evidence from the Syriac Galen Palimpsest",
+   "who": "N. Afif, P. E. Pormann, W. I. Sellers et al.",
+   "venue": "Archives Internationales d'Histoire des Sciences",
+   "url": "https://doi.org/10.1484/j.arihs.5.122784",
+   "note": "Uses a lemmatised Greek–Syriac corpus with image analysis to reconstruct the Syriac and propose readings for the Greek.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-10",
+   "kind": "paper",
+   "title": "Galen and the Arabic Reception of Plato's Timaeus",
+   "who": "A. R. Das",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108583107",
+   "note": "Studies Galen's role in the Arabic reception of the Timaeus, including his compendium of the dialogue that survives only in Arabic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-09",
+   "kind": "paper",
+   "title": "New Fragments of a Commentary on the Oath Attributed to Galen",
+   "who": "C. Magdelaine and J.-M. Mouton",
+   "venue": "Hippocratic Commentaries in the Greek, Latin, Syriac and Arabic Traditions (Brill)",
+   "url": "https://doi.org/10.1163/9789004470200_007",
+   "note": "Publishes newly identified fragments of the Oath commentary attributed to Galen, a work lost in Greek and previously known from Arabic quotations.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2022-11",
+   "kind": "paper",
+   "title": "Galeni In Hippocratis Epidemiarum librum VI commentariorum I–VIII versio Arabica",
+   "who": "U. Vagelpohl (ed.)",
+   "venue": "Corpus Medicorum Graecorum, Supplementum Orientale",
+   "url": "https://doi.org/10.1515/9783110774986",
+   "note": "Edits the Arabic translation, the only complete witness to a commentary of which roughly a third is lost in Greek.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-05",
+   "kind": "paper",
+   "title": "Dioscorides and Galen in the Syriac Tradition: A Reconsideration of Three Passages About Herbs in an Anonymous Syriac Pharmacological Book",
+   "who": "L. Lin",
+   "venue": "Journal of Semitic Studies",
+   "url": "https://doi.org/10.1093/jss/fgad012",
+   "note": "Identifies unacknowledged parallels to Galen's On Simple Drugs in an anonymous Syriac pharmacological book, showing Galenic text embedded in later compilations.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-04",
+   "kind": "paper",
+   "title": "Galeni In Hippocratis De aere aquis locis commentariorum I–IV versio Arabica",
+   "who": "G. Strohmaier (ed.)",
+   "venue": "Corpus Medicorum Graecorum, Supplementum Orientale",
+   "url": "https://doi.org/10.1515/9783111234847",
+   "note": "First critical edition of the Arabic version of Galen's commentary on Airs, Waters, Places, which is lost in Greek.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-06",
+   "kind": "paper",
+   "title": "Translation into Syriac, Arabic, and Hebrew",
+   "who": "P. E. Pormann",
+   "venue": "The Oxford Handbook of Galen",
+   "url": "https://doi.org/10.1093/oxfordhb/9780190913687.013.22",
+   "note": "Current survey of the Syriac, Arabic and Hebrew transmission and of works preserved only in translation.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-01",
+   "kind": "paper",
+   "title": "Galen, On Demonstration",
+   "who": "M. Havrda and P. Koetschet (eds.)",
+   "venue": "De Gruyter",
+   "url": "https://doi.org/10.1515/9783111571003",
+   "note": "Reconstructs the lost On Demonstration from Greek and Arabic fragments, with a chapter on its Arabic transmission, translation and interpretation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-03",
+   "kind": "data",
+   "title": "Syriac Galen Palimpsest Processed Images",
+   "who": "P. E. Pormann, W. Sellers, S. Bhayro, N. Afif and N. Smelova",
+   "venue": "University of Manchester Figshare",
+   "url": "https://doi.org/10.48420/28554083.v1",
+   "note": "Releases processed images (about 67 GB) with a first digital critical edition of books 6–9 of Sergius's Syriac On Simple Drugs.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026",
+   "kind": "paper",
+   "title": "New Considerations on the Manuscript Thessalonicensis Vlatadon 14",
+   "who": "A. Pietrobelli",
+   "venue": "Religion in the Roman Empire",
+   "url": "https://doi.org/10.1628/rre-2026-0011",
+   "note": "Reassesses the manuscript that yielded On Avoiding Distress, the main recent case of a lost Galenic work recovered in Greek.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-04",
+   "kind": "grant",
+   "title": "GESIUS: Gesius' Commentaries on Galen: Recovering lost works through a mixed-method approach",
+   "who": "University of Manchester (EU Horizon project)",
+   "venue": "CORDIS",
+   "url": "https://cordis.europa.eu/project/id/101199569",
+   "note": "Funded project, begun April 2026, to image and transcribe five palimpsests holding Syriac versions of Gesius's lost commentaries on Galen's Mixtures and Natural Faculties.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

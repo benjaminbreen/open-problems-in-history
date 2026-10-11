@@ -1,0 +1,215 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "The Lost Book of Moses: The Hunt for the World's Oldest Bible",
+   "who": "C. Tigay",
+   "venue": "Ecco",
+   "url": "https://openlibrary.org/works/OL20027313W",
+   "note": "Journalistic investigation of Shapira's career and of the fate of the fragments after their 1885 sale, which renewed public interest in the case.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-01",
+   "kind": "paper",
+   "title": "The Shapira Scroll was an Authentic Dead Sea Scroll",
+   "who": "S. Guil",
+   "venue": "Palestine Exploration Quarterly",
+   "url": "https://doi.org/10.1080/00310328.2016.1185895",
+   "note": "Argued from circumstantial evidence about the reported find and the condition of the strips that they came from a cave near the Dead Sea.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "The Valediction of Moses: A Proto-Biblical Book",
+   "who": "I. Dershowitz",
+   "venue": "Mohr Siebeck (FAT)",
+   "url": "https://doi.org/10.1628/978-3-16-160645-8",
+   "note": "Open-access edition and commentary arguing that the text is an antecedent of Deuteronomy rather than a reworking of it.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "The Moses Scroll",
+   "who": "R. K. Nichols",
+   "venue": "Horeb Press",
+   "url": "https://openlibrary.org/works/OL29855769W",
+   "note": "Popular reconstruction and translation arguing for authenticity, with contributions by James D. Tabor.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-03",
+   "kind": "paper",
+   "title": "The Valediction of Moses: New Evidence on the Shapira Deuteronomy Fragments",
+   "who": "I. Dershowitz",
+   "venue": "Zeitschrift für die alttestamentliche Wissenschaft",
+   "url": "https://doi.org/10.1515/zaw-2021-0001",
+   "note": "Presented Shapira's working transcription from a Berlin State Library inventory, whose corrections Dershowitz read as Shapira struggling with a text he had not composed.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2021-04",
+   "kind": "paper",
+   "title": "The \"Valediction of Moses\" is not a proto-Deuteronomy: evidence from the verbal system",
+   "who": "B. Suchard",
+   "venue": "Knowledge Commons",
+   "url": "https://doi.org/10.17613/zhn2g-sfy50",
+   "note": "Argues that the mix of Classical and non-Classical Hebrew verb forms in the strips points to a modern composition, not a pre-exilic source.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-05",
+   "kind": "paper",
+   "title": "Notes on the Orthography of the Shapira Manuscripts: The Forger's Marks",
+   "who": "R. Hendel",
+   "venue": "Zeitschrift für die alttestamentliche Wissenschaft",
+   "url": "https://doi.org/10.1515/zaw-2021-2008",
+   "note": "Argued that the spelling mixes Mesha stele and biblical conventions, including consistent waw for final ō, an anachronism for an ancient scribe.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-11",
+   "kind": "paper",
+   "title": "Zur »Valediction of Moses«",
+   "who": "U. Rüterswörden",
+   "venue": "Zeitschrift für die alttestamentliche Wissenschaft",
+   "url": "https://doi.org/10.1515/zaw-2021-4006",
+   "note": "Short reply arguing that twentieth-century finds and research vindicate Hermann Guthe's 1883 scepticism about the fragments.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-12",
+   "kind": "paper",
+   "title": "The Shapira Scrolls: The Case for Authenticity",
+   "who": "I. Dershowitz and J. D. Tabor",
+   "venue": "Biblical Archaeology Review 47 (4)",
+   "url": "https://www.baslibrary.org/biblical-archaeology-review/47/4/6",
+   "note": "Popular statement of the authenticity case, printed alongside Hendel and Richelle's case for forgery.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-12",
+   "kind": "paper",
+   "title": "The Shapira Scrolls: The Case for Forgery",
+   "who": "R. Hendel and M. Richelle",
+   "venue": "Biblical Archaeology Review 47 (4)",
+   "url": "https://library.biblicalarchaeology.org/article/the-shapira-scrolls-the-case-for-forgery",
+   "note": "Summarized the orthographic and palaeographic case against authenticity, drawing on the British Library file.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022",
+   "kind": "paper",
+   "title": "Moses Wilhelm Shapira's \"Deuteronomy\" between Epigraphy and Literary Criticism",
+   "who": "K. van Bekkum",
+   "venue": "\"Now These Records are Ancient\" (Zaphon)",
+   "url": "https://doi.org/10.5771/9783963271915-53",
+   "note": "Weighs the epigraphic and literary-critical arguments raised since Dershowitz's revival of the case.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-01",
+   "kind": "paper",
+   "title": "Shapira's Deuteronomy, Its Decalogue, and Dead Sea Scrolls Authentic and Forged",
+   "who": "J. Klawans",
+   "venue": "Dead Sea Discoveries",
+   "url": "https://doi.org/10.1163/15685179-bja10032",
+   "note": "Compared the text with the Dead Sea Scrolls and known forgeries and proposed it is a post-biblical pastiche from nineteenth-century Jerusalem.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-03",
+   "kind": "paper",
+   "title": "The Career of Moses Shapira, Bookseller and Antiquarian",
+   "who": "M. D. Press",
+   "venue": "Palestine Exploration Quarterly",
+   "url": "https://doi.org/10.1080/00310328.2022.2050075",
+   "note": "Surveys Shapira's whole career as dealer, setting the Deuteronomy strips and Moabite pottery within his methods and the Ottoman Palestine antiquities trade.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2022-11",
+   "kind": "paper",
+   "title": "The Valediction of Moses: A Proto-Biblical Book by Idan Dershowitz (review)",
+   "who": "M. Richey",
+   "venue": "AJS Review",
+   "url": "https://doi.org/10.1353/ajs.2022.0052",
+   "note": "Extended review of the monograph weighing its central hypothesis against the palaeographic, linguistic and historical objections.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "A Text That Was but Isn't: On the Contribution of Literary Evidence in the Assessment of Shapira Deuteronomy",
+   "who": "J. Stackert",
+   "venue": "Maarav",
+   "url": "https://doi.org/10.1086/726572",
+   "note": "Argued that the text responds to a compiled Pentateuch, which tells against Dershowitz's proto-biblical reading.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-06",
+   "kind": "paper",
+   "title": "The Magic of Forgery: Patterns of Distraction in the Authentication of Suspicious Objects",
+   "who": "J. Klawans",
+   "venue": "Journal of Ancient Judaism",
+   "url": "https://doi.org/10.30965/21967954-bja10045",
+   "note": "Catalogues recurrent arguments in academic authentications of biblical forgeries, with the Shapira revival among its cases.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-12",
+   "kind": "field",
+   "title": "Moses Wilhelm Shapira, Hermann Weser and the Moab Expedition: Provenance Study of the Moabitica",
+   "who": "H. Goren and Y. Goren",
+   "venue": "Palestine Exploration Quarterly",
+   "url": "https://doi.org/10.1080/00310328.2024.2435787",
+   "note": "Ceramic petrography and XRF on Shapira's Moabite pottery, combined with the German expedition's records, to trace where the forgeries were made.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-05",
+   "kind": "paper",
+   "title": "Did the Shapira manuscript betray an unambiguously Pentateuchal perspective? A rejoinder to Stackert",
+   "who": "A. D. Friedberg and J. Hoppe",
+   "venue": "Journal for the Study of the Old Testament",
+   "url": "https://doi.org/10.1177/03090892251332294",
+   "note": "Replies that independent traditions could explain Stackert's parallels and that the text may draw on an earlier form of the Pentateuch.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-08",
+   "kind": "paper",
+   "title": "Biblical Forgery and Academic Authentication: Persisting Patterns of Guile and Gullibility",
+   "who": "J. Klawans",
+   "venue": "Oxford University Press",
+   "url": "https://doi.org/10.1093/9780197850565.001.0001",
+   "note": "Monograph on scholars' role in authenticating biblical forgeries, treating recent re-evaluations of the Shapira manuscripts as one case.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

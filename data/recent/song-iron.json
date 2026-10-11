@@ -1,0 +1,72 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "data",
+   "title": "China Historical GIS, Version 6",
+   "who": "Fairbank Center, Harvard, and Fudan University",
+   "venue": "Harvard Dataverse",
+   "url": "https://chgis.fas.harvard.edu/data/chgis/v6/",
+   "note": "Time-series administrative units across dynasties, usable for placing Song iron offices, sites and quotas on a map.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-10",
+   "kind": "field",
+   "title": "A Survey Study of the Blast Furnace at Kuangshan Village Using 3D Laser Scanning",
+   "who": "J. Wang, X. Huang and W. Qian",
+   "venue": "JOM",
+   "url": "https://doi.org/10.1007/s11837-016-2138-0",
+   "note": "Laser-scanned the standing Northern Song furnace at Kuangshan, Wu'an, the tallest surviving ancient Chinese blast furnace, to reconstruct its form and operation.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-09",
+   "kind": "paper",
+   "title": "China, Europe, and the Great Divergence: A Study in Historical National Accounting, 980–1850",
+   "who": "S. Broadberry, H. Guan and D. D. Li",
+   "venue": "Journal of Economic History",
+   "url": "https://doi.org/10.1017/S0022050718000529",
+   "note": "Builds Chinese GDP estimates from 980, including Northern Song industrial output, giving a macroeconomic frame against which iron output claims can be checked.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-04",
+   "kind": "field",
+   "title": "Coal-fuelled crucible lead-silver smelting in 12th–13th century China: A technological innovation in the age of deforestation",
+   "who": "S. Liu, T. Rehren, D. Qin, J. Chen and W. Zhou",
+   "venue": "Journal of Archaeological Science",
+   "url": "https://doi.org/10.1016/j.jas.2019.01.004",
+   "note": "Excavated evidence for coal-fuelled non-ferrous smelting, while arguing that most iron smelters of the period still used charcoal-fired furnaces.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-09",
+   "kind": "paper",
+   "title": "The Making of Song Dynasty History: Sources and Narratives, 960–1279 CE",
+   "who": "C. Hartman",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108877176",
+   "note": "Traces how the Song state compilations behind the Song huiyao and Song shi were assembled, relevant to how far their fiscal figures can be trusted.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-05",
+   "kind": "field",
+   "title": "From Bloomery Iron to Cast Iron: Spatial Distribution Patterns and Influencing Factors of Ancient Iron Smelting Technology in Southeastern Guangxi, China",
+   "who": "R. Liu, G. Zou, Y. Zhao et al.",
+   "venue": "Land",
+   "url": "https://doi.org/10.3390/land15050816",
+   "note": "GIS analysis of 38 Han to Song smelting sites in southeastern Guangxi, mapping bloomery and cast-iron production clusters and their geological controls.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

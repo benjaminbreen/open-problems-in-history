@@ -1,0 +1,204 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-10",
+ "items": [
+  {
+   "date": "2016-07",
+   "kind": "data",
+   "title": "The Mexican Drought Atlas: Tree-ring reconstructions of the soil moisture balance during the late pre-Hispanic, colonial, and modern eras",
+   "who": "D. W. Stahle et al.",
+   "venue": "Quaternary Science Reviews",
+   "url": "https://doi.org/10.1016/j.quascirev.2016.06.018",
+   "note": "Gridded soil-moisture reconstructions for Mexico from 1400 CE, letting drought in the 1540s and 1570s be mapped against epidemic reports year by year.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Nahua and Spanish Concepts of Health and Disease in Colonial Mexico, 1519-1615",
+   "who": "R. Dufendach",
+   "venue": "UCLA (PhD dissertation)",
+   "url": "https://escholarship.org/uc/item/80d033rm",
+   "note": "Compares Nahua and Spanish understandings of health and disease from conquest to 1615, the conceptual frame for reading epidemic names such as cocoliztli.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-02",
+   "kind": "paper",
+   "title": "Salmonella enterica genomes recovered from victims of a major 16th century epidemic in Mexico",
+   "who": "Å. J. Vågene et al.",
+   "venue": "bioRxiv preprint",
+   "url": "https://doi.org/10.1101/106740",
+   "note": "Preprint of the Teposcolula Yucundaa study, which drew wide press coverage and early criticism that the method could not detect RNA viruses.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018",
+   "kind": "paper",
+   "title": "A través de sus ojos: médicos indígenas y el cocoliztli de 1545 en la Nueva España",
+   "who": "S. E. Guevara Flores",
+   "venue": "eHumanista 39",
+   "url": "https://dialnet.unirioja.es/descarga/articulo/6544070.pdf",
+   "note": "Examines how Indigenous physicians perceived and treated the 1545 cocoliztli, arguing the disease category was socially constructed across Nahua and Spanish medicine.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-01",
+   "kind": "field",
+   "title": "Salmonella enterica genomes from victims of a major sixteenth-century epidemic in Mexico",
+   "who": "Å. J. Vågene et al.",
+   "venue": "Nature Ecology & Evolution",
+   "url": "https://doi.org/10.1038/s41559-017-0446-6",
+   "note": "Recovered Salmonella enterica Paratyphi C genomes from burials at Teposcolula Yucundaa, proposing enteric fever as a candidate cause of the 1545 epidemic without excluding other pathogens.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2018-07",
+   "kind": "field",
+   "title": "Pan-genome Analysis of Ancient and Modern Salmonella enterica Demonstrates Genomic Stability of the Invasive Para C Lineage for Millennia",
+   "who": "Z. Zhou et al.",
+   "venue": "Current Biology",
+   "url": "https://doi.org/10.1016/j.cub.2018.05.058",
+   "note": "A Paratyphi C genome from a c. 1200 CE Norwegian burial placed the lineage in medieval Europe, consistent with a European introduction to Mexico.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-09",
+   "kind": "field",
+   "title": "Cold Tropical Pacific Sea Surface Temperatures During the Late Sixteenth-Century North American Megadrought",
+   "who": "B. I. Cook et al.",
+   "venue": "Journal of Geophysical Research: Atmospheres",
+   "url": "https://doi.org/10.1029/2018JD029323",
+   "note": "Reconstructs persistent La Niña-like conditions in 1566–1590 as a likely driver of the megadrought that the drought-and-rodent hypothesis links to the 1576 epidemic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "Genomic Insights into Pre- and Post-Contact Human Pathogens in the New World",
+   "who": "Å. J. Vågene",
+   "venue": "University of Tübingen (PhD dissertation)",
+   "url": "https://doi.org/10.15496/publikation-26740",
+   "note": "Dissertation setting out the Teposcolula pathogen screening and the MALT-based workflow used to identify Paratyphi C, with discussion of its limits.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-06",
+   "kind": "paper",
+   "title": "The Mexican Mission: Indigenous Reconstruction and Mendicant Enterprise in New Spain, 1521–1600",
+   "who": "R. D. Crewe",
+   "venue": "Cambridge University Press",
+   "url": "https://doi.org/10.1017/9781108602310",
+   "note": "Its chapter 'Hecatomb' uses viceregal civil records to trace the demographic crises of 1575–1595, in which at least 40 percent of the Indigenous population died.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-04",
+   "kind": "field",
+   "title": "Origin and Health Status of First-Generation Africans from Early Colonial Mexico",
+   "who": "R. Barquera et al.",
+   "venue": "Current Biology",
+   "url": "https://doi.org/10.1016/j.cub.2020.04.002",
+   "note": "Genomes, isotopes and pathogen DNA (yaws, hepatitis B) from a sixteenth-century mass burial at the San José de los Naturales hospital, showing which pathogens such contexts can yield.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-04",
+   "kind": "paper",
+   "title": "Changes in indigenous dress and the cocoliztli epidemic of 1544–1548 in New Spain",
+   "who": "O. R. Benavides Cárabes and C. Viesca Treviño",
+   "venue": "Social Medicine",
+   "url": "https://doi.org/10.71164/socialmedicine.v14i1.2021.1305",
+   "note": "Proposes that colonial changes in Indigenous clothing and living conditions favoured louse-borne transmission, reviving a typhus-related interpretation.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-07",
+   "kind": "paper",
+   "title": "The Church of the Dead: The Epidemic of 1576 and the Birth of Christianity in the Americas",
+   "who": "J. Scheper Hughes",
+   "venue": "New York University Press",
+   "url": "https://doi.org/10.18574/nyu/9781479802586.001.0001",
+   "note": "Religious history of the 1576 epidemic and its aftermath, centring Indigenous survivors and drawing on mendicant and Nahua sources.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-08",
+   "kind": "field",
+   "title": "Salmonella enterica from a soldier from the 1652 siege of Barcelona (Spain) supports historical transatlantic epidemic contacts",
+   "who": "T. de-Dios et al.",
+   "venue": "iScience",
+   "url": "https://doi.org/10.1016/j.isci.2021.103021",
+   "note": "A seventeenth-century Paratyphi C genome from Barcelona clusters with the Mexican ones, which the authors read as support for transatlantic movement of the lineage.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-06",
+   "kind": "paper",
+   "title": "La epidemia de cocoliztli (1576) en el teatro de Fernán González de Eslava",
+   "who": "A. Lorente Medina",
+   "venue": "Hipogrifo",
+   "url": "https://doi.org/10.13035/h.2023.11.01.46",
+   "note": "Reads the coloquios of González de Eslava as a contemporary literary witness to the 1576 epidemic in Mexico City.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-10",
+   "kind": "data",
+   "title": "Digital Florentine Codex",
+   "who": "Getty Research Institute and Biblioteca Medicea Laurenziana",
+   "venue": "Getty",
+   "url": "https://florentinecodex.getty.edu/",
+   "note": "Full online edition with searchable Nahuatl and Spanish transcriptions and new translations of Sahagún's codex, compiled during and after the 1576 epidemic.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-04",
+   "kind": "paper",
+   "title": "Religion over Life and Death. The Cocoliztli in the Florentine Codex",
+   "who": "V. Ríos Castaño",
+   "venue": "De Gruyter (Bodies, Remedies, Policies)",
+   "url": "https://doi.org/10.1515/9783111249315-003",
+   "note": "Studies how the Florentine Codex presents the cocoliztli and frames its meaning in religious terms.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-09",
+   "kind": "field",
+   "title": "Evolutionary history and recurrent host adaptation in ancient Salmonella enterica",
+   "who": "I. Jackson et al.",
+   "venue": "bioRxiv preprint",
+   "url": "https://doi.org/10.1101/2025.09.18.676881",
+   "note": "Fifty-three ancient Salmonella genomes from Eurasia (3500 BCE–1300 CE) reconstruct the Paratyphi C lineage's history, the background for any European-origin argument.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-10",
+   "kind": "field",
+   "title": "Ancient genomic insights into Salmonella enterica Paratyphi C from Central Mexico",
+   "who": "M. Bravo-Lopez et al.",
+   "venue": "bioRxiv preprint",
+   "url": "https://doi.org/10.1101/2025.10.13.681940",
+   "note": "A nineteenth-century Paratyphi C genome from Mexico City clusters with Teposcolula, read as colonial-era introduction followed by local persistence (not yet peer reviewed).",
+   "advances": false,
+   "cited": true
+  }
+ ]
+}
