@@ -1,0 +1,241 @@
+{
+  "id": "thylacine",
+  "title": "When did the thylacine go extinct in the wild?",
+  "short": "The last known thylacine died in a Hobart zoo in September 1936, but whether the species survived in the Tasmanian bush into the 1940s, the 1980s or later remains disputed.",
+  "region": "Pacific",
+  "field": "Chronology",
+  "start": 1888,
+  "end": 2019,
+  "flags": [
+    "digitization",
+    "science"
+  ],
+  "needs": [
+    {
+      "who": "statisticians",
+      "ask": "Test extinction-date estimators that use graded sightings on species with known extinction or rediscovery dates, and report how the thylacine estimate shifts with each grading scheme."
+    },
+    {
+      "who": "archivists",
+      "ask": "Identify and list the Tasmanian Archives, wildlife-service and museum files holding post-1910 thylacine reports, bounty payments and zoo records, and prioritize the undigitized series for scanning."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Design an environmental DNA survey of the south-western Tasmanian wilderness with stated detection limits, and test whether dated post-1930 hair, scat or skin samples contain thylacine DNA."
+    },
+    {
+      "who": "gis",
+      "ask": "Geolocate every graded sighting against road, track, settlement and land-clearance layers by decade, so that apparent refugia can be separated from where observers happened to be."
+    }
+  ],
+  "matters": "The thylacine is the standard example of a historically documented mammal extinction caused by colonial persecution, and its date bears on how historians weigh the government bounty of 1888 to 1909, private bounties from the 1830s, habitat change and possible disease. Whether it vanished by the 1940s or lingered into the 1980s also decides whether the protection granted in 1936 and the reserves of the 1960s and 1970s came too late by years or by decades. Beyond Tasmania, it is the main test case for methods that infer extinction dates from a mix of specimens and unverified sightings, which conservation bodies use to declare species extinct.",
+  "stuck": "Absence leaves no document, so the evidence after 1930 consists almost entirely of sightings, whose reliability is hard to judge and which continued every year through the twentieth century. Estimates therefore depend on which reports are admitted: Carlson, Bond and Burgio (2018) put the most likely date near 1940, while Brook and colleagues (2023), using a larger graded database, found that the full record allows extinction as late as the 1980s to early 2000s. Even the anchoring events are contested: the last confirmed wild kill is usually given as Wilf Batty's at Mawbanna in 1930, and Paddle and Medlock (2023) and Linnard, Williams and Holmes (2020) disagree about when and where the last captive animals were taken.",
+  "solved": "A public, versioned database of all post-1910 thylacine records with a reliability grading that has been validated against reports of known accuracy, together with an extinction-date estimate whose credible interval and sensitivity to that grading are reported; or physical evidence such as a specimen, DNA from a securely dated sample, or a verified photograph that moves the last confirmed date. The most likely outcome is a credible interval rather than a single year.",
+  "approach": [
+    "The human literature gives the baselines: Guiler (1985) and Paddle (2000) on bounties, decline and the 1930s; Sleightholme and Campbell (2015) on post-1900 range; and the sighting compilations behind Carlson, Bond and Burgio (2018) and Brook and colleagues (2023), whose Tasmanian Thylacine Sighting Record Database lists 1,223 rated records from 1910 to 2019.",
+    "Teams could text-mine Trove's digitized Tasmanian newspapers and transcribe the wildlife-service sighting files held by NRE Tasmania and the Tasmanian Archives, matching each report to existing database entries to find unrecorded sightings and duplicates, and recording who saw what, where and in what conditions.",
+    "Reliability grading should be made explicit and repeatable: a coding scheme applied by several independent coders, with agreement measured, and calibrated on comparable reports of animals whose presence is known, such as sightings of foxes or quolls later confirmed or refuted.",
+    "Extinction-date estimators, including the Solow (1993) family and the re-sampling method of Brook, Buettel and Jarić (2019), should first be tested on species with known extinction or rediscovery dates, as Roberts and Solow (2003) did for the dodo, before results are reported for the thylacine with their sensitivity to grading and to observer effort.",
+    "An independent check needs field scientists: environmental DNA sampling and camera-trap surveys in the south-western wilderness, where Brook and colleagues (2023) left a small chance of late persistence, and DNA and radiocarbon testing of any hair, scat or skin samples with a post-1930 provenance."
+  ],
+  "existing": [
+    {
+      "year": 1966,
+      "authors": "Eric R. Guiler",
+      "title": "In Pursuit of the Thylacine",
+      "venue": "Oryx 8 (5): 307–310",
+      "url": "https://doi.org/10.1017/s0030605300005159",
+      "note": "Report on the government-funded search begun in 1963 after an animal was reportedly killed by accident in 1961; it found no confirmed thylacines."
+    },
+    {
+      "year": 1985,
+      "authors": "Eric R. Guiler",
+      "title": "Thylacine: The Tragedy of the Tasmanian Tiger",
+      "venue": "Melbourne: Oxford University Press",
+      "url": "https://openlibrary.org/works/OL6233993W",
+      "note": "First book-length history of the thylacine's decline, using bounty returns and arguing that disease in the early twentieth century compounded hunting."
+    },
+    {
+      "year": 1993,
+      "authors": "Andrew R. Solow",
+      "title": "Inferring Extinction from Sighting Data",
+      "venue": "Ecology 74 (3): 962–964",
+      "url": "https://doi.org/10.2307/1940821",
+      "note": "Statistical test for whether a species is extinct given a record of sightings, the basis of most later extinction-date estimators."
+    },
+    {
+      "year": 2000,
+      "authors": "Robert Paddle",
+      "title": "The Last Tasmanian Tiger: The History and Extinction of the Thylacine",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://openlibrary.org/works/OL8324008W",
+      "note": "Historical study of attitudes, bounties, zoo keeping and the 1930s, arguing that colonial persecution and neglect, not an inevitable decline, caused the extinction."
+    },
+    {
+      "year": 2003,
+      "authors": "David L. Roberts and Andrew R. Solow",
+      "title": "When did the dodo become extinct?",
+      "venue": "Nature 426: 245",
+      "url": "https://doi.org/10.1038/426245a",
+      "note": "Applied an optimal linear estimation method to the dodo's last sightings, the model for dating historical extinctions from sparse records."
+    },
+    {
+      "year": 2013,
+      "authors": "Thomas A. A. Prowse, Christopher N. Johnson, Robert C. Lacy, Corey J. A. Bradshaw, John P. Pollak, Michael J. Watts and Barry W. Brook",
+      "title": "No need for disease: testing extinction hypotheses for the thylacine using multi-species metamodels",
+      "venue": "Journal of Animal Ecology 82 (2): 355–364",
+      "url": "https://doi.org/10.1111/1365-2656.12029",
+      "note": "Population models including settlers' effects on the prey base reproduced the decline without an epidemic, against the disease hypothesis."
+    },
+    {
+      "year": 2015,
+      "authors": "Stephen R. Sleightholme and Cameron R. Campbell",
+      "title": "A retrospective assessment of 20th century thylacine populations",
+      "venue": "Australian Zoologist 38 (1): 102–129",
+      "url": "https://doi.org/10.7882/az.2015.023",
+      "note": "Mapped 1,167 geo-referenced captures, kills and confirmed sightings from 1900 to 1940 and discussed possible survival into the 1940s and beyond."
+    },
+    {
+      "year": 2017,
+      "authors": "Charles Y. Feigin, Axel H. Newton, Liliya Doronina et al.",
+      "title": "Genome of the Tasmanian tiger provides insights into the evolution and demography of an extinct marsupial carnivore",
+      "venue": "Nature Ecology & Evolution 2 (1): 182–192",
+      "url": "https://doi.org/10.1038/s41559-017-0417-y",
+      "note": "Genome from a museum pouch young indicated low genetic diversity and a long decline beginning well before people reached Australia."
+    },
+    {
+      "year": 2018,
+      "authors": "Colin J. Carlson, Alexander L. Bond and Kevin R. Burgio",
+      "title": "Estimating the extinction date of the thylacine with mixed certainty data",
+      "venue": "Conservation Biology 32 (2): 477–483",
+      "url": "https://doi.org/10.1111/cobi.13037",
+      "note": "Bayesian model treating valid and invalid sightings as separate processes gave a most likely extinction date of 1940 and none later than 1956."
+    },
+    {
+      "year": 2018,
+      "authors": "Barry W. Brook, Stephen R. Sleightholme, Cameron R. Campbell and Jessie C. Buettel",
+      "title": "Deficiencies in estimating the extinction date of the thylacine with mixed certainty data",
+      "venue": "Conservation Biology 32 (5): 1195–1197",
+      "url": "https://doi.org/10.1111/cobi.13186",
+      "note": "Critique arguing that reporting biases make it premature to place extinction soon after 1936; answered by Carlson and colleagues in the same issue."
+    },
+    {
+      "year": 2019,
+      "authors": "Barry W. Brook, Jessie C. Buettel and Ivan Jarić",
+      "title": "A fast re-sampling method for using reliability ratings of sightings with extinction-date estimators",
+      "venue": "Ecology 100 (9): e02787",
+      "url": "https://doi.org/10.1002/ecy.2787",
+      "note": "Method that samples sightings with probability equal to their reliability rating, tested on rediscovered and confirmed-extinct species, with R code."
+    },
+    {
+      "year": 2020,
+      "authors": "Gareth Linnard, Mike Williams and Branden Holmes",
+      "title": "The parson, the psychiatrist, the publican, and his nephews: the two final thylacine captures in Tasmania",
+      "venue": "Papers and Proceedings of the Tasmanian Historical Research Association 67 (3): 6–22",
+      "url": "https://thra.org.au/publications/papers-proceedings-december-2020",
+      "note": "Archival and film evidence arguing that the last captive thylacines were snared in the north-west around 1930, not in the Florentine Valley in 1933."
+    },
+    {
+      "year": 2023,
+      "authors": "Barry W. Brook, Stephen R. Sleightholme, Cameron R. Campbell, Ivan Jarić and Jessie C. Buettel",
+      "title": "Resolving when (and where) the Thylacine went extinct",
+      "venue": "Science of the Total Environment 877: 162878",
+      "url": "https://doi.org/10.1016/j.scitotenv.2023.162878",
+      "note": "From 1,237 records since 1910, high-quality reports implied extinction in the 1940s to 1970s, but modelling the whole record allowed the late 1980s to early 2000s."
+    },
+    {
+      "year": 2023,
+      "authors": "Robert Paddle and Kathryn Medlock",
+      "title": "The discovery of the remains of the last Tasmanian tiger (Thylacinus cynocephalus)",
+      "venue": "Australian Zoologist 43 (1): 97–108",
+      "url": "https://doi.org/10.7882/az.2023.017",
+      "note": "Zoo and museum archives identified the animal that died on 7 September 1936 as an aged female whose skin and skeleton survive at the Tasmanian Museum."
+    },
+    {
+      "year": 2023,
+      "authors": "Barry W. Brook, Stephen R. Sleightholme, Cameron R. Campbell, Ivan Jarić and Jessie C. Buettel",
+      "title": "The Tasmanian Thylacine Sighting Record Database (TTSRD): 1,223 quality-rated and geo-located Thylacine observations from 1910 to 2019",
+      "venue": "Australian Zoologist 43 (3): 419–435",
+      "url": "https://doi.org/10.7882/az.2023.044",
+      "note": "Describes the curated, dated, geo-tagged and quality-rated sighting database drawn from archives, newspapers, museum files and private collections."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Tasmanian Archives (Libraries Tasmania), Hobart",
+      "collection": "Government thylacine bounty payments 1888–1909; Van Diemen's Land Company records for Woolnorth; Beaumaris Zoo and Hobart City Council reserves committee papers; photographs",
+      "url": "https://libraries.tas.gov.au/",
+      "digitized": "partial",
+      "note": "Holds Van Diemen's Land Company station records, government administrative series that should include bounty payment records, and municipal zoo papers; some series are imaged in the online viewer, many are not, and the bounty series still need precise identification.",
+      "aliases": [
+        "Tasmanian Archives",
+        "Libraries Tasmania"
+      ],
+      "holdings": [
+        {
+          "name": "Photograph of a thylacine at Beaumaris Zoo by Ben Sheppard",
+          "ref": "NS4371/1/1063",
+          "url": "https://stors.tas.gov.au/NS4371-1-1063",
+          "note": "One of the few dated photographs of the last captive animals, relevant to the dispute over which animal was the last."
+        }
+      ]
+    },
+    {
+      "repository": "Trove, National Library of Australia, Canberra",
+      "collection": "Digitized Australian newspapers, including the Tasmanian press",
+      "url": "https://trove.nla.gov.au/",
+      "digitized": "full",
+      "note": "Searchable OCR text of the Mercury, Examiner, Advocate and other papers that carried reports of kills, captures and sightings; OCR quality varies and spelling variants such as 'tiger' and 'hyena' must be searched.",
+      "aliases": [
+        "Trove"
+      ]
+    },
+    {
+      "repository": "Department of Natural Resources and Environment Tasmania (NRE Tasmania), Hobart",
+      "collection": "Parks and Wildlife Service and successor-department thylacine sighting files and witness statements",
+      "url": "https://nre.tas.gov.au/",
+      "digitized": "none",
+      "note": "Holds sighting reports and witness statements logged by the state wildlife service; redacted lists of reports since 2001 were released in 2016 and 2019, and fuller access is by Right to Information request.",
+      "aliases": [
+        "NRE Tasmania"
+      ]
+    },
+    {
+      "repository": "Tasmanian Museum and Art Gallery, Hobart",
+      "collection": "Zoology collection: thylacine skins, skeletons and registers, including the remains of the animal that died at Beaumaris Zoo in 1936; museum annual reports",
+      "url": "https://tmag.tas.gov.au/",
+      "digitized": "partial",
+      "note": "Specimens and unpublished museum records used by Paddle and Medlock (2023); any later-dated tissue would be the obvious material for DNA and radiocarbon testing.",
+      "aliases": [
+        "Tasmanian Museum"
+      ]
+    },
+    {
+      "repository": "International Thylacine Specimen Database",
+      "collection": "Catalogue and photographs of surviving thylacine specimens worldwide (6th revision, 2018)",
+      "url": "https://doi.org/10.7882/az.2017.011",
+      "digitized": "partial",
+      "note": "Compiled by Stephen Sleightholme and Cameron Campbell; few specimens carry a recorded date and place of collection, which limits its use for dating the last wild animals.",
+      "aliases": [
+        "International Thylacine Specimen Database"
+      ]
+    },
+    {
+      "repository": "Atlas of Living Australia",
+      "collection": "Occurrence records for Thylacinus cynocephalus from museum and survey datasets",
+      "url": "https://biocache.ala.org.au/occurrences/search?q=Thylacinus%20cynocephalus",
+      "digitized": "full",
+      "note": "Aggregated specimen and occurrence records with collection dates where known, useful for cross-checking the last dated physical evidence.",
+      "aliases": [
+        "Atlas of Living Australia"
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-12",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-12",
+    "needs_on": "2026-10-12"
+  }
+}

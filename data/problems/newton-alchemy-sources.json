@@ -1,0 +1,327 @@
+{
+  "id": "newton-alchemy-sources",
+  "title": "What texts did Newton copy in the alchemical manuscripts whose sources are unidentified?",
+  "short": "Most of Newton's million words on alchemy copy or digest named authors, but several recipe collections and a dialogue among his papers derive from exemplars no one has identified.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1660,
+  "end": 1700,
+  "flags": [
+    "digitization"
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Collate Keynes MSS 31, 44 and 58 against candidate Latin, English, German and Dutch witnesses, recording shared errors, omissions and ordering rather than shared procedures."
+    },
+    {
+      "who": "archivists",
+      "ask": "Search catalogues of seventeenth-century chymical manuscripts in Ashmole, Sloane, Mellon and Boyle collections for recipe books matching the titles, sequences and folio numbering in Newton's copies."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Build alignment searches over the Newton TEI, EEBO-TCP and EMLAP that tolerate translation, alchemical symbols and spelling variation, and report ranked candidates with their null results."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Compare watermarks, chain-line spacing and inks in Keynes MSS 31, 44 and 58 with dated Newton papers to narrow when each copy was made."
+    }
+  ],
+  "matters": "Newton's alchemical papers are mostly his transcriptions, translations and digests of other writers, so what he copied, and from whom, is the main evidence for what he knew and when. The unattributed items are disproportionately practical (recipes, furnace notes, an adept's answers to a novice), and they bear directly on the dispute between readings of his alchemy as a religious and natural-philosophical search for an active spirit in matter (Dobbs 1975, 1991) and as a laboratory chymistry aimed at decoding the cover names of Starkey and others (Newman 2018). Identified exemplars would also date the copies, show which texts reached Newton in manuscript rather than print, and name the correspondents and collections (Boyle's circle, Starkey's papers, the 'Mr F.' who in 1675 communicated the text Newton copied as 'Manna') through which he obtained them.",
+  "stuck": "Alchemical recipes repeat standard operations and materials across hundreds of authors, so a procedural resemblance rarely isolates one source, and many texts Newton used circulated only in manuscript, under pseudonyms or in translation. The comparison corpora are lopsided: English print is well transcribed in EEBO-TCP and a selection of Latin print in EMLAP, but later seventeenth-century Latin, German and Dutch chymistry and the large manuscript collections are mostly uncatalogued below the volume level and untranscribed. The Newton Project catalogue records Keynes MS 31 as 'clearly not Newton's own composition' with sources unidentified, Keynes MS 44 as a transcript or translation of an anonymous unpublished work, and Keynes MS 58 ff. 6r–8v as notes from an unidentified source; none has an agreed date.",
+  "solved": "For each manuscript (Keynes MS 31, Keynes MS 44, Keynes MS 58 ff. 6r–8v), a named printed or manuscript exemplar, demonstrably older than Newton's copy, that shares distinctive readings, errors, omissions or ordering with it across several units, not merely the same operations. Where Newton combined sources, the test applies unit by unit, and a partial solution assigns each recipe or answer to a source or records a documented null search.",
+  "approach": [
+    "The editorial groundwork exists: the Newton Project catalogue descriptions and the Spargo (1992) account of the 1936 Sotheby sale fix custody and contents, Figala, Harrison and Petzoldt (1992) reconstruct Newton's chymical library and his lists of writers, and the Chymistry of Isaac Newton edition, described in Mink et al. (2020) and Wingate (2025), encodes his citations so that identified sources can be separated from the residue.",
+    "Teams could align the Indiana TEI transcriptions of the three manuscripts, unit by unit, against EEBO-TCP for English print and EMLAP and Theatrum Chemicum for Latin, using matching that survives translation, abbreviation and symbol substitution. Distinctive anchors such as unusual quantities, apparatus, cover names, and the external folio numbers cited in Keynes MS 58 are better search keys than common operations.",
+    "Precedents show what counts: Newman (1987) showed that the 'Clavis', once read as Newton's own composition, is Starkey's text, and Newman and Principe (2002) traced Starkey's manuscript processes through Boyle's papers. Candidate matches should be judged the same way, by shared variants and errors, with philologists ruling on whether a resemblance indicates descent or common practice.",
+    "If no printed ancestor exists, the exemplar is likely a manuscript, and finding it needs digitization and item-level cataloguing of chymical manuscript collections: Ashmole at the Bodleian, Sloane at the British Library, the Mellon manuscripts at Yale and Boyle's papers at the Royal Society, with transcription models trained on seventeenth-century English, Latin and German hands.",
+    "Physical evidence can narrow dates independently: Indiana's description of Keynes MS 31 records a watermark shared with other Keynes manuscripts, and systematic watermark and paper comparison across Newton's dated papers would test the catalogue's estimate of 1668–75 and the early to mid 1670s date given for Keynes MS 58."
+  ],
+  "existing": [
+    {
+      "year": 1947,
+      "authors": "John Maynard Keynes",
+      "title": "Newton, the Man",
+      "venue": "In The Royal Society, Newton Tercentenary Celebrations. Cambridge: Cambridge University Press (lecture read in July 1946)",
+      "url": "https://mathshistory.st-andrews.ac.uk/Extras/Keynes_Newton/",
+      "note": "Written by the purchaser of most of the alchemical papers at the 1936 sale, it called Newton 'the last of the magicians' and set the terms of later debate."
+    },
+    {
+      "year": 1975,
+      "authors": "B. J. T. Dobbs",
+      "title": "The Foundations of Newton's Alchemy, or 'The Hunting of the Greene Lyon'",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://archive.org/details/foundationsofnew0000dobb",
+      "note": "First systematic study of the manuscripts, discussing Keynes MS 31 and MS 58 and identifying the 'Mr F.' of the Manna manuscript as Ezekiel Foxcroft."
+    },
+    {
+      "year": 1977,
+      "authors": "Karin Figala",
+      "title": "Newton as Alchemist",
+      "venue": "History of Science 15 (2): 102–137",
+      "url": "https://doi.org/10.1177/007327537701500202",
+      "note": "Essay review of Dobbs that questioned several of its attributions and identifications, including that of 'Mr F.' as Foxcroft."
+    },
+    {
+      "year": 1980,
+      "authors": "Richard S. Westfall",
+      "title": "Never at Rest: A Biography of Isaac Newton",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CBO9781107340664",
+      "note": "Standard biography that integrated the alchemical papers into Newton's intellectual development and dated his alchemical reading and experiments."
+    },
+    {
+      "year": 1987,
+      "authors": "William R. Newman",
+      "title": "Newton's Clavis as Starkey's Key",
+      "venue": "Isis 78 (4): 564–574",
+      "url": "https://doi.org/10.1086/354553",
+      "note": "Showed that the 'Clavis', which Dobbs had treated as Newton's own composition, is a text by George Starkey, the model case of a source identification changing interpretation."
+    },
+    {
+      "year": 1991,
+      "authors": "B. J. T. Dobbs",
+      "title": "The Janus Faces of Genius: The Role of Alchemy in Newton's Thought",
+      "venue": "Cambridge: Cambridge University Press",
+      "url": "https://openlibrary.org/books/OL7738812M",
+      "note": "Argued that Newton's alchemy was a religiously motivated search for the divine agency acting in matter, closely bound to his theology and natural philosophy."
+    },
+    {
+      "year": 1992,
+      "authors": "Karin Figala, John Harrison and Ulrich Petzoldt",
+      "title": "De scriptoribus chemicis: Sources for the Establishment of Isaac Newton's (Al)chemical Library",
+      "venue": "In P. M. Harman and A. E. Shapiro (eds.), The Investigation of Difficult Things. Cambridge: Cambridge University Press, 135–179",
+      "url": "https://openlibrary.org/works/OL18970478W",
+      "note": "Reconstructed Newton's chymical library from his own book lists, establishing which printed works he owned and could have copied."
+    },
+    {
+      "year": 1992,
+      "authors": "Peter Spargo",
+      "title": "Sotheby's, Keynes and Yahuda: the 1936 sale of Newton's manuscripts",
+      "venue": "In P. M. Harman and A. E. Shapiro (eds.), The Investigation of Difficult Things. Cambridge: Cambridge University Press, 115–134",
+      "url": "https://openlibrary.org/works/OL18970478W",
+      "note": "Traced the dispersal of the Portsmouth papers lot by lot, the custodial history on which the Keynes manuscript catalogue rests."
+    },
+    {
+      "year": 2002,
+      "authors": "William R. Newman and Lawrence M. Principe",
+      "title": "Alchemy Tried in the Fire: Starkey, Boyle, and the Fate of Helmontian Chymistry",
+      "venue": "Chicago: University of Chicago Press",
+      "url": "https://doi.org/10.7208/chicago/9780226577050.001.0001",
+      "note": "Reconstructed Starkey's laboratory practice from his notebooks and letters in Boyle's papers, the manuscript tradition behind much of what Newton copied."
+    },
+    {
+      "year": 2016,
+      "authors": "William R. Newman",
+      "title": "A preliminary reassessment of Newton's alchemy",
+      "venue": "In R. Iliffe and G. E. Smith (eds.), The Cambridge Companion to Newton, 2nd edn. Cambridge: Cambridge University Press",
+      "url": "https://doi.org/10.1017/CCO9781139058568.013",
+      "note": "Reassessed Newton's alchemy in light of the digital edition and argued for its experimental, chymical character against a primarily spiritual reading."
+    },
+    {
+      "year": 2018,
+      "authors": "William R. Newman",
+      "title": "Newton the Alchemist: Science, Enigma, and the Quest for Nature's 'Secret Fire'",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.23943/princeton/9780691174877.001.0001",
+      "note": "Comprehensive study built on the edition, arguing that Newton's alchemy was a laboratory chymistry aimed at decoding Starkey, Snyders and other authors."
+    },
+    {
+      "year": 2020,
+      "authors": "Meridith Beck Mink, Michelle Dalmau, Wallace Hooper, William R. Newman and James R. Voelkel",
+      "title": "Encoding Newton's Alchemical Library: Integrating Traditional Bibliographic and Modern Computational Approaches",
+      "venue": "Journal of the Text Encoding Initiative 11",
+      "url": "https://doi.org/10.4000/jtei.2866",
+      "note": "Describes the TEI edition of more than one million words and its bibliography of the five thousand-plus works Newton cited."
+    },
+    {
+      "year": 2020,
+      "authors": "Jennifer M. Rampling",
+      "title": "The Experimental Fire: Inventing English Alchemy, 1300–1700",
+      "venue": "Chicago: University of Chicago Press",
+      "url": "https://doi.org/10.7208/chicago/9780226710846.001.0001",
+      "note": "Traced how English alchemical texts, above all the Ripley corpus, were copied, glossed and reworked in manuscript, the culture in which Newton's exemplars circulated."
+    },
+    {
+      "year": 2025,
+      "authors": "Alexandra E. Wingate",
+      "title": "A Bibliographical Framework for Citation Analysis of Isaac Newton's Alchemical Manuscripts",
+      "venue": "Textual Cultures 18 (2)",
+      "url": "https://doi.org/10.14434/tc.v18i2.42350",
+      "note": "Revised how the edition encodes Newton's citations, allowing terminus post quem dating of manuscripts and analysis of his use of sources."
+    },
+    {
+      "year": 2026,
+      "authors": "Georgiana D. Hedesan, Petr Pavlas and Vojtěch Kaše",
+      "title": "An Alchemical Prima Materia for the Digital Age: Making the Early Modern Latin Alchemical Prints (EMLAP) Corpus",
+      "venue": "Ambix 73 (2–3): 145–174",
+      "url": "https://doi.org/10.1080/00026980.2026.2668735",
+      "note": "Describes the curated, machine-readable corpus of Latin alchemical prints that makes systematic Latin-side comparison of Newton's copies possible."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "King's College Library, Cambridge",
+      "collection": "Keynes Manuscripts (Newton's alchemical papers bought by J. M. Keynes after the 1936 Sotheby sale)",
+      "url": "https://www.kings.cam.ac.uk/archive-centre",
+      "digitized": "partial",
+      "note": "Holds the originals of the three unattributed manuscripts; transcriptions, and images where available, are published through the Chymistry of Isaac Newton edition.",
+      "aliases": [
+        "King's College"
+      ],
+      "holdings": [
+        {
+          "name": "Keynes MS 31, 'Liber Mercuriorum Corporum'",
+          "ref": "Keynes MS 31 (ALCH00020)",
+          "url": "https://newton.dlib.indiana.edu/text/ALCH00020/normalized",
+          "note": "Seven pages of English and Latin recipes and a table of symbols, catalogued as not Newton's composition, source(s) unidentified.",
+          "match": [
+            "Keynes MS 31"
+          ]
+        },
+        {
+          "name": "Keynes MS 44, 'Several Questions concerning the Philosophers' Stone'",
+          "ref": "Keynes MS 44 (ALCH00033)",
+          "url": "https://newton.dlib.indiana.edu/text/ALCH00033/normalized",
+          "note": "English dialogue of twelve questions and answers between a novice and an adept, catalogued as a transcript or translation of an anonymous unpublished work.",
+          "match": [
+            "Keynes MS 44"
+          ]
+        },
+        {
+          "name": "Keynes MS 58, ff. 6r–8v",
+          "ref": "Keynes MS 58 (ALCH00047)",
+          "url": "https://newton.dlib.indiana.edu/text/ALCH00047/normalized",
+          "note": "Notes and recipes from an unidentified source with furnace sketches and calculations, citing folio numbers of an external exemplar.",
+          "match": [
+            "Keynes MS 58"
+          ]
+        },
+        {
+          "name": "Keynes MS 33, 'Manna'",
+          "ref": "Keynes MS 33 (ALCH00022)",
+          "url": "https://newton.dlib.indiana.edu/text/ALCH00022/normalized",
+          "note": "Newton's annotated copy of a text communicated to him by 'Mr F.' in 1675 and printed in Aurifontina Chymica (1680), a solved comparison case.",
+          "match": [
+            "'Manna'"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "The Chymistry of Isaac Newton, Indiana University",
+      "collection": "Digital edition of Newton's alchemical manuscripts: diplomatic and normalized TEI transcriptions, page images, symbol guide and bibliography",
+      "url": "https://newton.dlib.indiana.edu/",
+      "digitized": "full",
+      "note": "Edited by William R. Newman's team; transcriptions can be linked and searched online, but redistribution of texts and images requires the project's permission.",
+      "aliases": [
+        "Chymistry of Isaac Newton",
+        "Indiana"
+      ],
+      "holdings": [
+        {
+          "name": "Guide to Newton's alchemical symbols",
+          "url": "https://newton.dlib.indiana.edu/page/symbols",
+          "note": "Key to the glyphs Newton used for substances and operations, needed before any automated comparison."
+        },
+        {
+          "name": "TEI P5 source of Keynes MS 31",
+          "ref": "ALCH00020.xml",
+          "url": "https://newton.dlib.indiana.edu/p5/ALCH00020.xml",
+          "note": "Machine-readable encoding of the manuscript with folio milestones and character declarations; other manuscripts follow the same URL pattern.",
+          "match": [
+            "TEI transcriptions"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "The Newton Project, University of Oxford",
+      "collection": "Catalogue of Newton's papers, with custodial histories and Sotheby lot numbers",
+      "url": "https://www.newtonproject.ox.ac.uk/",
+      "digitized": "full",
+      "note": "Directed by Rob Iliffe; its catalogue entries supply the standard descriptions, estimated dates and source statements for each alchemical manuscript.",
+      "aliases": [
+        "Newton Project catalogue",
+        "Newton Project"
+      ],
+      "holdings": [
+        {
+          "name": "Catalogue entry for Keynes MS 31",
+          "ref": "ALCH00020",
+          "url": "https://www.newtonproject.ox.ac.uk/catalogue/record/ALCH00020",
+          "note": "Gives the 1668–75 date estimate, Sotheby lot SL37 and the statement that the sources have not been identified."
+        },
+        {
+          "name": "Catalogue entry for Keynes MS 44",
+          "ref": "ALCH00033",
+          "url": "https://www.newtonproject.ox.ac.uk/catalogue/record/ALCH00033",
+          "note": "Lists the twelve questions of the dialogue and its route through Gabriel Wells and Yahuda to Keynes."
+        },
+        {
+          "name": "Catalogue entry for Keynes MS 58",
+          "ref": "ALCH00047",
+          "url": "https://www.newtonproject.ox.ac.uk/catalogue/record/ALCH00047",
+          "note": "Divides the manuscript into three fragments and dates them to the early to mid 1670s."
+        },
+        {
+          "name": "Catalogue entry for Keynes MS 33 ('Manna')",
+          "ref": "ALCH00022",
+          "url": "https://www.newtonproject.ox.ac.uk/catalogue/record/ALCH00022",
+          "note": "Records the 1675 communication from 'Mr F.' and the competing identifications of him by Dobbs and Figala.",
+          "match": [
+            "'Mr F.'"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Bodleian Library, Oxford",
+      "collection": "Ashmole manuscripts (Elias Ashmole's collection of English and Latin alchemical manuscripts)",
+      "url": "https://archives.bodleian.ox.ac.uk/",
+      "digitized": "partial",
+      "note": "The largest English collection of seventeenth-century alchemical manuscripts; described mainly in W. H. Black's 1845 catalogue, with few volumes imaged or transcribed.",
+      "aliases": [
+        "Ashmole"
+      ]
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "Sloane manuscripts (chymical, medical and recipe collections of Sir Hans Sloane)",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "partial",
+      "note": "Hundreds of seventeenth-century English, Latin and German chymical notebooks and recipe books, most catalogued only at volume level.",
+      "aliases": [
+        "Sloane"
+      ]
+    },
+    {
+      "repository": "Beinecke Rare Book and Manuscript Library, Yale University",
+      "collection": "Paul and Mary Mellon collection of alchemy and the occult (Mellon MSS)",
+      "url": "https://beinecke.library.yale.edu/collections/curatorial-areas/early-modern-books-and-manuscripts",
+      "digitized": "partial",
+      "note": "Alchemical manuscripts from the thirteenth to the twentieth century, catalogued by Witten and Pachella (1968–77); many are now digitized in Yale's online catalogue.",
+      "aliases": [
+        "Mellon manuscripts",
+        "Mellon"
+      ]
+    },
+    {
+      "repository": "Royal Society, London",
+      "collection": "Boyle Papers and Boyle Letters",
+      "url": "https://catalogues.royalsociety.org/CalmView/Record.aspx?src=CalmView.Catalog&id=RB",
+      "digitized": "partial",
+      "note": "Boyle's working papers, which preserve Starkey's letters and chymical processes and other manuscript recipes circulating in the circle from which Newton obtained texts.",
+      "aliases": [
+        "Boyle's papers"
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-12",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-12",
+    "needs_on": "2026-10-12"
+  }
+}

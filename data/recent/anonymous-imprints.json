@@ -1,0 +1,182 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-12",
+ "items": [
+  {
+   "date": "2016-06",
+   "kind": "paper",
+   "title": "Benjamin Franklin's London Printing 1725–26",
+   "who": "H. Wilkinson",
+   "venue": "Papers of the Bibliographical Society of America",
+   "url": "https://doi.org/10.1086/686722",
+   "note": "Assigns most items in a list of Palmer and Watts printing-house output to those shops for the first time, with the method set out.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-06",
+   "kind": "paper",
+   "title": "Who was \"A. Moore\"? The Attribution of Eighteenth-Century Publications with False and Misleading Imprints",
+   "who": "A. B. Bricker",
+   "venue": "Papers of the Bibliographical Society of America",
+   "url": "https://doi.org/10.1086/687379",
+   "note": "Shows from ornaments that the fictitious \"A. Moore\" covered several printing houses, attributing some imprints and leaving several ornament groups unassigned.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2016-10",
+   "kind": "data",
+   "title": "An Introduction to Compositor (first posted for Fleuron, the project's original name)",
+   "who": "H. Wilkinson et al. (Cambridge)",
+   "venue": "Fleuron project blog",
+   "url": "https://blog.bham.ac.uk/compositor/2016/10/25/introduction/",
+   "note": "Introduces a database of printers' ornaments extracted by computer vision from ECCO page images, the first searchable cross-printer ornament corpus.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-03",
+   "kind": "paper",
+   "title": "Damaged Type and Areopagitica's Clandestine Printers",
+   "who": "C. N. Warren, P. Williams, S. Rijhwani and M. G'Sell",
+   "venue": "Milton Studies",
+   "url": "https://doi.org/10.5325/miltonstudies.62.1.0001",
+   "note": "Attributes Areopagitica to Matthew Simmons and Thomas Paine from damaged type across 100 pamphlets, the methodological model for type-based attribution.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-06",
+   "kind": "tool",
+   "title": "Fleuron is now Compositor",
+   "who": "H. Wilkinson (University of Birmingham)",
+   "venue": "Compositor",
+   "url": "https://blog.bham.ac.uk/compositor/2020/06/03/fleuron-is-now-compositor/",
+   "note": "Database relaunched at Birmingham as Compositor with keyword tagging and an image search that returns matching or similar ornaments across the corpus.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "John Darby and the Whig Canon",
+   "who": "J. Hone",
+   "venue": "The Historical Journal",
+   "url": "https://doi.org/10.1017/S0018246X20000606",
+   "note": "Uses bibliographical methods to establish the output of the printer John Darby, linking his presswork to a coordinated programme of opposition whig publishing.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes' \"Ornaments\" Edition",
+   "who": "C. N. Warren, A. Wiscomb, P. Williams, S. V. Lemley and M. G'Sell",
+   "venue": "Eighteenth-Century Studies",
+   "url": "https://doi.org/10.1353/ecs.2021.0094",
+   "note": "Attributes the falsely dated \"Ornaments\" Leviathan to John Richardson from damaged type and proposes a new date, revising Noel Malcolm's attribution.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021",
+   "kind": "paper",
+   "title": "The Poet and the Publisher: The Case of Alexander Pope, Esq., of Twickenham versus Edmund Curll, Bookseller in Grub Street",
+   "who": "P. Rogers",
+   "venue": "Reaktion Books",
+   "url": "https://reaktionbooks.co.uk/work/the-poet-and-the-publisher",
+   "note": "Study of the Pope–Curll feud, covering Curll's prosecutions and the publishing practices behind them.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-05",
+   "kind": "paper",
+   "title": "Computer Vision and the Creation of a Database of Printers' Ornaments",
+   "who": "H. Wilkinson, J. Briggs and D. Gorissen",
+   "venue": "Digital Humanities Quarterly",
+   "url": "https://doi.org/10.63744/g7ts7qb2ywy6",
+   "note": "Describes extracting over a million ornament images from 33 million ECCO pages and refining them by machine learning, with the method's limits.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-02",
+   "kind": "paper",
+   "title": "Libel and Lampoon: Satire in the Courts, 1670–1792",
+   "who": "A. B. Bricker",
+   "venue": "Oxford University Press",
+   "url": "https://doi.org/10.1093/oso/9780192846150.001.0001",
+   "note": "History of satire and libel prosecution after licensing, explaining the legal risks that drove concealment by authors and the trade.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2022-04",
+   "kind": "grant",
+   "title": "Freedom and the Press before Freedom of the Press: Tools, Data and Methods for Researching Secret Printing",
+   "who": "C. Warren, M. G'Sell, S. Lemley and M. Lincoln (Carnegie Mellon)",
+   "venue": "NEH Digital Humanities Advancement Grant",
+   "url": "https://www.cmu.edu/dietrich/news/news-stories/2022/warren-wittek-neh-grant.html",
+   "note": "US$324,931 grant to build tools for analysing type and paper in late seventeenth- and eighteenth-century English printing.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-06",
+   "kind": "tool",
+   "title": "Contrastive Attention Networks for Attribution of Early Modern Print",
+   "who": "N. Vogler, K. Goyal et al.",
+   "venue": "Proceedings of the AAAI Conference on Artificial Intelligence",
+   "url": "https://doi.org/10.1609/aaai.v37i4.25659",
+   "note": "Metric-learning model that matches uniquely damaged type impressions across digitized books while tolerating inking and imaging noise.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "paper",
+   "title": "Who was \"A. Moore\"? Waste Paper as a Means of Identification",
+   "who": "G. Day",
+   "venue": "Papers of the Bibliographical Society of America",
+   "url": "https://doi.org/10.1086/731614",
+   "note": "Uses waste sheets in booksellers' trade sale catalogues to argue that Thomas Warner published as \"A. Moore\", a documentary route alongside ornaments.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2025-05",
+   "kind": "data",
+   "title": "Relaunch of the English Short-Title Catalogue (beta) on the CERL platform",
+   "who": "ESTC (British Library and ESTC North America) with CERL",
+   "venue": "CERL",
+   "url": "https://bibsoc.org.uk/relaunch-of-the-english-short-title-catalogue/",
+   "note": "Restores free access to ESTC, unavailable since the October 2023 British Library cyber-attack, which the corpus of unsigned imprints depends on.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-01",
+   "kind": "paper",
+   "title": "Image Reuse in Eighteenth-Century Book History: Large-Scale Data-Driven Study of Headpiece Ornament Variants",
+   "who": "R. Wang, L. Pivovarova, Y. Ryan, E. Yılandiloğlu and M. Tolonen",
+   "venue": "Digital Humanities Quarterly",
+   "url": "https://doi.org/10.63744/s5tbtsghdxh2",
+   "note": "Computational study of headpiece variants that finds networks of printers and publishers sharing images, complicating one-block-one-owner attribution.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-05",
+   "kind": "data",
+   "title": "Catalog of Distinctive Type (CDT), Restoration England (1660–1700)",
+   "who": "Print and Probability project and CMU Libraries",
+   "venue": "Carnegie Mellon University Libraries",
+   "url": "https://cdt.library.cmu.edu/",
+   "note": "Public catalogue of about 20,000 damaged type impressions linked to over 240 London printers, described as publicly available in May 2026.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

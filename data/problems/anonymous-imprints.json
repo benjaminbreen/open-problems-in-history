@@ -1,0 +1,269 @@
+{
+  "id": "anonymous-imprints",
+  "title": "Who printed the anonymous and false-imprint books of eighteenth-century Britain?",
+  "short": "Many thousands of British books and pamphlets of 1695 to 1800 name no printer or a fictitious one; ornaments and damaged type can now identify the presses at scale.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1695,
+  "end": 1800,
+  "flags": [
+    "digitization"
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Index printing-house ledgers, State Papers and Treasury Solicitor libel files by title and date so each ornament attribution can be checked against a payment, warrant or examination."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Estimate false-match rates for ornament and damaged-type identifications on books with known printers, and set an evidence threshold that keeps wrong attributions below a stated rate."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Image selected copies at high resolution under raking light, measuring ornament impressions and cracks to tell one physical block from a close copy."
+    }
+  ],
+  "matters": "After the Licensing Act lapsed in 1695, prepublication censorship gave way to prosecution after the fact for seditious, blasphemous and obscene libel, and printers and booksellers hid their part in risky work behind blank imprints, the names of trade publishers and invented names such as \"A. Moore\". Who actually printed this material decides how far opposition journalism, Jacobite and dissenting polemic, ministerial propaganda and erotica came from the same shops that printed sermons and law books, and whether particular printers specialised in concealed work. It also matters for the economics of the trade, the share of output that escaped the Stationers' registers and the risk the courts placed on printers, and for attributing anonymous texts to authors, which often begins with the shop that set them.",
+  "stuck": "Imprints are unreliable in several different ways. Some books carry only \"Printed in the Year\", some name trade publishers or mercuries (real distributors such as John Morphew, J. Roberts or Anne Dodd who fronted for the owners of a copy), and some invent names outright, so the name on the title page rarely identifies the press. Ornament evidence has been gathered one printer at a time, in stock catalogues for the Bowyers and Henry Woodfall and in studies of Richardson and a few others, while most London and provincial printers have no catalogue of their blocks at all. Until large image corpora became searchable, matching an ornament in an anonymous pamphlet against the output of every other shop was impractical, and even a match does not settle the question, because blocks were copied, lent and sold, sheets of one book could be farmed out to several houses, and microfilm-derived images blur the damage that distinguishes one block from its copy.",
+  "solved": "For a defined corpus, such as every ESTC item of 1700 to 1760 with no printer named or a printer's name known to be fictitious, each item is either assigned to a printing house or recorded as unattributed with the reason. An assignment counts only if it rests on physical identity of type or blocks (shared damage or wear, not similar design), from at least two independent ornaments or damaged sorts, or one plus documentary evidence, checked sheet by sheet and dated against the printer's signed output. The same rule must be shown to give a stated low error rate on a control set of books whose printers are known.",
+  "approach": [
+    "The method has a long manual history to build on: Sale (1950) on Richardson's ornaments, the stock catalogues of Maslen (1973) and Goulden (1988), the printer attributions in Foxon (1975), and Treadwell (1982) on trade publishers. Bricker (2016) showed that the \"A. Moore\" imprint concealed several different shops, while Day (2024) used waste sheets in trade sale catalogues to name one bookseller behind the name, which identifies a publisher rather than a printer.",
+    "Compositor, built from the ECCO page images by Wilkinson, Briggs and Gorissen (2021), already offers visual search across more than a million extracted ornaments. Research agents could run every ornament in the target corpus against it, keep only matches to books with a signed printer's imprint, and record for each candidate the gathering in which the ornament falls, so that shared printing by sheet shows up instead of being averaged away.",
+    "Ornaments alone are a weak test because designs were copied and blocks changed hands, and Wang et al. (2026) find headpiece reuse networks far more complex than one block to one owner. Damaged type is a second, independent line: the Print and Probability project's work on Areopagitica, the attribution of the Leviathan \"Ornaments\" edition in Warren et al. (2021), and a contrastive type-matching model published by the same group in 2023 show how distinctive sorts can be matched, and their catalogue covers London printing to 1700. Extending that catalogue into the eighteenth century would let the two kinds of evidence check each other.",
+    "Each attribution can be checked on its own, so the work can proceed book by book. A public table would list each item's ESTC number, the matched ornaments and sorts with image links, the anchoring signed books, any documentary evidence such as ledger entries in the Bowyer and Strahan accounts, and the stated confidence, with failed and contradictory matches kept.",
+    "Many ECCO images derive from bitonal microfilm, and different digital copies often descend from the same film, so they are not independent witnesses. Confirming that two impressions come from one block needs new high-resolution imaging of specific original copies, a request that rare-book libraries such as the British Library, Bodleian and Folger can fulfil for a short list of decisive pages."
+  ],
+  "existing": [
+    {
+      "year": 1950,
+      "authors": "William M. Sale Jr.",
+      "title": "Samuel Richardson: Master Printer",
+      "venue": "Cornell Studies in English 37. Ithaca: Cornell University Press",
+      "url": "https://openlibrary.org/works/OL6676746W",
+      "note": "Reconstructed Richardson's output as a printer largely from the ornaments in his books, and set the model for attributing unsigned work by ornament stock."
+    },
+    {
+      "year": 1973,
+      "authors": "K. I. D. Maslen",
+      "title": "The Bowyer Ornament Stock",
+      "venue": "Oxford Bibliographical Society Occasional Publication 8. Oxford",
+      "url": "https://openlibrary.org/works/OL3909738W",
+      "note": "Illustrated catalogue of the Bowyers' ornaments, which can be checked against the surviving Bowyer printing ledgers."
+    },
+    {
+      "year": 1975,
+      "authors": "D. F. Foxon",
+      "title": "English Verse 1701–1750: A Catalogue of Separately Printed Poems with Notes on Contemporary Collected Editions",
+      "venue": "London and New York: Cambridge University Press",
+      "url": "https://openlibrary.org/works/OL4467080W",
+      "note": "Standard catalogue of verse pamphlets that records printer attributions for many anonymous and falsely imprinted items, often on ornament evidence."
+    },
+    {
+      "year": 1982,
+      "authors": "Michael Treadwell",
+      "title": "London Trade Publishers 1675–1750",
+      "venue": "The Library, 6th ser., 4 (2): 99–134",
+      "url": "https://doi.org/10.1093/library/s6-IV.2.99",
+      "note": "Defined the trade publisher, whose name on an imprint marked distribution rather than ownership or printing, and showed why such imprints mislead attribution."
+    },
+    {
+      "year": 1988,
+      "authors": "R. J. Goulden",
+      "title": "The Ornament Stock of Henry Woodfall, 1719–1747: A Preliminary Inventory",
+      "venue": "Occasional Papers of the Bibliographical Society 3. London: The Bibliographical Society",
+      "url": "https://openlibrary.org/works/OL2425097W",
+      "note": "Inventory of a major London printer's blocks, one of the few reference stocks against which unsigned work can be matched."
+    },
+    {
+      "year": 2013,
+      "authors": "Hazel Wilkinson",
+      "title": "Printers' Flowers as Evidence in the Identification of Unknown Printers: Two Examples from 1715",
+      "venue": "The Library, 7th ser., 14 (1): 70–79",
+      "url": "https://doi.org/10.1093/library/14.1.70",
+      "note": "Identified John Darby as printer of two 1715 books by showing that composed arrangements of type flowers were kept standing and reused across jobs."
+    },
+    {
+      "year": 2014,
+      "authors": "John D. Gordan III",
+      "title": "John Nutt: Trade Publisher and Printer 'In the Savoy'",
+      "venue": "The Library, 7th ser., 15 (3): 243–260",
+      "url": "https://doi.org/10.1093/library/15.3.243",
+      "note": "Career of a man who was first a trade publisher and then a printer, illustrating how the two roles behind an imprint must be kept apart."
+    },
+    {
+      "year": 2016,
+      "authors": "Hazel Wilkinson",
+      "title": "Benjamin Franklin's London Printing 1725–26",
+      "venue": "Papers of the Bibliographical Society of America 110 (2): 139–180",
+      "url": "https://doi.org/10.1086/686722",
+      "note": "Assigned most of the items in an appendix of work from the Palmer and Watts printing houses to those shops for the first time, combining archival and digital evidence."
+    },
+    {
+      "year": 2016,
+      "authors": "Andrew Benjamin Bricker",
+      "title": "Who was \"A. Moore\"? The Attribution of Eighteenth-Century Publications with False and Misleading Imprints",
+      "venue": "Papers of the Bibliographical Society of America 110 (2): 181–214",
+      "url": "https://doi.org/10.1086/687379",
+      "note": "Showed with ornament evidence that the fictitious \"A. Moore\" covered several printing houses, assigned some imprints to named printers and left several ornament groups unassigned."
+    },
+    {
+      "year": 2021,
+      "authors": "Hazel Wilkinson, James Briggs and Dirk Gorissen",
+      "title": "Computer Vision and the Creation of a Database of Printers' Ornaments",
+      "venue": "Digital Humanities Quarterly 15 (1)",
+      "url": "https://doi.org/10.63744/g7ts7qb2ywy6",
+      "note": "Describes extracting over a million ornament images from the 33 million ECCO page images to build Fleuron, now Compositor, and the limits of the method."
+    },
+    {
+      "year": 2021,
+      "authors": "Christopher N. Warren, Avery Wiscomb, Pierce Williams, Samuel V. Lemley and Max G'Sell",
+      "title": "Canst Thou Draw Out Leviathan with Computational Bibliography? New Angles on Printing Thomas Hobbes' \"Ornaments\" Edition",
+      "venue": "Eighteenth-Century Studies 54 (4): 827–859",
+      "url": "https://doi.org/10.1353/ecs.2021.0094",
+      "note": "Attributed the falsely dated \"Ornaments\" Leviathan to John Richardson on damaged-type evidence, revising Noel Malcolm's attribution to another printer."
+    },
+    {
+      "year": 2022,
+      "authors": "Andrew Benjamin Bricker",
+      "title": "Libel and Lampoon: Satire in the Courts, 1670–1792",
+      "venue": "Oxford: Oxford University Press",
+      "url": "https://doi.org/10.1093/oso/9780192846150.001.0001",
+      "note": "History of libel prosecution after the end of licensing, explaining the legal exposure that led authors, printers and booksellers to conceal their roles."
+    },
+    {
+      "year": 2024,
+      "authors": "Geoffrey Day",
+      "title": "Who was \"A. Moore\"? Waste Paper as a Means of Identification",
+      "venue": "Papers of the Bibliographical Society of America 118 (3): 443–450",
+      "url": "https://doi.org/10.1086/731614",
+      "note": "Argued from waste sheets listed in trade sale catalogues that Thomas Warner published as \"A. Moore\", adding documentary evidence for the publisher behind the name."
+    },
+    {
+      "year": 2026,
+      "authors": "Ruilin Wang, Lidia Pivovarova, Yann Ryan, Enes Yılandiloğlu and Mikko Tolonen",
+      "title": "Image Reuse in Eighteenth-Century Book History: Large-Scale Data-Driven Study of Headpiece Ornament Variants",
+      "venue": "Digital Humanities Quarterly 19 (4)",
+      "url": "https://doi.org/10.63744/s5tbtsghdxh2",
+      "note": "Traced headpiece variants across eighteenth-century books computationally and found networks of printers and publishers sharing images, beyond simple one-to-one ownership."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "English Short Title Catalogue (ESTC), British Library and ESTC North America, hosted by CERL",
+      "collection": "Bibliographic records for English-language and British printing to 1800, with imprint transcriptions and bracketed attributions",
+      "url": "https://datb.cerl.org/estc/",
+      "digitized": "full",
+      "note": "Free catalogue that defines the corpus: imprints with no printer, trade publishers or fictitious names can be selected from its transcriptions; relaunched on the CERL platform in 2025.",
+      "aliases": [
+        "ESTC"
+      ]
+    },
+    {
+      "repository": "Eighteenth Century Collections Online (Gale)",
+      "collection": "Page images of over 150,000 eighteenth-century titles, mostly scanned from the microfilm series The Eighteenth Century",
+      "url": "https://www.gale.com/primary-sources/eighteenth-century-collections-online",
+      "digitized": "full",
+      "note": "Subscription database whose page images underlie Compositor; images are largely bitonal microfilm scans, so fine block damage is often lost.",
+      "aliases": [
+        "ECCO"
+      ]
+    },
+    {
+      "repository": "Compositor, University of Birmingham",
+      "collection": "Database of eighteenth-century printers' ornaments extracted from ECCO (formerly Fleuron, Cambridge), with browse by printer and visual search",
+      "url": "https://compositor.bham.ac.uk/",
+      "digitized": "full",
+      "note": "Free database led by Hazel Wilkinson, with ornaments linked to ESTC records and a VISE visual search engine for finding matching blocks.",
+      "aliases": [
+        "Compositor",
+        "Fleuron"
+      ]
+    },
+    {
+      "repository": "Grolier Club Library, New York",
+      "collection": "Bowyer ledgers and account books, 1710–1781",
+      "url": "https://grolierclub.omeka.net/items/show/89",
+      "digitized": "partial",
+      "note": "Printing accounts of the Bowyer house covering more than 5,000 jobs, reproduced on microfiche by Maslen and Lancaster (1991); the main documentary control for ornament attributions.",
+      "holdings": [
+        {
+          "name": "Bowyer ledgers and account books (7 vols.)",
+          "url": "https://grolierclub.omeka.net/items/show/89",
+          "note": "Ledgers naming the customer, format and charge for each job, which can confirm or refute an ornament-based attribution to the Bowyers.",
+          "match": [
+            "Bowyer and Strahan accounts"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "Strahan Papers, Add MS 48800–48918: ledgers and business papers of William Strahan and successors from 1739",
+      "url": "https://searcharchives.bl.uk/catalog/032-001958542",
+      "digitized": "partial",
+      "note": "Account books of one of the largest London printing houses; useful for testing attributions after 1739 and for its customers' unsigned work.",
+      "holdings": [
+        {
+          "name": "Strahan Papers",
+          "ref": "Add MS 48800–48918",
+          "url": "https://searcharchives.bl.uk/catalog/032-001958542",
+          "note": "Receipts and payments for printing work from 1739 (Add MS 48800–48801) and later printing ledgers."
+        }
+      ]
+    },
+    {
+      "repository": "The National Archives, Kew",
+      "collection": "State Papers Domestic (SP 35, SP 36) and Treasury Solicitor papers (TS 11) on press prosecutions",
+      "url": "https://discovery.nationalarchives.gov.uk/details/r/C13577",
+      "digitized": "partial",
+      "note": "Warrants, informations and examinations of printers, journeymen and hawkers taken in libel investigations, which often name the shop behind an unsigned pamphlet.",
+      "holdings": [
+        {
+          "name": "State Papers Domestic, George I",
+          "ref": "SP 35",
+          "url": "https://discovery.nationalarchives.gov.uk/details/r/C13577",
+          "note": "Secretaries of State papers 1714–1727, including reports on seditious printing and seized papers."
+        },
+        {
+          "name": "State Papers Domestic, George II",
+          "ref": "SP 36",
+          "url": "https://discovery.nationalarchives.gov.uk/details/r/C13578",
+          "note": "Secretaries of State papers 1727–1760 with examinations of printers and publishers."
+        },
+        {
+          "name": "Treasury Solicitor papers",
+          "ref": "TS 11",
+          "url": "https://discovery.nationalarchives.gov.uk/details/r/C14079",
+          "note": "Prosecution papers, including material from libel cases that can identify printers and the evidence against them."
+        }
+      ]
+    },
+    {
+      "repository": "Bodleian Libraries, Oxford",
+      "collection": "John Johnson Collection of Printed Ephemera: booksellers' trade sale catalogues",
+      "url": "https://www.bodleian.ox.ac.uk/sites/default/files/bodreader/documents/media/booksellers_trade_sale_catalogues.pdf",
+      "digitized": "partial",
+      "note": "Catalogues of copies and waste sheets sold among booksellers, the source used by Day (2024); catalogued and imaged through the ProQuest John Johnson project.",
+      "aliases": [
+        "trade sale catalogues"
+      ]
+    },
+    {
+      "repository": "Catalog of Distinctive Type, Carnegie Mellon University Libraries",
+      "collection": "About 20,000 images of distinctive and damaged type sorts linked to more than 240 London printers, 1660–1700",
+      "url": "https://cdt.library.cmu.edu/",
+      "digitized": "full",
+      "note": "Public reference set from the Print and Probability project, searchable by printer, date and letterform; it stops around 1700 and would need extending.",
+      "aliases": [
+        "Print and Probability"
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-12",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-12",
+    "needs_on": "2026-10-12"
+  }
+}

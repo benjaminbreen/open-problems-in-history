@@ -1,0 +1,319 @@
+{
+  "id": "five-extinctions",
+  "title": "What new evidence can fix when and why five historically extinct species disappeared?",
+  "short": "The dates, ranges and causes of extinction of the dodo, great auk, Steller's sea cow, passenger pigeon and Carolina parakeet still rest on thin, contested written records.",
+  "region": "Global",
+  "field": "Chronology",
+  "start": 1500,
+  "end": 1945,
+  "flags": [
+    "science"
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Inventory the VOC Mauritius correspondence, Icelandic district records and Russian voyage papers that mention these species, and report which series remain untranscribed or uncatalogued."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Sequence dated museum skins, eggs and midden bones of the five species to test specimen provenance and when populations began to decline, extending the Eldey-pair identifications."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Benchmark sighting-record extinction estimators on graded databases that mix certain and doubtful records, using species with documented last individuals as controls."
+    },
+    {
+      "who": "philologists",
+      "ask": "Decide from Dutch, Danish, Icelandic and eighteenth-century Russian usage which animal each name in the late records denotes, starting with the 1680s Mauritian 'dodaersen'."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Date great auk and sea cow bones from North Atlantic and North Pacific middens to establish ranges before European contact and when local populations disappeared."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Build name-variant searches and HTR models that find these species in Chronicling America, VOC transcriptions and Icelandic periodicals, and report recall against hand-checked samples."
+    },
+    {
+      "who": "gis",
+      "ask": "Georeference every graded sighting and specimen of the passenger pigeon and Carolina parakeet and map range contraction by decade against land clearance and rail lines."
+    }
+  ],
+  "matters": "These five species carry much of the historical argument about human-caused extinction. The dodo was central to the recognition that species could disappear at all, from Strickland and Melville (1848) onward; the great auk inquiry of Wolley and Newton in 1858 shaped the first bird-protection campaigns in Britain; Steller's sea cow is the standard case of a marine mammal exterminated within decades of scientific description; and the passenger pigeon and Carolina parakeet anchor accounts of market hunting, habitat loss and the origins of wildlife law in the United States. Their dates and causes are reused as calibration points for statistical methods that estimate extinction from sightings, and as evidence in debates over whether hunting alone, ecological cascades or earlier natural decline did the damage.",
+  "stuck": "Each standing date depends on a few records whose identification or provenance is questionable. The dodo's last accepted sighting is either Volkert Evertsz's 1662 encounter on an islet off Mauritius or undescribed 'dodaersen' in the hunting lists of the Dutch commander Isaac Lamotius in 1685–88, which Cheke and Parish (2020) argue were red hens. The 1768 date for the sea cow derives from a later report printed by Martin Sauer, and nineteenth-century claims of survivors were contested by Stejneger (1887). Great auk sightings after the Eldey killing of June 1844, passenger pigeon reports after the last confirmed wild bird of 1900, and Carolina parakeet reports from the 1920s and 1930s have never been graded consistently. The relevant sources are scattered across Dutch, Danish, Icelandic, Russian and American archives in five languages, and much of the post-1850 record sits in newspapers and sporting periodicals that were not searchable until recently.",
+  "solved": "For any one of the five species, a solution is new evidence that a panel of historians and biologists judges to change significantly what is known about its date, range or cause of extinction. The panel's tests are concrete: a securely dated and identified record later than the currently accepted last record; a demonstration that a standing last record is misdated, misattributed or refers to another animal; a documented provenance (collector, date, locality) for an undated or misattributed specimen, ideally confirmed by ancient DNA; or a quantitative reconstruction of the decline, built from graded and published records, that discriminates between rival causes (for example hunting rates against habitat loss, disease or prior natural decline).",
+  "approach": [
+    "The human literature already supplies baselines for each species: Roberts and Solow (2003), Hume, Martill and Dewdney (2004) and Cheke and Parish (2020) on the dodo; Newton (1861), Thomas et al. (2019) and Pálsson (2024) on the great auk; Stejneger (1887), Turvey and Risley (2006) and Estes, Burdin and Doak (2016) on the sea cow; Schorger (1955) and Murray et al. (2017) on the passenger pigeon; Snyder (2004) and Burgio et al. (2021) on the Carolina parakeet.",
+    "Research agents can mine the digitized record at scale: VOC letters and journals from Mauritius in the Nationaal Archief through GLOBALISE transcriptions; Icelandic and Danish administrative and trade records and Wolley's notebooks in the Alfred Newton Papers for the great auk; Russian Academy and voyage records for the Commander Islands; and Chronicling America, game-market reports and sporting periodicals in the Biodiversity Heritage Library for the pigeon and parakeet.",
+    "Every candidate record becomes an entry in a graded sighting database (specimen, dated eyewitness description, undescribed report, hearsay) with its source, language and identification argument, published openly so that others can regrade it.",
+    "Sighting-record estimators, applied to North American birds by Elphick, Roberts and Reed (2010), should be tested first on species whose last individuals are documented, such as the captive passenger pigeon and parakeet, before being applied to the dodo, great auk and sea cow, and results reported across grading schemes rather than for one preferred dataset.",
+    "Confirmation of specimen provenance and of pre-contact range needs geneticists and museum curators: ancient DNA and radiocarbon dating of skins, eggs and midden bones, matched against sale catalogues, accession registers and collectors' correspondence, following the method used to identify the Eldey birds."
+  ],
+  "existing": [
+    {
+      "year": 1848,
+      "authors": "H. E. Strickland and A. G. Melville",
+      "title": "The Dodo and Its Kindred",
+      "venue": "London: Reeve, Benham and Reeve",
+      "url": "https://archive.org/details/dodoitskindredor00stri",
+      "note": "Gathered the travellers' accounts, images and remains of the dodo and solitaire and established them as real birds made extinct by human activity."
+    },
+    {
+      "year": 1861,
+      "authors": "Alfred Newton",
+      "title": "Abstract of Mr. J. Wolley's Researches in Iceland respecting the Gare-fowl or Great Auk",
+      "venue": "Ibis 3 (4): 374–399",
+      "url": "https://doi.org/10.1111/j.1474-919X.1861.tb08857.x",
+      "note": "Published the 1858 interviews with the men who took the last pair on Eldey in 1844, the source of the standard last record."
+    },
+    {
+      "year": 1887,
+      "authors": "Leonhard Stejneger",
+      "title": "How the Great Northern Sea-Cow (Rytina) Became Exterminated",
+      "venue": "The American Naturalist 21 (12): 1047–1054",
+      "url": "https://doi.org/10.1086/274607",
+      "note": "Argued from fieldwork on Bering Island and Russian sources that the sea cow was hunted out by about 1768, rejecting claims of later survival."
+    },
+    {
+      "year": 1955,
+      "authors": "A. W. Schorger",
+      "title": "The Passenger Pigeon: Its Natural History and Extinction",
+      "venue": "Madison: University of Wisconsin Press",
+      "url": "https://openlibrary.org/works/OL43300376W",
+      "note": "Compiled newspaper, diary and market records on nesting, netting and shipments, still the main documentary base for the pigeon's decline."
+    },
+    {
+      "year": 2003,
+      "authors": "David L. Roberts and Andrew R. Solow",
+      "title": "When did the dodo become extinct?",
+      "venue": "Nature 426: 245",
+      "url": "https://doi.org/10.1038/426245a",
+      "note": "Applied optimal linear estimation to dated sightings and put the dodo's extinction at about 1690, some thirty years after the 1662 sighting."
+    },
+    {
+      "year": 2004,
+      "authors": "Julian P. Hume, David M. Martill and Christopher Dewdney",
+      "title": "Dutch diaries and the demise of the dodo",
+      "venue": "Nature 429",
+      "url": "https://doi.org/10.1038/nature02688",
+      "note": "Used the hunting records kept by Isaac Lamotius to argue that dodos were still being taken on Mauritius until 1688."
+    },
+    {
+      "year": 2004,
+      "authors": "Noel F. R. Snyder",
+      "title": "The Carolina Parakeet: Glimpses of a Vanished Bird",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://openlibrary.org/isbn/9780691117959",
+      "note": "Assessed the historical record of the parakeet's range and decline, including disputed late reports from Florida and South Carolina, and weighed hunting, habitat loss and disease as causes."
+    },
+    {
+      "year": 2006,
+      "authors": "Samuel T. Turvey and Claire L. Risley",
+      "title": "Modelling the extinction of Steller's sea cow",
+      "venue": "Biology Letters 2 (1): 94–97",
+      "url": "https://doi.org/10.1098/rsbl.2005.0415",
+      "note": "Modelled eighteenth-century Russian hunting records and concluded that overhunting at more than seven times the sustainable rate sufficed to cause extinction by 1768."
+    },
+    {
+      "year": 2010,
+      "authors": "Chris S. Elphick, David L. Roberts and J. Michael Reed",
+      "title": "Estimated dates of recent extinctions for North American and Hawaiian birds",
+      "venue": "Biological Conservation 143 (3): 617–624",
+      "url": "https://doi.org/10.1016/j.biocon.2009.11.026",
+      "note": "Compiled sighting records for 52 rare North American and Hawaiian bird taxa and estimated extinction dates for the 38 with adequate data, treating uncertain records explicitly."
+    },
+    {
+      "year": 2016,
+      "authors": "James A. Estes, Alexander Burdin and Daniel F. Doak",
+      "title": "Sea otters, kelp forests, and the extinction of Steller's sea cow",
+      "venue": "Proceedings of the National Academy of Sciences 113 (4): 880–885",
+      "url": "https://doi.org/10.1073/pnas.1502552112",
+      "note": "Argued that the removal of sea otters, by triggering urchin-driven kelp loss, could have contributed to the sea cow's decline, against a purely hunting-based account."
+    },
+    {
+      "year": 2017,
+      "authors": "Gemma G. R. Murray et al.",
+      "title": "Natural selection shaped the rise and fall of passenger pigeon genomic diversity",
+      "venue": "Science 358 (6365): 951–954",
+      "url": "https://doi.org/10.1126/science.aao0960",
+      "note": "Found consistently large populations whose low diversity reflected selection, contradicting the claim of Hung et al. (2014) that natural population instability primed the collapse."
+    },
+    {
+      "year": 2019,
+      "authors": "Jessica E. Thomas et al.",
+      "title": "Demographic reconstruction from ancient DNA supports rapid extinction of the great auk",
+      "venue": "eLife 8: e47509",
+      "url": "https://doi.org/10.7554/eLife.47509",
+      "note": "Mitochondrial genomes of 41 birds showed no sign of risk before intensive hunting began in the sixteenth century, and models showed hunting alone could explain extinction."
+    },
+    {
+      "year": 2020,
+      "authors": "Anthony S. Cheke and Jolyon C. Parish",
+      "title": "The Dodo and the Red Hen, A Saga of Extinction, Misunderstanding, and Name Transfer: A Review",
+      "venue": "Quaternary 3 (1): 4",
+      "url": "https://doi.org/10.3390/quat3010004",
+      "note": "Argued that the undescribed 'dodaarsen' of the 1680s were probably red hens, so that the dodo vanished unobserved well before the date Roberts and Solow estimated."
+    },
+    {
+      "year": 2021,
+      "authors": "Kevin R. Burgio, Colin J. Carlson, Alexander L. Bond, Margaret A. Rubega and Morgan W. Tingley",
+      "title": "The two extinctions of the Carolina Parakeet Conuropsis carolinensis",
+      "venue": "Bird Conservation International",
+      "url": "https://doi.org/10.1017/S0959270921000241",
+      "note": "Bayesian analysis of specimens and sightings estimated that the western subspecies disappeared around 1914 and the eastern one in the late 1930s or mid-1940s."
+    },
+    {
+      "year": 2024,
+      "authors": "Gísli Pálsson",
+      "title": "The Last of Its Kind: The Search for the Great Auk and the Discovery of Extinction",
+      "venue": "Princeton: Princeton University Press",
+      "url": "https://doi.org/10.1515/9780691230993",
+      "note": "Reads Wolley and Newton's 1858 Garefowl Books as field notes on the last hunters and on how extinction became thinkable."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Archive of the Verenigde Oostindische Compagnie (VOC), 1.04.02, including letters and papers received from Mauritius via the Cape and Batavia",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+      "digitized": "partial",
+      "note": "Holds the correspondence and journals of the Dutch outpost on Mauritius (1638–1710) in which the last dodo and red hen records appear; many volumes are scanned and partly transcribed.",
+      "aliases": [
+        "Nationaal Archief",
+        "VOC letters and journals"
+      ],
+      "holdings": [
+        {
+          "name": "GLOBALISE transcriptions of VOC Overgekomen brieven en papieren",
+          "url": "https://transcriptions.globalise.huygens.knaw.nl/",
+          "note": "Searchable machine transcriptions of VOC letters and papers sent to the Netherlands, usable for name-variant searches for dodos and other Mauritian fauna.",
+          "match": [
+            "GLOBALISE transcriptions"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Cambridge University Library, Department of Archives and Modern Manuscripts",
+      "collection": "Alfred Newton Papers, MS Add.9839, including John Wolley's papers and the Garefowl Books from the 1858 Iceland expedition",
+      "url": "https://archivesearch.lib.cam.ac.uk/agents/people/11901",
+      "digitized": "none",
+      "note": "Wolley and Newton's notebooks of interviews with the Reykjanes hunters, with later correspondence on specimens and eggs; open in the Manuscripts Reading Room.",
+      "aliases": [
+        "Alfred Newton Papers",
+        "Wolley's notebooks"
+      ],
+      "holdings": [
+        {
+          "name": "John Wolley papers within the Alfred Newton Papers",
+          "ref": "GBR/0012/MS Add.9839/25",
+          "note": "Wolley's correspondence and papers, 1846–1899, including notebooks relevant to both the dodo and the great auk.",
+          "match": [
+            "Wolley's papers"
+          ]
+        },
+        {
+          "name": "Garefowl Books (five notebooks, 1858)",
+          "note": "Record of interviews about the Eldey birds and earlier hunts; shelfmark to be confirmed in the catalogue.",
+          "match": [
+            "Garefowl Books"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Þjóðskjalasafn Íslands (National Archives of Iceland), Reykjavík",
+      "collection": "Danish-period district, parish and trading records for Gullbringusýsla and the Reykjanes peninsula",
+      "url": "https://skjalasafn.is/",
+      "digitized": "partial",
+      "note": "Administrative and merchant records that may document skerry-landing expeditions, sales of birds and eggs, and the 1830 eruption that destroyed Geirfuglasker.",
+      "aliases": [
+        "National Archives of Iceland"
+      ]
+    },
+    {
+      "repository": "St Petersburg Branch of the Archive of the Russian Academy of Sciences",
+      "collection": "Papers of the Second Kamchatka Expedition and of Academy members including G. F. Müller and G. W. Steller",
+      "url": "https://www.ranar.spb.ru/",
+      "digitized": "partial",
+      "note": "Holds Academy expedition records relevant to Steller's observations of 1741–42 and to later reports from the Commander Islands; access through the archive's reading room.",
+      "aliases": [
+        "Russian Academy"
+      ]
+    },
+    {
+      "repository": "U.S. National Archives and Records Administration, Washington",
+      "collection": "Record Group 261, Records of Former Russian Agencies, including Records of the Russian-American Company, 1802–1867",
+      "url": "https://www.archives.gov/research/guide-fed-records/groups/261.html",
+      "digitized": "partial",
+      "note": "Company correspondence on the Commander and Aleutian Islands, relevant to claims of sea cows surviving after 1768 and to the sea otter harvest; available on microfilm.",
+      "aliases": [
+        "Russian-American Company"
+      ]
+    },
+    {
+      "repository": "Library of Congress, Washington",
+      "collection": "Chronicling America: digitized American newspapers, 1756–1963",
+      "url": "https://www.loc.gov/collections/chronicling-america/",
+      "digitized": "full",
+      "note": "Full-text newspapers carrying nesting reports, shipment and market notices for pigeons and late parakeet sightings; free and searchable.",
+      "aliases": [
+        "Chronicling America"
+      ]
+    },
+    {
+      "repository": "Biodiversity Heritage Library",
+      "collection": "Natural history and sporting periodicals, including The Auk, Ibis and Forest and Stream",
+      "url": "https://www.biodiversitylibrary.org/",
+      "digitized": "full",
+      "note": "Open full-text scans of the ornithological and sporting press in which most nineteenth- and early twentieth-century reports of the five species were printed.",
+      "aliases": [
+        "Biodiversity Heritage Library"
+      ]
+    },
+    {
+      "repository": "Global Biodiversity Information Facility (GBIF)",
+      "collection": "Aggregated museum specimen and occurrence records for the five species",
+      "url": "https://www.gbif.org/",
+      "digitized": "full",
+      "note": "Entry point to specimen records held by museums worldwide, whose collection dates and localities need checking against accession registers.",
+      "aliases": [
+        "GBIF"
+      ],
+      "holdings": [
+        {
+          "name": "Raphus cucullatus",
+          "url": "https://www.gbif.org/species/2496198",
+          "note": "Specimen and subfossil records of the dodo."
+        },
+        {
+          "name": "Pinguinus impennis",
+          "url": "https://www.gbif.org/species/5229273",
+          "note": "Skins, eggs and bones of the great auk."
+        },
+        {
+          "name": "Hydrodamalis gigas",
+          "url": "https://www.gbif.org/species/2435289",
+          "note": "Skeletal material of Steller's sea cow."
+        },
+        {
+          "name": "Ectopistes migratorius",
+          "url": "https://www.gbif.org/species/2495898",
+          "note": "Dated skins and eggs of the passenger pigeon."
+        },
+        {
+          "name": "Conuropsis carolinensis",
+          "url": "https://www.gbif.org/species/2479449",
+          "note": "Dated specimens of the Carolina parakeet."
+        }
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-12",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-12",
+    "needs_on": "2026-10-12"
+  }
+}

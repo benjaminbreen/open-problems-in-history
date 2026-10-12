@@ -1,0 +1,259 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-12",
+ "items": [
+  {
+   "date": "2016-12",
+   "kind": "data",
+   "title": "Tasmanian wildlife department releases redacted thylacine witness statements dating back to 2001",
+   "who": "DPIPWE (Tasmania)",
+   "venue": "The Examiner",
+   "url": "https://www.examiner.com.au/story/4367089/thylacine-witness-statements-released/",
+   "note": "First public release of the department's recent sighting file, with names, locations and photographs redacted.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-03",
+   "kind": "event",
+   "title": "James Cook University announces camera-trap search for thylacines on Cape York",
+   "who": "S. Abell and W. Laurance (James Cook University)",
+   "venue": "JCU media release",
+   "url": "https://jcu.edu.au/news/releases/2017/march/fnq-search-for-the-tasmanian-tiger",
+   "note": "Survey prompted by reported mainland sightings; no thylacine detections have been published from it.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-04",
+   "kind": "paper",
+   "title": "Estimating the extinction date of the thylacine accounting for unconfirmed sightings",
+   "who": "C. J. Carlson, A. L. Bond and K. R. Burgio",
+   "venue": "bioRxiv",
+   "url": "https://doi.org/10.1101/123331",
+   "note": "Preprint of the Bayesian mixed-certainty analysis that placed extinction most likely around 1940.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017-12",
+   "kind": "field",
+   "title": "Genome of the Tasmanian tiger provides insights into the evolution and demography of an extinct marsupial carnivore",
+   "who": "C. Y. Feigin et al.",
+   "venue": "Nature Ecology & Evolution",
+   "url": "https://doi.org/10.1038/s41559-017-0417-y",
+   "note": "Genome from a preserved museum pouch young showed low diversity and a long-term decline beginning well before human arrival.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-01",
+   "kind": "field",
+   "title": "High-quality fossil dates support a synchronous, Late Holocene extinction of devils and thylacines in mainland Australia",
+   "who": "L. C. White, F. Saltré, C. J. A. Bradshaw and J. J. Austin",
+   "venue": "Biology Letters",
+   "url": "https://doi.org/10.1098/rsbl.2017.0642",
+   "note": "Radiocarbon dates place mainland extinction in the Late Holocene, the baseline against which claimed mainland sightings are judged.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-02",
+   "kind": "paper",
+   "title": "Estimating the extinction date of the thylacine with mixed certainty data",
+   "who": "C. J. Carlson, A. L. Bond and K. R. Burgio",
+   "venue": "Conservation Biology",
+   "url": "https://doi.org/10.1111/cobi.13037",
+   "note": "Most likely extinction date 1940, with other estimators between 1936 and 1943 and none later than 1956.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "Deficiencies in estimating the extinction date of the thylacine with mixed certainty data",
+   "who": "B. W. Brook, S. R. Sleightholme, C. R. Campbell and J. C. Buettel",
+   "venue": "Conservation Biology",
+   "url": "https://doi.org/10.1111/cobi.13186",
+   "note": "Argues that reporting biases make it premature to place extinction soon after the last captive animal died.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-08",
+   "kind": "paper",
+   "title": "Reevaluating sighting models and moving beyond them to test and contextualize the extinction of the thylacine",
+   "who": "C. J. Carlson, A. L. Bond and K. R. Burgio",
+   "venue": "Conservation Biology",
+   "url": "https://doi.org/10.1111/cobi.13187",
+   "note": "Reply defending the original analysis and its conclusion that survival into recent decades is implausible.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2018-09",
+   "kind": "data",
+   "title": "The International Thylacine Specimen Database (6th Revision - Project Summary & Final Report)",
+   "who": "S. R. Sleightholme and C. R. Campbell",
+   "venue": "Australian Zoologist",
+   "url": "https://doi.org/10.7882/az.2017.011",
+   "note": "Final report on the worldwide catalogue of surviving thylacine specimens, the reference list for any search for late-dated physical evidence.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2019-06",
+   "kind": "tool",
+   "title": "A fast re-sampling method for using reliability ratings of sightings with extinction-date estimators",
+   "who": "B. W. Brook, J. C. Buettel and I. Jarić",
+   "venue": "Ecology",
+   "url": "https://doi.org/10.1002/ecy.2787",
+   "note": "Re-sampling method and R script that let any extinction-date estimator use graded sightings, validated on species of known fate.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019-10",
+   "kind": "data",
+   "title": "Right to Information release lists eight thylacine sightings reported to the department since 2016",
+   "who": "DPIPWE (Tasmania)",
+   "venue": "news coverage",
+   "url": "https://www.10news.com/news/world/people-are-reporting-sightings-of-the-tasmanian-tiger-thought-to-be-extinct",
+   "note": "Released reports from the Huon, Corinna, Waratah, Mt Roland and elsewhere; the department said none had been confirmed.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-05",
+   "kind": "data",
+   "title": "Footage of a Beaumaris Zoo thylacine from the 1935 travelogue Tasmania the Wonderland identified at the NFSA",
+   "who": "B. Holmes, G. Linnard and M. Williams",
+   "venue": "National Film and Sound Archive / Australian Geographic",
+   "url": "https://www.australiangeographic.com.au/news/2020/05/last-known-footage-of-the-now-extinct-thylacine-rediscovered-video/",
+   "note": "Released as the latest known moving images of a living thylacine, filmed about 18 months before the last captive death.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-09",
+   "kind": "data",
+   "title": "A Catalogue of the Thylacine captured on film",
+   "who": "S. R. Sleightholme and C. R. Campbell",
+   "venue": "Australian Zoologist",
+   "url": "https://doi.org/10.7882/az.2020.032",
+   "note": "Thylacine Image Registry of 112 known photographs with corrected provenance, the reference set for judging any new photographic claim.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "The parson, the psychiatrist, the publican, and his nephews: the two final thylacine captures in Tasmania",
+   "who": "G. Linnard, M. Williams and B. Holmes",
+   "venue": "Papers and Proceedings of the THRA",
+   "url": "https://thra.org.au/publications/papers-proceedings-december-2020",
+   "note": "Argues from council minutes and film evidence that the last captive thylacines were snared in the north-west around 1930.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-01",
+   "kind": "paper",
+   "title": "Resolving when (and where) the Thylacine went extinct",
+   "who": "B. W. Brook et al.",
+   "venue": "bioRxiv",
+   "url": "https://doi.org/10.1101/2021.01.18.427214",
+   "note": "Preprint whose suggestion of possible survival into the late twentieth century drew wide press coverage two years before formal publication.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "Resolving when (and where) the Thylacine went extinct",
+   "who": "B. W. Brook, S. R. Sleightholme, C. R. Campbell, I. Jarić and J. C. Buettel",
+   "venue": "Science of the Total Environment",
+   "url": "https://doi.org/10.1016/j.scitotenv.2023.162878",
+   "note": "High-quality records imply extinction in the 1940s to 1970s; modelling all 1,237 records allows the late 1980s to early 2000s.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2023-03",
+   "kind": "paper",
+   "title": "Thylacine: The History, Ecology and Loss of the Tasmanian Tiger",
+   "who": "B. Holmes and G. Linnard (eds.)",
+   "venue": "CSIRO Publishing",
+   "url": "https://doi.org/10.1071/9781486315543",
+   "note": "Edited volume on the thylacine's history and ecology, including a chapter on the bounty years from 1830 to 1914.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-05",
+   "kind": "paper",
+   "title": "The discovery of the remains of the last Tasmanian tiger (Thylacinus cynocephalus)",
+   "who": "R. Paddle and K. Medlock",
+   "venue": "Australian Zoologist",
+   "url": "https://doi.org/10.7882/az.2023.017",
+   "note": "Identifies the skin and skeleton of the aged female that died on 7 September 1936 in the Tasmanian Museum's collection.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2023-10",
+   "kind": "paper",
+   "title": "How collections and reputation were built out of Tasmanian violence: thylacines (Thylacinus cynocephalus) and Aboriginal remains from Morton Allport (1830–1878)",
+   "who": "J. Ashby",
+   "venue": "Archives of Natural History",
+   "url": "https://doi.org/10.3366/anh.2023.0859",
+   "note": "Places the colonial trade in thylacine specimens alongside the trade in Aboriginal remains, shaping how museum records of the species should be read.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-12",
+   "kind": "data",
+   "title": "The Tasmanian Thylacine Sighting Record Database (TTSRD): 1,223 quality-rated and geo-located Thylacine observations from 1910 to 2019",
+   "who": "B. W. Brook, S. R. Sleightholme, C. R. Campbell, I. Jarić and J. C. Buettel",
+   "venue": "Australian Zoologist",
+   "url": "https://doi.org/10.7882/az.2023.044",
+   "note": "Describes the deduplicated, dated, geo-tagged and quality-rated sighting database, each record linked to an image of its source.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2024-04",
+   "kind": "data",
+   "title": "Five previously undescribed thylacine (Thylacinus cynocephalus) specimens held in the museums of the University of Melbourne",
+   "who": "R. Long",
+   "venue": "Australian Zoologist",
+   "url": "https://doi.org/10.7882/az.2024.013",
+   "note": "Describes five skulls accessioned between 1893 and 1932, showing that university teaching collections still hold uncatalogued specimens.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2024-11",
+   "kind": "tool",
+   "title": "Inferring species extinction from sighting data",
+   "who": "R. S. McCrea, T. Cheale, E. Campillo-Funollet and D. L. Roberts",
+   "venue": "Cambridge Prisms: Extinction",
+   "url": "https://doi.org/10.1017/ext.2024.18",
+   "note": "Review of sighting-record extinction methods and their assumptions, with an RShiny application implementing several of them.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-08",
+   "kind": "paper",
+   "title": "Illuminating the mystery of thylacine extinction: a role for relaxed selection and gene loss",
+   "who": "B. G. Salve and N. Vijay",
+   "venue": "Proceedings of the Royal Society B",
+   "url": "https://doi.org/10.1098/rspb.2025.1339",
+   "note": "Identifies ancient gene losses in the thylacine genome and asks whether they increased vulnerability, bearing on causes rather than the date.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

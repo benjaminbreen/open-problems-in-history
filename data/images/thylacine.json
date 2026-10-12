@@ -1,0 +1,10 @@
+{
+  "id": "thylacine",
+  "file": "data/images/src/thylacine.jpg",
+  "caption": "Thylacine at Beaumaris Zoo, Hobart, photographed by Ben Sheppard",
+  "commons": "https://commons.wikimedia.org/wiki/File:Thylacine_at_Beaumaris_Zoo,_1936_(NS4371-1-1063).jpg",
+  "author": "Ben Sheppard",
+  "license": "Public domain",
+  "license_url": "",
+  "crop": "center"
+}

@@ -1,0 +1,204 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-12",
+ "items": [
+  {
+   "date": "2016",
+   "kind": "paper",
+   "title": "Hybrid Knowledge in the Early East India Company World",
+   "who": "A. Winterbottom",
+   "venue": "Palgrave Macmillan",
+   "url": "https://doi.org/10.1057/9781137380203",
+   "note": "Traces Company servants who gathered medical and botanical knowledge from Asian practitioners and sent it to Petiver and Sloane.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2016-01",
+   "kind": "paper",
+   "title": "William Courten's lists of 'Things Bought' from the late seventeenth century",
+   "who": "S. Kusukawa",
+   "venue": "Journal of the History of Collections",
+   "url": "https://doi.org/10.1093/jhc/fhv040",
+   "note": "Edits Courten's acquisition lists with dates, prices and sellers, giving a documentary control for material that later entered Sloane's catalogues, including several unnamed suppliers.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2016-04",
+   "kind": "paper",
+   "title": "Exploring cultures of collecting in the early modern world",
+   "who": "A. Marples and V. R. M. Pickering",
+   "venue": "Archives of Natural History",
+   "url": "https://doi.org/10.3366/anh.2016.0342",
+   "note": "Uses Sloane's Chinese drug collection in Vegetable Substances to discuss how local medical knowledge entered London collections through intermediaries.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Putting nature in a box: Hans Sloane's 'Vegetable Substances' collection",
+   "who": "V. R. M. Pickering",
+   "venue": "PhD thesis, Queen Mary University of London",
+   "url": "https://qmro.qmul.ac.uk/xmlui/handle/123456789/25935",
+   "note": "First full study of the Vegetable Substances catalogue and its suppliers, using Sloane's correspondence to reconstruct the networks behind the entries.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2017",
+   "kind": "paper",
+   "title": "Secret Cures of Slaves: People, Plants, and Medicine in the Eighteenth-Century Atlantic World",
+   "who": "L. Schiebinger",
+   "venue": "Stanford University Press",
+   "url": "https://doi.org/10.1515/9781503602984",
+   "note": "Studies medical exchange among Africans, Amerindians and Europeans in the Caribbean, including colonial purchases of remedies from enslaved healers.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2017-07",
+   "kind": "paper",
+   "title": "Collecting the World: Hans Sloane and the Origins of the British Museum",
+   "who": "J. Delbourgo",
+   "venue": "Harvard University Press",
+   "url": "https://doi.org/10.4159/9780674982789",
+   "note": "Biography placing Sloane's collecting within slavery and empire and discussing the largely anonymous presence of enslaved and colonized people in his records.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2019",
+   "kind": "paper",
+   "title": "The Age of Intoxication: Origins of the Global Drug Trade",
+   "who": "B. Breen",
+   "venue": "University of Pennsylvania Press",
+   "url": "https://openlibrary.org/works/OL21339082W",
+   "note": "Follows drugs from African, Asian and American settings into Portuguese and English apothecary and scientific networks.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "The Collectors: Creating Hans Sloane's Extraordinary Herbarium",
+   "who": "M. Carine (ed.)",
+   "venue": "Natural History Museum Publications",
+   "url": "https://doi.org/10.3366/anh.2021.0738",
+   "note": "Biographical entries for the people who supplied Sloane's herbarium, a reference list for matching suppliers named in Vegetable Substances; link is to a review.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "Enlightenment architectures: the reconstruction of Sir Hans Sloane's cabinets of 'Miscellanies'",
+   "who": "K. Sloan and J. Nyhan",
+   "venue": "Journal of the History of Collections",
+   "url": "https://doi.org/10.1093/jhc/fhaa034",
+   "note": "Reconstructs the Miscellanies catalogue and links some objects to Courten's purchases, a model for tying catalogue entries to acquisition documents.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-03",
+   "kind": "paper",
+   "title": "'I have been obliged to Send Nassaw': an enslaved healer's medical labour and skill in eighteenth-century Virginia",
+   "who": "C. M. Blakley",
+   "venue": "Medical History",
+   "url": "https://doi.org/10.1017/mdh.2021.1",
+   "note": "Reconstructs a named enslaved healer's practice from plantation correspondence and cautions against inferring origins from names.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-03",
+   "kind": "paper",
+   "title": "Sealed and concealed: the uses of Hans Sloane's collection of 'Vegetable Substances'",
+   "who": "V. R. M. Pickering",
+   "venue": "Journal of the History of Collections",
+   "url": "https://doi.org/10.1093/jhc/fhab003",
+   "note": "Examines how the Vegetable Substances were stored, catalogued and used, and what the catalogue does and does not record about sources.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2021-08",
+   "kind": "paper",
+   "title": "Hans Sloane and the Melancholy Slave",
+   "who": "P. Walmsley",
+   "venue": "Early Modern Trauma (University of Nebraska Press)",
+   "url": "https://doi.org/10.2307/j.ctv1tbhrhx.11",
+   "note": "Reads Sloane's Jamaican case histories of enslaved patients, part of the clinical setting in which he gathered and recorded African medical practice.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2021-10",
+   "kind": "grant",
+   "title": "The Sloane Lab: Looking back to build future shared collections",
+   "who": "J. Nyhan et al. (UCL, British Museum, NHM)",
+   "venue": "AHRC Towards a National Collection",
+   "url": "https://gtr.ukri.org/projects?ref=AH%2FW003457%2F1",
+   "note": "AHRC Discovery Project AH/W003457/1, October 2021 to September 2024, to relink Sloane's dispersed catalogues and collections.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2023-02",
+   "kind": "data",
+   "title": "Hans Sloane's Collection of Vegetables and Vegetable Substances",
+   "who": "V. Pickering, C. Jarvis and M. Carine (Natural History Museum)",
+   "venue": "NHM Data Portal",
+   "url": "https://doi.org/10.5519/lp5a5t1d",
+   "note": "Open transcription of the whole Vegetable Substances catalogue with named suppliers, places and links to surviving specimens, making a corpus-wide attribution count possible.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2024-09",
+   "kind": "data",
+   "title": "A Guide to Finding Women in the Sloane Lab Knowledge Base",
+   "who": "R. White (Sloane Lab)",
+   "venue": "Reconstructing Sloane",
+   "url": "https://reconstructingsloane.org/women/wp-content/uploads/sites/5/2024/09/A-Guide-to-Finding-Women-in-the-SLKB-Dr-Rosalind-White-Single-Page-View.pdf",
+   "note": "Research guide and dataset showing how to recover women suppliers and intermediaries across Sloane's linked catalogues, a template for other under-recorded contributors.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-01",
+   "kind": "data",
+   "title": "Final Report - Sloane Lab: Looking Back to Build Future Shared Collections",
+   "who": "J. Nyhan, A. Vlachidis, A. Flinn, N. Pearlman, M. Carine et al.",
+   "venue": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.14771754",
+   "note": "Reports the Sloane Lab Knowledge Base, a CIDOC CRM knowledge graph linking Sloane's historical catalogues to British Museum, NHM and British Library records.",
+   "advances": true,
+   "cited": false
+  },
+  {
+   "date": "2025-02",
+   "kind": "paper",
+   "title": "Collecting and cataloguing the world: the botanical collections of Hans Sloane (1660–1753)",
+   "who": "B. Scott, V. Pickering, R. Coulton, J. Nyhan and M. Carine",
+   "venue": "Systematics and Biodiversity",
+   "url": "https://doi.org/10.1080/14772000.2025.2455440",
+   "note": "Counts suppliers across the herbarium and Vegetable Substances, reports further Courten labels and warns about composite entries and catalogue attributions.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-09",
+   "kind": "data",
+   "title": "Hans Sloane's Collection of Vegetables and Vegetable Substances (updated release)",
+   "who": "Natural History Museum",
+   "venue": "NHM Data Portal",
+   "url": "https://data.nhm.ac.uk/dataset/sloane-vegetable-substances",
+   "note": "Revised release of the catalogue dataset, with about 12,750 rows and object links for surviving specimens.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

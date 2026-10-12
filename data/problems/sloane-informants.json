@@ -1,0 +1,282 @@
+{
+  "id": "sloane-informants",
+  "title": "Who supplied the medical knowledge that Hans Sloane's catalogues attribute to unnamed people?",
+  "short": "Sloane's catalogues attribute remedies and drug samples to 'a Negro', 'an Indian druggist' or an unnamed ship's doctor; few of these informants have been traced to named people.",
+  "region": "Global",
+  "field": "Science & knowledge",
+  "start": 1680,
+  "end": 1753,
+  "flags": [
+    "digitization"
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Image and item-level catalogue the Sloane correspondence volumes not yet indexed by the Sloane Letters Project, and photograph original labels on Vegetable Substances specimens with anonymous attributions."
+    },
+    {
+      "who": "computational-linguists",
+      "ask": "Classify the attribution of every Vegetable Substances entry against the manuscript facsimiles, flagging composite entries and 'from the same' chains, and publish coding rules with a hand-checked sample."
+    },
+    {
+      "who": "philologists",
+      "ask": "Identify the languages and likely regions behind vernacular drug names in anonymous entries, from Portuguese, Persian, South Indian and Chinese lists, to narrow where each supplier worked."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Design a stratified sample of anonymous entries for manual review so the share traced to named people can be estimated with stated uncertainty and tracked over time."
+    }
+  ],
+  "matters": "Sloane's collections, now divided among the British Museum, the Natural History Museum and the British Library, are a principal archive for the argument that early modern European materia medica was built on the knowledge of African, Asian and American practitioners whose names went unrecorded (Schiebinger 2004, 2017; Delbourgo 2017). That argument rests mostly on aggregate patterns and a small number of well-documented cases, so it cannot yet say how much of a catalogue such as Vegetable Substances came from such people, or whether anonymity was imposed in London, inherited from intermediaries or reflected what suppliers chose to disclose. Each identification also restores a person, place and practice to the history of medicine, and the method bears on how museums now record provenance and attribution for these objects.",
+  "stuck": "Sloane's catalogues usually name the person who passed on a specimen or description, typically a European correspondent, ship's surgeon, apothecary or collector, and refer to the original practitioner, if at all, by category: 'a Negro', 'the Indians', 'an Indian druggist', 'the Dr of the East India Ship'. The documents that could name them are dispersed across 38 volumes of Sloane correspondence indexed mainly by writer, the acquisition lists of William Courten (whose collection passed to Sloane in 1702), colonial council records and East India Company ship papers, while single catalogue entries and specimens often combine material from several suppliers. No one has systematically listed the anonymous entries, so there is no baseline against which progress can be measured.",
+  "solved": "An individual informant counts as identified when the attribution rests on at least two independent lines of evidence, at least one of them documentary (correspondence, council minutes, account books, ship or acquisition lists) rather than textual resemblance alone, and has been checked against prior scholarship and against the possibility that the entry combines several sources. The problem as a whole is solved to the degree that a reproducible count exists of the anonymous and partially attributed entries in a defined catalogue such as Vegetable Substances, together with the share of them traced, under that standard, to a named person or at least to a specific place and intermediary.",
+  "approach": [
+    "The baseline can start from the Natural History Museum's open transcription of Vegetable Substances (Pickering, Jarvis and Carine, 2023 onward), about 12,750 rows with fields for named collections and other individuals but no tag for anonymous informants. Teams could classify every entry's attribution (named, anonymous category, 'from the same', none) against the manuscript facsimiles, since the transcription can omit words and place-names, and publish the rules and a hand-checked sample so that the count can be reproduced.",
+    "Matching then proceeds supplier group by supplier group. Courten's lists of things bought, edited by Kusukawa (2017), record dates, prices and sources such as 'the Dr of the East India Ship'; the Sloane correspondence can be searched through the Sloane Letters Project index; governors' dispatches about remedies bought from enslaved healers are calendared in the Calendar of State Papers Colonial; and the East India Company's ships' journals list voyages and surgeons. Delbourgo (2012) on how Sloane listed people, Murphy (2011, 2013) on slave-ship surgeons as collectors, Winterbottom (2016) on Company servants and their Asian informants, and Pickering (2021) on how the specimens were used give the context for each route.",
+    "The main risks are description transfer and over-identification. Scott et al. (2025) show that one catalogue number can cover samples and descriptions from several suppliers, and a remedy's description can migrate to a neighbouring entry during labelling or copying. A parallel between a catalogue description and a named printed recipe or colonial record is a lead, not an identification: each candidate should be published with its alternatives, the evidence that would refute it, and a check against Pickering's thesis and curatorial files, and some informants will be resolvable only to a place or community.",
+    "Because identifications are separable, results can accumulate informant by informant in a shared register linked to NHM object numbers and the Sloane Lab Knowledge Base, with the baseline count recalculated as entries are reviewed.",
+    "Progress depends on digitization in collaboration with the British Library and the Natural History Museum: open images of the Sloane correspondence (MSS 4036–4069, 4075–4078), now mainly on microfilm, together with systematic photography of original specimen labels in the Vegetable Substances collection."
+  ],
+  "existing": [
+    {
+      "year": 1994,
+      "authors": "Arthur MacGregor (ed.)",
+      "title": "Sir Hans Sloane: Collector, Scientist, Antiquary, Founding Father of the British Museum",
+      "venue": "London: British Museum Press",
+      "url": "https://openlibrary.org/works/OL4208368W",
+      "note": "Founding survey of Sloane's collections by subject, including the botanical and materia medica holdings and the catalogues that describe them."
+    },
+    {
+      "year": 2004,
+      "authors": "Londa Schiebinger",
+      "title": "Plants and Empire: Colonial Bioprospecting in the Atlantic World",
+      "venue": "Cambridge, MA: Harvard University Press",
+      "url": "https://doi.org/10.4159/9780674043275",
+      "note": "Argued that European naturalists, Sloane among them, acquired medicinal plant knowledge from Amerindian and African informants while erasing or ignoring their names and some of their knowledge."
+    },
+    {
+      "year": 2006,
+      "authors": "Susan Scott Parrish",
+      "title": "American Curiosity: Cultures of Natural History in the Colonial British Atlantic World",
+      "venue": "Chapel Hill: University of North Carolina Press for the Omohundro Institute",
+      "url": "https://openlibrary.org/works/OL5830224W",
+      "note": "Reconstructed how colonists, Native Americans and enslaved Africans supplied specimens and knowledge to London naturalists, and how attribution was assigned along the way."
+    },
+    {
+      "year": 2011,
+      "authors": "Kathleen S. Murphy",
+      "title": "Translating the vernacular: Indigenous and African knowledge in the eighteenth-century British Atlantic",
+      "venue": "Atlantic Studies 8 (1): 29–48",
+      "url": "https://doi.org/10.1080/14788810.2011.541188",
+      "note": "Examined how Indigenous and African knowledge was rendered into the vocabulary of British natural history and what was lost in translation."
+    },
+    {
+      "year": 2012,
+      "authors": "Alison Walker, Arthur MacGregor and Michael Hunter (eds.)",
+      "title": "From Books to Bezoars: Sir Hans Sloane and His Collections",
+      "venue": "London: British Library",
+      "url": "https://openlibrary.org/works/OL17415383W",
+      "note": "Essays on the dispersal and recataloguing of Sloane's library, manuscripts and natural history collections across the three successor institutions."
+    },
+    {
+      "year": 2012,
+      "authors": "James Delbourgo",
+      "title": "Listing People",
+      "venue": "Isis 103 (4): 735–742",
+      "url": "https://doi.org/10.1086/669046",
+      "note": "Analysed how Sloane's catalogues recorded, categorized or omitted the people who supplied and appeared among his objects."
+    },
+    {
+      "year": 2013,
+      "authors": "Kathleen S. Murphy",
+      "title": "Collecting Slave Traders: James Petiver, Natural History, and the British Slave Trade",
+      "venue": "William and Mary Quarterly 70 (4): 637–670",
+      "url": "https://doi.org/10.5309/willmaryquar.70.4.0637",
+      "note": "Showed that slave-ship surgeons and captains were a major supply network for London collectors, which makes ship records a route to unnamed informants."
+    },
+    {
+      "year": 2016,
+      "authors": "Anna Winterbottom",
+      "title": "Hybrid Knowledge in the Early East India Company World",
+      "venue": "Basingstoke: Palgrave Macmillan",
+      "url": "https://doi.org/10.1057/9781137380203",
+      "note": "Traced how Company servants in Asia gathered medical and botanical knowledge from local practitioners and sent it to Petiver, Sloane and others."
+    },
+    {
+      "year": 2017,
+      "authors": "Sachiko Kusukawa",
+      "title": "William Courten's lists of 'Things Bought' from the late seventeenth century",
+      "venue": "Journal of the History of Collections 29 (1): 1–17 (online 2016)",
+      "url": "https://doi.org/10.1093/jhc/fhv040",
+      "note": "Transcribed and analysed Courten's acquisition lists in Sloane MSS 3961 and 3962, with dates, prices and sources, including several unnamed suppliers."
+    },
+    {
+      "year": 2017,
+      "authors": "Londa Schiebinger",
+      "title": "Secret Cures of Slaves: People, Plants, and Medicine in the Eighteenth-Century Atlantic World",
+      "venue": "Stanford: Stanford University Press",
+      "url": "https://doi.org/10.1515/9781503602984",
+      "note": "Studied medical exchange among Africans, Amerindians and Europeans in the Caribbean, including remedies bought from enslaved healers by colonial governments."
+    },
+    {
+      "year": 2017,
+      "authors": "James Delbourgo",
+      "title": "Collecting the World: Hans Sloane and the Origins of the British Museum",
+      "venue": "Cambridge, MA: Harvard University Press",
+      "url": "https://doi.org/10.4159/9780674982789",
+      "note": "Biography setting Sloane's collecting within slavery and empire and discussing how enslaved and colonized people appear, mostly anonymously, in his records."
+    },
+    {
+      "year": 2019,
+      "authors": "Benjamin Breen",
+      "title": "The Age of Intoxication: Origins of the Global Drug Trade",
+      "venue": "Philadelphia: University of Pennsylvania Press",
+      "url": "https://openlibrary.org/works/OL21339082W",
+      "note": "Followed drugs from African, Asian and American settings into Portuguese and English apothecary and scientific networks, showing how their origins and uses were reframed in transit."
+    },
+    {
+      "year": 2021,
+      "authors": "Victoria R. M. Pickering",
+      "title": "Sealed and concealed: the uses of Hans Sloane's collection of 'Vegetable Substances'",
+      "venue": "Journal of the History of Collections 33 (3): 481–492",
+      "url": "https://doi.org/10.1093/jhc/fhab003",
+      "note": "Examined how the Vegetable Substances were stored, catalogued and used, drawing on her doctoral study of the collection's suppliers."
+    },
+    {
+      "year": 2025,
+      "authors": "Brad Scott, Victoria Pickering, Richard Coulton, Julianne Nyhan and Mark Carine",
+      "title": "Collecting and cataloguing the world: the botanical collections of Hans Sloane (1660–1753)",
+      "venue": "Systematics and Biodiversity 23 (1)",
+      "url": "https://doi.org/10.1080/14772000.2025.2455440",
+      "note": "Surveyed the herbarium and Vegetable Substances together, counting suppliers and warning about composite entries, relabelling and the limits of catalogue attributions."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Natural History Museum, London",
+      "collection": "Sloane Vegetable Substances: manuscript catalogue, transcribed dataset and surviving specimens; Sloane Herbarium",
+      "url": "https://data.nhm.ac.uk/dataset/sloane-vegetable-substances",
+      "digitized": "partial",
+      "note": "Holds Sloane's catalogue of about 12,500 numbered vegetable substances and over 8,000 surviving specimens; the catalogue is transcribed and imaged, most labels are not.",
+      "aliases": [
+        "Natural History Museum"
+      ],
+      "holdings": [
+        {
+          "name": "Hans Sloane's Collection of Vegetables and Vegetable Substances (dataset)",
+          "ref": "doi:10.5519/lp5a5t1d",
+          "url": "https://doi.org/10.5519/lp5a5t1d",
+          "note": "Open transcription of every catalogue entry with named collections, individuals, interpreted places and links to object records.",
+          "match": [
+            "Vegetable Substances"
+          ]
+        },
+        {
+          "name": "Sloane manuscript catalogue of Vegetables and Vegetable Substances (facsimile)",
+          "url": "https://nhm.primo.exlibrisgroup.com/permalink/44NHM_INST/16ehpmm/alma9936352402081",
+          "note": "Public IIIF images of the manuscript volumes, needed to check transcriptions, cancelled lines and footnotes."
+        }
+      ]
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "Sloane manuscripts: correspondence, Courten papers, medical casebooks; India Office marine records",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "partial",
+      "note": "Holds the letters and papers through which most specimens reached Sloane; few are openly imaged and the correspondence is indexed mainly by writer.",
+      "aliases": [
+        "British Library"
+      ],
+      "holdings": [
+        {
+          "name": "Sloane correspondence",
+          "ref": "Sloane MSS 4036–4069, 4075–4078",
+          "note": "Thirty-eight volumes of letters to and from Sloane, including covering letters for specimens and remedies; available mainly on microfilm.",
+          "match": [
+            "Sloane correspondence"
+          ]
+        },
+        {
+          "name": "William Courten's acquisition lists",
+          "ref": "Sloane MSS 3961, 3962",
+          "note": "Lists of things bought from the late 1680s, with dates, prices and sellers, edited by Kusukawa."
+        },
+        {
+          "name": "East India Company ships' journals",
+          "ref": "IOR/L/MAR/A",
+          "url": "https://searcharchives.bl.uk/?f%5Bparent_reference_ssi%5D%5B%5D=IOR%2FL%2FMAR&sort=hierarchy",
+          "note": "Journals, ledgers and receipt books of early Company voyages, a route to identifying ship surgeons; survival is uneven.",
+          "match": [
+            "ships' journals"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "The Sloane Letters Project, University of Essex",
+      "collection": "Item-level database of Sloane's correspondence",
+      "url": "https://sloaneletters.com/",
+      "digitized": "partial",
+      "note": "Searchable calendar covering Sloane MSS 4036–4053 and 4075 in full and selected letters from other volumes, some with transcriptions.",
+      "aliases": [
+        "Sloane Letters Project"
+      ]
+    },
+    {
+      "repository": "The Sloane Lab (UCL, British Museum, Natural History Museum)",
+      "collection": "Sloane Lab Knowledge Base linking catalogues across the three successor institutions",
+      "url": "https://www.britishmuseum.org/research/projects/sloane-lab",
+      "digitized": "full",
+      "note": "AHRC-funded knowledge graph (2021–2024) that reconnects Sloane's historical catalogues with modern collection records; the natural place to attach new attributions.",
+      "aliases": [
+        "Sloane Lab Knowledge Base",
+        "Sloane Lab"
+      ],
+      "holdings": [
+        {
+          "name": "Final report, Sloane Lab: Looking Back to Build Future Shared Collections",
+          "ref": "doi:10.5281/zenodo.14771754",
+          "url": "https://doi.org/10.5281/zenodo.14771754",
+          "note": "Describes the Knowledge Base, its data model and the catalogues it integrates."
+        }
+      ]
+    },
+    {
+      "repository": "The National Archives, Kew",
+      "collection": "Colonial Office records (CO 1, CO 5, CO 137 and related series) and the printed Calendar of State Papers Colonial",
+      "url": "https://discovery.nationalarchives.gov.uk/",
+      "digitized": "partial",
+      "note": "Governors' dispatches and council papers reporting remedies purchased from enslaved and Indigenous healers and specimens sent to London physicians.",
+      "aliases": [
+        "National Archives"
+      ],
+      "holdings": [
+        {
+          "name": "Calendar of State Papers Colonial, America and West Indies (British History Online)",
+          "url": "https://www.british-history.ac.uk/cal-state-papers/colonial/america-west-indies/vol36/pp408-425",
+          "note": "Full-text calendar of Colonial Office correspondence, searchable for remedies, healers and shipments of drugs.",
+          "match": [
+            "Calendar of State Papers Colonial"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Digital Ark, University of Saskatchewan",
+      "collection": "Database of early modern English and Scottish collections and collectors, 1580–1700",
+      "url": "https://drc.usask.ca/projects/ark/public/public_person.php?id=21",
+      "digitized": "full",
+      "note": "Person and object records for Courten's collection, including the unnamed suppliers in his lists, kept as separate entries.",
+      "aliases": [
+        "Digital Ark"
+      ]
+    }
+  ],
+  "provenance": {
+    "drafted_by": "Claude Opus 5.5",
+    "drafted_on": "2026-10-12",
+    "compiled_by": "Claude Opus 5.5",
+    "compiled_on": "2026-10-12",
+    "needs_on": "2026-10-12"
+  }
+}

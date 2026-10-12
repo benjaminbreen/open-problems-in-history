@@ -1,0 +1,127 @@
+{
+ "compiled_by": "Claude Opus 5.5",
+ "compiled_on": "2026-10-12",
+ "items": [
+  {
+   "date": "2016-03",
+   "kind": "paper",
+   "title": "A preliminary reassessment of Newton's alchemy",
+   "who": "W. R. Newman",
+   "venue": "The Cambridge Companion to Newton, 2nd edn",
+   "url": "https://doi.org/10.1017/CCO9781139058568.013",
+   "note": "Reassesses Newton's alchemy in light of the digital edition and argues for its experimental, chymical character.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2018-12",
+   "kind": "paper",
+   "title": "Newton the Alchemist: Science, Enigma, and the Quest for Nature's \"Secret Fire\"",
+   "who": "W. R. Newman",
+   "venue": "Princeton University Press",
+   "url": "https://doi.org/10.23943/princeton/9780691174877.001.0001",
+   "note": "Reads Newton's alchemy as laboratory chymistry built on decoding Starkey, Snyders and others, the interpretation any newly identified source will test.",
+   "advances": true,
+   "cited": true
+  },
+  {
+   "date": "2019-03",
+   "kind": "tool",
+   "title": "newton_chymistry: rebuilt Chymistry of Isaac Newton website",
+   "who": "Indiana University Libraries",
+   "venue": "GitHub",
+   "url": "https://github.com/IUBLibTech/newton_chymistry",
+   "note": "Open code for the new edition site, generating pages and Solr search from the TEI encodings of Newton's alchemical manuscripts.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "Encoding Newton's Alchemical Library: Integrating Traditional Bibliographic and Modern Computational Approaches",
+   "who": "M. B. Mink, M. Dalmau, W. Hooper et al.",
+   "venue": "Journal of the Text Encoding Initiative",
+   "url": "https://doi.org/10.4000/jtei.2866",
+   "note": "Describes encoding the full corpus of over a million words and a bibliography of more than five thousand works Newton cited.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020",
+   "kind": "paper",
+   "title": "The Experimental Fire: Inventing English Alchemy, 1300–1700",
+   "who": "J. M. Rampling",
+   "venue": "University of Chicago Press",
+   "url": "https://doi.org/10.7208/chicago/9780226710846.001.0001",
+   "note": "History of English alchemy through the copying and reworking of manuscripts, especially the Ripley corpus, that Newton's generation inherited.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2020-12",
+   "kind": "paper",
+   "title": "Theory and Practice in Newton's Alchemical Experimentation",
+   "who": "W. R. Newman",
+   "venue": "Oxford Handbook of Newton",
+   "url": "https://doi.org/10.1093/oxfordhb/9780199930418.013.13",
+   "note": "First detailed comparison of Newton's alchemical theory with his laboratory notebooks, linking copied texts to his experiments.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-09",
+   "kind": "field",
+   "title": "The \"chymistry\" of Isaac Newton: a new Cu-acetate compound formed via crystallization",
+   "who": "D. L. Bish, W. R. Newman and M. Pink",
+   "venue": "Powder Diffraction",
+   "url": "https://doi.org/10.1017/S0885715625100778",
+   "note": "Replicates Newton's experiments with his 'vitriol' and verdigris and identifies the products by X-ray diffraction, showing his recipes can be tested in the laboratory.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2025-12",
+   "kind": "paper",
+   "title": "A Bibliographical Framework for Citation Analysis of Isaac Newton's Alchemical Manuscripts",
+   "who": "A. E. Wingate",
+   "venue": "Textual Cultures",
+   "url": "https://doi.org/10.14434/tc.v18i2.42350",
+   "note": "Revises the edition's citation encoding to allow terminus post quem dating of manuscripts and analysis of how Newton used sources.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-02",
+   "kind": "data",
+   "title": "EMLAP (Early Modern Latin Alchemical Prints), v1.0",
+   "who": "G. Hedesan et al.",
+   "venue": "Zenodo",
+   "url": "https://doi.org/10.5281/zenodo.18662799",
+   "note": "Versioned release of a curated machine-readable corpus of Latin alchemical prints, usable as a comparison set for Newton's Latin copies.",
+   "advances": false,
+   "cited": false
+  },
+  {
+   "date": "2026-06",
+   "kind": "paper",
+   "title": "An Alchemical Prima Materia for the Digital Age: Making the Early Modern Latin Alchemical Prints (EMLAP) Corpus",
+   "who": "G. D. Hedesan, P. Pavlas and V. Kaše",
+   "venue": "Ambix",
+   "url": "https://doi.org/10.1080/00026980.2026.2668735",
+   "note": "Describes how the EMLAP corpus was built with Transkribus and human quality control, and its limits for comparative work.",
+   "advances": false,
+   "cited": true
+  },
+  {
+   "date": "2026-07",
+   "kind": "paper",
+   "title": "Introduction: Computational Approaches to the Histories of Alchemy and Chemistry",
+   "who": "F. Mahootian, S. A. Lang and G. Restrepo",
+   "venue": "Ambix",
+   "url": "https://doi.org/10.1080/00026980.2026.2709974",
+   "note": "Introduces an Ambix special issue on computational methods and sets out the evidential cautions needed when machines propose textual relationships.",
+   "advances": false,
+   "cited": false
+  }
+ ]
+}

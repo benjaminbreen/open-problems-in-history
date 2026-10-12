@@ -1,0 +1,237 @@
+{
+  "compiled_by": "Claude Opus 5.5",
+  "compiled_on": "2026-10-12",
+  "items": [
+    {
+      "date": "2016-01",
+      "kind": "paper",
+      "title": "Sea otters, kelp forests, and the extinction of Steller's sea cow",
+      "who": "J. A. Estes, A. Burdin and D. F. Doak",
+      "venue": "PNAS",
+      "url": "https://doi.org/10.1073/pnas.1502552112",
+      "note": "Argues that otter removal and the resulting loss of kelp could have contributed to the sea cow's decline alongside direct hunting.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2016-02",
+      "kind": "paper",
+      "title": "The dilemma of trade samples and the importance of museum vouchers: caveats from a study on the extinction of Steller's sea cow",
+      "who": "N. D. Pyenson, J. F. Parham and J. Velez-Juarbe",
+      "venue": "Biology Letters",
+      "url": "https://doi.org/10.1098/rsbl.2015.0149",
+      "note": "Questions the provenance of bone samples behind Crerar et al.'s (2014) claim of a medieval St Lawrence Island population, as they came through trade rather than vouchered collections.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2016-09",
+      "kind": "paper",
+      "title": "Inferring extinction in North American and Hawaiian birds in the presence of sighting uncertainty",
+      "who": "D. L. Roberts and I. Jarić",
+      "venue": "PeerJ",
+      "url": "https://doi.org/10.7717/peerj.2426",
+      "note": "Re-estimates extinction dates for North American and Hawaiian birds with methods that weight certain and uncertain sightings differently.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2017-02",
+      "kind": "paper",
+      "title": "On the functional extinction of the Passenger Pigeon",
+      "who": "D. L. Roberts, I. Jarić and A. R. Solow",
+      "venue": "Conservation Biology",
+      "url": "https://doi.org/10.1111/cobi.12914",
+      "note": "Compares the dates of the last egg and skin specimens and finds no evidence that the species stopped breeding long before its final extinction.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2017-06",
+      "kind": "field",
+      "title": "An 'Aukward' Tale: A Genetic Approach to Discover the Whereabouts of the Last Great Auks",
+      "who": "J. E. Thomas et al.",
+      "venue": "Genes",
+      "url": "https://doi.org/10.3390/genes8060164",
+      "note": "Matches mitochondrial genomes from the preserved organs of the 1844 Eldey pair to candidate skins and identifies the male in Brussels.",
+      "advances": true,
+      "cited": false
+    },
+    {
+      "date": "2017-06",
+      "kind": "paper",
+      "title": "Lazarus ecology: Recovering the distribution and migratory patterns of the extinct Carolina parakeet",
+      "who": "K. R. Burgio, C. J. Carlson and M. W. Tingley",
+      "venue": "Ecology and Evolution",
+      "url": "https://doi.org/10.1002/ece3.3135",
+      "note": "Combines historical accounts and museum specimens in distribution models, finding a smaller range than assumed and different niches for the two subspecies.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2017-11",
+      "kind": "field",
+      "title": "Natural selection shaped the rise and fall of passenger pigeon genomic diversity",
+      "who": "G. G. R. Murray et al.",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aao0960",
+      "note": "Genomes from 41 birds indicate a consistently large population, contradicting the argument that natural population instability primed the collapse.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2018-06",
+      "kind": "data",
+      "title": "Georeferenced sighting and specimen occurrence data of the extinct Carolina Parakeet (Conuropsis carolinensis) from 1564 - 1944",
+      "who": "K. R. Burgio, C. J. Carlson and A. L. Bond",
+      "venue": "Biodiversity Data Journal",
+      "url": "https://doi.org/10.3897/BDJ.6.e25280",
+      "note": "Open georeferenced database of parakeet sightings and specimens, largely built on Daniel McKinley's searches of historical texts.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2018-08",
+      "kind": "paper",
+      "title": "Can genomic variation explain the extinction of the passenger pigeon?",
+      "who": "C.-M. Hung, R. M. Zink and S.-H. Li",
+      "venue": "Journal of Avian Biology",
+      "url": "https://doi.org/10.1111/jav.01858",
+      "note": "Reply defending the view that population fluctuations, not only hunting, made the pigeon vulnerable.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2019-11",
+      "kind": "field",
+      "title": "Demographic reconstruction from ancient DNA supports rapid extinction of the great auk",
+      "who": "J. E. Thomas et al.",
+      "venue": "eLife",
+      "url": "https://doi.org/10.7554/eLife.47509",
+      "note": "Finds no genetic sign of decline before intensive hunting from the sixteenth century and shows hunting alone could account for extinction.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2020-01",
+      "kind": "field",
+      "title": "Evolutionary History, Genomic Adaptation to Toxic Diet, and Extinction of the Carolina Parakeet",
+      "who": "P. Gelabert et al.",
+      "venue": "Current Biology",
+      "url": "https://doi.org/10.1016/j.cub.2019.10.066",
+      "note": "Genome of a museum specimen shows no long prior decline or recent inbreeding, suggesting an abrupt extinction attributable to human causes.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2020-02",
+      "kind": "paper",
+      "title": "The Dodo and the Red Hen, A Saga of Extinction, Misunderstanding, and Name Transfer: A Review",
+      "who": "A. S. Cheke and J. C. Parish",
+      "venue": "Quaternary",
+      "url": "https://doi.org/10.3390/quat3010004",
+      "note": "Argues the undescribed 'dodaarsen' of the 1680s were probably red hens, so the dodo disappeared unobserved earlier than statistical estimates suggest.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2021-04",
+      "kind": "field",
+      "title": "Steller's sea cow genome suggests this species began going extinct before the arrival of Paleolithic humans",
+      "who": "F. S. Sharko et al.",
+      "venue": "Nature Communications",
+      "url": "https://doi.org/10.1038/s41467-021-22567-5",
+      "note": "Low heterozygosity in the Commander Islands population suggests a long natural decline before eighteenth-century hunting finished the species.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2021-07",
+      "kind": "paper",
+      "title": "The two extinctions of the Carolina Parakeet Conuropsis carolinensis",
+      "who": "K. R. Burgio et al.",
+      "venue": "Bird Conservation International",
+      "url": "https://doi.org/10.1017/S0959270921000241",
+      "note": "Estimates that the western subspecies died out around 1914 and the eastern one in the late 1930s or mid-1940s, decades after the last captive bird.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2022-09",
+      "kind": "field",
+      "title": "The great auk in Norway: From common to locally extinct",
+      "who": "A. K. Hufthammer and K. O. Hufthammer",
+      "venue": "International Journal of Osteoarchaeology",
+      "url": "https://doi.org/10.1002/oa.3161",
+      "note": "Study of 477 bones from 53 Norwegian sites suggesting the bird vanished from southern Scandinavia before 4000 years ago.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2022-12",
+      "kind": "data",
+      "title": "The Complete Genome Sequence of Conuropsis carolinensis, the Carolina Parakeet",
+      "who": "T. Hains, S. Pirro et al.",
+      "venue": "Biodiversity Genomes",
+      "url": "https://doi.org/10.56179/001c.66227",
+      "note": "Publicly released whole genome from a captive individual, deposited in GenBank for comparative work.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-01",
+      "kind": "paper",
+      "title": "The Last of the Great Auks: Oral History and Ritual Killings at St Kilda",
+      "who": "A. Fleming",
+      "venue": "Scottish Studies",
+      "url": "https://doi.org/10.2218/ss.v40.9286",
+      "note": "Weighs conflicting accounts of the 'last' British great auk killed c. 1840 and concludes two birds were probably killed at St Kilda.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2024-01",
+      "kind": "paper",
+      "title": "The Last of Its Kind: The Search for the Great Auk and the Discovery of Extinction",
+      "who": "G. Pálsson",
+      "venue": "Princeton University Press",
+      "url": "https://doi.org/10.1515/9780691230993",
+      "note": "Study of Wolley and Newton's Garefowl Books as a record of the last hunters and of how extinction became thinkable.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024-11",
+      "kind": "tool",
+      "title": "Inferring species extinction from sighting data",
+      "who": "R. S. McCrea, T. Cheale, E. Campillo-Funollet and D. L. Roberts",
+      "venue": "Cambridge Prisms: Extinction",
+      "url": "https://doi.org/10.1017/ext.2024.18",
+      "note": "Review of sighting-record extinction methods and their assumptions, released with an R Shiny application implementing several of them.",
+      "advances": false,
+      "cited": false
+    },
+    {
+      "date": "2025-09",
+      "kind": "field",
+      "title": "The hunt for the last great auks: ancient DNA resolves a 180-year-old mystery",
+      "who": "E. L. Cavill, J. E. Thomas et al.",
+      "venue": "Zoological Journal of the Linnean Society",
+      "url": "https://doi.org/10.1093/zoolinnean/zlaf097",
+      "note": "Ancient DNA, letters and sale records identify the female of the 1844 Eldey pair as the skin at the Cincinnati Museum Center.",
+      "advances": true,
+      "cited": false
+    },
+    {
+      "date": "2025-12",
+      "kind": "data",
+      "title": "Additional records of the extinct Carolina Parakeet Conuropsis carolinensis",
+      "who": "B. E. Leese, A. L. Bond et al.",
+      "venue": "Bulletin of the British Ornithologists' Club",
+      "url": "https://doi.org/10.25226/bboc.v145i4.2025.a1",
+      "note": "Adds 131 newly compiled and 81 newly georeferenced historical records, bringing the known total to 555.",
+      "advances": false,
+      "cited": false
+    }
+  ]
+}
