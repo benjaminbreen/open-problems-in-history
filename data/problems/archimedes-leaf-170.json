@@ -1,0 +1,49 @@
+{
+  "id": "archimedes-leaf-170",
+  "title": "Where is leaf 170 of the Archimedes Palimpsest?",
+  "short": "A 1906 photograph identifies the missing leaf. Where did it go, and what readings might the physical page still preserve?",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1906,
+  "end": 2026,
+  "flags": [
+    "digitization",
+    "science"
+  ],
+  "matters": "Locating the leaf could recover text or correct readings obscured in the old photograph. The case also offers a way to recognize a dispersed manuscript leaf even if it has acquired a different description.",
+  "stuck": "The photograph shows wording, ruling and damage. An auction entry or catalogue may show only one side or describe the leaf under its later prayer text.",
+  "solved": "Match an independently located leaf to the photograph through the placement of text, ruling and defects, then verify and publish its provenance.",
+  "approach": "Trace former owner Anne Guersan’s correspondence and compare candidate leaves with the 1906 image, allowing for rotations, later additions and cropping.",
+  "existing": [
+    {
+      "year": 2026,
+      "authors": "CNRS and Sorbonne Université",
+      "title": "Lost page of the Archimedes Palimpsest identified in Blois, central France",
+      "venue": "CNRS",
+      "url": "https://www.cnrs.fr/sites/default/files/press_info/2026-03/26_03_09_CP_palimpseste-archimede_vEN.pdf",
+      "note": "Reports the identification of a different missing leaf, 123, by Victor Gysembergh."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Archimedes Palimpsest Project",
+      "collection": "Heiberg photograph of leaf 170r",
+      "url": "https://archimedespalimpsest.net/Data/170r-163v/170r-163v_Arch21r_Heiberg_visible_stitch.jpg",
+      "digitized": "full",
+      "note": "The image to compare with candidate leaves."
+    },
+    {
+      "repository": "Swiss Literary Archives, Bern",
+      "collection": "Anne Guersan correspondence with Jean Bollack",
+      "url": "https://www.helveticarchives.ch/detail.aspx?ID=1214532",
+      "digitized": "partial",
+      "note": "An item-level record of correspondence that could clarify the ownership trail."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6.2 Sol",
+    "drafted_on": "2026-11-18",
+    "compiled_by": "GPT-6.2 Sol",
+    "compiled_on": "2026-11-18"
+  }
+}

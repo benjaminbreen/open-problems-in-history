@@ -1,0 +1,82 @@
+{
+  "id": "button-and-button-hole",
+  "title": "Who printed Button, and Button-Hole in 1723?",
+  "short": "The bawdy pamphlet names the fictitious A. Moore. Several of its ornaments also appear in books naming Thomas Edlin as printer.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1715,
+  "end": 1735,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "A convincing match would help place an anonymous pamphlet inside London’s printing trade. The case tests how much ownership and workshop practice can be inferred from repeated ornaments.",
+  "stuck": "A false imprint conceals the press. Similar-looking impressions can come from separate blocks, and printers could buy, borrow or inherit blocks.",
+  "solved": "Identify shared wear on several blocks and show that the dated comparison impressions fit one workshop at the time of printing.",
+  "approach": "Align scans of multiple copies and compare chips, cuts and wear. Look for the same blocks in contemporary publications associated with Edlin’s competitors as a control.",
+  "existing": [
+    {
+      "year": 2013,
+      "authors": "Hazel Wilkinson",
+      "title": "Printers' Flowers as Evidence in the Identification of Unknown Printers: Two Examples from 1715",
+      "venue": "The Library, 7th ser., 14 (1): 70–79",
+      "url": "https://doi.org/10.1093/library/14.1.70",
+      "note": "Identified John Darby as printer of two 1715 books by showing that composed arrangements of type flowers were kept standing and reused across jobs."
+    },
+    {
+      "year": 2016,
+      "authors": "Andrew Benjamin Bricker",
+      "title": "Who was \"A. Moore\"? The Attribution of Eighteenth-Century Publications with False and Misleading Imprints",
+      "venue": "Papers of the Bibliographical Society of America 110 (2): 181–214",
+      "url": "https://doi.org/10.1086/687379",
+      "note": "Showed with ornament evidence that the fictitious \"A. Moore\" covered several printing houses, assigned some imprints to named printers and left several ornament groups unassigned."
+    },
+    {
+      "year": 2021,
+      "authors": "Hazel Wilkinson, James Briggs and Dirk Gorissen",
+      "title": "Computer Vision and the Creation of a Database of Printers' Ornaments",
+      "venue": "Digital Humanities Quarterly 15 (1)",
+      "url": "https://doi.org/10.63744/g7ts7qb2ywy6",
+      "note": "Describes extracting over a million ornament images from the 33 million ECCO page images to build Fleuron, now Compositor, and the limits of the method."
+    },
+    {
+      "year": 2024,
+      "authors": "Geoffrey Day",
+      "title": "Who was \"A. Moore\"? Waste Paper as a Means of Identification",
+      "venue": "Papers of the Bibliographical Society of America 118 (3): 443–450",
+      "url": "https://doi.org/10.1086/731614",
+      "note": "Argued from waste sheets listed in trade sale catalogues that Thomas Warner published as \"A. Moore\", adding documentary evidence for the publisher behind the name."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "University of Birmingham, Compositor",
+      "collection": "Ornament 736204, Button, and Button-Hole",
+      "url": "https://compositor.bham.ac.uk/ornaments/736204/",
+      "digitized": "full",
+      "note": "The pamphlet impression to compare."
+    },
+    {
+      "repository": "University of Birmingham, Compositor",
+      "collection": "Ornament 741940, signed Edlin comparison",
+      "url": "https://compositor.bham.ac.uk/ornaments/741940/",
+      "digitized": "full",
+      "note": "A comparison impression from a work naming Edlin."
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "English Short Title Catalogue",
+      "url": "https://estc.bl.uk/",
+      "digitized": "partial",
+      "note": "Use catalogue entries to locate additional copies and dated comparators."
+    }
+  ],
+  "related": [
+    "anonymous-imprints"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6.2 Sol",
+    "drafted_on": "2026-11-18",
+    "compiled_by": "GPT-6.2 Sol",
+    "compiled_on": "2026-11-18"
+  }
+}

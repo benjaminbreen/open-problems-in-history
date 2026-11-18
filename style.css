@@ -610,3 +610,57 @@ ul.colo { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid 
   .rw-list li > div { grid-column: 1 / -1; margin-top: 5px; }
 }
 @media (prefers-reduced-motion: reduce) { .rw-m, .rw-more i, .rw-k { transition: none; } }
+
+/* Leads */
+.leads-page { max-width: 1000px; margin: 36px auto 0; }
+.leads-page .page-title { font: 500 clamp(42px, 8vw, 83px)/.96 var(--serif); letter-spacing: -.045em; margin: 12px 0; }
+.lead-hero { padding: 30px 0 10px; }
+.lead-label, .lead-doc-label { font: 500 11px/1.5 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+.lead-label { margin: 0; color: var(--ink-2); }
+.lead-intro { margin: 16px 0; max-width: 42em; font: 21px/1.42 var(--serif); color: var(--ink-2); }
+.lead-entry { display: block; padding: 22px 0; margin-top: 32px; border-block: 1px solid var(--rule); text-decoration: none; }
+.lead-entry h2, .lead-evidence h2, .lead-open h2 {
+  font: 500 34px/1.06 var(--serif); text-transform: none; letter-spacing: -.02em; padding: 0; border: 0; margin: 10px 0;
+}
+.lead-entry > p:not(.lead-label) { font: 20px/1.4 var(--serif); margin: 10px 0; }
+.lead-link { display: inline-block; margin-top: 8px; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.lead-listen-layout { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 20px; margin: 20px 0 44px; align-items: start; }
+.lead-player, .lead-reading { border: 1px solid var(--rule); min-width: 0; }
+.lead-player { display: block; padding: 20px; background: var(--bg-2); }
+.lead-player h2 { font: 600 16px/1.3 var(--mono); letter-spacing: 0; text-transform: none; border: 0; padding: 0; margin: 0 0 12px; }
+.lead-controls:not([hidden]) { display: flex; flex-wrap: wrap; gap: 8px 14px; margin-bottom: 14px; }
+.lead-controls [role=group] { display: inline-flex; border: 1px solid var(--ink); }
+.lead-controls button { border: 0; background: transparent; cursor: pointer; padding: 7px 9px; font-size: 12px; }
+.lead-controls button[aria-pressed=true] { background: var(--ink); color: var(--bg); }
+.lead-player audio { display: block; width: 100%; height: 48px; }
+.lead-player-note, .lead-error { color: var(--ink-2); font-size: 12px; margin: 10px 0 0; }
+.lead-reading summary, .lead-method summary { color: var(--ink); font-weight: 600; cursor: pointer; padding: 16px; }
+.lead-transcript { padding: 0 16px 16px; }
+.lead-transcript dl { margin: 10px 0; }
+.lead-transcript dl > div { padding: 8px 0; border-top: 1px solid var(--rule); }
+.lead-transcript dt { font-size: 12px; color: var(--ink-2); }
+.lead-transcript dd { margin: 2px 0 0; font: 21px/1.25 var(--serif); }
+.lead-evidence, .lead-open, .lead-method { display: block; border-top: 1px solid var(--rule); padding-top: 18px; }
+.lead-docs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; margin: 22px 0 38px; }
+.lead-docs figure { margin: 0; }
+.lead-doc { min-height: 124px; display: grid; align-content: center; justify-items: center; gap: 12px; padding: 14px; text-decoration: none; color: #211e19; background: #f2ecdd; border: 1px solid #d4cab5; }
+.lead-doc:hover { border-color: var(--accent); }
+.lead-room-labels { display: grid; grid-template-columns: 1fr 1fr; justify-self: stretch; max-width: 360px; margin: auto; }
+.lead-room-labels span { padding: 10px 12px; border: 1px solid #786c54; text-align: center; font: italic 19px/1.15 var(--serif); }
+.lead-room-labels span + span { border-left: 0; }
+.lead-register-doc img { max-width: 100%; height: auto; }
+.lead-docs h3 { font: 500 25px/1.1 var(--serif); margin: 14px 0 8px; }
+.lead-docs figcaption p, .lead-open p, .lead-method p { font: 19px/1.45 var(--serif); color: var(--ink-2); margin: 8px 0; max-width: 42em; }
+.lead-docs figcaption .lead-credit { font: 12px/1.55 var(--mono); }
+.lead-open { margin-bottom: 24px; }
+.lead-method summary { padding: 0 0 8px; }
+.problem-links { justify-content: start; flex-wrap: wrap; padding: 12px 0; gap: 6px 18px; border-bottom: 1px solid var(--rule); }
+.problem-links a { text-decoration: underline; text-underline-offset: 3px; text-decoration-color: var(--accent); }
+@media (max-width: 640px) {
+  .top nav { flex-wrap: wrap; gap: 8px 12px; }
+  .leads-page { margin-top: 26px; }
+  .lead-hero { padding-top: 22px; }
+  .lead-listen-layout, .lead-docs { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .lead-listen-layout { margin-bottom: 28px; }
+  .lead-player { padding: 14px; }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "eruption-1809",
+  "title": "Which volcano produced the sulfate deposit dated to around 1809?",
+  "short": "Ice cores and observations of a high-altitude haze point to a major eruption. A disputed date complicates one lead from Java.",
+  "region": "Global",
+  "field": "Science & knowledge",
+  "start": 1808,
+  "end": 1819,
+  "flags": [
+    "science",
+    "digitization"
+  ],
+  "matters": "An identified volcano would improve estimates of the eruption’s timing and geographic reach. It would also help distinguish its climate effects from other events in the decade before and after Tambora.",
+  "stuck": "An 1836 account dates a Lamongan eruption to December 1808. Its cited Latin source dates the event to November 1818. The discrepancy leaves open whether separate evidence supports an eruption in 1808.",
+  "solved": "Link independently dated source evidence to the ice-core event, ideally with volcanic glass that can be matched to a candidate.",
+  "approach": "Find the earliest witnesses for each Lamongan date and search independent Java records for reports of ash, darkness or ground shaking. Compare the timing with South American observations.",
+  "existing": [
+    {
+      "year": 1826,
+      "authors": "Anthony Hendrik van der Boon Mesch",
+      "title": "Disputatio geologica inauguralis de incendiis montium igni ardentium insulae Javae, eorumdemque lapidibus",
+      "venue": "Leiden, pp. 18–19",
+      "url": "https://archive.org/details/disputatiogeolo00mescgoog",
+      "note": "Gives the Lamongan date as 8 November 1818."
+    },
+    {
+      "year": 1836,
+      "authors": "Leopold von Buch",
+      "title": "Description physique des îles Canaries",
+      "venue": "Paris, p. 420",
+      "url": "https://darwin-online.org.uk/converted/pdf/1836_Buch_Canaries_CUL-DAR.LIB.81.pdf#page=429",
+      "note": "Prints a December 1808 date while citing the earlier work."
+    },
+    {
+      "year": 1991,
+      "authors": "Jihong Dai, Ellen Mosley-Thompson and Lonnie G. Thompson",
+      "title": "Ice core evidence for an explosive tropical volcanic eruption 6 years preceding Tambora",
+      "venue": "Journal of Geophysical Research: Atmospheres 96 (D9): 17361–17366",
+      "url": "https://doi.org/10.1029/91JD01634",
+      "note": "First identified the c. 1809 sulfate layer in both Greenland and Antarctic cores and argued that its bipolar distribution implied a tropical eruption absent from the historical record."
+    },
+    {
+      "year": 2014,
+      "authors": "A. Guevara-Murua, C. A. Williams, E. J. Hendy, A. C. Rust and K. V. Cashman",
+      "title": "Observations of a stratospheric aerosol veil from a tropical volcanic eruption in December 1808: is this the Unknown ~1809 eruption?",
+      "venue": "Climate of the Past 10 (5): 1707–1722",
+      "url": "https://doi.org/10.5194/cp-10-1707-2014",
+      "note": "Identified the reports of Francisco José de Caldas in Bogotá (a veil dimming the sun from 11 December 1808) and José Hipólito Unanue in Lima (abnormal twilights) as aerosol observations, and proposed an eruption date of about 4 December 1808."
+    },
+    {
+      "year": 2021,
+      "authors": "Claudia Timmreck, Matthew Toohey, Davide Zanchettin, Stefan Brönnimann et al.",
+      "title": "The unidentified eruption of 1809: a climatic cold case",
+      "venue": "Climate of the Past 17 (4): 1455–1482",
+      "url": "https://doi.org/10.5194/cp-17-1455-2021",
+      "note": "Reviewed the ice-core, instrumental and documentary evidence and modelled the climatic effects, concluding that the source, season and exact year of the eruption remain unknown."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Java papers and colonial administration records",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief",
+      "digitized": "partial",
+      "note": "Contemporary reports can test whether a Lamongan eruption was observed in 1808."
+    },
+    {
+      "repository": "Internet Archive",
+      "collection": "Van der Mesch, 1826, University of Michigan scan",
+      "url": "https://archive.org/details/disputatiogeolo00mescgoog",
+      "digitized": "full",
+      "note": "The Latin account, printed pages 18–19."
+    },
+    {
+      "repository": "Darwin Online, University of Cambridge",
+      "collection": "Von Buch, 1836, Darwin Library copy",
+      "url": "https://darwin-online.org.uk/converted/pdf/1836_Buch_Canaries_CUL-DAR.LIB.81.pdf#page=429",
+      "digitized": "full",
+      "note": "The later date as printed on page 420."
+    }
+  ],
+  "related": [
+    "unattributed-eruptions"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6.2 Sol",
+    "drafted_on": "2026-11-18",
+    "compiled_by": "GPT-6.2 Sol",
+    "compiled_on": "2026-11-18"
+  }
+}

@@ -7,6 +7,8 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
+import { grantDescription, grantHTML, grantTitle, leadsHTML } from "../leads-render.js";
+
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
 const problems = [];
@@ -27,10 +29,20 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   }
   problems.push(p);
 }
+const byId = new Map(problems.map((p) => [p.id, p]));
+const leadTitles = new Map([["grant-cylinder", grantTitle]]);
+for (const p of problems) {
+  const links = [
+    ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
+    ...(p.related || []).map((id) => ({ href: `/p/${id}`, label: byId.get(id)?.title })),
+  ];
+  if (links.some((link) => !link.label)) throw new Error(`Unknown related page for ${p.id}`);
+  if (links.length) p.links = links;
+}
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
-const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
+const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
 const template = fs.readFileSync("template.html", "utf8")
   .replace('href="/style.css"', `href="/style.css?v=${ver}"`).replace('src="/app.js"', `src="/app.js?v=${ver}"`);
 const page = ({ title, description, head = "", main }) => template
@@ -90,6 +102,21 @@ for (const p of problems) {
   }));
 }
 
+fs.mkdirSync("leads/grant-cylinder", { recursive: true });
+fs.writeFileSync("leads/index.html", page({
+  title: `Leads · ${SITE}`,
+  description: "Investigate primary sources behind open problems in history.",
+  head: social({ title: `Leads · ${SITE}`, description: "Investigate primary sources behind open problems in history.", url: `${URL}/leads`, image: `${URL}/og/index.jpg` }),
+  main: leadsHTML(),
+}));
+fs.writeFileSync("leads/grant-cylinder/index.html", page({
+  title: `${grantTitle} · ${SITE}`,
+  description: grantDescription,
+  head: social({ title: grantTitle, description: grantDescription, url: `${URL}/leads/grant-cylinder`, image: `${URL}/og/index.jpg`, type: "article" })
+    + `<script src="/grant-player.js?v=${ver}" type="module"></script>\n`,
+  main: grantHTML(),
+}));
+
 fs.mkdirSync("about", { recursive: true });
 fs.writeFileSync("about/index.html", page({
   title: `About · ${SITE}`,
@@ -147,6 +174,8 @@ fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <url><loc>${URL}/for</loc></url>
 ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/sources</loc></url>
+<url><loc>${URL}/leads</loc></url>
+<url><loc>${URL}/leads/grant-cylinder</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
 `);
@@ -240,6 +269,7 @@ ${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field
 
 - Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: ${URL}/for and ${URL}/for/<speciality>
 - How the problems were chosen and how impact ratings are combined: ${URL}/methods
+- Primary-source exhibits: ${URL}/leads
 - Every work and archive cited across the problems: ${URL}/sources
 - Instructions for AI models asked to rate problems for impact: ${URL}/rate.txt
 - About the project: ${URL}/about

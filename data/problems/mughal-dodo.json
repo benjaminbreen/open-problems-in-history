@@ -1,0 +1,74 @@
+{
+  "id": "mughal-dodo",
+  "title": "How did a dodo become the subject of a Mughal painting?",
+  "short": "A Mughal bird study apparently depicts a dodo. Can the bird that served as its model be traced from Mauritius to India?",
+  "region": "South Asia",
+  "field": "Material & visual",
+  "start": 1600,
+  "end": 1640,
+  "flags": [
+    "digitization"
+  ],
+  "matters": "A connection between the study and a documented bird would show how a living animal moved from Mauritius into a South Asian world of trade, gifts and painting.",
+  "stuck": "Peter Mundy recalled seeing two living dodos in Surat. The album catalogue dates the bird study to about 1615, attributes it to Manṣūr, and describes the assembled page as a later collage. No surviving record connects a particular bird to the artist.",
+  "solved": "A dated shipping or gift record should link a landing in India to a person or place connected with the painter, with a chronology that fits the study.",
+  "approach": "Trace animals through original cargo lists, letters and gifts. Use the published 1615 Wapen van Amsterdam journal as a starting point and test the attribution and dating independently.",
+  "existing": [
+    {
+      "year": 1914,
+      "authors": "Peter Mundy, edited by Richard Carnac Temple",
+      "title": "The Travels of Peter Mundy in Europe and Asia, 1608–1667, volume II",
+      "venue": "Hakluyt Society",
+      "url": "https://archive.org/details/travelsofpetermu02mund/page/318/mode/2up",
+      "note": "Mundy recalls seeing two live birds at the English house in Surat."
+    },
+    {
+      "year": 1996,
+      "authors": "Oleg F. Akimushkin et al.",
+      "title": "The St. Petersburg Muraqqa",
+      "venue": "Leonardo Arte",
+      "url": "https://www.orientalstudies.ru/eng/images/pdf/st.petersburg_muraqqa_1996.pdf",
+      "note": "Plate 147 describes the Mughal bird study and later assembly of the album page."
+    },
+    {
+      "year": 2026,
+      "authors": "Benjamin Breen",
+      "title": "Using Opus 5.5 to discover a new eyewitness record of the dodo",
+      "venue": "Res Obscura",
+      "url": "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness",
+      "note": "Publishes a 1615 eyewitness passage from a Dutch ship’s journal."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "VOC 1059, fol. 141, Wapen van Amsterdam journal",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02/invnr/1059/file/NL-HaNA_1.04.02_1059_0277",
+      "digitized": "full",
+      "note": "A 1615 sighting on Mauritius."
+    },
+    {
+      "repository": "Institute of Oriental Manuscripts, St. Petersburg",
+      "collection": "St. Petersburg Muraqqa, fol. 80r",
+      "url": "https://www.orientalstudies.ru/eng/images/pdf/st.petersburg_muraqqa_1996.pdf",
+      "digitized": "full",
+      "note": "The catalogue reproduction and attribution of the bird study."
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "India Office Records, East India Company factory records",
+      "url": "https://searcharchives.bl.uk/",
+      "digitized": "partial",
+      "note": "Mercantile correspondence that may document live animals arriving or being sent inland from Surat."
+    }
+  ],
+  "related": [
+    "five-extinctions"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6.2 Sol",
+    "drafted_on": "2026-11-18",
+    "compiled_by": "GPT-6.2 Sol",
+    "compiled_on": "2026-11-18"
+  }
+}

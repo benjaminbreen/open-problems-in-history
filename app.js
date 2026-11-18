@@ -624,9 +624,10 @@ function stats() {
 function route() {
   stopCharacter();
   const path = location.pathname.replace(/\/+$/, "") || "/";
-  document.title = "Open Problems in History";
   const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.split("/")[1];
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
+  if (isLeadsPath(path)) return;
+  document.title = "Open Problems in History";
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
   else if (path === "/about" || path === "/contact") { if (path === "/contact") history.replaceState(null, "", "/about"); renderAbout(); }
@@ -639,9 +640,12 @@ function route() {
   else { readURL(); renderList(); }
 }
 
+const isLeadsPath = (path) => path === "/leads" || path.startsWith("/leads/");
+
 // Links handled by the client router: same-origin pages only, not files (llms.txt, images) or the API.
 function internal(a, e) {
   return a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !e.shiftKey
+    && !isLeadsPath(a.pathname) && !isLeadsPath(location.pathname)
     && !/\.[a-z0-9]+$/i.test(a.pathname) && !a.pathname.startsWith("/api") && !a.pathname.startsWith("/data");
 }
 

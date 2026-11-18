@@ -1,0 +1,58 @@
+{
+  "id": "wax-cylinder-voices",
+  "title": "Whose voices survive on unidentified early wax cylinders?",
+  "short": "Early recordings preserve speakers whose names are missing or disputed. Can the words on the cylinders and contemporary records identify them?",
+  "region": "Global",
+  "field": "Material & visual",
+  "start": 1888,
+  "end": 1910,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "Putting a name to a voice can recover who used the phonograph, who was meant to hear it, and how private speech and public performance first entered recorded sound.",
+  "stuck": "Surface noise obscures names and announcements. Labels can be incomplete, and a cylinder may carry traces of an earlier recording. The probable identification of Frederick Dent Grant on EDIS 93953 provides a case to test.",
+  "solved": "A proposed identification should fit several independent clues or match a named recording of the same performance, with enough evidence for another listener to check it.",
+  "approach": "Start with short passages that name a place, person or sketch. Compare untouched transfers and documented restorations against family papers, programmes, trade catalogues and named recordings.",
+  "existing": [
+    {
+      "year": 2015,
+      "authors": "Stephan Puille, translated by Patrick Feaster",
+      "title": "Prince Bismarck and Count Moltke Before the Recording Horn",
+      "venue": "Thomas Edison National Historical Park",
+      "url": "https://www.nps.gov/edis/learn/photosmultimedia/prince-bismarck-and-count-moltke-before-the-recording-horn.htm",
+      "note": "Documents Wangemann’s European trip and transcribes part of the unidentified spoken letter."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "National Park Service, West Orange",
+      "collection": "Theo Wangemann’s 1889–1890 European recordings",
+      "url": "https://www.nps.gov/edis/learn/photosmultimedia/audio-wangemann-1889-1890-european-recordings.htm",
+      "digitized": "full",
+      "note": "Public transfers and item notes for the cylinders."
+    },
+    {
+      "repository": "UC Santa Barbara Library",
+      "collection": "Cylinder Audio Archive, cylinders 14832 and 14836",
+      "url": "https://cylinders.library.ucsb.edu/search.php?nq=1&query=cylinder14836&query_type=call_number",
+      "digitized": "full",
+      "note": "French spoken performances with possible leads in venue announcements and discographies."
+    },
+    {
+      "repository": "Mississippi State University Libraries",
+      "collection": "Ida Honoré Grant Correspondence, Box 1, Folder 13",
+      "url": "https://scholarsjunction.msstate.edu/fdg-and-ihg-correspondence/4/",
+      "digitized": "full",
+      "note": "Julia Grant’s letter and drawing supply a test of the Vienna attribution."
+    }
+  ],
+  "leads": [
+    "grant-cylinder"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6.2 Sol",
+    "drafted_on": "2026-11-18",
+    "compiled_by": "GPT-6.2 Sol",
+    "compiled_on": "2026-11-18"
+  }
+}

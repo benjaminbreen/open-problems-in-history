@@ -453,7 +453,7 @@ export function detailHTML(ctx, p) {
       </div>
       ${figure(p.image)}
     </div>
-    ${s ? "" : recentWork(p)}
+    ${s ? "" : recentWork(p)}${p.links?.length ? `<nav class="problem-links" aria-label="Related reading">${p.links.map(({ href, label }) => `<a href="${esc(href)}">${esc(label)} <span aria-hidden="true">→</span></a>`).join("")}</nav>` : ""}
     <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
     ${sec("Why it matters", lpara(p.matters))}
@@ -471,7 +471,7 @@ export function detailHTML(ctx, p) {
     ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map((a, i) => archive(a, i, noteLinker(p.existing)())).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
     </div>
-    </article>`;
+    </article>`.replace(/^[ \t]+$/gm, "");
 }
 
 // ---------- about ----------
