@@ -27,7 +27,7 @@ function writeURL() {
 }
 const open = new Set();
 const adminToken = () => store.get("op.admin", "");
-const ctx = () => ({ ...state, ai: round.ai, metric: view.metric, open });
+const ctx = () => ({ ...state, ai: round.ai, ballots: round.ballots, metric: view.metric, open });
 
 const up = (id) => u(state, id);
 const score = (id) => sc(state, id);
@@ -88,7 +88,7 @@ function seg(name, label, options) {
 function renderList() {
   const outcome = view.metric === "historical" ? "contribution to historical knowledge" : "value for further research";
   const tips = {
-    ai: `Claude Opus 5.5, Gemini 4 Hydrogen and GPT-6 each estimated the chance of a convincing answer and its ${outcome} if answered. We multiply each judge’s two values, then average the three scores. Higher scores rank first.`,
+    ai: `Each of the ${round.ballots.length} AI judges estimated the chance of a convincing answer and its ${outcome} if answered. We multiply each judge’s two values, then average the scores with equal weight. Select an AI rank to see each judge’s scores.`,
     human: `The same calculation, averaged over the people who rated this question. A dash means there are no approved human ratings yet.`,
     votes: "Readers' upvotes minus downvotes. One vote per browser per problem.",
     title: "Alphabetical by question.",
@@ -213,8 +213,16 @@ function toggleIdea(force, id = "idea-form") {
 
 app.addEventListener("click", async (e) => {
   const a = e.target.closest("a");
+  if (a?.getAttribute("href") === "#ai-explanations" && !e.metaKey && !e.ctrlKey && !e.shiftKey) {
+    e.preventDefault();
+    const reasons = app.querySelector("#ai-explanations");
+    reasons.open = true;
+    reasons.querySelector("summary").focus({ preventScroll: true });
+    reasons.scrollIntoView({ block: "start" });
+    return;
+  }
   if (a && internal(a, e)) {
-    e.preventDefault(); return go(a.pathname + a.search);
+    e.preventDefault(); return go(a.pathname + a.search + (a.hash === "#ballot-reading" ? a.hash : ""));
   }
   const t = e.target.closest("button");
   if (!t) return;
@@ -343,7 +351,7 @@ function renderRate() {
           return `<li>
             <span class="rank">${i + 1}</span>
             <div class="main">
-              <a class="ttl" href="/p/${esc(id)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+              <a class="ttl" href="/p/${esc(id)}#ballot-reading" target="_blank" rel="noopener">${esc(p.title)}</a>
               <p class="evidence">${esc(p.evidence)}</p>
               <details${d.notes[id] ? " open" : ""}><summary>Reason for your scores (optional)</summary><textarea data-note="${esc(id)}" maxlength="1000" aria-label="Note">${esc(d.notes[id] || "")}</textarea></details>
             </div>
@@ -387,7 +395,9 @@ function renderDetail(id) {
   const p = all().find((x) => x.id === id);
   if (!p) { app.innerHTML = `<a class="back" href="/">← All problems</a><p class="empty">Not found.</p>`; return; }
   document.title = `${p.title} · Open Problems in History`;
-  app.innerHTML = detailHTML(ctx(), p);
+  const page = ctx();
+  if (location.hash === "#ballot-reading") page.ballots = [];
+  app.innerHTML = detailHTML(page, p);
   setupPrevNext(p.id);
   loadComments(p.id, app.querySelector("#cbox"));
   if (!p.suggested) loadComments(p.id, app.querySelector("#ideas"), "approach");
@@ -395,15 +405,16 @@ function renderDetail(id) {
 
 // Prev/next through the list in its current sort and filter order.
 let neighbors = {};
+const neighborPath = (id) => `/p/${id}${location.hash === "#ballot-reading" ? location.hash : ""}`;
 function setupPrevNext(id) {
-  const rows = filtered();
+  const rows = location.hash === "#ballot-reading" ? [...round.questions] : filtered();
   let i = rows.findIndex((x) => x.id === id);
   if (i < 0) { rows.splice(0, rows.length, ...all().sort(sorts[view.sort])); i = rows.findIndex((x) => x.id === id); }
   neighbors = { prev: rows[i - 1]?.id, next: rows[i + 1]?.id };
   const el = app.querySelector("#pn");
   if (!el) return;
   const btn = (k, ch, label) => neighbors[k]
-    ? `<a href="/p/${esc(neighbors[k])}" data-pn="${k}" aria-label="${label}" title="${label} (${k === "prev" ? "←" : "→"})">${ch}</a>`
+    ? `<a href="${esc(neighborPath(neighbors[k]))}" data-pn="${k}" aria-label="${label}" title="${label} (${k === "prev" ? "←" : "→"})">${ch}</a>`
     : `<span class="off" aria-hidden="true">${ch}</span>`;
   el.innerHTML = btn("prev", "←", "Previous problem") + btn("next", "→", "Next problem");
 }
@@ -412,11 +423,7 @@ document.addEventListener("keydown", (e) => {
   if (!location.pathname.startsWith("/p/") || e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
   if (e.target.closest?.("input, textarea, select, [contenteditable]")) return;
   const id = e.key === "ArrowLeft" ? neighbors.prev : e.key === "ArrowRight" ? neighbors.next : null;
-  if (id) { e.preventDefault(); go(`/p/${id}`); }
-});
-app.addEventListener("click", (e) => {
-  const a = e.target.closest("a[data-pn]");
-  if (a) { e.preventDefault(); go(a.pathname); }
+  if (id) { e.preventDefault(); go(neighborPath(id)); }
 });
 
 function renderSuggest() {
@@ -562,7 +569,7 @@ function town() {
 
 function renderMethods() {
   document.title = "Methods · Open Problems in History";
-  app.innerHTML = methodsHTML();
+  app.innerHTML = methodsHTML(round.ballots);
 }
 
 // ---------- sources ----------

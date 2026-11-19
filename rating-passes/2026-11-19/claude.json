@@ -6,433 +6,506 @@
       "id": "archimedes-leaf-170",
       "chance_pct": 15,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Locating a privately held leaf depends on ownership correspondence that is mostly offline. The 1906 photo helps with identification but not with location. Finding it would recover one leaf of a key witness to Archimedes."
     },
     {
       "id": "vermeer",
       "chance_pct": 8,
       "historical_contribution": 5,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "There is no document of optical aid use, and optical effects have competing explanations from image evidence alone. New public material is unlikely to settle the question."
     },
     {
       "id": "zhou-conquest",
       "chance_pct": 7,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "The dispute turns on calendar conventions and event identifications that existing evidence cannot adjudicate without new finds. A secure date would anchor early Chinese chronology."
     },
     {
       "id": "wax-cylinder-voices",
       "chance_pct": 45,
       "historical_contribution": 3,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Recordings can be matched with discographies, family papers and the press, and the Grant lead is concrete. Each identification is small, but a method would extend to many cylinders."
     },
     {
       "id": "yamatai",
       "chance_pct": 5,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The itinerary is internally inconsistent, and archaeology lacks a naming inscription. A century of debate suggests document analysis cannot decide between Kyushu and Kinai."
     },
     {
       "id": "eruption-1809",
       "chance_pct": 20,
       "historical_contribution": 4,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The 1808/1818 citation conflict can probably be resolved from the Latin source. Identifying the actual volcano still needs physical tephra evidence the team cannot obtain."
     },
     {
       "id": "oracle-bones",
       "chance_pct": 10,
       "historical_contribution": 6,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Rare graphs and name-only signs resist decipherment. Computational analysis may read some, but a convincing reading of 'thousands' as posed is unlikely."
     },
     {
       "id": "indus",
       "chance_pct": 8,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Very short inscriptions limit statistical tests, and earlier entropy studies stayed inconclusive. A decisive answer would reshape South Asian prehistory."
     },
     {
       "id": "qing-literacy",
       "chance_pct": 25,
       "historical_contribution": 6,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Contract signatures support estimates of signing ability for a selective population. Extending that to population-wide reading remains an inference problem."
     },
     {
       "id": "americas-1492",
       "chance_pct": 5,
       "historical_contribution": 9,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Post-contact sources and patchy archaeology leave estimates spanning an order of magnitude. Archival work alone will not close the range."
     },
     {
       "id": "punt",
       "chance_pct": 15,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Provenance studies already point regionally, toward the Eritrea and Somali coasts. Transshipment through intermediate ports blocks precise location without new isotopic sampling."
     },
     {
       "id": "cassini-cas-a",
       "chance_pct": 40,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The journals are online and the Cas A position is known, so the question is checkable. It depends on positional precision, and a negative answer may also be convincing. A result would refine the supernova's date."
     },
     {
       "id": "ptolemy",
       "chance_pct": 35,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Statistical tests on errors, precession and latitude-dependent visibility are tractable and have advanced already. A checkable verdict on the mixed origin is plausible."
     },
     {
       "id": "segmented-sleep",
       "chance_pct": 40,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Large-scale text mining with deduplication of quotations is well suited to an agent team. It can bound prevalence and its social distribution."
     },
     {
       "id": "thylacine",
       "chance_pct": 20,
       "historical_contribution": 3,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "The extinction date depends on how unverifiable sightings are weighted. Archival work can sharpen the record but not resolve the probabilistic disagreement."
     },
     {
       "id": "quran-standardization",
       "chance_pct": 10,
       "historical_contribution": 8,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Dating requires lab and paleographic access, and coverage of variants is uneven. The question is contested and high-stakes, and synthesis alone is unlikely to settle it."
     },
     {
       "id": "justinianic-plague",
       "chance_pct": 10,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The evidence is indirect, regionally fragmented and already intensely debated (maximalist vs minimalist). A convincing mortality figure is unlikely."
     },
     {
       "id": "potato-blight-ships",
       "chance_pct": 30,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Port reports and newspapers allow linking some shipments to first outbreaks. Farm-level delivery links remain the weak point."
     },
     {
       "id": "black-death-africa",
       "chance_pct": 8,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "A convincing answer needs aDNA or burial evidence, which is beyond the team's reach. Texts are sparse, and abandonment of settlements has many possible causes."
     },
     {
       "id": "silver-china",
       "chance_pct": 15,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Registered flows can be compiled, but smuggling and Japanese silver keep totals model-dependent. A better-bounded estimate is feasible, a convincing one less so."
     },
     {
       "id": "linear-a",
       "chance_pct": 7,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Rigorous chance-baseline tests are feasible and could convincingly reject families. A positive identification is very unlikely, so the chance credits mostly negative results."
     },
     {
       "id": "wilkinson-ciphers",
       "chance_pct": 55,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The code is dictionary-based, and the published key pairs plus edition comparison should permit decryption of accessible letters. Some originals are hard to reach. Decryption would document Wilkinson's treason."
     },
     {
       "id": "russian-flu",
       "chance_pct": 55,
       "historical_contribution": 4,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Age-specific mortality data exist and can be standardized. A checkable answer is likely, and it bears on epidemiological debates about the 1889 pathogen."
     },
     {
       "id": "jupiter-red-spot",
       "chance_pct": 40,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Dated drawings plus computed central meridians can test continuity. Ambiguity in the marks may leave a qualified answer. A result matters for the Spot's longevity."
     },
     {
       "id": "indian-ocean-tsunamis",
       "chance_pct": 20,
       "historical_contribution": 4,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Searchable Ming records help, but Aceh coverage is thin and a negative result is hard to make convincing. A find would aid hazard history."
     },
     {
       "id": "mughal-dodo",
       "chance_pct": 20,
       "historical_contribution": 3,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "Plausible routes via Surat are known, but tracing a specific bird needs a document that may not exist. The interest is mostly local."
     },
     {
       "id": "agade",
       "chance_pct": 5,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Without excavation or a naming inscription, textual and satellite reasoning can only narrow candidate locations."
     },
     {
       "id": "great-divergence",
       "chance_pct": 12,
       "historical_contribution": 8,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Comparability problems (in-kind pay, baskets, occupations) remain unresolved despite extensive prior work. New archival compilation may help modestly."
     },
     {
       "id": "mesopotamian-chronology",
       "chance_pct": 15,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Dendro and radiocarbon work has narrowed the field toward the Middle Chronology. Integrating anchors could yield a defensible answer, but disputes persist."
     },
     {
       "id": "newton-alchemy-sources",
       "chance_pct": 50,
       "historical_contribution": 4,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Text-matching unattributed passages against digitized alchemical literature is tractable for an agent team. Repeated formulae complicate attribution, but many passages should resolve."
     },
     {
       "id": "amazon-cacao",
       "chance_pct": 12,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Linking present forest abundance to colonial planting needs field and genetic data. The archive alone gives correlation at best."
     },
     {
       "id": "sydney-smallpox",
       "chance_pct": 15,
       "historical_contribution": 6,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Makassan versus First Fleet origins remain contested. The chronological gap probably lacks documents, and the theory carries major political weight."
     },
     {
       "id": "copernicus-maragha",
       "chance_pct": 8,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Decades of searching have produced no transmission document. New digitized Byzantine manuscripts give a small chance of a link."
     },
     {
       "id": "cocoliztli",
       "chance_pct": 8,
       "historical_contribution": 6,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Pathogen identification needs aDNA beyond existing published samples. Symptom texts are compatible with several diseases."
     },
     {
       "id": "rongorongo",
       "chance_pct": 10,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The corpus is small and carving dates are uncertain. Testing for post-1770 contact influence is possible, but a convincing verdict is unlikely."
     },
     {
       "id": "shapira-scrolls",
       "chance_pct": 15,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The objects are lost and the transcriptions conflict. Linguistic analysis has recently revived the authenticity case, yet without the leather the question stays contested."
     },
     {
       "id": "meroitic",
       "chance_pct": 5,
       "historical_contribution": 7,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "The lack of bilinguals is the binding constraint. Computational comparison may extend some lexicon, but full translation is unlikely."
     },
     {
       "id": "galen-arabic",
       "chance_pct": 40,
       "historical_contribution": 6,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Matching Hunayn's list against digitized manuscripts and quotations is a strong agent task. Partial identifications of lost works are plausible."
     },
     {
       "id": "china-1600",
       "chance_pct": 10,
       "historical_contribution": 8,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Fiscal quotas mask real counts, and wartime survival of records is uneven. The estimate range will stay wide."
     },
     {
       "id": "beowulf",
       "chance_pct": 7,
       "historical_contribution": 6,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "Linguistic and metrical arguments are already exhaustively debated, and no new evidence class is available."
     },
     {
       "id": "roman-census",
       "chance_pct": 10,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The high/low count dispute rests on interpreting the census jump, and survey evidence is heterogeneous. A decisive answer is unlikely."
     },
     {
       "id": "medieval-cattle-plagues",
       "chance_pct": 25,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "A systematic chronicle database with dedup could map spread direction. Ambiguous notices limit certainty."
     },
     {
       "id": "sloane-informants",
       "chance_pct": 30,
       "historical_contribution": 5,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Cross-linking catalogues, labels and correspondence can name some enslaved and Indigenous informants. Many will stay unnamed, but partial answers are checkable."
     },
     {
       "id": "indian-ocean-slave-trade",
       "chance_pct": 10,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Records are partial across empires and local carriers left little trace. A convincing total is unlikely, though a database would be valuable."
     },
     {
       "id": "gutenberg-type",
       "chance_pct": 20,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Image analysis can test the hand-mould hypothesis against the Agüera y Arcas/Paul Needham claims, but imaging artifacts confound it. Physical examination would be needed."
     },
     {
       "id": "ibn-battuta",
       "chance_pct": 25,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Borrowed passages can be detected by text reuse, giving strong negative evidence for some legs. Confirming the rest is harder."
     },
     {
       "id": "padang-1697",
       "chance_pct": 20,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The dispatch plus other VOC records may constrain timing. Rupture identification depends on coral and modeling ambiguity."
     },
     {
       "id": "kerala-jesuits",
       "chance_pct": 8,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "A smoking-gun letter is unlikely, and much correspondence is undigitized. Absence of evidence will not be convincing."
     },
     {
       "id": "silent-film-fragments",
       "chance_pct": 55,
       "historical_contribution": 3,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Matching footage to synopses and the trade press is well suited to agents, and identifications are checkable. Each is small, but they compound."
     },
     {
       "id": "indigenous-slavery",
       "chance_pct": 7,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Euphemism and regional gaps prevent a convincing hemispheric total. Regional estimates are more feasible."
     },
     {
       "id": "toromiro-provenance",
       "chance_pct": 35,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Accession records can trace some lineages. Genetics, which is beyond reach, would be needed for others. The work has conservation value."
     },
     {
       "id": "leprosy-americas",
       "chance_pct": 60,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The parallel Florentine texts and dictionaries are accessible, and a textual analysis answer is very feasible."
     },
     {
       "id": "hidden-vocabularies",
       "chance_pct": 60,
       "historical_contribution": 4,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Systematic scanning of digitized books finds checkable lists, and the existing catalogue gives a baseline. This opens evidence for many languages."
     },
     {
       "id": "ottoman-tahrir",
       "chance_pct": 15,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Changes in register type and units confound the trend. Careful reanalysis may clarify but is unlikely to be decisive."
     },
     {
       "id": "khipu",
       "chance_pct": 7,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Few secure khipu–document pairings exist. Pattern analysis may show non-numeric structure, but reading signs is unlikely."
     },
     {
       "id": "james-pawpaw-remedy",
       "chance_pct": 45,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Textual comparison of the recipe and manuscript plus Sloane provenance trails is tractable. The route is the uncertain part. The result would credit an enslaved healer."
     },
     {
       "id": "early-syphilis",
       "chance_pct": 40,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Dated contemporary documents can be sorted from retrospective accounts. A checkable earliest description is plausible."
     },
     {
       "id": "ternate-gingie",
       "chance_pct": 15,
       "historical_contribution": 2,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "The records concern officials, not growers. Other VOC records might add detail, but the answer is likely to stay thin."
     },
     {
       "id": "lost-editions",
       "chance_pct": 20,
       "historical_contribution": 5,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Capture–recapture style estimation is feasible, but format biases make estimates model-dependent. A defensible range is possible."
     },
     {
       "id": "gregorian-chant",
       "chance_pct": 5,
       "historical_contribution": 6,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Late notation of Old Roman melodies leaves the stemma underdetermined, and the debate is long-standing."
     },
     {
       "id": "song-iron",
       "chance_pct": 12,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Collection-rate disputes underlie the competing estimates (Hartwell vs critics). Limited archaeology keeps it unresolved."
     },
     {
       "id": "irish-1641",
       "chance_pct": 20,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Deduplicating the depositions is a strong agent task for Protestant deaths. Coverage bias limits a full total."
     },
     {
       "id": "borneo-elephants",
       "chance_pct": 10,
       "historical_contribution": 3,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "The Sulu–Borneo leg is undocumented, and genetics, which is beyond reach, bears most of the evidential weight."
     },
     {
       "id": "dunhuang-fragments",
       "chance_pct": 50,
       "historical_contribution": 4,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Image and text matching across IDP is tractable, and joins are checkable. It enables many manuscript studies."
     },
     {
       "id": "hittite-fragments",
       "chance_pct": 55,
       "historical_contribution": 4,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Searchable transcriptions allow systematic join and duplicate detection, which specialists can verify. It feeds edition work."
     },
     {
       "id": "mendel",
       "chance_pct": 15,
       "historical_contribution": 4,
-      "further_research": 2
+      "further_research": 2,
+      "reason": "The 'too good' statistics are established, but the 'why' lacks working records. The cause will stay speculative."
     },
     {
       "id": "renaissance-lute",
       "chance_pct": 45,
       "historical_contribution": 4,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Comparing the Bern partbook with intabulations can test recovery of missing voices. Arranger changes limit fidelity, but many matches are checkable."
     },
     {
       "id": "gunpowder",
       "chance_pct": 7,
       "historical_contribution": 7,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The intermediate links are lost, and the route via Mongols or the Islamic world stays inferential."
     },
     {
       "id": "plague-disappearance",
       "chance_pct": 8,
       "historical_contribution": 7,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Many causal hypotheses fit uneven data, and records cannot isolate quarantine effects convincingly."
     },
     {
       "id": "anonymous-serials",
       "chance_pct": 50,
       "historical_contribution": 4,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Text reuse across digitized newspapers can locate bylines. Propagated errors need care. It could recover many writers."
     },
     {
       "id": "proto-elamite",
       "chance_pct": 10,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Structural analysis suggests some linguistic features, but proving language encoding and descent from short accounting texts is hard."
     },
     {
       "id": "anonymous-imprints",
       "chance_pct": 40,
       "historical_contribution": 5,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Damaged type and ornament matching has been proven at scale. Subscription access limits coverage, but checkable attributions are likely and broadly reusable."
     }
-  ]
+  ],
+  "prior_exposure": "None known. I have general background on many of these debates from training, but no exposure to any ranking of this question set."
 }

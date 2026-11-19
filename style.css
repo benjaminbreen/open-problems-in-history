@@ -64,6 +64,45 @@ nav a[aria-current] { color: var(--ink); font-weight: 600; box-shadow: inset 0 -
 .ranking-help > div { position: absolute; z-index: 15; background: var(--bg); border: 1px solid var(--rule); padding: 0 16px 14px; width: min(32em, 80vw); font: 15px/1.45 var(--serif); }
 .rank-cell { display: block; color: var(--ink-2); line-height: 24px; font-size: 14px; font-variant-numeric: tabular-nums; }
 .rank-cell small { display: block; font-size: 10px; color: var(--muted); line-height: 1.5; }
+.rank-trigger { justify-self: start; border: 0; background: transparent; padding: 0; text-align: left; font-family: inherit; cursor: pointer; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; }
+.rank-trigger:hover, .rank-trigger:focus-visible { text-decoration-color: var(--accent); color: var(--ink); }
+.rank-breakdown { width: min(36rem, calc(100% - 24px)); max-height: calc(100dvh - 24px); overflow: auto; padding: clamp(16px, 4vw, 28px); border: 1px solid var(--ink); background: var(--bg); color: var(--ink); }
+.rank-breakdown::backdrop { background: rgb(0 0 0 / .32); }
+.breakdown-bar { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; font-size: 12px; color: var(--muted); }
+.breakdown-bar button { background: none; border: none; padding: 4px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.rank-breakdown h2 { font: 500 clamp(21px, 4vw, 28px)/1.15 var(--serif); text-transform: none; letter-spacing: normal; border: none; margin: 14px 0 18px; padding: 0; }
+.model-scores { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: clamp(11px, 2.8vw, 13px); font-variant-numeric: tabular-nums; }
+.model-scores th, .model-scores td { text-align: right; padding: 7px 0 7px 6px; border-top: 1px solid var(--rule); vertical-align: middle; }
+.model-scores th:first-child { text-align: left; width: 40%; padding-left: 0; }
+.model-scores tbody th { font-weight: 400; }
+.model-scores tfoot { font-weight: 600; }
+.model-scores tfoot > tr > * { border-color: var(--ink); }
+.rank-breakdown p { margin: 14px 0 0; font: 16px/1.45 var(--serif); }
+.model-scores .model-short { display: none; }
+@media (max-width: 520px) {
+  .model-scores th:first-child { width: 33%; }
+  .model-scores .model-short { display: inline; }
+  .model-scores .model-full { display: none; }
+}
+.problem-scores { display: grid; grid-template-columns: minmax(175px, 1fr) minmax(0, 3fr); align-items: start; gap: 12px 32px; padding: 18px 0; border-bottom: 1px solid var(--rule); }
+.score-summary h2 { padding: 0; border: 0; color: var(--muted); font: 500 11px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+.score-summary p { margin: 4px 0; color: var(--ink-2); font: 13px/1.4 var(--mono); }
+.score-summary b { font: 500 28px/1.1 var(--serif); color: var(--ink); }
+.score-summary a, .model-explanations summary { font: 12px/1.5 var(--mono); text-underline-offset: 3px; }
+.problem-scores .model-scores { max-width: 740px; }
+.problem-scores .model-scores th, .problem-scores .model-scores td { padding-block: 4px; }
+.model-explanations details { max-width: 47rem; scroll-margin-top: 5rem; }
+.model-explanations summary { width: fit-content; cursor: pointer; text-decoration: underline; text-decoration-color: var(--rule); }
+.model-explanations .when-open, .model-explanations [open] .when-closed { display: none; }
+.model-explanations [open] .when-open { display: inline; }
+.model-explanations dl { margin: 16px 0 8px; }
+.model-explanations dt { font-size: 13px; font-weight: 600; }
+.model-explanations dt small { color: var(--muted); font-weight: 400; }
+.model-explanations dd { margin: 3px 0 16px; font: 17px/1.5 var(--serif); white-space: pre-line; }
+#ballot-reading:target .problem-scores, #ballot-reading:target .model-explanations { display: none; }
+@media (max-width: 640px) {
+  .problem-scores { grid-template-columns: 1fr; }
+}
 .mobile-panel { display: none; }
 .static-rank-intro { font-size: 13px; }
 @media (max-width: 640px) {

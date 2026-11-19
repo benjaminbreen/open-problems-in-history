@@ -1,0 +1,511 @@
+{
+  "model": "GPT-6.2 Astra (high)",
+  "reasoning_effort": "high",
+  "prior_exposure": "none",
+  "ratings": [
+    {
+      "id": "archimedes-leaf-170",
+      "chance_pct": 12,
+      "historical_contribution": 4,
+      "further_research": 5,
+      "reason": "The photograph could authenticate a rediscovered leaf, but the public ownership trail has breaks and a last recorded owner need not be the present one. Locating it would reunite evidence about the codex and allow fresh comparison with the old photograph."
+    },
+    {
+      "id": "vermeer",
+      "chance_pct": 12,
+      "historical_contribution": 5,
+      "further_research": 4,
+      "reason": "Focus and perspective can be compared across canvases, but several working methods could produce the same effects. Establishing actual use would change accounts of Vermeer's practice and give studies of other painters a documented comparison."
+    },
+    {
+      "id": "zhou-conquest",
+      "chance_pct": 36,
+      "historical_contribution": 8,
+      "further_research": 8,
+      "reason": "Agreement across dated astronomical phenomena and inscriptional sequences could isolate a year, although the matches depend on how the calendar is reconstructed. A secure anchor would link the dynastic transition to excavated assemblages and other early Chinese events."
+    },
+    {
+      "id": "wax-cylinder-voices",
+      "chance_pct": 79,
+      "historical_contribution": 4,
+      "further_research": 7,
+      "reason": "A spoken introduction, a recording itinerary and an independently dated letter could identify a speaker even where timbre is inconclusive. Secure names would restore the circumstances of particular recordings and make related voices and sessions easier to trace."
+    },
+    {
+      "id": "yamatai",
+      "chance_pct": 18,
+      "historical_contribution": 8,
+      "further_research": 7,
+      "reason": "Travel times and archaeological concentrations constrain plausible regions, but neither a wealthy settlement nor a repaired itinerary uniquely identifies Himiko's seat. A secure location would reshape accounts of political consolidation and direct comparisons among contemporary sites."
+    },
+    {
+      "id": "eruption-1809",
+      "chance_pct": 19,
+      "historical_contribution": 6,
+      "further_research": 7,
+      "reason": "The conflict between the printed Java dates undermines a proposed source, and the ice signal by itself identifies no volcano. A secure source would connect a local eruption with global atmospheric change and anchor work on contemporary climate and harvests."
+    },
+    {
+      "id": "oracle-bones",
+      "chance_pct": 3,
+      "historical_contribution": 10,
+      "further_research": 10,
+      "reason": "Repeated contexts can constrain the meanings of some graphs, but thousands include singletons and possible names with no independent gloss. Reading them at the scale asked would transform accounts of Shang institutions and make a large inscriptional archive newly usable."
+    },
+    {
+      "id": "indus",
+      "chance_pct": 9,
+      "historical_contribution": 10,
+      "further_research": 8,
+      "reason": "Short, recurrent seals give little leverage for distinguishing language from an ordered inventory of emblems. Determining what the signs encode would change interpretations of Indus institutions and establish the basis for appropriate comparisons across sites."
+    },
+    {
+      "id": "qing-literacy",
+      "chance_pct": 30,
+      "historical_contribution": 8,
+      "further_research": 7,
+      "reason": "Contracts could establish differences in signing by locality or occupation. Extending them to readers outside property transactions requires assumptions about both selection and skill. A defensible population range would anchor studies of schooling, publishing and social mobility."
+    },
+    {
+      "id": "americas-1492",
+      "chance_pct": 16,
+      "historical_contribution": 10,
+      "further_research": 8,
+      "reason": "In regions first counted after epidemics, different starting populations and loss rates can yield the same surviving figures. An independently defensible continental range would revise the scale of conquest-era loss and provide baselines for regional demographic and land-use studies."
+    },
+    {
+      "id": "punt",
+      "chance_pct": 35,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Repeated combinations of products and Egyptian itineraries may delimit a trading region, but an animal's place of origin can lie far from its port of sale. A secure placement would clarify Red Sea exchange and connect expedition records to African sites."
+    },
+    {
+      "id": "cassini-cas-a",
+      "chance_pct": 49,
+      "historical_contribution": 4,
+      "further_research": 6,
+      "reason": "The dated journals present a bounded search, and a sufficiently precise sketch or position could distinguish the object from field stars. The identification would settle a point about Cassini's observing and add an early constraint on the remnant's history."
+    },
+    {
+      "id": "ptolemy",
+      "chance_pct": 68,
+      "historical_contribution": 7,
+      "further_research": 7,
+      "reason": "Systematic offsets and distinctive errors shared with surviving Hipparchan material can identify derivation for portions of the catalogue, even if authorship varies by entry. A credible division would revise accounts of Ptolemy's observing and recover evidence for earlier cataloguing."
+    },
+    {
+      "id": "segmented-sleep",
+      "chance_pct": 52,
+      "historical_contribution": 6,
+      "further_research": 6,
+      "reason": "Runs of dated diaries and depositions provide a denominator in some settings, although authors seldom recorded an ordinary uninterrupted night. A bounded prevalence estimate would distinguish local habits from general claims about preindustrial sleep and supply comparisons across households."
+    },
+    {
+      "id": "thylacine",
+      "chance_pct": 25,
+      "historical_contribution": 5,
+      "further_research": 5,
+      "reason": "Grading independent sightings can narrow the period, but sparse observations near extinction leave the last wild deaths weakly dated. A secure interval would clarify survival after documented captivity and help test retrospective extinction estimates."
+    },
+    {
+      "id": "quran-standardization",
+      "chance_pct": 55,
+      "historical_contribution": 9,
+      "further_research": 9,
+      "reason": "Shared consonantal peculiarities can link early witnesses to an exemplar, with script and material dates placing bounds on its circulation. Establishing when a common text prevailed would revise early Islamic textual history and date the divergence of manuscript traditions."
+    },
+    {
+      "id": "justinianic-plague",
+      "chance_pct": 14,
+      "historical_contribution": 10,
+      "further_research": 8,
+      "reason": "Pathogen-positive burials identify episodes, but the available series seldom measure deaths and social change in the same representative populations. A credible combined answer would change explanations of late antique transformation and calibrate regional studies of epidemics and recovery."
+    },
+    {
+      "id": "potato-blight-ships",
+      "chance_pct": 60,
+      "historical_contribution": 6,
+      "further_research": 7,
+      "reason": "Arrival notices and growers' letters might independently connect a cargo with a named early outbreak, though an infected shipment is hard to infer from timing alone. Verified links would qualify accounts of introduction and support comparisons of commercial and disease routes."
+    },
+    {
+      "id": "black-death-africa",
+      "chance_pct": 31,
+      "historical_contribution": 9,
+      "further_research": 8,
+      "reason": "Dated accounts might identify a localized episode, but abandonment has many causes and sparse sampled burials offer little basis for continent-wide exclusion. Establishing even one securely dated occurrence would change the geography of the pandemic and help reinterpret specific African settlement sequences."
+    },
+    {
+      "id": "silver-china",
+      "chance_pct": 41,
+      "historical_contribution": 9,
+      "further_research": 8,
+      "reason": "Route-by-route reconciliation could yield informative bounds if independent receipts constrain leakage and origin. A convincing estimate would change the measured role of China in early modern bullion flows and supply a basis for comparing monetary shocks across markets."
+    },
+    {
+      "id": "linear-a",
+      "chance_pct": 8,
+      "historical_contribution": 10,
+      "further_research": 10,
+      "reason": "Blinded tests on held-out texts could disfavor chance matches, but borrowed sound values and repetitive accounts allow many language models to fit. A secure identification would transform Aegean language history and let scholars reread an entire administrative corpus."
+    },
+    {
+      "id": "wilkinson-ciphers",
+      "chance_pct": 84,
+      "historical_contribution": 5,
+      "further_research": 7,
+      "reason": "Known readings can test which dictionary edition supplies a code and validate a key on independent letters. Decoding the remaining accessible dispatches would specify what Wilkinson told Spanish officials and support further searches for letters using the same system."
+    },
+    {
+      "id": "russian-flu",
+      "chance_pct": 91,
+      "historical_contribution": 6,
+      "further_research": 7,
+      "reason": "Age-specific all-cause mortality can be compared with seasonal baselines across successive waves within the same reporting system, then checked against the second population. An age shift or convincing stability would refine the epidemic's history and give comparative pandemic studies a reusable series."
+    },
+    {
+      "id": "jupiter-red-spot",
+      "chance_pct": 53,
+      "historical_contribution": 4,
+      "further_research": 6,
+      "reason": "Orientation, predicted visibility and motion across consecutive drawings can distinguish persistent features, though isolated dark marks admit several identifications. A reliable sighting would revise the spot's observational chronology and extend the baseline for studies of its persistence."
+    },
+    {
+      "id": "indian-ocean-tsunamis",
+      "chance_pct": 43,
+      "historical_contribution": 6,
+      "further_research": 7,
+      "reason": "A geographically specific notice of sudden inundation could match a deposit independently, but approximate dates and silence in court records leave either event unresolved. A match would recover contemporary experience of the disasters and calibrate other coastal chronologies."
+    },
+    {
+      "id": "mughal-dodo",
+      "chance_pct": 22,
+      "historical_contribution": 5,
+      "further_research": 5,
+      "reason": "The two records establish the trade and the presence of live birds, while the particular transfer to artist or patron calls for an additional link. Tracing it would explain a cross-cultural natural-history image and connect shipping evidence with Mughal court collecting."
+    },
+    {
+      "id": "agade",
+      "chance_pct": 12,
+      "historical_contribution": 8,
+      "further_research": 9,
+      "reason": "Textual neighbors and reconstructed waterways can narrow the search, but several sites can occupy the same relative position across changing channels. A secure identification would fix the imperial capital in the landscape and give many texts and survey finds a common reference."
+    },
+    {
+      "id": "great-divergence",
+      "chance_pct": 54,
+      "historical_contribution": 9,
+      "further_research": 8,
+      "reason": "Price series and accounts allow explicit household baskets and comparisons within like occupations, but regional conclusions are vulnerable to missing payments and thin wage coverage. Defensible differences or parity would bear directly on the Great Divergence and enable comparison across other labor markets."
+    },
+    {
+      "id": "mesopotamian-chronology",
+      "chance_pct": 55,
+      "historical_contribution": 9,
+      "further_research": 10,
+      "reason": "Independent tree-ring, radiocarbon and textual constraints can exclude rival chronologies where their anchors genuinely coincide. A secure absolute sequence would date events across interacting kingdoms and provide a framework for many excavation and exchange chronologies."
+    },
+    {
+      "id": "newton-alchemy-sources",
+      "chance_pct": 86,
+      "historical_contribution": 5,
+      "further_research": 7,
+      "reason": "Long verbal matches, shared errors and matching sequences of extracts can distinguish specific texts from common recipes for some passages. Identifications would document Newton's reading choices and recover source relationships useful in other early modern notebooks."
+    },
+    {
+      "id": "amazon-cacao",
+      "chance_pct": 18,
+      "historical_contribution": 7,
+      "further_research": 7,
+      "reason": "Village exports and modern forest abundance do not date local trees or identify where exported cacao grew. Establishing the colonial share would alter interpretations of Amazonian forest history and furnish a baseline for studies of other managed species."
+    },
+    {
+      "id": "sydney-smallpox",
+      "chance_pct": 14,
+      "historical_contribution": 8,
+      "further_research": 6,
+      "reason": "Contemporary reports at either end leave considerable room for different chains of transmission into Sydney. Identifying one would change interpretations of an early colonial disaster and help reconstruct Indigenous and maritime connections before the outbreak."
+    },
+    {
+      "id": "copernicus-maragha",
+      "chance_pct": 19,
+      "historical_contribution": 8,
+      "further_research": 7,
+      "reason": "A dated intermediary with distinctive notation and a demonstrable connection to Copernicus could establish a route, but parallel constructions alone leave it open. An answer would change the genealogy of early modern astronomy and identify manuscripts or networks relevant to other transfers."
+    },
+    {
+      "id": "cocoliztli",
+      "chance_pct": 23,
+      "historical_contribution": 9,
+      "further_research": 7,
+      "reason": "Pathogen evidence from one cemetery cannot readily be extended to both waves, and overlapping symptoms permit multiple causes. A convincing attribution would revise explanations of demographic catastrophe in New Spain and guide interpretation of other epidemic accounts and burials."
+    },
+    {
+      "id": "rongorongo",
+      "chance_pct": 7,
+      "historical_contribution": 9,
+      "further_research": 7,
+      "reason": "Even a securely dated piece of wood does not establish when its signs were carved or whether they encoded speech. A convincing result would affect comparative accounts of writing's origins and give the corpus a firmer context for analysis."
+    },
+    {
+      "id": "shapira-scrolls",
+      "chance_pct": 23,
+      "historical_contribution": 8,
+      "further_research": 6,
+      "reason": "Variant sketches and accounts could expose a specific modern source for a reading, but with the strips missing many material tests cannot be replicated. A verdict would settle a consequential disputed biblical witness and clarify the evidentiary standing of its transcriptions."
+    },
+    {
+      "id": "meroitic",
+      "chance_pct": 40,
+      "historical_contribution": 8,
+      "further_research": 9,
+      "reason": "Known sound values and parallel contexts make independently testable readings of some new passages credible, although free translation faces a shortage of bilingual controls. Such gains would recover Kushite testimony beyond epitaphs and give later researchers vocabulary and grammatical checks."
+    },
+    {
+      "id": "galen-arabic",
+      "chance_pct": 79,
+      "historical_contribution": 7,
+      "further_research": 9,
+      "reason": "Distinctive quotations and the translator's descriptions can corroborate the identity of a manuscript even when its title has changed. Recovering lost Galenic material would revise the history of ancient medicine and supply texts for translation, editing and reception studies."
+    },
+    {
+      "id": "china-1600",
+      "chance_pct": 25,
+      "historical_contribution": 9,
+      "further_research": 8,
+      "reason": "Gazetteers can expose stale quotas, but missing wartime households may have fled or fallen outside registration, leaving actual deaths particularly uncertain. Defensible estimates would change accounts of the Ming-Qing transition and support regional comparisons of war and recovery."
+    },
+    {
+      "id": "beowulf",
+      "chance_pct": 18,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Metrical and linguistic features constrain periods, but oral transmission, scribal modernization and a single late witness make a narrow composition date difficult. Secure dating would relocate the poem in English political and literary history and anchor comparisons with other verse."
+    },
+    {
+      "id": "roman-census",
+      "chance_pct": 45,
+      "historical_contribution": 8,
+      "further_research": 7,
+      "reason": "Settlement trajectories can check the plausibility of rival readings of the census, but site counts map imperfectly onto people with citizen status. A defensible total would reshape explanations of Augustan enfranchisement and furnish a denominator for Roman military and social history."
+    },
+    {
+      "id": "medieval-cattle-plagues",
+      "chance_pct": 44,
+      "historical_contribution": 6,
+      "further_research": 6,
+      "reason": "Independent dated notices can test the direction of spread, although gaps to the east and ambiguous accounts of animal mortality complicate conclusions for all three plagues. Establishing their routes would clarify livestock exchange and offer a chronology for later epizootic comparisons."
+    },
+    {
+      "id": "sloane-informants",
+      "chance_pct": 68,
+      "historical_contribution": 7,
+      "further_research": 8,
+      "reason": "A label and letter can sometimes trace a distinct piece of knowledge past the named intermediary, though composite entries limit generalization. Identifying particular suppliers would redistribute credit in medical collecting and connect catalogue entries to otherwise dispersed personal histories."
+    },
+    {
+      "id": "indian-ocean-slave-trade",
+      "chance_pct": 29,
+      "historical_contribution": 9,
+      "further_research": 9,
+      "reason": "Deduplicating transfers and voyages can establish substantial minima, but poorly observed local routes leave wide uncertainty in aggregate totals. A convincing estimate would revise the scale and geography of coerced migration and enable comparisons with other slave trades."
+    },
+    {
+      "id": "gutenberg-type",
+      "chance_pct": 39,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Recurring details across impressions could distinguish recurring matrices from transient ink effects, yet different casting techniques may leave equivalent printed traces. Resolving the process would refine the history of early typography and give investigators a diagnostic for other workshops."
+    },
+    {
+      "id": "ibn-battuta",
+      "chance_pct": 35,
+      "historical_contribution": 7,
+      "further_research": 7,
+      "reason": "Borrowed prose can establish literary dependence, while a traveller could still have visited the place described. Securely establishing which journeys occurred would change use of the narrative as historical testimony and distinguish firsthand evidence for several regions."
+    },
+    {
+      "id": "padang-1697",
+      "chance_pct": 35,
+      "historical_contribution": 5,
+      "further_research": 7,
+      "reason": "The relative timing and distribution of reported surges could rule out some ruptures, but uncertain water heights and ambiguous coral records may leave several candidates. Identification would fix a regional disaster in the historical record and extend the earthquake sequence used in hazard studies."
+    },
+    {
+      "id": "kerala-jesuits",
+      "chance_pct": 13,
+      "historical_contribution": 8,
+      "further_research": 6,
+      "reason": "A letter naming a text, method and recipient might bridge the traditions, but mathematical priority and missionary contact establish only opportunity. Resolving transmission would change accounts of early calculus and clarify which teaching and translation networks merit study."
+    },
+    {
+      "id": "silent-film-fragments",
+      "chance_pct": 91,
+      "historical_contribution": 5,
+      "further_research": 9,
+      "reason": "A distinctive scene sequence can be checked against contemporary synopses, cast photographs and alternate catalogue titles. Identifications would restore works to particular filmographies and make previously anonymous footage available to numerous studies of performance and production."
+    },
+    {
+      "id": "indigenous-slavery",
+      "chance_pct": 18,
+      "historical_contribution": 10,
+      "further_research": 8,
+      "reason": "Sales and suits provide local minima, but concealed enslavement and repeated sales of the same person create errors in opposite directions across four centuries. A defensible overall range would revise accounts of colonial labor and enable regional demographic comparisons."
+    },
+    {
+      "id": "toromiro-provenance",
+      "chance_pct": 61,
+      "historical_contribution": 5,
+      "further_research": 7,
+      "reason": "A voucher, bed location and accession trail can identify descendants where transfers and propagation are documented, though gaps threaten more distant pedigrees. Establishing which stocks have wild provenance would recover collecting histories and inform conservation and botanical comparisons."
+    },
+    {
+      "id": "leprosy-americas",
+      "chance_pct": 91,
+      "historical_contribution": 6,
+      "further_research": 7,
+      "reason": "Parallel passages allow comparison of named conditions, observable symptoms and treatment in their own textual contexts, with other Nahua uses checking translation choices. An answer would recover distinctions obscured by a Spanish disease label and aid studies of colonial description and diagnosis."
+    },
+    {
+      "id": "hidden-vocabularies",
+      "chance_pct": 93,
+      "historical_contribution": 6,
+      "further_research": 9,
+      "reason": "Page-level searching and comparison of list order and errors can uncover independent vocabularies omitted from existing catalogues. Recoveries would document early encounters and supply primary linguistic evidence for historical linguists and the communities concerned."
+    },
+    {
+      "id": "ottoman-tahrir",
+      "chance_pct": 51,
+      "historical_contribution": 8,
+      "further_research": 8,
+      "reason": "Tracking the same settlements across register changes can distinguish some fiscal relabeling from actual loss, though migration and exemptions complicate regional inference. A credible demographic trend would revise accounts of Ottoman crisis and anchor comparisons of settlement and taxation."
+    },
+    {
+      "id": "khipu",
+      "chance_pct": 20,
+      "historical_contribution": 10,
+      "further_research": 10,
+      "reason": "Associations between cord features and named categories might be verified across a few independently documented examples, but scarce secure pairs constrain a reproducible reading. Reading non-numerical signs would revise accounts of Andean recordkeeping and unlock a dispersed primary archive."
+    },
+    {
+      "id": "james-pawpaw-remedy",
+      "chance_pct": 55,
+      "historical_contribution": 5,
+      "further_research": 5,
+      "reason": "Distinctive shared phrasing could establish descent from Pawpaw's recipe if competing printed versions and manuscript dates can be excluded. Demonstrating anonymous transmission would clarify credit for the remedy and give researchers a traceable example of how Sloane acquired medical knowledge."
+    },
+    {
+      "id": "early-syphilis",
+      "chance_pct": 69,
+      "historical_contribution": 6,
+      "further_research": 6,
+      "reason": "Dating the witness and the events it actually describes can distinguish contemporary outbreak accounts from later recollections, though early terminology is ambiguous. Establishing the earliest secure description would refine the European chronology and supply a point of comparison for other putative cases."
+    },
+    {
+      "id": "ternate-gingie",
+      "chance_pct": 30,
+      "historical_contribution": 5,
+      "further_research": 5,
+      "reason": "The proclamation dates official concern, but growers and smokers would need to surface in independent testimony or enforcement records. Identifying them would recover the social setting of cannabis use on Ternate and connect colonial regulation with local trade and practice."
+    },
+    {
+      "id": "lost-editions",
+      "chance_pct": 44,
+      "historical_contribution": 7,
+      "further_research": 8,
+      "reason": "Successive catalogues and inventories permit estimates stratified by format, but editions with almost no chance of leaving evidence dominate the uncertain tail. A defensible range would change estimates of print output and allow survival corrections in studies of readership and genres."
+    },
+    {
+      "id": "gregorian-chant",
+      "chance_pct": 21,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Aligning melodies can show relationships, yet missing early notation makes the direction of descent hard to distinguish from shared inheritance. Resolving it would alter accounts of liturgical transmission and give related chant repertories a better historical reference."
+    },
+    {
+      "id": "song-iron",
+      "chance_pct": 39,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Local receipts can constrain output where levy rules are independently known, but alternative collection rates substantially change the extrapolated total. An answer would revise the scale of Song industry and anchor studies of its labor, fuel and transport requirements."
+    },
+    {
+      "id": "irish-1641",
+      "chance_pct": 46,
+      "historical_contribution": 7,
+      "further_research": 7,
+      "reason": "Place, time and named victims allow many duplicate reports to be recognized, though sparse coverage of some communities complicates upper bounds. A defensible death toll would recalibrate accounts of the rising and provide a local framework for studying displacement and commemoration."
+    },
+    {
+      "id": "borneo-elephants",
+      "chance_pct": 20,
+      "historical_contribution": 5,
+      "further_research": 6,
+      "reason": "Court elephants in Java establish one link at most, and even a documented gift would require evidence that its descendants account for the Borneo population. Resolving origin would clarify royal animal transfers and inform comparisons of island conservation histories."
+    },
+    {
+      "id": "dunhuang-fragments",
+      "chance_pct": 97,
+      "historical_contribution": 7,
+      "further_research": 10,
+      "reason": "Complementary torn edges, fiber patterns, handwriting and continuous text can corroborate physical joins across collections. Confirmed joins restore manuscripts and their original settings, giving many linguistic, religious and material studies more complete witnesses."
+    },
+    {
+      "id": "hittite-fragments",
+      "chance_pct": 95,
+      "historical_contribution": 7,
+      "further_research": 10,
+      "reason": "Distinctive matching passages can identify parallel copies, and images of compatible breaks and layout can test physical joins in the photographed subset. Recovering texts and tablet groupings would expand the usable Hittite corpus for philology and historical reconstruction."
+    },
+    {
+      "id": "mendel",
+      "chance_pct": 32,
+      "historical_contribution": 6,
+      "further_research": 5,
+      "reason": "Statistical agreement can be quantified under explicit stopping and classification rules, but several such rules could produce the published pattern. Explaining it would change accounts of Mendel's experimental practice and improve the basis for analyzing other historical datasets."
+    },
+    {
+      "id": "renaissance-lute",
+      "chance_pct": 76,
+      "historical_contribution": 5,
+      "further_research": 7,
+      "reason": "A surviving vocal part can check how faithfully particular arrangers transferred lines, making recovery persuasive where several witnesses agree. Identifications would restore details of specific songs and give editors and performers material for further reconstructions."
+    },
+    {
+      "id": "gunpowder",
+      "chance_pct": 19,
+      "historical_contribution": 7,
+      "further_research": 6,
+      "reason": "Chronologically ordered texts constrain possible transmission routes, but actual carriers and intermediate witnesses are hard to document. A demonstrated route would change accounts of Eurasian technical exchange and give related translations and contacts a clearer chronology."
+    },
+    {
+      "id": "plague-disappearance",
+      "chance_pct": 22,
+      "historical_contribution": 9,
+      "further_research": 8,
+      "reason": "Cross-port contrasts and policy changes can test quarantine effects, but simultaneous changes in trade, exposure and ecology leave broad causal attribution uncertain. A convincing explanation would change accounts of European mortality decline and sharpen comparative histories of epidemic control."
+    },
+    {
+      "id": "anonymous-serials",
+      "chance_pct": 94,
+      "historical_contribution": 6,
+      "further_research": 8,
+      "reason": "A reprint under a woman's name can be checked against correspondence, payment records or an independently credited collection to avoid circular attribution. Restoring authorship would change some writers' bibliographies and open unsigned newspaper fiction to broader literary and network studies."
+    },
+    {
+      "id": "proto-elamite",
+      "chance_pct": 8,
+      "historical_contribution": 9,
+      "further_research": 10,
+      "reason": "Administrative recurrence permits structural comparison, yet neither linguistic encoding nor descent follows from shared shapes or accounting conventions. Establishing both relationships would place early Iranian writing in a firmer history and guide interpretation of a large tablet corpus."
+    },
+    {
+      "id": "anonymous-imprints",
+      "chance_pct": 88,
+      "historical_contribution": 6,
+      "further_research": 9,
+      "reason": "Distinctive combinations of damaged ornaments and type in securely dated signed books can identify workshops, with repeated matches helping to track transferred stock. Credible attributions would revise accounts of clandestine and ordinary printing and connect dispersed editions to printers and networks."
+    }
+  ]
+}

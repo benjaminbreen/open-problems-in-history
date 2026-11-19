@@ -6,433 +6,506 @@
       "id": "archimedes-leaf-170",
       "chance_pct": 15,
       "historical_contribution": 3,
-      "further_research": 2
+      "further_research": 2,
+      "reason": "Key ownership correspondence is offline and the leaf is likely in private hands; locating it refines provenance but adds little text beyond the 1906 photograph."
     },
     {
       "id": "vermeer",
       "chance_pct": 30,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Geometric and optical modeling of high-res paintings can test camera obscura hypotheses, but lacking documentary proof keeps positive attribution contested; an answer would reshape Dutch Golden Age studio history."
     },
     {
       "id": "zhou-conquest",
       "chance_pct": 45,
       "historical_contribution": 8,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Combining bronze inscriptions, astronomical retrocalculation, and published radiocarbon dates narrows candidates, though disputed calendar conventions remain a hurdle; a firm year anchors early Chinese chronology and archaeology."
     },
     {
       "id": "wax-cylinder-voices",
       "chance_pct": 65,
       "historical_contribution": 4,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Public audio transfers, discographies, and digitized family papers allow acoustic and archival matching to confirm candidates like Grant; adds concrete primary audio and transferable matching methods for sound archives."
     },
     {
       "id": "yamatai",
       "chance_pct": 20,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The Chinese itinerary is geographically contradictory and digitized site reports already support competing Kyushu/Kinai models; resolving it would anchor early Japanese state formation and East Asian diplomacy."
     },
     {
       "id": "eruption-1809",
       "chance_pct": 60,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Checking the 1836 account's Latin source and digitized colonial/Pacific records can resolve the 1808-vs-1818 discrepancy and test candidate volcanoes; pinpoints a major 19th-century climate-forcing event."
     },
     {
       "id": "oracle-bones",
       "chance_pct": 35,
       "historical_contribution": 7,
-      "further_research": 9
+      "further_research": 9,
+      "reason": "Graph-frequency, contextual, and paleographic analysis across digital corpora can crack some signs, though rare personal/place names resist decipherment; unlocks thousands of Shang divination records."
     },
     {
       "id": "indus",
       "chance_pct": 15,
       "historical_contribution": 9,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Short ~5-sign inscriptions and no bilinguals make statistical/computational tests of linguistic syntax inconclusive; resolving it would transform South Asian Bronze Age and writing history."
     },
     {
       "id": "qing-literacy",
       "chance_pct": 45,
       "historical_contribution": 7,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Large-scale analysis of digitized contracts can quantify signing vs. marks and model selection bias, though prose literacy remains indirect; revises social and economic baselines for late imperial China."
     },
     {
       "id": "americas-1492",
       "chance_pct": 15,
       "historical_contribution": 10,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Post-epidemic tribute counts and uneven regional archaeology leave fundamental data gaps without new fieldwork; a tighter estimate would reshape hemispheric demographic, colonial, and ecological debates."
     },
     {
       "id": "punt",
       "chance_pct": 20,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Intermediate ports confound goods provenance and existing texts/reports have been heavily mined without fieldwork; localizing Punt would clarify Red Sea trade and Egyptian foreign relations."
     },
     {
       "id": "cassini-cas-a",
       "chance_pct": 65,
       "historical_contribution": 4,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "Cassini's digitized Paris observing journals allow astrometric reconstruction of the 1671 star notes; confirms or rules out a key historical supernova observation."
     },
     {
       "id": "ptolemy",
       "chance_pct": 60,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Quantitative error-structure, precession, and refraction modeling across all ~1,025 stars vs. Hipparchus fragments can strongly test adaptation; clarifies ancient astronomical practice."
     },
     {
       "id": "segmented-sleep",
       "chance_pct": 65,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Corpus-wide search and deduplication of digitized books, diaries, and court records can separate widespread practice from literary tropes; revises pre-industrial daily life and sleep historiography."
     },
     {
       "id": "thylacine",
       "chance_pct": 55,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Digitized Tasmanian newspapers, bounty ledgers, and graded sightings enable Bayesian extinction-date modeling, though sighting reliability remains noisy; refines conservation baselines."
     },
     {
       "id": "quran-standardization",
       "chance_pct": 45,
       "historical_contribution": 9,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Stemmatic and paleographic synthesis of digitized early fragments and published radiocarbon dates narrows the window, though parchment-vs-ink gaps persist; central to early Islamic textual history."
     },
     {
       "id": "justinianic-plague",
       "chance_pct": 25,
       "historical_contribution": 9,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Digitized papyri, laws, and published pollen/burial studies give indirect, regionally uneven signals without further aDNA/fieldwork; answering it would settle a major late-antique collapse debate."
     },
     {
       "id": "potato-blight-ships",
       "chance_pct": 50,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Cross-referencing digitized port logs, agricultural letters, and newspapers can link candidate Atlantic voyages to early European outbreaks, though farm-level links may stay incomplete."
     },
     {
       "id": "black-death-africa",
       "chance_pct": 15,
       "historical_contribution": 8,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Textual coverage is sparse and abandoned settlements lack causal biomarkers without lab work or excavation; a positive or negative answer would reshape global pandemic geography."
     },
     {
       "id": "silver-china",
       "chance_pct": 25,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Unregistered smuggling, uneven route records, and Japanese silver complicate total-volume bounds; tighter estimates would recalibrate early modern global trade and Ming-Qing monetary history."
     },
     {
       "id": "linear-a",
       "chance_pct": 25,
       "historical_contribution": 8,
-      "further_research": 9
+      "further_research": 9,
+      "reason": "Computational family testing on ~1,500 short texts is feasible, though borrowed Linear B phonetic values add circularity; identifying the family would open Minoan linguistics and Aegean prehistory."
     },
     {
       "id": "wilkinson-ciphers",
       "chance_pct": 65,
       "historical_contribution": 5,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Published code-word pairs, digitized dictionaries, and contemporary readings allow computational cryptanalysis of available dispatches, limited mainly by offline originals; clarifies early US-Spanish intrigue."
     },
     {
       "id": "russian-flu",
       "chance_pct": 70,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Digitized London reports and Danish burial records allow age-standardized mortality modeling across waves; clarifies pandemic age shifts and historical coronavirus/influenza hypotheses."
     },
     {
       "id": "jupiter-red-spot",
       "chance_pct": 70,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Dated Paris and Marseille drawings paired with Jovian rotation/ephemeris calculations can test whether early marks match the Great Red Spot; refines planetary atmospheric history."
     },
     {
       "id": "indian-ocean-tsunamis",
       "chance_pct": 50,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Systematic searches of digitized Ming records and regional chronicles can confirm if contemporary scribes noted the c. 1394/1450 waves, though sparse local survival may yield only a qualified negative."
     },
     {
       "id": "mughal-dodo",
       "chance_pct": 20,
       "historical_contribution": 3,
-      "further_research": 2
+      "further_research": 2,
+      "reason": "Known ship logs and Mundy's account do not link a specific bird to the painter, so resolution depends on finding an overlooked digitized Persian or Dutch record; adds a minor art/trade detail."
     },
     {
       "id": "agade",
       "chance_pct": 10,
       "historical_contribution": 6,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Cuneiform itineraries and satellite paleochannels narrow search zones, but without excavation and an in-situ inscription localization remains unverified; anchors Sargonic imperial geography."
     },
     {
       "id": "great-divergence",
       "chance_pct": 35,
       "historical_contribution": 9,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Digitized grain prices and company accounts allow better basket standardization, though payment-in-kind and occupational comparability limit certainty; central to global economic history."
     },
     {
       "id": "mesopotamian-chronology",
       "chance_pct": 50,
       "historical_contribution": 8,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Integrating king lists, Venus-tablet variants, tree rings, and published radiocarbon dates narrows Low/Middle/High options, though damaged copies leave residual ambiguity; anchors ancient Near Eastern synchronisms."
     },
     {
       "id": "newton-alchemy-sources",
       "chance_pct": 75,
       "historical_contribution": 5,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Fuzzy text-reuse and n-gram matching between transcribed Newton notebooks and digitized alchemical corpora can attribute many passages; maps Newton's reading network for science historians."
     },
     {
       "id": "amazon-cacao",
       "chance_pct": 20,
       "historical_contribution": 4,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Colonial shipping records cannot prove where wild-harvested vs. planted beans grew without genetic/ecological fieldwork; clarifies Indigenous vs. colonial agroforestry legacies."
     },
     {
       "id": "sydney-smallpox",
       "chance_pct": 25,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Incomplete intervening chronology between Dutch East Indies records and 1789 Sydney accounts leaves transmission routes speculative; bears directly on Australian contact demography."
     },
     {
       "id": "copernicus-maragha",
       "chance_pct": 35,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Comparing digitized Islamic, Byzantine, and European manuscripts with Copernicus's annotations can find closer textual bridges, though an unrecorded oral or lost intermediary may leave transmission open."
     },
     {
       "id": "cocoliztli",
       "chance_pct": 15,
       "historical_contribution": 8,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Symptom descriptions are clinically ambiguous and published aDNA covers too few sites/dates; resolving both 1545 and 1576 pathogens without new lab work is unlikely, though high-impact for Mexican demography."
     },
     {
       "id": "rongorongo",
       "chance_pct": 45,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Structural/computational analysis of ~24 digitized inscriptions vs. contact-era scripts can test stimulus-diffusion hypotheses, though wood-vs-carving dating gaps persist; informs world history of writing."
     },
     {
       "id": "shapira-scrolls",
       "chance_pct": 15,
       "historical_contribution": 7,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "The physical strips are lost, surviving sketches conflict, and key archival papers remain offline; settling authenticity would either add a major biblical witness or close a famous forgery debate."
     },
     {
       "id": "meroitic",
       "chance_pct": 20,
       "historical_contribution": 7,
-      "further_research": 9
+      "further_research": 9,
+      "reason": "Known phonetic values help, but scarce bilinguals and limited non-funerary texts block full grammatical/lexical translation; unlocking Meroitic would open Kushite history from internal sources."
     },
     {
       "id": "galen-arabic",
       "chance_pct": 70,
       "historical_contribution": 6,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Matching Hunayn's bibliographic list against digitized Arabic/Syriac medical corpora and manuscript images can uncover misattributed works; recovers lost ancient medicine and translation history."
     },
     {
       "id": "china-1600",
       "chance_pct": 30,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Ming fiscal quotas diverge from real population and wartime gazetteer survival is uneven, limiting precision; better bounds would reshape Ming-Qing transition and global demography."
     },
     {
       "id": "beowulf",
       "chance_pct": 25,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "With only one ~1000 CE manuscript, computational metrical/linguistic dating still struggles to separate original composition from scribal layering; informs Old English literary and cultural history."
     },
     {
       "id": "roman-census",
       "chance_pct": 30,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Textual totals jump fourfold under Augustus and published field surveys use incompatible small-site methodologies; resolving low vs. high counts reshapes Roman economic and military history."
     },
     {
       "id": "medieval-cattle-plagues",
       "chance_pct": 55,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Spatiotemporal mapping and stemmatic deduplication across digitized Latin, Arabic, and Irish chronicles can trace directional spread, despite vague weather/famine conflations; clarifies medieval agrarian crises."
     },
     {
       "id": "sloane-informants",
       "chance_pct": 60,
       "historical_contribution": 6,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Cross-linking digitized Sloane catalogues, labels, and correspondence can recover many unnamed or obscured contributors, though composite entries remain tangled; illuminates colonial knowledge extraction."
     },
     {
       "id": "indian-ocean-slave-trade",
       "chance_pct": 25,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Partial digitization of Portuguese/French archives and sparse local-carrier records leave large blind spots; tighter aggregate estimates would reshape Indian Ocean and global slavery historiography."
     },
     {
       "id": "gutenberg-type",
       "chance_pct": 30,
       "historical_contribution": 6,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "High-res image analysis can quantify glyph variation, but inking, paper impression, and photography confound physical casting mechanics without metallurgical tests; informs early printing technology."
     },
     {
       "id": "ibn-battuta",
       "chance_pct": 45,
       "historical_contribution": 6,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Automated text-reuse detection across digitized Arabic corpora can systematically flag borrowed passages, though proving he actually visited unattested stops is harder; calibrates a core 14th-c. source."
     },
     {
       "id": "padang-1697",
       "chance_pct": 40,
       "historical_contribution": 3,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "Digitized Dutch dispatches and published coral data constrain timing and surge behavior, though uncertain wave heights allow multiple rupture models; refines Sumatran paleoseismology."
     },
     {
       "id": "kerala-jesuits",
       "chance_pct": 25,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Key Jesuit correspondence remains undigitized and mathematical parallels alone do not prove transmission; confirming a link would revise early modern calculus history."
     },
     {
       "id": "silent-film-fragments",
       "chance_pct": 80,
       "historical_contribution": 4,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Comparing digitized Eye Filmmuseum footage, copyright synopses, and trade press makes concrete title identifications highly likely; recovers lost films and opens archive collections."
     },
     {
       "id": "indigenous-slavery",
       "chance_pct": 25,
       "historical_contribution": 8,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Partly digitized archives, legal euphemisms, and sharp regional gaps prevent a tight hemispheric total; better bounds would transform colonial labor and Indigenous demographic history."
     },
     {
       "id": "toromiro-provenance",
       "chance_pct": 65,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Herbarium vouchers and partly digitized accession/donor records can trace several cultivated lineages, despite some undated specimens; aids botanical conservation and Rapa Nui plant history."
     },
     {
       "id": "leprosy-americas",
       "chance_pct": 70,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "The Digital Florentine Codex and Nahuatl dictionaries/texts enable systematic philological analysis of Nahua disease categories vs. Spanish glosses; clarifies colonial medical translation."
     },
     {
       "id": "hidden-vocabularies",
       "chance_pct": 85,
       "historical_contribution": 5,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Automated OCR/pattern scanning of digitized travel books and natural histories, deduplicated against the 42-language catalogue, will reliably surface new lists; provides primary data for linguists."
     },
     {
       "id": "ottoman-tahrir",
       "chance_pct": 40,
       "historical_contribution": 7,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Changing tax-register units complicate comparisons, but cross-register statistical modeling on digitized/published surveys can test real decline vs. fiscal shift; reshapes 17th-c. Ottoman crisis debates."
     },
     {
       "id": "khipu",
       "chance_pct": 20,
       "historical_contribution": 8,
-      "further_research": 9
+      "further_research": 9,
+      "reason": "Public databases enable structural clustering, but too few khipus pair securely with colonial translations to crack non-numerical semantics; decipherment would transform Andean historiography."
     },
     {
       "id": "james-pawpaw-remedy",
       "chance_pct": 65,
       "historical_contribution": 3,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Comparing the 1736 print recipe against digitized Sloane manuscripts and correspondence can likely trace how the text entered Sloane's collection; offers a case study in colonial medical provenance."
     },
     {
       "id": "early-syphilis",
       "chance_pct": 65,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Systematic corpus auditing of digitized early prints and manuscript catalogues can filter retrospective attributions and pinpoint earliest contemporary notices; informs Columbian Exchange debates."
     },
     {
       "id": "ternate-gingie",
       "chance_pct": 35,
       "historical_contribution": 3,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "The two digitized Dutch records reflect official edicts rather than growers or enforcement; finding more requires unindexed VOC Ternate papers online; adds a microhistory of early modern drug regulation."
     },
     {
       "id": "lost-editions",
       "chance_pct": 55,
       "historical_contribution": 5,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Capture-recapture and survival modeling across early-print catalogues, inventories, and fragments can bound loss rates by format; calibrates survival bias across all book history."
     },
     {
       "id": "gregorian-chant",
       "chance_pct": 25,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Unnotated early Frankish books and centuries-later Old Roman melodies create a structural evidence gap, even with phylogenetic melodic modeling; settles a core medieval musicology debate."
     },
     {
       "id": "song-iron",
       "chance_pct": 35,
       "historical_contribution": 5,
-      "further_research": 5
+      "further_research": 5,
+      "reason": "Digitized fiscal compilations record receipts, but disputed tax-to-output ratios and limited published archaeology leave wide uncertainty; informs Song proto-industrialization debates."
     },
     {
       "id": "irish-1641",
       "chance_pct": 45,
       "historical_contribution": 6,
-      "further_research": 7
+      "further_research": 7,
+      "reason": "Deduplicating and network-modeling ~8,000 digitized depositions yields stronger Protestant death bounds, though uneven Catholic coverage limits total-death certainty; improves civil-war historiography."
     },
     {
       "id": "borneo-elephants",
       "chance_pct": 20,
       "historical_contribution": 4,
-      "further_research": 3
+      "further_research": 3,
+      "reason": "VOC records document elephants in Java, but the proposed Sulu-to-Borneo leg lacks documentary proof and native status hinges on genetics/lab work; clarifies Southeast Asian biogeography."
     },
     {
       "id": "dunhuang-fragments",
       "chance_pct": 85,
       "historical_contribution": 6,
-      "further_research": 9
+      "further_research": 9,
+      "reason": "Image-matching edges/scripts and text-matching across IDP's dispersed collections can reliably rejoin many fragments despite variable scans; reconstructs Silk Road manuscripts for many fields."
     },
     {
       "id": "hittite-fragments",
       "chance_pct": 75,
       "historical_contribution": 5,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Automated text-matching in TLHdig paired with available museum photos can identify many same-text parallels and physical joins; directly advances Hittite textual editions."
     },
     {
       "id": "mendel",
       "chance_pct": 45,
       "historical_contribution": 5,
-      "further_research": 4
+      "further_research": 4,
+      "reason": "Reanalyzing published counts can test statistical anomalies, but missing working notebooks prevent proving *why* counts are close; clarifies foundational genetics history."
     },
     {
       "id": "renaissance-lute",
       "chance_pct": 65,
       "historical_contribution": 4,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Comparing the digitized Bern tenor partbook and catalogues against lute intabulations can match and reconstruct missing vocal lines, accounting for ornamentation; recovers lost Renaissance polyphony."
     },
     {
       "id": "gunpowder",
       "chance_pct": 35,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Terminological and recipe stemmatics across digitized Chinese, Arabic, and Latin texts refine chronologies, though missing intermediate translations may obscure the exact route; key to Eurasian tech transfer."
     },
     {
       "id": "plague-disappearance",
       "chance_pct": 30,
       "historical_contribution": 7,
-      "further_research": 6
+      "further_research": 6,
+      "reason": "Uneven online port and quarantine records make isolating quarantine vs. ecological or immunity factors difficult without broader data; settles a major debate in European public-health history."
     },
     {
       "id": "anonymous-serials",
       "chance_pct": 75,
       "historical_contribution": 6,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Cross-printing byline matching, stylometry, and syndication-error filtering across digitized 19th-century newspapers can attribute many unsigned stories; expands women's literary history."
     },
     {
       "id": "proto-elamite",
       "chance_pct": 25,
       "historical_contribution": 7,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Large tablet corpora allow computational sign-distribution comparisons with Linear Elamite, though undeciphered non-numerical signs and lack of bilinguals limit certainty; informs early Iranian writing."
     },
     {
       "id": "anonymous-imprints",
       "chance_pct": 60,
       "historical_contribution": 5,
-      "further_research": 8
+      "further_research": 8,
+      "reason": "Type-damage and ornament matching across open scanned 18th-century British books can identify many printers, limited mainly by subscription-only archives; enables large-scale bibliographic attribution."
     }
-  ]
+  ],
+  "prior_exposure": "none"
 }

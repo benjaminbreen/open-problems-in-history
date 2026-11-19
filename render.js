@@ -172,19 +172,55 @@ export function voteBox(ctx, id) {
 // ---------- list ----------
 export const commentLabel = (ctx, id) => `${ctx.open?.has(id) ? "−" : "+"} ${ncom(ctx, id) || "comment"}`;
 
-function rankCell(panel, row, metric) {
+function rankCell(panel, row, metric, problem) {
   const who = panel === "ai" ? "AI" : "Human";
   const count = row ? row.count : 0;
   const label = count ? `${who} rank ${row[metric + "_rank"]}, score ${row[metric].toFixed(2)} out of 10, ${count} ${count === 1 ? "ballot" : "ballots"}` : `No ${who} ratings yet`;
-  return `<span class="rank-cell ${panel}" title="${label}" aria-label="${label}"><span class="mobile-panel">${who} </span>${count ? `#${row[metric + "_rank"]}<small>${row[metric].toFixed(2)}/10${panel === "human" ? ` · ${count} ${count === 1 ? "rater" : "raters"}` : ""}</small>` : "—"}</span>`;
+  const value = `<span class="mobile-panel">${who} </span>${count ? `#${row[metric + "_rank"]}<small>${row[metric].toFixed(2)}/10${panel === "human" ? ` · ${count} ${count === 1 ? "rater" : "raters"}` : ""}</small>` : "—"}`;
+  if (count && problem) {
+    return `<button type="button" class="rank-cell ai rank-trigger" popovertarget="ballots-${esc(problem.id)}" aria-haspopup="dialog" aria-label="${label}. Show model ratings for ${esc(problem.title)}" title="Show the individual model ratings">${value}</button>`;
+  }
+  return `<span class="rank-cell ${panel}" title="${label}" aria-label="${label}">${value}</span>`;
+}
+
+function modelScores(problem, ballots, metric) {
+  const historical = metric === "historical";
+  const label = historical ? "Overall potential" : "Further research potential";
+  const valueKey = historical ? "historical_contribution" : "further_research";
+  const rows = ballots.map((ballot) => ballot.rows[problem.id]);
+  const line = (heading, format) => `<tr><th scope="row">${heading}</th>${rows.map((r) => `<td>${format(r)}</td>`).join("")}</tr>`;
+  return `<table class="model-scores" aria-label="Individual model ratings">
+      <thead><tr><th scope="col">Rating</th>${ballots.map((b) => `<th scope="col" aria-label="${esc(b.label)}"><span class="model-full">${esc(b.label)}</span><span class="model-short" aria-hidden="true">${esc(b.label.split(" ")[0])}</span></th>`).join("")}</tr></thead>
+      <tbody>
+        ${line("Chance of a convincing answer", (r) => `${r.chance_pct}%`)}
+        ${line("Historical contribution if answered", (r) => `${r.historical_contribution}/10`)}
+        ${line("Value for further research if answered", (r) => `${r.further_research}/10`)}
+      </tbody>
+      <tfoot>${line(label, (r) => (r.chance_pct * r[valueKey] / 100).toFixed(2))}</tfoot>
+    </table>`;
+}
+
+function rankBreakdown(problem, ballots, result, metric) {
+  const id = `ballots-${esc(problem.id)}`;
+  const historical = metric === "historical";
+  const label = historical ? "Overall potential" : "Further research potential";
+  return `<div popover id="${id}" class="rank-breakdown" role="dialog" aria-labelledby="${id}-title">
+    <div class="breakdown-bar"><span>${label} · AI rank #${result[metric + "_rank"]}</span><button type="button" popovertarget="${id}" popovertargetaction="hide" autofocus>Close</button></div>
+    <h2 id="${id}-title">${esc(problem.title)}</h2>
+    ${modelScores(problem, ballots, metric)}
+    <p>Each model’s score is its chance of an answer multiplied by its ${historical ? "historical contribution" : "further research"} rating. The individual scores average to <strong>${result[metric].toFixed(2)}/10</strong>.</p>
+  </div>`;
 }
 
 export function rowHTML(ctx, p) {
   const labels = tags(p);
+  const metric = ctx.metric || "historical";
+  const result = ctx.ai?.[p.id];
+  const breakdown = result && ctx.ballots?.length ? rankBreakdown(p, ctx.ballots, result, metric) : "";
   return `
     <li class="row" id="r-${esc(p.id)}">
-      ${rankCell("ai", ctx.ai?.[p.id], ctx.metric || "historical")}
-      ${rankCell("human", ctx.human?.[p.id], ctx.metric || "historical")}
+      ${rankCell("ai", result, metric, breakdown ? p : null)}
+      ${rankCell("human", ctx.human?.[p.id], metric)}
       ${voteBox(ctx, p.id)}
       <div class="main">
         <a class="ttl" href="/p/${esc(p.id)}">${esc(p.title)}</a>
@@ -196,6 +232,7 @@ export function rowHTML(ctx, p) {
       <span class="c per">${esc(period(p))}</span>
       <span class="c com"><button type="button" class="linkbtn" data-comments="${esc(p.id)}" aria-expanded="${!!ctx.open?.has(p.id)}">${commentLabel(ctx, p.id)}</button></span>
       <div class="cbox" data-for="${esc(p.id)}"></div>
+      ${breakdown}
     </li>`;
 }
 
@@ -446,15 +483,38 @@ export function forHTML(slug, problems) {
   </div>`;
 }
 
+function problemScores(problem, ballots, result) {
+  return `<aside class="problem-scores" aria-label="AI ratings for this question">
+    <div class="score-summary">
+      <h2>AI overall potential</h2>
+      <p><b>#${result.historical_rank}</b> <span>· ${result.historical.toFixed(2)}/10</span></p>
+      <a href="#ai-explanations">Read the models’ explanations ↓</a>
+    </div>
+    ${modelScores(problem, ballots, "historical")}
+  </aside>`;
+}
+
+function modelExplanations(problem, ballots) {
+  return `<section class="model-explanations"><h2>Why the models gave these scores</h2>
+    <div class="sbody"><details id="ai-explanations">
+      <summary><span class="when-closed">Expand to view</span><span class="when-open">Hide explanations</span></summary>
+      <dl>${ballots.map((b) => `<dt>${esc(b.label)}${b.reasoning_effort ? ` <small>· ${esc(b.reasoning_effort)} reasoning effort</small>` : ""}</dt>
+        <dd>${esc(b.rows[problem.id].reason)}</dd>`).join("")}</dl>
+    </details></div>
+  </section>`;
+}
+
 export function detailHTML(ctx, p) {
   const s = p.suggested;
+  const scores = ctx.ai?.[p.id];
+  const hasBallots = scores && ctx.ballots?.length;
   const pv = p.provenance || {};
   const approach = Array.isArray(p.approach) ? p.approach : p.approach ? [p.approach] : [];
   const linker = s ? () => (x) => x : citeLinker(p.existing, p.archives);
   const lpara = (x) => para(x, linker());
   return `
     <div class="backrow"><a class="back" href="/">← All problems</a><span class="pn" id="pn"></span></div>
-    <article>
+    <article id="ballot-reading">
     <div class="head${p.image ? " has-img" : ""}">
       ${voteBox(ctx, p.id)}
       <div class="head-text">
@@ -465,6 +525,7 @@ export function detailHTML(ctx, p) {
       </div>
       ${figure(p.image)}
     </div>
+    ${hasBallots ? problemScores(p, ctx.ballots, scores) : ""}
     ${s ? "" : recentWork(p)}${p.links?.length ? `<nav class="problem-links" aria-label="Related reading">${p.links.map(({ href, label }) => `<a href="${esc(href)}">${esc(label)} <span aria-hidden="true">→</span></a>`).join("")}</nav>` : ""}
     <div class="detail">
     ${s ? sec("Suggestion", para(s.details) + `<p class="note">${esc(s.name || "Anonymous")} · ${when(s.t)}</p>`) : `
@@ -482,6 +543,7 @@ export function detailHTML(ctx, p) {
       <div class="slide" id="work-form"><div>${contributeForm("work", p.id, "Author, title, year and venue, with a link if you have one, and a sentence on why it belongs")}</div></div>` : "")}
     ${sec("Archives and collections", p.archives?.length ? `<ul class="archives">${p.archives.map((a, i) => archive(a, i, noteLinker(p.existing)())).join("")}</ul>${p.archives.map(archiveCards).join("")}${prov("Compiled", pv.compiled_by, pv.compiled_on, "Compiled the existing work and archives; citations checked against DOI and catalogue records")}` : "")}`}
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
+    ${hasBallots ? modelExplanations(p, ctx.ballots) : ""}
     </div>
     </article>`.replace(/^[ \t]+$/gm, "");
 }
@@ -554,7 +616,10 @@ export function colophonHTML() {
   <div class="town" aria-label="The cast of specialists" role="img"></div>`;
 }
 
-export function methodsHTML() {
+export function methodsHTML(ballots) {
+  const formatList = new Intl.ListFormat("en", { type: "conjunction" });
+  const panel = formatList.format(ballots.map((b) => esc(b.label + (b.reasoning_effort ? ` (${b.reasoning_effort} reasoning effort)` : ""))));
+  const sources = formatList.format(ballots.map((b) => `<a href="${esc(b.source)}">${esc(b.label)}</a>`));
   return `
   <article class="about">
     <h1 class="page-title">Methods</h1>
@@ -569,12 +634,12 @@ export function methodsHTML() {
 
     <div class="prose">
       <h2 id="rankings">How the questions are ranked</h2>
-      <p>Which investigation is most likely to teach us something consequential? In November 2026, Claude Opus 5.5 (low reasoning effort), Gemini 4 Hydrogen (medium) and GPT-6 each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. All three reported that they had not seen previous rankings of these questions.</p>
+      <p>Which investigation is most likely to teach us something consequential? In November 2026, ${panel} each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. The judges reported no prior exposure to rankings of these questions.</p>
       <p>First, each judge estimated the chance of reaching an answer another historian could verify, using today’s tools and public digital sources. A well-supported negative answer counts. Then, assuming the question had been answered, the judge assessed two things on a scale of 1 to 10. How much would the answer change what historians know? And what other research would it make possible?</p>
-      <p><em>Overall potential</em> multiplies each judge’s estimate of the chance of a convincing answer by the historical contribution that answer would make. Suppose a judge gives one question a contribution of 10 out of 10 but only a 5% chance of an answer. It scores 0.5. A question with a contribution of 7 and a 70% chance scores 4.9, so it ranks higher on that ballot. The AI ranking averages the three judges’ scores for each question.</p>
+      <p><em>Overall potential</em> multiplies each judge’s estimate of the chance of a convincing answer by the historical contribution that answer would make. Suppose a judge gives one question a contribution of 10 out of 10 but only a 5% chance of an answer. It scores 0.5. A question with a contribution of 7 and a 70% chance scores 4.9, so it ranks higher on that ballot. The AI ranking gives each ballot equal weight. Each GPT run counts as a separate ballot.</p>
       <p>Choose <em>Further research</em> to see which answers could open up the most work for others. This ranking multiplies the same chance estimates by each judge’s assessment of that follow-on value.</p>
       <p>The human column uses the same calculation across approved human ballots for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
-      <p>Read the <a href="/rate.txt">original question packet</a> and the scores from <a href="/rating-passes/2026-11-19/claude.json">Claude</a>, <a href="/rating-passes/2026-11-19/gemini.json">Gemini</a> and <a href="/rating-passes/2026-11-19/gpt.json">GPT</a>, or <a href="/rate">fill in a human ballot</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
+      <p>Read the <a href="/rate.txt">original question packet</a> and the scores from ${sources}, or <a href="/rate">fill in a human ballot</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
     </div>
   </article>`;
 }

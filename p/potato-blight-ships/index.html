@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/signature.css">
-<link rel="stylesheet" href="/style.css?v=aac763cc">
+<link rel="stylesheet" href="/style.css?v=688a31e2">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>">
 </head>
 <body>
@@ -43,7 +43,7 @@
 </header>
 <main id="app" tabindex="-1">
     <div class="backrow"><a class="back" href="/">← All problems</a><span class="pn" id="pn"></span></div>
-    <article>
+    <article id="ballot-reading">
     <div class="head has-img">
       <div class="vote" data-id="potato-blight-ships">
     <button type="button" data-v="1" aria-pressed="false" aria-label="Upvote">▲</button>
@@ -61,6 +61,22 @@
       <figcaption>Late blight on potato leaves, detail in halftone. <a href="https://commons.wikimedia.org/wiki/File:Phytophthora_infestans_on_potato_leaf_2.jpg" target="_blank" rel="noopener">Mary Ann Hansen, Virginia Tech</a>, <a href="https://creativecommons.org/licenses/by/3.0/us/deed.en" target="_blank" rel="noopener">CC BY 3.0 US</a></figcaption>
     </figure>
     </div>
+    <aside class="problem-scores" aria-label="AI ratings for this question">
+    <div class="score-summary">
+      <h2>AI overall potential</h2>
+      <p><b>#23</b> <span>· 2.68/10</span></p>
+      <a href="#ai-explanations">Read the models’ explanations ↓</a>
+    </div>
+    <table class="model-scores" aria-label="Individual model ratings">
+      <thead><tr><th scope="col">Rating</th><th scope="col" aria-label="Claude Opus 5.5"><span class="model-full">Claude Opus 5.5</span><span class="model-short" aria-hidden="true">Claude</span></th><th scope="col" aria-label="Gemini 4 Hydrogen"><span class="model-full">Gemini 4 Hydrogen</span><span class="model-short" aria-hidden="true">Gemini</span></th><th scope="col" aria-label="GPT-6"><span class="model-full">GPT-6</span><span class="model-short" aria-hidden="true">GPT-6</span></th><th scope="col" aria-label="GPT-6.2 Astra"><span class="model-full">GPT-6.2 Astra</span><span class="model-short" aria-hidden="true">GPT-6.2</span></th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Chance of a convincing answer</th><td>30%</td><td>50%</td><td>57%</td><td>60%</td></tr>
+        <tr><th scope="row">Historical contribution if answered</th><td>4/10</td><td>5/10</td><td>6/10</td><td>6/10</td></tr>
+        <tr><th scope="row">Value for further research if answered</th><td>4/10</td><td>4/10</td><td>6/10</td><td>7/10</td></tr>
+      </tbody>
+      <tfoot><tr><th scope="row">Overall potential</th><td>1.20</td><td>2.50</td><td>3.42</td><td>3.60</td></tr></tfoot>
+    </table>
+  </aside>
     <div class="rw" data-rw style="--lv:1">
       <div class="rw-top">
         <h2 class="rw-h">Recent work</h2>
@@ -120,6 +136,16 @@
     <span class="col">Digitized Dutch newspapers, 1843–45</span><span class="n">Shipping columns can identify ports of call, named vessels and dates of arrival.</span></li><li id="src-a2"><span class="rep"><a href="https://gallica.bnf.fr/" target="_blank" rel="noopener">Bibliothèque nationale de France, Gallica</a></span><span class="tag">partly digitized</span>
     <span class="col">French port newspapers and agricultural society proceedings</span><span class="n">Compare shipping notices with reports from growers and agricultural correspondents.</span></li></ul><div class="cref-src" id="cref-a0" hidden><span class="yr"><svg class="arc" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.2" y="1.6" width="9.6" height="3" rx=".5" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 4.6v5.2a.6.6 0 0 0 .6.6h6.8a.6.6 0 0 0 .6-.6V4.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M4.6 6.6h2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></span><div><span class="rep"><a href="https://www.biodiversitylibrary.org/bibliography/40100" target="_blank" rel="noopener">Biodiversity Heritage Library</a></span> <span class="dig">partly digitized</span><span class="col">The Gardeners’ Chronicle and Agricultural Gazette</span><span class="n">The 1845 volume preserves contemporary letters, early reports and disagreements about the crop failure.</span></div><a class="jump" href="#src-a0" data-ref="a0">In archives ↓</a></div><div class="cref-src" id="cref-a1" hidden><span class="yr"><svg class="arc" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.2" y="1.6" width="9.6" height="3" rx=".5" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 4.6v5.2a.6.6 0 0 0 .6.6h6.8a.6.6 0 0 0 .6-.6V4.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M4.6 6.6h2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></span><div><span class="rep"><a href="https://www.delpher.nl/" target="_blank" rel="noopener">Koninklijke Bibliotheek, Delpher</a></span> <span class="dig">partly digitized</span><span class="col">Digitized Dutch newspapers, 1843–45</span><span class="n">Shipping columns can identify ports of call, named vessels and dates of arrival.</span></div><a class="jump" href="#src-a1" data-ref="a1">In archives ↓</a></div><div class="cref-src" id="cref-a2" hidden><span class="yr"><svg class="arc" viewBox="0 0 12 12" aria-hidden="true"><rect x="1.2" y="1.6" width="9.6" height="3" rx=".5" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M2 4.6v5.2a.6.6 0 0 0 .6.6h6.8a.6.6 0 0 0 .6-.6V4.6" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M4.6 6.6h2.8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/></svg></span><div><span class="rep"><a href="https://gallica.bnf.fr/" target="_blank" rel="noopener">Bibliothèque nationale de France, Gallica</a></span> <span class="dig">partly digitized</span><span class="col">French port newspapers and agricultural society proceedings</span><span class="n">Compare shipping notices with reports from growers and agricultural correspondents.</span></div><a class="jump" href="#src-a2" data-ref="a2">In archives ↓</a></div><p class="prov">Compiled by <span class="agent" title="AI model: GPT-6 (Codex). Compiled the existing work and archives; citations checked against DOI and catalogue records"><svg class="bot" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1.2v2.1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="6" cy="1.2" r=".8" fill="currentColor"/><rect x="1.8" y="3.6" width="8.4" height="6.6" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.1"/><circle cx="4.6" cy="6.8" r=".95" fill="currentColor"/><circle cx="7.4" cy="6.8" r=".95" fill="currentColor"/></svg>GPT-6 (Codex)</span>, 2026-11-19</p></div></section>
     <section id="comments"><h2>Comments</h2><div class="sbody" id="cbox"></div></section>
+    <section class="model-explanations"><h2>Why the models gave these scores</h2>
+    <div class="sbody"><details id="ai-explanations">
+      <summary><span class="when-closed">Expand to view</span><span class="when-open">Hide explanations</span></summary>
+      <dl><dt>Claude Opus 5.5 <small>· low reasoning effort</small></dt>
+        <dd>Port reports and newspapers allow linking some shipments to first outbreaks. Farm-level delivery links remain the weak point.</dd><dt>Gemini 4 Hydrogen <small>· medium reasoning effort</small></dt>
+        <dd>Cross-referencing digitized port logs, agricultural letters, and newspapers can link candidate Atlantic voyages to early European outbreaks, though farm-level links may stay incomplete.</dd><dt>GPT-6</dt>
+        <dd>A named cargo linked through an importer to a dated outbreak could establish a shipment-level association. Port arrival by itself leaves the farm connection open. Such links would revise the geography of the epidemic’s arrival and give later work documented routes to test.</dd><dt>GPT-6.2 Astra <small>· high reasoning effort</small></dt>
+        <dd>Arrival notices and growers&#39; letters might independently connect a cargo with a named early outbreak, though an infected shipment is hard to infer from timing alone. Verified links would qualify accounts of introduction and support comparisons of commercial and disease routes.</dd></dl>
+    </details></div>
+  </section>
     </div>
     </article></main>
 <footer class="foot">
@@ -147,7 +173,7 @@
     <a href="/admin" class="quiet">Admin</a>
   </div>
 </footer>
-<script src="/app.js?v=aac763cc" type="module"></script>
+<script src="/app.js?v=688a31e2" type="module"></script>
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>

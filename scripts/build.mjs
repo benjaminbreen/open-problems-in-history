@@ -52,16 +52,18 @@ const questions = Array.from(packet.matchAll(/^\d+\. \*\*(.+?)\*\* \(`([\w-]+)`\
   ([, title, id, evidence]) => ({ id, title, evidence: evidence.trim() }));
 const packetIds = new Set(questions.map((q) => q.id));
 if (!questions.length || packetIds.size !== questions.length) throw new Error("Invalid rating packet");
-const ballots = ["claude", "gemini", "gpt"].map((model) => {
-  const { ratings } = JSON.parse(fs.readFileSync(`rating-passes/2026-11-19/${model}.json`, "utf8"));
+const models = { claude: "Claude Opus 5.5", gemini: "Gemini 4 Hydrogen", gpt: "GPT-6", "gpt-6.2-astra-high": "GPT-6.2 Astra" };
+const ballots = Object.entries(models).map(([model, label]) => {
+  const source = `/rating-passes/2026-11-19/${model}.json`;
+  const { ratings, reasoning_effort } = JSON.parse(fs.readFileSync("." + source, "utf8"));
   const rows = Object.fromEntries(ratings.map((r) => [r.id, r]));
-  if (ratings.length !== packetIds.size || questions.some(({ id }) => !validJudgment(rows[id]))) {
+  if (ratings.length !== packetIds.size || questions.some(({ id }) => !validJudgment(rows[id]) || !rows[id].reason?.trim())) {
     throw new Error(`Incomplete or invalid ballot from ${model}`);
   }
-  return rows;
+  return { label, source, reasoning_effort, rows };
 });
-const ai = rankBallots(ballots);
-fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, ai }));
+const ai = rankBallots(ballots.map((ballot) => ballot.rows));
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, ai, ballots }));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
 const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
@@ -70,7 +72,7 @@ const template = fs.readFileSync("template.html", "utf8")
 const page = ({ title, description, head = "", main }) => template
   .replace("{{title}}", esc(title)).replace("{{description}}", esc(description))
   .replace("{{head}}", head).replace("{{main}}", main);
-const ctx = { ai, tally: {}, counts: {}, mine: {}, open: new Set() };
+const ctx = { ai, ballots, tally: {}, counts: {}, mine: {}, open: new Set() };
 const SITE = "Open Problems in History";
 const URL = "https://historyproblems.com";
 const HOME_DESC = "Open problems in history that historians working with AI research agents could plausibly solve. Vote, comment, propose approaches, suggest problems.";
@@ -204,7 +206,7 @@ fs.writeFileSync("methods/index.html", page({
   title: `Methods · ${SITE}`,
   description: "How the AI and human rankings weigh the chance of an answer and its contribution to historical research.",
   head: social({ title: `Methods · ${SITE}`, description: "How the research potential rankings are calculated.", url: `${URL}/methods`, image: `${URL}/og/index.jpg` }),
-  main: methodsHTML(),
+  main: methodsHTML(ballots),
 }));
 
 fs.mkdirSync("colophon", { recursive: true });
@@ -274,7 +276,7 @@ fs.writeFileSync("llms.txt", `# ${SITE}
 
 > A list of ${problems.length} open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
 
-Last updated ${today}. The problems below are listed alphabetically by id. The default order is the three-model average for expected historical contribution. Each problem has "potential.ai" and "potential.human" with scores, ranks and ballot counts for both historical contribution and further research. A missing ranking is null. See ${URL}/api/problems.
+Last updated ${today}. The problems below are listed alphabetically by id. The default order is the average of ${ballots.length} equally weighted AI ballots for expected historical contribution. Each problem has "potential.ai" and "potential.human" with scores, ranks and ballot counts for both historical contribution and further research. A missing ranking is null. See ${URL}/api/problems.
 
 ## How the problem pages were written
 
