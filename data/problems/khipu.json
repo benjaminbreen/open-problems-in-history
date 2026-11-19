@@ -1,5 +1,6 @@
 {
   "id": "khipu",
+  "leads": ["pachacamac-khipus"],
   "title": "Do khipus record more than numbers, and can their non-numerical signs be read?",
   "short": "Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.",
   "region": "Americas",

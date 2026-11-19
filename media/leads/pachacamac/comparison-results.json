@@ -1,0 +1,148 @@
+{
+  "note": "Post-selection descriptive ranking; not a p-value or novelty claim.",
+  "source": "OKR v2.1.0 with KH0132 broken cords masked",
+  "pachacamac_comparator_records": 87,
+  "checked_positions_zero_based": {
+    "0": 620,
+    "1": 470,
+    "3": 935,
+    "4": 474,
+    "5": 319,
+    "6": 453,
+    "7": 492,
+    "13": 275
+  },
+  "withheld": "KH0132 cord 4 / KH0456 cord 9: 528 in OKR, 0 in UR218.xls",
+  "all_14_cord_windows": {
+    "windows": 3452,
+    "top": [
+      {
+        "record": "KH0456",
+        "start": 7,
+        "end": 20,
+        "exact_of_8": 7
+      },
+      {
+        "record": "KH0189",
+        "start": 14,
+        "end": 27,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0189",
+        "start": 15,
+        "end": 28,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0364",
+        "start": 25,
+        "end": 38,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0484",
+        "start": 7,
+        "end": 20,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0562",
+        "start": 4,
+        "end": 17,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0562",
+        "start": 43,
+        "end": 56,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0562",
+        "start": 58,
+        "end": 71,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0562",
+        "start": 92,
+        "end": 105,
+        "exact_of_8": 1
+      },
+      {
+        "record": "KH0042",
+        "start": 1,
+        "end": 14,
+        "exact_of_8": 0
+      }
+    ],
+    "max_excluding_KH0456": 1
+  },
+  "adjacent_seven_plus_seven_group_windows": {
+    "windows": 23,
+    "top": [
+      {
+        "record": "KH0456",
+        "start": 7,
+        "end": 20,
+        "exact_of_8": 7
+      },
+      {
+        "record": "KH0126",
+        "start": 7,
+        "end": 20,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 211,
+        "end": 224,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 218,
+        "end": 231,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 225,
+        "end": 238,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 232,
+        "end": 245,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 239,
+        "end": 252,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 246,
+        "end": 259,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 253,
+        "end": 266,
+        "exact_of_8": 0
+      },
+      {
+        "record": "KH0135",
+        "start": 260,
+        "end": 273,
+        "exact_of_8": 0
+      }
+    ],
+    "max_excluding_KH0456": 0
+  }
+}

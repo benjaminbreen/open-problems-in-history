@@ -7,6 +7,7 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
+import { archiveLeads } from "../archive-leads.js";
 import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
 import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
@@ -33,7 +34,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   problems.push(p);
 }
 const byId = new Map(problems.map((p) => [p.id, p]));
-const leadTitles = new Map([["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
+const leadTitles = new Map([...archiveLeads.map(lead => [lead.slug, lead.title]), ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
 for (const p of problems) {
   const links = [
     ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
@@ -121,6 +122,17 @@ fs.writeFileSync("leads/grant-cylinder/index.html", page({
     + `<script src="/grant-player.js?v=${ver}" type="module"></script>\n`,
   main: grantHTML(),
 }));
+for (const lead of archiveLeads) {
+  const path = `leads/${lead.slug}`;
+  fs.mkdirSync(path, { recursive: true });
+  fs.writeFileSync(`${path}/index.html`, page({
+    title: `${lead.title} · ${SITE}`,
+    description: lead.description,
+    head: social({ title: lead.title, description: lead.description, url: `${URL}/${path}`, image: `${URL}/og/${lead.slug}.jpg`, type: "article" })
+      + '<link rel="stylesheet" href="/leads/archive-exhibits.css">\n',
+    main: lead.html(),
+  }));
+}
 fs.mkdirSync("leads/dodo-journal", { recursive: true });
 fs.writeFileSync("leads/dodo-journal/index.html", page({
   title: `${dodoTitle} · ${SITE}`,
@@ -216,6 +228,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-v2</loc></url>
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
+${archiveLeads.map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/dodo-journal</loc></url>
 <url><loc>${URL}/leads/langley-kite</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary</loc></url>

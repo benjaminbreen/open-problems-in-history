@@ -1,3 +1,4 @@
+import { archiveLeads } from "./archive-leads.js";
 import { notedPassages } from "./lib/lead-notes.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
 
@@ -19,6 +20,7 @@ export const leadsDescription = "Some preliminary writeups of findings and metho
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
+    ...archiveLeads,
     {
       slug: "dodo-journal", published: "2026-11-19T11:05:53-08:00",
       label: "Mauritius, 1615 · Natural history", title: dodoTitle, description: dodoDescription,
