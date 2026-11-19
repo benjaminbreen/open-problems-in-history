@@ -113,6 +113,7 @@ fs.writeFileSync("leads/grant-cylinder/index.html", page({
   title: `${grantTitle} · ${SITE}`,
   description: grantDescription,
   head: social({ title: grantTitle, description: grantDescription, url: `${URL}/leads/grant-cylinder`, image: `${URL}/og/index.jpg`, type: "article" })
+    + `<link rel="stylesheet" href="/leads/grant-cylinder/cylinder.css">\n`
     + `<script src="/grant-player.js?v=${ver}" type="module"></script>\n`,
   main: grantHTML(),
 }));
