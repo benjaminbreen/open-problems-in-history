@@ -1,0 +1,684 @@
+/* Open Problems in History — Heerlen Lead (v2)
+   Built strictly on top of /style.css tokens (--serif, --mono, --bg, --bg-2, --ink, --ink-2, --muted, --rule, --accent). */
+
+.hv2 {
+  max-width: 1020px;
+  margin: 28px auto 0;
+  --teal: #1d6478;
+  --teal-soft: color-mix(in srgb, #1d6478 16%, transparent);
+  --ivory-chip: #efe2be;
+  --surface: color-mix(in srgb, var(--ink) 3.5%, var(--bg));
+}
+:root[data-theme='dark'] .hv2 {
+  --teal: #58b0c4;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) .hv2 {
+    --teal: #58b0c4;
+  }
+}
+
+.hv2 [hidden] {
+  display: none !important;
+}
+
+.hv2 .back {
+  display: inline-block;
+  font: 500 12px/1.4 var(--mono);
+  color: var(--muted);
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+.hv2 .back:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Hero */
+.hv2-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.92fr);
+  gap: clamp(24px, 4.5vw, 56px);
+  align-items: start;
+  padding-bottom: 40px;
+}
+.hv2-kicker {
+  font: 500 11px/1.5 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+.hv2 h1 {
+  font: 400 clamp(38px, 5.2vw, 66px) / 1.02 var(--serif);
+  letter-spacing: -0.04em;
+  margin: 0 0 22px;
+  text-wrap: balance;
+}
+.hv2-prose p,
+.hv2-hero-copy p:not(.hv2-kicker) {
+  font: 400 19.5px / 1.56 var(--serif);
+  color: var(--ink-2);
+  margin: 0 0 16px;
+  max-width: 39em;
+}
+.hv2-hero-copy p.hv2-lede {
+  font-size: clamp(20.5px, 2vw, 23px);
+  line-height: 1.44;
+  color: var(--ink);
+}
+.hv2-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 22px;
+  margin-top: 22px;
+}
+.hv2-btn-solid {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 12px/1.3 var(--mono);
+  padding: 11px 16px;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  text-decoration: none;
+  cursor: pointer;
+}
+.hv2-btn-solid:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.hv2-btn-link {
+  font: 500 12px/1.4 var(--mono);
+  background: none;
+  border: 0;
+  padding: 4px 0;
+  color: var(--ink-2);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: var(--rule);
+  cursor: pointer;
+}
+.hv2-btn-link:hover {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+}
+.hv2-btn-link:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+/* Hero stone figure */
+.hv2-object {
+  margin: 8px 0 0;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 14px;
+}
+.hv2-object-stage {
+  position: relative;
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid color-mix(in srgb, var(--ink) 10%, transparent);
+}
+.hv2-object-stage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hv2-object-stage svg.hv2-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.hv2-object figcaption {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 12px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+  font: 400 11.5px/1.45 var(--mono);
+  color: var(--muted);
+}
+.hv2-toggle-pill {
+  font: 500 11.5px/1.3 var(--mono);
+  padding: 6px 10px;
+  border: 1px solid var(--ink);
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+.hv2-toggle-pill[aria-pressed='true'] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.hv2-photo-note {
+  font: 400 12px/1.5 var(--mono);
+  color: var(--ink-2);
+  margin: 8px 0 0;
+}
+
+/* Section rhythm */
+.hv2-section {
+  border-top: 1px solid var(--ink);
+  padding: clamp(32px, 4.5vw, 52px) 0;
+  scroll-margin-top: 32px;
+}
+.hv2-section h2 {
+  font: 400 clamp(28px, 3.2vw, 40px) / 1.1 var(--serif);
+  letter-spacing: -0.03em;
+  text-transform: none;
+  border: 0;
+  padding: 0;
+  margin: 0 0 14px;
+}
+.hv2-section h3 {
+  font: 500 22px / 1.25 var(--serif);
+  letter-spacing: -0.015em;
+  margin: 0 0 8px;
+}
+
+/* Interactive Play Studio */
+.hv2-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 20px 0 18px;
+}
+.hv2-tab {
+  font: 500 12px/1.3 var(--mono);
+  padding: 9px 13px;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  color: var(--ink-2);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s;
+}
+.hv2-tab:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+.hv2-tab[aria-pressed='true'] {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+.hv2-tab small {
+  display: block;
+  font-size: 10px;
+  opacity: 0.72;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.hv2-studio {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.85fr);
+  gap: 24px;
+  align-items: start;
+}
+.hv2-board-card {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 16px;
+}
+.hv2-board-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 14px;
+  margin-bottom: 10px;
+  font: 500 12px/1.3 var(--mono);
+}
+.hv2-legend {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+.hv2-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.hv2-chip {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.hv2-chip.blue {
+  background: radial-gradient(circle at 35% 30%, #7ec2c7, #16596e 70%, #092d3b);
+  border: 1px solid #0d3a4a;
+}
+.hv2-chip.ivory {
+  background: radial-gradient(circle at 35% 30%, #fffaf0, #dfc794 75%, #998155);
+  border: 1px solid #8a754c;
+}
+
+.hv2-play-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 692 / 474;
+  background: #ffffff;
+  border: 1px solid color-mix(in srgb, var(--ink) 12%, transparent);
+  user-select: none;
+  touch-action: none;
+}
+.hv2-play-wrap svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hv2-spot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 11%;
+  aspect-ratio: 1;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+}
+.hv2-spot[aria-disabled='true'] {
+  cursor: default;
+}
+.hv2-spot:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.hv2-status-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 14px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--rule);
+}
+.hv2-status-text {
+  font: 500 13px/1.4 var(--mono);
+  color: var(--ink);
+  margin: 0;
+  flex: 1 1 200px;
+}
+.hv2-status-actions {
+  display: inline-flex;
+  gap: 14px;
+  align-items: center;
+}
+
+.hv2-sidepanel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hv2-panel-box {
+  border: 1px solid var(--rule);
+  padding: 16px 18px;
+  background: var(--bg);
+}
+.hv2-panel-box p {
+  font: 400 17.5px/1.5 var(--serif);
+  color: var(--ink-2);
+  margin: 0 0 12px;
+}
+.hv2-panel-box p:last-child {
+  margin-bottom: 0;
+}
+.hv2-controls-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+}
+.hv2-controls-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font: 500 11px/1.3 var(--mono);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.hv2-controls-grid select {
+  font: 400 12.5px/1.3 var(--mono);
+  color: var(--ink);
+  background: var(--bg);
+  border: 1px solid var(--rule);
+  padding: 6px 8px;
+  text-transform: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.hv2-check-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font: 400 12px/1.4 var(--mono);
+  color: var(--ink-2);
+  margin-top: 10px;
+  cursor: pointer;
+}
+.hv2-check-row input {
+  accent-color: var(--accent);
+}
+
+/* Personal wear telemetry box */
+.hv2-meter-box {
+  border: 1px solid var(--rule);
+  padding: 14px 18px;
+  background: var(--surface);
+}
+.hv2-meter-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 8px;
+}
+.hv2-meter-head h4 {
+  font: 600 11px/1.4 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin: 0;
+  color: var(--ink);
+}
+.hv2-meter-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 6px;
+}
+.hv2-stat {
+  border-top: 1px solid var(--rule);
+  padding-top: 7px;
+}
+.hv2-stat b {
+  display: block;
+  font: 500 20px/1.15 var(--serif);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+.hv2-stat span {
+  display: block;
+  font: 400 10.5px/1.35 var(--mono);
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* Two-column editorial + visual layout (GIFs & Figure S16) */
+.hv2-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  gap: clamp(24px, 4vw, 48px);
+  align-items: start;
+  margin-top: 18px;
+}
+.hv2-media-card {
+  margin: 0;
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  overflow: hidden;
+}
+.hv2-media-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hv2-media-card figcaption {
+  padding: 12px 14px;
+  font: 400 12px/1.5 var(--mono);
+  color: var(--ink-2);
+  border-top: 1px solid var(--rule);
+}
+
+.hv2-photo-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 18px;
+  margin: 22px 0 8px;
+  align-items: stretch;
+}
+.hv2-photo-pair .hv2-media-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Compact clean data table */
+.hv2-table-wrap {
+  overflow-x: auto;
+  margin: 20px 0 8px;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--rule);
+}
+.hv2-table {
+  width: 100%;
+  border-collapse: collapse;
+  font: 400 12.5px/1.45 var(--mono);
+}
+.hv2-table th,
+.hv2-table td {
+  padding: 10px 10px;
+  text-align: left;
+  border-top: 1px solid var(--rule);
+  vertical-align: top;
+}
+.hv2-table thead th {
+  border-top: 0;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 500;
+}
+.hv2-table tr.hv2-highlight td {
+  background: color-mix(in srgb, var(--accent) 6%, var(--bg));
+}
+.hv2-table td:first-child {
+  font-family: var(--serif);
+  font-size: 16.5px;
+  color: var(--ink);
+}
+.hv2-badge {
+  display: inline-block;
+  font: 500 10px/1.2 var(--mono);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 6px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  margin-left: 6px;
+  vertical-align: 1px;
+}
+
+/* Interactive Wear Explorer */
+.hv2-explorer-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 14px;
+}
+.hv2-seg {
+  display: inline-flex;
+  border: 1px solid var(--ink);
+}
+.hv2-seg button {
+  font: 500 12px/1.3 var(--mono);
+  padding: 8px 13px;
+  border: 0;
+  background: var(--bg);
+  color: var(--ink);
+  cursor: pointer;
+}
+.hv2-seg button + button {
+  border-left: 1px solid var(--ink);
+}
+.hv2-seg button[aria-pressed='true'] {
+  background: var(--ink);
+  color: var(--bg);
+}
+.hv2-explorer-intro {
+  font: 400 18.5px/1.5 var(--serif);
+  color: var(--ink-2);
+  margin: 0 0 18px;
+  max-width: 44em;
+}
+.hv2-wear-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+.hv2-wear-card {
+  border: 1px solid var(--rule);
+  background: var(--surface);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+.hv2-wear-card h3 {
+  font: 500 17.5px/1.25 var(--serif);
+  margin: 0 0 4px;
+}
+.hv2-wear-sub {
+  font: 400 11px/1.4 var(--mono);
+  color: var(--muted);
+  margin: 0 0 10px;
+}
+.hv2-wear-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 4px 0 10px;
+}
+.hv2-wear-metrics {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--rule);
+  font: 500 11.5px/1.35 var(--mono);
+  font-variant-numeric: tabular-nums;
+}
+.hv2-wear-metrics span b {
+  display: block;
+  font-size: 15px;
+  color: var(--ink);
+}
+.hv2-wear-metrics span.is-pass b {
+  color: var(--accent);
+}
+.hv2-wear-note {
+  font: 400 13.5px/1.45 var(--serif);
+  color: var(--ink-2);
+  margin: 8px 0 0;
+}
+
+/* Open steps list */
+.hv2-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin: 22px 0 8px;
+}
+.hv2-step {
+  border-top: 2px solid var(--ink);
+  padding-top: 14px;
+}
+.hv2-step-num {
+  font: 600 11px/1.3 var(--mono);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 6px;
+}
+.hv2-step h3 {
+  font: 500 20px/1.25 var(--serif);
+  margin: 0 0 8px;
+}
+.hv2-step p {
+  font: 400 16.5px/1.5 var(--serif);
+  color: var(--ink-2);
+  margin: 0;
+}
+
+/* Collapsible archive notes & sources */
+.hv2-notes {
+  border-top: 1px solid var(--rule);
+  padding-top: 12px;
+  margin-top: 10px;
+}
+.hv2-notes details {
+  border-bottom: 1px solid var(--rule);
+  padding: 14px 0;
+}
+.hv2-notes summary {
+  font: 600 13px/1.4 var(--mono);
+  color: var(--ink);
+  cursor: pointer;
+}
+.hv2-notes details p,
+.hv2-notes details li {
+  font: 400 17px/1.55 var(--serif);
+  color: var(--ink-2);
+  max-width: 48em;
+}
+.hv2-notes details ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+.hv2-notes details li + li {
+  margin-top: 6px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hv2-hero,
+  .hv2-studio,
+  .hv2-split,
+  .hv2-photo-pair {
+    grid-template-columns: 1fr;
+  }
+  .hv2-wear-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .hv2-steps {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 560px) {
+  .hv2-wear-grid {
+    grid-template-columns: 1fr;
+  }
+  .hv2-controls-grid {
+    grid-template-columns: 1fr;
+  }
+  .hv2-table {
+    font-size: 11.5px;
+  }
+  .hv2-table th,
+  .hv2-table td {
+    padding: 8px 6px;
+  }
+  .hv2-table td:first-child {
+    font-size: 14.5px;
+  }
+}

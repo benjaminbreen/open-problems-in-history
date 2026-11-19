@@ -1,0 +1,35 @@
+.heerlen-versions {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.heerlen-versions p {
+  margin: 0 0 6px;
+  font: 400 16px/1.4 var(--serif);
+  color: var(--ink-2);
+}
+.heerlen-versions nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 3px 20px;
+  margin: 0;
+  font: 400 12px/1.5 var(--mono);
+}
+.heerlen-versions nav a {
+  padding-block: 4px;
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--rule);
+  text-underline-offset: 4px;
+}
+.heerlen-versions nav a:hover,
+.heerlen-versions nav a:focus-visible {
+  text-decoration-color: var(--accent);
+}
+.heerlen-versions nav a[aria-current="page"] {
+  font-weight: 600;
+  box-shadow: none;
+  text-decoration: underline 2px var(--accent);
+}

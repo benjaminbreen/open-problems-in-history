@@ -6,7 +6,7 @@
     <title>What game wore down this stone? · Open Problems in History</title>
     <meta
       name="description"
-      content="Play three reconstructions of a Roman board, read the traces of 1,000 computer games, and test what a worn diagonal can tell us."
+      content="Slide a piece across a Roman game board from Heerlen. The same move can trap a hare or complete a row of three. Which game did the Romans play?"
     />
     <link rel="canonical" href="https://historyproblems.com/leads/heerlen" />
     <meta property="og:title" content="What game wore down this stone?" />
@@ -30,6 +30,7 @@
     />
     <link rel="stylesheet" href="/style.css" />
     <link rel="stylesheet" href="/leads/heerlen/exhibit.css" />
+    <link rel="stylesheet" href="/leads/heerlen-versions.css" />
   </head>
   <body>
     <header class="top">
@@ -39,239 +40,297 @@
         ><button class="mode" type="button" aria-label="Switch light or dark">◐</button>
       </nav>
     </header>
+    <aside class="heerlen-versions" aria-label="About the three versions">
+      <p>We asked three AI models to write about the same Roman game board. Compare how each uses the evidence to reconstruct the game.</p>
+      <nav aria-label="Roman game versions">
+        <a href="/leads/heerlen" aria-current="page">A · GPT Astra 6.2</a>
+        <a href="/leads/heerlen-v2">B · Gemini 4</a>
+        <a href="/leads/heerlen-c">C · Claude Fable 5.2</a>
+      </nav>
+    </aside>
     <main class="hr-exhibit">
-      <header class="hr-hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Heerlen, Netherlands · Object 04433</p>
+      <header class="opening">
+        <div class="opening-copy">
+          <p class="place">Heerlen, the Netherlands</p>
           <h1>What game wore down this stone?</h1>
-          <p class="intro">
+          <p class="lead">
             A piece of limestone from the Roman town beneath Heerlen has a smooth patch beside one diagonal
             cut. In 2026, researchers proposed that players wore it down in a game where one side tried to
-            trap the other. Could three in a row leave the same trace?
+            trap the other.
           </p>
-          <div class="actions">
-            <a class="hr-action" href="#tracks">Try the blind test <span aria-hidden="true">↓</span></a
-            ><a class="jump" href="#play">Play the games <span aria-hidden="true">↘</span></a>
-          </div>
+          <p>
+            Roman writers mention board games, but no surviving Roman text describes one in which a player
+            wins this way. If the researchers are right, this stone preserves a way of playing that we might
+            otherwise have missed.
+          </p>
         </div>
-        <figure class="artifact">
-          <div class="artifact-field">
+        <figure class="object">
+          <div class="object-view">
             <img
-              id="stone-photo"
               src="/leads/heerlen/heerlen-stone.webp"
               width="692"
               height="474"
-              alt="Pale limestone with a rectangle and four diagonal lines inscribed across its upper face."
+              alt="A pale, roughly oval stone with a rectangle cut into its flat upper face. A diagonal slopes up from the bottom edge toward the right."
             />
-            <div id="stone-drawing" hidden></div>
+            <svg class="annotation" viewBox="0 0 692 474" aria-hidden="true" id="wear-mark" hidden>
+              <path class="wear-area" d="M387 383 Q479 351 568 306" />
+              <path class="leader" d="M492 332 L537 251 L634 251" />
+              <circle cx="492" cy="332" r="5" />
+            </svg>
           </div>
           <figcaption>
-            <div class="switch" role="group" aria-label="View of the object">
-              <button type="button" data-object="photo" aria-pressed="true">Stone</button
-              ><button type="button" data-object="drawing" aria-pressed="false">Trace</button>
-            </div>
-            <span id="stone-label">21.2 cm across · modern pencil follows the cuts</span>
+            <button type="button" class="link-button" id="mark-wear" aria-pressed="false">
+              Show the worn area</button
+            ><span>21.2 cm across · Het Romeins Museum, no. 04433</span>
           </figcaption>
+          <p class="photo-note" id="photo-note" aria-live="polite">
+            The dark lines are modern pencil marks following the ancient cuts.
+          </p>
         </figure>
       </header>
+      <div class="hinge">
+        <p>
+          How could they tell? Imagine two people using pebbles as playing pieces. If they slid a pebble along
+          the same route for years, the limestone there might gradually feel smoother. The researchers had
+          computers play different games on a copy of the board. Nine combinations of rules and board layouts
+          matched the wear, and all nine involved trapping pieces.
+        </p>
+        <p>
+          We went back to the researchers’ move records. A different game also kept sending pieces around the
+          worn corner. Its aim was to get three of your own pieces into a straight line, much as you would in
+          tic-tac-toe. You can see the problem by making one move in each game.
+        </p>
+        <a href="#play" class="forward">Try the two moves <span aria-hidden="true">↓</span></a>
+      </div>
       <noscript
         ><p>
-          Enable JavaScript to play and inspect the boards. The archived three-in-a-row games put 28.91% of
-          their moves on one diagonal. In the adjusted file the busiest diagonal gets 10.01%. The study’s
-          cutoff is 13.33%.
+          Enable JavaScript to move the pieces. As you read on you can still see what the study found and why
+          the Roman rules remain uncertain.
         </p></noscript
       >
-      <section id="tracks" class="chapter">
-        <div class="chapter-intro">
-          <p class="eyebrow">The blind test</p>
-          <h2>Which game left these tracks?</h2>
-          <p>
-            One pair of computer players tried to line up three counters. Another played dogs and hares. Each
-            map adds up 1,000 games on the same board. Thicker lines carried more moves.
-          </p>
-        </div>
-        <div class="chapter-body">
-          <div class="trace-pair">
-            <figure>
-              <figcaption>Trace A</figcaption>
-              <div id="trace-a"></div>
-            </figure>
-            <figure>
-              <figcaption>Trace B</figcaption>
-              <div id="trace-b"></div>
-            </figure>
-          </div>
-          <div class="guess" role="group" aria-label="Which trace came from three in a row?">
-            <strong>Which one is three in a row?</strong><button class="choice" data-guess="0">Trace A</button
-            ><button class="choice" data-guess="1">Trace B</button>
-          </div>
-          <div id="guess-answer" class="answer" role="status" hidden></div>
-        </div>
-      </section>
       <section id="play" class="chapter">
-        <div class="chapter-intro">
-          <p class="eyebrow">The playing table</p>
-          <h2>Leave a trace of your own.</h2>
-          <p id="game-rules"></p>
-          <details class="mini-details">
-            <summary>How the pieces move</summary>
-            <p>
-              Each dot is a place for one counter. Follow a drawn edge to a neighbouring empty dot. Pieces
-              cannot jump or capture. For three in a row, count consecutive dots along a straight line.
+        <h2>Two ways to play on the stone</h2>
+        <div class="game-grid">
+          <div class="game-copy">
+            <div class="tabs" aria-label="Choose an example" role="group" id="lesson-tabs">
+              <button type="button" data-lesson="dogs" aria-pressed="true">Trap the hares</button>
+              <button type="button" data-lesson="line" aria-pressed="false">Make a row</button>
+            </div>
+            <h3 id="lesson-title">How do you trap a hare?</h3>
+            <div id="game-rules">
+              <p>
+                You have four blue pieces, the “dogs.” Your opponent has two ivory pieces, the “hares.” The
+                names come from a later game. We don’t know what Roman players called their pieces.
+              </p>
+              <p>
+                On each turn, one piece slides along a cut to the next empty spot. You win if neither hare has
+                anywhere left to go.
+              </p>
+            </div>
+            <p class="assignment" id="assignment">
+              The hares are together on the right. Move the blue dog at the bottom of the board to close their
+              last way out.
             </p>
-          </details>
-        </div>
-        <div class="chapter-body">
-          <div class="play-controls">
-            <label
-              >Game
-              <select id="game-kind">
-                <option value="trap">One-move trap</option>
-                <option value="line">Three in a row</option>
-                <option value="dogs">Four dogs, two hares</option>
-                <option value="hares">Two hares, three dogs</option>
-              </select></label
-            ><label
-              >Opponent
-              <select id="opponent">
-                <option value="computer">Computer</option>
-                <option value="local">Second player</option>
-              </select></label
-            >
-          </div>
-          <div class="game-field">
-            <div class="game-head">
-              <span class="pieces-key"
-                ><i class="token first"></i><span id="side-one">You</span><i class="token second"></i
-                ><span id="side-two">Computer</span></span
-              ><span id="move-count"></span>
+            <div id="full-controls" hidden>
+              <label
+                >Game
+                <select id="game-kind">
+                  <option value="dogs">Four dogs against two hares</option>
+                  <option value="line">Three in a row</option>
+                  <option value="hares">Two hares against three dogs</option>
+                </select></label
+              ><label
+                >Opponent
+                <select id="opponent">
+                  <option value="computer">Computer</option>
+                  <option value="local">Another person here</option>
+                </select></label
+              >
             </div>
-            <div id="play-board" class="playing-board"></div>
-            <div class="game-foot">
-              <p id="turn-note" role="status" aria-live="polite"></p>
-              <div class="small-actions">
-                <button id="undo" class="text-action" type="button">Undo</button
-                ><button id="restart" class="text-action" type="button">New game</button
-                ><button class="text-action" type="button" id="full-game" hidden>Play the full game →</button>
+          </div>
+          <figure class="table-figure">
+            <div class="play-surface">
+              <div class="board-key">
+                <span><i class="chip blue"></i><b id="side-one">Your dogs</b></span
+                ><span><i class="chip ivory"></i><b id="side-two">Hares</b></span>
+              </div>
+              <div
+                id="play-board"
+                class="playing-board"
+                role="group"
+                aria-label="Playable stone. Select a piece and then a connected empty spot."
+              >
+                <div id="play-art"></div>
               </div>
             </div>
-          </div>
-          <div class="personal">
-            <label><input type="checkbox" id="show-trail" checked /> Show movement trails</label
-            ><span id="own-stats"></span>
-          </div>
-        </div>
-      </section>
-      <section id="replay" class="chapter">
-        <div class="chapter-intro">
-          <p class="eyebrow">One recorded game</p>
-          <h2>Watch two tracks form.</h2>
-          <p>
-            Here is one of the 1,000 three-in-a-row games. The first six turns place the counters. Jump to
-            turn 80 and try predicting the next move. What happens when both players keep repeating
-            themselves?
-          </p>
-        </div>
-        <div class="chapter-body">
-          <div class="replay-field">
-            <div id="replay-board"></div>
-            <p id="replay-description" class="compact"></p>
-          </div>
-          <div class="transport">
-            <button type="button" id="replay-toggle" class="choice">Play replay</button
-            ><button type="button" id="replay-step" class="choice" aria-label="Advance one recorded turn">
-              Step →</button
-            ><button type="button" class="text-action" id="replay-jump">Jump to turn 80</button
-            ><output id="replay-position" for="timeline"></output>
-          </div>
-          <input id="timeline" type="range" min="0" max="250" step="1" value="0" aria-label="Recorded turn" />
-          <div class="range-labels"><span>First placement</span><span>Move limit</span></div>
-        </div>
-      </section>
-      <section id="files" class="chapter">
-        <div class="chapter-intro">
-          <p class="eyebrow">The archive check</p>
-          <h2>One game, two answers.</h2>
-          <p>
-            The researchers screened for a diagonal carrying at least twice the average traffic. This board
-            has 15 edges, which puts the cutoff at <strong>13.33%</strong> of all moves. Switch files and
-            watch the same game cross the line.
-          </p>
-        </div>
-        <div class="chapter-body">
-          <div class="switch" role="group" aria-label="Archive file">
-            <button type="button" data-file="raw" aria-pressed="true">Individual game logs</button
-            ><button type="button" data-file="adjusted" aria-pressed="false">Adjusted file</button>
-          </div>
-          <div class="file-layout">
-            <div id="file-board"></div>
-            <div class="reading">
-              <span class="eyebrow">Busiest diagonal</span><strong id="read-pct"></strong>
-              <div class="meter" role="img" id="meter">
-                <div></div>
-                <i></i>
+            <figcaption>
+              <p class="turn-note" id="turn-note" role="status"></p>
+              <div class="play-actions">
+                <button type="button" id="lesson-action" class="solid">Show me the move</button
+                ><a href="#tracks" class="forward" id="to-counts" hidden>See the move records ↓</a
+                ><button type="button" class="link-button" id="undo" hidden>Undo</button
+                ><button type="button" class="link-button" id="restart" hidden>Start again</button>
               </div>
-              <span class="cut-label">Cutoff 13.33%</span>
-              <p id="read-result" aria-live="polite"></p>
+            </figcaption>
+            <div class="full-link">
+              <button type="button" class="link-button" id="change-mode">Play a full game</button
+              ><label id="trail-option" hidden
+                ><input type="checkbox" id="show-trail" checked /> Mark the paths you’ve used</label
+              >
+            </div>
+          </figure>
+        </div>
+      </section>
+      <section id="tracks" class="chapter">
+        <div class="measure-intro">
+          <h2>Where did the pieces go in 1,000 games?</h2>
+          <p>
+            The two moves above are examples we set up. For evidence, we counted the moves in two sets of
+            games the researchers actually ran. In one set, the computer players tried to make a row of three.
+            In the other, three dogs tried to trap two hares. Each set contains 1,000 games.
+          </p>
+          <p>
+            Look at the little triangle in the lower right. It includes the worn diagonal and the two
+            stretches of board beside it. In both games, roughly nine slides out of ten followed one of those
+            three paths.
+          </p>
+        </div>
+        <figure class="comparison">
+          <div class="selectors" role="group" aria-label="Choose paths to compare">
+            <button data-region="corner" aria-pressed="true">Corner triangle</button
+            ><button data-region="diagonal" aria-pressed="false">Worn diagonal</button
+            ><button data-region="middle" aria-pressed="false">Middle line</button>
+          </div>
+          <div class="maps">
+            <div>
+              <h3>Trapping the hares</h3>
+              <div id="map-hares"></div>
+              <p id="count-hares">90.8% of all slides</p>
+            </div>
+            <div>
+              <h3>Making a row of three</h3>
+              <div id="map-line"></div>
+              <p id="count-line">91.2% of all slides</p>
             </div>
           </div>
-          <p class="file-detail" id="file-detail"></p>
+          <figcaption id="compare-caption" aria-live="polite">
+            The red paths show the selected part of the board. Thicker paths carried more pieces.
+          </figcaption>
+        </figure>
+        <div class="afterword">
+          <p>
+            We chose these two sets because their patterns look alike. Other starting positions gave different
+            results. If repeated slides smoothed the stone, either game could account for the location of the
+            worn patch. It would take another clue to tell us which game the people of Heerlen played.
+          </p>
         </div>
       </section>
-      <section class="conclusion">
-        <h2>What can a worn line tell us?</h2>
-        <p>
-          No surviving Roman text describes a blocking game. If the people of Heerlen played one, this little
-          stone preserves a part of everyday life their writers missed. But three in a row also sent counters
-          around the same corner. The wear tells us where pieces may have travelled. What the players were
-          trying to do is still an open question.
-        </p>
-        <p>
-          A next experiment would give people both games, record their moves, and ask someone who never saw
-          them play to identify the rules from the tracks.
-        </p>
-        <details class="sources">
-          <summary>Sources, credits and how to read the numbers</summary>
-          <p>
-            The diagrams follow board 6 in figure 4 of
-            <a href="https://doi.org/10.15184/aqy.2025.10264"
-              >Crist and colleagues’ 2026 study in <i>Antiquity</i></a
-            >. The investigators describe several possible layouts and nine candidate blocking configurations.
-            The header photograph shows the stone before cleaning, with modern pencil along the cuts.
-            Photograph courtesy of Restaura, cropped from figure 1A,
-            <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The red diagonal in the
-            drawing marks the reported area of wear schematically.
-          </p>
-          <p>
-            The blind test pairs two deliberately similar cases from the authors’
-            <a href="https://doi.org/10.34894/BWSJXL">replication archive, version 1.0</a>. One uses three
-            counters per player. The other starts with two hares and three dogs, hares first. The four-dog
-            game is a separate published candidate. Dogs and hares are names borrowed from later games. The
-            stone preserves no counters or names for the pieces. The one-move puzzle starts just before the
-            final slide in its first deposited game (trial 0). The archive contains
-            <a href="https://dataverse.nl/api/access/datafile/453530">individual trial logs</a>,
-            <a href="https://dataverse.nl/api/access/datafile/453529">raw counts</a> and
-            <a href="https://dataverse.nl/api/access/datafile/453531">adjusted percentages</a>. Percentages
-            count moves along edges. Initial placements contribute zero. All maps use the same line-width
-            scale. The diagonal cutoff was the first screen. The authors also examined the centre, the
-            adjacent edges and how much of the board saw play.
-          </p>
-          <p>
-            All 1,000 archived three-in-a-row games reached the 250-turn limit with a draw. In the adjusted
-            file, the centre line’s share changes even though it maps onto itself under every permitted flip.
-            The files alone do not explain the difference. The
-            <a
-              href="https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0003598X25102640/resource/name/S0003598X25102640sup001.docx"
-              >supplement</a
-            >
-            specifies Ludii 1.3.8. The inspected logs identify version 1.3.12. The opponent on this page is a
-            small local game program. Archive totals and replays always use the deposited research data.
-          </p>
+      <section class="study-notes" aria-label="The computer games and the evidence">
+        <details id="replay">
+          <summary>Would people play like these computer players?</summary>
+          <div class="notes-grid">
+            <div>
+              <p>
+                In this recorded game, Blue and Ivory are both trying to make a row of three. Start at turn 80
+                and watch four turns. Blue slides a piece out and back. Ivory does the same. Both have
+                returned to exactly where they started.
+              </p>
+              <p>
+                The researchers set the computer a limit of 250 turns per game. All 1,000 games of three in a
+                row on this layout reached that limit without a winner. Every trip back and forth counted as
+                another slide. People might change tactics or give up much sooner, leaving a different pattern
+                on the stone.
+              </p>
+            </div>
+            <figure class="record">
+              <div id="replay-board"></div>
+              <figcaption>
+                <p id="replay-description"></p>
+                <button class="solid" id="replay-four" type="button">Watch the four turns</button
+                ><button class="link-button" id="replay-step" type="button">Next turn</button
+                ><label class="slider-label" for="timeline"
+                  >Browse the whole game <output id="replay-position" for="timeline"></output></label
+                ><input id="timeline" type="range" min="0" max="250" value="80" />
+              </figcaption>
+            </figure>
+          </div>
+        </details>
+        <details id="files">
+          <summary>Why did the published study favor a trapping game?</summary>
+          <div class="notes-grid">
+            <div>
+              <p>
+                The researchers first looked for games in which one diagonal got at least twice as much use as
+                an average path. There are 15 paths here. A diagonal had to carry at least 13.33% of the
+                slides to qualify. They then examined which other paths saw play. All nine of their final
+                candidates were trapping games.
+              </p>
+              <p>
+                For three in a row, two files in their archive disagree about that first test. We can
+                reproduce the higher figure by counting the individual moves. The authors also deposited
+                percentages adjusted to account for players approaching the board from different sides. Those
+                percentages give a lower figure.
+              </p>
+            </div>
+            <div class="archive-figure">
+              <h3>Share of slides on the busiest diagonal</h3>
+              <div class="archive-row">
+                <span>Individual move records</span>
+                <div class="bar"><i style="width: 82.6%"></i></div>
+                <b>28.91%</b>
+              </div>
+              <div class="archive-row">
+                <span>Adjusted percentages</span>
+                <div class="bar"><i style="width: 28.6%"></i></div>
+                <b>10.01%</b>
+              </div>
+              <p class="bar-key">The vertical mark is the 13.33% needed to qualify.</p>
+              <p>
+                Even the middle line changes, from 0.09% to 1.11%. That line stays in the same place when you
+                flip the board. We still don’t know which step, or which set of games, accounts for the
+                difference.
+              </p>
+            </div>
+          </div>
         </details>
       </section>
+      <section class="ending">
+        <h2>What evidence would help?</h2>
+        <p>
+          A Roman account describing how to win on a board with these markings would give us an answer. In the
+          meantime, there is an experiment we can do. Give people copies of the board and teach half of them
+          each game. After a few evenings of play, could someone who missed the games tell the two groups
+          apart from the paths their pieces took?
+        </p>
+      </section>
+      <details class="sources">
+        <summary>Read the study and inspect the move records</summary>
+        <p>
+          Walter Crist and colleagues studied object 04433 at Het Romeins Museum in Heerlen. Their photograph
+          shows the stone before cleaning. The annotation locates the reported wear approximately. The
+          playable surface follows their preferred layout, joining closely spaced cuts into single playing
+          spots. The blue and ivory pieces and both teaching positions are illustrations.
+          <a href="https://doi.org/10.15184/aqy.2025.10264">Study and figures, <i>Antiquity</i> (2026)</a>.
+          Photograph courtesy of Restaura, cropped from figure 1A,
+          <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+        </p>
+        <p>
+          All counts and the replay use board 6 in the authors’ public archive. We counted slides between
+          neighboring spots, leaving out the initial placements. The three-dog example starts with the hares
+          moving first. The local computer opponent lets you play the rules yourself. The archived players
+          used Ludii. <a href="https://doi.org/10.34894/BWSJXL">Replication archive, version 1.0</a> ·
+          <a href="https://dataverse.nl/api/access/datafile/453530">Individual games (ZIP)</a> ·
+          <a href="https://dataverse.nl/api/access/datafile/453529">Move counts (ZIP)</a> ·
+          <a href="https://dataverse.nl/api/access/datafile/453531">Adjusted percentages (ZIP)</a> ·
+          <a
+            href="https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0003598X25102640/resource/name/S0003598X25102640sup001.docx"
+            >Supplementary methods</a
+          >.
+        </p>
+      </details>
     </main>
     <footer class="hr-footer">
-      <a class="mark" href="/">Open Problems in History</a><a href="#tracks">Back to the boards ↑</a>
+      <a class="mark" href="/">Open Problems in History</a><a href="#play">Back to the games ↑</a>
     </footer>
     <script type="module" src="/leads/heerlen/exhibit.js"></script>
   </body>

@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>What game was played on this Roman stone? · Open Problems in History</title>
+    <meta
+      name="description"
+      content="Play four reconstructions of a carved Roman game stone from Heerlen and see what its worn diagonal and incised lines can—and cannot—tell us about the rules."
+    />
+    <link rel="canonical" href="https://historyproblems.com/leads/heerlen-v2" />
+    <meta property="og:site_name" content="Open Problems in History" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What game was played on this Roman stone?" />
+    <meta
+      property="og:description"
+      content="Play four reconstructions of a carved Roman game stone from Heerlen and test what its worn corner can tell us about the rules."
+    />
+    <meta property="og:image" content="https://historyproblems.com/leads/heerlen-v2/heerlen-stone.webp" />
+    <link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt" />
+    <script>
+      try {
+        const t = localStorage.getItem('op.theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/signature.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/leads/heerlen-v2/exhibit-v2.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>"
+    />
+    <link rel="stylesheet" href="/leads/heerlen-versions.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="mark" href="/">Open Problems in History</a>
+      <nav aria-label="Site">
+        <a href="/" data-nav="list">Problems</a>
+        <a href="/leads" data-nav="leads" aria-current="page">Leads</a>
+        <a href="/suggest" data-nav="suggest">Suggest a problem</a>
+        <a href="/sources" data-nav="sources">Sources</a>
+        <a href="/about" data-nav="about">About</a>
+        <button class="mode" type="button" aria-label="Switch light or dark">◐</button>
+      </nav>
+    </header>
+
+    <aside class="heerlen-versions" aria-label="About the three versions">
+      <p>We asked three AI models to write about the same Roman game board. Compare how each uses the evidence to reconstruct the game.</p>
+      <nav aria-label="Roman game versions">
+        <a href="/leads/heerlen">A · GPT Astra 6.2</a>
+        <a href="/leads/heerlen-v2" aria-current="page">B · Gemini 4</a>
+        <a href="/leads/heerlen-c">C · Claude Fable 5.2</a>
+      </nav>
+    </aside>
+    <main id="app" tabindex="-1">
+      <article class="hv2">
+        <a class="back" href="/leads">← All leads</a>
+
+        <header class="hv2-hero">
+          <div class="hv2-hero-copy">
+            <p class="hv2-kicker">Heerlen, the Netherlands · Het Romeins Museum, no. 04433</p>
+            <h1>What game was played on this Roman stone?</h1>
+            <p class="hv2-lede">
+              In the Roman museum of Heerlen sits an oval slab of pale limestone about the size of a
+              paperback book. Nearly two thousand years ago, when the city was the Roman crossroads town of
+              Coriovallum, someone carved a rectangle into its flat face, divided it down the middle, and cut
+              four diagonals angling into the corners.
+            </p>
+            <p>
+              No surviving Roman text describes this board, and no identical example is known. In February
+              2026, archaeologist Walter Crist and colleagues proposed a clever way to narrow down the lost
+              rules. Under a microscope, they found that the stone beside one of the four diagonals was
+              rubbed smoother than the rest of the slab, as if glass or bone counters had slid across it for
+              years. They fed the board into a game-playing computer program to test 130 candidate rulebooks.
+              Every match was a “hunt” game—like later European <em>Hare and Hounds</em>, where one player
+              tries to trap the other’s pieces—a kind of game never mentioned in surviving Roman writing.
+            </p>
+            <p>
+              Below, you can play four different games directly on a photograph of the stone—two hunt
+              variants alongside Roman three-in-a-row and a small capture game—and see what the board’s own
+              lines, dimensions, and wear marks can and cannot tell us.
+            </p>
+            <div class="hv2-cta-row">
+              <a class="hv2-btn-solid" href="#play">Play on the stone ↓</a>
+            </div>
+          </div>
+
+          <figure class="hv2-object">
+            <div class="hv2-object-stage">
+              <img
+                src="/leads/heerlen-v2/heerlen-stone.webp"
+                width="692"
+                height="474"
+                alt="An oval slab of pale Roman limestone from Heerlen carved with a rectangle, a vertical center line, two outer parallel lines, and four corner diagonals."
+              />
+              <svg
+                class="hv2-overlay"
+                id="hv2-wear-overlay"
+                viewBox="0 0 692 474"
+                aria-hidden="true"
+                hidden
+              >
+                <path
+                  d="M362 380 Q475 352 578 300"
+                  fill="none"
+                  stroke="#c4321c"
+                  stroke-width="34"
+                  stroke-linecap="round"
+                  opacity="0.34"
+                />
+                <path
+                  d="M424 377 L585 297"
+                  fill="none"
+                  stroke="#c4321c"
+                  stroke-width="3.2"
+                  stroke-linecap="round"
+                />
+                <rect x="470" y="218" width="136" height="28" rx="3" fill="#141210" fill-opacity="0.9" />
+                <text x="538" y="236" text-anchor="middle" fill="#ffffff" font-family="IBM Plex Mono, monospace" font-size="12" font-weight="500">
+                  Worn diagonal
+                </text>
+                <line x1="518" y1="246" x2="492" y2="332" stroke="#141210" stroke-width="2" />
+                <circle cx="492" cy="332" r="4.5" fill="#c4321c" stroke="#ffffff" stroke-width="1.5" />
+              </svg>
+            </div>
+            <figcaption>
+              <button type="button" class="hv2-toggle-pill" id="hv2-mark-wear" aria-pressed="false">
+                Show the worn corner
+              </button>
+              <span>21.2 × 14.5 cm · Norroy limestone</span>
+            </figcaption>
+            <p class="hv2-photo-note" id="hv2-photo-note" aria-live="polite">
+              Dark lines are modern pencil marks following the ancient cuts (Restaura / Antiquity 2026, CC BY 4.0).
+            </p>
+          </figure>
+        </header>
+
+        <!-- SECTION 1: PLAYABLE STONE -->
+        <section id="play" class="hv2-section">
+          <h2>Play on the stone</h2>
+          <div class="hv2-prose">
+            <p>
+              Choose a rulebook below and click or drag counters along the carved lines. Red ink marks the
+              paths your pieces use most, so you can see how each game feels—and where it sends traffic on
+              the limestone.
+            </p>
+          </div>
+
+          <div class="hv2-tabs" role="group" aria-label="Choose a game">
+            <button type="button" class="hv2-tab" data-game="hunt31" aria-pressed="true">
+              3 Hounds vs. 1 Hare
+              <small>No backward moves</small>
+            </button>
+            <button type="button" class="hv2-tab" data-game="line" aria-pressed="false">
+              Three-in-a-Row
+              <small>Roman Terni Lapilli</small>
+            </button>
+            <button type="button" class="hv2-tab" data-game="latrunculi" aria-pressed="false">
+              Little Soldiers
+              <small>4-vs-4 capture</small>
+            </button>
+            <button type="button" class="hv2-tab" data-game="hunt42" aria-pressed="false">
+              4 Hounds vs. 2 Hares
+              <small>2026 Antiquity study</small>
+            </button>
+          </div>
+
+          <div class="hv2-studio">
+            <div class="hv2-board-card">
+              <div class="hv2-board-topbar">
+                <div class="hv2-legend">
+                  <span><i class="hv2-chip blue"></i><b id="hv2-side-one">Hounds (you)</b></span>
+                  <span><i class="hv2-chip ivory"></i><b id="hv2-side-two">Hare</b></span>
+                </div>
+                <span style="color: var(--muted)">10 spots · 15 paths</span>
+              </div>
+
+              <div
+                id="hv2-play-wrap"
+                class="hv2-play-wrap"
+                role="group"
+                aria-label="Playable Roman game stone. Click or drag a counter to a connected open spot."
+              >
+                <div id="hv2-play-art"></div>
+              </div>
+
+              <div class="hv2-status-bar">
+                <p class="hv2-status-text" id="hv2-status" role="status"></p>
+                <div class="hv2-status-actions">
+                  <button type="button" class="hv2-btn-link" id="hv2-undo">Undo</button>
+                  <button type="button" class="hv2-btn-link" id="hv2-restart">New game</button>
+                </div>
+              </div>
+            </div>
+
+            <aside class="hv2-sidepanel">
+              <div class="hv2-panel-box">
+                <h3 id="hv2-rule-title">Three hounds against one hare (no retreat)</h3>
+                <p id="hv2-rule-summary"></p>
+
+                <div class="hv2-controls-grid">
+                  <label>
+                    Opponent
+                    <select id="hv2-opponent">
+                      <option value="computer">Computer</option>
+                      <option value="local">Pass &amp; play</option>
+                    </select>
+                  </label>
+                  <label id="hv2-strength-wrap">
+                    Difficulty
+                    <select id="hv2-strength">
+                      <option value="strong">Sharp</option>
+                      <option value="casual">Casual</option>
+                    </select>
+                  </label>
+                  <label id="hv2-side-wrap">
+                    Play as
+                    <select id="hv2-play-as">
+                      <option value="1">Hounds (Blue)</option>
+                      <option value="2">Hare (Ivory)</option>
+                    </select>
+                  </label>
+                </div>
+
+                <label class="hv2-check-row">
+                  <input type="checkbox" id="hv2-show-trail" checked />
+                  Show wear trail as pieces move
+                </label>
+              </div>
+
+              <div class="hv2-meter-box">
+                <div class="hv2-meter-head">
+                  <h4>Your moves (<span id="hv2-m-total">0 slides</span>)</h4>
+                  <button type="button" class="hv2-btn-link" id="hv2-reset-trails">Clear</button>
+                </div>
+                <div class="hv2-meter-stats">
+                  <div class="hv2-stat">
+                    <b id="hv2-m-diag">—</b>
+                    <span>Worn diagonal</span>
+                  </div>
+                  <div class="hv2-stat">
+                    <b id="hv2-m-bot">—</b>
+                    <span>Bottom corners</span>
+                  </div>
+                  <div class="hv2-stat">
+                    <b id="hv2-m-ctr">—</b>
+                    <span>Center line</span>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </section>
+
+        <!-- SECTION 2: GEOMETRY & PLAYABILITY -->
+        <section id="hunt" class="hv2-section">
+          <h2>Why three hounds against one hare fits the board</h2>
+
+          <div class="hv2-split">
+            <div class="hv2-prose">
+              <p>
+                Look at the geometry of the carved lines. Five of the interior cuts—all four diagonals and
+                the vertical center line—connect only <strong>two</strong> intersections. You can never make
+                a row of three on a two-point line, nor can you sandwich an opposing piece between two of
+                your own there. On standard Roman three-in-a-row boards (<em>Terni Lapilli</em>, mentioned by
+                Ovid), every line holds three points. On the Heerlen stone, half the interior lines work best
+                simply as roads for moving pieces—which suits a hunt or blocking game naturally.
+              </p>
+              <p>
+                Among hunt games, however, piece counts and movement rules matter enormously. Because this
+                layout has only ten intersections, every possible position can be solved exactly. In the
+                four-against-two version highlighted by the 2026 study, four free-moving hounds are too
+                strong: from every starting arrangement on the board, they can force a trap in 15 or 16
+                moves, and no historical European hunt game uses four pieces against two.
+              </p>
+              <p>
+                Every comparable European hunt game—Danish <em>Haretavl</em> and <em>Hund efter hare</em>,
+                Spanish <em>La liebre perseguida</em>, French <em>Jeu Militaire</em>—uses
+                <strong>three hounds against one hare</strong>, and most forbid the hounds from moving
+                backward. Played from one end of the Heerlen stone to the other under that rule, only about a
+                third of board positions (570 of 1,680) are forced wins for the hounds. Against random moves,
+                the hare escapes two-thirds of the time; with sharp play, the hounds corner it at the bottom
+                end in 8 to 11 moves, sending roughly half of all traffic into the bottom corners while
+                leaving the center line lightly used.
+              </p>
+            </div>
+
+            <figure class="hv2-media-card">
+              <img
+                src="/leads/heerlen-v2/hunt-trap-demo.gif"
+                width="640"
+                height="486"
+                loading="lazy"
+                alt="Animated demonstration on the Heerlen limestone showing three blue hounds marching downward without retreating to trap an ivory hare in the bottom corner in 11 moves, with zero moves along the center line."
+              />
+              <figcaption>
+                <strong>An 11-move trap (3 hounds vs. 1 hare, no retreat).</strong> Marching down from the
+                top hub naturally concentrates traffic in the bottom triangles and diagonals (54.5% under
+                optimal play; 47.5% under random moves) without relying on the center line.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div class="hv2-table-wrap">
+            <table class="hv2-table">
+              <thead>
+                <tr>
+                  <th>Hunt variant on this board</th>
+                  <th>Attested ratio?</th>
+                  <th>Forced hound-win states</th>
+                  <th>How it plays</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="hv2-highlight">
+                  <td>3 hounds vs. 1 hare, no retreat (top → bottom)</td>
+                  <td>Yes (all European parallels)</td>
+                  <td>570 / 1,680 (33.9%)</td>
+                  <td>Sharp hounds trap in 8–11 moves; hare escapes ~66–69% under random moves.</td>
+                </tr>
+                <tr>
+                  <td>4 hounds vs. 2 hares, free movement (2026 study)</td>
+                  <td>No</td>
+                  <td>6,300 / 6,300 (100%)*</td>
+                  <td>Forced hound win in 15–16 moves from the published starts; hares cannot win.</td>
+                </tr>
+                <tr>
+                  <td>3 hounds vs. 1 hare, free movement</td>
+                  <td>Yes</td>
+                  <td>1,680 / 1,680 (100%)</td>
+                  <td>Forced hound win in 9–10 moves from every position on the board.</td>
+                </tr>
+                <tr>
+                  <td>3 hounds vs. 2 hares, free movement</td>
+                  <td>No</td>
+                  <td>388 / 5,040 (7.7%)</td>
+                  <td>Hares evade indefinitely from the symmetric start; mostly draws.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="hv2-photo-note">
+            *Counts positions where blocked hounds pass, matching Ludii; counting dog immobilization as a
+            loss gives 6,290 / 6,300. All counts are exact retrograde solutions of the 10-point board.
+          </p>
+        </section>
+
+        <!-- SECTION 3: THE 2.4 CM OFFSET -->
+        <section id="offset" class="hv2-section">
+          <h2>Why is only one diagonal worn smooth?</h2>
+
+          <div class="hv2-prose">
+            <p>
+              The board is symmetrical from left to right, yet only the <strong>lower-right</strong> diagonal
+              shows a smooth patch beside it. Crist et al. suggested players might have had a subconscious
+              habit—such as right-handedness—that favored one side whenever two moves looked equal.
+            </p>
+            <p>
+              Their own measurements of the stone point to a simpler physical explanation. None of the four
+              diagonals actually meets the vertical center line: moving clockwise from the top left, their
+              feet stop short by <strong>1.0 cm, 0.9 cm, 2.4 cm, and 0.6 cm</strong>. The 2.4 cm outlier is
+              the worn lower-right diagonal.
+            </p>
+            <p>
+              A typical Roman glass counter from Heerlen is roughly 1.8 cm wide. Sitting on the bottom hub,
+              a counter that size already covers the foot of the bottom-left diagonal (0.6 cm away). To move
+              onto the bottom-right diagonal, however, a player has to drag glass across a wide strip of bare
+              limestone every time. Completely symmetrical play at the bottom end of the board could still
+              polish a smooth zone beside that one cut, with no handedness bias needed.
+            </p>
+          </div>
+
+          <div class="hv2-photo-pair">
+            <figure class="hv2-media-card">
+              <img
+                src="/leads/heerlen-v2/offset-wear-demo.gif"
+                width="640"
+                height="380"
+                loading="lazy"
+                alt="Zoomed animation of the bottom half of the Heerlen stone showing a 1.8 cm Roman counter covering the 0.6 cm bottom-left diagonal foot while crossing a 2.4 cm bare limestone gap to slide along the lower-right diagonal."
+              />
+              <figcaption>
+                <strong>The 2.4 cm offset.</strong> At realistic counter scale (~1.8 cm), sliding from the
+                bottom hub onto the lower-right diagonal repeatedly crosses bare limestone between the hub
+                and the cut’s foot.
+              </figcaption>
+            </figure>
+
+            <figure class="hv2-media-card">
+              <img
+                src="/leads/heerlen-v2/coriovallum-counters.jpg"
+                width="546"
+                height="375"
+                loading="lazy"
+                alt="Actual Roman glass gaming counters from Coriovallum placed on Object 04433, showing the large black counter at the bottom center overlapping the left diagonal while leaving an open gap to the right diagonal."
+              />
+              <figcaption>
+                <strong>Roman counters from Coriovallum on Object 04433</strong> (Crist et al., 2026, Fig.
+                S16, CC BY 4.0). The black counter on the bottom hub overlaps the left diagonal while leaving
+                an open gap of bare stone before the right diagonal.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- SECTION 4: WHAT WEAR CAN AND CAN'T TELL US -->
+        <section id="wear" class="hv2-section">
+          <h2>What wear patterns can—and can’t—tell us</h2>
+
+          <div class="hv2-prose">
+            <p>
+              Even a good match between a computer simulation and a worn stone carries a catch: different
+              computer players following the <em>same</em> rules leave very different trails. The 2026 study
+              used an AI that judged positions by counting each side’s legal moves—a natural rule of thumb
+              for a blocking game, but one that left its three-in-a-row players pacing back and forth until
+              the 250-move limit.
+            </p>
+            <p>
+              When we ran the same four-against-two hunt game with other simulated players—exact optimal play,
+              noisy play, or a neutral trial-and-error search program (Monte Carlo Tree Search) with no
+              blocking heuristic—the sharp diagonal spike disappeared. Changing the simulated player on the
+              same game shifted edge traffic nearly four times as much as switching the rules between a hunt
+              game and three-in-a-row.
+            </p>
+          </div>
+
+          <div class="hv2-explorer-bar">
+            <div class="hv2-seg" role="group" aria-label="Choose wear comparison">
+              <button type="button" data-explorer="sameGame" aria-pressed="true">
+                Same game, 4 different AIs
+              </button>
+              <button type="button" data-explorer="fourGames" aria-pressed="false">
+                4 different games, same stone
+              </button>
+            </div>
+            <span style="font: 400 11.5px/1.4 var(--mono); color: var(--muted)">
+              <span style="color: var(--accent)">■</span> Busiest diagonal ·
+              <span style="color: var(--teal)">■</span> Center line (6.7% = average)
+            </span>
+          </div>
+
+          <p class="hv2-explorer-intro" id="hv2-explorer-intro"></p>
+          <div class="hv2-wear-grid" id="hv2-wear-grid"></div>
+
+          <div class="hv2-prose" style="margin-top: 22px">
+            <p>
+              Wear counts alone cannot prove a single rulebook. Taking the two-point interior roads, European
+              parallels, playability, and the 2.4 cm offset together, a three-against-one hunt game with no
+              retreat is the strongest single candidate. Roman three-in-a-row (<em>Terni Lapilli</em>)—which
+              Ovid actually describes—and a small capture game like <em>Latrunculi</em> remain plausible
+              alternatives, and because the stone has no recorded findspot, the rules remain an open
+              question.
+            </p>
+          </div>
+        </section>
+
+        <!-- SECTION 5: WHAT WOULD SETTLE IT? -->
+        <section id="settle" class="hv2-section">
+          <h2>What would settle it?</h2>
+          <div class="hv2-steps">
+            <div class="hv2-step">
+              <h3>Check the bare-stone gap on the 3D scan</h3>
+              <p>
+                The 2.4 cm offset idea is directly testable on the museum’s 3D scan: does the heaviest
+                microscopic smoothing sit across the bare limestone between the bottom hub and the foot of
+                the lower-right diagonal?
+              </p>
+            </div>
+            <div class="hv2-step">
+              <h3>Search Rhineland museum collections</h3>
+              <p>
+                Digital catalogs of modern games rarely hold informal Roman graffiti boards. A dated parallel
+                is more likely to turn up in collections along Coriovallum’s road network—Cologne, Xanten,
+                Nijmegen, Trier, Tongeren—or the Fribourg <em>Locus Ludi</em> corpus.
+              </p>
+            </div>
+            <div class="hv2-step">
+              <h3>Test the board with real players</h3>
+              <p>
+                Simulated agents are not people. Giving human players replica boards and glass counters over
+                several sessions would show both which rules feel natural on this geometry and what wear
+                trails real hands leave behind.
+              </p>
+            </div>
+          </div>
+
+          <div class="hv2-notes">
+            <details>
+              <summary>Notes on the 2026 replication archive</summary>
+              <p>
+                Crist et al. deposited their simulation logs, edge-use tables, and R code openly at
+                DataverseNL (v1.0). Checking all 134,000 individual game logs and 81 published supplementary
+                table rows turned up two technical replication issues:
+              </p>
+              <ul>
+                <li>
+                  <strong>A mismatch between the deposited logs and the published tables:</strong> In the
+                  deposited game logs (dated August 2023), 17 of 21 rulesets on Board 6—including all three
+                  published candidates—repeat one identical game 1,000 times. The symmetry-transformed files
+                  and Supplementary Tables S2–S7 (dated December 2023) clearly come from a later, more varied
+                  run whose individual game logs were not uploaded: the vertical center line, which stays
+                  fixed under every symmetry of the board, differs between the logs and transformed files on
+                  73 of 118 matched setups, and 28 of 33 “untransformed” rows in Tables S2–S7 match neither
+                  archive.
+                </li>
+                <li>
+                  <strong>Indexing bugs in the R screening script (<code>edge.R</code>):</strong> On all six
+                  boards, the script drops the first ruleset column (<code>HaretavlTAB</code>) before
+                  filtering and omits edge 0 when calculating the mean threshold. Two column-name typos
+                  (<code>X120</code> on Board 3 and <code>X173</code> on Board 6) also skip one diagonal
+                  apiece, excluding Board 6’s 4-vs-2 Starting Position 2 (14.95% on edge 13, 0.00% center)
+                  from Table S7.
+                </li>
+              </ul>
+              <p>
+                These archive quirks do not rule out a hunt game; they simply mean the published tables
+                cannot currently be reproduced directly from the deposited trial files.
+              </p>
+            </details>
+
+            <details>
+              <summary>Sources and credits</summary>
+              <p>
+                <strong>Study:</strong> Walter Crist, Éric Piette, Karen Jeneson, Dennis J. N. J. Soemers,
+                Matthew Stephenson, Luk van Goor &amp; Cameron Browne, “Ludus Coriovalli: using artificial
+                intelligence-driven simulations to identify rules for an ancient board game,”
+                <em>Antiquity</em> 100 (2026),
+                <a href="https://doi.org/10.15184/aqy.2025.10264">doi:10.15184/aqy.2025.10264</a> ·
+                <a
+                  href="https://static.cambridge.org/content/id/urn%3Acambridge.org%3Aid%3Aarticle%3AS0003598X25102640/resource/name/S0003598X25102640sup001.docx"
+                  >Supplementary methods &amp; figures (DOCX)</a
+                >.
+              </p>
+              <p>
+                <strong>Archive:</strong>
+                <a href="https://doi.org/10.34894/BWSJXL">DataverseNL v1.0</a> ·
+                <a href="https://dataverse.nl/api/access/datafile/453530">Individual trials (ZIP)</a> ·
+                <a href="https://dataverse.nl/api/access/datafile/453529">Raw edge counts (ZIP)</a> ·
+                <a href="https://dataverse.nl/api/access/datafile/453531">Transformed percentages (ZIP)</a> ·
+                <a href="https://dataverse.nl/api/access/datafile/453533">R processing script</a>.
+              </p>
+              <p>
+                <strong>Photographs:</strong> Object 04433 (Het Romeins Museum, Heerlen) courtesy of Restaura,
+                cropped from Crist et al. Fig. 1A; Roman glass counters on Object 04433 from Crist et al.
+                Supplementary Fig. S16. Both licensed under
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+              </p>
+            </details>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-top">
+        <div>
+          <a class="mark" href="/">Open Problems in History</a>
+          <p class="stats" id="stats"></p>
+        </div>
+        <ul class="foot-links">
+          <li><a href="/">Problems</a></li>
+          <li><a href="/leads">Leads</a></li>
+          <li><a href="/suggest">Suggest a problem</a></li>
+          <li><a href="/sources">Sources</a></li>
+          <li><a href="/for">Who can help</a></li>
+          <li><a href="/methods">Methods</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="https://buy.stripe.com/5kQaEXfJLgRGbqrf1L4F201">Donate</a></li>
+          <li><a href="/llms.txt">For AI agents</a></li>
+          <li><a href="https://github.com/benjaminbreen/open-problems-in-history">Source and data</a></li>
+          <li><a href="/colophon">Colophon</a></li>
+        </ul>
+      </div>
+      <div class="foot-sig">
+        <p class="signature">
+          Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a
+          ><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"
+            ><img src="/shared/res-obscura.webp" alt="" width="28" height="28" loading="lazy" decoding="async"
+          /></a>
+        </p>
+        <a href="#play" class="hv2-btn-link">Back to the stone ↑</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/leads/heerlen-v2/exhibit-v2.js"></script>
+  </body>
+</html>

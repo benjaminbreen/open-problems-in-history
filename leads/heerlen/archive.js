@@ -42,8 +42,3 @@ export const recordedMoves = [
   [5, 9], [4, 2], [9, 5], [2, 4], [5, 9], [4, 2], [9, 5], [2, 4], [5, 9], [4, 5],
   [1, 2], [5, 4], [2, 1], [4, 5], [9, 6], [8, 9], [1, 4], [3, 1], [7, 8], [9, 7],
 ];
-
-// Four dogs, two hares, starting position 1, board 6, Alpha-BetaTrial_0.
-// The first 16 slides lead to the puzzle. The original seventeenth slide was C2 to C3.
-export const trapOpening = [[3,1],[5,9],[1,2],[9,6],[7,9],[4,1],[9,5],[6,9],
-                            [8,7],[1,4],[0,1],[9,8],[5,9],[4,5],[2,4],[5,6]];

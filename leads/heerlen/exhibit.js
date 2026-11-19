@@ -1,72 +1,41 @@
-import {
-  sites,
-  edges,
-  diagonals,
-  corner,
-  games,
-  newGame,
-  isPlacing,
-  legalMoves,
-  advance,
-  computerMove,
-} from './rules.js';
-import { samples, recordedMoves, trapOpening } from './archive.js';
+import { edges, corner, games, newGame, isPlacing, legalMoves, advance, computerMove } from './rules.js';
+import { samples, recordedMoves } from './archive.js';
 
-const $ = (id) => document.getElementById(id);
-const controls = (selector) => [...document.querySelectorAll(selector)];
-const total = (values) => values.reduce((a, b) => a + b, 0);
-const percent = (n, places = 2) => n.toFixed(places) + '%';
-function percentages(counts) {
-  const n = total(counts);
-  return counts.map((v) => (n ? (100 * v) / n : 0));
-}
-function line(a, b, cls, attrs = '') {
-  return `<line class="${cls}" x1="${sites[a][0]}" y1="${sites[a][1]}" x2="${sites[b][0]}" y2="${sites[b][1]}" ${attrs} />`;
-}
-function circle(i, r, cls) {
-  return `<circle class="${cls}" cx="${sites[i][0]}" cy="${sites[i][1]}" r="${r}"/>`;
-}
-function draw(
-  host,
-  {
-    shares = [],
-    cells = [],
-    last = null,
-    win = [],
-    wear = false,
-    joints = true,
-    description = 'Board with ten playing points.',
-  } = {},
-) {
-  const rails = edges.map(([a, b]) => line(a, b, 'rail'));
-  const hot = edges.flatMap(([a, b], i) =>
-    (shares[i] || 0) > 0
-      ? [
-          line(
-            a,
-            b,
-            'traffic',
-            `stroke-width="${1 + Math.min(shares[i], 100) * 0.38}" opacity="${Math.min(0.95, 0.14 + shares[i] * 0.045)}"`,
-          ),
-        ]
-      : [],
-  );
-  if (wear) hot.push(line(...edges[12], 'stone-line'));
-  if (win.length) hot.push(line(win[0], win[2], 'win-line'));
-  if (last && last[0] >= 0) hot.push(line(last[0], last[1], 'last-line'));
-  const dots = joints ? sites.map((_, i) => circle(i, 3.4, 'joint')) : [];
-  cells.forEach((side, i) => {
-    if (side) {
-      dots.push(circle(i, 10, side === 1 ? 'disc-one' : 'disc-two'));
-      if (side === 2) dots.push(circle(i, 2.8, 'disc-dot'));
-    }
-  });
-  host.innerHTML = `<svg class="hr-board" viewBox="0 0 360 244" role="img" aria-label="${description}">${[...rails, ...hot, ...dots].join('')}</svg>`;
-}
-function pressed(buttons, active) {
-  buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === active)));
-}
+const byId = (id) => document.getElementById(id);
+const all = (selector) => Array.from(document.querySelectorAll(selector));
+const sum = (list) => list.reduce((a, b) => a + b, 0);
+const stonePhoto = document.querySelector('.object-view img').src;
+const names = [
+  'bottom left',
+  'bottom middle',
+  'bottom right',
+  'lower left side',
+  'lower right side',
+  'upper right side',
+  'top right',
+  'upper left side',
+  'top left',
+  'top middle',
+];
+// Locations on the museum photograph. Nearby cuts that meet separately on the stone
+// are joined to one playable point in the researchers' preferred reconstruction.
+const stonePoints = [
+  [132, 382],
+  [350, 379],
+  [585, 372],
+  [130, 294],
+  [585, 297],
+  [586, 177],
+  [585, 114],
+  [130, 204],
+  [130, 127],
+  [353, 120],
+];
+const view = { x: 69, y: 52, width: 572, height: 375 };
 
+function setPressed(buttons, current) {
+  buttons.forEach((b) => b.setAttribute('aria-pressed', String(b === current)));
+}
 document.querySelector('.mode').addEventListener('click', () => {
   const mode = getComputedStyle(document.documentElement).colorScheme === 'dark' ? 'light' : 'dark';
   document.documentElement.dataset.theme = mode;
@@ -74,329 +43,498 @@ document.querySelector('.mode').addEventListener('click', () => {
     localStorage.setItem('op.theme', mode);
   } catch {}
 });
-const objectButtons = controls('[data-object]');
-draw($('stone-drawing'), {
-  wear: true,
-  description: 'Preferred reconstruction. The lower-right diagonal marks the visibly worn area.',
+byId('mark-wear').addEventListener('click', (e) => {
+  const show = byId('wear-mark').hasAttribute('hidden');
+  byId('wear-mark').toggleAttribute('hidden', !show);
+  e.currentTarget.textContent = show ? 'Hide the annotation' : 'Show the worn area';
+  e.currentTarget.setAttribute('aria-pressed', String(show));
+  byId('photo-note').textContent = show
+    ? 'The shaded strip marks the approximate position of the smooth patch beside the diagonal.'
+    : 'The dark lines are modern pencil marks following the ancient cuts.';
 });
-objectButtons.forEach((button) =>
-  button.addEventListener('click', () => {
-    const photo = button.dataset.object === 'photo';
-    pressed(objectButtons, button);
-    $('stone-photo').hidden = !photo;
-    $('stone-drawing').hidden = photo;
-    $('stone-label').textContent = photo
-      ? '21.2 cm across · modern pencil follows the cuts'
-      : 'Board 6 · red marks the worn diagonal';
-  }),
-);
 
-// Select the assignment before revealing either identity. Both maps use the same scale and orientation.
-const traceOrder = Math.random() < 0.5 ? ['line', 'hares'] : ['hares', 'line'];
-const traceHosts = [$('trace-a'), $('trace-b')];
-traceOrder.forEach((kind, i) =>
-  draw(traceHosts[i], {
-    shares: percentages(samples[kind].counts),
-    description: `Trace ${i ? 'B' : 'A'}. Three edges in its lower-right corner carry most of the traffic.`,
-  }),
-);
-const guessButtons = controls('[data-guess]');
-guessButtons.forEach((button) =>
-  button.addEventListener('click', () => {
-    const pick = Number(button.dataset.guess),
-      correct = traceOrder.indexOf('line');
-    const name = (i) => (i === 0 ? 'A' : 'B');
-    guessButtons.forEach((b) => {
-      b.disabled = true;
-    });
-    pressed(guessButtons, button);
-    function share(kind) {
-      const values = percentages(samples[kind].counts);
-      return percent(total(corner.map((i) => values[i])), 1);
-    }
-    $('guess-answer').hidden = false;
-    $('guess-answer').innerHTML =
-      `<p><strong>${pick === correct ? 'You got it.' : 'A reasonable guess.'}</strong> Trace ${name(correct)} is three in a row. Its players spent ${share('line')} of their moves on the corner triangle. The dogs and hares in trace ${name(1 - correct)} spent ${share('hares')} there.</p><p>These two examples were chosen for their resemblance. The tracks alone give very little away.</p>`;
-    traceOrder.forEach((kind, i) => {
-      traceHosts[i].previousElementSibling.textContent = `Trace ${name(i)} · ${games[kind].title}`;
-    });
-  }),
-);
-
-// Each game retains its place while the reader compares alternatives.
-const sessions = Object.fromEntries(Object.keys(games).map((kind) => [kind, [newGame(kind)]]));
-function puzzleStart() {
-  const position = trapOpening.reduce(advance, newGame('dogs'));
-  return { ...position, counts: Array(edges.length).fill(0), last: null };
+function segment(points, [a, b], cls, attrs = '') {
+  return `<line class="${cls}" x1="${points[a][0]}" y1="${points[a][1]}" x2="${points[b][0]}" y2="${points[b][1]}" ${attrs}/>`;
 }
-sessions.trap = [puzzleStart()];
-let kind = 'trap',
+function at(points, i) {
+  return `translate(${points[i][0]} ${points[i][1]})`;
+}
+function pieceDefs(id) {
+  return `<defs>
+  <radialGradient id="${id}-blue" cx="30%" cy="23%" r="83%"><stop stop-color="#81c3c6"/><stop offset=".24" stop-color="#3a909f"/><stop offset=".63" stop-color="#176077"/><stop offset=".89" stop-color="#154253"/><stop offset="1" stop-color="#082b39"/></radialGradient>
+  <radialGradient id="${id}-ivory" cx="30%" cy="23%" r="88%"><stop stop-color="#fff9e6"/><stop offset=".36" stop-color="#f6e5bc"/><stop offset=".77" stop-color="#d4ba83"/><stop offset="1" stop-color="#8d754c"/></radialGradient>
+  <filter id="${id}-shadow" x="-70%" y="-70%" width="250%" height="260%"><feGaussianBlur stdDeviation="2.2"/></filter>
+  </defs>`;
+}
+function piece(points, i, side, id, radius) {
+  const blue = side === 1;
+  return `<g transform="${at(points, i)}"><g data-stone="${i}"><g transform="scale(${radius / 20})">
+  <ellipse cx="2.1" cy="4.4" rx="20" ry="18.8" fill="#33291c" opacity=".55" filter="url(#${id}-shadow)"/>
+  <circle cy="1.3" r="19.8" fill="${blue ? '#173644' : '#8a754c'}"/>
+  <circle r="19.4" fill="url(#${id}-${blue ? 'blue' : 'ivory'})" stroke="${blue ? '#183d4a' : '#947f58'}" stroke-width=".7"/>
+  <circle r="14.3" fill="none" stroke="${blue ? '#c0e0d9' : '#9c865b'}" stroke-width=".85" opacity=".64"/>
+  ${blue ? '<circle r="3.2" fill="#badbd7" opacity=".84"/>' : '<g fill="#8d7959"><circle cx="-3.4" r="1.9"/><circle cx="3.4" r="1.9"/></g>'}
+  <path d="M-14,-8 Q-10,-15 -3,-16" fill="none" stroke="#fff" stroke-linecap="round" opacity=".7" stroke-width="1.6"/></g></g></g>`;
+}
+function finishArrow(from, to) {
+  const [x, y] = stonePoints[from],
+    [u, v] = stonePoints[to],
+    angle = (Math.atan2(v - y, u - x) * 180) / Math.PI;
+  const length = Math.hypot(u - x, v - y);
+  return `<g transform="translate(${x} ${y}) rotate(${angle})"><path d="M27 0 H${length - 23} m-10 -7 10 7 -10 7" stroke="#fff8e1" stroke-width="6.7" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 0 H${length - 23} m-10 -7 10 7 -10 7" stroke="#23566a" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>`;
+}
+function drawStone(
+  host,
+  state,
+  { selected = null, landings = [], guide = false, lastSlide = null, trails = false, example = false } = {},
+) {
+  const id = host.id;
+  const paths = edges.map((e) => segment(stonePoints, e, 'groove')).join('');
+  const most = Math.max(1, ...state.counts);
+  const ink = trails
+    ? edges
+        .map((e, i) =>
+          state.counts[i]
+            ? segment(stonePoints, e, 'travel', `stroke-width="${2 + 9 * Math.sqrt(state.counts[i] / most)}"`)
+            : '',
+        )
+        .join('')
+    : '';
+  const spots = stonePoints
+    .map(
+      ([x, y], i) =>
+        `<g transform="translate(${x} ${y})"><circle class="socket" r="4.6"/>${landings.includes(i) ? '<circle class="landing" r="12"/>' : ''}</g>`,
+    )
+    .join('');
+  const emphasis =
+    selected === null
+      ? ''
+      : `<g transform="${at(stonePoints, selected)}"><circle class="selected-ring" r="24.5"/></g>`;
+  let win = '';
+  if (state.winLine.length)
+    win = segment(stonePoints, [state.winLine[0], state.winLine.at(-1)], 'winning-line');
+  const moved = lastSlide && lastSlide[0] >= 0 ? segment(stonePoints, lastSlide, 'last-path') : '';
+  host.innerHTML = `<svg viewBox="${view.x} ${view.y} ${view.width} ${view.height}" aria-hidden="true">${pieceDefs(id)}
+    <image href="${stonePhoto}" width="692" height="474" class="board-photo"/>
+    <g class="incisions">${paths}</g>${ink}${moved}${win}${spots}${guide ? finishArrow(1, 4) : ''}${emphasis}
+    ${state.cells.map((s, i) => (s ? piece(stonePoints, i, s, id, 20.6) : '')).join('')}</svg>`;
+  if (lastSlide && lastSlide[0] >= 0 && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const [a, b] = lastSlide,
+      chip = host.querySelector(`[data-stone="${b}"]`);
+    chip?.animate(
+      [
+        {
+          transform: `translate(${stonePoints[a][0] - stonePoints[b][0]}px,${stonePoints[a][1] - stonePoints[b][1]}px)`,
+        },
+        { transform: 'translate(0,0)' },
+      ],
+      { duration: example ? 610 : 330, easing: 'cubic-bezier(.2,.65,.3,1)' },
+    );
+  }
+}
+
+// Both positions can be reached from the normal opening without a previous win.
+const lessons = {
+  dogs: {
+    title: 'How do you trap a hare?',
+    opening: [
+      [0, 1],
+      [5, 6],
+      [7, 9],
+      [4, 5],
+    ],
+    rules: [
+      'You have four blue pieces, the “dogs.” Your opponent has two ivory pieces, the “hares.” The names come from a later game. We don’t know what Roman players called their pieces.',
+      'On each turn, one piece slides along a cut to the next empty spot. You win if neither hare has anywhere left to go.',
+    ],
+    task: 'The hares are together on the right. Slide the blue dog at the bottom to close their last way out.',
+    result:
+      'Both hares are trapped. One has a dog directly below it. The other routes out are already occupied.',
+  },
+  line: {
+    title: 'How do you make a row of three?',
+    opening: [
+      [-1, 6],
+      [-1, 0],
+      [-1, 5],
+      [-1, 7],
+      [-1, 1],
+      [-1, 9],
+    ],
+    rules: [
+      'This time each player has three pieces. You take turns putting them on the board, then slide one piece per turn. The first player to get three of their own pieces on three neighboring spots in a straight line wins.',
+      'Look at the right side. The two pieces there are now yours. Your third blue piece is at the bottom.',
+    ],
+    task: 'Slide that third blue piece along the same diagonal you used to trap the hares. This time it will complete your row.',
+    result:
+      'Your three blue pieces form a row down the right side. The winning piece slid over exactly the same bit of stone as the dog.',
+  },
+};
+const lessonStates = Object.fromEntries(
+  Object.entries(lessons).map(([key, data]) => [key, data.opening.reduce(advance, newGame(key))]),
+);
+const sessions = Object.fromEntries(Object.keys(games).map((key) => [key, [newGame(key)]]));
+let mode = 'lesson',
+  kind = 'dogs',
+  lesson = 'dogs',
   opponent = 'computer',
-  selection = null,
+  selection = 1,
+  solved = false,
   timer = null;
-const gameHost = $('play-board'),
-  inkLayer = document.createElement('div');
-gameHost.append(inkLayer);
-const buttons = sites.map(([x, y, label], i) => {
+const current = () => (mode === 'lesson' ? lessonStates[lesson] : sessions[kind].at(-1));
+const humanTurn = (s) => opponent === 'local' || s.turn === 1;
+const lessonButtons = all('[data-lesson]');
+const playBoard = byId('play-board'),
+  art = byId('play-art');
+const buttons = stonePoints.map(([x, y], i) => {
   const b = document.createElement('button');
   b.type = 'button';
-  b.className = 'site-point';
-  b.style.left = `${(x / 360) * 100}%`;
-  b.style.top = `${(y / 244) * 100}%`;
-  b.setAttribute('aria-label', label);
-  b.innerHTML = '<span aria-hidden="true"></span>';
-  b.addEventListener('click', () => playSite(i));
-  gameHost.append(b);
+  b.className = 'spot';
+  b.style.left = `${(100 * (x - view.x)) / view.width}%`;
+  b.style.top = `${(100 * (y - view.y)) / view.height}%`;
+  b.addEventListener('click', () => {
+    if (!dragged) choose(i);
+  });
+  playBoard.append(b);
   return b;
 });
-const session = () => sessions[kind];
-const current = () => session()[session().length - 1];
-const role = (side) => games[current().kind].sides[side - 1];
-function humanTurn(s) {
-  return kind === 'trap' ? session().length === 1 : opponent === 'local' || s.turn === 1;
+let pointer = null,
+  dragged = false;
+playBoard.addEventListener('pointerdown', (e) => {
+  const i = buttons.indexOf(e.target),
+    s = current();
+  dragged = false;
+  if (i < 0 || s.winner !== null || s.cells[i] !== s.turn || !isHuman() || (mode === 'lesson' && i !== 1))
+    return;
+  pointer = { id: e.pointerId, i, x: e.clientX, y: e.clientY, button: e.target };
+  e.target.setPointerCapture(e.pointerId);
+});
+playBoard.addEventListener('pointermove', (e) => {
+  if (!pointer || pointer.id !== e.pointerId) return;
+  const dx = e.clientX - pointer.x,
+    dy = e.clientY - pointer.y;
+  if (!dragged && Math.hypot(dx, dy) < 6) return;
+  if (!dragged) {
+    dragged = true;
+    selection = pointer.i;
+    render();
+  }
+  const chip = art.querySelector(`[data-stone="${pointer.i}"]`),
+    scale = view.width / playBoard.getBoundingClientRect().width;
+  if (chip) chip.style.transform = `translate(${dx * scale}px,${dy * scale}px)`;
+});
+function release(e) {
+  if (!pointer || e.pointerId !== pointer.id) return;
+  const src = pointer.i;
+  pointer = null;
+  if (!dragged) return;
+  const dest = buttons.indexOf(document.elementFromPoint(e.clientX, e.clientY));
+  if (e.type === 'pointerup' && dest !== src && allowed(src, dest)) makeMove([src, dest]);
+  else render();
+  setTimeout(() => {
+    dragged = false;
+  }, 0);
 }
-function cancelBot() {
-  if (timer !== null) clearTimeout(timer);
+playBoard.addEventListener('pointerup', release);
+playBoard.addEventListener('pointercancel', release);
+function isHuman() {
+  return mode === 'lesson' ? !solved : humanTurn(current());
+}
+function allowed(a, b) {
+  if (mode === 'lesson') return !solved && a === 1 && b === 4;
+  return legalMoves(current()).some(([src, dest]) => src === a && dest === b);
+}
+function stopBot() {
+  clearTimeout(timer);
   timer = null;
 }
-function scheduleBot() {
-  cancelBot();
-  const s = current();
-  if (kind === 'trap' || s.winner !== null || humanTurn(s)) return;
+function queueBot() {
+  stopBot();
+  const state = current();
+  if (mode !== 'full' || state.winner !== null || humanTurn(state)) return;
   timer = setTimeout(() => {
-    timer = null;
-    if (current() !== s || humanTurn(s)) return;
-    const move = computerMove(s);
-    if (move) commit(move);
-  }, 340);
+    if (current() === state && !humanTurn(state)) {
+      const move = computerMove(state);
+      if (move) makeMove(move);
+    }
+  }, 500);
 }
-function commit(move) {
-  session().push(advance(current(), move));
+function makeMove(move) {
+  if (mode === 'lesson') {
+    if (solved || !allowed(...move)) return;
+    solved = true;
+  } else sessions[kind].push(advance(current(), move));
   selection = null;
-  renderPlay();
-  scheduleBot();
+  render(move);
+  queueBot();
 }
-function playSite(i) {
-  const s = current();
-  if (s.winner !== null || !humanTurn(s)) return;
-  const legal = legalMoves(s);
-  const move = legal.find(([a, b]) => b === i && (isPlacing(s) || a === selection));
-  if (move) {
-    commit(move);
+function choose(i) {
+  const state = current();
+  if (!isHuman() || state.winner !== null) return;
+  if (mode === 'lesson') {
+    if (i === 4) makeMove([1, 4]);
     return;
   }
-  if (s.cells[i] === s.turn && legal.some(([a]) => a === i)) {
-    selection = selection === i ? null : i;
-    renderPlay();
+  const from = isPlacing(state) ? -1 : selection;
+  if (from !== null && allowed(from, i)) {
+    makeMove([from, i]);
+    return;
+  }
+  if (legalMoves(state).some(([a]) => a === i)) {
+    selection = i === selection ? null : i;
+    render();
   }
 }
-function renderPlay() {
-  const s = current(),
-    options = legalMoves(s),
-    active = s.winner === null && humanTurn(s),
-    placing = isPlacing(s),
-    counts = s.counts;
-  const puzzle = kind === 'trap';
-  $('game-rules').textContent = puzzle
-    ? 'You have one move. Slide a dog to close the last escape route for both hares. This position comes from turn 17 of an archived game. Choose a full game above the board to play from the beginning.'
-    : games[kind].intro;
-  $('opponent').disabled = puzzle;
-  $('opponent').parentElement.hidden = puzzle;
-  $('restart').textContent = puzzle ? 'Reset puzzle' : 'New game';
-  $('full-game').hidden = !puzzle || s.winner === null;
-  $('side-one').textContent = role(1) + (puzzle || opponent === 'computer' ? ' · you' : '');
-  $('side-two').textContent = role(2) + (!puzzle && opponent === 'computer' ? ' · computer' : '');
-  $('move-count').textContent = puzzle ? 'One-move puzzle' : `Turn ${s.ply + (s.winner === null ? 1 : 0)}`;
-  draw(inkLayer, {
-    shares: $('show-trail').checked ? percentages(counts) : [],
-    last: s.last,
-    win: s.winLine,
-    joints: false,
-    description: 'Game board. Use the named point buttons to place or slide a counter.',
-  });
-  buttons.forEach((b, i) => {
-    const landing = active && options.some(([a, d]) => d === i && (placing || a === selection));
-    const pick = active && s.cells[i] === s.turn && options.some(([a]) => a === i);
-    b.dataset.piece = s.cells[i];
-    b.dataset.legal = landing;
-    b.dataset.selected = selection === i;
-    b.setAttribute('aria-pressed', String(selection === i));
-    b.setAttribute('aria-disabled', String(!landing && !pick));
-    b.setAttribute(
-      'aria-label',
-      `${sites[i][2]}, ${s.cells[i] ? role(s.cells[i]) + ' counter' : 'empty'}${landing ? ', available destination' : ''}`,
-    );
-  });
-  let message;
-  if (puzzle) {
-    if (s.winner === 1) message = 'You trapped both hares. That was the winning move in the recorded game.';
-    else if (session().length > 1) message = 'A hare can still move. Undo your slide and try another route.';
-    else
-      message =
-        selection === null
-          ? 'Choose a red dog. The two ringed counters are the hares.'
-          : 'Choose a ringed empty point for your dog.';
-  } else if (s.winner === 0) message = 'Draw. The game reached its limit or neither side can move.';
-  else if (s.winner !== null) {
-    const who =
-      opponent === 'computer'
-        ? s.winner === 1
-          ? 'You win'
-          : 'Computer wins'
-        : `${role(s.winner)} ${kind === 'line' ? 'wins' : 'win'}`;
+function fullStatus(s) {
+  if (s.winner === 0) return 'Draw. Neither player made a row before the game ended.';
+  if (s.winner !== null) {
     const why =
       kind === 'line'
-        ? 'three counters in a line'
+        ? 'made a row of three'
         : s.winner === (kind === 'dogs' ? 1 : 2)
-          ? 'both hares are trapped'
-          : 'the hares stayed mobile';
-    message = `${who} — ${why}.`;
-  } else if (!humanTurn(s)) message = `Computer is moving ${role(s.turn).toLowerCase()}.`;
-  else {
-    const prefix = opponent === 'computer' ? 'Your turn' : `${role(s.turn)} to play`;
-    const action = placing
-      ? `place counter ${Math.floor(s.ply / 2) + 1} of 3 on an empty dot.`
-      : selection === null
-        ? 'choose one of your counters.'
-        : 'choose a ringed destination.';
-    message = `${prefix} — ${action}`;
+          ? 'trapped both hares'
+          : 'kept a hare free for 240 turns';
+    return `${s.winner === 1 ? 'Blue' : 'Ivory'} ${why} and wins.`;
   }
-  if (s.skipped && s.winner === null) message = `${role(s.skipped)} passed. ${message}`;
-  $('turn-note').textContent = message;
-  $('undo').disabled = session().length <= 1;
-  const slides = total(counts);
-  $('own-stats').textContent = slides
-    ? `${slides} ${slides === 1 ? 'slide' : 'slides'} · ${percent((100 * total(corner.map((i) => counts[i]))) / slides, 0)} in the lower-right triangle`
-    : puzzle
-      ? 'Your slide will leave a trail.'
-      : 'Only slides leave tracks.';
+  if (!humanTurn(s)) return 'The computer is choosing a move.';
+  const who = opponent === 'computer' ? 'Your' : s.turn === 1 ? 'Blue’s' : 'Ivory’s';
+  return isPlacing(s)
+    ? `${who} turn. Put a ${s.turn === 1 ? 'blue' : 'ivory'} piece on an empty spot.`
+    : selection === null
+      ? `${who} turn. Select or drag a ${s.turn === 1 ? 'blue' : 'ivory'} piece.`
+      : 'Choose a highlighted spot to slide there.';
 }
-function selectGame(key) {
-  cancelBot();
-  kind = key;
-  $('game-kind').value = key;
+function render(lastSlide = null) {
+  const guided = mode === 'lesson',
+    data = lessons[lesson];
+  const state = guided && solved ? advance(lessonStates[lesson], [1, 4]) : current();
+  const active = isHuman() && state.winner === null;
+  const moves = active ? (guided ? [[1, 4]] : legalMoves(state)) : [];
+  const landings = moves.filter(([a]) => a === selection || a === -1).map(([, b]) => b);
+  byId('lesson-tabs').hidden = !guided;
+  byId('full-controls').hidden = guided;
+  byId('lesson-title').textContent = guided ? data.title : games[kind].title;
+  const paras = guided ? data.rules : [games[kind].intro];
+  byId('game-rules').replaceChildren(
+    ...paras.map((t) => {
+      const p = document.createElement('p');
+      p.textContent = t;
+      return p;
+    }),
+  );
+  byId('assignment').hidden = !guided;
+  byId('assignment').textContent = data.task;
+  byId('side-one').textContent = guided
+    ? lesson === 'dogs'
+      ? 'Your dogs'
+      : 'Your pieces'
+    : (kind === 'line' ? 'Blue' : games[kind].sides[0]) + (opponent === 'computer' ? ' · you' : '');
+  byId('side-two').textContent = guided
+    ? lesson === 'dogs'
+      ? 'Hares'
+      : 'Opponent'
+    : (kind === 'line' ? 'Ivory' : games[kind].sides[1]) + (opponent === 'computer' ? ' · computer' : '');
+  byId('turn-note').textContent = guided
+    ? solved
+      ? data.result
+      : 'The blue piece is selected. Tap the outlined spot or drag the piece there.'
+    : fullStatus(state);
+  byId('lesson-action').hidden = !guided || (solved && lesson === 'line');
+  byId('lesson-action').textContent = solved ? 'Try making a row →' : 'Show me the move';
+  byId('to-counts').hidden = !guided || lesson !== 'line' || !solved;
+  byId('undo').hidden = guided;
+  byId('undo').disabled = guided || sessions[kind].length < 2;
+  byId('restart').hidden = guided && !solved;
+  byId('restart').textContent = guided ? 'Repeat this move' : 'Start again';
+  byId('change-mode').textContent = guided ? 'Play a full game' : 'Return to the two examples';
+  byId('trail-option').hidden = guided;
+  drawStone(art, state, {
+    selected: selection,
+    landings,
+    guide: guided && !solved,
+    lastSlide,
+    trails: !guided && byId('show-trail').checked,
+    example: guided,
+  });
+  buttons.forEach((b, i) => {
+    const can = active && (landings.includes(i) || moves.some(([a]) => a === i));
+    b.setAttribute(
+      'aria-label',
+      `${names[i]}, ${state.cells[i] === 1 ? 'blue piece' : state.cells[i] === 2 ? 'ivory piece' : 'empty spot'}${landings.includes(i) ? ', slide here' : ''}`,
+    );
+    b.setAttribute('aria-disabled', String(!can));
+    b.setAttribute('aria-pressed', String(selection === i));
+  });
+}
+function startLesson(key) {
+  stopBot();
+  mode = 'lesson';
+  lesson = key;
+  solved = false;
+  selection = 1;
+  setPressed(
+    lessonButtons,
+    lessonButtons.find((b) => b.dataset.lesson === key),
+  );
+  render();
+}
+lessonButtons.forEach((b) => b.addEventListener('click', () => startLesson(b.dataset.lesson)));
+byId('lesson-action').addEventListener('click', () => (solved ? startLesson('line') : makeMove([1, 4])));
+byId('change-mode').addEventListener('click', () => {
+  if (mode === 'full') {
+    startLesson(lesson);
+    return;
+  }
+  mode = 'full';
+  kind = lesson;
+  byId('game-kind').value = kind;
   selection = null;
-  renderPlay();
-  scheduleBot();
-}
-$('game-kind').addEventListener('change', (e) => selectGame(e.target.value));
-$('full-game').addEventListener('click', () => selectGame('dogs'));
-$('opponent').addEventListener('change', (e) => {
-  cancelBot();
+  render();
+  queueBot();
+});
+byId('game-kind').addEventListener('change', (e) => {
+  kind = e.target.value;
+  selection = null;
+  render();
+  queueBot();
+});
+byId('opponent').addEventListener('change', (e) => {
   opponent = e.target.value;
   selection = null;
-  renderPlay();
-  scheduleBot();
+  render();
+  queueBot();
 });
-$('show-trail').addEventListener('change', renderPlay);
-$('restart').addEventListener('click', () => {
-  cancelBot();
-  sessions[kind] = [kind === 'trap' ? puzzleStart() : newGame(kind)];
+byId('restart').addEventListener('click', () => {
+  if (mode === 'lesson') {
+    startLesson(lesson);
+    return;
+  }
+  stopBot();
+  sessions[kind] = [newGame(kind)];
   selection = null;
-  renderPlay();
+  render();
 });
-$('undo').addEventListener('click', () => {
-  cancelBot();
-  const history = session();
+byId('undo').addEventListener('click', () => {
+  stopBot();
+  const history = sessions[kind];
   if (history.length > 1) history.pop();
   while (history.length > 1 && !humanTurn(current())) history.pop();
   selection = null;
-  renderPlay();
-  scheduleBot();
+  render();
+  queueBot();
 });
-renderPlay();
+byId('show-trail').addEventListener('change', () => render());
+render();
 
-// Seek by absolute turn. Each frame accumulates only vertex-to-vertex traversals.
-const replay = [newGame('line')];
-for (const move of recordedMoves) replay.push(advance(replay[replay.length - 1], move));
-let turn = 0,
-  playback = null;
-function stopReplay() {
-  if (playback !== null) clearInterval(playback);
-  playback = null;
-}
-function renderReplay() {
-  const s = replay[turn],
-    move = s.last,
-    n = total(s.counts);
-  draw($('replay-board'), {
-    cells: s.cells,
-    shares: percentages(s.counts),
-    last: move,
-    description: `Recorded turn ${turn}. ${n} slides so far.`,
-  });
-  $('timeline').value = turn;
-  $('replay-position').textContent = `Turn ${turn} / 250`;
-  $('replay-step').disabled = turn === 250;
-  $('replay-toggle').textContent =
-    playback !== null ? 'Pause' : turn === 250 ? 'Replay again' : 'Play replay';
-  let text = 'Empty board. Six placements come first.';
-  if (move) {
-    const who = turn % 2 ? 'Red' : 'Black';
-    text =
-      move[0] === -1
-        ? `${who} placed a counter on ${sites[move[1]][2]}.`
-        : `${who} slid ${sites[move[0]][2]} → ${sites[move[1]][2]}.`;
+const regions = {
+  corner: {
+    ids: corner,
+    caption:
+      'All three sides of the lower-right triangle are selected. A thicker path means more slides in that game.',
+  },
+  diagonal: {
+    ids: [12],
+    caption:
+      'Only the diagonal beside the worn patch is selected. Count how often pieces took this one route, in either direction.',
+  },
+  middle: {
+    ids: [10],
+    caption:
+      'The middle line runs straight across the board from top to bottom. Both sets of computer players rarely used it.',
+  },
+};
+function updateMaps(key) {
+  const region = regions[key];
+  for (const kind of ['hares', 'line']) {
+    const counts = samples[kind].counts,
+      n = sum(counts),
+      shares = counts.map((v) => v / n),
+      selected = sum(region.ids.map((i) => counts[i]));
+    const outline = edges.map((e) => segment(stonePoints, e, 'map-base')).join('');
+    const paths = edges
+      .map((e, i) =>
+        segment(
+          stonePoints,
+          e,
+          region.ids.includes(i) ? 'map-highlight' : 'map-other',
+          `stroke-width="${1.3 + shares[i] * 58}"`,
+        ),
+      )
+      .join('');
+    const joints = stonePoints
+      .map(([x, y]) => `<circle cx="${x}" cy="${y}" r="2.4" class="map-dot"/>`)
+      .join('');
+    const pct = ((100 * selected) / n).toFixed(1);
+    byId('map-' + kind).innerHTML =
+      `<svg viewBox="63 47 579 380" role="img" aria-label="${pct}% of slides on the selected paths"><image href="${stonePhoto}" width="692" height="474" class="map-photo"/>${key === 'corner' ? '<path class="corner-wash" d="M350 379 L585 372 L585 297 Z"/>' : ''}${outline}${paths}${joints}</svg>`;
+    byId('count-' + kind).innerHTML =
+      `<strong>${pct}%</strong><span>${selected.toLocaleString('en-US')} of ${n.toLocaleString('en-US')} slides</span>`;
   }
-  if (turn === 250)
-    text =
-      'Draw. Two edges carried 184 of the 244 slides in this game. All 1,000 games reached the move limit.';
-  $('replay-description').textContent = text;
+  byId('compare-caption').textContent = region.caption;
 }
-function seek(n) {
-  turn = Math.max(0, Math.min(250, n));
-  if (turn === 250) stopReplay();
-  renderReplay();
+const regionButtons = all('[data-region]');
+regionButtons.forEach((b) =>
+  b.addEventListener('click', () => {
+    setPressed(regionButtons, b);
+    updateMaps(b.dataset.region);
+  }),
+);
+updateMaps('corner');
+
+const replay = [newGame('line')];
+recordedMoves.forEach((m) => replay.push(advance(replay.at(-1), m)));
+let turn = 80,
+  interval = null;
+function stopClip() {
+  clearInterval(interval);
+  interval = null;
+  byId('replay-four').textContent = 'Watch the four turns';
 }
-$('timeline').addEventListener('input', (e) => {
-  stopReplay();
-  seek(Number(e.target.value));
-});
-$('replay-jump').addEventListener('click', () => {
-  stopReplay();
-  seek(80);
-});
-$('replay-step').addEventListener('click', () => {
-  stopReplay();
-  seek(turn + 1);
-});
-$('replay-toggle').addEventListener('click', () => {
-  if (playback !== null) {
-    stopReplay();
-    renderReplay();
+function showTurn(n, animate = false) {
+  turn = n;
+  const s = replay[n];
+  drawStone(byId('replay-board'), s, { trails: true, lastSlide: animate ? s.last : null });
+  byId('timeline').value = n;
+  byId('replay-position').textContent = `Turn ${n} of 250`;
+  byId('replay-step').disabled = n === 250;
+  let message = 'The players start with an empty board.';
+  if (s.last) {
+    const [a, b] = s.last,
+      who = n % 2 ? 'Blue' : 'Ivory';
+    message =
+      a < 0
+        ? `${who} places a piece at the ${names[b]}.`
+        : `${who} slides from the ${names[a]} to the ${names[b]}.`;
+  }
+  if (n === 80) message = 'At turn 80, take a look at the pieces on the right.';
+  if (n === 84) message = 'Four turns later, every piece is back where it was on turn 80.';
+  if (n === 250) message = 'The program stopped here. Neither player had made a row of three.';
+  byId('replay-description').textContent = message;
+}
+byId('replay-four').addEventListener('click', () => {
+  if (interval !== null) {
+    stopClip();
     return;
   }
-  if (turn === 250) turn = 0;
-  playback = setInterval(() => seek(turn + 1), 180);
-  seek(turn + 1);
+  showTurn(80);
+  byId('replay-four').textContent = 'Pause';
+  interval = setInterval(() => {
+    showTurn(turn + 1, true);
+    if (turn === 84) stopClip();
+  }, 810);
+});
+byId('timeline').addEventListener('input', (e) => {
+  stopClip();
+  showTurn(Number(e.target.value));
+});
+byId('replay-step').addEventListener('click', () => {
+  stopClip();
+  if (turn < 250) showTurn(turn + 1, true);
+});
+byId('replay').addEventListener('toggle', () => {
+  if (!byId('replay').open) stopClip();
 });
 document.addEventListener('visibilitychange', () => {
-  if (document.hidden) {
-    stopReplay();
-    renderReplay();
-  }
+  if (document.hidden) stopClip();
 });
-renderReplay();
-
-const fileButtons = controls('[data-file]');
-function showFile(button) {
-  pressed(fileButtons, button);
-  const raw = button.dataset.file === 'raw';
-  const values = raw ? percentages(samples.line.counts) : samples.line.adjusted;
-  const max = Math.max(...diagonals.map((i) => values[i])),
-    threshold = 200 / edges.length;
-  draw($('file-board'), {
-    shares: values,
-    description: `Three-in-a-row ${raw ? 'original' : 'adjusted'} percentages. Busiest diagonal ${percent(max)}. Centre ${percent(values[10], 3)}.`,
-  });
-  $('read-pct').textContent = percent(max);
-  $('meter').firstElementChild.style.width = `${(100 * max) / 35}%`;
-  $('meter').setAttribute('aria-label', `Busiest diagonal ${percent(max)}. Required ${percent(threshold)}.`);
-  $('read-result').textContent =
-    max >= threshold ? 'Clears the diagonal test.' : 'Falls below the diagonal cutoff.';
-  $('file-detail').textContent = raw
-    ? 'The centre line carried just 228 of 244,000 slides (0.09%). Flipping the board would leave that line in place.'
-    : 'Here the centre gets 1.11%. Flipping the same games cannot change its total. Which run or processing step accounts for the difference remains open.';
-}
-fileButtons.forEach((b) => b.addEventListener('click', () => showFile(b)));
-showFile(fileButtons[0]);
+showTurn(80);

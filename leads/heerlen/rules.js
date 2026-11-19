@@ -47,21 +47,21 @@ edges.forEach(([a, b], i) => {
 export const games = {
   line: {
     title: 'Three in a row',
-    sides: ['Red', 'Black'],
+    sides: ['Blue', 'Ivory'],
     intro:
-      'Take turns placing three counters each. Then slide one counter along a line to an empty point. Three consecutive counters in a straight line win, even during placement.',
+      'Start with three pieces each. Take turns putting one on an empty spot. Once all six are down, slide one of your pieces to the next empty spot along a cut. You win as soon as three of your pieces sit next to one another in a straight line.',
   },
   dogs: {
     title: 'Four dogs, two hares',
     sides: ['Dogs', 'Hares'],
     intro:
-      'The four dogs move first. Slide one piece to a connected empty point. The dogs win when neither hare can move. The hares win if they can still move after 240 turns.',
+      'Blue has four dogs. Ivory has two hares. The dogs go first. On your turn, slide one piece to the next empty spot along a cut. The dogs win by trapping both hares. For this version, the hares win if either can still move after 240 turns.',
   },
   hares: {
     title: 'Two hares, three dogs',
     sides: ['Hares', 'Dogs'],
     intro:
-      'The two hares move first and try to stay mobile for 240 turns. The three dogs win by leaving both hares with no legal step. Pieces slide along a line and stay on the board.',
+      'Blue has two hares. Ivory has three dogs. The hares go first. Slide one piece to the next empty spot along a cut. The dogs win if neither hare can move. In this version, the hares win if either can still move after 240 turns.',
   },
 };
 export function newGame(kind) {

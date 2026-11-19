@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>What game was played on this Roman stone? · Open Problems in History</title>
+    <meta
+      name="description"
+      content="A scratched Roman stone from Heerlen was a game board, but the rules are lost. Play our best guess, three hounds against one hare, and see what the evidence can and cannot show."
+    />
+    <link rel="canonical" href="https://historyproblems.com/leads/heerlen-c" />
+    <meta property="og:site_name" content="Open Problems in History" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="What game was played on this Roman stone?" />
+    <meta
+      property="og:description"
+      content="Play our best guess at a lost Roman game, on the stone it was played on."
+    />
+    <meta property="og:image" content="https://historyproblems.com/leads/heerlen-c/heerlen-stone.webp" />
+    <link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt" />
+    <script>
+      try {
+        const t = localStorage.getItem('op.theme');
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/shared/signature.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/leads/heerlen-c/c.css?v=4" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>"
+    />
+    <link rel="stylesheet" href="/leads/heerlen-versions.css" />
+  </head>
+  <body>
+    <header class="top">
+      <a class="mark" href="/">Open Problems in History</a>
+      <nav aria-label="Site">
+        <a href="/" data-nav="list">Problems</a>
+        <a href="/leads" data-nav="leads" aria-current="page">Leads</a>
+        <a href="/suggest" data-nav="suggest">Suggest a problem</a>
+        <a href="/sources" data-nav="sources">Sources</a>
+        <a href="/about" data-nav="about">About</a>
+        <button class="mode" type="button" aria-label="Switch light or dark">◐</button>
+      </nav>
+    </header>
+
+    <aside class="heerlen-versions" aria-label="About the three versions">
+      <p>We asked three AI models to write about the same Roman game board. Compare how each uses the evidence to reconstruct the game.</p>
+      <nav aria-label="Roman game versions">
+        <a href="/leads/heerlen">A · GPT Astra 6.2</a>
+        <a href="/leads/heerlen-v2">B · Gemini 4</a>
+        <a href="/leads/heerlen-c" aria-current="page">C · Claude Fable 5.2</a>
+      </nav>
+    </aside>
+    <main id="app" tabindex="-1">
+      <article class="hc">
+        <a class="back" href="/leads">← All leads</a>
+
+        <header class="hc-hero">
+          <div class="hc-lede">
+            <div class="hc-label">Heerlen, the Netherlands · Het Romeins Museum, no. 04433</div>
+            <h1>What game was played on this Roman stone?</h1>
+            <p>
+              Someone in the Roman town of Coriovallum, now Heerlen, scratched a board into a piece of
+              limestone and played on it long enough to wear one patch smooth.
+            </p>
+            <p>
+              No Roman writer describes this board, and nothing quite like it has been found anywhere else.
+              The rules are lost.
+            </p>
+            <p>
+              Our best guess is a chase: three hounds trying to corner one hare. You can
+              <a href="#play">play it on the stone</a>, and then see why we think so and how far the
+              evidence really goes.
+            </p>
+          </div>
+
+          <figure class="hc-fig">
+            <div class="hc-stage">
+              <img src="/leads/heerlen-c/heerlen-stone.webp" width="692" height="474"
+                alt="An oval piece of pale limestone. Scratched into its flat top are a rectangle, a line down the middle, and four slanting lines." />
+              <svg class="hc-overlay" id="hc-wear-overlay" viewBox="0 0 692 474" aria-hidden="true" hidden>
+                <path d="M362 380 Q475 352 578 300" fill="none" stroke="#c4321c" stroke-width="34" stroke-linecap="round" opacity="0.34" />
+                <path d="M424 377 L585 297" fill="none" stroke="#c4321c" stroke-width="3.2" stroke-linecap="round" />
+              </svg>
+            </div>
+            <figcaption>
+              <button type="button" class="hc-pill" id="hc-mark-wear" aria-pressed="false">Show the worn corner</button>
+              <span id="hc-photo-note">21.2 × 14.5 cm, about the size of a paperback.</span>
+            </figcaption>
+          </figure>
+        </header>
+
+        <section class="hc-section" id="clue">
+          <h2>The only clue is a smooth patch</h2>
+          <div class="hc-col">
+            <p>
+              The pattern is simple: a rectangle, a line down the middle, and four slanting lines. In 2026
+              the archaeologist Walter Crist and six colleagues noticed something about the surface. Beside
+              one of the slanting lines, the lower right one, the limestone is smoother than anywhere else
+              on the stone. Their explanation was that playing pieces had been slid along that line again
+              and again.
+            </p>
+            <p>
+              That gave them a way to test rules nobody wrote down. They had a computer play 130 different
+              sets of rules on a copy of the board, a thousand games each, and counted which lines the
+              pieces travelled. Nine sets of rules sent heavy traffic down one diagonal and little down the
+              middle, as the wear suggests. All nine were games in which one side hunts the other.
+            </p>
+            <p>
+              If they are right, it matters in two ways. Hunting games like this are not recorded in Europe
+              until the Middle Ages, so this stone would push them back by centuries. And a method that
+              reads rules from wear could be tried on the many other ancient boards whose games are
+              forgotten.
+            </p>
+            <p>
+              We went through their published data and then worked out every possible position on the board
+              ourselves. We think they found the right kind of game but the wrong version of it, and that
+              the smooth patch says less than it seems to.
+            </p>
+          </div>
+        </section>
+
+        <section class="hc-section" id="play">
+          <h2>Play the game we think it was</h2>
+          <div class="hc-play">
+            <div>
+              <div id="hc-play-wrap" class="hc-play-wrap" role="group"
+                aria-label="Playable game board on the stone. Click or drag a counter to a neighbouring empty spot.">
+                <div id="hc-play-art"></div>
+              </div>
+              <div class="hc-statusbar">
+                <p id="hc-status" role="status"></p>
+                <span>
+                  <button type="button" class="hc-link" id="hc-undo">Undo</button>
+                  <button type="button" class="hc-link" id="hc-restart">New game</button>
+                </span>
+              </div>
+              <p class="hc-note">The red marks show which lines the pieces have used in this game.</p>
+            </div>
+
+            <div class="hc-rules">
+              <p class="hc-sides">
+                <span><i class="hc-chip blue"></i><span id="hc-side-one"></span></span>
+                <span><i class="hc-chip ivory"></i><span id="hc-side-two"></span></span>
+              </p>
+              <p id="hc-rule-summary"></p>
+              <div class="hc-opts">
+                <label>Opponent
+                  <select id="hc-opponent">
+                    <option value="computer">Computer</option>
+                    <option value="local">A person beside you</option>
+                  </select>
+                </label>
+                <label id="hc-side-wrap">You play
+                  <select id="hc-play-as">
+                    <option value="1">Blue</option>
+                    <option value="2">Ivory</option>
+                  </select>
+                </label>
+              </div>
+              <div class="hc-switch" role="group" aria-label="Choose a game">
+                <p>Three sets of rules to try on the same board:</p>
+                <button type="button" data-game="hunt31" aria-pressed="true">Three hounds, one hare</button>
+                <button type="button" data-game="line" aria-pressed="false">Three in a row</button>
+                <button type="button" data-game="hunt42" aria-pressed="false">Four hounds, two hares</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hc-section" id="why">
+          <h2>Three reasons to think it was a chase</h2>
+          <div class="hc-reasons">
+
+            <div class="hc-reason">
+              <div>
+                <h3>The lines are roads, not rows</h3>
+                <p>
+                  The Roman game we know best from small scratched boards is three in a row. The poet Ovid
+                  mentions it. On its usual square board every line passes through three points, because
+                  every line is a place where you can win.
+                </p>
+                <p>
+                  This board is different. Five of its lines, shown in red, join only two points. Nobody can
+                  make a row of three on them. They only make sense as routes for pieces to travel, which
+                  is all a chase needs.
+                </p>
+              </div>
+              <figure class="hc-fig">
+                <svg viewBox="8 4 344 236" role="img" aria-label="Diagram of the board. The outer rectangle is drawn in black. The four slanting lines and the middle line are drawn in red.">
+                  <g fill="none" stroke="var(--ink)" stroke-width="3" stroke-linecap="round"><path d="M28 20H332V224H28Z" /></g>
+                  <g fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round">
+                    <path d="M180 20V224M28 149L180 224M332 149L180 224M28 95L180 20M332 95L180 20" />
+                  </g>
+                  <g fill="var(--ink)">
+                    <circle cx="28" cy="224" r="6" /><circle cx="180" cy="224" r="6" /><circle cx="332" cy="224" r="6" />
+                    <circle cx="28" cy="149" r="6" /><circle cx="332" cy="149" r="6" /><circle cx="332" cy="95" r="6" />
+                    <circle cx="332" cy="20" r="6" /><circle cx="28" cy="95" r="6" /><circle cx="28" cy="20" r="6" /><circle cx="180" cy="20" r="6" />
+                  </g>
+                </svg>
+                <div class="hc-key">
+                  <span><i style="background: var(--ink)"></i>A row of three is possible</span>
+                  <span><i style="background: var(--accent)"></i>Joins only two points</span>
+                </div>
+              </figure>
+            </div>
+
+            <div class="hc-reason">
+              <div>
+                <h3>Every known relative is three against one</h3>
+                <p>
+                  The versions the study picked mostly give one player four pieces and the other two. No
+                  recorded game uses those numbers.
+                </p>
+                <p>
+                  The study itself lists the nearest relatives: country games written down in Denmark,
+                  Spain, France, Italy and Greece over the last two centuries. Almost all of them set three
+                  hunters against a single quarry. In the Spanish game and one of the Danish ones, the
+                  hunters may not move backward.
+                </p>
+              </div>
+              <ul class="hc-verdicts">
+                <li><b>Haretavl and Hund efter hare, Denmark</b><span>Three dogs, one hare</span></li>
+                <li><b>La liebre perseguida, Spain</b><span>Three dogs, one hare. The dogs may not go back.</span></li>
+                <li><b>Jeu des gendarmes et du voleur, France</b><span>Three policemen, one thief</span></li>
+                <li><b>Gioco dell’orso, Italy</b><span>Three hunters, one bear</span></li>
+                <li><b>To kinégi tou lagoú, Greece</b><span>A hunter and two dogs, one hare</span></li>
+              </ul>
+            </div>
+
+            <div class="hc-reason">
+              <div>
+                <h3>It is the only version that is a real contest</h3>
+                <p>
+                  The board has ten points. That is few enough for a computer to work through every possible
+                  position and say for certain who wins when nobody makes a mistake. We did that for four
+                  versions of the chase.
+                </p>
+                <p>
+                  Three of them are lopsided. Only one leaves both players something to play for, and it is
+                  the one with the numbers and the no-retreat rule found in the real games.
+                </p>
+              </div>
+              <ul class="hc-verdicts">
+                <li><b>Four hounds, two hares</b><span>The hounds cannot lose. This is the study’s pick.</span></li>
+                <li><b>Three hounds, one hare, free to move any way</b><span>The hounds cannot lose, and win within ten moves.</span></li>
+                <li><b>Three hounds, two hares</b><span>The hares can nearly always dodge for ever.</span></li>
+                <li class="is-pick"><b>Three hounds, one hare, no retreat</b><span>The hounds win only if they play exactly right. One slip and the hare is through. When both sides move at random, the hare escapes two games in three.</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="hc-section" id="diagonal">
+          <h2>Why is only one diagonal worn?</h2>
+          <div class="hc-reason">
+            <div>
+              <p>
+                The board is symmetrical. Any game should wear its four slanting lines about equally, yet
+                only one is smooth. The study suggests a habit of the players, such as favouring the right
+                hand.
+              </p>
+              <p>
+                There may be a plainer reason. That line was cut in the wrong place.
+              </p>
+              <p>
+                The slanting lines are meant to meet the middle line at the top and bottom of the board.
+                None of them quite does. The study measured the gaps: 1.0, 0.9 and 0.6 cm for three of
+                them, and 2.4 cm for the worn one.
+              </p>
+              <p>
+                The glass counters found in Roman Heerlen are roughly 2 cm across. A counter resting on the
+                middle point already touches the other three lines. To get onto the fourth, it has to be
+                pushed across a strip of bare stone, every single time.
+              </p>
+              <p>
+                This is a hunch, and we have not been able to test it. The test is simple. If it is right,
+                the smooth patch lies in that gap.
+              </p>
+            </div>
+            <div>
+              <figure class="hc-fig">
+                <svg viewBox="0 0 520 260" role="img" aria-label="Scale drawing of the bottom of the board. A counter on the middle point covers the foot of the left slanting line, which is 0.6 cm away, but not the right one, which is 2.4 cm away.">
+                  <g fill="none" stroke="var(--ink)" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M20 200H500M240 200V24M210 200L20 118M360 200L500 140" />
+                  </g>
+                  <rect x="290" y="186" width="70" height="28" fill="var(--accent)" opacity="0.3" />
+                  <circle cx="240" cy="200" r="50" fill="#2b7f92" opacity="0.55" stroke="#123947" stroke-width="2" />
+                  <g font-family="IBM Plex Mono, monospace" font-size="13" fill="var(--ink)">
+                    <text x="150" y="244" text-anchor="middle">0.6 cm</text>
+                    <text x="388" y="244" text-anchor="middle">2.4 cm</text>
+                    <text x="325" y="176" text-anchor="middle" fill="var(--accent)">bare stone</text>
+                    <text x="240" y="130" text-anchor="middle">counter</text>
+                  </g>
+                  <g stroke="var(--ink)" stroke-width="1.2">
+                    <path d="M210 222V230H240V222M240 226H360V222M360 230V222" fill="none" />
+                  </g>
+                </svg>
+                <figcaption>The bottom edge of the board, drawn to scale. The worn line is the one on the right.</figcaption>
+              </figure>
+              <figure class="hc-fig" style="margin-top: 22px">
+                <img src="/leads/heerlen-c/coriovallum-counters.jpg" width="546" height="375" loading="lazy"
+                  alt="The stone with five Roman glass counters resting on it. The large dark counter at the bottom middle covers the place where the lines meet." />
+                <figcaption>Roman counters from Heerlen resting on the stone. Photo: Walter Crist.</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="hc-section" id="limits">
+          <h2>What the smooth patch cannot tell us</h2>
+          <div class="hc-col">
+            <p>
+              Here is the awkward part, and it is as awkward for our guess as for theirs. How much a line
+              gets used depends more on who is playing than on which game they are playing.
+            </p>
+            <p>
+              The study’s computer player sent 15 per cent of its moves down one diagonal and almost none
+              down the middle line. That is the pattern that matched the stone. Hand the very same game to
+              a different kind of player and the pattern fades.
+            </p>
+          </div>
+
+          <div class="hc-chart" id="hc-chart"></div>
+          <div class="hc-key">
+            <span><i style="background: var(--accent)"></i>Busiest diagonal</span>
+            <span><i style="background: var(--teal)"></i>Middle line</span>
+            <span>Dashed line: what every line would get if moves were spread evenly</span>
+          </div>
+
+          <div class="hc-col" style="margin-top: 26px">
+            <p>
+              So the wear fits the idea that pieces moved along the diagonals. It does not pick out a game.
+              Our case for hounds and hare rests on the shape of the board and on which rules make a game
+              worth playing, and not on the wear.
+            </p>
+          </div>
+        </section>
+
+        <section class="hc-section" id="next">
+          <h2>Where that leaves it</h2>
+          <div class="hc-col"><p>If we had to bet, we would spread the money like this.</p></div>
+          <div class="hc-odds">
+            <div><b>2 in 5</b><span>A chase or blocking game, most likely three hounds and a hare</span></div>
+            <div><b>1 in 5</b><span>Three in a row</span></div>
+            <div><b>2 in 5</b><span>Something we cannot recover, or not a game at all</span></div>
+          </div>
+          <div class="hc-col"><p>Three things would change those odds.</p></div>
+          <ol class="hc-next">
+            <li><strong>Look at where the smooth patch sits.</strong> The museum has a 3D scan. If the wear lies in the gap between the middle point and the misplaced line, the wrong-cut idea holds.</li>
+            <li><strong>Find a second board.</strong> The likeliest places are museum stores along the roads out of Roman Heerlen: Cologne, Xanten, Nijmegen, Trier and Tongeren.</li>
+            <li><strong>Let people play.</strong> Give players copies of the board and glass counters for a few evenings, and see which rules they keep coming back to and where their pieces actually go.</li>
+          </ol>
+
+          <div class="hc-details">
+            <details>
+              <summary>How we worked this out</summary>
+              <p>
+                We listed every arrangement of pieces on the ten-point board for each version of the game
+                (between 1,680 and 6,300 arrangements) and worked backward from the finished positions to
+                find who wins each one. The chart then comes from thousands of simulated games per row. A
+                “flawless” player always picks the quickest win or the slowest loss. A “careless” player
+                picks any legal move at random.
+              </p>
+              <p>
+                The study’s 15 per cent figure comes from its published table, after a step in which each
+                simulated game is flipped to line up with the others. Our rows are not flipped, so the two
+                are not measured in quite the same way. The published figure is for its four-against-two
+                game with the hounds moving first.
+              </p>
+            </details>
+            <details>
+              <summary>Three things we found in the study’s data</summary>
+              <p>
+                The authors published their game records and code, which is the only reason any of this
+                could be checked. Three points are worth knowing.
+              </p>
+              <ul>
+                <li>For this layout of the board, 17 of the 21 sets of rules in the published game records are a single game repeated 1,000 times.</li>
+                <li>The figures printed in the study cannot have come from those records. They appear to come from a later, more varied run that was not published.</li>
+                <li>The script that screens the results asks for two columns that do not exist (<code>X173</code> and <code>X120</code>), so one diagonal is skipped on two of the six board layouts.</li>
+              </ul>
+              <p>None of this shows the study’s conclusion is wrong. It means the printed tables cannot yet be rebuilt from the public files.</p>
+            </details>
+            <details>
+              <summary>Sources</summary>
+              <p>
+                Walter Crist, Éric Piette, Karen Jeneson, Dennis J. N. J. Soemers, Matthew Stephenson, Luk
+                van Goor and Cameron Browne, “Ludus Coriovalli: using artificial intelligence-driven
+                simulations to identify rules for an ancient board game,” <em>Antiquity</em> 100 (2026),
+                <a href="https://doi.org/10.15184/aqy.2025.10264">doi:10.15184/aqy.2025.10264</a>. Data and
+                code: <a href="https://doi.org/10.34894/BWSJXL">DataverseNL</a>.
+              </p>
+              <p>
+                Photographs of the stone and counters are from the study and its supplement, licensed
+                <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The dark lines on the
+                stone are modern, added to make the ancient cuts visible.
+              </p>
+            </details>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="foot">
+      <div class="foot-top">
+        <div>
+          <a class="mark" href="/">Open Problems in History</a>
+          <p class="stats" id="stats"></p>
+        </div>
+        <ul class="foot-links">
+          <li><a href="/">Problems</a></li>
+          <li><a href="/leads">Leads</a></li>
+          <li><a href="/suggest">Suggest a problem</a></li>
+          <li><a href="/sources">Sources</a></li>
+          <li><a href="/for">Who can help</a></li>
+          <li><a href="/methods">Methods</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="https://buy.stripe.com/5kQaEXfJLgRGbqrf1L4F201">Donate</a></li>
+          <li><a href="/llms.txt">For AI agents</a></li>
+          <li><a href="https://github.com/benjaminbreen/open-problems-in-history">Source and data</a></li>
+          <li><a href="/colophon">Colophon</a></li>
+        </ul>
+      </div>
+      <div class="foot-sig">
+        <p class="signature">
+          Made by <a class="sig-name" href="https://benjaminpbreen.com/">Benjamin Breen</a
+          ><a class="sig-logo" href="https://resobscura.substack.com/" aria-label="Res Obscura"
+            ><img src="/shared/res-obscura.webp" alt="" width="28" height="28" loading="lazy" decoding="async"
+          /></a>
+        </p>
+        <a href="#play" class="hc-link">Back to the stone ↑</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/leads/heerlen-c/c.js?v=4"></script>
+  </body>
+</html>

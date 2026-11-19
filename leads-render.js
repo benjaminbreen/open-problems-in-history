@@ -15,9 +15,14 @@ export function leadsHTML() {
       <a class="lead-entry" href="/leads/heerlen">
         <p class="lead-label">Heerlen · Roman game board</p>
         <h2>What game wore down this stone?</h2>
-        <p>One diagonal is worn smooth. Can you read the rules of the game from the tracks that players left?</p>
-        <span class="lead-link">Try the blind test and play the board <span aria-hidden="true">→</span></span>
+        <p>A Roman stone is worn smooth beside a diagonal cut. Move a piece across it twice to see how two different games could have left that mark.</p>
+        <span class="lead-link">Play the two games <span aria-hidden="true">→</span></span>
       </a>
+      <p>Three versions of the Roman game board experiment<br>
+        <a href="/leads/heerlen">A · GPT Astra 6.2</a> ·
+        <a href="/leads/heerlen-v2">B · Gemini 4</a> ·
+        <a href="/leads/heerlen-c">C · Claude Fable 5.2</a>
+      </p>
       <a class="lead-entry" href="/leads/grant-cylinder">
         <p class="lead-label">Vienna, 1889–90 · Wax cylinder</p>
         <h2>${grantTitle}</h2>
