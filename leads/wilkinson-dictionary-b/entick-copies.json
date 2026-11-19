@@ -1,0 +1,508 @@
+{
+  "question": "Which printing of John Entick’s New Spelling Dictionary reproduces the coordinates in the wordbank labeled 2880?",
+  "transcription": "https://github.com/c2huc2hu/wilkinson/blob/master/wordbanks/wordbank",
+  "coordinate_order": [
+    "page",
+    "column",
+    "row, counted from 1 at the first entry under the running head"
+  ],
+  "target": {
+    "glorious": [
+      163,
+      "left",
+      26
+    ],
+    "glory": [
+      163,
+      "left",
+      28
+    ]
+  },
+  "method": "Locate the headwords themselves in the facsimile. Compare the adjective and the first (noun) entry for Glory. Search beyond page 163 to allow for numbering differences. Null indicates a coordinate unreported or unnumbered. Related settings and impressions are listed as separate copies examined.",
+  "copies_examined": 22,
+  "exact_layout_matches": 0,
+  "copies": [
+    {
+      "copy": "London, 1766",
+      "page": null,
+      "column": null,
+      "glorious_row": null,
+      "glory_noun_row": null,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1766/page/n160/mode/1up",
+      "observation": "Unnumbered page. Glorious ends the left column. The noun Glory starts the right column. The two entries are consecutive."
+    },
+    {
+      "copy": "London, Dilly; also sold by Cox and Berry in Boston, 1772",
+      "page": 157,
+      "column": "right",
+      "glorious_row": 15,
+      "glory_noun_row": 17,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1772/page/n186/mode/1up"
+    },
+    {
+      "copy": "London, 1773",
+      "page": 178,
+      "column": "left",
+      "glorious_row": 21,
+      "glory_noun_row": 23,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n179/mode/1up",
+      "printed_number": "188",
+      "observation": "Misnumbered between 177 and 179.",
+      "neighbor_images": [
+        "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n178/mode/1up",
+        "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n180/mode/1up"
+      ]
+    },
+    {
+      "copy": "London, 1776",
+      "page": 178,
+      "column": "left",
+      "glorious_row": 21,
+      "glory_noun_row": 23,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1776/page/n177/mode/1up"
+    },
+    {
+      "copy": "London, 1781",
+      "page": 158,
+      "column": "right",
+      "glorious_row": 31,
+      "glory_noun_row": 33,
+      "page_image": "https://archive.org/details/11280377bsb/page/n189/mode/1up"
+    },
+    {
+      "copy": "Dublin, Walker, 1782",
+      "page": 182,
+      "column": "left",
+      "glorious_row": 25,
+      "glory_noun_row": 27,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1782/page/n201/mode/1up"
+    },
+    {
+      "copy": "London, 1787",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1787/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, 1788",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1788/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, 1790",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/10582072bsb/page/n206/mode/1up"
+    },
+    {
+      "copy": "Dublin, Walker, 1790",
+      "page": 192,
+      "column": "right",
+      "glorious_row": 18,
+      "glory_noun_row": 20,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1790/page/n199/mode/1up"
+    },
+    {
+      "copy": "London, teaching to write and pronounce, 1791",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1791/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, comprehending a copious and accented vocabulary, 1791",
+      "page": 123,
+      "column": "left",
+      "glorious_row": 29,
+      "glory_noun_row": 31,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1791_0/page/n138/mode/1up"
+    },
+    {
+      "copy": "London, 1793",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1793/page/n200/mode/1up"
+    },
+    {
+      "copy": "London, for the booksellers, 1795",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795/page/n192/mode/1up"
+    },
+    {
+      "copy": "London, Dilly and others, 1795",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 4,
+      "glory_noun_row": 6,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, 1796",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 4,
+      "glory_noun_row": 6,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1796/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, 1798",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 4,
+      "glory_noun_row": 6,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1798/page/n202/mode/1up"
+    },
+    {
+      "copy": "London, 1800",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 4,
+      "glory_noun_row": 6,
+      "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1800/page/n206/mode/1up"
+    },
+    {
+      "copy": "Dublin, 1776",
+      "page": 208,
+      "column": "left",
+      "glorious_row": 19,
+      "glory_noun_row": 21,
+      "page_image": "https://books.google.com/books?id=tVAdj9lOYfoC&pg=PA208"
+    },
+    {
+      "copy": "London, 1780",
+      "page": 178,
+      "column": "left",
+      "glorious_row": 21,
+      "glory_noun_row": 23,
+      "page_image": "https://books.google.com/books?id=xZUPAAAAQAAJ&pg=PA178"
+    },
+    {
+      "copy": "London, 1783",
+      "page": 158,
+      "column": "right",
+      "glorious_row": 31,
+      "glory_noun_row": 33,
+      "page_image": "https://books.google.com/books?id=JZoRAAAAIAAJ&pg=PA158"
+    },
+    {
+      "copy": "Edinburgh, Bell & Bradfute, with New York booksellers; date indistinct",
+      "page": 167,
+      "column": "right",
+      "glorious_row": 3,
+      "glory_noun_row": 5,
+      "page_image": "https://deriv.nls.uk/dcn23/1875/7478/187574789.23.pdf#page=205",
+      "title_page": "https://deriv.nls.uk/dcn23/1875/7478/187574789.23.pdf#page=3"
+    }
+  ],
+  "additional_word_checks": {
+    "Dublin, Walker, 1782": [
+      {
+        "word": "advantageous",
+        "cipher": [
+          7,
+          "right",
+          26
+        ],
+        "printed": [
+          null,
+          "right",
+          3
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1782/page/n27/mode/1up"
+      },
+      {
+        "word": "advanced",
+        "cipher": [
+          7,
+          "right",
+          20
+        ],
+        "printed": [
+          null,
+          "left",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1782/page/n27/mode/1up"
+      },
+      {
+        "word": "either",
+        "cipher": [
+          122,
+          "right",
+          10
+        ],
+        "printed": [
+          136,
+          "right",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1782/page/n155/mode/1up"
+      },
+      {
+        "word": "water",
+        "cipher": [
+          422,
+          "right",
+          14
+        ],
+        "printed": [
+          471,
+          "left",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1782/page/n494/mode/1up"
+      }
+    ],
+    "London, Dilly and others, 1795": [
+      {
+        "word": "advanced",
+        "cipher": [
+          7,
+          "right",
+          20
+        ],
+        "printed": [
+          7,
+          "right",
+          32
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0/page/n42/mode/1up"
+      },
+      {
+        "word": "advantageous",
+        "cipher": [
+          7,
+          "right",
+          26
+        ],
+        "printed": [
+          7,
+          "right",
+          38
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0/page/n42/mode/1up"
+      },
+      {
+        "word": "water",
+        "cipher": [
+          422,
+          "right",
+          14
+        ],
+        "printed": [
+          430,
+          "right",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_enticks-new-spelling-di_entick-john_1795_0/page/n465/mode/1up"
+      }
+    ],
+    "London, 1773": [
+      {
+        "word": "advantageous",
+        "cipher": [
+          7,
+          "right",
+          26
+        ],
+        "printed": [
+          39,
+          "left",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n40/mode/1up"
+      },
+      {
+        "word": "either",
+        "cipher": [
+          122,
+          "right",
+          10
+        ],
+        "printed": [
+          141,
+          "right",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n142/mode/1up"
+      },
+      {
+        "word": "water",
+        "cipher": [
+          422,
+          "right",
+          14
+        ],
+        "printed": [
+          417,
+          "right",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1773/page/n418/mode/1up"
+      }
+    ],
+    "London, 1772": [
+      {
+        "word": "governor",
+        "cipher": [
+          165,
+          "left",
+          7
+        ],
+        "printed": [
+          159,
+          "left",
+          null
+        ],
+        "page_image": "https://archive.org/details/bim_eighteenth-century_the-new-spelling-diction_entick-john_1772/page/n188/mode/1up"
+      }
+    ]
+  },
+  "possible_parallel": {
+    "published_text": "Baron de Carondelet to Thomas Power, New Orleans, 26 May 1797. English translation in American State Papers, Miscellaneous, vol. II, document 280, enclosure 38, especially printed page 103.",
+    "sources": [
+      "https://dheller.org/Timeline-files/US-American-State-Papers/Miscellaneous-2/No-264-543.pdf#page=103",
+      "https://louisiana-anthology.org/303_download/texts/clark--gen_wilkinsons_corrupt/proofsofcorrupti00clar.pdf"
+    ],
+    "words_in_printed_order": [
+      {
+        "word": "glorious",
+        "cipher": [
+          163,
+          "left",
+          26
+        ]
+      },
+      {
+        "word": "glory",
+        "cipher": [
+          163,
+          "left",
+          28
+        ]
+      },
+      {
+        "word": "expect",
+        "cipher": [
+          135,
+          "left",
+          15
+        ]
+      },
+      {
+        "word": "brilliant",
+        "cipher": [
+          43,
+          "right",
+          14
+        ]
+      },
+      {
+        "word": "fortune",
+        "cipher": [
+          152,
+          "right",
+          27
+        ]
+      }
+    ],
+    "other_words_in_both": [
+      {
+        "word": "perfectly",
+        "cipher": [
+          270,
+          "left",
+          34
+        ]
+      },
+      {
+        "word": "happy",
+        "cipher": [
+          171,
+          "left",
+          37
+        ]
+      },
+      {
+        "word": "weak",
+        "cipher": [
+          432,
+          "left",
+          17
+        ]
+      }
+    ],
+    "test_result": "Rejected. All five exact code forms occur in the researchers’ substitutions in the reverse of the predicted order, spread across different passages of a letter dated 20 March 1792.",
+    "inventory": "https://github.com/c2huc2hu/wilkinson/blob/master/data.txt#L21-L26",
+    "ordered_source": "https://github.com/c2huc2hu/wilkinson/blob/437b5fcb59318db743fd0385e9114ba43dec309c/apply-wordbank#L235-L566",
+    "ordered_source_type": "Substitutions entered in phrase order, with repeated words, uncertainties, and some gaps. The source has no manuscript page breaks. Each of the five code-word pairs is also tagged 2880 in the code-sorted wordbank.",
+    "source_crosscheck": "Lines 235–567 contain 85 distinct dictionary-coordinate and reading pairs also tagged 2880, and zero exact pairs tagged 1633, 1652, 2877 or 2916. Count uses the standard page.[row]-/= forms, removes escape characters and leading page-number zeroes, case-folds readings, and omits the unknown reading ???. Each of the five test codes occurs once in this segment.",
+    "words_in_researchers_order": [
+      {"line": 355, "code": "152.[27]=", "word": "fortune"},
+      {"line": 365, "code": "43.[14]=", "word": "brilliant"},
+      {"line": 457, "code": "135.[15]-", "word": "expect"},
+      {"line": 492, "code": "163.[28]-", "word": "glory"},
+      {"line": 547, "code": "163.[26]-", "word": "glorious"}
+    ],
+    "dateline": {"source_lines": [235, 236], "place_as_entered": "Natches", "date_as_entered": "20 March 1792"},
+    "contents": "The writer forwards a letter from the new governor and discusses a pension, $1,000 due at year’s end and $7,000 advanced by Miró. Fortune precedes a passage on providing for the recipient’s family. Water occurs near the close in instructions about the bearer’s route.",
+    "attribution": "Probably Manuel Gayoso de Lemos to James Wilkinson, inferred from the dateline, the new governor and the pension. The signature code [39]^ following Your True Friend is unresolved in the ordered source. The sorted wordbank tentatively labels it Wilkinson?.",
+    "facsimile_status": "The project's File A inventory identifies pages 2880–2882. No image of these three leaves was verified. The project's linked image folder returned 404. The Library of Congress lists a Seville Papeles de Cuba facsimile collection; no item-level crosswalk to the project's numbers was found.",
+    "archival_sources": [
+      "https://www.loc.gov/collections/hans-peter-kraus-collection-of-spanish-american-documents/about-this-collection/related-resources/",
+      "https://libsysdigi.library.illinois.edu/oca/Books2008-06/descriptivecatal00hill/descriptivecatal00hill.pdf#page=547"
+    ],
+    "archival_caveat": "Hill, printed p. 495, lists the 1792 Carondelet drafts to Wilkinson in CUBA,2374. His list of Gayoso letters to Wilkinson in that bundle specifies 1790–1791 and 1794–1795. He also describes a group of ciphers with unread dates in CUBA,2373. Neither entry identifies this individual letter."
+  },
+  "untested_copies": [
+    {
+      "copy": "Entick revised by William Crakelt, dated [1784] in the Huntington catalogue. Call number 480434.",
+      "catalogue": "https://www.huntington.org/collections/lib-480434",
+      "full_catalogue": "https://catalog.huntington.org/record=b1664482",
+      "estc": "T138205",
+      "oclc": "228755487",
+      "bibliographic_record": "https://www.grubstreetproject.net/publications/T138205/",
+      "recorded_extent": "Pp.iii-xxxvi,485,[7]. Huntington copy lacks everything after p. 470.",
+      "page_images_verified": [],
+      "page_image_targets": [
+        {"page": 7, "column": "right", "rows": {"20": "advanced", "26": "advantageous"}},
+        {"page": 163, "column": "left", "rows": {"26": "glorious", "28": "glory"}},
+        {"page": 422, "column": "right", "rows": {"14": "water"}}
+      ],
+      "scan_status": "No public facsimile located under the assigned year or identifiers. Huntington’s collection entry says Image not available. Its digital library search for Entick returned zero results. All requested page numbers precede the recorded end of the surviving copy.",
+      "other_witness": "Alexander K. Bocast marks a 1784 printing as one he examined in his 2018 ICHLL presentation. The presentation supplies no page images for the requested coordinates and does not identify this as the Huntington copy.",
+      "other_witness_source": "https://www.academia.edu/37042850/A_New_Analysis_of_Samuel_Johnson_Junior_s_A_School_Dictionary_of_1798",
+      "reproduction_service": "https://libanswers.huntington.org/faq/52020",
+      "reason_to_check": "The March 1792 dateline places the use of the dictionary before the later printings. The 1784 record falls between the examined London 1783 printing (page 158) and London 1787 printing (page 167)."
+    },
+    {
+      "copy": "London, Dilly, 1785. ESTC N49673.",
+      "catalogue": "https://www.grubstreetproject.net/publications/N49673/"
+    },
+    {
+      "copy": "London, Dilly, 1786. ESTC T221584.",
+      "catalogue": "https://www.grubstreetproject.net/publications/T221584/"
+    },
+    {
+      "copy": "London, Dilly, 1774. ESTC T225630.",
+      "catalogue": "https://www.grubstreetproject.net/publications/T225630/"
+    },
+    {
+      "copy": "London, Dilly, 1770. Fifth edition exhibited by the Grolier Club.",
+      "catalogue": "https://grolierclub.omeka.net/exhibits/show/lexicography/item/4361"
+    }
+  ]
+}

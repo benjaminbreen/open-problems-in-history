@@ -1,10 +1,12 @@
-import { dodoTitle, dodoDescription } from "./dodo-lead.js";
+import { notedPassages } from "./lib/lead-notes.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
+
+import { dodoTitle, dodoDescription } from "./dodo-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
-export const langleyTitle = "Did Langley’s team test either of Alexander Graham Bell’s kite designs?";
-export const langleyDescription = "In March 1902, Bell suggested two ways to rebuild Samuel Langley’s kite. A notebook records the conversation. A later flight record could show whether either idea got into the air.";
+export const langleyTitle = "Did Langley ever try Bell’s kite designs?";
+export const langleyDescription = "In 1902 the astronomer Samuel Langley asked Alexander Graham Bell to help him fly an experimental kite. A notebook records two changes Bell suggested. Did either design get into the air?";
 
 const media = "/media/leads/grant";
 const transcript = "https://www.nps.gov/edis/learn/photosmultimedia/prince-bismarck-and-count-moltke-before-the-recording-horn.htm#:~:text=Herr%20Wangemann%20is%20here";
@@ -12,82 +14,135 @@ const transfer = "https://www.nps.gov/edis/learn/photosmultimedia/upload/08-tenh
 const plan = "https://scholarsjunction.msstate.edu/cgi/viewcontent.cgi?article=1003&amp;context=fdg-and-ihg-correspondence#page=7";
 const register = "https://books.google.com/books?id=V33R3iW7K50C&amp;pg=RA1-PA61";
 
+export const leadsDescription = "Some preliminary writeups of findings and methods used to try to tackle open historical problems using digitized archives and agentic research";
+
 export function leadsHTML() {
-  return `
-    <article class="leads-page">
-      <h1 class="page-title">Leads</h1>
-      <p class="lead-intro">Start with a source. See what it can tell us and what remains to be found.</p>
-      <a class="lead-entry" href="/leads/dodo-journal">
-        <p class="lead-label">Mauritius, 1615 · Natural history</p>
-        <h2>${dodoTitle}</h2>
-        <p>${dodoDescription}</p>
-        <span class="lead-link">Read the manuscripts <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="lead-entry" href="/leads/langley-kite">
-        <p class="lead-label">Potomac River, 1902 · Early flight</p>
-        <h2>${langleyTitle}</h2>
-        <p>${langleyDescription}</p>
-        <span class="lead-link">Read the notebook <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="lead-entry" href="/leads/wilkinson-dictionary">
-        <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
-        <h2>${wilkinsonTitle}</h2>
-        <p>James Wilkinson was a U.S. Army officer who secretly worked for Spain. He and Spanish officials hid words in their letters by giving the page, column and entry in a dictionary. Can we find the book they had on their desks?</p>
-        <span class="lead-link">Try the dictionary <span aria-hidden="true">→</span></span>
-      </a>
-      <a class="lead-entry" href="/leads/heerlen">
-        <p class="lead-label">Heerlen · Roman game board</p>
-        <h2>What game wore down this stone?</h2>
-        <p>A Roman stone is worn smooth beside a diagonal cut. Move a piece across it twice to see how two different games could have left that mark.</p>
-        <span class="lead-link">Play the two games <span aria-hidden="true">→</span></span>
-      </a>
-      <p>Three versions of the Roman game board experiment<br>
-        <a href="/leads/heerlen">A · GPT Astra 6.2</a> ·
-        <a href="/leads/heerlen-v2">B · Gemini 4</a> ·
-        <a href="/leads/heerlen-c">C · Claude Fable 5.2</a>
-      </p>
-      <a class="lead-entry" href="/leads/grant-cylinder">
-        <p class="lead-label">Vienna, 1889–90 · Wax cylinder</p>
-        <h2>${grantTitle}</h2>
-        <p>An American recorded a letter on an Edison phonograph. Could two words in the letter and a child’s drawing help identify him?</p>
-        <span class="lead-link">Listen and examine the evidence <span aria-hidden="true">→</span></span>
-      </a>
-    </article>`;
+  // First appearance of each writeup on the Leads index, in repository time.
+  const entries = [
+    {
+      slug: "dodo-journal", published: "2026-11-19T11:05:53-08:00",
+      label: "Mauritius, 1615 · Natural history", title: dodoTitle, description: dodoDescription,
+      image: "/media/leads/dodo/dodo-detail.webp", alt: "A brown dodo with a hooked bill, from a Mughal album painting.",
+      action: "Read the manuscripts",
+    },
+    {
+      slug: "langley-kite", published: "2026-11-19T10:29:16-08:00",
+      label: "Potomac River, 1902 · Early flight", title: langleyTitle, description: langleyDescription,
+      image: "/og/langley-kite.jpg", alt: "Notebook detail beginning ‘Mr Bell suggested’.",
+      action: "Read the notebook",
+    },
+    {
+      slug: "wilkinson-dictionary", published: "2026-11-19T07:33:35-08:00",
+      label: "The Mississippi River, 1792 · Espionage", title: wilkinsonTitle,
+      description: "James Wilkinson was a U.S. Army officer who secretly worked for Spain. He and Spanish officials hid words in their letters by giving the page, column and entry in a dictionary. Can we find the book they had on their desks?",
+      image: "/leads/wilkinson-dictionary/wilkinson-sharples.webp", alt: "James Wilkinson in his blue officer’s coat.",
+      action: "Try the dictionary",
+      versions: `<a href="/leads/wilkinson-dictionary">Version A</a> · <a href="/leads/wilkinson-dictionary-b">Version B · Which dictionary did Agent 13 use?</a>`,
+    },
+    {
+      slug: "heerlen", published: "2026-11-18T19:46:44-08:00",
+      label: "Heerlen · Roman game board", title: "What game wore down this stone?",
+      description: "A Roman stone is worn smooth beside a diagonal cut. Move a piece across it twice to see how two different games could have left that mark.",
+      image: "/leads/heerlen/heerlen-stone.webp", alt: "A Roman stone with the lines of a game board cut into its surface.",
+      action: "Play the two games",
+      versions: `<a href="/leads/heerlen">A · GPT Astra 6.2</a> · <a href="/leads/heerlen-v2">B · Gemini 4</a> · <a href="/leads/heerlen-c">C · Claude Fable 5.2</a>`,
+    },
+    {
+      slug: "grant-cylinder", published: "2026-11-18T14:44:39-08:00",
+      label: "Vienna, 1889–90 · Wax cylinder", title: grantTitle,
+      description: "An American recorded a letter on an Edison phonograph. Could two words in the letter and a child’s drawing help identify him?",
+      image: "/media/leads/grant/Julia-Grant-rooms.jpg", alt: "Julia Grant’s drawing of her room and her baby brother’s room.",
+      action: "Listen and examine the evidence",
+    },
+  ];
+  const dateFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Los_Angeles" });
+  const rows = entries.sort((a, b) => Date.parse(b.published) - Date.parse(a.published)).map(entry => `
+    <li class="lead-index-row">
+      <a class="lead-entry" href="/leads/${entry.slug}" aria-labelledby="title-${entry.slug}">
+        <img class="lead-thumb" src="${entry.image}" alt="${entry.alt}" width="168" height="126">
+        <p class="lead-label">${entry.label}</p>
+        <h2 id="title-${entry.slug}">${entry.title}</h2>
+        <p class="lead-summary">${entry.description}</p>
+        <div class="lead-index-details"><span class="lead-link">${entry.action} <span aria-hidden="true">→</span></span><time datetime="${entry.published}">Published ${dateFormat.format(new Date(entry.published))}</time></div>
+      </a>${entry.versions ? `\n      <p class="lead-versions">${entry.versions}</p>` : ""}
+    </li>`);
+  return `<article class="leads-page leads-index">
+    <h1 class="page-title">Leads</h1>
+    <p class="lead-intro">${leadsDescription}</p>
+    <ol class="lead-index-list" aria-label="Leads, newest first">${rows.join("")}</ol>
+  </article>`;
 }
 
 export function langleyHTML() {
   const notebook = "https://edan.si.edu/slideshow/viewer/?eadrefid=NASM.XXXX.0494_ref690";
   const journal = "https://tile.loc.gov/storage-services/service/mss/magbell/216/21610101/21610101.pdf";
   const scans = "/media/leads/langley";
+  const langleyBio = "https://siarchives.si.edu/history/samual-pierpont-langley";
+  const bellBio = "https://www.loc.gov/collections/alexander-graham-bell-papers/articles-and-essays/inventor-and-scientist/";
+  const passages = [
+    {
+      id: "island",
+      body: ref => `<h2>A kite that might right itself</h2>
+        <p>On March 10, 1902, Langley and Bell took a boat to Analostan Island in the Potomac River at Washington, D.C. They had come to try a kite with a six-sided frame and a curious tail. As Bell understood it, if the kite tilted, a weight would slide along a rod and adjust the tail to bring the kite level again. For anyone hoping to put a person in the air, it mattered whether a flying machine could recover its balance.</p>
+        <p>That afternoon there was hardly any wind. Bell ran with the string, then let go when he saw that Langley’s kite would come down hard. In his journal he suggested trying again from the top of a pole, where Langley could watch how the kite behaved without smashing it.${ref}</p>`,
+      note: `Bell described the outing, sketched the kite from memory and explained what he thought the sliding weight did in <a href="${journal}#page=103">his journal, pp. 631–634</a>. The Smithsonian traces Langley’s progression from powered models to a machine with a pilot in its <a href="https://sirismm.si.edu/EADpdfs/NASM.XXXX.0494.pdf">guide to his papers</a>.`,
+    },
+    {
+      id: "designs",
+      body: ref => `<h2>What the notebook adds to Bell’s account</h2>
+        <p>AI agents found another account among Langley’s papers. Partway down a page of shorthand, the writer switched to ordinary handwriting and wrote “Mr Bell suggested”. The kite’s frame formed a single open compartment, called a cell. Bell proposed adding a second cell directly behind it. His other idea was to add one cell on each side, then move the middle one back about six inches.${ref}</p>`,
+      note: `<a href="${notebook}">National Air and Space Museum Archives, Langley Collection, box 62, folder 7</a>, notebook pp. 14–15. Both arrangements appear here. Bell’s <a href="${journal}#page=104">account of the trial</a> records his advice about the pole.`,
+    },
+    {
+      id: "pages",
+      wide: true,
+      body: () => `<div class="kite-documents">
+        <figure><a class="kite-scan" href="${scans}/page-14.webp" aria-label="Enlarge notebook page 14"><img src="${scans}/page-14.webp" width="1506" height="2880" alt="Pencilled shorthand gives way to cursive halfway down the page, beginning ‘Mr Bell suggested’." loading="lazy"></a>
+          <figcaption><a href="${scans}/page-14.webp">Page 14</a> &nbsp;·&nbsp; Look halfway down for “Mr Bell suggested”, then “two cells” and “three cells”.</figcaption></figure>
+        <figure><a class="kite-scan" href="${scans}/page-15.webp" aria-label="Enlarge notebook page 15"><img src="${scans}/page-15.webp" width="1489" height="2880" alt="At the top, ‘moved back about six inches’ completes the suggestion. Farther down are the numbers 930 and 50 × 25." loading="lazy"></a>
+          <figcaption><a href="${scans}/page-15.webp">Page 15</a> &nbsp;·&nbsp; The suggestion ends on the first line. Below it, the writer jotted down the kite’s measurements.</figcaption></figure>
+        </div>`,
+    },
+    {
+      id: "measurements",
+      body: ref => `<h2 id="methodology">How the agents identified the kite</h2>
+        <p>The Smithsonian catalogues this notebook as undated. Even with Bell’s name, which kite did the writer mean? Page 15 gives two figures, 930 grams and 50 × 25 centimetres. Bell copied into his journal a letter Langley sent him on March 11 about the previous day’s trial. The kite weighed 930 grams with its balancing weight, Langley wrote, and each of its twelve panels measured about 50 × 25 centimetres. Those figures tie the notebook passage to the March 10 outing.${ref}</p>`,
+      note: `Compare <a href="${scans}/page-15.webp">the notebook measurements</a> with <a href="${journal}#page=105">Langley’s March 11 letter</a>, reproduced on p. 634 of Bell’s journal at the Library of Congress.`,
+    },
+    {
+      id: "survey",
+      body: ref => `<h2>Why the shorthand is still unread</h2>
+        <p>The kite passage turned up in a search for something harder to read. The Smithsonian holds 37 notebooks from Langley’s papers, much of their content written in shorthand, a way of taking rapid notes by using strokes and curves to stand for sounds or whole words. AI agents sampled 1,108 of the collection’s 7,248 scans. They also ran handwriting recognition over every page of four notebooks to look for names and phrases in ordinary script. The software sometimes turned shorthand strokes into plausible English words, so the agents checked promising passages against the page images.${ref}</p>`,
+      note: `The <a href="https://sova.si.edu/record/nasm.xxxx.0494/ref659">Smithsonian catalogue</a> lists all 37 volumes. The agents’ <a href="${scans}/sampled-scans.csv" download>list of sampled scans (CSV)</a> identifies each volume and page in the survey.`,
+    },
+    {
+      id: "shorthand",
+      body: ref => `<p>In another notebook, the words “towed by a steamship” were legible. Just before them was a single downward stroke. The agents compared it with two shorthand manuals of the period. In one system a heavy stroke of that shape could mean “all”, while a lighter one could mean “to”. The pencil pressure varied across the page. Neither the neighboring pages nor a search of Langley’s published account supplied the same sentence in ordinary writing. The agents could identify the kite and Bell’s advice, but they could not reliably transcribe a continuous passage of shorthand.${ref}</p>`,
+      note: `See <a href="https://sova.si.edu/record/nasm.xxxx.0494/ref674">notebook p. 99 (scan 100)</a>, the <a href="https://archive.org/details/newpracticalsho00pitmgoog">1892 Pitman manual</a> (sign table, p. 83), the <a href="https://archive.org/details/1898GreggsShorthandManual-3rdVersionPublishedInUs">1898 Gregg manual</a> and Langley and Charles Manly’s <a href="https://www.gutenberg.org/ebooks/47981"><i>Memoir on Mechanical Flight</i></a> (1911).`,
+    },
+    {
+      id: "diary",
+      body: ref => `<h2>Did either design get into the air?</h2>
+        <p>The agents found no record of a flight with either arrangement. One place to look is the Smithsonian’s diary of Langley’s experimental work for the U.S. Army in 1901–02. An entry after March 10 describing two cells in line, or three across with the middle one set back, would be worth comparing with dated workshop drawings. An account of a launch with that arrangement could establish that someone actually tried it.${ref}</p>
+        <p>The shorthand presents a different opening. A specialist could start with a dated notebook entry and a letter about the same experiment. If several consecutive words in the letter fit the strokes on the page, a second reader could test that reading independently. That would give researchers a way to check what the notebooks say about experiments for which no letter survives.</p>`,
+      note: `The <a href="https://siarchives.si.edu/collections/siris_arc_217203">Samuel P. Langley Papers, Record Unit 7003</a>, list the 1901–02 Ordnance and Fortifications diary in box 13. The agents located the catalogue entry. The diary itself still needs to be examined.`,
+    },
+  ];
   return `
     <article class="leads-page kite-lead">
-      <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
-      <header class="lead-hero">
-        <p class="lead-label">Potomac River · March 1902</p>
-        <h1 class="page-title">${langleyTitle}</h1>
-        <p class="lead-intro">On March 10, 1902, Samuel Langley and Alexander Graham Bell went to an island in the Potomac to fly a kite. There was so little wind that Bell ran with the string, then let go to keep Langley’s kite from smashing into the ground. A notebook from the outing records Bell suggesting two ways to rebuild it. A later flight record could tell us whether his advice changed what Langley’s team flew.</p>
-      </header>
-      <section class="lead-evidence">
-        <h2>What did Bell suggest?</h2>
-        <p class="lead-intro">The kite had a cell, an open section that caught the wind. Bell proposed putting a second cell behind the first. Or the team could add one on either side and move the original cell back about six inches. The proposal starts halfway down one notebook page and ends at the top of the next.</p>
-        <div class="lead-docs">
-          <figure><a class="lead-doc" href="${scans}/page-14.webp" aria-label="Enlarge notebook page 14"><img src="${scans}/page-14.webp" width="1506" height="2880" alt="Below the shorthand, a pencilled passage begins ‘Mr Bell suggested’ and describes adding cells to the kite." loading="lazy"></a>
-            <figcaption><h3>Page 14</h3><p>Look for “Mr Bell suggested” beneath the shorthand, then “two cells” and “three cells.”</p>
-            <p class="lead-credit"><a href="${notebook}">Samuel P. Langley Collection, National Air and Space Museum Archives, box 62, folder 7</a></p></figcaption></figure>
-          <figure><a class="lead-doc" href="${scans}/page-15.webp" aria-label="Enlarge notebook page 15"><img src="${scans}/page-15.webp" width="1489" height="2880" alt="The proposal ends with ‘moved back about six inches.’ The figures 930 and 50 × 25 appear below." loading="lazy"></a>
-            <figcaption><h3>Page 15</h3><p>The words “moved back about six inches” complete the second design. The weight and dimensions farther down the page help date the conversation.</p>
-            <p class="lead-credit"><a href="${notebook}">Same notebook, next page</a> · <a href="${journal}#page=105">Compare the measurements in Langley’s letter</a></p></figcaption></figure>
+      <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">How the agents investigated ↓</a></div>
+      <header class="kite-mast">
+        <div class="kite-opening">
+          <p class="lead-label">Washington, D.C. · March 1902</p>
+          <h1 class="page-title">${langleyTitle}</h1>
+          <p><a href="${langleyBio}">Samuel Pierpont Langley</a>, an astronomer who ran the Smithsonian Institution, had flown a steam-powered model airplane. Now he was building one large enough to carry a pilot. <a href="${bellBio}">Alexander Graham Bell</a>, who had patented the telephone in 1876, had spent years building kites. After the two men tried one of Langley’s kites together, Bell suggested two ways to rebuild it. A few pencilled lines in a notebook preserve his advice.</p>
         </div>
-      </section>
-      <section class="lead-open">
-        <h2>Did either design fly?</h2>
-        <p>The notebook records a suggestion. A dated workshop drawing with two cells in line or three cells side by side would show that someone worked up one of the designs. A flight log, photograph or letter describing a test of that arrangement would take the story a step further. The place to look is in the team’s papers in the weeks after March 10.</p>
-      </section>
-      <section class="lead-methodology" id="methodology" aria-labelledby="methodology-heading">
-        <h2 id="methodology-heading"><a href="#methodology">Methodology <span aria-hidden="true">¶</span></a></h2>
-        <p>The Smithsonian catalogues this notebook as undated. Pages 14 and 15 switch from shorthand to ordinary handwriting. Page 15 gives a weight of 930 grams and measurements of 50 by 25 centimetres. The same figures appear in Langley’s March 11 letter to Bell about the previous day’s trial, copied into Bell’s journal on pages 631–634. That match places the notebook passage at a particular outing. Whether the team acted on Bell’s advice remains open.</p>
-        <p><a href="${notebook}">Smithsonian notebook</a> · <a href="${journal}#page=103">Bell’s journal at the Library of Congress</a> · <a href="https://sirismm.si.edu/EADpdfs/NASM.XXXX.0494.pdf">Langley collection finding aid</a></p>
-      </section>
+        <div class="kite-portraits">
+          <figure><a href="https://siarchives.si.edu/collections/siris_arc_403972" aria-label="Samuel Langley’s portrait at the Smithsonian"><img src="${scans}/langley-portrait.webp" width="336" height="416" alt="Sepia portrait of Samuel Langley with a dark beard and bow tie."></a><figcaption>Samuel P. Langley<br><a href="https://siarchives.si.edu/collections/siris_arc_403972">Smithsonian Archives</a></figcaption></figure>
+          <figure><a href="https://parks.canada.ca/culture/designation/personnage-person/alexander-graham-bell" aria-label="View Alexander Graham Bell’s portrait and archival credit"><img src="${scans}/bell-portrait.webp" width="336" height="416" alt="Alexander Graham Bell with a white beard, wearing a dark jacket and waistcoat."></a><figcaption>Alexander Graham Bell<br><a href="https://parks.canada.ca/culture/designation/personnage-person/alexander-graham-bell">Library and Archives Canada</a></figcaption></figure>
+        </div>
+      </header>
+      ${notedPassages(passages)}
     </article>`;
 }
 

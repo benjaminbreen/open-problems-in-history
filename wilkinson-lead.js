@@ -65,7 +65,7 @@ function plate(test, index) {
 
 export function wilkinsonHTML() {
   return `<article class="leads-page cipher-lead">
-    <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
+    <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="/leads/wilkinson-dictionary-b">Read version B</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
     <header class="lead-hero">
       <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
       <h1 class="page-title">${wilkinsonTitle}</h1>

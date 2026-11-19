@@ -8,8 +8,9 @@ import crypto from "node:crypto";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
-import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsHTML } from "../leads-render.js";
+import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
+import { wilkinsonBDescription, wilkinsonBHTML, wilkinsonBTitle } from "../wilkinson-lead-b.js";
 
 const dir = "data/problems";
 const need = ["id", "title", "short", "region", "field", "start", "end", "flags", "matters", "stuck", "solved", "approach", "existing", "archives"];
@@ -107,8 +108,9 @@ for (const p of problems) {
 fs.mkdirSync("leads/grant-cylinder", { recursive: true });
 fs.writeFileSync("leads/index.html", page({
   title: `Leads · ${SITE}`,
-  description: "Investigate primary sources behind open problems in history.",
-  head: social({ title: `Leads · ${SITE}`, description: "Investigate primary sources behind open problems in history.", url: `${URL}/leads`, image: `${URL}/og/index.jpg` }),
+  description: leadsDescription,
+  head: social({ title: `Leads · ${SITE}`, description: leadsDescription, url: `${URL}/leads`, image: `${URL}/og/index.jpg` })
+    + '<link rel="stylesheet" href="/leads/index.css">\n',
   main: leadsHTML(),
 }));
 fs.writeFileSync("leads/grant-cylinder/index.html", page({
@@ -132,7 +134,7 @@ fs.writeFileSync("leads/langley-kite/index.html", page({
   title: `${langleyTitle} · ${SITE}`,
   description: langleyDescription,
   head: social({ title: langleyTitle, description: langleyDescription, url: `${URL}/leads/langley-kite`, image: `${URL}/og/langley-kite.jpg`, type: "article" })
-    + '<link rel="stylesheet" href="/leads/methodology.css">\n',
+    + '<link rel="stylesheet" href="/leads/langley-kite/exhibit.css">\n',
   main: langleyHTML(),
 }));
 fs.mkdirSync("leads/wilkinson-dictionary", { recursive: true });
@@ -142,6 +144,14 @@ fs.writeFileSync("leads/wilkinson-dictionary/index.html", page({
   head: social({ title: wilkinsonTitle, description: wilkinsonDescription, url: `${URL}/leads/wilkinson-dictionary`, image: `${URL}/og/wilkinson-ciphers.jpg`, type: "article" })
     + '<link rel="stylesheet" href="/leads/wilkinson-dictionary/exhibit.css">\n',
   main: wilkinsonHTML(),
+}));
+fs.mkdirSync("leads/wilkinson-dictionary-b", { recursive: true });
+fs.writeFileSync("leads/wilkinson-dictionary-b/index.html", page({
+  title: `${wilkinsonBTitle} · ${SITE}`,
+  description: wilkinsonBDescription,
+  head: social({ title: wilkinsonBTitle, description: wilkinsonBDescription, url: `${URL}/leads/wilkinson-dictionary-b`, image: `${URL}/og/wilkinson-ciphers.jpg`, type: "article" })
+    + '<link rel="stylesheet" href="/leads/wilkinson-dictionary-b/exhibit.css">\n',
+  main: wilkinsonBHTML(),
 }));
 
 fs.mkdirSync("about", { recursive: true });
@@ -209,6 +219,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/dodo-journal</loc></url>
 <url><loc>${URL}/leads/langley-kite</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary</loc></url>
+<url><loc>${URL}/leads/wilkinson-dictionary-b</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
 `);

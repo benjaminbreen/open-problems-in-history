@@ -1,0 +1,758 @@
+{
+  "subject": "Wilkinson dictionary used in the letter dated 20 March 1792; researchers’ identifier 2880",
+  "researchers_wordbank": "https://github.com/c2huc2hu/wilkinson/blob/437b5fcb59318db743fd0385e9114ba43dec309c/wordbanks/wordbank",
+  "targets": {
+    "advanced": [
+      7,
+      "right",
+      20
+    ],
+    "advantageous": [
+      7,
+      "right",
+      26
+    ],
+    "glorious": [
+      163,
+      "left",
+      26
+    ],
+    "glory (noun)": [
+      163,
+      "left",
+      28
+    ],
+    "water": [
+      422,
+      "right",
+      14
+    ]
+  },
+  "outcome": "No facsimile examined reproduces the target coordinates. No edition identified.",
+  "new_entick_printings_checked": [
+    {
+      "imprint": "London, 1767",
+      "observation": "On an unnumbered page, Glorious and Glory (noun) are consecutive, in the left column at entries 32 and 33.",
+      "headword_image": "https://oma-sivu.2.rahtiapp.fi/image/133650010001580",
+      "viewer": "https://receptionreader.com/d/1336500100"
+    },
+    {
+      "imprint": "Dublin, James Potts, 1770",
+      "observation": "Glorious and Glory (noun) are consecutive entries in the right column of an unnumbered page.",
+      "headword_image": "https://oma-sivu.2.rahtiapp.fi/image/160280090001900",
+      "viewer": "https://receptionreader.com/d/1602800900"
+    },
+    {
+      "imprint": "London, 1774",
+      "observation": "Glorious and Glory (noun) are on printed page 178, left entries 21 and 23. The intervening entry is Gloriously.",
+      "headword_image": "https://oma-sivu.2.rahtiapp.fi/image/126310040001790",
+      "viewer": "https://receptionreader.com/d/1263100400"
+    },
+    {
+      "imprint": "London, Charles Dilly, 1782",
+      "observation": "Glorious and Glory (noun) are on printed page 158, right entries 31 and 33. Printed page 163 is GRO–GUA. Printed page 422 is in the list of women’s names.",
+      "headword_image": "https://oma-sivu.2.rahtiapp.fi/image/149790040001860",
+      "viewer": "https://receptionreader.com/d/1497900400",
+      "page_163": "https://oma-sivu.2.rahtiapp.fi/image/149790040001910",
+      "page_422": "https://oma-sivu.2.rahtiapp.fi/image/149790040004500"
+    },
+    {
+      "imprint": "London, Charles Dilly, 1785, revised by William Crakelt",
+      "observation": "Glorious and Glory (noun) are on printed page 167, right entries 3 and 5. Advanced is the final headword on page 7 right. Advantageous is on page 8 left. Water (noun) is on page 429 left, entry 11. Page 486 continues the town list.",
+      "headword_image": "https://oma-sivu.2.rahtiapp.fi/image/123100020002060",
+      "viewer": "https://receptionreader.com/d/1231000200",
+      "title_page": "https://oma-sivu.2.rahtiapp.fi/image/123100020000030",
+      "page_7": "https://oma-sivu.2.rahtiapp.fi/image/123100020000460",
+      "page_8": "https://oma-sivu.2.rahtiapp.fi/image/123100020000470",
+      "page_163": "https://oma-sivu.2.rahtiapp.fi/image/123100020002020",
+      "page_422": "https://oma-sivu.2.rahtiapp.fi/image/123100020004610",
+      "page_429": "https://oma-sivu.2.rahtiapp.fi/image/123100020004680",
+      "page_486": "https://oma-sivu.2.rahtiapp.fi/image/123100020005250"
+    },
+    {
+      "imprint": "London, Charles Dilly, 1786, revised by William Crakelt",
+      "observation": "The same positions as the 1785 Dilly for both A and G words. Page 7 ends with Advanced, page 8 has Advantageous in its left column, page 163 is GAR–GAZ, and page 422 is UNT–UNT.",
+      "headword_image": "https://books.google.com/books?id=RoJgAAAAcAAJ&pg=PA167",
+      "pages": {
+        "7": "https://books.google.com/books?id=RoJgAAAAcAAJ&pg=PA7",
+        "8": "https://books.google.com/books?id=RoJgAAAAcAAJ&pg=PA8",
+        "163": "https://books.google.com/books?id=RoJgAAAAcAAJ&pg=PA163",
+        "422": "https://books.google.com/books?id=RoJgAAAAcAAJ&pg=PA422"
+      }
+    }
+  ],
+  "additional_1783_exemplar": {
+    "imprint": "London, 1783, additional Google Books copy",
+    "observation": "Printed page 158, right entries 31 and 33, agrees with the earlier 1783 exemplar.",
+    "headword_image": "https://books.google.com/books?id=jVxgAAAAcAAJ&pg=PA158"
+  },
+  "other_page_checks": [
+    {
+      "book": "Pocket Dictionary, or Complete English Expositor, 1758",
+      "image": "https://archive.org/details/bub_gb_-m7fO7iEVx8C/page/n170/mode/1up",
+      "observation": "Glorious and Glory (noun) are adjacent headwords in the right column."
+    },
+    {
+      "book": "Pocket Dictionary, or Complete English Expositor, 1765",
+      "image": "https://archive.org/details/bim_eighteenth-century_a-pocket-dictionary-or-_1765/page/n170/mode/1up",
+      "observation": "Glorious and Glory (noun) are adjacent headwords in the right column."
+    },
+    {
+      "book": "Daniel Fenning, 1767",
+      "image": "https://archive.org/details/bim_eighteenth-century_the-new-and-complete-spe_fenning-daniel_1767/page/n151/mode/1up",
+      "observation": "Glorious and Glory (noun) are consecutive headwords in the left column. The definition of Glorious wraps onto a second line. The adjective begins below row 26 under either counting convention."
+    },
+    {
+      "book": "Daniel Fenning, 1773",
+      "image": "https://archive.org/details/bim_eighteenth-century_the-new-and-complete-spe_fenning-daniel_1773/page/n111/mode/1up",
+      "observation": "Glorious and Glory (noun) are consecutive, single-line entries in the left column."
+    },
+    {
+      "book": "William Perry, Edinburgh, 1775",
+      "image": "https://archive.org/details/bim_eighteenth-century_the-royal-standard-engli_perry-william-lecturer_1775/page/n213/mode/1up",
+      "observation": "Gloriously opens the left column of printed page 158. Glory (noun) follows as entry 2."
+    },
+    {
+      "book": "John Bentick, 1786",
+      "image": "https://archive.org/details/bim_eighteenth-century_the-spelling-and-explana_bentick-john_1786/page/n169/mode/1up",
+      "observation": "Glorious and Glory (noun) are left entries 12 and 13. Bentick and Entick are different authors."
+    },
+    {
+      "book": "Anne Fisher, 1788",
+      "image": "https://archive.org/details/bim_eighteenth-century_an-accurate-new-spelling_fisher-a-anne_1788/page/n170/mode/1up",
+      "observation": "Glorious, Glory (noun) and Glory (verb) are three consecutive single-line entries at the bottom of the left column."
+    },
+    {
+      "book": "John Marchant, 1760",
+      "image": "https://archive.org/details/bim_eighteenth-century_a-new-complete-english-d_marchant-john-gent_1760/page/n225/mode/1up",
+      "observation": "The only OCR result within two leaves of the required A-to-G spacing. Both A words occur in definitions in the CON section."
+    },
+    {
+      "book": "William Perry, Worcester, Massachusetts, Isaiah Thomas, 1788",
+      "page_163": "https://books.google.com/books?id=ss0rAQAAMAAJ&pg=PA163",
+      "page_422": "https://books.google.com/books?id=ss0rAQAAMAAJ&pg=PA422",
+      "observation": "Printed page 163 is CON–CON. Printed page 422 is QUI–QUI."
+    }
+  ],
+  "ocr_screen": {
+    "scope": "A selected corpus of publicly available scans or volumes, catalogued before 1792. Individual copies and partial or multilingual volumes are included. The Google Books and Reception Reader facsimile checks are reported separately.",
+    "method": "Normalize case, accents, long s, and internal apostrophes/hyphens. Find scan pages containing advanced AND advantageous and scan pages containing glorious AND glory as whole OCR tokens. Compare their positions allowing any constant offset for front matter. Recheck gaps of 154 to 158 leaves. Separately rank local ADV, GLO and WAT vocabulary and look for the 82 researchers’ readings at a constant scan-page offset. Hits can be in definitions. Textual absence is inconclusive. Row counts and printed page numbers come only from the facsimiles.",
+    "scan_count": 81,
+    "new_ocr_count": 39,
+    "exactly_156_leaves_apart": 0,
+    "within_two_leaves": [
+      {
+        "id": "bim_eighteenth-century_a-new-complete-english-d_marchant-john-gent_1760",
+        "exact_gap": [],
+        "within_two_leaves": [
+          {
+            "a_leaf": 225,
+            "g_leaf": 382,
+            "gap": 157,
+            "water_259_leaves_after_g": false
+          }
+        ]
+      }
+    ],
+    "inventory": [
+      {
+        "archive_id": "bim_eighteenth-century_enticks-new-spelling-di_entick-john_1788",
+        "catalogue_year": "1788",
+        "title": "Entick's new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety: ... A new edition. Revised, corrected, and enlarged. To which is added, a catalogue of words of similar sounds, ... By William Crakelt, ... 1788",
+        "new_ocr": false,
+        "scanned_pages": 529
+      },
+      {
+        "archive_id": "bim_eighteenth-century_enticks-new-spelling-di_entick-john_1791",
+        "catalogue_year": "1791",
+        "title": "Entick's new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety; ... To which is prefixed, a grammatical introduction to the English tongue. A new edition. Revised, corrected, and enlarged. To which is added, a catalogue of words of similar sounds, but of different spellings ... By William Crakelt, ... 1791",
+        "new_ocr": false,
+        "scanned_pages": 529
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-spelling-diction_entick-john_1772",
+        "catalogue_year": "1772",
+        "title": "The new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety; ... With a list of proper names of men and women. The whole compiled and digested in a manner entirly new, to make it a complete pocket companion ... By the Rev. John Entick, ... 1772",
+        "new_ocr": false,
+        "scanned_pages": 471
+      },
+      {
+        "archive_id": "10582072bsb",
+        "catalogue_year": "1790",
+        "title": "New spelling dictionary ...",
+        "new_ocr": false,
+        "scanned_pages": 537
+      },
+      {
+        "archive_id": "bim_eighteenth-century_enticks-new-spelling-di_entick-john_1787",
+        "catalogue_year": "1787",
+        "title": "Entick's new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety: ... 1787",
+        "new_ocr": false,
+        "scanned_pages": 531
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-dictionary-spanis_stevens-john_1726",
+        "catalogue_year": "1726",
+        "title": "A new dictionary, Spanish and English, and English and Spanish, much more copious than any other hitherto extant. ... By Captain John Stevens. = Dicionario nuevo Español y Ingles, y Ingles y Español; mucho mas copioso que quantos hasta aora han salido à luz. ... Por el Capitan Don Juan Stevens. 1726",
+        "new_ocr": true,
+        "scanned_pages": 816
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-universal-etymol_bailey-n-nathan_1776",
+        "catalogue_year": "1776",
+        "title": "The new universal etymological English dictionary: ... To which is added, a dictionary of cant words. By N. Bailey. 1776",
+        "new_ocr": false,
+        "scanned_pages": 703
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-complete-english-d_marchant-john-gent_1760",
+        "catalogue_year": "1760",
+        "title": "A new complete English dictionary, peculiarly adapted to the, instruction and improvement of those who have not had the benefit of a learned or liberal education, ... To which is prefixed a compendious grammar ... by D. Bellany ... 1760",
+        "new_ocr": false,
+        "scanned_pages": 803
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-english-dictio_fenning-daniel_1771",
+        "catalogue_year": "1771",
+        "title": "The royal English dictionary; or, a treasury of the English language. ... To which is prefixed, a comprehensive grammar of the English tongue. By D. Fenning, ... 1771",
+        "new_ocr": false,
+        "scanned_pages": 968
+      },
+      {
+        "archive_id": "bub_gb_-m7fO7iEVx8C",
+        "catalogue_year": "1758",
+        "title": "A Pocket Dictionary; Or Complete English Expositor Shewing Readily the Part of Speech to which Each Word Belongs; ... To which is Prefix'd an Introduction Containing an History of the English Language, with a Compendious Grammar and a Recommendation of the Manuscript Copy, in a Letter from Dr. Bevis to the Publisher",
+        "new_ocr": true,
+        "scanned_pages": 456
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-general-english-di_dyche-thomas_1760",
+        "catalogue_year": "1760",
+        "title": "A new general English dictionary; peculiarly calculated for the use and improvement of such as are unacquainted with the learned languages. ... Originally begun by the late Reverend Mr. Thomas Dyche, ... and now finished by William Pardon, gent. 1760",
+        "new_ocr": true,
+        "scanned_pages": 899
+      },
+      {
+        "archive_id": "bim_eighteenth-century_lingua-britannica-reform_martin-benjamin_1754",
+        "catalogue_year": "1754",
+        "title": "Lingua Britannica reformata: or, a new universal English dictionary, under the following titles, viz. I. Universal; ... VIII. Philosophical; ... By Benj. Martin. - The second edition, greatly improved and augmented. 1754",
+        "new_ocr": false,
+        "scanned_pages": 761
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-universal-englis_bailey-n-nathan_1759",
+        "catalogue_year": "1759",
+        "title": "The new universal English dictionary ... To which is added, a dictionary of cant words, ... By N. Bailey. 1759",
+        "new_ocr": true,
+        "scanned_pages": 700
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-spanish-an_giral-del-pino-hiplito_1763_1",
+        "catalogue_year": "1763",
+        "title": "A dictionary, Spanish and English, and English and Spanish: ... By Hto San Joseph Giral Delpino, ... 1763: Vol 1",
+        "new_ocr": false,
+        "scanned_pages": 479
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-general-english-di_dyche-thomas_1777",
+        "catalogue_year": "1777",
+        "title": "A new general English dictionary; peculiarly calculated for the use and improvement of such as are unacquainted with the learned languages. ... Originally begun by the late Reverend Mr. Thomas Dyche, ... and finished by the late William Pardon, gent.",
+        "new_ocr": false,
+        "scanned_pages": 912
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-royal-english-di_marriott-charles-rev_1780_1",
+        "catalogue_year": "1780",
+        "title": "The new Royal English dictionary; or complete library of grammatical knowledge. Containing a full and copious explanation of all the words in the English language. ... To which is prefixed, a copious grammar of the English language. ... By the Rev. Charles Marriott, ... 1780: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 616
+      },
+      {
+        "archive_id": "bim_eighteenth-century_an-universal-etymologica_bailey-n-nathan_1783",
+        "catalogue_year": "1783",
+        "title": "An universal etymological English dictionary: ... A new edition, being the twenty-fifth. ... By N. Bailey, ... 1783",
+        "new_ocr": false,
+        "scanned_pages": 947
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-critical-pronouncing-d_walker-john_1791",
+        "catalogue_year": "1791",
+        "title": "A critical pronouncing dictionary and expositor of the English language. ... To which are prefixed, principles of English pronunciation; ... Likewise rules to be observed by the natives of Scotland, Ireland, and London, ... By John Walker, ... 1791",
+        "new_ocr": false,
+        "scanned_pages": 577
+      },
+      {
+        "archive_id": "dictionaryspanis00girauoft",
+        "catalogue_year": "1763",
+        "title": "A dictionary, Spanish and English, and English and Spanish: containing the signification of words, with their different uses; the terms of arts, sciences, and trades; the constructions, forms of speech, idioms used in both languages, and several thousand words more than any other dictionary; with their proper, figurative, burlesque, and cant significations, [etc.] Also the Spanish words accented and spelled according to the modern observations of the Royal Spanish Academy of Madrid",
+        "new_ocr": false,
+        "scanned_pages": 796
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-of-the-engl_baretti-giuseppe-marco-_1790_1",
+        "catalogue_year": "1790",
+        "title": "A dictionary of the English and Italian languages. By Joseph Baretti. To which is prefixed, an Italian and English grammar. 1790: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 498
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-complete-english-dic_barlow-frederick_1772_1",
+        "catalogue_year": "1772",
+        "title": "The complete English dictionary: or, general repository of the English language. ... To which will be prefixed, a complete English grammar. By the Rev. Frederick Barlow, ... Assisted by several other gentleman. 1772: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 530
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-english-dictio_fenning-daniel_1761",
+        "catalogue_year": "1761",
+        "title": "The royal English dictionary: or, a treasury of the English language. ... To which is prefixed, a comprehensive grammar of the English tongue. By D. Fenning, ... 1761",
+        "new_ocr": true,
+        "scanned_pages": 945
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-pocket-dictionary-or-_1765",
+        "catalogue_year": "1765",
+        "title": "A pocket dictionary; or, complete English expositor: shewing readily the part of speech to which each word belongs; ... To which is prefix'd an introduction, containing an history of the English language, with a compendious grammar: ... 1765",
+        "new_ocr": false,
+        "scanned_pages": 455
+      },
+      {
+        "archive_id": "11925164bsb",
+        "catalogue_year": "1789",
+        "title": "A complete dictionary of the English language, both with regard to sound and meaning: one main object of which is, to establish a plain and permanent standard of pronunciation, to which is prefixed a prosodial grammar",
+        "new_ocr": false,
+        "scanned_pages": 695
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-standard-engli_perry-william-lecturer_1775",
+        "catalogue_year": "1775",
+        "title": "The royal standard English dictionary: in which the words are not only rationally divided into syllables, accurately accented, their part of speech properly distinguished, and their various significations arranged in one line; but likewise by a key t",
+        "new_ocr": false,
+        "scanned_pages": 490
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-spanish-an_baretti-giuseppe-marco-_1778_1",
+        "catalogue_year": "1778",
+        "title": "A dictionary, Spanish and English, and English and Spanish: containing the signification of words, and their different uses; ... The second edition, corrected and improved by Joseph Baretti, ... 1778: Vol 1",
+        "new_ocr": false,
+        "scanned_pages": 362
+      },
+      {
+        "archive_id": "bim_eighteenth-century_enticks-new-spelling-di_entick-john_1790",
+        "catalogue_year": "1790",
+        "title": "Entick's new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety; ... A new edition, revised, corrected, and enlarged throughout. Being a collection of near forty thousand words in the English language, fully explained. By William Crakelt, ... 1790",
+        "new_ocr": false,
+        "scanned_pages": 555
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-spelling-and-explana_bentick-john_1786",
+        "catalogue_year": "1786",
+        "title": "The spelling and explanatory dictionary of the English language. In which the words are properly accented and explained, ... Also a mythological and biographical dictionary of all the heathen gods ... and a complete list of all the cities, towns, ...",
+        "new_ocr": false,
+        "scanned_pages": 459
+      },
+      {
+        "archive_id": "bim_eighteenth-century_boyers-royal-dictionary_boyer-abel_1786",
+        "catalogue_year": "1786",
+        "title": "Boyer's Royal dictionary abridged. In two parts, I. French and English II. English and French. ... The sixteenth edition, carefully corrected and improved, ... By J.C. Prieur. 1786",
+        "new_ocr": false,
+        "scanned_pages": 917
+      },
+      {
+        "archive_id": "bim_eighteenth-century_lingua-britannica-reform_martin-benjamin_1749",
+        "catalogue_year": "1749",
+        "title": "Lingua Britannica reformata: or, a new English dictionary, under the following titles, viz. I. Universal; ... VIII. Philosophical; ... To which is prefix'd, an introduction, containing a physico-grammatical essay on the propriety and rationale of the English tongue, ... By Benj. Martin. 1749",
+        "new_ocr": true,
+        "scanned_pages": 733
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-general-dictionary-of-_sheridan-thomas_1784",
+        "catalogue_year": "1784",
+        "title": "A general dictionary of the English language. One main object of which, is, to establish a plain and permanent standard of pronunciation. To which is prefixed A rhetorical grammar. By Thomas Sheridan, A.M. Dedicated to the volunteers of Ireland. 1784",
+        "new_ocr": false,
+        "scanned_pages": 924
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-complete-dictionary-of_sheridan-thomas_1789",
+        "catalogue_year": "1789",
+        "title": "A complete dictionary of the English language, both with regard to sound and meaning. One main object of which is, to establish a plain and permanent standard of pronunciation. To which is prefixed a prosodial grammar. By Thomas Sheridan, A.M. 1789",
+        "new_ocr": false,
+        "scanned_pages": 647
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-spelling-diction_entick-john_1773",
+        "catalogue_year": "1773",
+        "title": "The new spelling dictionary, teaching to write and pronounce the English tongue with easy and propriety; ... With a list of proper names of men and women. The whole compiled and digested in a manner entirly new, to make it a complete pocket companion ... By the Rev. John Entick, ... 1773",
+        "new_ocr": false,
+        "scanned_pages": 446
+      },
+      {
+        "archive_id": "bim_eighteenth-century_an-accurate-new-spelling_fisher-a-anne_1788",
+        "catalogue_year": "1788",
+        "title": "An accurate new spelling dictionary, and expositor of the English language. Containing a much larger collection of modern words than any book of the kind and price extant: ... By A. Fisher, ... 1788",
+        "new_ocr": false,
+        "scanned_pages": 423
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-dictionary-of-the-_kenrick-w-william_1773",
+        "catalogue_year": "1773",
+        "title": "A new dictionary of the English language: containing, not only the explanation of words, ... but likewise, their orthoepia or pronunciation ... To which is prefixed, a rhetorical grammar; ... By William Kenrick, LL.D. 1773",
+        "new_ocr": false,
+        "scanned_pages": 806
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-of-the-engl_baretti-giuseppe-marco-_1790_2",
+        "catalogue_year": "1790",
+        "title": "A dictionary of the English and Italian languages. By Joseph Baretti. To which is prefixed, an Italian and English grammar. 1790: Vol 2",
+        "new_ocr": true,
+        "scanned_pages": 473
+      },
+      {
+        "archive_id": "bim_eighteenth-century_enticks-new-spelling-di_entick-john_1791_0",
+        "catalogue_year": "1791",
+        "title": "Entick's new spelling dictionary, comprehending a copious and accented vocabulary of the English language. With ... explanations. Revised, corrected, and enlarged throughout, by William Crakelt, ... 1791",
+        "new_ocr": false,
+        "scanned_pages": 395
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-of-the-engl_johnson-samuel_1790",
+        "catalogue_year": "1790",
+        "title": "A dictionary of the English language: in which the words are deduced from their originals, explained in their different meanings, ... Abstracted from the folio edition, by the author, Samuel Johnson, A.M. To which is prefixed, A grammar of the English language. 1790",
+        "new_ocr": false,
+        "scanned_pages": 990
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-spelling-diction_entick-john_1782",
+        "catalogue_year": "1782",
+        "title": "The new spelling dictionary, teaching to write and pronounce the English tongue ... With a list of proper names ... To which is prefixed, a grammatical introduction to the English tongue. By the Rev. John Entick, ... - A new edition, carefully revised and corrected ... 1782",
+        "new_ocr": false,
+        "scanned_pages": 548
+      },
+      {
+        "archive_id": "11009915bsb",
+        "catalogue_year": "1760",
+        "title": "A Dictionary of the English Language: in which the Words are deduced from their Originals, explained in their different Meanings and authorized by the Names of the Writers in whose Works they are found",
+        "new_ocr": false,
+        "scanned_pages": 777
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-complete-english-dicti_allen-francis-rev_1765",
+        "catalogue_year": "1765",
+        "title": "A complete English dictionary: containing an explanation of all the words made use of in the common occurrences of life, or in the several arts and sciences: ... By the Rev. Francis Allen, ... 1765",
+        "new_ocr": false,
+        "scanned_pages": 450
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-dictionary-en_boyer-abel_1756_2",
+        "catalogue_year": "1756",
+        "title": "The Royal Dictionary, English and French, French and English, … By Mr. A. Boyer. … Tome Second. 1756: Vol 2",
+        "new_ocr": true,
+        "scanned_pages": 701
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-large-dictionary-engli_sewel-william_1727_1",
+        "catalogue_year": "1727",
+        "title": "a large dictionary English and Dutch, in two parts: ... The third edition upon a copy corrected and enlarged ... by the author's own hand ... = Groot woordenboek der engelsche en nederduytsche taalen; ... Door W. Sewel. ... De derde druk ... 1727: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 558
+      },
+      {
+        "archive_id": "bim_eighteenth-century_dictionary-abridgment_johnson-samuel-ll-d_1786_1",
+        "catalogue_year": "1786",
+        "title": "[Dictionary, Abridgment. 1786]. A dictionary of the English language: in which the words are deduced from their originals, explained in their different meanings, ... Abstracted from the folio edition, by the author, Samuel Johnson, A. M. To which is prefixed, A grammar of the English language. In two volumes. ... 1786: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 576
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-latin-and-englis_entick-john_1782",
+        "catalogue_year": "1782",
+        "title": "The new Latin and English dictionary, designed for the use of grammar schools, and private education: containing all the words and phrases proper for reading the classic authors in both languages. ... By John Entick, ... 1782",
+        "new_ocr": true,
+        "scanned_pages": 583
+      },
+      {
+        "archive_id": "bim_eighteenth-century_lingu-britannic-vera-p_buchanan-james_1757",
+        "catalogue_year": "1757",
+        "title": "Linguæ Britannicæ vera pronunciatio: or, a new English dictionary. Containing I. An explanation of all English words used by the best writers; ... IV. A supplement of upwards of 4000 proper names. ... To the whole is prefixed a dissertation on the species of sounds, ... A work intirely new, ... By James Buchanan. 1757",
+        "new_ocr": false,
+        "scanned_pages": 508
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-complete-dictionary-of_sheridan-thomas_1790",
+        "catalogue_year": "1790",
+        "title": "A complete dictionary of the English language, both with regard to sound and meaning. One main object of which is, to establish a plain and permanent standard of pronunciation. To which is prefixed a prosodial grammar. By Thomas Sheridan, A.M. 1790",
+        "new_ocr": false,
+        "scanned_pages": 977
+      },
+      {
+        "archive_id": "adictionaryengl00johngoog",
+        "catalogue_year": "1768",
+        "title": "A dictionary of the English language. Abstracted from the folio ed., by the author. To which is ...",
+        "new_ocr": false,
+        "scanned_pages": 953
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-spelling-diction_entick-john_1776",
+        "catalogue_year": "1776",
+        "title": "The new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety, ... With a list of proper names of men and women. The whole compiled and digested in a manner entirely new, to make it a complete pocket companion ... By the Rev. John Entick, ... 1776",
+        "new_ocr": false,
+        "scanned_pages": 473
+      },
+      {
+        "archive_id": "bim_eighteenth-century_boyers-royal-dictionary_boyer-abel_1777_1",
+        "catalogue_year": "1777",
+        "title": "Boyer's Royal dictionary abridged. In two parts. I. French and English. II. English and French. ... The fourteenth edition, carefully corrected and improved, ... By J.C. Prieur. 1777: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 437
+      },
+      {
+        "archive_id": "10797901bsb",
+        "catalogue_year": "1788",
+        "title": "The Royal Standard English Dictionary: In Which The Words are not only rationally divided into Syllables, accurately accented, their Part of Speech properly distinguished, and their various Significations arranged in one line; But, likewise, by A Key To This Work, ... To Which Is Prefixed, A Comprehensive Grammar of the English Language. The Fifth Edition. To which is now added the Scripture proper Names, together with the Names of the Principal Cities ...",
+        "new_ocr": false,
+        "scanned_pages": 607
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-spelling-diction_entick-john_1766",
+        "catalogue_year": "1766",
+        "title": "The new spelling dictionary, teaching to write and pronounce the English tongue with ease and propriety; ... with a list of proper names of men and women. ... To which is prefixed, a grammatical introduction ... By the Rev. John Entick, ... 1766",
+        "new_ocr": false,
+        "scanned_pages": 386
+      },
+      {
+        "archive_id": "bim_eighteenth-century_boyers-royal-dictionary_boyer-abel_1777_2",
+        "catalogue_year": "1777",
+        "title": "Boyer's Royal dictionary abridged. In two parts. I. French and English. II. English and French. ... The fourteenth edition, carefully corrected and improved, ... By J.C. Prieur. 1777: Vol 2",
+        "new_ocr": false,
+        "scanned_pages": 559
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-and-complete-spe_fenning-daniel_1767",
+        "catalogue_year": "1767",
+        "title": "The new and complete spelling dictionary, and sure guide to the English language: ... By D. Fenning, ... To which are prefixed two very useful tables. ... 1767",
+        "new_ocr": true,
+        "scanned_pages": 345
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-and-complete-dic_ash-john_1775_1",
+        "catalogue_year": "1775",
+        "title": "The new and complete dictionary of the English language. ... To which is prefixed, a comprehensive grammar. By John Ash, LL.D. ... 1775: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 635
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-dictionary-of-the-engl_johnson-samuel_1756_1",
+        "catalogue_year": "1756",
+        "title": "A dictionary of the English language: in which the words are deduced from their originals, explained in their different meanings, ... Abstracted from the folio edition, by the author Samuel Johnson, A.M. To which is prefixed, A grammar of the English language. In two volumes. ... 1756: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 577
+      },
+      {
+        "archive_id": "acompletedictio00shergoog",
+        "catalogue_year": "1790",
+        "title": "A complete dictionary of the English language, both with regard to sound and meaning.",
+        "new_ocr": false,
+        "scanned_pages": 658
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-dictionary-abr_boyer-abel_1764_0",
+        "catalogue_year": "1764",
+        "title": "The royal dictionary abridged. In two parts. ... Containing many thousand words more than any French and English dictionary yet extant. To which are added, the accents of the English words to facilitate their pronunciation to foreigners. As also an alphabetical list of the most common christian names of men and women; ... By Mr. Boyer. 1764",
+        "new_ocr": false,
+        "scanned_pages": 571
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-and-complete-spe_fenning-daniel_1773",
+        "catalogue_year": "1773",
+        "title": "The new and complete spelling dictionary, and sure guide to the English language: ... By D. Fenning, ... To which are subjoined, two very useful tables. ... 1773",
+        "new_ocr": true,
+        "scanned_pages": 303
+      },
+      {
+        "archive_id": "bim_eighteenth-century_an-orthographical-dictio_bailey-n-nathan_1727",
+        "catalogue_year": "1727",
+        "title": "An orthographical dictionary, shewing both the orthography and the orthoepia of the English tongue, ... Vol. II. By N. Bailey, ... 1727",
+        "new_ocr": true,
+        "scanned_pages": 359
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-dictionary-in-fre_fox-henry_1769",
+        "catalogue_year": "1769",
+        "title": "A new dictionary, in French and English: containing all the French words now in use, with their different acceptations properly explained in English, according to the genuine spirit of both languages. By Henry Fox. 1769",
+        "new_ocr": true,
+        "scanned_pages": 467
+      },
+      {
+        "archive_id": "newpocketdiction1781nuge",
+        "catalogue_year": "1781",
+        "title": "The new pocket dictionary of the French and English languages : containing all words of general use and authorized by the best of writers ...",
+        "new_ocr": true,
+        "scanned_pages": 660
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-tyros-dictionary-l_mair-john_1785",
+        "catalogue_year": "1785",
+        "title": "The tyro's dictionary, Latin and English. Comprehending the more usual primitives of the Latin tongue, digested alphabetically, ... By John Mair, A.M. 1785",
+        "new_ocr": true,
+        "scanned_pages": 452
+      },
+      {
+        "archive_id": "englishandwelch00conggoog",
+        "catalogue_year": "1737",
+        "title": "The English and Welch Dictionary: Or, the English Before the Welch ...",
+        "new_ocr": true,
+        "scanned_pages": 497
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-general-dictionary-of-_sheridan-thomas-m-a-_1780_1",
+        "catalogue_year": "1780",
+        "title": "A general dictionary of the English language. One main object of which, is, to establish a plain and permanent standard of pronunciation. To which is prefixed a rhetorical grammar. By Thomas Sheridan, A. W. 1780: Vol 1",
+        "new_ocr": true,
+        "scanned_pages": 570
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-english-latin-dict_entick-john_1783",
+        "catalogue_year": "1783",
+        "title": "A new English-Latin dictionary, carefully compiled from the most celebrated English writers; rendered in classical Latin, ... By John Entick, ... 1783",
+        "new_ocr": true,
+        "scanned_pages": 309
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-spelling-dicti_green-thomas_1765",
+        "catalogue_year": "1765",
+        "title": "The royal spelling dictionary of the English language, on a most useful and extensive plan, for the instruction of our youth of both sexes, ... By the Rev. Thomas Green, M.A. 1765",
+        "new_ocr": true,
+        "scanned_pages": 341
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-pocket-dictionar_nugent-thomas_1774",
+        "catalogue_year": "1774",
+        "title": "The new pocket dictionary of the French and English languages. In two parts. I. French and English. II. English and French. ... By Thomas Nugent, LL.D. The second edition, greatly improved, ... By J. S. Charrier, ... 1774",
+        "new_ocr": true,
+        "scanned_pages": 566
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-spelling-dictionar_newbery-john_1780",
+        "catalogue_year": "1780",
+        "title": "A new spelling dictionary of the English language, on a concise, but comprehensive plan, ... and to which is prefixed, a short English grammar, ... 1780",
+        "new_ocr": false,
+        "scanned_pages": 342
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-spelling-dictionary-of_newbery-john_1760",
+        "catalogue_year": "1760",
+        "title": "A spelling-dictionary of the English language, on a new plan, ... Being an introductary part of The circle of the sciences. ... 1760",
+        "new_ocr": true,
+        "scanned_pages": 325
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-spelling-dictionary-of_newbery-john_1770",
+        "catalogue_year": "1770",
+        "title": "A spelling dictionary of the English language, on a new plan. For the use of young gentlemen, ladies and foreigners. Published by the King's authority. The twelfth edition. To which is prefixed, a compendious English grammar; ... And at the end are added, rules for speaking and writing English, ... 1770",
+        "new_ocr": true,
+        "scanned_pages": 341
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-new-pocket-dictionary-_nugent-thomas_1767",
+        "catalogue_year": "1767",
+        "title": "A new pocket dictionary of the French and English languages. In two parts. I. French and English. II. English and French. ... By Thomas Nugent, LL.D. 1767",
+        "new_ocr": true,
+        "scanned_pages": 472
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-spelling-dictionary-of_newbery-john_1786",
+        "catalogue_year": "1786",
+        "title": "A spelling dictionary of the English language, on a new plan, ... To which is prefixed, a compendious English grammar; ... And at the end are added, rules for speaking and writing English, ... 1786",
+        "new_ocr": true,
+        "scanned_pages": 345
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-new-pocket-dictionar_nugent-thomas_1781_2",
+        "catalogue_year": "1781",
+        "title": "The new pocket dictionary of the French and English languages, ... By Thomas Nugent, LL.D. To which are added upwards of thirteen thousand words, besides a very useful supplement, ... By J. S. Charrier, ... 1781: Vol 2",
+        "new_ocr": true,
+        "scanned_pages": 317
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-pronouncing-and-spelli_johnston-william-ma_1764",
+        "catalogue_year": "1764",
+        "title": "A pronouncing and spelling dictionary: wherein, by a new and sufficient method, the proper sounds of English words are exactly ascertained; ... By William Johnston, ... 1764",
+        "new_ocr": true,
+        "scanned_pages": 263
+      },
+      {
+        "archive_id": "11280377bsb",
+        "catalogue_year": "1781",
+        "title": "The new spelling dictionary: teaching to write and pronounce the english tongue with ease and propriety ...",
+        "new_ocr": false,
+        "scanned_pages": 513
+      },
+      {
+        "archive_id": "bim_eighteenth-century_a-compendious-dictionary_peyton-v-j_1764",
+        "catalogue_year": "1764",
+        "title": "A compendious dictionary of the French language, chiefly designed to teach the pronunciation of it; ... with general tables of the French pronunciation. By V.J. Peyton, ... 1764",
+        "new_ocr": true,
+        "scanned_pages": 492
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-scholars-vade-mecum_moir-james-teacher-of-_1775",
+        "catalogue_year": "1775",
+        "title": "The scholar's vade mecum; or, a new dictionary, Latin and English. ... For the use of schools. By James Moir, ... 1775",
+        "new_ocr": true,
+        "scanned_pages": 446
+      },
+      {
+        "archive_id": "bim_eighteenth-century_chambauds-dictionary-f_chambaud-lewis_1787",
+        "catalogue_year": "1787",
+        "title": "Chambaud's dictionary, French and English and English and French. ... carefully abridged by Mr. John Perrin. 1787",
+        "new_ocr": true,
+        "scanned_pages": 699
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-royal-dictionary-abr_boyer-abel_1764",
+        "catalogue_year": "1764",
+        "title": "The royal dictionary abridged. In two parts. ... Containing many thousand words more than any French and English dictionary yet extant. To which are added, the accents of the English words to facilitate their pronunciation to foreigners. As also an alphabetical list of the most common christian names of men and women; ... By Mr. Boyer. 1764",
+        "new_ocr": true,
+        "scanned_pages": 451
+      },
+      {
+        "archive_id": "bim_eighteenth-century_the-complete-english-spe_carter-john-teacher_1764",
+        "catalogue_year": "1764",
+        "title": "The complete English spelling dictionary, upon an entire new plan. In which all words of two or more syllables are so accented and divided, as to fix their proper sounds. ... For the use of schools. ... 1764",
+        "new_ocr": true,
+        "scanned_pages": 418
+      }
+    ]
+  },
+  "wordbank_quality": {
+    "normalized_readings": 82,
+    "distinct_coordinates": 79,
+    "examples": [
+      "394.[34]= is entered as both being and very.",
+      "The digitized wordbank gives water (422), well (424), world (430) and weak (432), which places weak out of alphabetical order."
+    ],
+    "use": "Score the surviving readings as a set allowing suspect readings, then verify several widely separated independent headwords at exact coordinates."
+  },
+  "open_items": [
+    {
+      "imprint": "London [1784], Huntington 480434, ESTC T138205",
+      "status": "Catalogue verified; no public images identified for this copy. Pages 7, 163, 422 remain unchecked. The 1785 title page explicitly dates the copy checked above. Its numbered page 486 contains a list of towns, while the Huntington record describes an extent of iii–xxxvi,485,[7] with three final advertisement leaves. The Huntington copy itself ends at page 470.",
+      "record": "https://catalog.huntington.org/record=b1664482",
+      "public_record": "https://www.huntington.org/collections/lib-480434"
+    },
+    {
+      "imprint": "Other catalogue records",
+      "status": "Wellcome catalogues an Edward-and-Charles-Dilly imprint as 1785. The primary scanned 1785 title above names Charles Dilly only. The identity and actual date of the Wellcome record require examination. Two London 1777 catalogue records also remain open.",
+      "wellcome_1785": "https://wellcomecollection.org/works/gq375zwc",
+      "london_1777": [
+        "https://www.grubstreetproject.net/publications/N49676/",
+        "https://www.grubstreetproject.net/publications/N62938/"
+      ]
+    }
+  ],
+  "manuscript": {
+    "source": "https://github.com/c2huc2hu/wilkinson/blob/437b5fcb59318db743fd0385e9114ba43dec309c/apply-wordbank#L235-L566",
+    "finding": "The prior transcription check puts fortune, brilliant, expect, glory, glorious in this order. The proposed 1797 Carondelet parallel has the reverse order. No manuscript image verified for 2880–2882.",
+    "further_evidence": "entick_edition_checks.json, possible_parallel"
+  }
+}
