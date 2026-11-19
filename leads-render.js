@@ -43,7 +43,7 @@ export function leadsHTML() {
 export function grantHTML() {
   return `
     <article class="leads-page grant-lead">
-      <a class="back" href="/leads">← All leads</a>
+      <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
       <header class="lead-hero">
         <p class="lead-label">Vienna · Edison cylinder EDIS 93953 · 1889–90 collection</p>
         <h1 class="page-title">${grantTitle}</h1>
@@ -104,10 +104,12 @@ export function grantHTML() {
         <p class="lead-credit"><a href="/p/wax-cylinder-voices">More on unidentified early wax cylinders →</a></p>
       </section>
 
-      <details class="lead-method"><summary>How was the sound cleaned?</summary>
-        <p>The starting point was the National Park Service’s 2011 transfer. A swish recurs about every four-tenths of a second. Comparing the same part of neighboring turns helps estimate which frequencies belong to that recurring noise. The filter lowers those frequencies where the swish is strongest. The speech comes entirely from the transfer, at its original timing. Some sounds remain hard to distinguish because the noise and the voice overlap.</p>
-        <p class="lead-credit"><a href="https://www.nps.gov/edis/learn/photosmultimedia/provenance-of-the-artifacts.htm">How the cylinders survived and were digitized</a> · <a href="${media}/EDIS-93953-original.mp3">Complete archive audio</a> · <a href="${media}/EDIS-93953-periodic.mp3">Complete cleaned audio</a></p>
-      </details>
+      <section class="lead-methodology" id="methodology" aria-labelledby="methodology-heading">
+        <h2 id="methodology-heading"><a href="#methodology">Methodology <span aria-hidden="true">¶</span></a></h2>
+        <p>On the <a href="${transfer}">National Park Service’s 2011 transfer</a>, a swish returns about every four-tenths of a second as the cylinder turns. We compared the same part of neighboring turns to estimate which frequencies belonged to the swish, then lowered them where it was loudest. You can compare the <a href="${media}/EDIS-93953-original.mp3">complete recording</a> with the <a href="${media}/EDIS-93953-periodic.mp3">filtered version</a>. Both preserve the timing of the voice. Where the swish overlaps a syllable, the name is still hard to hear.</p>
+        <p>We checked the possible names against details elsewhere in the recording. The speaker remembers sending a plan of his apartment and says a boy is doing well at school. We looked for a family in Vienna that fit both clues. <a href="${plan}">Julia Grant’s drawing</a> and a <a href="${register}">school register naming her brother</a> give us two independent checks. We still lack a document placing their father at the phonograph.</p>
+        <p><a href="https://www.nps.gov/edis/learn/photosmultimedia/provenance-of-the-artifacts.htm">How the cylinders survived and were digitized</a></p>
+      </section>
       <script type="module">
         const exhibit = document.querySelector(".grant-lead");
         exhibit.addEventListener("play", event => {

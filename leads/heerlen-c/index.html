@@ -62,7 +62,7 @@
     </aside>
     <main id="app" tabindex="-1">
       <article class="hc">
-        <a class="back" href="/leads">← All leads</a>
+        <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
 
         <header class="hc-hero">
           <div class="hc-lede">
@@ -363,22 +363,6 @@
 
           <div class="hc-details">
             <details>
-              <summary>How we worked this out</summary>
-              <p>
-                We listed every arrangement of pieces on the ten-point board for each version of the game
-                (between 1,680 and 6,300 arrangements) and worked backward from the finished positions to
-                find who wins each one. The chart then comes from thousands of simulated games per row. A
-                “flawless” player always picks the quickest win or the slowest loss. A “careless” player
-                picks any legal move at random.
-              </p>
-              <p>
-                The study’s 15 per cent figure comes from its published table, after a step in which each
-                simulated game is flipped to line up with the others. Our rows are not flipped, so the two
-                are not measured in quite the same way. The published figure is for its four-against-two
-                game with the hounds moving first.
-              </p>
-            </details>
-            <details>
               <summary>Three things we found in the study’s data</summary>
               <p>
                 The authors published their game records and code, which is the only reason any of this
@@ -407,6 +391,11 @@
               </p>
             </details>
           </div>
+        </section>
+        <section class="lead-methodology" id="methodology" aria-labelledby="methodology-heading">
+          <h2 id="methodology-heading"><a href="#methodology">Methodology <span aria-hidden="true">¶</span></a></h2>
+          <p>For each game we listed every arrangement of pieces on the ten-point board, from 1,680 to 6,300 arrangements depending on the rules. We worked backward from the finished positions to see which side could force a win. Then we played thousands of computer games to see how the choice of move affected traffic on the worn diagonal. One player always took the quickest win or delayed a loss as long as possible. Another chose legal moves at random.</p>
+          <p>The comparison figure comes from the <a href="https://doi.org/10.15184/aqy.2025.10264">published study</a>. With four hounds moving first against two hares, roughly 15 per cent of the slides followed one diagonal. The researchers flipped boards to line up the patterns before counting. We kept our boards in their original orientation, which limits how closely the percentages can be compared. The <a href="https://doi.org/10.34894/BWSJXL">game records and code</a> are public.</p>
         </section>
       </article>
     </main>

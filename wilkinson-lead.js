@@ -5,6 +5,8 @@ const exhibit = "/leads/wilkinson-dictionary";
 const reader = "https://receptionreader.com/d/1231000200?from=1785&amp;to=1800";
 const transcription = "https://github.com/c2huc2hu/wilkinson/blob/437b5fcb59318db743fd0385e9114ba43dec309c";
 const scan = (leaf) => "https://oma-sivu.2.rahtiapp.fi/image/1231000200" + String(leaf).padStart(4, "0") + "0";
+const portrait = "https://collections.britishart.yale.edu/catalog/tms:19619";
+const jayLetter = "https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/2328/Jay_1530-02_EBk_v6.0.pdf#page=44";
 
 const printings = [
   { label: "Cipher", page: 163, column: "left", rows: "26, 28" },
@@ -63,13 +65,19 @@ function plate(test, index) {
 
 export function wilkinsonHTML() {
   return `<article class="leads-page cipher-lead">
-    <a class="back" href="/leads">← All leads</a>
+    <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
     <header class="lead-hero">
       <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
       <h1 class="page-title">${wilkinsonTitle}</h1>
-      <p class="lead-intro">In 1792 James Wilkinson was a U.S. Army officer and a paid spy for Spain. His Spanish contacts called him Agent 13. Kentucky farmers shipped their crops down the Mississippi River to New Orleans, a port Spain controlled. Wilkinson had even proposed bringing Kentucky itself under Spanish protection.</p>
-      <p class="lead-intro">One letter in this secret correspondence came from Natchez, then a Spanish-ruled town upriver from New Orleans in what is now Mississippi. To hide a word from anyone who might open the mail, the writer gave its place in a dictionary. A reader with the same edition could turn to page 163, count down to the 26th entry in the left column, and read <i>glorious</i>.</p>
-      <p class="lead-intro">We know some of the words because someone wrote them in above the numbers. Other letters still have gaps. Could John Entick’s pocket dictionary be the book that would let us fill them in?</p>
+      <div class="cipher-opening">
+        <p class="lead-intro">In 1792 <a href="https://en.wikipedia.org/wiki/James_Wilkinson">James Wilkinson</a> was a U.S. Army officer and a paid spy for Spain. His Spanish contacts called him Agent 13. Kentucky farmers shipped their crops down the Mississippi River to New Orleans, a port Spain controlled. Wilkinson had even proposed <a href="https://www.nps.gov/sara/learn/historyculture/james-wilkinson.htm">bringing Kentucky itself under Spanish protection</a>.</p>
+        <figure class="cipher-portrait">
+          <a href="${portrait}" aria-label="View James Sharples’s portrait of Wilkinson at Yale"><img src="${exhibit}/wilkinson-sharples.webp" width="420" height="564" alt="Wilkinson with white hair, a blue officer’s coat and a silver epaulette."></a>
+          <figcaption>General James Wilkinson. Undated pastel by James Sharples. <a href="${portrait}">Yale Center for British Art</a>.</figcaption>
+        </figure>
+        <p class="lead-intro">One letter in this secret correspondence came from <a href="https://www.nps.gov/articles/natchez.htm">Natchez</a>, then a Spanish-ruled town upriver from New Orleans in what is now Mississippi. To hide a word from anyone who might open the mail, the writer gave its place in a dictionary. A reader with the same edition could turn to page 163, count down to the 26th entry in the left column, and read <i>glorious</i>.</p>
+        <p class="lead-intro">We know some of the words because someone wrote them in above the numbers. Other letters still have gaps. Could <a href="${scan(3)}">John Entick’s pocket dictionary</a> be the book that would let us fill them in?</p>
+      </div>
     </header>
 
     <div class="cipher-reader">
@@ -96,10 +104,9 @@ export function wilkinsonHTML() {
 
     <section class="lead-evidence" aria-labelledby="cipher-heading">
       <h2 id="cipher-heading">Try the letter against the book</h2>
-      <p>We know that people used Entick’s <i>New Spelling Dictionary</i> to send secrets. In 1781 the American diplomat John Jay warned a friend that his mail would probably be opened. He told him exactly which dictionary to get for their letters, right down to the year on the title page. Jay had bought his own copy at a bookshop in Philadelphia.</p>
+      <p>We know that people used Entick’s <i>New Spelling Dictionary</i> to send secrets. In 1781 the American diplomat <a href="${jayLetter}">John Jay warned a friend</a> that his mail would probably be opened. He told him exactly which dictionary to get for their letters, right down to the year on the title page. Jay had bought his own copy at a bookshop in Philadelphia.</p>
       <p>Did Wilkinson and his Spanish correspondents choose Entick too? They had a separate list of numbers for names and common words. It is the other words that let us test the dictionary. In their transcription of the Natchez letter, dated March 20, 1792, researchers give <code>163.[26]-</code> for <i>glorious</i>. The dash means the left column. Two entries farther down should be <i>glory</i>. Try that pair in the 1785 printing, then try a word from the end of the letter, <i>water</i>.</p>
-      <p class="cipher-credit"><a href="https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/2328/Jay_1530-02_EBk_v6.0.pdf#page=44">John Jay’s instructions to William Bingham, 1781</a> · <a href="${transcription}/wordbanks/wordbank#L207-L208">Transcribed codes for <i>glorious</i> and <i>glory</i></a> · <a href="https://aclanthology.org/2020.emnlp-main.471/">Chu, Valenti and Knight on how the letters were read</a></p>
-      <p class="cipher-credit"><a href="https://www.nps.gov/sara/learn/historyculture/james-wilkinson.htm">National Park Service on Wilkinson’s dealings with Spain</a> · <a href="https://www.nps.gov/articles/natchez.htm">Natchez under Spanish rule</a></p>
+      <p class="cipher-credit"><a href="${transcription}/wordbanks/wordbank#L207-L208">Transcribed codes for <i>glorious</i> and <i>glory</i></a> · <a href="https://aclanthology.org/2020.emnlp-main.471/">Chu, Valenti and Knight on how the letters were read</a></p>
       <div class="cipher-tests">${comparisons.map(plate).join("")}</div>
     </section>
 
@@ -121,6 +128,11 @@ export function wilkinsonHTML() {
       <h2>One page worth turning</h2>
       <p>The Huntington Library holds a copy of Entick which its catalogue dates to about 1784. It ends at page 470, well past all three places we need. We found the catalogue record but no public scan. A photograph of page 163 would answer the first question. If the two words land in the right places, turn to pages 7 and 422. If those match too, there are dozens of other known words to check before trying the book on a dispatch we still cannot read.</p>
       <p class="cipher-credit"><a href="https://www.huntington.org/collections/lib-480434">Huntington Library, rare book 480434</a> · <a href="/p/wilkinson-ciphers">The open problem of Wilkinson’s dispatches →</a></p>
+    </section>
+    <section class="lead-methodology" id="methodology" aria-labelledby="methodology-heading">
+      <h2 id="methodology-heading"><a href="#methodology">Methodology <span aria-hidden="true">¶</span></a></h2>
+      <p>We started with the <a href="${transcription}/apply-wordbank#L235-L566">researchers’ transcription of the Natchez letter</a>. It gives us five words to look for on three pages. We searched the machine-readable text of 81 dictionary scans for pairs of words the right number of pages apart. A word in a definition can look like a match in a text search. On the scanned page you can see whether it has an entry of its own.</p>
+      <p>For five London printings of Entick, we found <i>glorious</i> and <i>glory</i> on the page and counted entries from the top of the column. None put both words where the letter says they belong. We also checked <i>advanced</i>, <i>advantageous</i> and <i>water</i> in the 1785 copy. Any future candidate has to put all five in place before we try it on an unread passage.</p>
     </section>
   </article>`;
 }

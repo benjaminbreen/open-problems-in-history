@@ -1,7 +1,21 @@
+@import url("/leads/methodology.css");
+
 .leads-page.cipher-lead { max-width: 1000px; padding-bottom: 32px; }
 .cipher-lead .page-title { text-wrap: balance; }
 .cipher-lead .lead-hero { padding: 23px 0 4px; }
 .cipher-lead .lead-intro { max-width: 36em; }
+.cipher-opening {
+  display: grid;
+  grid-template-columns: minmax(0, 680px) minmax(130px, 170px);
+  column-gap: clamp(25px, 5vw, 68px);
+  align-items: start;
+}
+.cipher-opening .lead-intro { grid-column: 1; margin: 12px 0 4px; }
+.cipher-opening .lead-intro a { text-decoration-color: var(--muted); }
+.cipher-opening .lead-intro a:hover { text-decoration-color: var(--accent); }
+.cipher-portrait { grid-column: 2; grid-row: 1 / span 3; margin: 12px 0 0; }
+.cipher-portrait img { display: block; width: 100%; height: auto; }
+.cipher-portrait figcaption { margin-top: 7px; color: var(--ink-2); font: 11px/1.5 var(--mono); }
 .cipher-lead h2 { margin: 0 0 8px; padding: 0; border: 0; text-transform: none; font: 500 clamp(27px, 4vw, 36px)/1.12 var(--serif); letter-spacing: -.025em; }
 .cipher-lead p:not([class]), .cipher-lead .cipher-note { max-width: 38em; margin: 10px 0; color: var(--ink-2); font: 19px/1.45 var(--serif); }
 .cipher-lead .cipher-credit, .cipher-comparison figcaption { font: 12px/1.55 var(--mono); color: var(--ink-2); margin: 10px 0; }
@@ -48,6 +62,10 @@
 .cipher-comparison img { background: white; display: block; width: 100%; height: auto; }
 .cipher-lead .cipher-note { margin-bottom: 18px; }
 @media(max-width:640px) {
+  .cipher-opening { display: block; }
+  .cipher-portrait { display: flex; gap: 14px; align-items: center; max-width: 320px; margin: 15px 0; }
+  .cipher-portrait > a { flex: 0 0 90px; }
+  .cipher-portrait figcaption { margin: 0; }
   .cipher-comparison { grid-template-columns: 1fr; gap: 6px; }
   .cipher-reader iframe { height: 510px; }
   body:has(.cipher-lead) .foot-links { grid-template-rows: repeat(7, auto); column-gap: 18px; }

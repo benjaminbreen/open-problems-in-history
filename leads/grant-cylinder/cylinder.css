@@ -1,3 +1,5 @@
+@import url("/leads/methodology.css");
+
 .grant-lead {max-width: 920px; padding-bottom: 20px;}
 .grant-lead .lead-hero {padding: 25px 0 8px;}
 .grant-lead .lead-intro {max-width: 35em;}
