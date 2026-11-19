@@ -1,34 +1,49 @@
-// Impact ratings: each rater scores problems 1–5 ("how much would a solution change historical understanding?").
-// POST { name, affiliation, agent, credit, scores: { <id>: 1-5 }, notes: { <id>: text }, website }   submit for review;
-//   credit = rater opts in to being thanked by name and affiliation on the About page
+// POST accepts human judgments for this round or 1–5 scores for legacy clients.
 // GET ?thanks=1             public: [{ name, affiliation }] of approved human raters who opted in, by surname
 // Admin only (x-admin-token header):
 // GET                      { pending: [...], approved: [...] }
 // PATCH { rid, action: "approve" | "reject" | "remove" }
-import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
+import { db, parse, newId, limited, isAdmin, clean, voterId } from "../lib/store.js";
 import { notify } from "../lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
+import { createHash } from "node:crypto";
+import { criteria, validJudgment } from "../lib/potential.js";
+import round from "../data/research-potential.json" with { type: "json" };
+
+const roundIds = new Set(round.questions.map((q) => q.id));
 const ids = new Set(problems.map((p) => p.id));
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
 
   if (req.method === "POST") {
-    const { name, affiliation, agent, credit, scores, notes, website } = req.body || {};
+    const { name, affiliation, agent, credit, scores, judgments, notes, website } = req.body || {};
     if (website) return res.status(200).json({ ok: true, pending: true });
+    const entries = Object.entries(judgments ?? scores ?? {});
     const s = {};
-    for (const [id, v] of Object.entries(scores || {})) if (ids.has(id) && [1, 2, 3, 4, 5].includes(v)) s[id] = v;
-    if (Object.keys(s).length < 5) return res.status(400).json({ error: "please score at least five problems" });
+    if (judgments !== undefined) {
+      if (!judgments || typeof judgments !== "object" || Array.isArray(judgments) || agent || !entries.length || entries.some(([id, row]) => !roundIds.has(id) || !validJudgment(row))) {
+        return res.status(400).json({ error: "Please give all three whole-number scores for each human judgment." });
+      }
+      for (const [id, row] of entries) s[id] = Object.fromEntries(criteria.map(({ key }) => [key, row[key]]));
+    } else {
+      for (const [id, v] of entries) if (ids.has(id) && [1, 2, 3, 4, 5].includes(v)) s[id] = v;
+      if (Object.keys(s).length < 5) return res.status(400).json({ error: "please score at least five problems" });
+    }
     if (!clean(name, 80)) return res.status(400).json({ error: "name required" });
     if (await limited(req, "rate", 30, 3600)) return res.status(429).json({ error: "too many submissions" });
     const n = {};
     for (const [id, v] of Object.entries(notes || {})) if (ids.has(id) && clean(v, 1000)) n[id] = clean(v, 1000);
-    const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), scores: s, notes: n };
+    const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), notes: n };
+    if (judgments !== undefined) {
+      r.judgments = s;
+      r.participant = createHash("sha256").update(voterId(req, res) + "/" + r.name.toLowerCase()).digest("hex");
+    } else r.scores = s;
     if (clean(agent, 80)) r.agent = clean(agent, 80);
     else if (credit) r.credit = true;
     await db.hset("rpend", { [r.rid]: JSON.stringify(r) });
-    await notify(`New impact rating from ${r.agent || r.name}`, `${Object.keys(s).length} problems scored${r.affiliation ? ` · ${r.affiliation}` : ""}`);
+    await notify(`New problem ratings from ${r.agent || r.name}`, `${Object.keys(s).length} problems scored${r.affiliation ? ` · ${r.affiliation}` : ""}`);
     return res.status(200).json({ ok: true, pending: true });
   }
 

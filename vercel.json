@@ -8,10 +8,6 @@
     {
       "source": "/admin",
       "destination": "/"
-    },
-    {
-      "source": "/rate",
-      "destination": "/"
     }
   ],
   "headers": [

@@ -4,19 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Methods · Open Problems in History</title>
-<meta name="description" content="How impact ratings from historians and AI models are standardised, weighted and combined.">
+<meta name="description" content="How the AI and human rankings weigh the chance of an answer and its contribution to historical research.">
 <link rel="canonical" href="https://historyproblems.com/methods">
 <meta property="og:site_name" content="Open Problems in History">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Methods · Open Problems in History">
-<meta property="og:description" content="How the impact ranking is calculated.">
+<meta property="og:description" content="How the research potential rankings are calculated.">
 <meta property="og:url" content="https://historyproblems.com/methods">
 <meta property="og:image" content="https://historyproblems.com/og/index.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Methods · Open Problems in History">
-<meta name="twitter:description" content="How the impact ranking is calculated.">
+<meta name="twitter:description" content="How the research potential rankings are calculated.">
 <meta name="twitter:image" content="https://historyproblems.com/og/index.jpg">
 <link rel="alternate" type="text/plain" title="Guide for AI agents" href="/llms.txt">
 <script>try { const t = localStorage.getItem("op.theme"); if (t) document.documentElement.dataset.theme = t; } catch {}</script>
@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Silkscreen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/shared/signature.css">
-<link rel="stylesheet" href="/style.css?v=ec065cf3">
+<link rel="stylesheet" href="/style.css?v=cb1c26f6">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23c4321c'/><text x='8' y='12.5' font-family='Georgia' font-size='12' fill='white' text-anchor='middle'>?</text></svg>">
 </head>
 <body>
@@ -52,19 +52,12 @@
     <hr class="divider">
 
     <div class="prose">
-      <h2>How ratings work</h2>
-      <p>The list can be sorted by <strong>impact</strong>: how much a solution to each problem would change historical understanding. Two kinds of raters score problems from 1 to 5: professional historians, who submit ratings through the site, and AI models, which receive the same instructions (published as <a href="/rate.txt">rate.txt</a>) and are asked to read each problem before scoring it. Raters judge impact only, not tractability, fame, or how interesting a topic is, and are asked to use the full scale and to skip any problem they cannot judge. Every rating is reviewed by hand before it counts.</p>
-
-      <h2>How scores are combined</h2>
-      <p>Each rater&rsquo;s scores are first standardised against that rater&rsquo;s own average and spread, so harsh and generous graders carry equal weight. Repeated runs of the same model are averaged and count as a single judge. Historians and AI models are then averaged separately, and each average includes one imaginary neutral rating, so a problem praised by a single enthusiast cannot outrank one rated highly by many.</p>
-      <p>Where both groups have rated a problem, historians count for two-thirds of the final score and the AI judges together for one-third; otherwise the one group&rsquo;s score is used alone. Unrated problems are ordered by period. Scores update whenever a new rating is approved.</p>
-
-      <h2>Limitations</h2>
-      <p>The panel is small and the ratings are judgements, not measurements. Impact scores are a rough guide to where the field sees the most at stake, not a verdict. The full code is in <a href="https://github.com/benjaminbreen/open-problems-in-history/blob/main/lib/impact.js" target="_blank" rel="noopener">lib/impact.js</a>.</p>
-
-      <h2>Contribute ratings</h2>
-      <p>Historians who would like to rate problems can <a href="mailto:breen85@gmail.com?subject=Rating%20open%20problems" target="_blank" rel="noopener">get in touch</a> or use the <a href="/rate">rating form</a>.</p>
-      <p class="prov">Drafted by <span class="agent" title="AI model: Claude Opus 5.5. Drafted this section; edited by Benjamin Breen."><svg class="bot" viewBox="0 0 12 12" aria-hidden="true"><path d="M6 1.2v2.1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/><circle cx="6" cy="1.2" r=".8" fill="currentColor"/><rect x="1.8" y="3.6" width="8.4" height="6.6" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.1"/><circle cx="4.6" cy="6.8" r=".95" fill="currentColor"/><circle cx="7.4" cy="6.8" r=".95" fill="currentColor"/></svg>Claude Opus 5.5</span></p>
+      <h2 id="rankings">How the questions are ranked</h2>
+      <p>Which investigation is most likely to teach us something consequential? In November 2026, Claude Opus 5.5 (low reasoning effort), Gemini 4 Hydrogen (medium) and GPT-6 each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. All three reported that they had not seen previous rankings of these questions.</p>
+      <p>First, each judge estimated the chance of reaching an answer another historian could verify, using today’s tools and public digital sources. A well-supported negative answer counts. Then, assuming the question had been answered, the judge assessed two things on a scale of 1 to 10. How much would the answer change what historians know? And what other research would it make possible?</p>
+      <p>The default ranking uses the first of those two values. For example, a judge who gives a question a 60% chance of being answered and a historical contribution of 8 gives it a score of 4.8 out of 10. The AI score is the average of the three judges’ scores. Switch to <em>Further research</em> to see which answers could open up the most work for others, weighted by the same chance estimates.</p>
+      <p>The human column uses the same calculation across approved human ballots for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
+      <p>Read the <a href="/rate.txt">original question packet</a> and the scores from <a href="/rating-passes/2026-11-19/claude.json">Claude</a>, <a href="/rating-passes/2026-11-19/gemini.json">Gemini</a> and <a href="/rating-passes/2026-11-19/gpt.json">GPT</a>, or <a href="/rate">fill in a human ballot</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
     </div>
   </article></main>
 <footer class="foot">
@@ -92,7 +85,7 @@
     <a href="/admin" class="quiet">Admin</a>
   </div>
 </footer>
-<script src="/app.js?v=ec065cf3" type="module"></script>
+<script src="/app.js?v=cb1c26f6" type="module"></script>
 <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
 <script defer src="/_vercel/insights/script.js"></script>
 </body>

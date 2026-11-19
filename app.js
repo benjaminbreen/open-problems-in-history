@@ -1,3 +1,4 @@
+import { compareRank, criteria, humanPotential, validJudgment } from "/lib/potential.js";
 import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
@@ -7,9 +8,9 @@ const store = {
 };
 
 let problems = [];
-let state = { tally: {}, counts: {}, mine: {}, suggestions: [], impact: {} };
-const imp = (id) => state.impact?.[id]?.score ?? -99;
-const view = { q: "", sort: store.get("op.sort2", "impact"), show: "all" };
+let state = { tally: {}, counts: {}, mine: {}, suggestions: [], human: {} };
+let round;
+const view = { q: "", sort: store.get("op.sort3", "ai"), metric: "historical", show: "all" };
 
 // The list's filter and search live in the URL (/?tag=decipherment&q=plague) so a filtered view can be linked.
 function readURL() {
@@ -26,7 +27,7 @@ function writeURL() {
 }
 const open = new Set();
 const adminToken = () => store.get("op.admin", "");
-const ctx = () => ({ ...state, open });
+const ctx = () => ({ ...state, ai: round.ai, metric: view.metric, open });
 
 const up = (id) => u(state, id);
 const score = (id) => sc(state, id);
@@ -54,7 +55,9 @@ function all() {
 
 // ---------- list ----------
 const sorts = {
-  impact: (a, b) => imp(b.id) - imp(a.id) || score(b.id) - score(a.id) || (a.start ?? 1e9) - (b.start ?? 1e9),
+  ai: (a, b) => compareRank(round.ai, view.metric, a, b),
+  human: (a, b) => state.human?.[a.id] || state.human?.[b.id]
+    ? compareRank(state.human, view.metric, a, b) : compareRank(round.ai, view.metric, a, b),
   votes: (a, b) => score(b.id) - score(a.id) || up(b.id) - up(a.id) || (a.start ?? 1e9) - (b.start ?? 1e9),
   discussed: (a, b) => ncom(b.id) - ncom(a.id) || score(b.id) - score(a.id),
   period: (a, b) => (a.start ?? 1e9) - (b.start ?? 1e9) || a.title.localeCompare(b.title),
@@ -74,7 +77,7 @@ function filtered() {
   return all()
     .filter((p) => view.show === "all" || (p.flags || []).includes(view.show))
     .filter((p) => !words.length || words.every((w) => (p._h ??= haystack(p)).includes(w)))
-    .sort(sorts[view.sort]);
+    .sort(sorts[view.sort] || sorts.ai);
 }
 
 function seg(name, label, options) {
@@ -83,11 +86,10 @@ function seg(name, label, options) {
 }
 
 function renderList() {
-  const col = (k, l) => k === "impact"
-    ? `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" aria-description="${esc(tips[k])} ${METHODS_NOTE}">${l}<span class="tip" aria-hidden="true">${esc(tips[k])}<em>${METHODS_NOTE}</em></span></button>`
-    : `<button type="button" data-sort="${k}" aria-pressed="${view.sort === k}" data-tip="${esc(tips[k])}" aria-description="${esc(tips[k])}">${l}</button>`;
+  const outcome = view.metric === "historical" ? "contribution to historical knowledge" : "value for further research";
   const tips = {
-    impact: impactTip(),
+    ai: `Claude Opus 5.5, Gemini 4 Hydrogen and GPT-6 each estimated the chance of a convincing answer and its ${outcome} if answered. We multiply each judge’s two values, then average the three scores. Higher scores rank first.`,
+    human: `The same calculation, averaged over the people who rated this question. A dash means there are no approved human ratings yet.`,
     votes: "Readers' upvotes minus downvotes. One vote per browser per problem.",
     title: "Alphabetical by question.",
     field: "Grouped by field of history.",
@@ -95,14 +97,20 @@ function renderList() {
     period: "Ordered by the earliest date the problem concerns.",
     discussed: "Ordered by number of published comments.",
   };
+  const col = (k, label) => `<button type="button" data-sort="${k}" aria-label="${label}" aria-pressed="${view.sort === k}" data-tip="${esc(tips[k])}" aria-description="${esc(tips[k])}">${label}</button>`;
   app.innerHTML = `
     <div class="tools">
       <input type="search" id="q" placeholder="Search problems, authors, archives" value="${esc(view.q)}" aria-label="Search problems">
       ${seg("show", "Show", [["all", "all"], ["digitization", "digitization"], ["science", "science"], ["decipherment", "decipherment"], ["forensics", "forensics"]])}
       <span class="count" id="count"></span>
     </div>
+    <div class="ranking-tools">
+      ${seg("metric", "Rank by", [["historical", "Historical contribution"], ["further", "Further research"]])}
+      <details class="ranking-help"><summary>How rankings work</summary><div><p>${esc(tips.ai)}</p><p>${esc(tips.human)}</p><a href="/methods#rankings">Read the full method</a></div></details>
+      <a href="/rate">Rate the questions</a>
+    </div>
     <div class="thead" role="group" aria-label="Sort">
-      ${col("impact", "Impact")}${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
+      ${col("ai", "AI rank")}${col("human", "Human rank")}${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
     </div>
     <ol class="list" id="list"></ol>`;
   const q = app.querySelector("#q");
@@ -110,21 +118,10 @@ function renderList() {
   renderRows();
 }
 
-const METHODS_NOTE = "For more information, see the Methods page.";
-
-function impactTip() {
-  const { historians = 0, models = {} } = state.panel || {};
-  const n = (k, one, many) => `${k} ${k === 1 ? one : many}`;
-  const ai = Object.entries(models).map(([m, k]) => `${n(k, "rating", "ratings")} from ${m}`);
-  if (!historians && !ai.length) return "How much a solution would change historical understanding, rated 1–5 by historians and AI models. No ratings yet, so problems are ordered by period.";
-  const who = [historians ? n(historians, "professional historian", "professional historians") : "", ai.length ? `AI judges (${ai.join(", ")})` : ""].filter(Boolean).join(" and ");
-  return `How much a solution would change historical understanding, rated 1–5 by ${who}. Historians count for two-thirds of the ranking and the AI judges together for one-third; repeated runs of one model count as a single judge.`;
-}
-
 function renderRows() {
   const rows = filtered();
   app.querySelector("#count").textContent = `${rows.length} ${rows.length === 1 ? "problem" : "problems"}`;
-  app.querySelector("#list").innerHTML = rows.length ? rows.map((p, i) => rowHTML(ctx(), p, i)).join("") : `<li class="empty">No problems match.</li>`;
+  app.querySelector("#list").innerHTML = rows.length ? rows.map((p) => rowHTML(ctx(), p)).join("") : `<li class="empty">No problems match.</li>`;
   for (const id of open) loadComments(id);
 }
 
@@ -175,14 +172,28 @@ app.addEventListener("submit", async (e) => {
   }
   if (f.matches(".rf")) {
     const d = draft();
-    const data = Object.fromEntries(new FormData(f));
-    const scores = Object.fromEntries(Object.entries(d.scores || {}).filter(([, v]) => v > 0));
-    if (Object.keys(scores).length < 5) return alert("Please score at least five problems.");
-    f.querySelector(".rate-bar button").disabled = true;
-    try { await api("/api/ratings", { method: "POST", body: { ...data, scores, notes: d.notes || {} } }); }
-    catch (err) { alert(`Could not submit: ${err.message}`); f.querySelector(".rate-bar button").disabled = false; return; }
-    store.set("op.rate.draft", null);
-    app.querySelector(".rate").innerHTML = `<h1 class="page-title">Thank you</h1><p class="rate-q">Your ratings have been received.</p>`;
+    const judgments = {};
+    for (const { id } of round.questions) {
+      const row = d.judgments?.[id];
+      if (!row || !Object.keys(row).length) continue;
+      if (!validJudgment(row)) {
+        const missing = criteria.find(({ key, min, max }) => !Number.isInteger(row[key]) || row[key] < min || row[key] > max);
+        const input = f.querySelector(`[data-question="${id}"][data-criterion="${missing.key}"]`);
+        input.setCustomValidity("Complete all three scores for this question or clear them to skip it.");
+        input.reportValidity(); input.setCustomValidity("");
+        return;
+      }
+      judgments[id] = row;
+    }
+    if (!Object.keys(judgments).length) return alert("Please rate at least one question.");
+    const submit = f.querySelector(".rate-bar button");
+    if (submit.disabled) return;
+    submit.disabled = true;
+    try {
+      await api("/api/ratings", { method: "POST", body: { ...Object.fromEntries(new FormData(f)), judgments, notes: d.notes || {} } });
+    } catch (err) { alert(`Could not submit: ${err.message}`); submit.disabled = false; return; }
+    saveDraft({ name: d.name, affiliation: d.affiliation, credit: d.credit });
+    app.querySelector(".rate").innerHTML = `<h1 class="page-title">Thank you</h1><p class="rate-q">Your ratings have been submitted for review.</p><p><a href="/">See the rankings</a></p>`;
     window.scrollTo(0, 0);
   }
   if (f.matches(".af")) {
@@ -206,16 +217,16 @@ app.addEventListener("click", async (e) => {
   }
   const t = e.target.closest("button");
   if (!t) return;
-  if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort2", view.sort); return renderList(); }
+  if (t.dataset.sort) { view.sort = t.dataset.sort; store.set("op.sort3", view.sort); renderList(); app.querySelector(`[data-sort="${view.sort}"]`).focus({ preventScroll: true }); return; }
+  if (t.dataset.metric) {
+    view.metric = t.dataset.metric;
+    if (!["ai", "human"].includes(view.sort)) view.sort = "ai";
+    renderList();
+    app.querySelector(`[data-metric="${view.metric}"]`).focus({ preventScroll: true });
+    return;
+  }
   if (t.dataset.show) { view.show = t.dataset.show; writeURL(); return renderList(); }
   if (t.dataset.idea) return toggleIdea(undefined, t.dataset.idea);
-  if (t.dataset.rate) {
-    const d = draft(); d.scores ||= {};
-    d.scores[t.dataset.rate] = Number(t.dataset.val);
-    saveDraft(d);
-    for (const b of t.parentNode.children) b.setAttribute("aria-pressed", b === t);
-    return rateCount();
-  }
   if (t.dataset.share != null) {
     const url = location.origin + location.pathname;
     if (navigator.share) { navigator.share({ title: document.title, url }).catch(() => {}); return; }
@@ -292,27 +303,38 @@ function shuffled(ids) {
   }
   return order;
 }
-const draft = () => { try { return JSON.parse(store.get("op.rate.draft", "{}")); } catch { return {}; } };
-const saveDraft = (d) => store.set("op.rate.draft", JSON.stringify(d));
+const draftKey = "op.rate.potential.v1";
+let currentDraft;
+function draft() {
+  if (!currentDraft) {
+    try { currentDraft = JSON.parse(store.get(draftKey, "{}")); } catch {}
+    currentDraft ||= {};
+  }
+  return currentDraft;
+}
+function saveDraft(d) { currentDraft = d; store.set(draftKey, JSON.stringify(d)); }
 
 function renderRate() {
   document.title = "Rate the problems · Open Problems in History";
   const d = draft();
-  d.scores ||= {}; d.notes ||= {};
-  const byId = Object.fromEntries(problems.map((p) => [p.id, p]));
-  const order = shuffled(problems.map((p) => p.id));
-  const btn = (id, v, label) => `<button type="button" data-rate="${esc(id)}" data-val="${v}" aria-pressed="${d.scores[id] === v}">${label}</button>`;
+  d.judgments ||= {}; d.notes ||= {};
+  const byId = Object.fromEntries(round.questions.map((q) => [q.id, q]));
+  const order = shuffled(round.questions.map((q) => q.id));
   app.innerHTML = `
     <div class="rate">
-      <h1 class="page-title">Rate the problems</h1>
-      <p class="rate-q">If this problem were solved, how much would it change historical understanding?</p>
-      <ol class="scale"><li><b>1</b> A detail within a specialism</li><li><b>2</b> Matters to one subfield</li><li><b>3</b> Changes how a field sees its period</li><li><b>4</b> Matters well beyond its field</li><li><b>5</b> Reshapes a major historical narrative</li></ol>
-      <p class="note">Problems appear in a random order. Score as many as you like (at least five); mark &ldquo;—&rdquo; or skip anything outside your expertise. Your answers are saved in this browser until you submit.</p>
+      <h1 class="page-title">Rate the questions</h1>
+      <p class="rate-q">Which historical questions could a research team answer using today’s digital sources, and what would we learn if it succeeded?</p>
+      <p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>
+      <dl class="rating-rubric">
+        <dt>Chance of a convincing answer · 0–100%</dt><dd>How likely is the team to reach an answer another historian could verify? A well-supported negative answer counts. A promising lead alone leaves the question open.</dd>
+        <dt>Historical contribution · 1–10</dt><dd>Assume the team succeeds. A 1 refines a small fact, a 5 substantially changes a specialist explanation, and a 10 revises several historical debates. A question about one person or community can score highly.</dd>
+        <dt>Further research · 1–10</dt><dd>What would that answer make possible? A 1 has little additional use, a 5 opens a specific source or line of inquiry, and a 10 opens a substantial body of evidence for many investigations.</dd>
+      </dl>
+      <p class="note">Use the evidence below and your own knowledge. Rate any of the ${order.length} questions in this shuffled list. Enter three whole numbers for each question you choose. Your draft is saved in this browser until you submit. You can add or revise ratings later using the same name and browser.</p>
       <form class="rf">
         <div class="rf-who">
           <input type="text" name="name" required maxlength="80" placeholder="Name" aria-label="Name" value="${esc(d.name || "")}">
           <input type="text" name="affiliation" maxlength="160" placeholder="Field and institution" aria-label="Field and institution" value="${esc(d.affiliation || "")}">
-          <input type="text" name="agent" maxlength="80" placeholder="AI model, if you are an agent" aria-label="AI model" value="${esc(d.agent || "")}">
         </div>
         <label class="rf-credit"><input type="checkbox" name="credit" value="1"${d.credit ? " checked" : ""}><span>Thank me by name and affiliation on the <a href="/about" target="_blank" rel="noopener">About</a> page. Leave unchecked to stay anonymous.</span></label>
         <ol class="rate-list">${order.map((id, i) => {
@@ -321,10 +343,11 @@ function renderRate() {
             <span class="rank">${i + 1}</span>
             <div class="main">
               <a class="ttl" href="/p/${esc(id)}" target="_blank" rel="noopener">${esc(p.title)}</a>
-              <p class="short">${esc(p.short)}</p>
-              <details${d.notes[id] ? " open" : ""}><summary>Note</summary><textarea data-note="${esc(id)}" maxlength="1000" aria-label="Note">${esc(d.notes[id] || "")}</textarea></details>
+              <p class="evidence">${esc(p.evidence)}</p>
+              <details${d.notes[id] ? " open" : ""}><summary>Reason for your scores (optional)</summary><textarea data-note="${esc(id)}" maxlength="1000" aria-label="Note">${esc(d.notes[id] || "")}</textarea></details>
             </div>
-            <div class="pick" role="group" aria-label="Impact">${[1, 2, 3, 4, 5].map((v) => btn(id, v, v)).join("")}${btn(id, 0, "—")}</div>
+            <div class="judgments" role="group" aria-label="Scores for ${esc(p.title)}">${criteria.map(({ key, label, min, max, range }) =>
+              `<label>${label} <span>${range}</span><input type="number" step="1" min="${min}" max="${max}" inputmode="numeric" data-question="${esc(id)}" data-criterion="${key}" value="${esc(d.judgments[id]?.[key] ?? "")}"></label>`).join("")}</div>
           </li>`;
         }).join("")}</ol>
         <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -336,10 +359,10 @@ function renderRate() {
 
 function rateCount() {
   const d = draft();
-  const n = Object.values(d.scores || {}).filter((v) => v > 0).length;
-  const seen = Object.keys(d.scores || {}).length;
+  const n = Object.values(d.judgments || {}).filter(validJudgment).length;
   const el = app.querySelector("#rate-count");
-  if (el) el.textContent = `${n} scored · ${problems.length - seen} left`;
+  if (el) el.textContent = `${n} of ${round.questions.length} rated`;
+
 }
 
 app.addEventListener("input", (e) => {
@@ -347,9 +370,14 @@ app.addEventListener("input", (e) => {
   if (!t.closest(".rf")) return;
   const d = draft();
   d.notes ||= {};
-  if (t.dataset.note) d.notes[t.dataset.note] = t.value;
+  if (t.dataset.criterion) {
+    const row = (d.judgments[t.dataset.question] ||= {});
+    if (t.value === "") delete row[t.dataset.criterion];
+    else row[t.dataset.criterion] = t.valueAsNumber;
+    rateCount();
+  } else if (t.dataset.note) d.notes[t.dataset.note] = t.value;
   else if (t.name === "credit") d.credit = t.checked;
-  else if (["name", "affiliation", "agent"].includes(t.name)) d[t.name] = t.value;
+  else if (["name", "affiliation"].includes(t.name)) d[t.name] = t.value;
   saveDraft(d);
 });
 
@@ -571,6 +599,7 @@ async function renderAdmin() {
   let list, posts, ratings;
   try { [list, posts, ratings] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1"), api("/api/ratings")]); }
   catch { store.set("op.admin", null); app.innerHTML = `<h1 class="page-title">Admin</h1><p class="note">Token rejected.</p>`; setTimeout(renderAdmin, 1200); return; }
+  state.human = humanPotential(ratings.approved);
   const group = (st) => list.filter((s) => s.status === st);
   const item = (s) => `<div class="admin-item">
       <b>${esc(s.title)}</b>
@@ -582,9 +611,9 @@ async function renderAdmin() {
   const title = (id) => problems.find((p) => p.id === id)?.title || id;
   const rater = (r, pending) => `<div class="admin-item">
       <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}${r.credit ? ` <span class="note">· wants credit</span>` : ""}
-      <div class="note">${Object.keys(r.scores).length} scored · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
-      <details><summary class="note">Scores</summary><ol class="admin-scores">${Object.entries(r.scores).sort((a, b) => b[1] - a[1])
-        .map(([id, v]) => `<li><b>${v}</b> ${esc(title(id))}${r.notes?.[id] ? `<span class="note"> — ${esc(r.notes[id])}</span>` : ""}</li>`).join("")}</ol></details>
+      <div class="note">${Object.keys(r.judgments || r.scores).length} scored · ${r.judgments ? "Research potential" : "Archived 1–5 impact scale"} · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
+      <details><summary class="note">Scores</summary><ol class="admin-scores">${Object.entries(r.judgments || r.scores)
+        .map(([id, v]) => `<li>${esc(title(id))} · ${r.judgments ? `${v.chance_pct}% chance · ${v.historical_contribution}/10 historical · ${v.further_research}/10 further research` : `${v}/5`}${r.notes?.[id] ? `<span class="note"> — ${esc(r.notes[id])}</span>` : ""}</li>`).join("")}</ol></details>
       <div class="acts">${pending
         ? `<button type="button" class="btn" data-rating="${esc(r.rid)}" data-action="approve">Approve</button><button type="button" class="btn ghost" data-rating="${esc(r.rid)}" data-action="reject">Reject</button>`
         : `<button type="button" class="btn ghost" data-rating="${esc(r.rid)}" data-action="remove">Remove</button>`}</div>
@@ -599,8 +628,8 @@ async function renderAdmin() {
     </div>`;
   app.innerHTML = `<div class="admin"><h1 class="page-title">Admin</h1>
     <p class="note">Signed in. Delete links now appear on published comments and proposed approaches. <button type="button" class="linkbtn" data-logout>Sign out</button></p>
-    <section><h2>Impact ratings awaiting review (${ratings.pending.length})</h2>${ratings.pending.map((r) => rater(r, true)).join("") || `<p class="note">None.</p>`}</section>
-    <section><h2>Impact ratings in use (${ratings.approved.length})</h2>${ratings.approved.map((r) => rater(r, false)).join("") || `<p class="note">None.</p>`}</section>
+    <section><h2>Ratings awaiting review (${ratings.pending.length})</h2>${ratings.pending.map((r) => rater(r, true)).join("") || `<p class="note">None.</p>`}</section>
+    <section><h2>Approved ratings (${ratings.approved.length})</h2>${ratings.approved.map((r) => rater(r, false)).join("") || `<p class="note">None.</p>`}</section>
     <section><h2>Comments, approaches and suggested works awaiting review (${posts.length})</h2>${posts.map(post).join("") || `<p class="note">None.</p>`}</section>
     ${["pending", "approved", "rejected"].map((st) => `<section><h2>Suggested problems: ${st} (${group(st).length})</h2>${group(st).map(item).join("") || `<p class="note">None.</p>`}</section>`).join("")}</div>`;
 }
@@ -645,6 +674,7 @@ const isLeadsPath = (path) => path === "/leads" || path.startsWith("/leads/");
 // Links handled by the client router: same-origin pages only, not files (llms.txt, images) or the API.
 function internal(a, e) {
   return a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !e.shiftKey
+    && !(a.pathname === "/methods" && a.hash)
     && !isLeadsPath(a.pathname) && !isLeadsPath(location.pathname)
     && !/\.[a-z0-9]+$/i.test(a.pathname) && !a.pathname.startsWith("/api") && !a.pathname.startsWith("/data");
 }
@@ -670,12 +700,14 @@ document.querySelector(".mode").addEventListener("click", () => {
 // Old hash links (#/p/id) still work.
 if (location.hash.startsWith("#/")) history.replaceState(null, "", location.hash.slice(1));
 
-const [p, s, mine] = await Promise.all([
+const [packet, p, s, mine] = await Promise.all([
+  fetch(`/data/research-potential.json${DATA_V}`).then((r) => r.json()),
   fetch(`/data/problems.json${DATA_V}`).then((r) => r.json()),
   api("/api/state").catch(() => state),
   api("/api/mine").catch(() => ({})),
 ]);
 problems = p;
+round = packet;
 state = { ...s, mine };
 route();
 stats();

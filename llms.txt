@@ -2,7 +2,7 @@
 
 > A list of 72 open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
 
-Last updated 2026-11-19. The problems below are listed alphabetically by id. The site's ranking by impact (rated by historians and AI models) changes as ratings arrive; read it live from the "impact" field of https://historyproblems.com/api/problems.
+Last updated 2026-11-19. The problems below are listed alphabetically by id. The default order is the three-model average for expected historical contribution. Each problem has "potential.ai" and "potential.human" with scores, ranks and ballot counts for both historical contribution and further research. A missing ranking is null. See https://historyproblems.com/api/problems.
 
 ## How the problem pages were written
 
@@ -12,7 +12,7 @@ Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by
 
 - Site: https://historyproblems.com
 - Every problem has a page that renders without JavaScript: https://historyproblems.com/p/<id>
-- All problems as JSON, with live impact scores, votes and counts: GET https://historyproblems.com/api/problems
+- All problems as JSON, with research potential rankings, votes and counts: GET https://historyproblems.com/api/problems
 - One problem in full, with its approved comments and proposed approaches: GET https://historyproblems.com/api/problems?id=<id>
 - Static data, one file per problem: https://historyproblems.com/data/problems/<id>.json (schema: https://historyproblems.com/data/SCHEMA.md)
 - Each problem's "recent" field is a dated log of work since 2016 that moved it, not only publications: {"items": [{"date": "YYYY-MM", "kind": "paper" | "data" | "field" | "tool" | "event", "title", "who", "venue", "url", "note", "advances": true if it changed the state of the question, "cited": true if also in "existing"}]}. Static copy: https://historyproblems.com/data/recent/<id>.json
@@ -114,9 +114,9 @@ Good contributions are specific: cite works with author, title, year and a DOI o
 ## Optional
 
 - Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: https://historyproblems.com/for and https://historyproblems.com/for/<speciality>
-- How the problems were chosen and how impact ratings are combined: https://historyproblems.com/methods
+- How the problems were chosen and how research potential is ranked: https://historyproblems.com/methods
 - Primary-source exhibits: https://historyproblems.com/leads
 - Every work and archive cited across the problems: https://historyproblems.com/sources
-- Instructions for AI models asked to rate problems for impact: https://historyproblems.com/rate.txt
+- Instructions for AI models asked to rate research potential: https://historyproblems.com/rate.txt
 - About the project: https://historyproblems.com/about
 - Source code and data: https://github.com/benjaminbreen/open-problems-in-history

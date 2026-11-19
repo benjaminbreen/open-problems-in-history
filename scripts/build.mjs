@@ -5,6 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
+import { rankBallots, validJudgment, compareRank } from "../lib/potential.js";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 import { archiveLeads } from "../archive-leads.js";
@@ -45,14 +46,31 @@ for (const p of problems) {
 }
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
 
+// Keep the evidence shown to human raters identical to the frozen model packet.
+const packet = fs.readFileSync("rate.txt", "utf8");
+const questions = Array.from(packet.matchAll(/^\d+\. \*\*(.+?)\*\* \(`([\w-]+)`\) *\r?\n +(.+)$/gm),
+  ([, title, id, evidence]) => ({ id, title, evidence: evidence.trim() }));
+const packetIds = new Set(questions.map((q) => q.id));
+if (!questions.length || packetIds.size !== questions.length) throw new Error("Invalid rating packet");
+const ballots = ["claude", "gemini", "gpt"].map((model) => {
+  const { ratings } = JSON.parse(fs.readFileSync(`rating-passes/2026-11-19/${model}.json`, "utf8"));
+  const rows = Object.fromEntries(ratings.map((r) => [r.id, r]));
+  if (ratings.length !== packetIds.size || questions.some(({ id }) => !validJudgment(rows[id]))) {
+    throw new Error(`Incomplete or invalid ballot from ${model}`);
+  }
+  return rows;
+});
+const ai = rankBallots(ballots);
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, ai }));
+
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
-const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
+const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
 const template = fs.readFileSync("template.html", "utf8")
   .replace('href="/style.css"', `href="/style.css?v=${ver}"`).replace('src="/app.js"', `src="/app.js?v=${ver}"`);
 const page = ({ title, description, head = "", main }) => template
   .replace("{{title}}", esc(title)).replace("{{description}}", esc(description))
   .replace("{{head}}", head).replace("{{main}}", main);
-const ctx = { tally: {}, counts: {}, mine: {}, open: new Set() };
+const ctx = { ai, tally: {}, counts: {}, mine: {}, open: new Set() };
 const SITE = "Open Problems in History";
 const URL = "https://historyproblems.com";
 const HOME_DESC = "Open problems in history that historians working with AI research agents could plausibly solve. Vote, comment, propose approaches, suggest problems.";
@@ -73,7 +91,7 @@ const social = ({ title, description, url, image, type = "website" }) => [
   `<meta name="twitter:image" content="${image}">`,
 ].join("\n") + "\n";
 const publisher = { "@type": "Person", name: "Benjamin Breen", url: "https://benjaminpbreen.com/" };
-const byPeriod = [...problems].sort((a, b) => a.start - b.start);
+const byPotential = [...problems].sort((a, b) => compareRank(ai, "historical", a, b));
 
 fs.writeFileSync("index.html", page({
   title: SITE,
@@ -82,9 +100,16 @@ fs.writeFileSync("index.html", page({
     + `<link rel="alternate" type="application/json" href="/api/problems">\n`
     + json({
       "@context": "https://schema.org", "@type": "WebSite", name: SITE, url: `${URL}/`, description: HOME_DESC, publisher,
-      mainEntity: { "@type": "ItemList", itemListElement: byPeriod.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${URL}/p/${p.id}`, name: p.title })) },
+      mainEntity: { "@type": "ItemList", itemListElement: byPotential.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${URL}/p/${p.id}`, name: p.title })) },
     }),
-  main: `<ol class="list">${byPeriod.map((p, i) => rowHTML(ctx, p, i)).join("")}</ol>`,
+  main: `<p class="static-rank-intro">Ranked by expected contribution to historical knowledge. <a href="/methods#rankings">How rankings work</a> · <a href="/rate">Rate the questions</a></p><ol class="list">${byPotential.map((p) => rowHTML(ctx, p)).join("")}</ol>`,
+}));
+
+fs.mkdirSync("rate", { recursive: true });
+fs.writeFileSync("rate/index.html", page({
+  title: `Rate the questions · ${SITE}`,
+  description: "Assess which historical questions a research team could answer using public digital sources.",
+  main: '<div class="rate"><h1 class="page-title">Rate the questions</h1><noscript>Enable JavaScript to fill in the ballot. You can also <a href="/rate.txt">read the questions and scoring instructions</a>.</noscript></div>',
 }));
 
 fs.rmSync("p", { recursive: true, force: true });
@@ -177,8 +202,8 @@ fs.writeFileSync("about/index.html", page({
 fs.mkdirSync("methods", { recursive: true });
 fs.writeFileSync("methods/index.html", page({
   title: `Methods · ${SITE}`,
-  description: "How impact ratings from historians and AI models are standardised, weighted and combined.",
-  head: social({ title: `Methods · ${SITE}`, description: "How the impact ranking is calculated.", url: `${URL}/methods`, image: `${URL}/og/index.jpg` }),
+  description: "How the AI and human rankings weigh the chance of an answer and its contribution to historical research.",
+  head: social({ title: `Methods · ${SITE}`, description: "How the research potential rankings are calculated.", url: `${URL}/methods`, image: `${URL}/og/index.jpg` }),
   main: methodsHTML(),
 }));
 
@@ -243,48 +268,13 @@ Disallow: /admin
 Sitemap: ${URL}/sitemap.xml
 `);
 
-// Rating instructions for AI agents, problems in a fresh random order each build.
-const shuffledProblems = [...problems].sort(() => Math.random() - 0.5);
-fs.writeFileSync("rate.txt", `# Rating the problems on ${SITE}
-
-You are asked for an independent judgement of impact. For each problem below, answer one question:
-If this problem were solved, how much would it change historical understanding?
-
-  1  A detail within a specialism
-  2  Matters to one subfield
-  3  Changes how a field sees its period
-  4  Matters well beyond its field
-  5  Reshapes a major historical narrative
-
-Judge impact only, not tractability, fame or how interesting the topic is. Read each problem's page (${URL}/p/<id>) or the JSON (${URL}/api/problems?id=<id>) before scoring. Use the full scale; a good set of scores will not cluster at 3–4. Omit any problem you cannot judge. You may add a short note (one or two sentences) explaining a score. Do not look at other raters' scores or the site's current order.
-
-Submit once, as JSON:
-
-POST ${URL}/api/ratings
-Content-Type: application/json
-
-{
-  "name": "<your model name, or the person you are working for>",
-  "agent": "<your model name, e.g. Claude Opus 5.5 or GPT-6 Astra>",
-  "affiliation": "<optional>",
-  "scores": { "<problem id>": <1-5>, ... },
-  "notes": { "<problem id>": "<optional short reason>", ... }
-}
-
-Ratings are reviewed before they count. Historians' and AI models' ratings are combined separately; each rater's scores are standardised against their own average.
-
-## Problems (random order)
-
-${shuffledProblems.map((p) => `- ${p.id}: ${p.title}\n  ${p.short}`).join("\n")}
-`);
-
 const flagNote = { digitization: "needs digitization", science: "needs scientists", decipherment: "decipherment", forensics: "forensics" };
 const today = new Date().toISOString().slice(0, 10);
 fs.writeFileSync("llms.txt", `# ${SITE}
 
 > A list of ${problems.length} open problems in history that historians working with AI research agents could plausibly solve. Each problem states why it matters, why it is open, what would count as a solution, a potential approach, the existing scholarship in chronological order, and the archives that hold the evidence. Humans and AI agents can comment, propose approaches and suggest new problems.
 
-Last updated ${today}. The problems below are listed alphabetically by id. The site's ranking by impact (rated by historians and AI models) changes as ratings arrive; read it live from the "impact" field of ${URL}/api/problems.
+Last updated ${today}. The problems below are listed alphabetically by id. The default order is the three-model average for expected historical contribution. Each problem has "potential.ai" and "potential.human" with scores, ranks and ballot counts for both historical contribution and further research. A missing ranking is null. See ${URL}/api/problems.
 
 ## How the problem pages were written
 
@@ -294,7 +284,7 @@ Most problem pages were drafted by Claude Opus 5.5 in October 2026 and edited by
 
 - Site: ${URL}
 - Every problem has a page that renders without JavaScript: ${URL}/p/<id>
-- All problems as JSON, with live impact scores, votes and counts: GET ${URL}/api/problems
+- All problems as JSON, with research potential rankings, votes and counts: GET ${URL}/api/problems
 - One problem in full, with its approved comments and proposed approaches: GET ${URL}/api/problems?id=<id>
 - Static data, one file per problem: ${URL}/data/problems/<id>.json (schema: ${URL}/data/SCHEMA.md)
 - Each problem's "recent" field is a dated log of work since 2016 that moved it, not only publications: {"items": [{"date": "YYYY-MM", "kind": "paper" | "data" | "field" | "tool" | "event", "title", "who", "venue", "url", "note", "advances": true if it changed the state of the question, "cited": true if also in "existing"}]}. Static copy: ${URL}/data/recent/<id>.json
@@ -325,10 +315,10 @@ ${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field
 ## Optional
 
 - Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: ${URL}/for and ${URL}/for/<speciality>
-- How the problems were chosen and how impact ratings are combined: ${URL}/methods
+- How the problems were chosen and how research potential is ranked: ${URL}/methods
 - Primary-source exhibits: ${URL}/leads
 - Every work and archive cited across the problems: ${URL}/sources
-- Instructions for AI models asked to rate problems for impact: ${URL}/rate.txt
+- Instructions for AI models asked to rate research potential: ${URL}/rate.txt
 - About the project: ${URL}/about
 - Source code and data: ${REPO}
 `);

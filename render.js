@@ -172,11 +172,19 @@ export function voteBox(ctx, id) {
 // ---------- list ----------
 export const commentLabel = (ctx, id) => `${ctx.open?.has(id) ? "−" : "+"} ${ncom(ctx, id) || "comment"}`;
 
-export function rowHTML(ctx, p, i) {
+function rankCell(panel, row, metric) {
+  const who = panel === "ai" ? "AI" : "Human";
+  const count = row ? row.count : 0;
+  const label = count ? `${who} rank ${row[metric + "_rank"]}, score ${row[metric].toFixed(2)} out of 10, ${count} ${count === 1 ? "ballot" : "ballots"}` : `No ${who} ratings yet`;
+  return `<span class="rank-cell ${panel}" title="${label}" aria-label="${label}"><span class="mobile-panel">${who} </span>${count ? `#${row[metric + "_rank"]}<small>${row[metric].toFixed(2)}/10${panel === "human" ? ` · ${count} ${count === 1 ? "rater" : "raters"}` : ""}</small>` : "—"}</span>`;
+}
+
+export function rowHTML(ctx, p) {
   const labels = tags(p);
   return `
     <li class="row" id="r-${esc(p.id)}">
-      <span class="rank">${i + 1}</span>
+      ${rankCell("ai", ctx.ai?.[p.id], ctx.metric || "historical")}
+      ${rankCell("human", ctx.human?.[p.id], ctx.metric || "historical")}
       ${voteBox(ctx, p.id)}
       <div class="main">
         <a class="ttl" href="/p/${esc(p.id)}">${esc(p.title)}</a>
@@ -560,19 +568,12 @@ export function methodsHTML() {
     <hr class="divider">
 
     <div class="prose">
-      <h2>How ratings work</h2>
-      <p>The list can be sorted by <strong>impact</strong>: how much a solution to each problem would change historical understanding. Two kinds of raters score problems from 1 to 5: professional historians, who submit ratings through the site, and AI models, which receive the same instructions (published as <a href="/rate.txt">rate.txt</a>) and are asked to read each problem before scoring it. Raters judge impact only, not tractability, fame, or how interesting a topic is, and are asked to use the full scale and to skip any problem they cannot judge. Every rating is reviewed by hand before it counts.</p>
-
-      <h2>How scores are combined</h2>
-      <p>Each rater&rsquo;s scores are first standardised against that rater&rsquo;s own average and spread, so harsh and generous graders carry equal weight. Repeated runs of the same model are averaged and count as a single judge. Historians and AI models are then averaged separately, and each average includes one imaginary neutral rating, so a problem praised by a single enthusiast cannot outrank one rated highly by many.</p>
-      <p>Where both groups have rated a problem, historians count for two-thirds of the final score and the AI judges together for one-third; otherwise the one group&rsquo;s score is used alone. Unrated problems are ordered by period. Scores update whenever a new rating is approved.</p>
-
-      <h2>Limitations</h2>
-      <p>The panel is small and the ratings are judgements, not measurements. Impact scores are a rough guide to where the field sees the most at stake, not a verdict. The full code is in ${ext(`${REPO}/blob/main/lib/impact.js`, "lib/impact.js")}.</p>
-
-      <h2>Contribute ratings</h2>
-      <p>Historians who would like to rate problems can ${ext(`mailto:breen85@gmail.com?subject=Rating%20open%20problems`, "get in touch")} or use the <a href="/rate">rating form</a>.</p>
-      ${drafted(agent("Claude Opus 5.5", "Drafted this section; edited by Benjamin Breen."))}
+      <h2 id="rankings">How the questions are ranked</h2>
+      <p>Which investigation is most likely to teach us something consequential? In November 2026, Claude Opus 5.5 (low reasoning effort), Gemini 4 Hydrogen (medium) and GPT-6 each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. All three reported that they had not seen previous rankings of these questions.</p>
+      <p>First, each judge estimated the chance of reaching an answer another historian could verify, using today’s tools and public digital sources. A well-supported negative answer counts. Then, assuming the question had been answered, the judge assessed two things on a scale of 1 to 10. How much would the answer change what historians know? And what other research would it make possible?</p>
+      <p>The default ranking uses the first of those two values. For example, a judge who gives a question a 60% chance of being answered and a historical contribution of 8 gives it a score of 4.8 out of 10. The AI score is the average of the three judges’ scores. Switch to <em>Further research</em> to see which answers could open up the most work for others, weighted by the same chance estimates.</p>
+      <p>The human column uses the same calculation across approved human ballots for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
+      <p>Read the <a href="/rate.txt">original question packet</a> and the scores from <a href="/rating-passes/2026-11-19/claude.json">Claude</a>, <a href="/rating-passes/2026-11-19/gemini.json">Gemini</a> and <a href="/rating-passes/2026-11-19/gpt.json">GPT</a>, or <a href="/rate">fill in a human ballot</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
     </div>
   </article>`;
 }

@@ -1,0 +1,438 @@
+{
+  "model": "Gemini 4 Hydrogen",
+  "reasoning_effort": "medium",
+  "ratings": [
+    {
+      "id": "archimedes-leaf-170",
+      "chance_pct": 15,
+      "historical_contribution": 3,
+      "further_research": 2
+    },
+    {
+      "id": "vermeer",
+      "chance_pct": 30,
+      "historical_contribution": 5,
+      "further_research": 4
+    },
+    {
+      "id": "zhou-conquest",
+      "chance_pct": 45,
+      "historical_contribution": 8,
+      "further_research": 8
+    },
+    {
+      "id": "wax-cylinder-voices",
+      "chance_pct": 65,
+      "historical_contribution": 4,
+      "further_research": 6
+    },
+    {
+      "id": "yamatai",
+      "chance_pct": 20,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "eruption-1809",
+      "chance_pct": 60,
+      "historical_contribution": 5,
+      "further_research": 4
+    },
+    {
+      "id": "oracle-bones",
+      "chance_pct": 35,
+      "historical_contribution": 7,
+      "further_research": 9
+    },
+    {
+      "id": "indus",
+      "chance_pct": 15,
+      "historical_contribution": 9,
+      "further_research": 8
+    },
+    {
+      "id": "qing-literacy",
+      "chance_pct": 45,
+      "historical_contribution": 7,
+      "further_research": 7
+    },
+    {
+      "id": "americas-1492",
+      "chance_pct": 15,
+      "historical_contribution": 10,
+      "further_research": 7
+    },
+    {
+      "id": "punt",
+      "chance_pct": 20,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "cassini-cas-a",
+      "chance_pct": 65,
+      "historical_contribution": 4,
+      "further_research": 3
+    },
+    {
+      "id": "ptolemy",
+      "chance_pct": 60,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "segmented-sleep",
+      "chance_pct": 65,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "thylacine",
+      "chance_pct": 55,
+      "historical_contribution": 4,
+      "further_research": 4
+    },
+    {
+      "id": "quran-standardization",
+      "chance_pct": 45,
+      "historical_contribution": 9,
+      "further_research": 8
+    },
+    {
+      "id": "justinianic-plague",
+      "chance_pct": 25,
+      "historical_contribution": 9,
+      "further_research": 7
+    },
+    {
+      "id": "potato-blight-ships",
+      "chance_pct": 50,
+      "historical_contribution": 5,
+      "further_research": 4
+    },
+    {
+      "id": "black-death-africa",
+      "chance_pct": 15,
+      "historical_contribution": 8,
+      "further_research": 6
+    },
+    {
+      "id": "silver-china",
+      "chance_pct": 25,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "linear-a",
+      "chance_pct": 25,
+      "historical_contribution": 8,
+      "further_research": 9
+    },
+    {
+      "id": "wilkinson-ciphers",
+      "chance_pct": 65,
+      "historical_contribution": 5,
+      "further_research": 6
+    },
+    {
+      "id": "russian-flu",
+      "chance_pct": 70,
+      "historical_contribution": 5,
+      "further_research": 5
+    },
+    {
+      "id": "jupiter-red-spot",
+      "chance_pct": 70,
+      "historical_contribution": 4,
+      "further_research": 4
+    },
+    {
+      "id": "indian-ocean-tsunamis",
+      "chance_pct": 50,
+      "historical_contribution": 4,
+      "further_research": 4
+    },
+    {
+      "id": "mughal-dodo",
+      "chance_pct": 20,
+      "historical_contribution": 3,
+      "further_research": 2
+    },
+    {
+      "id": "agade",
+      "chance_pct": 10,
+      "historical_contribution": 6,
+      "further_research": 6
+    },
+    {
+      "id": "great-divergence",
+      "chance_pct": 35,
+      "historical_contribution": 9,
+      "further_research": 7
+    },
+    {
+      "id": "mesopotamian-chronology",
+      "chance_pct": 50,
+      "historical_contribution": 8,
+      "further_research": 8
+    },
+    {
+      "id": "newton-alchemy-sources",
+      "chance_pct": 75,
+      "historical_contribution": 5,
+      "further_research": 7
+    },
+    {
+      "id": "amazon-cacao",
+      "chance_pct": 20,
+      "historical_contribution": 4,
+      "further_research": 4
+    },
+    {
+      "id": "sydney-smallpox",
+      "chance_pct": 25,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "copernicus-maragha",
+      "chance_pct": 35,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "cocoliztli",
+      "chance_pct": 15,
+      "historical_contribution": 8,
+      "further_research": 6
+    },
+    {
+      "id": "rongorongo",
+      "chance_pct": 45,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "shapira-scrolls",
+      "chance_pct": 15,
+      "historical_contribution": 7,
+      "further_research": 4
+    },
+    {
+      "id": "meroitic",
+      "chance_pct": 20,
+      "historical_contribution": 7,
+      "further_research": 9
+    },
+    {
+      "id": "galen-arabic",
+      "chance_pct": 70,
+      "historical_contribution": 6,
+      "further_research": 8
+    },
+    {
+      "id": "china-1600",
+      "chance_pct": 30,
+      "historical_contribution": 8,
+      "further_research": 7
+    },
+    {
+      "id": "beowulf",
+      "chance_pct": 25,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "roman-census",
+      "chance_pct": 30,
+      "historical_contribution": 8,
+      "further_research": 7
+    },
+    {
+      "id": "medieval-cattle-plagues",
+      "chance_pct": 55,
+      "historical_contribution": 5,
+      "further_research": 5
+    },
+    {
+      "id": "sloane-informants",
+      "chance_pct": 60,
+      "historical_contribution": 6,
+      "further_research": 7
+    },
+    {
+      "id": "indian-ocean-slave-trade",
+      "chance_pct": 25,
+      "historical_contribution": 8,
+      "further_research": 7
+    },
+    {
+      "id": "gutenberg-type",
+      "chance_pct": 30,
+      "historical_contribution": 6,
+      "further_research": 5
+    },
+    {
+      "id": "ibn-battuta",
+      "chance_pct": 45,
+      "historical_contribution": 6,
+      "further_research": 6
+    },
+    {
+      "id": "padang-1697",
+      "chance_pct": 40,
+      "historical_contribution": 3,
+      "further_research": 3
+    },
+    {
+      "id": "kerala-jesuits",
+      "chance_pct": 25,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "silent-film-fragments",
+      "chance_pct": 80,
+      "historical_contribution": 4,
+      "further_research": 7
+    },
+    {
+      "id": "indigenous-slavery",
+      "chance_pct": 25,
+      "historical_contribution": 8,
+      "further_research": 7
+    },
+    {
+      "id": "toromiro-provenance",
+      "chance_pct": 65,
+      "historical_contribution": 3,
+      "further_research": 4
+    },
+    {
+      "id": "leprosy-americas",
+      "chance_pct": 70,
+      "historical_contribution": 5,
+      "further_research": 5
+    },
+    {
+      "id": "hidden-vocabularies",
+      "chance_pct": 85,
+      "historical_contribution": 5,
+      "further_research": 8
+    },
+    {
+      "id": "ottoman-tahrir",
+      "chance_pct": 40,
+      "historical_contribution": 7,
+      "further_research": 7
+    },
+    {
+      "id": "khipu",
+      "chance_pct": 20,
+      "historical_contribution": 8,
+      "further_research": 9
+    },
+    {
+      "id": "james-pawpaw-remedy",
+      "chance_pct": 65,
+      "historical_contribution": 3,
+      "further_research": 4
+    },
+    {
+      "id": "early-syphilis",
+      "chance_pct": 65,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "ternate-gingie",
+      "chance_pct": 35,
+      "historical_contribution": 3,
+      "further_research": 3
+    },
+    {
+      "id": "lost-editions",
+      "chance_pct": 55,
+      "historical_contribution": 5,
+      "further_research": 7
+    },
+    {
+      "id": "gregorian-chant",
+      "chance_pct": 25,
+      "historical_contribution": 5,
+      "further_research": 5
+    },
+    {
+      "id": "song-iron",
+      "chance_pct": 35,
+      "historical_contribution": 5,
+      "further_research": 5
+    },
+    {
+      "id": "irish-1641",
+      "chance_pct": 45,
+      "historical_contribution": 6,
+      "further_research": 7
+    },
+    {
+      "id": "borneo-elephants",
+      "chance_pct": 20,
+      "historical_contribution": 4,
+      "further_research": 3
+    },
+    {
+      "id": "dunhuang-fragments",
+      "chance_pct": 85,
+      "historical_contribution": 6,
+      "further_research": 9
+    },
+    {
+      "id": "hittite-fragments",
+      "chance_pct": 75,
+      "historical_contribution": 5,
+      "further_research": 8
+    },
+    {
+      "id": "mendel",
+      "chance_pct": 45,
+      "historical_contribution": 5,
+      "further_research": 4
+    },
+    {
+      "id": "renaissance-lute",
+      "chance_pct": 65,
+      "historical_contribution": 4,
+      "further_research": 6
+    },
+    {
+      "id": "gunpowder",
+      "chance_pct": 35,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "plague-disappearance",
+      "chance_pct": 30,
+      "historical_contribution": 7,
+      "further_research": 6
+    },
+    {
+      "id": "anonymous-serials",
+      "chance_pct": 75,
+      "historical_contribution": 6,
+      "further_research": 8
+    },
+    {
+      "id": "proto-elamite",
+      "chance_pct": 25,
+      "historical_contribution": 7,
+      "further_research": 8
+    },
+    {
+      "id": "anonymous-imprints",
+      "chance_pct": 60,
+      "historical_contribution": 5,
+      "further_research": 8
+    }
+  ]
+}

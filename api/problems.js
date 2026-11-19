@@ -5,14 +5,19 @@ import problems from "../data/problems.json" with { type: "json" };
 import { db, parse } from "../lib/store.js";
 import { impact } from "../lib/impact.js";
 
+import { humanPotential, compareRank } from "../lib/potential.js";
+import round from "../data/research-potential.json" with { type: "json" };
+
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "public, s-maxage=60, stale-while-revalidate=600");
   res.setHeader("Access-Control-Allow-Origin", "*");
   const [tally, ccount, acount, ratings] = await Promise.all([db.hgetall("tally"), db.hgetall("ccount"), db.hgetall("acount"), db.hgetall("ratings")]);
-  const imp = impact(Object.values(ratings || {}).map(parse));
+  const approved = Object.values(ratings || {}).map(parse);
+  const imp = impact(approved.filter((r) => r.scores));
+  const human = humanPotential(approved);
   const live = (id) => {
     const up = Number(tally?.[`${id}:up`]) || 0, down = Number(tally?.[`${id}:down`]) || 0;
-    return { impact: imp[id]?.score ?? null, score: up - down, up, down, comments: Number(ccount?.[id]) || 0, proposed_approaches: Number(acount?.[id]) || 0 };
+    return { potential: { ai: round.ai[id] ?? null, human: human[id] ?? null }, impact: imp[id]?.score ?? null, score: up - down, up, down, comments: Number(ccount?.[id]) || 0, proposed_approaches: Number(acount?.[id]) || 0 };
   };
 
   const id = req.query.id;
@@ -26,5 +31,5 @@ export default async function handler(req, res) {
 
   res.status(200).json(problems
     .map((p) => ({ id: p.id, title: p.title, short: p.short, field: p.field, region: p.region, start: p.start, end: p.end, flags: p.flags, recent_items: p.recent?.items?.length || 0, last_moved: p.recent?.items?.map((r) => String(r.date)).sort().at(-1) || null, url: `/p/${p.id}`, json: `/api/problems?id=${p.id}`, ...live(p.id) }))
-    .sort((a, b) => (b.impact ?? -99) - (a.impact ?? -99) || b.score - a.score));
+    .sort((a, b) => compareRank(round.ai, "historical", a, b)));
 }

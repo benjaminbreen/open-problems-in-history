@@ -1,0 +1,41 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { humanPotential, rankBallots, validJudgment } from "../lib/potential.js";
+
+const judgment = (chance_pct, historical_contribution, further_research) => ({
+  chance_pct, historical_contribution, further_research,
+});
+
+test("average each judge’s products, preserve zero and share ranks for ties", () => {
+  const first = { a: judgment(100, 1, 9), b: judgment(50, 5, 4), c: judgment(0, 10, 2) };
+  const second = { a: judgment(50, 8, 2) };
+  const ranks = rankBallots([first, second]);
+  assert.deepEqual(ranks.a, { count: 2, historical: 2.5, further: 5, historical_rank: 1, further_rank: 1 });
+  assert.equal(ranks.b.historical_rank, 1);
+  assert.equal(ranks.b.further_rank, 2);
+  assert.equal(ranks.c.historical_rank, 3);
+  assert.equal(ranks.c.historical, 0);
+});
+
+test("keep the latest approved answer from each participant for each question", () => {
+  const approved = [
+    { participant: "one", t: 5, judgments: { a: judgment(20, 5, 10) } },
+    { participant: "two", t: 2, judgments: { a: judgment(80, 5, 10) } },
+    { participant: "one", t: 1, judgments: { a: judgment(0, 4, 3), b: judgment(30, 5, 5) } },
+    { scores: { a: 5 } },
+    { agent: "model", judgments: { c: judgment(100, 10, 10) } },
+  ];
+  const ranks = humanPotential(approved);
+  assert.deepEqual(Object.keys(ranks).sort(), ["a", "b"]);
+  assert.equal(ranks.a.count, 2);
+  assert.equal(ranks.a.historical, 2.5);
+  assert.equal(ranks.b.count, 1);
+});
+
+test("require three in-range integers", () => {
+  assert(validJudgment(judgment(0, 1, 10)));
+  assert(!validJudgment(judgment(50, 7)));
+  assert(!validJudgment(judgment("50", 7, 8)));
+  assert(!validJudgment(judgment(50.5, 7, 8)));
+  assert(!validJudgment(judgment(50, 11, 8)));
+});
