@@ -102,7 +102,7 @@ fs.writeFileSync("index.html", page({
       "@context": "https://schema.org", "@type": "WebSite", name: SITE, url: `${URL}/`, description: HOME_DESC, publisher,
       mainEntity: { "@type": "ItemList", itemListElement: byPotential.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${URL}/p/${p.id}`, name: p.title })) },
     }),
-  main: `<p class="static-rank-intro">Ranked by expected contribution to historical knowledge. <a href="/methods#rankings">How rankings work</a> · <a href="/rate">Rate the questions</a></p><ol class="list">${byPotential.map((p) => rowHTML(ctx, p)).join("")}</ol>`,
+  main: `<p class="static-rank-intro">Overall potential = chance of a convincing answer × contribution to historical knowledge if answered. <a href="/methods#rankings">How rankings work</a> · <a href="/rate">Rate the questions</a></p><ol class="list">${byPotential.map((p) => rowHTML(ctx, p)).join("")}</ol>`,
 }));
 
 fs.mkdirSync("rate", { recursive: true });

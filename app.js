@@ -105,9 +105,10 @@ function renderList() {
       <span class="count" id="count"></span>
     </div>
     <div class="ranking-tools">
-      ${seg("metric", "Rank by", [["historical", "Historical contribution"], ["further", "Further research"]])}
+      ${seg("metric", "Rank by", [["historical", "Overall potential"], ["further", "Further research"]])}
       <details class="ranking-help"><summary>How rankings work</summary><div><p>${esc(tips.ai)}</p><p>${esc(tips.human)}</p><a href="/methods#rankings">Read the full method</a></div></details>
       <a href="/rate">Rate the questions</a>
+      <p class="ranking-formula">Chance of a convincing answer × ${outcome} if answered</p>
     </div>
     <div class="thead" role="group" aria-label="Sort">
       ${col("ai", "AI rank")}${col("human", "Human rank")}${col("votes", "Votes")}${col("title", "Problem")}${col("field", "Field")}${col("region", "Region")}${col("period", "Period")}${col("discussed", "Comments")}
