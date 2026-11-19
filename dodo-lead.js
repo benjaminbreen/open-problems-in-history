@@ -16,7 +16,7 @@ const archive = (inventory, scan) => `https://www.nationaalarchief.nl/onderzoeke
 
 const extracts = [
   {
-    id: "hunters", date: "17 April 1615", title: "The hunters come back", inventory: 1059, scan: 277,
+    id: "hunters", width: 1252, height: 262, date: "17 April 1615", title: "The hunters come back", inventory: 1059, scan: 277,
     alt: "Five lines of the ship’s journal. Dodersen is near the right end of the fourth line.",
     dutch: "Jagers vuyt die sommighe schiltpadden &amp; <mark>dodersen</mark> aen boort brochten",
     english: "Hunters went out and brought some tortoises and <mark>dodos</mark> aboard.",
@@ -24,7 +24,7 @@ const extracts = [
     word: [72, 51, 15, 29],
   },
   {
-    id: "water", date: "21 April 1615", title: "A second catch", inventory: 1059, scan: 277,
+    id: "water", width: 1246, height: 152, date: "21 April 1615", title: "A second catch", inventory: 1059, scan: 277,
     alt: "Two lines beginning Den 21 dito. Dodeersen begins the second line.",
     dutch: "Den 21 dito wederom water gehaelt ende veel schiltpadden <mark>dodeersen</mark> ende sommighe gansen &amp; papegayen geuangen",
     english: "On the 21st, fetched water again and caught many tortoises, <mark>dodos</mark> and some geese and parrots.",
@@ -32,7 +32,7 @@ const extracts = [
     word: [3, 39, 17, 39],
   },
   {
-    id: "provisions", date: "30 April 1615", title: "What the island provided", inventory: 1059, scan: 278,
+    id: "provisions", width: 1210, height: 240, date: "30 April 1615", title: "What the island provided", inventory: 1059, scan: 278,
     alt: "A detail of the following page. Dodeersen appears near the right margin above the line listing tortoises.",
     dutch: "goede ververssinge gecregen, soe van <mark>dodeersen</mark>, landt ende water schiltpadden met meenichte",
     english: "Obtained fresh provisions, including <mark>dodos</mark> and plentiful land tortoises and sea turtles.",
@@ -40,7 +40,7 @@ const extracts = [
     word: [72, 31, 17, 27],
   },
   {
-    id: "verse", date: "The same voyage", title: "The dodo in a sailor’s verse", inventory: 1059, scan: 51,
+    id: "verse", width: 635, height: 295, date: "The same voyage", title: "The dodo in a sailor’s verse", inventory: 1059, scan: 51,
     alt: "Stanza 200 of the rhymed account. Dodersen begins the fourth line of verse.",
     dutch: "<mark>dodersen</mark> en patrysen<br>gansen weert om te prijsen<br>en schiltpadden daer syn",
     english: "There are <mark>dodos</mark> and partridges,<br>geese worth praising,<br>and tortoises there.",
@@ -48,7 +48,7 @@ const extracts = [
     word: [4, 49, 33, 20],
   },
   {
-    id: "rail", date: "November 1638", title: "What was a “field-hen”?", inventory: 1128, scan: 360,
+    id: "rail", width: 949, height: 180, date: "November 1638", title: "What was a “field-hen”?", inventory: 1128, scan: 360,
     alt: "An underlined list of animals. Velthoenderen follows the word for geese.",
     dutch: "koebeesten gansz <mark>velthoenderen</mark> eenden duijven",
     english: "Cattle, geese, <mark>field-hens</mark>, ducks, pigeons.",
@@ -64,7 +64,7 @@ function manuscriptReader() {
       <summary><span>${entry.date}</span><strong>${entry.title}</strong></summary>
       <div class="dodo-sheet">
         <figure><a class="dodo-facsimile" href="${media}/scan-${entry.scan}.webp" aria-label="Enlarge the full manuscript page for ${entry.title}">
-          <img src="${media}/${entry.id}.webp" alt="${entry.alt}" loading="lazy">
+          <img src="${media}/${entry.id}.webp" width="${entry.width}" height="${entry.height}" alt="${entry.alt}" loading="lazy">
           <span class="dodo-outline" aria-hidden="true" style="left:${x}%;top:${y}%;width:${width}%;height:${height}%"></span>
         </a><figcaption>Nationaal Archief · VOC ${entry.inventory}, scan ${entry.scan} · <a href="${archive(entry.inventory, entry.scan)}">Open archive viewer ↗</a></figcaption></figure>
         <div class="dodo-reading"><p class="dodo-english" lang="en">“${entry.english}”</p><p class="dodo-dutch" lang="nl">“${entry.dutch}”</p></div>
