@@ -1,3 +1,5 @@
+import { wilkinsonTitle } from "./wilkinson-lead.js";
+
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
 
@@ -12,6 +14,12 @@ export function leadsHTML() {
     <article class="leads-page">
       <h1 class="page-title">Leads</h1>
       <p class="lead-intro">Start with a source. See what it can tell us and what remains to be found.</p>
+      <a class="lead-entry" href="/leads/wilkinson-dictionary">
+        <p class="lead-label">Natchez, 1792 · Dictionary cipher</p>
+        <h2>${wilkinsonTitle}</h2>
+        <p>A coded letter puts two words on page 163. Open an eighteenth-century dictionary and count down the column. Could this have been Wilkinson’s key?</p>
+        <span class="lead-link">Try the dictionary <span aria-hidden="true">→</span></span>
+      </a>
       <a class="lead-entry" href="/leads/heerlen">
         <p class="lead-label">Heerlen · Roman game board</p>
         <h2>What game wore down this stone?</h2>
