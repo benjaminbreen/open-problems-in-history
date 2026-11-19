@@ -1,0 +1,96 @@
+{
+  "id": "russian-flu",
+  "title": "Did a coronavirus cause the pandemic known as the “Russian flu”?",
+  "short": "Doctors called the pandemic of 1889 influenza. Their case notes and death registers could help decide whether a coronavirus better explains whom it sickened and killed.",
+  "region": "Global",
+  "field": "Disease",
+  "start": 1889,
+  "end": 1894,
+  "flags": [],
+  "matters": "One candidate is OC43, a coronavirus that circulates in people today. Estimates from modern viruses place its common ancestor with a cattle coronavirus near the late nineteenth century. If OC43 was responsible, a pandemic long used as an example of influenza would belong to a different disease history.",
+  "stuck": "A date for a common ancestor gives a range of years and cannot identify the virus in a particular patient. Doctors also differed in what they asked about. A report of lost smell or prolonged exhaustion is hard to interpret without knowing how often the same doctor recorded it in other epidemics.",
+  "solved": "Compare symptom frequencies and age-specific excess deaths with the 1847–48 and 1918 influenza outbreaks in comparable places and records. Report which explanation each pattern favours and by how much. A definitive viral identification would require direct evidence from the pandemic itself.",
+  "approach": [
+    "Start with Henry Franklin Parsons’s survey, local medical reports and municipal death returns. Keep physician accounts separate from newspaper reprints.",
+    "Record the number of patients actually described, their ages and whether each symptom was mentioned, denied or left unexamined.",
+    "Compare like reporting settings across outbreaks. Test whether conclusions survive removing a city, a wave or an unusually detailed observer."
+  ],
+  "needs": [
+    {
+      "who": "epidemiologists",
+      "ask": "Compare the symptom and age patterns across outbreaks with allowance for differences in who was examined."
+    },
+    {
+      "who": "demographers",
+      "ask": "Estimate deaths above the usual seasonal level in cities with age-specific population counts."
+    }
+  ],
+  "related": [
+    "early-syphilis"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 1891,
+      "authors": "H. Franklin Parsons",
+      "title": "Report on the Influenza Epidemic of 1889–90",
+      "venue": "Local Government Board",
+      "url": "https://wellcomecollection.org/works/qvgdv4sv",
+      "note": "A contemporary medical survey records how the illness appeared to doctors working in different places."
+    },
+    {
+      "year": 2005,
+      "authors": "Leen Vijgen et al.",
+      "title": "Complete Genomic Sequence of Human Coronavirus OC43: Molecular Clock Analysis Suggests a Relatively Recent Zoonotic Coronavirus Transmission Event",
+      "venue": "Journal of Virology",
+      "url": "https://doi.org/10.1128/jvi.79.3.1595-1604.2005",
+      "note": "Estimates when the human and cattle coronavirus lineages shared an ancestor."
+    },
+    {
+      "year": 2021,
+      "authors": "Harald Brüssow and Lutz Brüssow",
+      "title": "Clinical evidence that the pandemic from 1889 to 1891 commonly called the Russian flu might have been an earlier coronavirus pandemic",
+      "venue": "Microbial Biotechnology",
+      "url": "https://doi.org/10.1111/1751-7915.13889",
+      "note": "Revisits published case descriptions and argues that a coronavirus deserves consideration."
+    },
+    {
+      "year": 2024,
+      "authors": "Jocelyne Suter et al.",
+      "title": "The health and demographic impacts of the “Russian flu” pandemic in Switzerland in 1889/1890 and in the years thereafter",
+      "venue": "Epidemiology and Infection",
+      "url": "https://doi.org/10.1017/s0950268824001651",
+      "note": "Uses Swiss death and population records to examine age, place and the timing of mortality."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Wellcome Collection",
+      "collection": "Parsons’s report on the influenza epidemic of 1889–90",
+      "url": "https://wellcomecollection.org/works/qvgdv4sv",
+      "digitized": "full",
+      "note": "A starting point for comparing local accounts that answered similar questions."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Gallica",
+      "collection": "Medical periodicals and municipal statistical bulletins",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "partial",
+      "note": "French case reports can be paired with mortality returns for the same city and month."
+    },
+    {
+      "repository": "National Library of Australia",
+      "collection": "Trove newspapers and gazettes",
+      "url": "https://trove.nla.gov.au/search/category/newspapers",
+      "digitized": "partial",
+      "note": "Local reports can be compared with syndicated accounts of outbreaks overseas."
+    }
+  ]
+}

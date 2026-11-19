@@ -1,0 +1,68 @@
+{
+  "id": "hittite-fragments",
+  "title": "Which Hittite tablet fragments belong to the same tablet or preserve the same text?",
+  "short": "Hittite scribes wrote on clay tablets. A few lines on a broken piece could restore a missing passage in a ritual or identify a second copy of a treaty.",
+  "region": "Middle East",
+  "field": "Texts & authorship",
+  "start": -1650,
+  "end": -1180,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "Much of what survives from the Hittite kingdom in Anatolia is in pieces. A physical join can reunite parts of one object. A second scribe’s copy may fill in words missing from a broken tablet and show how a text changed between copies.",
+  "stuck": "The TLHdig collection lets readers search transcribed signs. In a pilot on a release containing 23,921 documents, the top tenth of matches on simulated fragments were correct in 94 percent of cases. About eight matches on real fragments appeared to be missing from the catalogue of known pieces. Their photographs and full publication histories still need checking.",
+  "solved": "For a duplicate text, show a distinctive sequence of preserved signs in the same order on separate tablets. For a physical join, also demonstrate that the edges, surface and line spacing fit. Check each result against published editions and museum records.",
+  "approach": [
+    "Search the unassigned groups in TLHdig using signs visible on the clay. Exclude editorial restorations, which may already come from a known copy.",
+    "Test the ranking on known duplicates and short formulae, then compare candidates with the Mainz concordance under every inventory number.",
+    "Have a Hittitologist inspect photographs of both pieces and, for a proposed join, consult the holding collection about the objects themselves."
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Check sign readings, repeated ritual phrases and previously published parallels."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Compare clay surfaces and broken edges for pairs proposed as parts of one tablet."
+    }
+  ],
+  "related": [
+    "dunhuang-fragments",
+    "proto-elamite"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2026,
+      "authors": "Gerfrid Müller et al.",
+      "title": "Thesaurus Linguarum Hethaeorum digitalis (TLHdig) Beta Version 0.3",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20328284",
+      "note": "Releases the searchable transcriptions used in the pilot and describes the editorial history of the corpus."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Hethitologie-Portal Mainz",
+      "collection": "Thesaurus Linguarum Hethaeorum digitalis",
+      "url": "https://hethport.net/TLHdig/",
+      "digitized": "full",
+      "note": "Search the transcribed signs and locate each fragment by its publication and museum numbers."
+    },
+    {
+      "repository": "Hethitologie-Portal Mainz",
+      "collection": "Konkordanz der hethitischen Keilschrifttafeln",
+      "url": "https://hatti.adwudlit.uni-mainz.de/hetkonk/",
+      "digitized": "partial",
+      "note": "Look up known joins, catalogue assignments, bibliography and available photographs before treating a match as new."
+    }
+  ]
+}

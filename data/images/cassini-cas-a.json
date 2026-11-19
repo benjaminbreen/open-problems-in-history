@@ -1,0 +1,11 @@
+{
+  "id": "cassini-cas-a",
+  "file": "data/images/src/cassini-cas-a.jpg",
+  "caption": "Cassiopeia A seen by the Chandra X-ray Observatory",
+  "commons": "https://commons.wikimedia.org/wiki/File:Cassiopeia_A-_Chandra_Maps_Vital_Elements_in_Supernovas_(1999-casajph_-_casa).jpg",
+  "author": "NASA/CXC/SAO/Rutgers/J.Hughes",
+  "license": "Public domain",
+  "license_url": "",
+  "crop": "center",
+  "invert": true
+}

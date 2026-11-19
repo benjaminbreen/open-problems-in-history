@@ -1,0 +1,10 @@
+{
+  "id": "borneo-elephants",
+  "file": "data/images/src/borneo-elephants.jpg",
+  "caption": "Bornean elephants in Sabah, detail in halftone",
+  "commons": "https://commons.wikimedia.org/wiki/File:Borneo_Pygmy_Elephants_(11932717866).jpg",
+  "author": "shankar s.",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0",
+  "crop": "center"
+}

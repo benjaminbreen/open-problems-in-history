@@ -1,0 +1,82 @@
+{
+  "id": "amazon-cacao",
+  "title": "How much of the cacao along Amazonian rivers grew from colonial-era plantings?",
+  "short": "Cacao grew in Amazonia long before Europeans arrived. An eighteenth-century survey could help distinguish groves planted for colonial trade from the legacy of earlier Indigenous cultivation.",
+  "region": "Americas",
+  "field": "Economy",
+  "start": 1700,
+  "end": 1800,
+  "flags": [
+    "science"
+  ],
+  "matters": "Cacao trees in present-day forests help researchers reconstruct where people once managed the land. The same riverbank might have supported an Indigenous settlement, a mission and a commercial grove in succession. Knowing which plantings left a trace would change what those trees tell us about each period.",
+  "stuck": "Francisco Xavier Ribeiro de Sampaio recorded settlements during his 1774–75 inspection of the Rio Negro. Colonial records also count cacao harvested or traded. A quantity of beans shipped from a village need not have been grown there, and a missing return says little about an unvisited tributary.",
+  "solved": "For the Rio Negro places that can be located with confidence, test whether documented planting predicts modern cacao abundance after accounting for river access, habitat and earlier settlement. Report the area the comparison covers and the uncertainty around any estimated colonial contribution.",
+  "approach": [
+    "Transcribe Sampaio’s returns and distinguish planted trees, harvested beans and cargo received from elsewhere. Match historical place names to rivers and settlements with an uncertainty range.",
+    "Compare forest plots near documented plantings with plots on comparable floodplains, including places with evidence of precolonial occupation.",
+    "Repeat the comparison after removing poorly located sites. Check the interpretation with local accounts of managed groves and later changes in land use."
+  ],
+  "needs": [
+    {
+      "who": "gis",
+      "ask": "Locate Sampaio’s settlements and match them to comparable forest plots without treating uncertain coordinates as exact."
+    },
+    {
+      "who": "archaeologists",
+      "ask": "Distinguish sites with evidence of earlier cultivation from settlements known only through colonial records."
+    }
+  ],
+  "related": [
+    "potato-blight-ships"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Fable",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2017,
+      "authors": "C. Levis et al.",
+      "title": "Persistent effects of pre-Columbian plant domestication on Amazonian forest composition",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aal0157",
+      "note": "Compares the abundance of domesticated trees with archaeological sites across Amazonia."
+    },
+    {
+      "year": 2017,
+      "authors": "Crystal H. McMichael et al.",
+      "title": "Comment on “Persistent effects of pre-Columbian plant domestication on Amazonian forest composition”",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aan8347",
+      "note": "Asks how much later settlement and cultivation could account for the pattern in modern plots."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Fundação Cultural do Pará",
+      "collection": "Francisco Xavier Ribeiro de Sampaio, diary of the 1774–75 Rio Negro inspection",
+      "url": "https://obrasraras.fcp.pa.gov.br/publication/diario-da-viagem-que-em-visita-e-correicao-das-povoacoes-da-capitania-de-s-joze-do-rio-negro-fez-o-ouvidor-e-intendente-geral-da-mesma/",
+      "digitized": "full",
+      "note": "The itinerary gives settlement names and dates for checking what colonial officials counted."
+    },
+    {
+      "repository": "Universidade de São Paulo",
+      "collection": "A viagem de Francisco Xavier Ribeiro de Sampaio na Capitania de S. José do Rio Negro",
+      "url": "https://livrosabertos.abcd.usp.br/portaldelivrosUSP/pt_BR/catalog/book/81",
+      "digitized": "full",
+      "note": "A manuscript-based edition provides a second route into the inspection records."
+    },
+    {
+      "repository": "White Rose Research Online",
+      "collection": "Supplementary materials for the Amazon forest-plot study",
+      "digitized": "full",
+      "url": "https://eprints.whiterose.ac.uk/114745/16/aal0157_SupplementalMaterial_v2.pdf",
+      "note": "Documents the plot sample, species and archaeological comparisons used in the published analysis."
+    }
+  ]
+}

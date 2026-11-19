@@ -1,0 +1,86 @@
+{
+  "id": "silent-film-fragments",
+  "title": "Which lost silent films survive in fragments whose titles are unknown?",
+  "short": "A film archive may hold a few minutes of a movie whose title card is gone. A match with a contemporary description could put a lost performance back on screen.",
+  "region": "Global",
+  "field": "Material & visual",
+  "start": 1895,
+  "end": 1930,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "Eye Filmmuseum preserves short pieces of film in its Bits & Pieces collection. Even when a full print has disappeared, a few identified scenes can show how an actor played a role or how a director staged an ending that survives elsewhere only as a synopsis.",
+  "stuck": "A pilot matched fragment 23 to The Adorable Savage (1920) through its shipwreck, its fight and the arrival of an uncle. Eye had already published the identification in 2020. The example shows both how a copyright synopsis can recover a title and how an older catalogue description can make a known film look unidentified.",
+  "solved": "For each proposed title, show several distinctive details in the footage and in independently sourced period records. Check the archive’s attribution history and surviving-print records before counting a newly identified fragment or describing a film as lost.",
+  "approach": [
+    "Record intertitles, actions and props before searching for a title. Reserve a detail from the clip to test the best candidate.",
+    "Search copyright deposits and the Lantern trade press for the scenes in sequence. Check whether apparent corroboration comes from one publicity text printed twice.",
+    "Compare the candidate with rival films, allow for translated titles and different cuts, and give the holding archive the evidence and frame timings."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Check accession histories, alternate releases and earlier identifications against the actual film elements."
+    }
+  ],
+  "related": [
+    "wax-cylinder-voices"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 1920,
+      "authors": "Universal Film Manufacturing Company",
+      "title": "The Adorable Savage",
+      "venue": "Library of Congress copyright deposit LP 15419",
+      "url": "https://tile.loc.gov/storage-services/service/mbrs/cdmmi/s1/22/9l/15/41/9/s1229l15419/s1229l15419.pdf",
+      "note": "The deposited synopsis names the characters and describes the sequence in Eye’s fragment 23."
+    },
+    {
+      "year": 2013,
+      "authors": "David Pierce",
+      "title": "The Survival of American Silent Feature Films: 1912–1929",
+      "venue": "Council on Library and Information Resources and Library of Congress",
+      "url": "https://www.clir.org/pubs/reports/pub158/",
+      "note": "Distinguishes complete prints, incomplete survivals and films for which no material was located."
+    },
+    {
+      "year": 2020,
+      "authors": "Eye Filmmuseum",
+      "title": "Bits & Pieces Nr. 23 (The Adorable Savage)",
+      "venue": "Eye Filmmuseum",
+      "url": "https://www.youtube.com/watch?v=5al5AdWKcIQ",
+      "note": "The museum’s own release identifies fragment 23, FLM7643, as The Adorable Savage."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Eye Filmmuseum, Amsterdam",
+      "collection": "Bits & Pieces",
+      "url": "https://www.eyefilm.nl/en/collection/collections/film/bits-pieces",
+      "digitized": "partial",
+      "note": "The collection includes identified and unidentified fragments. Accession numbers link alternative descriptions of the same footage."
+    },
+    {
+      "repository": "Library of Congress",
+      "collection": "Motion Picture Copyright Descriptions Collection, LP 15419",
+      "url": "https://tile.loc.gov/storage-services/service/mbrs/cdmmi/s1/22/9l/15/41/9/s1229l15419/s1229l15419.pdf",
+      "digitized": "full",
+      "note": "The contemporary copyright deposit can be read beside the surviving clip."
+    },
+    {
+      "repository": "Media History Digital Library",
+      "collection": "Lantern, motion picture trade press",
+      "url": "https://lantern.mediahist.org/",
+      "digitized": "partial",
+      "note": "Release notices, reviews and illustrated advertisements provide independent details to check against the film."
+    }
+  ]
+}

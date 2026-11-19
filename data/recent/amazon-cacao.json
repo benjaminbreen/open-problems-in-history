@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2017-03",
+      "kind": "paper",
+      "title": "Persistent effects of pre-Columbian plant domestication on Amazonian forest composition",
+      "who": "C. Levis et al.",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aal0157",
+      "note": "Compares the abundance of domesticated trees with archaeological sites across Amazonia.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2017-10",
+      "kind": "paper",
+      "title": "Comment on “Persistent effects of pre-Columbian plant domestication on Amazonian forest composition”",
+      "who": "Crystal H. McMichael et al.",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.aan8347",
+      "note": "Asks how much later settlement and cultivation could account for the pattern in modern plots.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

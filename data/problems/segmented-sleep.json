@@ -1,0 +1,85 @@
+{
+  "id": "segmented-sleep",
+  "title": "How common was sleeping in two shifts before industrialization?",
+  "short": "People once wrote of waking from a “first sleep.” Their accounts could tell us when sleeping through the night became an expectation and whose nights followed a different pattern.",
+  "region": "Europe",
+  "field": "Science & knowledge",
+  "start": 1300,
+  "end": 1900,
+  "flags": [],
+  "matters": "Historian A. Roger Ekirch argues that many Europeans slept twice at night, with a waking interval between. Niall Boyce asks whether some of the same passages describe an occasional interruption or simply the deepest part of sleep. Their disagreement concerns how common the habit was, and among whom.",
+  "stuck": "An initial search of transcribed early English books returned 372 “first sleep” passages in 307 books. A phrase count includes translations, reprints and figures of speech. The strongest evidence would be a writer who describes waking, doing something and going back to bed, and tells us how often this happened.",
+  "solved": "For defined periods, regions and kinds of writing, measure how often independent accounts describe two sleeps and a waking interval. Compare these with accounts of continuous nights and accidental waking. Diaries with many entries can say more about regularity than a single use of a phrase.",
+  "approach": [
+    "Begin with English printed books and distinguish separate witnesses from reprints. Have readers independently classify each passage before comparing it with Ekirch’s examples.",
+    "Check diaries, household accounts and court testimony for nights described without the words “first sleep.” Record season, occupation and artificial lighting where the writer mentions them.",
+    "Test the same distinctions in other European languages before extending an English finding to Europe as a whole."
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Check what period phrases for sleep meant in contemporary usage and translation."
+    },
+    {
+      "who": "statisticians",
+      "ask": "Estimate how much repeated editions, genre and the search vocabulary influence the observed pattern."
+    }
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Fable",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2001,
+      "authors": "A. Roger Ekirch",
+      "title": "Sleep We Have Lost: Pre-industrial Slumber in the British Isles",
+      "venue": "The American Historical Review",
+      "url": "https://doi.org/10.1086/ahr/106.2.343",
+      "note": "Assembles evidence for a regular interval of waking between two periods of sleep."
+    },
+    {
+      "year": 2023,
+      "authors": "Niall Boyce",
+      "title": "Have we lost sleep? A reconsideration of segmented sleep in early modern England",
+      "venue": "Medical History",
+      "url": "https://doi.org/10.1017/mdh.2023.14",
+      "note": "Re-reads English examples and offers alternative meanings for several passages."
+    },
+    {
+      "year": 2024,
+      "authors": "A. Roger Ekirch",
+      "title": "Reflections on ‘Have we lost sleep?’",
+      "venue": "Medical History",
+      "url": "https://doi.org/10.1017/mdh.2024.20",
+      "note": "Responds to Boyce with additional evidence and a defence of the original interpretation."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Text Creation Partnership",
+      "collection": "EEBO-TCP transcriptions of early English books",
+      "url": "https://textcreationpartnership.org/",
+      "digitized": "partial",
+      "note": "Compare spelling variants and repeated passages across early printed books."
+    },
+    {
+      "repository": "Old Bailey Online",
+      "collection": "Proceedings of the Old Bailey, 1674–1913",
+      "url": "https://www.oldbaileyonline.org/",
+      "digitized": "full",
+      "note": "Witnesses sometimes had to explain exactly when they went to bed, woke or heard someone during the night."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Gallica",
+      "collection": "Early medical books, household manuals and memoirs",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "partial",
+      "note": "French terminology and narratives provide a comparison beyond the English printed record."
+    }
+  ]
+}

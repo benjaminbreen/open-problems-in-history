@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2025",
+      "kind": "field",
+      "title": "Pre-European contact leprosy in the Americas and its current persistence",
+      "who": "Maria Lopopolo et al.",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.adu7144",
+      "note": "Finds ancient M. lepromatosis in North and South America and compares it with later cases.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2025-06",
+      "kind": "field",
+      "title": "4,000-year-old Mycobacterium lepromatosis genomes from Chile reveal long establishment of Hansen’s disease in the Americas",
+      "who": "Darío A. Ramirez et al.",
+      "venue": "Nature Ecology & Evolution",
+      "url": "https://doi.org/10.1038/s41559-025-02771-y",
+      "note": "Identifies the organism in two people who lived in northern Chile about four thousand years ago.",
+      "advances": true,
+      "cited": true
+    }
+  ]
+}

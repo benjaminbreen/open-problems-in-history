@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2022-06",
+      "kind": "data",
+      "title": "Lexibank, a public repository of standardized wordlists with computed phonological and lexical features",
+      "who": "Johann-Mattis List et al.",
+      "venue": "Scientific Data",
+      "url": "https://doi.org/10.1038/s41597-022-01432-0",
+      "note": "Provides standardized word lists for comparing candidate language identifications.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2026",
+      "kind": "data",
+      "title": "Wordes of their Language",
+      "who": "Benjamin Breen",
+      "venue": "Historical vocabulary catalogue",
+      "url": "https://github.com/benjaminbreen/WordsoftheirLanguage",
+      "note": "Pairs historical vocabularies with page images, transcriptions and evidence about copied lists.",
+      "advances": true,
+      "cited": true
+    }
+  ]
+}

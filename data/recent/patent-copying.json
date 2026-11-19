@@ -1,0 +1,17 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2018",
+      "kind": "paper",
+      "title": "Measuring Technological Innovation over the Long Run",
+      "who": "Bryan Kelly et al.",
+      "venue": "NBER Working Paper 25266",
+      "url": "https://www.nber.org/papers/w25266",
+      "note": "Uses similarities between historical patent texts to measure relationships between inventions.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

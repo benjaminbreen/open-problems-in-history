@@ -1,0 +1,103 @@
+{
+  "id": "medieval-cattle-plagues",
+  "title": "Did Europe’s three great medieval cattle plagues come from the east?",
+  "short": "Cattle died across medieval Europe in three great waves. Finding where each began would help explain how farming communities lost their plough teams and herds so quickly.",
+  "region": "Global",
+  "field": "Disease",
+  "start": 809,
+  "end": 1325,
+  "flags": [],
+  "matters": "An ox could supply a household with years of ploughing. Losses over a wide area left farmers with few places to buy replacements. Timothy Newfield traced outbreaks in 809–10, 937–42 and 1315–25 and considered evidence that disease reached Europe from the east, as it did in some later cattle plagues.",
+  "stuck": "Medieval writers sometimes distinguished a plague of cattle from a winter that killed every kind of livestock. Others simply wrote that animals died. A pilot found that one often-cited Arabic notice in 937–38 gives no location, while several accounts cited for the fourteenth century describe hunger or severe weather.",
+  "solved": "For each wave, establish the earliest independent notices that specify cattle deaths, with a place and a date range. A proposed direction should fit the order of those notices and allow for differences in what local writers recorded.",
+  "approach": [
+    "Read the Latin and Irish annals alongside Arabic, Syriac, Byzantine and Chinese accounts. Record the original wording for the animals and the event.",
+    "Trace copied passages to their earliest witness and check how each chronicler describes cattle deaths in other years.",
+    "Plot each wave separately with uncertain dates visible. Compare its course with accounts of famine and winter losses in the same places."
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Check whether each mortality term specifies cattle, livestock generally or deaths from hunger."
+    },
+    {
+      "who": "gis",
+      "ask": "Place independently dated notices on separate maps for each outbreak."
+    }
+  ],
+  "related": [
+    "sydney-smallpox",
+    "justinianic-plague"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2009,
+      "authors": "Timothy P. Newfield",
+      "title": "A cattle panzootic in early fourteenth-century Europe",
+      "venue": "Agricultural History Review",
+      "url": "https://dspace.stir.ac.uk/handle/1893/11961",
+      "note": "Reconstructs the fourteenth-century outbreak across Europe from chronicles and records of losses."
+    },
+    {
+      "year": 2012,
+      "authors": "Timothy P. Newfield",
+      "title": "A Great Carolingian Panzootic: The Probable Extent, Diagnosis and Impact of an Early Ninth-Century Cattle Pestilence",
+      "venue": "Argos",
+      "url": "https://dspace.stir.ac.uk/handle/1893/11909",
+      "note": "Assembles the evidence for the ninth-century outbreak and argues for an origin east of Europe."
+    },
+    {
+      "year": 2015,
+      "authors": "Timothy P. Newfield",
+      "title": "Domesticates, disease and climate in early post-classical Europe: the cattle plague of c. 940 and its environmental context",
+      "venue": "Post-Classical Archaeologies",
+      "url": "https://www.postclassical.it/PCA_Vol.5_files/Newfield_PCA5_print.pdf",
+      "note": "Examines the cattle plague around 940 alongside weather, famine and other livestock deaths."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Monumenta Germaniae Historica",
+      "collection": "Digital editions of Latin annals and chronicles",
+      "url": "https://www.dmgh.de/",
+      "digitized": "partial",
+      "note": "Compare the precise wording and manuscript variants behind reports assigned to the same year."
+    },
+    {
+      "repository": "Open Islamicate Texts Initiative",
+      "collection": "Arabic chronicles, including Ibn al-Jawzī’s al-Muntaẓam",
+      "url": "https://openiti.org/",
+      "digitized": "partial",
+      "note": "Search by Hijri year and check whether a mortality notice names a place and a species."
+    },
+    {
+      "repository": "University College Cork, CELT",
+      "collection": "Irish annals in original text and translation",
+      "url": "https://celt.ucc.ie/",
+      "digitized": "partial",
+      "note": "Irish notices of cattle deaths provide an independent western chronology."
+    },
+    {
+      "repository": "Chinese Text Project",
+      "collection": "Dynastic histories and their scanned editions",
+      "url": "https://ctext.org/",
+      "digitized": "partial",
+      "note": "Check notices of animal disease against entries on winter losses, drought and famine."
+    },
+    {
+      "repository": "Digital Syriac Corpus",
+      "collection": "Syriac texts in searchable editions",
+      "url": "https://syriaccorpus.org/",
+      "digitized": "partial",
+      "note": "Compare the original animal terms in chronicles with their Greek, Latin and Arabic counterparts."
+    }
+  ]
+}

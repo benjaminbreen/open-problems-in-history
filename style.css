@@ -192,6 +192,7 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 }
 .admin section { display: block; }
 @media (max-width: 640px) {
+  .foot-links { grid-template-rows: repeat(6, auto); }
   .foot-sig .quiet { position: static; display: block; text-align: center; margin-top: 18px; }
 }
 

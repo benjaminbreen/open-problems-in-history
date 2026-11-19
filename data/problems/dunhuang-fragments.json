@@ -1,0 +1,90 @@
+{
+  "id": "dunhuang-fragments",
+  "title": "Which manuscript fragments from Dunhuang fit back together?",
+  "short": "Pages from a sealed cave on China’s Silk Road now sit in libraries thousands of miles apart. Reuniting torn pieces could recover a passage no single collection can read.",
+  "region": "East Asia",
+  "field": "Texts & authorship",
+  "start": 400,
+  "end": 1100,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "The cave at Dunhuang held Buddhist scriptures alongside letters, medical works and texts in several languages. Reassembling a scroll can preserve more than its words. Writing on the reverse may show that a discarded document was put to a new use.",
+  "stuck": "The International Dunhuang Programme brings images from many collections together. Different scribes often copied the same passage. Even an exact textual match can point to two copies of a familiar scripture. Older photographs may show only one side or omit the edge of a sheet.",
+  "solved": "Publish the shelfmarks and images of each proposed pair. A physical join needs compatible edges, paper fibres, ruling and handwriting as well as continuous text. Where only the wording matches, identify the text and say what evidence connects the two copies.",
+  "approach": [
+    "Start with documented joins to check what the images reveal at different scales. Search across the London, Paris, Beijing and St Petersburg collections.",
+    "Compare Chinese Buddhist passages against CBETA and Tibetan ones against Old Tibetan Documents Online. Check the reverse, margins and line spacing of each candidate.",
+    "Ask the holding institutions to compare paper and edges where the digital images leave a join uncertain, and check earlier catalogues before claiming a discovery."
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Distinguish a match to a familiar passage from text copied by the same hand."
+    },
+    {
+      "who": "conservation-scientists",
+      "ask": "Check fibre patterns, rulings and torn edges for proposed joins across collections."
+    }
+  ],
+  "related": [
+    "hittite-fragments",
+    "archimedes-leaf-170"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2020,
+      "authors": "Imre Galambos",
+      "title": "Dunhuang Manuscript Culture: End of the First Millennium",
+      "venue": "De Gruyter",
+      "url": "https://doi.org/10.1515/9783110726572",
+      "note": "Shows how the construction, layout and reuse of Dunhuang manuscripts reveal their histories."
+    },
+    {
+      "year": 2025,
+      "authors": "Liting Fan and Huaiyong Dou",
+      "title": "Reconstruction and Re-Designation of the Dunhuang Mahāprajñāpāramitāśāstra Manuscripts: The Role of Variant Text Collation",
+      "venue": "Religions",
+      "url": "https://doi.org/10.3390/rel16111387",
+      "note": "Uses differences between manuscript copies to reassess the arrangement and identity of fragments."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "International Dunhuang Programme",
+      "collection": "Cross-collection manuscript catalogue and images",
+      "url": "https://idp.bl.uk/collection/",
+      "digitized": "partial",
+      "note": "Search the Stein, Pelliot and other collections by shelfmark, language and holding institution."
+    },
+    {
+      "repository": "Bibliothèque nationale de France",
+      "collection": "Pelliot manuscripts in the International Dunhuang Programme",
+      "url": "https://www.bnf.fr/en/international-dunhuang-programme",
+      "digitized": "partial",
+      "note": "The library describes its contribution and the material from Dunhuang held in Paris."
+    },
+    {
+      "repository": "Dharma Drum Institute of Liberal Arts and CBETA",
+      "collection": "CBETA Online, Chinese Buddhist texts",
+      "url": "https://cbetaonline.dila.edu.tw/",
+      "digitized": "full",
+      "note": "A reference text can locate a passage even when the manuscript uses a different title."
+    },
+    {
+      "repository": "Old Tibetan Documents Online",
+      "collection": "Transcriptions and images of Tibetan manuscripts",
+      "url": "https://otdo.aa-ken.jp/",
+      "digitized": "partial",
+      "note": "Compare readings across collections and check earlier manuscript identifications."
+    }
+  ]
+}

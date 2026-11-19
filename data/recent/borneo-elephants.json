@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2018-01",
+      "kind": "paper",
+      "title": "Genetic analyses favour an ancient and natural origin of elephants on Borneo",
+      "who": "Reeta Sharma et al.",
+      "venue": "Scientific Reports",
+      "url": "https://doi.org/10.1038/s41598-017-17042-5",
+      "note": "Compares population histories and finds a better fit for ancient settlement among the scenarios tested.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2025-08",
+      "kind": "field",
+      "title": "Genomics Reveals Distinct Evolutionary Lineages in Asian Elephants",
+      "who": "Jeroen Kappelhof et al.",
+      "venue": "Ecology and Evolution",
+      "url": "https://doi.org/10.1002/ece3.72019",
+      "note": "Examines Bornean elephants alongside other Asian populations and discusses what their divergence can establish.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

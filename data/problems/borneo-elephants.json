@@ -1,0 +1,97 @@
+{
+  "id": "borneo-elephants",
+  "title": "Are Borneo’s wild elephants native, or descendants of a royal gift?",
+  "short": "Borneo’s elephants may descend from an ancient island herd or from animals shipped from Java. The answer could tell us whether Java’s lost elephants have living descendants.",
+  "region": "Indian Ocean",
+  "field": "Science & knowledge",
+  "start": 1300,
+  "end": 1800,
+  "flags": [
+    "science"
+  ],
+  "matters": "Genetic studies favour a long history of isolation. A competing explanation holds that elephants introduced from a now-vanished Javan population would bring an old genetic lineage with them. The age of a lineage and the date animals first lived wild on an island are two different questions.",
+  "stuck": "A first search of Dutch East India Company records found elephants at Javanese courts, some imported from elsewhere. That leaves open both whether Java still had wild elephants and whether any court animals founded a herd in Borneo. A later retelling of a royal gift may compress several journeys into one.",
+  "solved": "A dated record identifying the animals’ origin, transfer through Sulu and release or breeding on Borneo would support the gift account. Secure evidence of wild elephants on Borneo before the proposed transfer would rule it out as the origin of the whole population.",
+  "approach": [
+    "Trace each version of the gift story to its earliest source. Check court accounts and Dutch correspondence for the origin, ownership and destination of individual animals.",
+    "Separate elephants kept at court from observations of herds in the wild. Test how often the same records mention other conspicuous forest animals.",
+    "Compare the earliest securely dated observations with archaeological finds and with the range of settlement dates the genetic evidence permits."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Trace the gift account through Javanese, Sulu and Dutch sources and distinguish separate animal transfers."
+    },
+    {
+      "who": "geneticists",
+      "ask": "Assess which population histories remain compatible with the elephants’ genetic diversity."
+    }
+  ],
+  "related": [
+    "toromiro-provenance"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Fable",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2007,
+      "authors": "Earl of Cranbrook, J. Payne and Charles M. U. Leh",
+      "title": "Origin of the Elephants Elephas maximus L. of Borneo",
+      "venue": "Sarawak Museum Journal",
+      "url": "https://doi.org/10.61507/smj22-2007-Q11Q-04",
+      "note": "Reconstructs the case for a Javan population brought to Borneo by way of Sulu."
+    },
+    {
+      "year": 2018,
+      "authors": "Reeta Sharma et al.",
+      "title": "Genetic analyses favour an ancient and natural origin of elephants on Borneo",
+      "venue": "Scientific Reports",
+      "url": "https://doi.org/10.1038/s41598-017-17042-5",
+      "note": "Compares population histories and finds a better fit for ancient settlement among the scenarios tested."
+    },
+    {
+      "year": 2025,
+      "authors": "Jeroen Kappelhof et al.",
+      "title": "Genomics Reveals Distinct Evolutionary Lineages in Asian Elephants",
+      "venue": "Ecology and Evolution",
+      "url": "https://doi.org/10.1002/ece3.72019",
+      "note": "Examines Bornean elephants alongside other Asian populations and discusses what their divergence can establish."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Dutch East India Company archive, incoming letters and papers, 1.04.02",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+      "digitized": "partial",
+      "note": "Java and Borneo correspondence can document the acquisition and presentation of court animals."
+    },
+    {
+      "repository": "GLOBALISE, Huygens Institute",
+      "collection": "Searchable transcriptions of VOC documents",
+      "url": "https://globalise.huygens.knaw.nl/",
+      "digitized": "partial",
+      "note": "Check mentions of elephants against the original pages and the places from which the reports were sent."
+    },
+    {
+      "repository": "Sarawak Museum Department",
+      "collection": "Sarawak Museum Journal and early collections of elephant remains",
+      "url": "https://museum.sarawak.gov.my/web/subpage/webpage_view/655",
+      "digitized": "partial",
+      "note": "The museum’s account traces specimen records and the sources used to reconstruct the gift story."
+    },
+    {
+      "repository": "Bureau of Science, Manila",
+      "collection": "Najeeb M. Saleeby, The History of Sulu (1908)",
+      "url": "https://www.gutenberg.org/files/41771/41771-h/41771-h.htm",
+      "digitized": "full",
+      "note": "An edition of Sulu genealogies and historical documents. Separate the date of a tradition from the date it was written down."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "jupiter-red-spot",
+  "title": "Do old drawings show Jupiter’s Great Red Spot between 1713 and 1831?",
+  "short": "Jupiter has a storm large enough to see from Earth. Drawings in old observing books could tell us whether it survived for centuries or replaced an earlier storm.",
+  "region": "Europe",
+  "field": "Science & knowledge",
+  "start": 1713,
+  "end": 1831,
+  "flags": [
+    "science"
+  ],
+  "matters": "Cassini and other observers watched a dark patch on Jupiter that they called the Permanent Spot. Its accepted record ends in 1713. A drawing from 1831 is usually taken as the first sighting of today’s Great Red Spot. Whether they saw one storm or two changes how long we know such storms can last.",
+  "stuck": "Sánchez-Lavega and colleagues argued in 2024 that the two spots were distinct. In Paris register D3/28, a dark knot appears at the end of a southern cloud band on three nights in 1714. Its motion is consistent across the drawings. A long-lived bend in the band could also account for it. Marseille timings from 1773–74 show how easily two markings can be mistaken for one.",
+  "solved": "A sequence of dated drawings or timed crossings would need to track a feature of compatible shape, latitude and motion between observing seasons. Years in which observers repeatedly saw the right face of Jupiter and drew smaller features could also put a limit on survival.",
+  "approach": [
+    "Start with the 1713 reference drawing in Paris and the three 1714 sightings. Use recorded eclipses of Jupiter’s moons to check clock times and drawing orientation.",
+    "Compare the Marseille books with independent Royal Society and Greenwich observations and notes in printed astronomical journals. Convert local times to the longitude facing Earth.",
+    "Mark separately the nights with a suitable view, nights with a moon’s shadow, and seasons with no useful drawings."
+  ],
+  "needs": [
+    {
+      "who": "astronomers",
+      "ask": "Check viewing geometry and rotation against the recorded times and shadows of Jupiter’s moons."
+    },
+    {
+      "who": "archivists",
+      "ask": "Locate observing books whose catalogue entries mention only weather or satellite timings."
+    }
+  ],
+  "related": [
+    "cassini-cas-a"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 1898,
+      "authors": "W. F. Denning",
+      "title": "Early History of the Great Red Spot on Jupiter",
+      "venue": "Nature",
+      "url": "https://doi.org/10.1038/059101b0",
+      "note": "Describes the nineteenth-century search through earlier drawings and manuscript observations."
+    },
+    {
+      "year": 2024,
+      "authors": "Agustín Sánchez-Lavega et al.",
+      "title": "The Origin of Jupiter's Great Red Spot",
+      "venue": "Geophysical Research Letters",
+      "url": "https://doi.org/10.1029/2024gl108993",
+      "note": "Compares historical measurements and storm models and argues that Cassini’s spot and the modern storm are different objects."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Paris Observatory",
+      "collection": "Register D3/28, Jupiter observations of 1713 and 1714",
+      "url": "https://bibnum.obspm.fr/ark:/11287/2xxtj",
+      "digitized": "full",
+      "note": "The register includes the earlier named spot and the later markings in the same series of drawings."
+    },
+    {
+      "repository": "Archives départementales des Bouches-du-Rhône",
+      "collection": "Marseille Observatory, 10 ETP 92–93",
+      "url": "https://www.archives13.fr/ark:/40700/1221681.2108873/img:10ETP_92_0236",
+      "digitized": "full",
+      "note": "Look on the pages facing the weather tables for sketches and times in 1773–74."
+    },
+    {
+      "repository": "Royal Society, London",
+      "collection": "William Derham’s letter to Edmond Halley, EL/D1/62",
+      "url": "https://makingscience.royalsociety.org/items/el_d1_62",
+      "digitized": "full",
+      "note": "An independent English view of Jupiter in August 1714."
+    },
+    {
+      "repository": "Cambridge University Library",
+      "collection": "Royal Greenwich Observatory Archives",
+      "url": "https://libguides.cam.ac.uk/manuscripts/rgo",
+      "digitized": "partial",
+      "note": "The finding aids identify observing books for further checks on coverage."
+    }
+  ]
+}

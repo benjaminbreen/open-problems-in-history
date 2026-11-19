@@ -1,0 +1,96 @@
+{
+  "id": "cassini-cas-a",
+  "title": "Did Cassini see the star that exploded in Cassiopeia in the 1670s?",
+  "short": "Light from an exploding star reached Earth about 350 years ago. An astronomer’s notes could date the event and tell us how bright the star looked.",
+  "region": "Europe",
+  "field": "Science & knowledge",
+  "start": 1669,
+  "end": 1683,
+  "flags": [
+    "science"
+  ],
+  "matters": "The expanding cloud of debris is called Cassiopeia A. Astronomers can estimate the date of the explosion by tracing the debris back toward its centre. A dated observation of the star itself would give them an independent clock.",
+  "stuck": "In June 1671, Jean Gallois reported that the astronomer Giovanni Domenico Cassini had seen three stars missing from earlier counts of Cassiopeia. His description leaves the brightest one’s position uncertain. Cassini’s 1669 notebook survives, but his regular Paris journal begins in September 1671. A first reading found four October and November entries about Cassiopeia, including a night lost to clouds. None identifies an exploding star.",
+  "solved": "A dated entry would need enough neighbouring stars or measurements to place the object at the remnant and distinguish it from known stars. A search that comes up empty can still establish which nights, fields and brightnesses the journals cover.",
+  "approach": [
+    "Read Cassini’s 1669 notebook alongside the eight observing journals and the June report. Record each observing date, comparison star and interruption for weather.",
+    "Reconstruct the sky on each date and test the positional error on stars Cassini named.",
+    "Publish the matching passages and the gaps in coverage, especially the months before Gallois went to press."
+  ],
+  "needs": [
+    {
+      "who": "astronomers",
+      "ask": "Reconstruct Cassini’s fields of view and measure the accuracy of his positions on identified stars."
+    },
+    {
+      "who": "archivists",
+      "ask": "Trace the sources of the June report and look for dated correspondence in the gap between notebooks."
+    }
+  ],
+  "related": [
+    "jupiter-red-spot",
+    "ptolemy"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2013,
+      "authors": "Roberto Soria, Riccardo Balestrieri and Yasuyo Ohtsuka",
+      "title": "On Cas A, Cassini, Comets, and King Charles",
+      "venue": "Publications of the Astronomical Society of Australia",
+      "url": "https://doi.org/10.1017/pas.2013.003",
+      "note": "Traces the possible identification to a report published in 1671 and asks whether Cassini could have seen the star."
+    },
+    {
+      "year": 2025,
+      "authors": "Robert A. Fesen et al.",
+      "title": "Cassiopeia A’s Reverse Shock and Its Effects on the Expanding SN Ejecta",
+      "venue": "The Astrophysical Journal Supplement Series",
+      "url": "https://doi.org/10.3847/1538-4365/adbf15",
+      "note": "Uses measurements of the expanding debris and discusses Cassini’s sighting as a possibility."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Paris Observatory",
+      "collection": "Cassini observing journals D1/1–8 and notebook D1/13 (1)",
+      "url": "https://bibnum.obspm.fr/ark:/11287/8tTq7",
+      "digitized": "full",
+      "note": "The eight journals contain 755 digital views. A view often shows two facing pages.",
+      "holdings": [
+        {
+          "name": "Observations of 1669",
+          "ref": "D1/13 (1)",
+          "url": "https://bibnum.obspm.fr/ark:/11287/6DjRX",
+          "note": "33 scanned views of the earlier notebook.",
+          "match": [
+            "Cassini’s 1669 notebook"
+          ]
+        },
+        {
+          "name": "Journal beginning 14 September 1671",
+          "ref": "D1/1",
+          "url": "https://bibnum.obspm.fr/ark:/11287/14CzG",
+          "note": "The first regular journal contains the October and November Cassiopeia entries.",
+          "match": [
+            "D1/1"
+          ]
+        }
+      ]
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Gallica",
+      "collection": "Journal des sçavans, issue of 22 June 1671",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "partial",
+      "note": "Jean Gallois printed the contemporary notice. The date is a deadline for the observation, not its date."
+    }
+  ]
+}

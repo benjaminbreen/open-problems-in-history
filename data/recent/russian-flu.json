@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2021",
+      "kind": "paper",
+      "title": "Clinical evidence that the pandemic from 1889 to 1891 commonly called the Russian flu might have been an earlier coronavirus pandemic",
+      "who": "Harald Brüssow and Lutz Brüssow",
+      "venue": "Microbial Biotechnology",
+      "url": "https://doi.org/10.1111/1751-7915.13889",
+      "note": "Revisits published case descriptions and argues that a coronavirus deserves consideration.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024-11",
+      "kind": "paper",
+      "title": "The health and demographic impacts of the “Russian flu” pandemic in Switzerland in 1889/1890 and in the years thereafter",
+      "who": "Jocelyne Suter et al.",
+      "venue": "Epidemiology and Infection",
+      "url": "https://doi.org/10.1017/s0950268824001651",
+      "note": "Uses Swiss death and population records to examine age, place and the timing of mortality.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

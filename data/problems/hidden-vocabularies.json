@@ -1,0 +1,87 @@
+{
+  "id": "hidden-vocabularies",
+  "title": "Which old books preserve overlooked word lists from little-documented languages?",
+  "short": "A traveller might print a page of words in a book about something else. For a language with few surviving records, that page could preserve words found nowhere else.",
+  "region": "Global",
+  "field": "Languages & scripts",
+  "start": 1550,
+  "end": 1900,
+  "flags": [],
+  "matters": "Some early accounts name the person who supplied the words. Others identify only a port, or give a language the name of a neighbouring people. Recovering the page and its history can give speakers, descendants and linguists access to a record that library catalogues describe only as a voyage or a natural history.",
+  "stuck": "A pilot catalogue, Wordes of their Language, includes 44 tables covering 42 languages. It also documents a trap for counting discoveries. Thomas Herbert’s 1634 Malay vocabulary repeats material printed by Jacob van Neck’s expedition in 1601. Two printed witnesses can lead back to one encounter.",
+  "solved": "For a defined set of books, publish each overlooked list next to the scan, with its wording, date, likely language and earlier printings. Check earlier bibliographies and state how many distinct records the search added.",
+  "approach": [
+    "Test the search on known tables in Early English Books Online, then extend it to Eighteenth Century Collections Online, HathiTrust, Internet Archive, the Biodiversity Heritage Library, Gallica and Delpher.",
+    "Compare the entries with ASJP and Lexibank word lists, using shuffled meanings to measure accidental matches. Check language names and alternative identifications against Glottolog.",
+    "Ask specialists and community readers to examine uncertain readings, names and attributions. Trace identical errors across editions to identify lists copied from earlier books."
+  ],
+  "needs": [
+    {
+      "who": "computational-linguists",
+      "ask": "Test language matches on short historical word lists and measure how often chance produces an equally good match."
+    },
+    {
+      "who": "philologists",
+      "ask": "Transcribe the words, glosses and speaker attributions from the original pages."
+    }
+  ],
+  "related": [
+    "rongorongo"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2022,
+      "authors": "Johann-Mattis List et al.",
+      "title": "Lexibank, a public repository of standardized wordlists with computed phonological and lexical features",
+      "venue": "Scientific Data",
+      "url": "https://doi.org/10.1038/s41597-022-01432-0",
+      "note": "Provides standardized word lists for comparing candidate language identifications."
+    },
+    {
+      "year": 2026,
+      "authors": "Benjamin Breen",
+      "title": "Wordes of their Language",
+      "venue": "Historical vocabulary catalogue",
+      "url": "https://github.com/benjaminbreen/WordsoftheirLanguage",
+      "note": "Pairs historical vocabularies with page images, transcriptions and evidence about copied lists."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Text Creation Partnership",
+      "collection": "Transcribed early English books, EEBO-TCP and ECCO-TCP",
+      "url": "https://textcreationpartnership.org/",
+      "digitized": "partial",
+      "note": "Searchable transcriptions provide known examples and passages to check against page images."
+    },
+    {
+      "repository": "Biodiversity Heritage Library",
+      "collection": "Voyage narratives and natural histories",
+      "url": "https://www.biodiversitylibrary.org/",
+      "digitized": "partial",
+      "note": "Page images preserve table layouts that optical character recognition can scramble."
+    },
+    {
+      "repository": "Max Planck Institute for Evolutionary Anthropology",
+      "collection": "Automated Similarity Judgment Program, word-list database",
+      "url": "https://asjp.clld.org/",
+      "digitized": "full",
+      "note": "Short comparison lists can suggest language identifications for independent review."
+    },
+    {
+      "repository": "Glottolog",
+      "collection": "Language names, identifiers and bibliographies",
+      "url": "https://glottolog.org/",
+      "digitized": "full",
+      "note": "Check variant names and whether a linguist has already described the printed source."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "renaissance-lute",
+  "title": "Do the missing voices of Renaissance songs survive in lute arrangements?",
+  "short": "Printers sold each voice of a song in a separate book. Where only one part survives, a lute player’s arrangement might let us hear the voices together again.",
+  "region": "Europe",
+  "field": "Texts & authorship",
+  "start": 1500,
+  "end": 1600,
+  "flags": [],
+  "matters": "A lute player could play several parts on one instrument, writing down where to put the fingers on its strings. These books of fingerings, called tablatures, can preserve a version of a song whose singers’ books are now incomplete.",
+  "stuck": "Royston Gustavson and David Fallows rediscovered a tenor book in Bern from a set Christian Egenolff printed in 1536. ReRenaissance and the RISM Digital Center brought nine pieces to recording in 2025. A lute arrangement might preserve additional notes, but players also added ornaments, left out voices and changed harmonies.",
+  "solved": "Match several distinctive phrases from the surviving vocal line in order, then have a reader compare the entire arrangement with the tenor and other surviving sources. Credit the result as a historical arrangement. Attribute a particular note to a lost vocal part only where another witness supports it.",
+  "approach": [
+    "Begin with songs that survive both in vocal partbooks and in dated lute tablatures. Hide the titles and test how often the search recovers the known arrangements.",
+    "Search for phrases from the Bern tenor in other tablatures, allowing for transposition, added notes and changed titles. Compare early collections with arrangements made after 1536.",
+    "Publish the two readings side by side so musicians can see which notes survive, which the arranger supplied and which a modern performance reconstructs."
+  ],
+  "needs": [
+    {
+      "who": "musicologists",
+      "ask": "Read the fingerings against the tenor, check the tuning and separate recoverable voices from editorial choices."
+    },
+    {
+      "who": "archivists",
+      "ask": "Trace the dates and provenance of the partbooks and tablatures."
+    }
+  ],
+  "related": [
+    "gregorian-chant"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Astra 6.2",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2007,
+      "authors": "Philippe Vendrix",
+      "title": "Corpus des luthistes",
+      "venue": "RicercarDataLab, Tours",
+      "url": "https://ricercardatalab.cesr.univ-tours.fr/en/projects/10/",
+      "note": "Makes tablature sources and descriptions for Spinacino and Capirola available for comparison."
+    },
+    {
+      "year": 2026,
+      "authors": "RISM Digital Center",
+      "title": "First recording of nine Renaissance pieces",
+      "venue": "RISM Switzerland",
+      "url": "https://rism.digital/2026/01/27/LostandFound.html",
+      "note": "Credits the performers and cataloguers and describes the reconstruction project."
+    },
+    {
+      "year": 2026,
+      "authors": "Claudio Bacciagaluppi",
+      "title": "First recording of nine Renaissance pieces",
+      "venue": "Répertoire International des Sources Musicales",
+      "url": "https://rism.info/rediscovered/2026/02/05/first-recording-of-nine-renaissance-pieces.html",
+      "note": "Identifies the rediscoverers, the Bern shelfmark and the digital copy of the 1536 tenor book."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Swiss National Library, Bern",
+      "collection": "Christian Egenolff, Cantiones selectissimae, tenor partbook, Ma 3549 (2)",
+      "url": "https://www.e-helvetica.nb.admin.ch/directAccess?id=nbdig-839117",
+      "digitized": "full",
+      "note": "The digitized Frankfurt print provides surviving vocal lines to compare with lute arrangements."
+    },
+    {
+      "repository": "Répertoire International des Sources Musicales",
+      "collection": "RISM Online, source 993114959",
+      "url": "https://rism.online/sources/993114959",
+      "digitized": "full",
+      "note": "The catalogue record identifies individual pieces and other sources for the music."
+    },
+    {
+      "repository": "Centre d’études supérieures de la Renaissance, Tours",
+      "collection": "Corpus des luthistes",
+      "url": "https://ricercardatalab.cesr.univ-tours.fr/en/projects/10/",
+      "digitized": "full",
+      "note": "Early Italian tablatures provide examples of how lute players represented several voices on a single instrument."
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "early-syphilis",
+  "title": "When did Europeans first describe the outbreak later called syphilis?",
+  "short": "Europeans called it the French disease. A firsthand account from before Columbus returned in 1493 would change the chronology of Europe’s first recognized syphilis outbreak.",
+  "region": "Europe",
+  "field": "Disease",
+  "start": 1490,
+  "end": 1505,
+  "flags": [],
+  "matters": "Ancient DNA has established that relatives of the bacteria that cause syphilis circulated in the Americas before 1492. In Europe, accounts often begin with Charles VIII’s army at Naples in 1495. A contemporary description from before Columbus returned in March 1493 would give the European chronology a different starting point.",
+  "stuck": "A physician writing decades later could remember earlier patients in terms learned during the outbreak. Early words such as bubas could mean several kinds of sores. Even a firm printing date tells us only when a description was in circulation.",
+  "solved": "Establish the earliest independently dated outbreak accounts and what their writers actually witnessed. Give separate verdicts on reports placed before March 1493, between the return voyage and the Naples campaign, and after 1495. The texts can date recognition of an illness more securely than they can identify its bacterium.",
+  "approach": [
+    "Compare the earliest medical tracts with municipal orders and eyewitness chronicles. Record the event date, date of writing and date of the surviving copy separately.",
+    "Trace one author’s borrowing from another and check printed editions against surviving manuscripts.",
+    "Compare early American uses of bubas and Nahuatl disease terms in context, with specialists who can distinguish a translator’s choice of word from an observer’s description."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Verify the dates and provenance of early printed tracts and the civic orders they cite."
+    },
+    {
+      "who": "philologists",
+      "ask": "Compare the meanings of disease names across languages and successive editions."
+    }
+  ],
+  "related": [
+    "leprosy-americas"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 1496,
+      "authors": "Joseph Grünpeck",
+      "title": "De pestilentiali scorra, sive mala de Franzos",
+      "venue": "Augsburg",
+      "url": "https://www.gla.ac.uk/myglasgow/incunabula/a-zofauthorsa-j/g52/",
+      "note": "A printed tract from Augsburg anchors one contemporary name and description to a dated edition."
+    },
+    {
+      "year": 2024,
+      "authors": "Rodrigo Barquera et al.",
+      "title": "Ancient genomes reveal a deep history of Treponema pallidum in the Americas",
+      "venue": "Nature",
+      "url": "https://doi.org/10.1038/s41586-024-08515-5",
+      "note": "Establishes the long history of several treponemal lineages in the Americas using ancient genomes."
+    },
+    {
+      "year": 2025,
+      "authors": "Massimo Galli and Luca Fois",
+      "title": "The Centenary Series - STIs Through the Ages: The dawn of the syphilis pandemic in the Old World: history and geography of syphilis in the early sixteenth century",
+      "venue": "Sexually Transmitted Infections",
+      "url": "https://doi.org/10.1136/sextrans-2024-056351",
+      "note": "Re-examines the geography and timing of the first European outbreak using early historical sources."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Consortium of European Research Libraries",
+      "collection": "Incunabula Short Title Catalogue",
+      "url": "https://data.cerl.org/istc/",
+      "digitized": "full",
+      "note": "Use edition records and surviving copies to distinguish early printings from later reissues."
+    },
+    {
+      "repository": "Wellcome Collection",
+      "collection": "Joseph Grünpeck’s De pestilentiali scorra",
+      "url": "https://wellcomecollection.org/works/ehw8tv72",
+      "digitized": "partial",
+      "note": "A surviving copy for comparison with other early printed descriptions of the French disease."
+    },
+    {
+      "repository": "Bayerische Staatsbibliothek, Munich",
+      "collection": "Digitale Sammlungen and the VD16 catalogue of sixteenth-century German imprints",
+      "url": "https://www.digitale-sammlungen.de/en/",
+      "digitized": "partial",
+      "note": "Follow new editions and changes in terminology across the divide between fifteenth- and sixteenth-century print catalogues.",
+      "holdings": [
+        {
+          "name": "VD16, register of sixteenth-century imprints",
+          "url": "https://www.bsb-muenchen.de/en/competence-centers-and-state-wide-services/competence-centers/vd-16/",
+          "note": "Edition descriptions help trace reprints of the earliest medical tracts."
+        }
+      ]
+    },
+    {
+      "repository": "Getty Research Institute",
+      "collection": "Digital Florentine Codex",
+      "url": "https://florentinecodex.getty.edu/",
+      "digitized": "full",
+      "note": "The manuscript preserves later Nahuatl and Spanish terminology for use in comparisons with early American accounts."
+    }
+  ]
+}

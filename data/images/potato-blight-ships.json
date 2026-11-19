@@ -1,0 +1,11 @@
+{
+  "id": "potato-blight-ships",
+  "file": "data/images/src/potato-blight-ships.jpg",
+  "caption": "Late blight on potato leaves, detail in halftone",
+  "commons": "https://commons.wikimedia.org/wiki/File:Phytophthora_infestans_on_potato_leaf_2.jpg",
+  "author": "Mary Ann Hansen, Virginia Tech",
+  "license": "CC BY 3.0 US",
+  "license_url": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+  "crop": "center",
+  "invert": true
+}

@@ -173,14 +173,14 @@ export function voteBox(ctx, id) {
 export const commentLabel = (ctx, id) => `${ctx.open?.has(id) ? "−" : "+"} ${ncom(ctx, id) || "comment"}`;
 
 export function rowHTML(ctx, p, i) {
+  const labels = tags(p);
   return `
     <li class="row" id="r-${esc(p.id)}">
       <span class="rank">${i + 1}</span>
       ${voteBox(ctx, p.id)}
       <div class="main">
         <a class="ttl" href="/p/${esc(p.id)}">${esc(p.title)}</a>
-        ${p.short ? `<p class="short">${esc(p.short)}</p>` : ""}
-        ${tags(p) ? `<div class="tags">${tags(p)}</div>` : ""}
+        ${p.short ? `<p class="short">${esc(p.short)}</p>` : ""}${labels ? `\n        <div class="tags">${labels}</div>` : ""}
         <div class="m">${[p.field, p.region, period(p)].filter(Boolean).map(esc).join(" · ")}</div>
       </div>
       <span class="c">${esc(p.field)}</span>
@@ -373,8 +373,12 @@ const andList = (a) => a.length < 2 ? a.join("") : `${a.slice(0, -1).join(", ")}
 const needLink = (slug) => NEED[slug] ? `<a href="/for/${slug}">${esc(NEED[slug].label)}</a>` : "";
 const needsOf = (p) => (p.needs || []).filter((n) => NEED[n.who]);
 export const helpsLine = (p) => needsOf(p).length ? `<p class="helps">Could use help from ${andList(needsOf(p).map((n) => needLink(n.who)))}.</p>` : "";
-const needsSection = (p) => needsOf(p).length ? `<dl class="needs">${needsOf(p).map((n) => `<dt>${needLink(n.who)}</dt><dd>${esc(n.ask)}</dd>`).join("")}</dl>
-      ${prov("Drafted", p.provenance?.drafted_by, p.provenance?.needs_on || p.provenance?.drafted_on, "Drafted these suggestions; reviewed by Benjamin Breen")}` : "";
+function needsSection(p) {
+  const { drafted_by, needs_on, drafted_on, reviewed_by = "Benjamin Breen" } = p.provenance || {};
+  const credit = reviewed_by ? `Drafted these suggestions; reviewed by ${reviewed_by}` : "Drafted these suggestions for contributors";
+  return `<dl class="needs">${needsOf(p).map((n) => `<dt>${needLink(n.who)}</dt><dd>${esc(n.ask)}</dd>`).join("")}</dl>
+      ${prov("Drafted", drafted_by, needs_on || drafted_on, credit)}`;
+}
 
 export function needCounts(problems) {
   const c = Object.fromEntries(NEEDS.map((n) => [n.slug, 0]));
@@ -460,7 +464,7 @@ export function detailHTML(ctx, p) {
     ${sec("Why it is open", lpara(p.stuck))}
     ${sec("What would count as a solution", lpara(p.solved))}
     ${sec("Potential approach", `<ul class="steps">${((l) => approach.map((x) => `<li>${l(esc(x))}</li>`).join(""))(linker())}</ul>
-      ${prov("Drafted", pv.drafted_by, pv.drafted_on, "Drafted the problem statement and approach")}
+      ${prov("Drafted", pv.drafted_by, pv.drafted_on, `Drafted the problem statement and approach${pv.suggested_by ? `. Suggested for the site by ${pv.suggested_by}.` : ""}`)}
       <div id="ideas" class="ideas"></div>
       <button type="button" class="linkbtn idea-toggle" data-idea="idea-form" aria-expanded="false">Have another idea for an approach to solving this? Suggest it here</button>
       <div class="slide" id="idea-form"><div>${contributeForm("approach", p.id, "Your approach")}</div></div>`, "approach")}

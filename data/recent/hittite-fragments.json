@@ -1,0 +1,17 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2026-05",
+      "kind": "data",
+      "title": "Thesaurus Linguarum Hethaeorum digitalis (TLHdig) Beta Version 0.3",
+      "who": "Gerfrid Müller et al.",
+      "venue": "Zenodo",
+      "url": "https://doi.org/10.5281/zenodo.20328284",
+      "note": "Releases the searchable transcriptions used in the pilot and describes the editorial history of the corpus.",
+      "advances": true,
+      "cited": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "jupiter-red-spot",
+  "file": "data/images/src/jupiter-red-spot.jpg",
+  "caption": "Jupiter’s Great Red Spot photographed by Voyager 1 in 1979",
+  "commons": "https://commons.wikimedia.org/wiki/File:Great_Red_Spot_From_Voyager_1.jpg",
+  "author": "NASA",
+  "license": "Public domain",
+  "license_url": "",
+  "crop": "center"
+}

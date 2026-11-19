@@ -1,0 +1,89 @@
+{
+  "id": "anonymous-serials",
+  "title": "Which women wrote the unsigned stories in nineteenth-century newspapers?",
+  "short": "A newspaper might print a novel one chapter at a time and drop the byline when it reprinted it. Following the chapters could restore a writer’s name and career.",
+  "region": "Global",
+  "field": "Texts & authorship",
+  "start": 1800,
+  "end": 1900,
+  "flags": [
+    "forensics"
+  ],
+  "matters": "Newspapers in different countries carried the same stories under different titles. A signed instalment in one town can supply the credit missing from an entire run elsewhere. Connecting several such runs could show a woman earning a living from fiction well beyond the readership of any book published under her name.",
+  "stuck": "A pen name could belong to more than one writer. Editors shortened stories and syndicates distributed the same version to many papers. A resemblance in writing style cannot by itself supply an author’s identity or gender.",
+  "solved": "Link an unsigned serial to a named writer through independent evidence such as a copyright registration, a publisher’s payment or a signed version with a documented attribution. Measure mistaken identifications on known writers before proposing names for unknown ones.",
+  "approach": [
+    "Trace successive instalments in Chronicling America, Trove and Gallica through changes of title, byline and language. Count reprints of a common source together.",
+    "Fix the authorship test in advance using signed serials, including writers outside the candidate set. Test it on withheld works and report false matches by language and genre.",
+    "Follow promising matches into copyright ledgers, correspondence, syndicate notices and obituaries. Document the evidence that a pseudonym belonged to a particular person."
+  ],
+  "needs": [
+    {
+      "who": "computational-linguists",
+      "ask": "Test whether style comparisons distinguish authors after accounting for genre, translation and the wording of shared reprints."
+    },
+    {
+      "who": "archivists",
+      "ask": "Find external evidence linking a serial or pen name to the person who was paid or credited."
+    }
+  ],
+  "related": [
+    "anonymous-imprints"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2015,
+      "authors": "Ryan Cordell",
+      "title": "Reprinting, Circulation, and the Network Author in Antebellum Newspapers",
+      "venue": "American Literary History",
+      "url": "https://ryancordell.org/research/reprinting-circulation-and-the-network-author-in-antebellum-newspapers/",
+      "note": "Shows how newspaper reprinting could distribute responsibility for a text across writers, editors and publishers."
+    },
+    {
+      "year": 2018,
+      "authors": "Katherine Bode",
+      "title": "A World of Fiction: Digital Collections and the Future of Literary History",
+      "venue": "University of Michigan Press",
+      "url": "https://doi.org/10.3998/mpub.8784777",
+      "note": "Reconstructs newspaper fiction in Australia and examines how digitization affects which authors and reprints can be found."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Library of Congress",
+      "collection": "Chronicling America, digitized US newspapers",
+      "url": "https://www.loc.gov/collections/chronicling-america/",
+      "digitized": "partial",
+      "note": "Check bylines, chapter breaks and advertisements on the original newspaper pages."
+    },
+    {
+      "repository": "National Library of Australia",
+      "collection": "Trove newspapers and gazettes",
+      "url": "https://trove.nla.gov.au/search/category/newspapers",
+      "digitized": "partial",
+      "note": "Local instalments can be compared across papers, dates and towns."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Gallica",
+      "collection": "French newspapers and their feuilletons",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "partial",
+      "note": "Serials printed at the foot of the page may carry titles and credits omitted in a translation."
+    },
+    {
+      "repository": "Australian National University",
+      "collection": "To Be Continued: Fiction in Australian Newspapers",
+      "url": "https://slll.cass.anu.edu.au/be-continued-fiction-australian-newspapers",
+      "digitized": "partial",
+      "note": "An existing index supplies signed stories and known reprints for testing attributions."
+    }
+  ]
+}

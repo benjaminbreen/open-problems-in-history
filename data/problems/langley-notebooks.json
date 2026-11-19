@@ -1,0 +1,85 @@
+{
+  "id": "langley-notebooks",
+  "title": "What is in Samuel P. Langley’s 37 shorthand notebooks?",
+  "short": "The Smithsonian holds 37 notebooks from an early experimenter in flight. Reading their shorthand could reveal who proposed a design, changed it or saw it fail.",
+  "region": "Americas",
+  "field": "Science & knowledge",
+  "start": 1898,
+  "end": 1902,
+  "flags": [
+    "decipherment"
+  ],
+  "matters": "Samuel Pierpont Langley studied the Sun, ran the Smithsonian and built experimental flying machines. Ordinary handwriting in one notebook records Alexander Graham Bell suggesting changes to a kite. Measurements in Bell’s own papers place the conversation at a March 1902 outing. The shorthand could preserve other exchanges that the published accounts passed over.",
+  "stuck": "The 37 notebooks, digitized in 7,248 scans, mix shorthand with longhand, lists and diagrams. Some entries concern an aquarium. A memorandum names George Wells as a stenographer. Who wrote each book, and which shorthand system they used, still need checking.",
+  "solved": "Identify the system and hands from repeated, independently readable passages. A dated guide to the volumes and a checked transcription of selected entries, with uncertain strokes marked, would let readers judge what the notebooks add.",
+  "approach": [
+    "Start with pages that alternate shorthand and longhand. Compare the same names, dates and phrases against contemporary shorthand manuals.",
+    "Ask two readers to transcribe unseen pages independently and record which words they can recover reliably.",
+    "Link each reading to its scan and test proposed dates and names against correspondence, including Bell’s account of the kite trials."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Compare handwriting and duty assignments across the notebooks and the Smithsonian’s correspondence."
+    },
+    {
+      "who": "philologists",
+      "ask": "Identify the shorthand system and test readings of the same outlines across different hands."
+    }
+  ],
+  "related": [
+    "wilkinson-ciphers",
+    "wax-cylinder-voices"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 1911,
+      "authors": "Samuel P. Langley and Charles M. Manly",
+      "title": "Langley Memoir on Mechanical Flight",
+      "venue": "Smithsonian Contributions to Knowledge",
+      "url": "https://www.gutenberg.org/ebooks/47981",
+      "note": "Langley and his collaborator give their account of the flying machines and experiments, with which notebook readings can be compared."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "National Air and Space Museum Archives, Smithsonian Institution",
+      "collection": "Samuel P. Langley Collection, NASM.XXXX.0494, Series 10",
+      "url": "https://sova.si.edu/record/nasm.xxxx.0494/ref659",
+      "digitized": "full",
+      "note": "The finding aid lists the shorthand volumes individually, including volumes associated with G. B. Wells.",
+      "holdings": [
+        {
+          "name": "Notebook with the kite entry",
+          "ref": "ref690",
+          "url": "https://sova.si.edu/record/nasm.xxxx.0494/ref690",
+          "note": "See printed pages 14–15 and compare the measurements with Bell’s journal.",
+          "match": [
+            "one notebook"
+          ]
+        },
+        {
+          "name": "Correspondence book, 1898–99",
+          "ref": "ref1276",
+          "url": "https://sova.si.edu/record/nasm.xxxx.0494/ref1276",
+          "note": "A December 1898 memorandum records Wells’s stenographic duties."
+        }
+      ]
+    },
+    {
+      "repository": "Library of Congress",
+      "collection": "Alexander Graham Bell Family Papers, journal of November 1901–April 1902",
+      "url": "https://www.loc.gov/resource/magbell.21610101/",
+      "digitized": "full",
+      "note": "Pages 631–634 include Langley’s letter about the kite outing, with measurements that also appear in the notebook."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "sydney-smallpox",
+  "title": "How did smallpox reach Aboriginal communities around Sydney in 1789?",
+  "short": "Smallpox devastated Aboriginal communities around Sydney a year after the British arrived. Tracing its earlier appearances could clarify what part colonization played in those deaths.",
+  "region": "Pacific",
+  "field": "Disease",
+  "start": 1780,
+  "end": 1790,
+  "flags": [],
+  "matters": "One explanation traces the epidemic to the British First Fleet at Sydney Cove. Another begins with Macassan trepangers, who sailed from present-day Indonesia to northern Australia to fish for sea cucumbers. The second explanation must also account for how the disease crossed the continent before April 1789.",
+  "stuck": "A search of Dutch East India Company records found an outbreak at Makassar in 1782 and reports from Timor, Ambon and Banda later in the decade. It found no local outbreak in the Makassar papers searched for late 1788 and early 1789. Officials recorded some deaths among people enslaved by the Company, but their coverage of coastal communities was uneven.",
+  "solved": "An independently dated series of accounts linking an earlier outbreak to affected communities would strengthen one route. If the sequence breaks, an account of where each archive recorded illness, and whom it overlooked, would show how much the gap can tell us.",
+  "approach": [
+    "Check the Dutch transcriptions against the original pages and distinguish a report written in Makassar from a report about Makassar.",
+    "Compare the port chronology with surgeons’ journals, eyewitness accounts from Sydney Cove and the earliest inland reports.",
+    "Work with Aboriginal historians and custodians on the dates, places and permitted uses of oral accounts, including places omitted from colonial records."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Identify which port and First Fleet records survive for each season and which communities appear in them."
+    },
+    {
+      "who": "epidemiologists",
+      "ask": "Assess the competing chronologies against the dates and geographic uncertainty in the accounts."
+    }
+  ],
+  "related": [
+    "medieval-cattle-plagues",
+    "cocoliztli"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2002,
+      "authors": "Judy Campbell",
+      "title": "Invisible Invaders: Smallpox and Other Diseases in Aboriginal Australia, 1780–1880",
+      "venue": "Melbourne University Press",
+      "url": "https://wellcomecollection.org/works/gxhr4h3c",
+      "note": "Develops the argument for a northern introduction through contacts with visitors from Makassar."
+    },
+    {
+      "year": 2014,
+      "authors": "Christopher Warren",
+      "title": "Smallpox at Sydney Cove – who, when, why?",
+      "venue": "Journal of Australian Studies",
+      "url": "https://doi.org/10.1080/14443058.2013.849750",
+      "note": "Sets out the case for the First Fleet as the source of the Sydney outbreak."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "Dutch East India Company, 1.04.02, incoming letters and papers",
+      "url": "https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02",
+      "digitized": "partial",
+      "note": "Compare the Makassar resolutions in volume 3623 with reports from Timor in volume 8307."
+    },
+    {
+      "repository": "GLOBALISE, Huygens Institute",
+      "collection": "Transcriptions of the VOC incoming papers",
+      "url": "https://globalise.huygens.knaw.nl/",
+      "digitized": "partial",
+      "note": "Searchable machine readings locate passages for checking against scans, including 3623_0137 and 8307_0054–55."
+    },
+    {
+      "repository": "State Library of New South Wales",
+      "collection": "Journals of the First Fleet",
+      "url": "https://www.sl.nsw.gov.au/research-and-collections/significant-collections/journals-first-fleet",
+      "digitized": "partial",
+      "note": "Manuscript journals and published narratives preserve what different witnesses in the colony reported."
+    },
+    {
+      "repository": "Australian Institute of Aboriginal and Torres Strait Islander Studies",
+      "collection": "Oral history and manuscript collections",
+      "url": "https://aiatsis.gov.au/collection",
+      "digitized": "partial",
+      "note": "Collection staff and community custodians can advise on relevant accounts and access conditions."
+    }
+  ]
+}

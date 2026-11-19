@@ -1,0 +1,81 @@
+{
+  "id": "leprosy-americas",
+  "title": "Do early American texts preserve memories of leprosy before European contact?",
+  "short": "Ancient DNA shows that one cause of leprosy was present in the Americas thousands of years ago. Early written accounts might tell us how people recognized and understood the illness.",
+  "region": "Americas",
+  "field": "Disease",
+  "start": 1492,
+  "end": 1700,
+  "flags": [],
+  "matters": "In 2025 two research teams identified Mycobacterium lepromatosis, one of the bacteria that cause Hansen’s disease, in ancient American remains. A description in an Indigenous language could preserve a name, a remembered case or the distinctions a healer made between illnesses that Europeans grouped together.",
+  "stuck": "Colonial writers used words such as lepra for several skin conditions. A missionary might supply a European label for a local word or copy an earlier book. A description alone rarely separates the two bacteria that cause Hansen’s disease, and the date of a manuscript may be much later than the events it recounts.",
+  "solved": "Publish dated, independently translated passages that specify who observed the illness and when. Identify which details fit Hansen’s disease, which fit alternatives such as treponemal disease, and whether the witness actually places the condition before local contact.",
+  "approach": [
+    "Start with the Nahuatl and Spanish columns of the Florentine Codex, then compare colonial dictionaries, the Relaciones Geográficas, the Jesuit Relations and early medical books.",
+    "Keep patients’ descriptions, healers’ terms and translators’ glosses distinct. Check the page image for every passage quoted.",
+    "Have language specialists and historians of medicine review the readings independently, including plausible alternatives to leprosy."
+  ],
+  "needs": [
+    {
+      "who": "philologists",
+      "ask": "Trace Indigenous terms through the earliest manuscripts and distinguish a remembered illness from a translator’s gloss."
+    },
+    {
+      "who": "epidemiologists",
+      "ask": "Evaluate which historical descriptions permit a broad clinical identification and where several diagnoses fit."
+    }
+  ],
+  "related": [
+    "early-syphilis",
+    "cocoliztli"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2025,
+      "authors": "Maria Lopopolo et al.",
+      "title": "Pre-European contact leprosy in the Americas and its current persistence",
+      "venue": "Science",
+      "url": "https://doi.org/10.1126/science.adu7144",
+      "note": "Finds ancient M. lepromatosis in North and South America and compares it with later cases."
+    },
+    {
+      "year": 2025,
+      "authors": "Darío A. Ramirez et al.",
+      "title": "4,000-year-old Mycobacterium lepromatosis genomes from Chile reveal long establishment of Hansen’s disease in the Americas",
+      "venue": "Nature Ecology & Evolution",
+      "url": "https://doi.org/10.1038/s41559-025-02771-y",
+      "note": "Identifies the organism in two people who lived in northern Chile about four thousand years ago."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Getty Research Institute",
+      "collection": "Digital Florentine Codex, Book 10",
+      "url": "https://florentinecodex.getty.edu/en/book/10/folio/vr",
+      "digitized": "full",
+      "note": "Compare Indigenous and Spanish accounts on the same folio, including the terminology used by healers."
+    },
+    {
+      "repository": "Benson Latin American Collection, University of Texas at Austin",
+      "collection": "Relaciones Geográficas of New Spain",
+      "url": "https://sites.utexas.edu/llilasbensonds/projects/relaciones-geograficas/",
+      "digitized": "partial",
+      "note": "Local respondents described settlements, their histories and conditions in the late sixteenth century."
+    },
+    {
+      "repository": "Canadiana",
+      "collection": "The Jesuit Relations and Allied Documents",
+      "url": "https://www.canadiana.ca/view/oocihm.07558",
+      "digitized": "full",
+      "note": "The digitized edition pairs original mission reports with English translations. Check ambiguous descriptions in the original language."
+    }
+  ]
+}

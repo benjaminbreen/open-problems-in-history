@@ -1,0 +1,80 @@
+{
+  "id": "potato-blight-ships",
+  "title": "Which Atlantic shipments can be linked to Europe’s first potato blight outbreaks?",
+  "short": "Potato blight helped set off the Irish famine. A shipping record and a farmer’s letter could show how the disease first reached a European field.",
+  "region": "Global",
+  "field": "Disease",
+  "start": 1843,
+  "end": 1845,
+  "flags": [],
+  "matters": "Preserved leaves have allowed researchers to identify a lineage of the organism that caused late blight during the Irish famine. Historians have also traced efforts in West Flanders to obtain potatoes from the Americas. What is missing is a documented connection between a particular arrival and an early report from a field.",
+  "stuck": "A ship could call at several ports, and a potato bought in one country could have been grown in another. A cargo list records what a merchant declared. A later account of the first damage may give the date when the news reached a city.",
+  "solved": "A named vessel, dated cargo record and independent record of delivery to a grower with early blight would make a strong historical case. Compare North American and Andean candidates and show where each paper trail ends.",
+  "approach": [
+    "Begin with the documented West Flanders imports and trace consignments through port notices, customs books and agricultural correspondence for 1843–45.",
+    "Check reports of seed potatoes and of potatoes travelling alongside other cargo, including Peruvian guano. Record what the source actually lists.",
+    "Date the earliest field reports in Belgium, Britain and Ireland from their original publications. Compare shipment dates, local destinations and gaps in the records."
+  ],
+  "needs": [
+    {
+      "who": "archivists",
+      "ask": "Link customs and newspaper notices to estate or agricultural society records of receipt."
+    },
+    {
+      "who": "gis",
+      "ask": "Locate the farms and ports in the earliest dated reports, including uncertain place identifications."
+    }
+  ],
+  "related": [
+    "amazon-cacao"
+  ],
+  "provenance": {
+    "drafted_by": "GPT-6 (Codex)",
+    "drafted_on": "2026-11-19",
+    "compiled_by": "GPT-6 (Codex)",
+    "compiled_on": "2026-11-19",
+    "suggested_by": "Gemini 4 Neon",
+    "reviewed_by": null
+  },
+  "existing": [
+    {
+      "year": 2013,
+      "authors": "Kentaro Yoshida et al.",
+      "title": "The rise and fall of the Phytophthora infestans lineage that triggered the Irish potato famine",
+      "venue": "eLife",
+      "url": "https://doi.org/10.7554/elife.00731",
+      "note": "Identifies the historical HERB-1 lineage from nineteenth-century herbarium specimens."
+    },
+    {
+      "year": 2023,
+      "authors": "Hanne Cottyn, Esther Beeckaert and Dieter Bruneel",
+      "title": "The Voyages of a Potato Companion: Phytophthora Infestans",
+      "venue": "Anthropocenes",
+      "url": "https://www.anthropocenes.net/article/id/1436/",
+      "note": "Follows the potato trade back and forth across the Atlantic and examines the Belgian setting of the European outbreak."
+    }
+  ],
+  "archives": [
+    {
+      "repository": "Biodiversity Heritage Library",
+      "collection": "The Gardeners’ Chronicle and Agricultural Gazette",
+      "url": "https://www.biodiversitylibrary.org/bibliography/40100",
+      "digitized": "partial",
+      "note": "The 1845 volume preserves contemporary letters, early reports and disagreements about the crop failure."
+    },
+    {
+      "repository": "Koninklijke Bibliotheek, Delpher",
+      "collection": "Digitized Dutch newspapers, 1843–45",
+      "url": "https://www.delpher.nl/",
+      "digitized": "partial",
+      "note": "Shipping columns can identify ports of call, named vessels and dates of arrival."
+    },
+    {
+      "repository": "Bibliothèque nationale de France, Gallica",
+      "collection": "French port newspapers and agricultural society proceedings",
+      "url": "https://gallica.bnf.fr/",
+      "digitized": "partial",
+      "note": "Compare shipping notices with reports from growers and agricultural correspondents."
+    }
+  ]
+}

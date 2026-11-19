@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2024-12",
+      "kind": "field",
+      "title": "Ancient genomes reveal a deep history of Treponema pallidum in the Americas",
+      "who": "Rodrigo Barquera et al.",
+      "venue": "Nature",
+      "url": "https://doi.org/10.1038/s41586-024-08515-5",
+      "note": "Establishes the long history of several treponemal lineages in the Americas using ancient genomes.",
+      "advances": true,
+      "cited": true
+    },
+    {
+      "date": "2025-07",
+      "kind": "paper",
+      "title": "The Centenary Series - STIs Through the Ages: The dawn of the syphilis pandemic in the Old World: history and geography of syphilis in the early sixteenth century",
+      "who": "Massimo Galli and Luca Fois",
+      "venue": "Sexually Transmitted Infections",
+      "url": "https://doi.org/10.1136/sextrans-2024-056351",
+      "note": "Re-examines the geography and timing of the first European outbreak using early historical sources.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

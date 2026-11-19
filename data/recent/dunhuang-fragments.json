@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2020",
+      "kind": "paper",
+      "title": "Dunhuang Manuscript Culture: End of the First Millennium",
+      "who": "Imre Galambos",
+      "venue": "De Gruyter",
+      "url": "https://doi.org/10.1515/9783110726572",
+      "note": "Shows how the construction, layout and reuse of Dunhuang manuscripts reveal their histories.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2025-10",
+      "kind": "paper",
+      "title": "Reconstruction and Re-Designation of the Dunhuang Mahāprajñāpāramitāśāstra Manuscripts: The Role of Variant Text Collation",
+      "who": "Liting Fan and Huaiyong Dou",
+      "venue": "Religions",
+      "url": "https://doi.org/10.3390/rel16111387",
+      "note": "Uses differences between manuscript copies to reassess the arrangement and identity of fragments.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}

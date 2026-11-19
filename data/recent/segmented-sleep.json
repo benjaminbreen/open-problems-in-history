@@ -1,0 +1,28 @@
+{
+  "compiled_by": "GPT-6 (Codex)",
+  "compiled_on": "2026-11-19",
+  "items": [
+    {
+      "date": "2023",
+      "kind": "paper",
+      "title": "Have we lost sleep? A reconsideration of segmented sleep in early modern England",
+      "who": "Niall Boyce",
+      "venue": "Medical History",
+      "url": "https://doi.org/10.1017/mdh.2023.14",
+      "note": "Re-reads English examples and offers alternative meanings for several passages.",
+      "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024",
+      "kind": "paper",
+      "title": "Reflections on ‘Have we lost sleep?’",
+      "who": "A. Roger Ekirch",
+      "venue": "Medical History",
+      "url": "https://doi.org/10.1017/mdh.2024.20",
+      "note": "Responds to Boyce with additional evidence and a defence of the original interpretation.",
+      "advances": false,
+      "cited": true
+    }
+  ]
+}
