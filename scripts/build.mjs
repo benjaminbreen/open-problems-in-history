@@ -175,6 +175,7 @@ fs.writeFileSync("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/sources</loc></url>
 <url><loc>${URL}/leads</loc></url>
+<url><loc>${URL}/leads/heerlen</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
