@@ -15,9 +15,9 @@ export function leadsHTML() {
       <h1 class="page-title">Leads</h1>
       <p class="lead-intro">Start with a source. See what it can tell us and what remains to be found.</p>
       <a class="lead-entry" href="/leads/wilkinson-dictionary">
-        <p class="lead-label">Natchez, 1792 · Dictionary cipher</p>
+        <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
         <h2>${wilkinsonTitle}</h2>
-        <p>A coded letter puts two words on page 163. Open an eighteenth-century dictionary and count down the column. Could this have been Wilkinson’s key?</p>
+        <p>James Wilkinson was a U.S. Army officer who secretly worked for Spain. He and Spanish officials hid words in their letters by giving the page, column and entry in a dictionary. Can we find the book they had on their desks?</p>
         <span class="lead-link">Try the dictionary <span aria-hidden="true">→</span></span>
       </a>
       <a class="lead-entry" href="/leads/heerlen">

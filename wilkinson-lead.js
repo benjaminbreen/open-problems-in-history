@@ -1,5 +1,5 @@
 export const wilkinsonTitle = "A dictionary for Agent 13";
-export const wilkinsonDescription = "A coded letter from Natchez tells us where to look for two words. Can their positions identify the dictionary James Wilkinson and his Spanish correspondents used?";
+export const wilkinsonDescription = "James Wilkinson was a U.S. Army officer who spied for Spain. A letter from 1792 gives us a way to look for the dictionary that he and Spanish officials used to hide words in their mail.";
 
 const exhibit = "/leads/wilkinson-dictionary";
 const reader = "https://receptionreader.com/d/1231000200?from=1785&amp;to=1800";
@@ -65,24 +65,26 @@ export function wilkinsonHTML() {
   return `<article class="leads-page cipher-lead">
     <a class="back" href="/leads">← All leads</a>
     <header class="lead-hero">
-      <p class="lead-label">Natchez, 1792 · Dictionary cipher</p>
+      <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
       <h1 class="page-title">${wilkinsonTitle}</h1>
-      <p class="lead-intro">Somewhere in an English dictionary, <i>glorious</i> is the twenty-sixth entry in the left column of page 163. Two entries down comes <i>glory</i>. Which book puts them there?</p>
+      <p class="lead-intro">In 1792 James Wilkinson was a U.S. Army officer and a paid spy for Spain. His Spanish contacts called him Agent 13. Kentucky farmers shipped their crops down the Mississippi River to New Orleans, a port Spain controlled. Wilkinson had even proposed bringing Kentucky itself under Spanish protection.</p>
+      <p class="lead-intro">One letter in this secret correspondence came from Natchez, then a Spanish-ruled town upriver from New Orleans in what is now Mississippi. To hide a word from anyone who might open the mail, the writer gave its place in a dictionary. A reader with the same edition could turn to page 163, count down to the 26th entry in the left column, and read <i>glorious</i>.</p>
+      <p class="lead-intro">We know some of the words because someone wrote them in above the numbers. Other letters still have gaps. Could John Entick’s pocket dictionary be the book that would let us fill them in?</p>
     </header>
 
     <div class="cipher-reader">
       <fieldset class="cipher-views"><legend>Inside Entick’s dictionary</legend>
         <input type="radio" name="cipher-view" id="show-positions" checked><label for="show-positions">Compare printings</label>
-        <input type="radio" name="cipher-view" id="show-reader"><label for="show-reader">Text-reuse map</label>
+        <input type="radio" name="cipher-view" id="show-reader"><label for="show-reader">Explore the 1785 book</label>
         <div class="cipher-view reader-view">
-          <p>Each dot marks a passage that the 1785 dictionary shares with another book. Select a dot to see the two pages side by side.</p>
+          <p>Open Entick’s dictionary as a reader in 1785 would have seen it. Each dot marks a passage that also appears in another book. Select a dot to see the two pages side by side, or choose “Compare printings” to see how the words moved between editions.</p>
           <div class="cipher-map-window" tabindex="0" role="region" aria-label="Text-reuse map, scroll horizontally to see both books">
             <iframe src="${reader}" loading="lazy" title="Reception Reader’s interactive map of passages shared with Entick’s 1785 dictionary"></iframe>
           </div>
           <p class="cipher-credit"><a href="${reader}" target="_blank" rel="noopener">Open the full-size map ↗</a> · <a href="https://doi.org/10.5334/johd.101">Reception Reader, Rosson and colleagues</a> · <a href="${scan(3)}">1785 title page</a></p>
         </div>
         <div class="cipher-view positions-view">
-          <p>Where do <i>glorious</i> and <i>glory</i> fall in five London printings? The line marks page 163. Select a year to read the two entries on the printed page.</p>
+          <p>The letter puts <i>glorious</i> and <i>glory</i> two entries apart in the left column of page 163. The line marks that page. Select a year to see where a London printer actually put the words.</p>
           <div class="cipher-chart" role="group" aria-label="Page, column and entries for glorious and glory">
             <div aria-hidden="true" class="cipher-chart-row cipher-axis"><span>London</span><span>p. 155 <i>180</i></span><span>Page · column · entries</span></div>
             ${positionsHTML()}
@@ -94,9 +96,10 @@ export function wilkinsonHTML() {
 
     <section class="lead-evidence" aria-labelledby="cipher-heading">
       <h2 id="cipher-heading">Try the letter against the book</h2>
-      <p>James Wilkinson, an American army officer in the pay of Spain, exchanged coded letters with Spanish officials in Louisiana. His correspondents needed two things on their desks. A table gave numbers for names and common words. For other words they could give an address in a dictionary. Two people with the same book could look up a word without ever writing it in the letter.</p>
-      <p>Some of the letters survive with decipherments. In one dated March 20, 1792, at Natchez, the researchers’ transcription gives <code>163.[26]-</code> for <i>glorious</i>. The dash means the left column. Count down to the twenty-sixth headword. John Entick’s <i>New Spelling Dictionary</i>, a pocket book that generally fitted each definition on one line, makes a plausible candidate. Here is what happens when you try it.</p>
-      <p class="cipher-credit"><a href="${transcription}/wordbanks/wordbank#L207-L208">Researchers’ word list</a> · <a href="https://aclanthology.org/2020.emnlp-main.471/">Chu, Valenti and Knight’s account of the cipher</a></p>
+      <p>We know that people used Entick’s <i>New Spelling Dictionary</i> to send secrets. In 1781 the American diplomat John Jay warned a friend that his mail would probably be opened. He told him exactly which dictionary to get for their letters, right down to the year on the title page. Jay had bought his own copy at a bookshop in Philadelphia.</p>
+      <p>Did Wilkinson and his Spanish correspondents choose Entick too? They had a separate list of numbers for names and common words. It is the other words that let us test the dictionary. In their transcription of the Natchez letter, dated March 20, 1792, researchers give <code>163.[26]-</code> for <i>glorious</i>. The dash means the left column. Two entries farther down should be <i>glory</i>. Try that pair in the 1785 printing, then try a word from the end of the letter, <i>water</i>.</p>
+      <p class="cipher-credit"><a href="https://oll-resources.s3.us-east-2.amazonaws.com/oll3/store/titles/2328/Jay_1530-02_EBk_v6.0.pdf#page=44">John Jay’s instructions to William Bingham, 1781</a> · <a href="${transcription}/wordbanks/wordbank#L207-L208">Transcribed codes for <i>glorious</i> and <i>glory</i></a> · <a href="https://aclanthology.org/2020.emnlp-main.471/">Chu, Valenti and Knight on how the letters were read</a></p>
+      <p class="cipher-credit"><a href="https://www.nps.gov/sara/learn/historyculture/james-wilkinson.htm">National Park Service on Wilkinson’s dealings with Spain</a> · <a href="https://www.nps.gov/articles/natchez.htm">Natchez under Spanish rule</a></p>
       <div class="cipher-tests">${comparisons.map(plate).join("")}</div>
     </section>
 
@@ -109,7 +112,7 @@ export function wilkinsonHTML() {
         <p class="cipher-credit"><a href="https://archive.org/details/bim_eighteenth-century_a-new-complete-english-d_marchant-john-gent_1760/page/n225/mode/1up">See the Marchant page, 1760</a></p>
       </details>
       <details class="lead-method"><summary>Were the words borrowed from another letter?</summary>
-        <p>In an order of May 26, 1797, the Baron de Carondelet used five words also found in the Natchez letter. The published English translation has <i>glorious, glory, expect, brilliant, fortune</i>, in that order. In the researchers’ readings for the 1792 letter the five run in exactly the reverse order. They give us separate passages to investigate. The comparison rests on the transcription of manuscript pages 2880–2882. We have yet to check those pages in facsimile.</p>
+        <p>On May 26, 1797, the Baron de Carondelet, Spain’s governor in Louisiana, issued an order. Its published English translation contains five words also found in the Natchez letter. The order reads <i>glorious, glory, expect, brilliant, fortune</i>. In the 1792 letter the five appear in exactly the reverse order. That comparison rests on the researchers’ transcription of manuscript pages 2880–2882. We have yet to check the sequence against images of the handwritten pages.</p>
         <p class="cipher-credit"><a href="https://dheller.org/Timeline-files/US-American-State-Papers/Miscellaneous-2/No-264-543.pdf#page=103">Carondelet to Thomas Power, enclosure 38, p. 103</a> · <a href="${transcription}/apply-wordbank#L235-L566">Readings in the order of the 1792 letter</a></p>
       </details>
     </section>
