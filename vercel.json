@@ -54,6 +54,16 @@
   ],
   "redirects": [
     {
+      "source": "/p/button-and-button-hole",
+      "destination": "/p/anonymous-imprints#approach",
+      "permanent": true
+    },
+    {
+      "source": "/p/unattributed-eruptions",
+      "destination": "/p/eruption-1809",
+      "permanent": true
+    },
+    {
       "source": "/contact",
       "destination": "/about",
       "permanent": true
