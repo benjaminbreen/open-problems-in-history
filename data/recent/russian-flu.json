@@ -3,14 +3,25 @@
   "compiled_on": "2026-11-19",
   "items": [
     {
-      "date": "2021",
+      "date": "2018-04",
       "kind": "paper",
-      "title": "Clinical evidence that the pandemic from 1889 to 1891 commonly called the Russian flu might have been an earlier coronavirus pandemic",
-      "who": "Harald Brüssow and Lutz Brüssow",
-      "venue": "Microbial Biotechnology",
-      "url": "https://doi.org/10.1111/1751-7915.13889",
-      "note": "Revisits published case descriptions and argues that a coronavirus deserves consideration.",
+      "title": "Age-specific excess mortality patterns and transmissibility during the 1889–1890 influenza pandemic in Madrid, Spain",
+      "who": "Diego Ramiro et al.",
+      "venue": "Annals of Epidemiology",
+      "url": "https://doi.org/10.1016/j.annepidem.2017.12.009",
+      "note": "In Madrid’s first wave, people aged 70 and over had the highest excess respiratory death rate and children aged 5–14 the lowest.",
       "advances": false,
+      "cited": true
+    },
+    {
+      "date": "2024-07",
+      "kind": "paper",
+      "title": "Identifying signature features of epidemic diseases from 19th century all-cause mortality data",
+      "who": "Rasmus Kristoffer Pedersen et al.",
+      "venue": "American Journal of Epidemiology",
+      "url": "https://doi.org/10.1093/aje/kwae187",
+      "note": "Danish parish burials show a nationwide surge in 1891–92, with the greatest burden among people aged 60 and over.",
+      "advances": true,
       "cited": true
     },
     {

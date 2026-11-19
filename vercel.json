@@ -54,6 +54,11 @@
   ],
   "redirects": [
     {
+      "source": "/p/langley-notebooks",
+      "destination": "/leads/langley-kite",
+      "permanent": true
+    },
+    {
       "source": "/p/button-and-button-hole",
       "destination": "/p/anonymous-imprints#approach",
       "permanent": true

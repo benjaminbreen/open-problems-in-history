@@ -646,6 +646,7 @@ ul.colo { list-style: none; margin: 26px 0 0; padding: 0; border-top: 1px solid 
 .lead-docs figure { margin: 0; }
 .lead-doc { min-height: 124px; display: grid; align-content: center; justify-items: center; gap: 12px; padding: 14px; text-decoration: none; color: #211e19; background: #f2ecdd; border: 1px solid #d4cab5; }
 .lead-doc:hover { border-color: var(--accent); }
+.kite-lead .lead-doc img { display: block; width: auto; height: auto; max-width: 100%; max-height: 28rem; }
 .lead-room-labels { display: grid; grid-template-columns: 1fr 1fr; justify-self: stretch; max-width: 360px; margin: auto; }
 .lead-room-labels span { padding: 10px 12px; border: 1px solid #786c54; text-align: center; font: italic 19px/1.15 var(--serif); }
 .lead-room-labels span + span { border-left: 0; }

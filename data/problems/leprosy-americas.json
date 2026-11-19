@@ -1,28 +1,28 @@
 {
   "id": "leprosy-americas",
-  "title": "Do early American texts preserve memories of leprosy before European contact?",
-  "short": "Ancient DNA shows that one cause of leprosy was present in the Americas thousands of years ago. Early written accounts might tell us how people recognized and understood the illness.",
+  "title": "What did Nahua writers say about the people Spaniards described as having leprosy?",
+  "short": "Nahua writers in sixteenth-century Mexico described dancers playing someone with an illness a friar called leprosy, a clue to how people recognized and understood the condition.",
   "region": "Americas",
   "field": "Disease",
-  "start": 1492,
-  "end": 1700,
+  "start": 1521,
+  "end": 1600,
   "flags": [],
-  "matters": "In 2025 two research teams identified Mycobacterium lepromatosis, one of the bacteria that cause Hansen’s disease, in ancient American remains. A description in an Indigenous language could preserve a name, a remembered case or the distinctions a healer made between illnesses that Europeans grouped together.",
-  "stuck": "Colonial writers used words such as lepra for several skin conditions. A missionary might supply a European label for a local word or copy an earlier book. A description alone rarely separates the two bacteria that cause Hansen’s disease, and the date of a manuscript may be much later than the events it recounts.",
-  "solved": "Publish dated, independently translated passages that specify who observed the illness and when. Identify which details fit Hansen’s disease, which fit alternatives such as treponemal disease, and whether the witness actually places the condition before local contact.",
+  "matters": "In his 1571 dictionary, the friar Alonso de Molina translated the Nahuatl word teococoxqui as leproso, a person with leprosy. The same word appears in a Nahuatl account of a festival where dancers took on that role. What an audience recognized in the performance could tell us what it meant to live with the illness in central Mexico. Ancient DNA has already established that one cause of leprosy was present elsewhere in the Americas long before Europeans arrived.",
+  "stuck": "A dictionary gives a translation in a few words. A festival account describes someone acting a part. Neither tells us what a particular patient experienced. The Spanish and Nahuatl passages can also differ in how many conditions they describe. Even a detailed description would rarely identify which bacterium caused an illness.",
+  "solved": "Find independent accounts in which Nahua speakers describe a person, the signs of their illness, or how others treated them. Give the original words, a translation and the page image for each. Show where the descriptions agree and where a Spanish gloss groups different conditions together. A claim that a case occurred before the conquest needs a witness who actually dates it to that time.",
   "approach": [
-    "Start with the Nahuatl and Spanish columns of the Florentine Codex, then compare colonial dictionaries, the Relaciones Geográficas, the Jesuit Relations and early medical books.",
-    "Keep patients’ descriptions, healers’ terms and translators’ glosses distinct. Check the page image for every passage quoted.",
-    "Have language specialists and historians of medicine review the readings independently, including plausible alternatives to leprosy."
+    "Start with Molina’s dictionary entry and the festival account in Book 2 of the Florentine Codex. Read both columns of the festival passage and identify which words each writer used for the people the dancers portrayed.",
+    "Trace the term and its spelling variants into accounts of healing, daily life and local history. Compare a healer’s description, a friar’s biblical translation and a copied dictionary entry on their own terms.",
+    "Record who supplied each description, where they lived and when the account was written. Have a second Nahuatl reader check the passages where a different translation would change the conclusion."
   ],
   "needs": [
     {
       "who": "philologists",
-      "ask": "Trace Indigenous terms through the earliest manuscripts and distinguish a remembered illness from a translator’s gloss."
+      "ask": "Read the Nahuatl passages beside their Spanish translations and trace borrowed wording back to its source."
     },
     {
-      "who": "epidemiologists",
-      "ask": "Evaluate which historical descriptions permit a broad clinical identification and where several diagnoses fit."
+      "who": "archivists",
+      "ask": "Identify who supplied each local account and whether it describes an observed illness, an earlier memory or a performance."
     }
   ],
   "related": [
@@ -38,6 +38,14 @@
     "reviewed_by": null
   },
   "existing": [
+    {
+      "year": 1571,
+      "authors": "Alonso de Molina",
+      "title": "Vocabulario en lengua castellana y mexicana y mexicana y castellana",
+      "venue": "Mexico City, Antonio de Spinosa",
+      "url": "https://nahuatl.wired-humanities.org/content/teococoxqui",
+      "note": "The Nahuatl-to-Spanish entry on folio 100r gives leproso as the translation of teococoxqui."
+    },
     {
       "year": 2025,
       "authors": "Maria Lopopolo et al.",
@@ -58,10 +66,23 @@
   "archives": [
     {
       "repository": "Getty Research Institute",
-      "collection": "Digital Florentine Codex, Book 10",
-      "url": "https://florentinecodex.getty.edu/en/book/10/folio/vr",
+      "collection": "Digital Florentine Codex, Book 2, folio 108v",
+      "url": "https://florentinecodex.getty.edu/en/book/2/folio/108v",
       "digitized": "full",
-      "note": "Compare Indigenous and Spanish accounts on the same folio, including the terminology used by healers."
+      "note": "Read the Nahuatl and Spanish columns beside the facsimile. Both describe people taking on the role of someone ill during a festival.",
+      "aliases": [
+        "festival account"
+      ]
+    },
+    {
+      "repository": "University of Oregon",
+      "collection": "Nahuatl Dictionary, entry for teococoxqui",
+      "url": "https://nahuatl.wired-humanities.org/content/teococoxqui",
+      "digitized": "full",
+      "note": "Identifies the word, translation and folio in the Nahuatl-to-Spanish half of Molina’s dictionary.",
+      "aliases": [
+        "Molina’s dictionary entry"
+      ]
     },
     {
       "repository": "Benson Latin American Collection, University of Texas at Austin",
@@ -69,13 +90,6 @@
       "url": "https://sites.utexas.edu/llilasbensonds/projects/relaciones-geograficas/",
       "digitized": "partial",
       "note": "Local respondents described settlements, their histories and conditions in the late sixteenth century."
-    },
-    {
-      "repository": "Canadiana",
-      "collection": "The Jesuit Relations and Allied Documents",
-      "url": "https://www.canadiana.ca/view/oocihm.07558",
-      "digitized": "full",
-      "note": "The digitized edition pairs original mission reports with English translations. Check ambiguous descriptions in the original language."
     }
   ]
 }

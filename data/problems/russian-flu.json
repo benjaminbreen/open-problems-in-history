@@ -1,32 +1,29 @@
 {
   "id": "russian-flu",
-  "title": "Did a coronavirus cause the pandemic known as the “Russian flu”?",
-  "short": "Doctors called the pandemic of 1889 influenza. Their case notes and death registers could help decide whether a coronavirus better explains whom it sickened and killed.",
-  "region": "Global",
+  "title": "Did the age groups most at risk of dying change between waves of the “Russian flu”?",
+  "short": "The pandemic that began in 1889 returned several times. City death registers could show whether each new wave took its heaviest toll on the same age groups.",
+  "region": "Europe",
   "field": "Disease",
   "start": 1889,
   "end": 1894,
   "flags": [],
-  "matters": "One candidate is OC43, a coronavirus that circulates in people today. Estimates from modern viruses place its common ancestor with a cattle coronavirus near the late nineteenth century. If OC43 was responsible, a pandemic long used as an example of influenza would belong to a different disease history.",
-  "stuck": "A date for a common ancestor gives a range of years and cannot identify the virus in a particular patient. Doctors also differed in what they asked about. A report of lost smell or prolonged exhaustion is hard to interpret without knowing how often the same doctor recorded it in other epidemics.",
-  "solved": "Compare symptom frequencies and age-specific excess deaths with the 1847–48 and 1918 influenza outbreaks in comparable places and records. Report which explanation each pattern favours and by how much. A definitive viral identification would require direct evidence from the pandemic itself.",
+  "matters": "In Madrid in the winter of 1889–90, people aged 70 and over had the largest rise in deaths from respiratory illness. In Denmark, the clearest surge came two winters later and fell most heavily on people aged 60 and over. Comparing successive waves in the same places could tell us whether the danger shifted from one generation to another as the pandemic wore on.",
+  "stuck": "A city with more older residents can record more deaths among them even when the risk to each person is the same. Cities also used different age brackets and experienced outbreaks at different times. Doctors might record influenza, pneumonia or another cause for similar deaths.",
+  "solved": "For each wave from 1889 through 1894, estimate how many more people died than usual per 10,000 residents in each age group. Compare successive waves within each place, then see whether the same changes recur elsewhere. Report uncertainty, including places where the records are too thin to rank the age groups.",
   "approach": [
-    "Start with Henry Franklin Parsons’s survey, local medical reports and municipal death returns. Keep physician accounts separate from newspaper reprints.",
-    "Record the number of patients actually described, their ages and whether each symptom was mentioned, denied or left unexamined.",
-    "Compare like reporting settings across outbreaks. Test whether conclusions survive removing a city, a wave or an unusually detailed observer."
+    "Use local medical reports to date each city’s waves. Start with London’s four-weekly returns and the published Swiss and Danish records. Pair the death counts with census populations in the same age brackets.",
+    "Use deaths from all causes and estimate the usual level for the same weeks in nearby pre-pandemic years. Check the pattern against respiratory deaths wherever both series survive.",
+    "Repeat the comparison with common age brackets, different baseline years and slightly different wave dates. Check local reports for other epidemics that might explain excess deaths in children or adults."
   ],
   "needs": [
     {
-      "who": "epidemiologists",
-      "ask": "Compare the symptom and age patterns across outbreaks with allowance for differences in who was examined."
+      "who": "demographers",
+      "ask": "Match deaths to census populations by age and place, allowing for changes in district boundaries."
     },
     {
-      "who": "demographers",
-      "ask": "Estimate deaths above the usual seasonal level in cities with age-specific population counts."
+      "who": "epidemiologists",
+      "ask": "Estimate the usual seasonal mortality for each age group and compare the excess in successive waves."
     }
-  ],
-  "related": [
-    "early-syphilis"
   ],
   "provenance": {
     "drafted_by": "GPT-6 (Codex)",
@@ -46,20 +43,12 @@
       "note": "A contemporary medical survey records how the illness appeared to doctors working in different places."
     },
     {
-      "year": 2005,
-      "authors": "Leen Vijgen et al.",
-      "title": "Complete Genomic Sequence of Human Coronavirus OC43: Molecular Clock Analysis Suggests a Relatively Recent Zoonotic Coronavirus Transmission Event",
-      "venue": "Journal of Virology",
-      "url": "https://doi.org/10.1128/jvi.79.3.1595-1604.2005",
-      "note": "Estimates when the human and cattle coronavirus lineages shared an ancestor."
-    },
-    {
-      "year": 2021,
-      "authors": "Harald Brüssow and Lutz Brüssow",
-      "title": "Clinical evidence that the pandemic from 1889 to 1891 commonly called the Russian flu might have been an earlier coronavirus pandemic",
-      "venue": "Microbial Biotechnology",
-      "url": "https://doi.org/10.1111/1751-7915.13889",
-      "note": "Revisits published case descriptions and argues that a coronavirus deserves consideration."
+      "year": 2018,
+      "authors": "Diego Ramiro et al.",
+      "title": "Age-specific excess mortality patterns and transmissibility during the 1889–1890 influenza pandemic in Madrid, Spain",
+      "venue": "Annals of Epidemiology",
+      "url": "https://doi.org/10.1016/j.annepidem.2017.12.009",
+      "note": "In Madrid’s first wave, people aged 70 and over had the highest excess respiratory death rate and children aged 5–14 the lowest."
     },
     {
       "year": 2024,
@@ -68,29 +57,40 @@
       "venue": "Epidemiology and Infection",
       "url": "https://doi.org/10.1017/s0950268824001651",
       "note": "Uses Swiss death and population records to examine age, place and the timing of mortality."
+    },
+    {
+      "year": 2025,
+      "authors": "Rasmus Kristoffer Pedersen et al.",
+      "title": "Identifying signature features of epidemic diseases from 19th century all-cause mortality data",
+      "venue": "American Journal of Epidemiology",
+      "url": "https://doi.org/10.1093/aje/kwae187",
+      "note": "Danish parish burials show a nationwide surge in 1891–92, with the greatest burden among people aged 60 and over."
     }
   ],
   "archives": [
     {
       "repository": "Wellcome Collection",
-      "collection": "Parsons’s report on the influenza epidemic of 1889–90",
-      "url": "https://wellcomecollection.org/works/qvgdv4sv",
+      "collection": "London County Council medical officer’s report, influenza deaths in four-week periods, 1890–1901",
+      "url": "https://wellcomelibrary.org/moh/report/b18252503/85",
       "digitized": "full",
-      "note": "A starting point for comparing local accounts that answered similar questions."
+      "note": "Use the dated totals to locate London’s waves before turning to reports that give the ages of those who died.",
+      "aliases": [
+        "London’s four-weekly returns"
+      ]
     },
     {
-      "repository": "Bibliothèque nationale de France, Gallica",
-      "collection": "Medical periodicals and municipal statistical bulletins",
-      "url": "https://gallica.bnf.fr/",
-      "digitized": "partial",
-      "note": "French case reports can be paired with mortality returns for the same city and month."
+      "repository": "British Medical Journal",
+      "collection": "The Influenza Epidemic, 30 January 1892, p. 243",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2419644/",
+      "digitized": "full",
+      "note": "A contemporary London report gives weekly deaths and compares death rates above and below age 60."
     },
     {
-      "repository": "National Library of Australia",
-      "collection": "Trove newspapers and gazettes",
-      "url": "https://trove.nla.gov.au/search/category/newspapers",
-      "digitized": "partial",
-      "note": "Local reports can be compared with syndicated accounts of outbreaks overseas."
+      "repository": "PandemiX Center, Roskilde University",
+      "collection": "Danish daily burials by county and five-year age group, 1815–1915",
+      "url": "https://github.com/PandemiXcenter/SignatureFeatures19thCentury",
+      "digitized": "full",
+      "note": "The authors share daily counts from parish registers and the code used to estimate excess deaths."
     }
   ]
 }

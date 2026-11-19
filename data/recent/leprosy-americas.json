@@ -3,6 +3,16 @@
   "compiled_on": "2026-11-19",
   "items": [
     {
+      "date": "2023-10",
+      "kind": "data",
+      "title": "Digital Florentine Codex",
+      "who": "Getty Research Institute and partners",
+      "url": "https://florentinecodex.getty.edu/about/1_About_the_Project",
+      "note": "The searchable edition places Nahuatl and Spanish transcriptions and translations alongside the manuscripts, including the Book 2 festival account.",
+      "advances": true,
+      "cited": true
+    },
+    {
       "date": "2025",
       "kind": "field",
       "title": "Pre-European contact leprosy in the Americas and its current persistence",

@@ -28,153 +28,147 @@ Ratings are reviewed before they count. Historians' and AI models' ratings are c
 
 ## Problems (random order)
 
-- anonymous-serials: Which women wrote the unsigned stories in nineteenth-century newspapers?
-  A newspaper might print a novel one chapter at a time and drop the byline when it reprinted it. Following the chapters could restore a writer’s name and career.
-- langley-notebooks: What is in Samuel P. Langley’s 37 shorthand notebooks?
-  The Smithsonian holds 37 notebooks from an early experimenter in flight. Reading their shorthand could reveal who proposed a design, changed it or saw it fail.
-- archimedes-leaf-170: Where is leaf 170 of the Archimedes Palimpsest?
-  A 1906 photograph identifies the missing leaf. Where did it go, and what readings might the physical page still preserve?
-- indian-ocean-tsunamis: Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450?
-  Geology and archaeology show two great tsunamis struck northern Sumatra around 1394 and 1450, but no contemporary text describing either has been identified.
-- lost-editions: How many early printed editions have been lost without trace?
-  Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.
-- cocoliztli: What caused the cocoliztli epidemics of 1545 and 1576 in New Spain?
-  Two epidemics that Nahua and Spanish observers called cocoliztli killed a large share of central Mexico's Indigenous population, and their cause, whether a native haemorrhagic fever, enteric fever or something else, is disputed.
-- great-divergence: Were real wages in the Yangzi delta and Bengal comparable to England's before 1750?
-  Whether the richest regions of China and India matched England before 1750 depends on wage series built from a few scattered price and wage quotations.
-- cassini-cas-a: Did Cassini see the star that exploded in Cassiopeia in the 1670s?
-  Light from an exploding star reached Earth about 350 years ago. An astronomer’s notes could date the event and tell us how bright the star looked.
-- anonymous-imprints: Who printed the anonymous and false-imprint books of eighteenth-century Britain?
-  Many thousands of British books and pamphlets of 1695 to 1800 name no printer or a fictitious one; ornaments and damaged type can now identify the presses at scale.
-- early-syphilis: When did Europeans first describe the outbreak later called syphilis?
-  Europeans called it the French disease. A firsthand account from before Columbus returned in 1493 would change the chronology of Europe’s first recognized syphilis outbreak.
-- americas-1492: How many people lived in the Americas in 1492?
-  Estimates of the hemisphere's population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.
-- gunpowder: By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century?
-  Gunpowder formulas appear in China by 1044 and in Arabic and Latin texts by the later 1200s, but the path between them is unattested.
-- james-pawpaw-remedy: Did James Pawpaw’s remedy enter Sloane’s collection without his name?
-  A recipe credited to a Virginia healer shares a distinctive set of instructions with an anonymous manuscript in Hans Sloane’s collection.
-- justinianic-plague: How many people did the Justinianic Plague kill, and did it change late antique society?
-  Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.
-- khipu: Do khipus record more than numbers, and can their non-numerical signs be read?
-  Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.
-- black-death-africa: Did the Black Death reach sub-Saharan Africa in the fourteenth century?
-  Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.
-- copernicus-maragha: How, if at all, did Copernicus learn of the Maragha-school planetary models?
-  Copernicus used devices found earlier in al-Ṭūsī and Ibn al-Shāṭir, but no document shows how a text containing them reached him or his teachers.
-- dunhuang-fragments: Which manuscript fragments from Dunhuang fit back together?
-  Pages from a sealed cave on China’s Silk Road now sit in libraries thousands of miles apart. Reuniting torn pieces could recover a passage no single collection can read.
-- vermeer: Did Vermeer use a camera obscura or other optical aids?
-  Optical effects, perspective geometry and technical imaging have been read for and against Vermeer's use of a camera obscura, with no documentary evidence either way.
-- kerala-jesuits: Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries?
-  Madhava's school derived power series for π, sine and cosine before 1500; whether Jesuits in Kerala carried them to Europe remains undocumented.
-- gutenberg-type: How did Gutenberg cast his type?
-  Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.
-- medieval-cattle-plagues: Did Europe’s three great medieval cattle plagues come from the east?
-  Cattle died across medieval Europe in three great waves. Finding where each began would help explain how farming communities lost their plough teams and herds so quickly.
-- ibn-battuta: Which of the journeys in Ibn Baṭṭūṭa's Riḥla did he actually make?
-  The account of thirty years' travel dictated to Ibn Juzayy in 1354–55 mixes eyewitness report with borrowed passages, and several legs, from the Volga to China, remain doubted.
-- amazon-cacao: How much of the cacao along Amazonian rivers grew from colonial-era plantings?
-  Cacao grew in Amazonia long before Europeans arrived. An eighteenth-century survey could help distinguish groves planted for colonial trade from the legacy of earlier Indigenous cultivation.
-- hittite-fragments: Which Hittite tablet fragments belong to the same tablet or preserve the same text?
-  Hittite scribes wrote on clay tablets. A few lines on a broken piece could restore a missing passage in a ritual or identify a second copy of a treaty.
-- qing-literacy: How literate was the population of late imperial China?
-  Rawski's 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.
-- oracle-bones: What do the thousands of unread Shang oracle-bone graphs mean?
-  Of roughly 4,000 to 4,500 distinct graphs in the Shang divination inscriptions, only about 1,100 to 1,700 are generally accepted as read; most of the rest are rare and unread.
-- agade: Where was Agade, the capital of the Sargonic empire?
-  The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.
-- leprosy-americas: Do early American texts preserve memories of leprosy before European contact?
-  Ancient DNA shows that one cause of leprosy was present in the Americas thousands of years ago. Early written accounts might tell us how people recognized and understood the illness.
-- indigenous-slavery: How many Indigenous people were enslaved in the Americas between 1492 and 1900?
-  The best current estimate, 2.5 to 5 million enslaved Indigenous people, is the only hemispheric figure, and it rests on regional extrapolation rather than a count.
-- mendel: Were Mendel's pea-hybrid data too close to expectation, and if so, why?
-  Fisher showed in 1936 that Mendel's ratios fit theory improbably well; a century of explanations has not produced documentary evidence of how the counts were made.
-- beowulf: When was Beowulf composed?
-  Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.
-- punt: Where was the land of Punt?
-  Egypt traded by sea with Punt for over a thousand years, for incense, ebony, gold and baboons, but whether it lay in Africa, Arabia or both remains disputed.
-- segmented-sleep: How common was sleeping in two shifts before industrialization?
-  People once wrote of waking from a “first sleep.” Their accounts could tell us when sleeping through the night became an expectation and whose nights followed a different pattern.
-- mesopotamian-chronology: What is the absolute chronology of early second-millennium BCE Mesopotamia?
-  Competing High, Middle, Low and Ultra-Low chronologies place Hammurabi and the fall of Babylon up to about 150 years apart; no single model integrates all the evidence.
-- linear-a: What language does Linear A record, and can any proposed family beat chance?
-  Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.
-- plague-disappearance: Why did plague disappear from western Europe after the early eighteenth century?
-  After nearly four centuries of recurring epidemics, plague retreated from western and central Europe between the 1660s and the 1720s while persisting in the Ottoman Mediterranean, and no explanation commands agreement.
-- irish-1641: How many people were killed in the Irish rising of 1641?
-  Contemporary claims of 154,000 to 300,000 Protestant victims are rejected, but the modern figure of roughly 4,000 killed has never been built from a full victim-level count.
-- silver-china: How much American silver reached China between 1550 and 1800?
-  Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.
-- shapira-scrolls: Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery?
-  Leather strips offered to Berlin and the British Museum in 1883 were dismissed as forgeries and then lost; since 2021 scholars have again argued they preserved a pre-biblical text.
-- indus: Does the Indus script encode language, or a non-linguistic sign system?
-  Whether the short Harappan inscriptions record speech at all has been argued with entropy statistics for two decades; no test yet separates writing from emblem systems decisively.
-- ptolemy: Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's?
-  Ptolemy's catalogue of about 1,025 stars claims his own observations; statistical anomalies suggest much of it derives from Hipparchus three centuries earlier.
-- gregorian-chant: Did Gregorian chant descend from Old Roman chant, or did both come from a common ancestor?
-  Frankish 'Gregorian' and city-of-Rome 'Old Roman' chant share texts and melodic outlines but differ in detail, and Roman melodies were written down only from 1071.
-- china-1600: How many people lived in China around 1600, and how many died between 1620 and 1680?
-  Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.
-- milky-sea-1637: How far did the Indian Ocean glow in February 1637?
-  A Dutch merchant recorded six nights of white water off Somalia. A second ship’s journal could show how far the glow extended.
-- borneo-elephants: Are Borneo’s wild elephants native, or descendants of a royal gift?
-  Borneo’s elephants may descend from an ancient island herd or from animals shipped from Java. The answer could tell us whether Java’s lost elephants have living descendants.
-- patent-copying: How often did “simultaneous” inventions follow an earlier design in a foreign journal?
-  Two inventors sometimes patented similar machines months apart. A drawing published between their filings could change who gets credit and show how news of an invention travelled.
 - jupiter-red-spot: Do old drawings show Jupiter’s Great Red Spot between 1713 and 1831?
   Jupiter has a storm large enough to see from Earth. Drawings in old observing books could tell us whether it survived for centuries or replaced an earlier storm.
-- eruption-1809: Which volcano produced the sulfate deposit dated to around 1809?
-  Ice cores and observations of a high-altitude haze point to a major eruption. A disputed date complicates one lead from Java.
-- galen-arabic: Which lost works of Galen survive unrecognised in Arabic and Syriac?
-  Many Galenic works lost in Greek were translated into Syriac and Arabic in ninth-century Baghdad; some may survive in unedited manuscripts or in quotations not yet traced to their source.
-- indian-ocean-slave-trade: How many people were carried in the Indian Ocean slave trades, 1500–1850?
-  European slave trading in the Indian Ocean has been tentatively counted, but the combined volume of Dutch, Portuguese, French, British, Arab, Swahili and South Asian trades remains unknown.
-- ottoman-tahrir: Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?
-  Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.
-- ternate-gingie: Who grew and smoked cannabis on Ternate in 1676?
-  The Dutch ordered the destruction of a plant they called gingie. Who cultivated it, and what happened after the ban?
-- silent-film-fragments: Which lost silent films survive in fragments whose titles are unknown?
-  A film archive may hold a few minutes of a movie whose title card is gone. A match with a contemporary description could put a lost performance back on screen.
-- yamatai: Where was Yamatai, the realm of Queen Himiko?
-  A third-century Chinese account describes the Wa polity ruled by Himiko, but its itinerary cannot be followed literally and the Kyushu and Nara candidates have been argued since the Edo period.
-- wax-cylinder-voices: Whose voices survive on unidentified early wax cylinders?
-  Early recordings preserve speakers whose names are missing or disputed. Can the words on the cylinders and contemporary records identify them?
-- meroitic: Can the Meroitic language be translated beyond its funerary formulae?
-  Meroitic script has been readable since Griffith's work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.
+- plague-disappearance: Why did plague disappear from western Europe after the early eighteenth century?
+  After nearly four centuries of recurring epidemics, plague retreated from western and central Europe between the 1660s and the 1720s while persisting in the Ottoman Mediterranean, and no explanation commands agreement.
+- agade: Where was Agade, the capital of the Sargonic empire?
+  The city from which Sargon and his successors ruled Mesopotamia c. 2300 BCE has never been securely located, despite more than a century of searching in central Iraq.
 - roman-census: How large was the Roman citizen population in the late Republic and under Augustus?
   Roman census totals jump from about 910,000 in 70/69 BCE to 4,063,000 in 28 BCE; whether this reflects a change in who was counted or real growth remains disputed.
-- newton-alchemy-sources: What texts did Newton copy in the alchemical manuscripts whose sources are unidentified?
-  Most of Newton's million words on alchemy copy or digest named authors, but several recipe collections and a dialogue among his papers derive from exemplars no one has identified.
-- zhou-conquest: In what year did the Zhou conquer the Shang?
-  More than forty proposed dates for King Wu's victory over the last Shang king span over a century, and the official choice of 1046 BCE remains disputed.
-- potato-blight-ships: Which Atlantic shipments can be linked to Europe’s first potato blight outbreaks?
-  Potato blight helped set off the Irish famine. A shipping record and a farmer’s letter could show how the disease first reached a European field.
-- sydney-smallpox: How did smallpox reach Aboriginal communities around Sydney in 1789?
-  Smallpox devastated Aboriginal communities around Sydney a year after the British arrived. Tracing its earlier appearances could clarify what part colonization played in those deaths.
-- russian-flu: Did a coronavirus cause the pandemic known as the “Russian flu”?
-  Doctors called the pandemic of 1889 influenza. Their case notes and death registers could help decide whether a coronavirus better explains whom it sickened and killed.
-- thylacine: When did the thylacine go extinct in the wild?
-  The last known thylacine died in a Hobart zoo in September 1936, but whether the species survived in the Tasmanian bush into the 1940s, the 1980s or later remains disputed.
-- wilkinson-ciphers: What do James Wilkinson's unread coded dispatches to Spanish officials say?
-  Letters between the US Army's senior general and Spanish Louisiana, written in a code keyed to an unidentified printed dictionary, remain partly or wholly unread.
-- toromiro-provenance: Which cultivated toromiro trees descend from wild Rapa Nui collections?
-  Melbourne’s toromiro trees may preserve an early introduction of a species extinct in the wild. Can their garden records resolve the pedigree?
-- padang-1697: Which earthquake sent waves up the Padang River in 1697?
-  A Dutch dispatch describes ten or more surges after the Padang earthquake. Can the waves be traced to a rupture offshore?
-- quran-standardization: When was the consonantal text of the Qurʾān standardized?
-  Islamic tradition credits the caliph ʿUthmān (c. 650); some scholars place closure under ʿAbd al-Malik and al-Ḥajjāj (c. 700) or later. Manuscript evidence is now testing these positions.
-- song-iron: How much iron did Song China produce in the eleventh century?
-  Robert Hartwell's estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.
-- renaissance-lute: Do the missing voices of Renaissance songs survive in lute arrangements?
-  Printers sold each voice of a song in a separate book. Where only one part survives, a lute player’s arrangement might let us hear the voices together again.
-- sloane-informants: Who supplied the medical knowledge that Hans Sloane's catalogues attribute to unnamed people?
-  Sloane's catalogues attribute remedies and drug samples to 'a Negro', 'an Indian druggist' or an unnamed ship's doctor; few of these informants have been traced to named people.
-- mughal-dodo: How did a dodo become the subject of a Mughal painting?
-  A Mughal bird study apparently depicts a dodo. Can the bird that served as its model be traced from Mauritius to India?
-- proto-elamite: Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?
-  Iran's earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.
 - hidden-vocabularies: Which old books preserve overlooked word lists from little-documented languages?
   A traveller might print a page of words in a book about something else. For a language with few surviving records, that page could preserve words found nowhere else.
+- amazon-cacao: How much of the cacao along Amazonian rivers grew from colonial-era plantings?
+  Cacao grew in Amazonia long before Europeans arrived. An eighteenth-century survey could help distinguish groves planted for colonial trade from the legacy of earlier Indigenous cultivation.
+- china-1600: How many people lived in China around 1600, and how many died between 1620 and 1680?
+  Late Ming population estimates run from about 150 million to over 200 million, so the scale of the mid-seventeenth-century collapse remains uncertain by tens of millions.
+- justinianic-plague: How many people did the Justinianic Plague kill, and did it change late antique society?
+  Ancient DNA confirms Yersinia pestis caused the First Pandemic (541–c.750), but estimates of its mortality and long-term consequences range from catastrophic to modest.
+- copernicus-maragha: How, if at all, did Copernicus learn of the Maragha-school planetary models?
+  Copernicus used devices found earlier in al-Ṭūsī and Ibn al-Shāṭir, but no document shows how a text containing them reached him or his teachers.
+- americas-1492: How many people lived in the Americas in 1492?
+  Estimates of the hemisphere's population on the eve of contact run from about 8 million to over 100 million, and the scale of the collapse depends on which is right.
+- russian-flu: Did the age groups most at risk of dying change between waves of the “Russian flu”?
+  The pandemic that began in 1889 returned several times. City death registers could show whether each new wave took its heaviest toll on the same age groups.
+- anonymous-imprints: Who printed the anonymous and false-imprint books of eighteenth-century Britain?
+  Many thousands of British books and pamphlets of 1695 to 1800 name no printer or a fictitious one; ornaments and damaged type can now identify the presses at scale.
+- thylacine: When did the thylacine go extinct in the wild?
+  The last known thylacine died in a Hobart zoo in September 1936, but whether the species survived in the Tasmanian bush into the 1940s, the 1980s or later remains disputed.
+- archimedes-leaf-170: Where is leaf 170 of the Archimedes Palimpsest?
+  A 1906 photograph identifies the missing leaf. Where did it go, and what readings might the physical page still preserve?
+- anonymous-serials: Which women wrote the unsigned stories in nineteenth-century newspapers?
+  A newspaper might print a novel one chapter at a time and drop the byline when it reprinted it. Following the chapters could restore a writer’s name and career.
+- cocoliztli: What caused the cocoliztli epidemics of 1545 and 1576 in New Spain?
+  Two epidemics that Nahua and Spanish observers called cocoliztli killed a large share of central Mexico's Indigenous population, and their cause, whether a native haemorrhagic fever, enteric fever or something else, is disputed.
+- linear-a: What language does Linear A record, and can any proposed family beat chance?
+  Minoan Linear A can be roughly sounded out through Linear B values, but no proposed language family has been shown to fit better than random controls.
+- proto-elamite: Does Proto-Elamite record language, and is it the ancestor of Linear Elamite?
+  Iran's earliest script survives on about 1,600–1,700 accounting tablets; its numbers are read, but whether its other signs write words, and how it relates to Linear Elamite, is disputed.
+- hittite-fragments: Which Hittite tablet fragments belong to the same tablet or preserve the same text?
+  Hittite scribes wrote on clay tablets. A few lines on a broken piece could restore a missing passage in a ritual or identify a second copy of a treaty.
+- beowulf: When was Beowulf composed?
+  Proposed dates for the poem range from about 700 to the early eleventh century, the date of its only manuscript, and rest on metre, language, palaeography and historical context.
+- zhou-conquest: In what year did the Zhou conquer the Shang?
+  More than forty proposed dates for King Wu's victory over the last Shang king span over a century, and the official choice of 1046 BCE remains disputed.
+- punt: Where was the land of Punt?
+  Egypt traded by sea with Punt for over a thousand years, for incense, ebony, gold and baboons, but whether it lay in Africa, Arabia or both remains disputed.
+- james-pawpaw-remedy: Did James Pawpaw’s remedy enter Sloane’s collection without his name?
+  A recipe credited to a Virginia healer shares a distinctive set of instructions with an anonymous manuscript in Hans Sloane’s collection.
+- oracle-bones: What do the thousands of unread Shang oracle-bone graphs mean?
+  Of roughly 4,000 to 4,500 distinct graphs in the Shang divination inscriptions, only about 1,100 to 1,700 are generally accepted as read; most of the rest are rare and unread.
+- newton-alchemy-sources: What texts did Newton copy in the alchemical manuscripts whose sources are unidentified?
+  Most of Newton's million words on alchemy copy or digest named authors, but several recipe collections and a dialogue among his papers derive from exemplars no one has identified.
+- indian-ocean-slave-trade: How many people were carried in the Indian Ocean slave trades, 1500–1850?
+  European slave trading in the Indian Ocean has been tentatively counted, but the combined volume of Dutch, Portuguese, French, British, Arab, Swahili and South Asian trades remains unknown.
+- eruption-1809: Which volcano produced the sulfate deposit dated to around 1809?
+  Ice cores and observations of a high-altitude haze point to a major eruption. A disputed date complicates one lead from Java.
+- gregorian-chant: Did Gregorian chant descend from Old Roman chant, or did both come from a common ancestor?
+  Frankish 'Gregorian' and city-of-Rome 'Old Roman' chant share texts and melodic outlines but differ in detail, and Roman melodies were written down only from 1071.
+- song-iron: How much iron did Song China produce in the eleventh century?
+  Robert Hartwell's estimate of about 125,000 tons of iron in 1078 is widely repeated, but it rests on fiscal records whose relation to total output is disputed.
+- great-divergence: Were real wages in the Yangzi delta and Bengal comparable to England's before 1750?
+  Whether the richest regions of China and India matched England before 1750 depends on wage series built from a few scattered price and wage quotations.
+- black-death-africa: Did the Black Death reach sub-Saharan Africa in the fourteenth century?
+  Plague devastated Egypt and North Africa in 1347–49, but whether it crossed the Sahara or reached the Horn and East Africa is unresolved.
+- indigenous-slavery: How many Indigenous people were enslaved in the Americas between 1492 and 1900?
+  The best current estimate, 2.5 to 5 million enslaved Indigenous people, is the only hemispheric figure, and it rests on regional extrapolation rather than a count.
+- indus: Does the Indus script encode language, or a non-linguistic sign system?
+  Whether the short Harappan inscriptions record speech at all has been argued with entropy statistics for two decades; no test yet separates writing from emblem systems decisively.
+- irish-1641: How many people were killed in the Irish rising of 1641?
+  Contemporary claims of 154,000 to 300,000 Protestant victims are rejected, but the modern figure of roughly 4,000 killed has never been built from a full victim-level count.
+- kerala-jesuits: Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries?
+  Madhava's school derived power series for π, sine and cosine before 1500; whether Jesuits in Kerala carried them to Europe remains undocumented.
+- mughal-dodo: How did a dodo become the subject of a Mughal painting?
+  A Mughal bird study apparently depicts a dodo. Can the bird that served as its model be traced from Mauritius to India?
+- mesopotamian-chronology: What is the absolute chronology of early second-millennium BCE Mesopotamia?
+  Competing High, Middle, Low and Ultra-Low chronologies place Hammurabi and the fall of Babylon up to about 150 years apart; no single model integrates all the evidence.
+- galen-arabic: Which lost works of Galen survive unrecognised in Arabic and Syriac?
+  Many Galenic works lost in Greek were translated into Syriac and Arabic in ninth-century Baghdad; some may survive in unedited manuscripts or in quotations not yet traced to their source.
+- gunpowder: By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century?
+  Gunpowder formulas appear in China by 1044 and in Arabic and Latin texts by the later 1200s, but the path between them is unattested.
+- ptolemy: Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's?
+  Ptolemy's catalogue of about 1,025 stars claims his own observations; statistical anomalies suggest much of it derives from Hipparchus three centuries earlier.
+- qing-literacy: How literate was the population of late imperial China?
+  Rawski's 1979 estimate of 30–45 percent male literacy in Qing China has never been tested against a systematic count of signatures and marks on contracts.
+- khipu: Do khipus record more than numbers, and can their non-numerical signs be read?
+  Andean knotted cords encode numbers in a known decimal system; whether colour, ply, attachment and knot direction also record names, categories or narrative remains open.
+- sloane-informants: Who supplied the medical knowledge that Hans Sloane's catalogues attribute to unnamed people?
+  Sloane's catalogues attribute remedies and drug samples to 'a Negro', 'an Indian druggist' or an unnamed ship's doctor; few of these informants have been traced to named people.
+- early-syphilis: When did Europeans first describe the outbreak later called syphilis?
+  Europeans called it the French disease. A firsthand account from before Columbus returned in 1493 would change the chronology of Europe’s first recognized syphilis outbreak.
+- shapira-scrolls: Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery?
+  Leather strips offered to Berlin and the British Museum in 1883 were dismissed as forgeries and then lost; since 2021 scholars have again argued they preserved a pre-biblical text.
+- meroitic: Can the Meroitic language be translated beyond its funerary formulae?
+  Meroitic script has been readable since Griffith's work of 1909–1911, but outside formulaic texts the language of the Kingdom of Kush is still largely untranslated.
+- segmented-sleep: How common was sleeping in two shifts before industrialization?
+  People once wrote of waking from a “first sleep.” Their accounts could tell us when sleeping through the night became an expectation and whose nights followed a different pattern.
+- yamatai: Where was Yamatai, the realm of Queen Himiko?
+  A third-century Chinese account describes the Wa polity ruled by Himiko, but its itinerary cannot be followed literally and the Kyushu and Nara candidates have been argued since the Edo period.
+- padang-1697: Which earthquake sent waves up the Padang River in 1697?
+  A Dutch dispatch describes ten or more surges after the Padang earthquake. Can the waves be traced to a rupture offshore?
+- silver-china: How much American silver reached China between 1550 and 1800?
+  Estimates of the share of Spanish American silver that ended up in China vary widely because mint, shipping and Chinese monetary records have never been reconciled in one account.
+- ottoman-tahrir: Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries?
+  Tax surveys show rapid growth in Anatolia to about 1580, but whether the decline that followed was a demographic collapse or an artefact of changing registration remains unsettled.
+- quran-standardization: When was the consonantal text of the Qurʾān standardized?
+  Islamic tradition credits the caliph ʿUthmān (c. 650); some scholars place closure under ʿAbd al-Malik and al-Ḥajjāj (c. 700) or later. Manuscript evidence is now testing these positions.
+- leprosy-americas: What did Nahua writers say about the people Spaniards described as having leprosy?
+  Nahua writers in sixteenth-century Mexico described dancers playing someone with an illness a friar called leprosy, a clue to how people recognized and understood the condition.
+- renaissance-lute: Do the missing voices of Renaissance songs survive in lute arrangements?
+  Printers sold each voice of a song in a separate book. Where only one part survives, a lute player’s arrangement might let us hear the voices together again.
+- borneo-elephants: Are Borneo’s wild elephants native, or descendants of a royal gift?
+  Borneo’s elephants may descend from an ancient island herd or from animals shipped from Java. The answer could tell us whether Java’s lost elephants have living descendants.
+- cassini-cas-a: Did Cassini see the star that exploded in Cassiopeia in the 1670s?
+  Light from an exploding star reached Earth about 350 years ago. An astronomer’s notes could date the event and tell us how bright the star looked.
+- dunhuang-fragments: Which manuscript fragments from Dunhuang fit back together?
+  Pages from a sealed cave on China’s Silk Road now sit in libraries thousands of miles apart. Reuniting torn pieces could recover a passage no single collection can read.
+- mendel: Were Mendel's pea-hybrid data too close to expectation, and if so, why?
+  Fisher showed in 1936 that Mendel's ratios fit theory improbably well; a century of explanations has not produced documentary evidence of how the counts were made.
+- silent-film-fragments: Which lost silent films survive in fragments whose titles are unknown?
+  A film archive may hold a few minutes of a movie whose title card is gone. A match with a contemporary description could put a lost performance back on screen.
+- gutenberg-type: How did Gutenberg cast his type?
+  Glyph-level variation in the earliest Mainz types has been read both as evidence against the punch, matrix and hand mould, and as fully compatible with it.
+- ibn-battuta: Which of the journeys in Ibn Baṭṭūṭa's Riḥla did he actually make?
+  The account of thirty years' travel dictated to Ibn Juzayy in 1354–55 mixes eyewitness report with borrowed passages, and several legs, from the Volga to China, remain doubted.
+- wax-cylinder-voices: Whose voices survive on unidentified early wax cylinders?
+  Early recordings preserve speakers whose names are missing or disputed. Can the words on the cylinders and contemporary records identify them?
+- wilkinson-ciphers: What do James Wilkinson's unread coded dispatches to Spanish officials say?
+  Letters between the US Army's senior general and Spanish Louisiana, written in a code keyed to an unidentified printed dictionary, remain partly or wholly unread.
+- medieval-cattle-plagues: Did Europe’s three great medieval cattle plagues come from the east?
+  Cattle died across medieval Europe in three great waves. Finding where each began would help explain how farming communities lost their plough teams and herds so quickly.
 - rongorongo: Was rongorongo an independent invention of writing?
   The undeciphered glyphs carved on about two dozen wooden objects from Rapa Nui may be a pre-contact invention of writing or a nineteenth-century response to European literacy.
+- vermeer: Did Vermeer use a camera obscura or other optical aids?
+  Optical effects, perspective geometry and technical imaging have been read for and against Vermeer's use of a camera obscura, with no documentary evidence either way.
+- sydney-smallpox: How did smallpox reach Aboriginal communities around Sydney in 1789?
+  Smallpox devastated Aboriginal communities around Sydney a year after the British arrived. Tracing its earlier appearances could clarify what part colonization played in those deaths.
+- lost-editions: How many early printed editions have been lost without trace?
+  Estimates of the share of fifteenth- and sixteenth-century editions that survive in no copy vary widely, and depend on statistical models that have rarely been tested against later discoveries.
+- ternate-gingie: Who grew and smoked cannabis on Ternate in 1676?
+  The Dutch ordered the destruction of a plant they called gingie. Who cultivated it, and what happened after the ban?
+- toromiro-provenance: Which cultivated toromiro trees descend from wild Rapa Nui collections?
+  Melbourne’s toromiro trees may preserve an early introduction of a species extinct in the wild. Can their garden records resolve the pedigree?
+- potato-blight-ships: Which Atlantic shipments can be linked to Europe’s first potato blight outbreaks?
+  Potato blight helped set off the Irish famine. A shipping record and a farmer’s letter could show how the disease first reached a European field.
+- indian-ocean-tsunamis: Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450?
+  Geology and archaeology show two great tsunamis struck northern Sumatra around 1394 and 1450, but no contemporary text describing either has been identified.

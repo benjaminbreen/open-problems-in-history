@@ -2,6 +2,8 @@ import { wilkinsonTitle } from "./wilkinson-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
+export const langleyTitle = "Did Langley’s team test either of Alexander Graham Bell’s kite designs?";
+export const langleyDescription = "In March 1902, Bell suggested two ways to rebuild Samuel Langley’s kite. A notebook records the conversation. A later flight record could show whether either idea got into the air.";
 
 const media = "/media/leads/grant";
 const transcript = "https://www.nps.gov/edis/learn/photosmultimedia/prince-bismarck-and-count-moltke-before-the-recording-horn.htm#:~:text=Herr%20Wangemann%20is%20here";
@@ -14,6 +16,12 @@ export function leadsHTML() {
     <article class="leads-page">
       <h1 class="page-title">Leads</h1>
       <p class="lead-intro">Start with a source. See what it can tell us and what remains to be found.</p>
+      <a class="lead-entry" href="/leads/langley-kite">
+        <p class="lead-label">Potomac River, 1902 · Early flight</p>
+        <h2>${langleyTitle}</h2>
+        <p>${langleyDescription}</p>
+        <span class="lead-link">Read the notebook <span aria-hidden="true">→</span></span>
+      </a>
       <a class="lead-entry" href="/leads/wilkinson-dictionary">
         <p class="lead-label">The Mississippi River, 1792 · Espionage</p>
         <h2>${wilkinsonTitle}</h2>
@@ -37,6 +45,42 @@ export function leadsHTML() {
         <p>An American recorded a letter on an Edison phonograph. Could two words in the letter and a child’s drawing help identify him?</p>
         <span class="lead-link">Listen and examine the evidence <span aria-hidden="true">→</span></span>
       </a>
+    </article>`;
+}
+
+export function langleyHTML() {
+  const notebook = "https://edan.si.edu/slideshow/viewer/?eadrefid=NASM.XXXX.0494_ref690";
+  const journal = "https://tile.loc.gov/storage-services/service/mss/magbell/216/21610101/21610101.pdf";
+  const scans = "/media/leads/langley";
+  return `
+    <article class="leads-page kite-lead">
+      <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">Methodology ↓</a></div>
+      <header class="lead-hero">
+        <p class="lead-label">Potomac River · March 1902</p>
+        <h1 class="page-title">${langleyTitle}</h1>
+        <p class="lead-intro">On March 10, 1902, Samuel Langley and Alexander Graham Bell went to an island in the Potomac to fly a kite. There was so little wind that Bell ran with the string, then let go to keep Langley’s kite from smashing into the ground. A notebook from the outing records Bell suggesting two ways to rebuild it. A later flight record could tell us whether his advice changed what Langley’s team flew.</p>
+      </header>
+      <section class="lead-evidence">
+        <h2>What did Bell suggest?</h2>
+        <p class="lead-intro">The kite had a cell, an open section that caught the wind. Bell proposed putting a second cell behind the first. Or the team could add one on either side and move the original cell back about six inches. The proposal starts halfway down one notebook page and ends at the top of the next.</p>
+        <div class="lead-docs">
+          <figure><a class="lead-doc" href="${scans}/page-14.webp" aria-label="Enlarge notebook page 14"><img src="${scans}/page-14.webp" width="1506" height="2880" alt="Below the shorthand, a pencilled passage begins ‘Mr Bell suggested’ and describes adding cells to the kite." loading="lazy"></a>
+            <figcaption><h3>Page 14</h3><p>Look for “Mr Bell suggested” beneath the shorthand, then “two cells” and “three cells.”</p>
+            <p class="lead-credit"><a href="${notebook}">Samuel P. Langley Collection, National Air and Space Museum Archives, box 62, folder 7</a></p></figcaption></figure>
+          <figure><a class="lead-doc" href="${scans}/page-15.webp" aria-label="Enlarge notebook page 15"><img src="${scans}/page-15.webp" width="1489" height="2880" alt="The proposal ends with ‘moved back about six inches.’ The figures 930 and 50 × 25 appear below." loading="lazy"></a>
+            <figcaption><h3>Page 15</h3><p>The words “moved back about six inches” complete the second design. The weight and dimensions farther down the page help date the conversation.</p>
+            <p class="lead-credit"><a href="${notebook}">Same notebook, next page</a> · <a href="${journal}#page=105">Compare the measurements in Langley’s letter</a></p></figcaption></figure>
+        </div>
+      </section>
+      <section class="lead-open">
+        <h2>Did either design fly?</h2>
+        <p>The notebook records a suggestion. A dated workshop drawing with two cells in line or three cells side by side would show that someone worked up one of the designs. A flight log, photograph or letter describing a test of that arrangement would take the story a step further. The place to look is in the team’s papers in the weeks after March 10.</p>
+      </section>
+      <section class="lead-methodology" id="methodology" aria-labelledby="methodology-heading">
+        <h2 id="methodology-heading"><a href="#methodology">Methodology <span aria-hidden="true">¶</span></a></h2>
+        <p>The Smithsonian catalogues this notebook as undated. Pages 14 and 15 switch from shorthand to ordinary handwriting. Page 15 gives a weight of 930 grams and measurements of 50 by 25 centimetres. The same figures appear in Langley’s March 11 letter to Bell about the previous day’s trial, copied into Bell’s journal on pages 631–634. That match places the notebook passage at a particular outing. Whether the team acted on Bell’s advice remains open.</p>
+        <p><a href="${notebook}">Smithsonian notebook</a> · <a href="${journal}#page=103">Bell’s journal at the Library of Congress</a> · <a href="https://sirismm.si.edu/EADpdfs/NASM.XXXX.0494.pdf">Langley collection finding aid</a></p>
+      </section>
     </article>`;
 }
 

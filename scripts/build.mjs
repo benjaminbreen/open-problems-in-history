@@ -7,7 +7,7 @@ import fs from "node:fs";
 import crypto from "node:crypto";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
-import { grantDescription, grantHTML, grantTitle, leadsHTML } from "../leads-render.js";
+import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
 
 const dir = "data/problems";
@@ -31,7 +31,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   problems.push(p);
 }
 const byId = new Map(problems.map((p) => [p.id, p]));
-const leadTitles = new Map([["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle]]);
+const leadTitles = new Map([["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
 for (const p of problems) {
   const links = [
     ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
@@ -118,6 +118,14 @@ fs.writeFileSync("leads/grant-cylinder/index.html", page({
     + `<script src="/grant-player.js?v=${ver}" type="module"></script>\n`,
   main: grantHTML(),
 }));
+fs.mkdirSync("leads/langley-kite", { recursive: true });
+fs.writeFileSync("leads/langley-kite/index.html", page({
+  title: `${langleyTitle} · ${SITE}`,
+  description: langleyDescription,
+  head: social({ title: langleyTitle, description: langleyDescription, url: `${URL}/leads/langley-kite`, image: `${URL}/og/langley-kite.jpg`, type: "article" })
+    + '<link rel="stylesheet" href="/leads/methodology.css">\n',
+  main: langleyHTML(),
+}));
 fs.mkdirSync("leads/wilkinson-dictionary", { recursive: true });
 fs.writeFileSync("leads/wilkinson-dictionary/index.html", page({
   title: `${wilkinsonTitle} · ${SITE}`,
@@ -189,6 +197,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-v2</loc></url>
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
+<url><loc>${URL}/leads/langley-kite</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary</loc></url>
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
