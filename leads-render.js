@@ -1,3 +1,4 @@
+import { dodoTitle, dodoDescription } from "./dodo-lead.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
 
 export const grantTitle = "A voice from Vienna";
@@ -16,6 +17,12 @@ export function leadsHTML() {
     <article class="leads-page">
       <h1 class="page-title">Leads</h1>
       <p class="lead-intro">Start with a source. See what it can tell us and what remains to be found.</p>
+      <a class="lead-entry" href="/leads/dodo-journal">
+        <p class="lead-label">Mauritius, 1615 · Natural history</p>
+        <h2>${dodoTitle}</h2>
+        <p>${dodoDescription}</p>
+        <span class="lead-link">Read the manuscripts <span aria-hidden="true">→</span></span>
+      </a>
       <a class="lead-entry" href="/leads/langley-kite">
         <p class="lead-label">Potomac River, 1902 · Early flight</p>
         <h2>${langleyTitle}</h2>

@@ -1,0 +1,85 @@
+@import url("/leads/methodology.css");
+@import url("/leads/notes.css");
+
+.leads-page.dodo-lead { max-width: 67.5rem; margin: 1.6rem auto 3rem; }
+.dodo-lead { --dodo-green: #285847; }
+.dodo-lead a { text-underline-offset: .17em; }
+.dodo-mast { margin: 1.6rem 0 1.2rem; border-block: 1px solid var(--ink); padding: clamp(1.2rem, 3vw, 2.1rem) 0; display: grid; grid-template-columns: minmax(0, 2fr) minmax(10rem, 1fr); align-items: center; gap: clamp(1rem, 5vw, 4rem); }
+.dodo-mast .page-title { margin: .8rem 0 1rem; max-width: 14ch; font-size: clamp(2.7rem, 6.4vw, 5.1rem); line-height: .99; letter-spacing: -.045em; text-wrap: balance; }
+.dodo-deck { max-width: 39ch; margin: 0 0 1.2rem; color: var(--ink-2); font: clamp(1.15rem, 2vw, 1.46rem)/1.4 var(--serif); }
+.dodo-jump { font: .82rem/1.5 var(--mono); }
+.dodo-lead figure { min-width: 0; margin: 0; }
+.dodo-mast img { display: block; margin: auto; width: auto; max-width: 100%; height: clamp(13rem, 26vw, 20rem); object-fit: contain; }
+.dodo-lead figcaption, .dodo-lead .dodo-credit { margin: .45rem 0 0; font: .85rem/1.38 var(--serif); color: var(--muted); }
+.dodo-mast figcaption { max-width: 29ch; margin-inline: auto; }
+.dodo-note { padding: 1rem clamp(1rem, 3vw, 1.75rem); max-width: 74ch; border-left: 3px solid var(--dodo-green); background: var(--bg-2); }
+.dodo-lead .dodo-note h2 { margin: 0 0 .45rem; border: 0; padding: 0; font: 500 .84rem/1.4 var(--mono); color: var(--ink); text-transform: none; letter-spacing: 0; }
+.dodo-note p { margin: .35rem 0; font: 1.04rem/1.45 var(--serif); }
+.dodo-lead .lead-passage { color: var(--ink-2); font: 1.23rem/1.5 var(--serif); }
+.dodo-lead .lead-passage > h2 { margin: 1.65rem 0 .55rem; border: 0; padding: 0; font: 500 clamp(1.65rem, 3vw, 2.15rem)/1.12 var(--serif); text-transform: none; letter-spacing: -.025em; color: var(--ink); }
+.dodo-lead .lead-passage > p { margin: 0 0 .8em; }
+.dodo-lead :is(#methodology,#reader,#map,.dodo-place) { scroll-margin-top: calc(var(--head-h, 80px) + 1.5rem); }
+.dodo-reader, .dodo-map { display: block; margin: .8rem 0; padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--rule); background: var(--bg-2); }
+.dodo-lead :is(.dodo-reader,.dodo-map) h3 { margin: 0; font: 500 clamp(1.5rem, 2.6vw, 2.05rem)/1.2 var(--serif); color: var(--ink); }
+.dodo-reader > p, .dodo-map > p { margin: .45rem 0 1.1rem; font-size: 1.06rem; }
+.dodo-controls { display: flex; flex-wrap: wrap; gap: .85rem 2rem; align-items: center; margin: 1rem 0; }
+.dodo-controls fieldset { display: inline-flex; min-width: 0; margin: 0; padding: 0; border: 0; }
+.dodo-controls legend { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.dodo-controls fieldset label { position: relative; display: flex; cursor: pointer; }
+.dodo-controls fieldset input { position: absolute; opacity: 0; }
+.dodo-controls fieldset span { border: 1px solid var(--dodo-green); color: var(--dodo-green); padding: .55rem .75rem; font: .82rem/1.35 var(--mono); }
+.dodo-controls fieldset label + label span { border-left: 0; }
+.dodo-controls fieldset input:checked + span { background: var(--dodo-green); color: var(--on-green, #fff); }
+.dodo-controls fieldset input:focus-visible + span, .dodo-pin:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; z-index: 1; }
+.dodo-locate { display: inline-flex; align-items: center; gap: .45rem; font: .94rem/1.35 var(--serif); cursor: pointer; }
+.dodo-locate input { width: 1.05rem; height: 1.05rem; accent-color: var(--dodo-green); }
+.dodo-entry { border-top: 1px solid var(--rule); }
+.dodo-entry:last-child { border-bottom: 1px solid var(--rule); }
+.dodo-entry summary { padding: .85rem 0; cursor: pointer; color: var(--ink); line-height: 1.3; }
+.dodo-entry summary span { display: inline-block; min-width: 9rem; font: .8rem/1.5 var(--mono); color: var(--ink-2); }
+.dodo-entry summary strong { font-weight: 500; }
+.dodo-entry summary:is(:hover,:focus-visible) strong { text-decoration: underline; }
+.dodo-sheet { padding: 0 0 1.15rem; }
+.dodo-facsimile { position: relative; display: block; width: fit-content; max-width: 100%; cursor: zoom-in; }
+.dodo-facsimile img { display: block; max-width: 100%; height: auto; max-height: 19rem; }
+.dodo-outline { display: none; position: absolute; box-sizing: border-box; outline: 3px solid #753211; border-radius: 3px; box-shadow: 0 0 0 2px #fff6ce; pointer-events: none; }
+.dodo-reader:has(#locate-word:checked) .dodo-outline { display: block; }
+.dodo-reading { padding: .75rem 1rem; margin: .85rem 0 .5rem; border-left: 2px solid var(--dodo-green); background: var(--bg); }
+.dodo-reading p { margin: 0; font: 1.23rem/1.45 var(--serif); }
+.dodo-reading mark { background: #ede1ae; color: #29271b; }
+.dodo-dutch, .dodo-reader:has(input[value="nl"]:checked) .dodo-english { display: none; }
+.dodo-reader:has(input[value="nl"]:checked) .dodo-dutch { display: block; }
+.dodo-context { max-width: 72ch; margin: 0; font: 1.06rem/1.48 var(--serif); }
+.dodo-atlas { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: center; gap: clamp(1rem, 3vw, 2.25rem); }
+.dodo-geography { position: relative; width: 100%; aspect-ratio: 5 / 4; background: #e3edeb url("/media/leads/dodo/indian-ocean.webp") center / 100% 100% no-repeat; border: 1px solid var(--rule); }
+.dodo-geography > span { position: absolute; color: #574e3a; font: .72rem/1.2 var(--mono); }
+.dodo-geography .sea { left: 42%; top: 55%; font: italic clamp(.88rem, 2vw, 1.15rem)/1.3 var(--serif); color: #5e7773; }
+.dodo-geography .india { left: 84%; top: 4%; }
+.dodo-geography .madagascar { left: 3%; top: 81%; }
+.dodo-pin { position: absolute; display: inline-flex; gap: .27rem; align-items: center; transform: translate(-5px, -50%); min-height: 1.85rem; padding: 0; border: 0; background: transparent; text-decoration: none; color: #1c392f; white-space: nowrap; cursor: pointer; font: 600 .86rem/1 var(--serif); text-shadow: 0 0 3px #fff; }
+.dodo-pin::before { content: ""; width: 9px; height: 9px; border: 1px solid #fff; border-radius: 100%; background: #2d5242; box-sizing: border-box; }
+.dodo-pin[aria-pressed="true"]::before { background: #954411; outline: 2px solid #954411; outline-offset: 1px; }
+.dodo-pin[aria-pressed="true"], .dodo-pin:hover { text-decoration: underline; text-underline-offset: 3px; }
+.dodo-place h4 { margin: 0 0 .4rem; color: var(--ink); font: 500 1.4rem/1.2 var(--serif); }
+.dodo-place p { margin: 0; font: 1.08rem/1.48 var(--serif); }
+.dodo-place + .dodo-place:not([hidden]) { margin-top: 1rem; }
+@media (max-width: 959px) {
+  .leads-page.dodo-lead { max-width: 44rem; }
+}
+@media (max-width: 650px) {
+  .dodo-mast { grid-template-columns: minmax(0, 1fr); }
+  .dodo-mast figure { display: flex; gap: .75rem; align-items: end; }
+  .dodo-mast img { height: 11rem; }
+  .dodo-mast figcaption { max-width: 22ch; margin: 0; }
+  .dodo-atlas { grid-template-columns: minmax(0, 1fr); }
+  .dodo-entry summary span { min-width: auto; margin-right: .55rem; }
+  .dodo-entry summary strong { font-size: 1.05rem; }
+  .dodo-controls fieldset span { padding: .55rem .4rem; font-size: .75rem; }
+  .dodo-facsimile img { max-height: none; }
+  body:has(.dodo-lead) .foot-links { grid-template-rows: repeat(7, auto); column-gap: 1rem; }
+}
+
+:root[data-theme="dark"] .dodo-lead { --dodo-green: #a4cbb3; --on-green: #132a20; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .dodo-lead { --dodo-green: #a4cbb3; --on-green: #132a20; }
+}

@@ -1,0 +1,24 @@
+.lead-noted { --note-gap: clamp(2.5rem, 6vw, 6rem); }
+.lead-noted > .lead-passage { min-width: 0; }
+.lead-noteref { font: 400 .58em/0 var(--mono); vertical-align: super; }
+.lead-noteref a { margin-inline-start: .12em; padding: .24em; color: var(--muted); text-decoration: none; }
+.lead-noteref a:is(:hover,:focus-visible) { color: var(--ink); }
+.lead-noteref a:hover, .lead-note-number:hover { text-decoration: underline; }
+.lead-noteref a, .lead-notes li, .lead-notes h2 { scroll-margin-block: calc(var(--head-h, 72px) + 1.5rem); }
+.lead-notes { display: block; margin: 2.5rem 0 0; padding-top: 1.5rem; border-top: 1px solid var(--ink); }
+.lead-noted .lead-notes h2 { margin: 0 0 1rem; padding: 0; border: 0; color: var(--muted); font: 400 .82rem/1.4 var(--mono); text-transform: none; letter-spacing: 0; }
+.lead-notes ol { list-style: none; padding: 0; margin: 0; }
+.lead-notes li { display: grid; grid-template-columns: 1.1em minmax(0, 1fr); gap: .5em; margin: 1.1em 0; font: .92rem/1.48 var(--serif); color: var(--muted); overflow-wrap: anywhere; }
+.lead-notes li:is(.reference-active,:hover,:focus-within,:target) { color: var(--ink-2); }
+.lead-notes li:focus { outline: none; }
+.lead-notes a { text-underline-offset: .15em; text-decoration-color: color-mix(in srgb, currentColor 48%, transparent); }
+.lead-notes a:is(:hover,:focus-visible) { text-decoration-color: currentColor; }
+.lead-note-number { width: fit-content; align-self: start; color: inherit; font: 400 .72rem/1.85 var(--mono); text-decoration: none; }
+@media (min-width: 960px) {
+  .lead-noted { display: grid; grid-template-columns: minmax(0, 2.45fr) minmax(14rem, 1fr); column-gap: var(--note-gap); }
+  .lead-passage { grid-column: 1; grid-row: var(--note-row); }
+  .lead-passage-wide { grid-column: 1 / -1; }
+  .lead-notes, .lead-notes ol { display: contents; }
+  .lead-notes h2 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  .lead-notes li { grid-column: 2; grid-row: var(--note-row); align-self: start; margin: 1.55rem 0 1rem; max-width: 32ch; }
+}
