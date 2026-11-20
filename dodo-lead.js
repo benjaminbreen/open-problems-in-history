@@ -137,7 +137,7 @@ export function dodoHTML() {
     {
       id: "next",
       body: ref => `<h2>What to look for next</h2><p>A letter saying who received a bird at Surat, or a household entry paying someone to feed or transport it inland, could connect a port sighting to an artist or patron. The bird’s description matters as much as its destination. In 1625, for instance, a Dutch merchant did send a large flightless bird to Jahangir. His letter calls it a cassowary, a different bird that the Dutch also traded.${ref}</p>
-      <p>The dated catches already tell us something about the dodo on Mauritius. Finding the painter’s model will take a record that follows an individual bird one step further.</p><p><a href="/p/mughal-dodo">Go to the open problem about the Mughal painting →</a></p>`,
+      <p>The dated catches already tell us something about the dodo on Mauritius. Finding the painter’s model will take a record that follows an individual bird one step further.</p><p><a href="/leads/mughal-dodo">How did a dodo become the subject of a Mughal painting? →</a></p>`,
       note: `The <a href="${archive(1084,134)}">1625 letter from Surat</a> names the bird. A <a href="${archive(1090,626)}">later letter</a> records how well the king received it.`,
     },
   ];

@@ -1,3 +1,4 @@
+import { leadStubs } from "./lead-stubs.js";
 import { archiveLeads } from "./archive-leads.js";
 import { notedPassages } from "./lib/lead-notes.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
@@ -20,11 +21,12 @@ export const leadsDescription = "Some preliminary writeups of findings and metho
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
+    ...leadStubs.map(stub => ({ ...stub, action: "Read the research stub" })),
     ...archiveLeads,
     {
       slug: "dodo-journal", published: "2026-11-19T11:05:53-08:00",
       label: "Mauritius, 1615 · Natural history", title: dodoTitle, description: dodoDescription,
-      image: "/media/leads/dodo/dodo-detail.webp", alt: "A brown dodo with a hooked bill, from a Mughal album painting.",
+      image: "/media/leads/dodo/scan-277.webp", alt: "A manuscript page from the Dutch ship’s journal.",
       action: "Read the manuscripts",
     },
     {

@@ -27,9 +27,6 @@
       "ask": "Assess which population histories remain compatible with the elephants’ genetic diversity."
     }
   ],
-  "related": [
-    "toromiro-provenance"
-  ],
   "provenance": {
     "drafted_by": "GPT-6 (Codex)",
     "drafted_on": "2026-11-19",
@@ -93,5 +90,8 @@
       "digitized": "full",
       "note": "An edition of Sulu genealogies and historical documents. Separate the date of a tradition from the date it was written down."
     }
+  ],
+  "leads": [
+    "toromiro-provenance"
   ]
 }

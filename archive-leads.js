@@ -13,7 +13,7 @@ const buru = {
   description: 'In 1738, people on an Indonesian island fled uphill as seawater rushed inland. A Dutch official described it twice. His letters preserve evidence of a tsunami missing from modern catalogues.',
   image: '/media/leads/buru/boero.webp', alt: 'An eighteenth-century map of Buru, with rivers winding from the mountains to the coast.',
   caption: `Buru, drawn about fifteen years after the earthquake. The large bay at upper right is Kayeli Bay. <a href="${map}">Royal Library, The Hague · engraving and credits</a>`,
-  action: 'Compare the two letters', related: '/p/padang-1697',
+  action: 'Compare the two letters', related: '/p/sumatra-tsunamis',
   relatedLabel: 'Another coastal earthquake in the Company records, at Padang on Sumatra in 1697',
 };
 const khipus = {

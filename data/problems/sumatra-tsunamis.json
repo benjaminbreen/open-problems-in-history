@@ -1,33 +1,39 @@
 {
-  "id": "indian-ocean-tsunamis",
-  "title": "Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450?",
-  "short": "Geology and archaeology show two great tsunamis struck northern Sumatra around 1394 and 1450, but no contemporary text describing either has been identified.",
+  "id": "sumatra-tsunamis",
+  "title": "Which parts of Sumatra’s coast were struck by major tsunamis before instrumental records began?",
+  "short": "Buried coastal deposits point to two destructive waves in Aceh centuries before 2004. Farther south, a Dutch council described the sea surging up the Padang River in 1697. Together these records could show which settlements were hit and how far the waves reached.",
   "region": "Indian Ocean",
   "field": "Chronology",
   "start": 1390,
-  "end": 1460,
+  "end": 1703,
   "flags": [
-    "science"
+    "science",
+    "digitization"
   ],
   "needs": [
     {
       "who": "geoscientists",
-      "ask": "Judge whether each candidate passage, with its date range, describes effects and a location consistent with a Sunda megathrust source and the coral-dated 1394 and 1450 windows."
+      "ask": "Compare dated observations of flooding with published coral and coastal records from Aceh and the Mentawai Islands."
     },
     {
       "who": "philologists",
       "ask": "Search the Ming Shilu, Ma Huan, Fei Xin, Gong Zhen and the Malay chronicles for sea floods or abandoned towns, and record every passage and edition examined."
+    },
+    {
+      "who": "archivists",
+      "ask": "Locate the Padang council’s enclosed damage survey and identify independent reports from nearby ports."
     }
   ],
-  "matters": "Coral microatolls on Simeulue record sudden uplift above the Sunda megathrust in 1394 ± 2 and 1450 ± 3 CE, and tsunami deposits and abandoned settlements on the Aceh coast have been tied to these events, making them the closest predecessors of the 2004 Indian Ocean tsunami. A dated written witness would test the geological chronology independently, as Japanese records did for the 1700 Cascadia earthquake, and would constrain the extent of the events beyond Aceh (to Sri Lanka, South India or the Malay Peninsula), which matters for hazard models. It would also test the archaeological argument that the 1394 tsunami emptied the low-lying ports around Lamri and helped shift trade toward Samudera-Pasai and Melaka before the rise of the Aceh Sultanate.",
-  "stuck": "The geological case was built after 2004 by earth scientists and archaeologists, and their historical discussion relies on indirect textual signals such as the fading of Lamri from Arabic sailing texts rather than on a search for a description of the event. The candidate sources are scattered across languages and genres: the Ming Shilu and Zheng He-era accounts (Ma Huan, Fei Xin, Gong Zhen), which describe Lamri and Samudera in the 1400s–1430s; Malay chronicles such as the Hikayat Raja Pasai and Sejarah Melayu, known only from much later copies and lacking dates; and Arabic, Persian and South Indian materials. Ming restrictions on private maritime trade from 1371 also thinned Chinese contact with Sumatra precisely around 1394, so silence in Chinese records is hard to interpret.",
-  "solved": "Either a text written or reliably dated before c. 1520 that describes a sea flood, destructive wave or earthquake on the coasts of the eastern Indian Ocean and can be dated within the 1394 ± 2 or 1450 ± 3 CE windows; or a published negative search listing every source and passage examined for those windows (Ming Shilu, Zheng He-era accounts, Malay chronicles, Arabic nautical and geographical texts, Sri Lankan and South Indian records), with search terms and editions, so the absence can be cited and extended.",
+  "matters": "The Indian Ocean tsunami of 2004 struck a coast with a long history of destructive waves. In Aceh, at the northern end of Sumatra, the abandonment of low-lying settlements has been linked to a tsunami around 1394. Which ports were flooded matters for understanding where people resettled and how trade shifted. A Dutch council dispatch from Padang, much farther south on the west coast, describes repeated surges after the earthquake of 23 February 1697. An account from another port could help establish the extent of that event and test proposed locations for the earthquake offshore.",
+  "stuck": "In Aceh, coral growth and coastal deposits point to major events around 1394 and 1450. No securely dated contemporary description of either wave has been identified. Names for ports changed across languages, and some chronicles survive only in later copies. At Padang the historical account survives, but the council gave no dependable wave heights. Coral evidence from the Mentawai Islands allows more than one candidate earthquake. The missing evidence differs from place to place.",
+  "solved": "For each event, identify the coastal places where independent evidence establishes inundation and give the dates and uncertainties. A contemporary account of flooding at a named Acehnese port could test the geological and archaeological reconstruction. At Padang, independent observations from several sites could distinguish competing earthquake sources. A regional account should show which stretches of coast the evidence actually covers.",
   "approach": [
     "Extract every Ming Shilu entry for 1385–1460 that names Lamri (Nanwuli, Nanboli), Samudera (Sumendala), Aru, Melaka or Ceylon from Geoff Wade's open-access translations (bulk use by arrangement with NUS Press) and the Chinese full text, and flag gaps in tribute missions, reports of envoys lost at sea, and any notices of floods or earthquakes reported by foreign missions.",
     "Read Ma Huan's chapter on Nanboli (visited in the 1410s, where he reports only about a thousand households), together with Fei Xin and Gong Zhen, for signs of recent destruction, relocated settlement or altered coastline, and compare their descriptions with the pre-1394 sites mapped by Daly et al.",
     "Search the Hikayat Raja Pasai, Sejarah Melayu and Acehnese chronicles in their manuscript witnesses for floods from the sea, abandoned towns or divine punishments by water, and test whether any episode can be anchored to the 1394 or 1450 windows by its reign context.",
     "Query OpenITI and the Arabic nautical texts (Ibn Majid, Sulayman al-Mahri) for Lamri, Fansur and Mandara, and South Indian and Sri Lankan chronicles for coastal inundations in the same decades.",
-    "Pass every candidate passage, with its date range, to the Earth Observatory of Singapore team or other paleoseismologists, who can judge whether the described effects and location fit a Sunda megathrust source and the coral-dated windows."
+    "Find the enclosed damage survey named in the council dispatch and read the April and May York Fort letters received at Madras in July. Compare the locations and timing with models of offshore ruptures.",
+    "Map each independently attested location and event date. Compare the mapped observations with coastal deposits and dated coral uplift. Allow for places where no contemporary local account survives."
   ],
   "existing": [
     {
@@ -173,6 +179,14 @@
       "venue": "Bulletin de l'École française d'Extrême-Orient 105: 115–144",
       "url": "https://doi.org/10.3406/befeo.2019.6298",
       "note": "Brought together the Chinese, Arabic and Malay references to Lamri with the survey data, the fullest guide to the textual sources a search would need to read."
+    },
+    {
+      "year": 2017,
+      "authors": "Belle Philibosian et al.",
+      "title": "Earthquake supercycles on the Mentawai segment of the Sunda megathrust in the seventeenth century and earlier",
+      "venue": "Journal of Geophysical Research: Solid Earth",
+      "url": "https://doi.org/10.1002/2016JB013560",
+      "note": "Estimates an uplift around 1703 and considers the documented 1697 earthquake as a possible match."
     }
   ],
   "archives": [
@@ -289,13 +303,37 @@
       "aliases": [
         "OpenITI"
       ]
+    },
+    {
+      "repository": "Nationaal Archief, The Hague",
+      "collection": "VOC 1596, scans 343–345",
+      "url": "https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1596_0344",
+      "digitized": "full",
+      "note": "The council account of the waves at Padang."
+    },
+    {
+      "repository": "British Library, London",
+      "collection": "IOR/G/19/33, Fort St George incoming letters, 1697",
+      "url": "https://searcharchives.bl.uk/catalog/040-000177012",
+      "digitized": "partial",
+      "note": "Digitized with institutional access. The July entries may contain letters from the west Sumatran coast."
+    },
+    {
+      "repository": "University of Madras",
+      "collection": "Diary and Consultation Book of the Agent, 1697, p. 79",
+      "url": "https://archive.org/details/diaryconsultatio1697madr/page/79/mode/1up",
+      "digitized": "full",
+      "note": "Records the arrival of the York Fort letters in July."
     }
   ],
   "provenance": {
-    "drafted_by": "Claude Opus 5.5",
-    "drafted_on": "2026-10-08",
-    "compiled_by": "Claude Opus 5.5",
-    "compiled_on": "2026-10-08",
+    "drafted_by": "Codex",
+    "drafted_on": "2026-11-20",
+    "compiled_by": "Codex",
+    "compiled_on": "2026-11-20",
     "needs_on": "2026-10-09"
-  }
+  },
+  "leads": [
+    "buru-tsunami"
+  ]
 }

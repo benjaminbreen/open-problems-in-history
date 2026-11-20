@@ -1,4 +1,4 @@
-import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, expandedRoundId, currentRoundId, editions } from "/lib/potential.js";
+import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, expandedRoundId, revisedRoundId, currentRoundId, editions } from "/lib/potential.js";
 import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
@@ -303,7 +303,8 @@ function refreshVotes(id) {
 
 // ---------- impact rating ----------
 function shuffled(ids) {
-  const key = ballotRound() === currentRoundId ? `op.rate.order.${currentRoundId}` : "op.rate.order";
+  const id = ballotRound();
+  const key = id === originalRoundId || id === expandedRoundId ? "op.rate.order" : `op.rate.order.${id}`;
   let order = [];
   try { order = JSON.parse(store.get(key, "[]")); } catch {}
   if (order.length !== ids.length || !ids.every((id) => order.includes(id))) {
@@ -320,7 +321,8 @@ function ballotRound() {
 function ballotQuestions() {
   const id = ballotRound();
   if (id === originalRoundId) return round.originalQuestions;
-  return id === expandedRoundId ? round.expandedQuestions : round.questions;
+  if (id === expandedRoundId) return round.expandedQuestions;
+  return id === revisedRoundId ? round.revisedQuestions : round.questions;
 }
 function draftKey(id) {
   return id === originalRoundId ? "op.rate.potential.v1" : `op.rate.potential.${id}`;
@@ -346,7 +348,7 @@ function renderRate() {
   d.judgments ||= {}; d.notes ||= {};
   const roundId = ballotRound();
   const original = roundId === originalRoundId;
-  const earlierDrafts = [expandedRoundId, originalRoundId].filter(id => {
+  const earlierDrafts = [revisedRoundId, expandedRoundId, originalRoundId].filter(id => {
     const saved = draft(id);
     return Object.keys(saved.judgments || {}).length || Object.keys(saved.notes || {}).length;
   });
@@ -372,10 +374,12 @@ function renderRate() {
         <label class="rf-credit"><input type="checkbox" name="credit" value="1"${d.credit ? " checked" : ""}><span>Thank me by name and affiliation on the <a href="/about" target="_blank" rel="noopener">About</a> page. Leave unchecked to stay anonymous.</span></label>
         <ol class="rate-list">${order.map((id, i) => {
           const p = byId[id];
+          const path = round.readingLinks[id] ?? (problems.some(item => item.id === id) ? `/p/${id}` : null);
+          const reading = path?.startsWith("/p/") ? path + "#ballot-reading" : path;
           return `<li>
             <span class="rank">${i + 1}</span>
             <div class="main">
-              <a class="ttl" href="/p/${esc(id === "james-pawpaw-remedy" ? "sloane-informants" : id)}#ballot-reading" target="_blank" rel="noopener">${esc(p.title)}</a>
+              ${reading ? `<a class="ttl" href="${esc(reading)}" target="_blank" rel="noopener">${esc(p.title)}</a>` : `<span class="ttl">${esc(p.title)}</span>`}
               <p class="evidence">${esc(p.evidence)}</p>
               ${p.method ? `<p class="evidence method"><strong>One way to investigate.</strong> ${esc(p.method)}</p>
                 <p class="ballot-sources">Sources · ${p.sources.map(({ label, url }) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(" · ")}</p>` : ""}
@@ -633,7 +637,7 @@ async function renderAdmin() {
   let list, posts, ratings;
   try { [list, posts, ratings] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1"), api("/api/ratings")]); }
   catch { store.set("op.admin", null); app.innerHTML = `<h1 class="page-title">Admin</h1><p class="note">Token rejected.</p>`; setTimeout(renderAdmin, 1200); return; }
-  state.human = humanPotential(ratings.approved, round.currentRoundId, round.unchangedIds);
+  state.human = humanPotential(ratings.approved, round.currentRoundId, round.unchangedIdsByRound);
   const group = (st) => list.filter((s) => s.status === st);
   const item = (s) => `<div class="admin-item">
       <b>${esc(s.title)}</b>

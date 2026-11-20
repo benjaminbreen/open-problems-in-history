@@ -5,9 +5,10 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { rankBallots, validJudgment, compareRank, originalPacketPath, expandedPacketPath, currentPacketPath, currentRoundId, originalRoundId } from "../lib/potential.js";
+import { rankBallots, validJudgment, compareRank, originalPacketPath, expandedPacketPath, revisedPacketPath, currentPacketPath, expandedRoundId, revisedRoundId, currentRoundId, originalRoundId } from "../lib/potential.js";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
+import { leadStubs, stubHTML } from "../lead-stubs.js";
 import { archiveLeads } from "../archive-leads.js";
 import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
 import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
@@ -35,7 +36,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   problems.push(p);
 }
 const byId = new Map(problems.map((p) => [p.id, p]));
-const leadTitles = new Map([...archiveLeads.map(lead => [lead.slug, lead.title]), ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
+const leadTitles = new Map([...[...archiveLeads, ...leadStubs].map(lead => [lead.slug, lead.title]), ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
 for (const p of problems) {
   const links = [
     ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
@@ -58,7 +59,7 @@ function expandedPacket(path, titles) {
   const questions = entries.map((entry, i) => {
     const [heading, evidence, investigation, citations, ...extra] = entry.trim().split("\n\n");
     const match = /^(\d+)\. (.+?) \(`([\w-]+)`\)$/.exec(heading);
-    if (!match || Number(match[1]) !== i + 1 || titles.get(match[3]) !== match[2] || extra.length ||
+    if (!match || Number(match[1]) !== i + 1 || (titles && titles.get(match[3]) !== match[2]) || extra.length ||
         !evidence || !investigation?.startsWith("**One way to investigate.** ") || !citations?.startsWith("**Sources** ")) {
       throw new Error(`Invalid question in ${path} at position ${i + 1}`);
     }
@@ -71,14 +72,26 @@ function expandedPacket(path, titles) {
     if (!method || sources.length < 1) throw new Error(`Incomplete brief for ${match[3]}`);
     return { id: match[3], title: match[2], evidence, method, sources };
   });
-  if (questions.length !== titles.size || new Set(questions.map(q => q.id)).size !== titles.size)
+  const count = Number(/^Round `[\w-]+` · (\d+) questions$/m.exec(instructions)?.[1]);
+  if (questions.length !== count || (titles && count !== titles.size) || new Set(questions.map(q => q.id)).size !== count)
     throw new Error(`Question IDs do not match ${path}`);
   return { packet, instructions, questions };
 }
 const { questions: expandedQuestions } = expandedPacket(expandedPacketPath, originalTitles);
+const { questions: revisedQuestions } = expandedPacket(revisedPacketPath);
 const { packet, instructions, questions } = expandedPacket(currentPacketPath, new Map(problems.map(p => [p.id, p.title])));
-const expandedById = new Map(expandedQuestions.map(q => [q.id, q]));
-const unchangedIds = questions.filter(q => JSON.stringify(q) === JSON.stringify(expandedById.get(q.id))).map(q => q.id);
+function matchingBriefs(earlier) {
+  const byId = new Map(earlier.map(q => [q.id, q]));
+  return questions.filter(q => JSON.stringify(q) === JSON.stringify(byId.get(q.id))).map(q => q.id);
+}
+const unchangedIdsByRound = {
+  [expandedRoundId]: matchingBriefs(expandedQuestions),
+  [revisedRoundId]: matchingBriefs(revisedQuestions),
+};
+// Archived ballots retain the original prompts, even after an article moves.
+const redirects = JSON.parse(fs.readFileSync("vercel.json", "utf8")).redirects;
+const readingLinks = Object.fromEntries(redirects.filter(rule => rule.source.startsWith("/p/"))
+  .map(rule => [rule.source.slice(3), rule.destination.split("#")[0]]));
 function readRubric(instructions) {
   const scores = Array.from(instructions.matchAll(/^\d+\. \*\*(.+?)\.\*\* (.+)$/gm),
     ([, label, description]) => ({ label, description }));
@@ -102,7 +115,7 @@ const ballots = Object.entries(models).map(([model, label]) => {
 });
 // Keep the historical ballots intact. Compute positions among the questions still listed.
 const ai = rankBallots(ballots.map(({ rows }) => Object.fromEntries(Object.entries(rows).filter(([id]) => byId.has(id)))));
-fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, expandedQuestions, unchangedIds, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, expandedQuestions, revisedQuestions, unchangedIdsByRound, readingLinks, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
 const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
@@ -188,6 +201,16 @@ fs.writeFileSync("leads/grant-cylinder/index.html", page({
     + `<script src="/grant-player.js?v=${ver}" type="module"></script>\n`,
   main: grantHTML(),
 }));
+for (const lead of leadStubs) {
+  const path = `leads/${lead.slug}`;
+  fs.mkdirSync(path, { recursive: true });
+  fs.writeFileSync(`${path}/index.html`, page({
+    title: `${lead.title} · ${SITE}`, description: lead.description,
+    head: social({ title: lead.title, description: lead.description, url: `${URL}/${path}`, image: URL + lead.image, type: "article" })
+      + '<link rel="stylesheet" href="/leads/index.css">\n',
+    main: stubHTML(lead),
+  }));
+}
 for (const lead of archiveLeads) {
   const path = `leads/${lead.slug}`;
   fs.mkdirSync(path, { recursive: true });
@@ -294,7 +317,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-v2</loc></url>
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
-${archiveLeads.map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
+${[...archiveLeads, ...leadStubs].map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/dodo-journal</loc></url>
 <url><loc>${URL}/leads/langley-kite</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary</loc></url>

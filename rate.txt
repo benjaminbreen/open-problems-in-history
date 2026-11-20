@@ -1,6 +1,6 @@
 # Which historical questions could a research team answer using today’s digital sources?
 
-Round `2026-11-20-r2` · 71 questions
+Round `2026-11-20-r3` · 67 questions
 
 Imagine the same team of historians and AI agents investigating each question. They can search public digital collections, read scans, transcribe, write code, divide up work and check results against originals. They can follow specific leads across sessions with no fixed time limit. Assume today’s tools and public sources. New digitization, private holdings, bespoke specialist work, laboratory work and fieldwork are outside the scope.
 
@@ -18,10 +18,10 @@ Both contribution scores assume a convincing answer. Judge each independently of
 
 Use this packet and your general knowledge in a fresh conversation with browsing, shared project files and cross-chat memory off. The links identify the sources described in each brief. Read the whole shuffled list before finalizing your judgments. Disclose any prior exposure to rankings of these questions.
 
-Return one JSON object with all 71 IDs in packet order. Use whole numbers. Ties are fine. For each question, give a brief reason covering the decisive evidence or gap, what an answer would change, and any follow-on use.
+Return one JSON object with all 67 IDs in packet order. Use whole numbers. Ties are fine. For each question, give a brief reason covering the decisive evidence or gap, what an answer would change, and any follow-on use.
 
 ```json
-{"round_id":"2026-11-20-r2","model":"your model/version","prior_exposure":"none or brief disclosure","ratings":[
+{"round_id":"2026-11-20-r3","model":"your model/version","prior_exposure":"none or brief disclosure","ratings":[
   {"id":"question-id","chance_pct":null,"historical_contribution":null,"further_research":null,"reason":"Your brief judgment."}
 ]}
 ```
@@ -140,13 +140,13 @@ A camera obscura projects a scene onto a surface. Some of Vermeer’s paintings 
 
 **Sources** [Mauritshuis paintings and research](<https://mauritshuis.nl/en/discover/exhibitions/the-girl-in-the-spotlight>) · [Technical study of Vermeer’s studio](<https://doi.org/10.5092/jhna.2022.14.2.3>)
 
-### 15. Did anyone write down the Aceh tsunamis of c. 1394 and c. 1450? (`indian-ocean-tsunamis`)
+### 15. Which parts of Sumatra’s coast were struck by major tsunamis before instrumental records began? (`sumatra-tsunamis`)
 
-Coastal deposits and ruined settlements show that large waves struck the coast of Aceh in northern Sumatra around 1394 and 1450. The trading port of Lamri had contacts across the Indian Ocean and with China. A contemporary written account could connect the physical destruction with what happened to the people and the port.
+In Aceh, in northern Sumatra, coastal deposits and abandoned settlements point to tsunamis around 1394 and 1450. No contemporary written account of either wave has been identified. Farther south, a Dutch council dispatch describes repeated surges up the Padang River after an earthquake in 1697. It gives few clues about conditions elsewhere on the coast.
 
-**One way to investigate.** Search the Ming court records and regional chronicles under the port’s different names, allowing a few years either side of each geological date. Check promising passages in the original language. A description of the sea entering a named settlement carries much more weight than a gap in tribute missions.
+**One way to investigate.** Search regional and Chinese records for flooding at Acehnese ports under their historical names. For Padang, trace the damage survey mentioned in the dispatch and look for independent accounts from neighbouring ports. Compare the places and dates in those records with published coral and coastal evidence to establish how far each event can be traced.
 
-**Sources** [Translated Ming court records](<https://epress.nus.edu.sg/msl/>) · [Archaeology of Lamri](<https://doi.org/10.3406/befeo.2019.6298>)
+**Sources** [Ming court records](<https://epress.nus.edu.sg/msl/>) · [Archaeology of Lamri](<https://doi.org/10.3406/befeo.2019.6298>) · [Padang council dispatch](<https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1596_0344>) · [Mentawai coral study](<https://doi.org/10.1002/2016JB013560>)
 
 ### 16. Where is leaf 170 of the Archimedes Palimpsest? (`archimedes-leaf-170`)
 
@@ -156,15 +156,7 @@ A medieval scribe reused a manuscript of Archimedes for a prayer book. Several l
 
 **Sources** [1906 photograph](<https://archimedespalimpsest.net/Data/170r-163v/170r-163v_Arch21r_Heiberg_visible_stitch.jpg>) · [Identification of leaf 123](<https://www.cnrs.fr/sites/default/files/press_info/2026-03/26_03_09_CP_palimpseste-archimede_vEN.pdf>)
 
-### 17. Who grew and smoked cannabis on Ternate in 1676? (`ternate-gingie`)
-
-In February 1676 Dutch officials on Ternate, an island in the spice-producing Moluccas, ordered the destruction of a plant they called gingie. A council decision and a public proclamation survive in digitized records. They show what officials intended. They say much less about who owned the gardens, who smoked the plant or what happened after the order.
-
-**One way to investigate.** Follow the officials, named places and variant spellings through later council minutes, petitions and correspondence. Look for a dated inspection, complaint or dispute involving growers. Compare the language of enforcement with the original proclamation to distinguish a reported action from another copy of the same order.
-
-**Sources** [Dutch East India Company records](<https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1318_1656>) · [Searchable Dutch archival records](<https://www.openarchieven.nl/transcripties/toon/NL-HaNA_1.04.02_1318_1508>)
-
-### 18. How many early printed editions have been lost without trace? (`lost-editions`)
+### 17. How many early printed editions have been lost without trace? (`lost-editions`)
 
 Early printers issued books, pamphlets and single sheets that may survive in one copy or none. Catalogues, old inventories and fragments found in bookbindings offer glimpses of what disappeared. Cheap or heavily used works had different chances of survival from expensive volumes. The unit to count is an edition, however many copies it once had.
 
@@ -172,7 +164,7 @@ Early printers issued books, pamphlets and single sheets that may survive in one
 
 **Sources** [Incunabula Short Title Catalogue](<https://data.cerl.org/istc/_search>) · [Universal Short Title Catalogue](<https://www.ustc.ac.uk/>)
 
-### 19. Did Gregorian chant descend from Old Roman chant, or did both come from a common ancestor? (`gregorian-chant`)
+### 18. Did Gregorian chant descend from Old Roman chant, or did both come from a common ancestor? (`gregorian-chant`)
 
 Gregorian chant as transmitted in Frankish lands shares words and musical phrases with the tradition called Old Roman chant. Surviving Roman books with melodies are later than the earliest Frankish witnesses. A late copy could preserve an older way of singing. Digital manuscript images and chant indexes let the same pieces be compared across books.
 
@@ -180,7 +172,7 @@ Gregorian chant as transmitted in Frankish lands shares words and musical phrase
 
 **Sources** [Vatican chant manuscripts](<https://digi.vatlib.it/>) · [Cantus Index and Database](<https://cantusdatabase.org/>)
 
-### 20. Did the Black Death reach sub-Saharan Africa in the fourteenth century? (`black-death-africa`)
+### 19. Did the Black Death reach sub-Saharan Africa in the fourteenth century? (`black-death-africa`)
 
 The Black Death is documented in fourteenth-century Egypt and North Africa. Farther south, some excavated settlements were abandoned around this time, and surviving texts occasionally describe sudden mortality. Drought, conflict and migration can leave similar traces. Digitized chronicles, manuscript catalogues and published excavation reports cover some regions much better than others.
 
@@ -188,7 +180,7 @@ The Black Death is documented in fourteenth-century Egypt and North Africa. Fart
 
 **Sources** [Digitized African manuscripts](<https://www.vhmml.org/readingRoom/>) · [Endangered Archives Programme](<https://eap.bl.uk/>)
 
-### 21. What language does Linear A record, and can any proposed family beat chance? (`linear-a`)
+### 20. What language does Linear A record, and can any proposed family beat chance? (`linear-a`)
 
 Linear A survives mostly in short administrative records from Bronze Age Crete. Some signs resemble signs in the later Linear B script, which writes Greek. Borrowing their sound values produces possible pronunciations, but many proposed links to other languages depend on a handful of similar-sounding words. Sign images and searchable transcriptions are available.
 
@@ -196,7 +188,7 @@ Linear A survives mostly in short administrative records from Bronze Age Crete. 
 
 **Sources** [SigLA sign images](<https://sigla.phis.me/>) · [Linear A transcriptions](<https://lineara.xyz/>)
 
-### 22. What is the absolute chronology of early second-millennium BCE Mesopotamia? (`mesopotamian-chronology`)
+### 21. What is the absolute chronology of early second-millennium BCE Mesopotamia? (`mesopotamian-chronology`)
 
 King lists and dated business tablets establish the order of many events around the time of Hammurabi, yet rival chronologies put those events decades apart on our calendar. Copies of observations of Venus can fit several astronomical cycles. Excavated timbers and published radiocarbon dates provide a different clock, if they can be tied to particular reigns.
 
@@ -204,7 +196,7 @@ King lists and dated business tablets establish the order of many events around 
 
 **Sources** [British Museum tablets](<https://www.britishmuseum.org/collection/object/W_K-160>) · [Dating the wood samples](<https://doi.org/10.1038/s41598-020-69287-2>)
 
-### 23. How large was the Roman citizen population in the late Republic and under Augustus? (`roman-census`)
+### 22. How large was the Roman citizen population in the late Republic and under Augustus? (`roman-census`)
 
 A Roman census in 70/69 BCE recorded roughly 910,000 citizens. Augustus later reported over four million for 28 BCE. Scholars disagree over which people each total included, especially women and children. Resolving this would change estimates of Italy’s population. Inscriptions preserve the claims, and regional archaeological surveys offer independent evidence of settlement.
 
@@ -212,7 +204,7 @@ A Roman census in 70/69 BCE recorded roughly 910,000 citizens. Augustus later re
 
 **Sources** [Roman census texts](<https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Augustus/Res_Gestae/2*.html>) · [Published archaeological surveys](<https://www.fastionline.org/survey/>)
 
-### 24. How many people did the Justinianic Plague kill, and did it change late antique society? (`justinianic-plague`)
+### 23. How many people did the Justinianic Plague kill, and did it change late antique society? (`justinianic-plague`)
 
 Plague struck the Mediterranean world from the sixth century onward. Published evidence from burials identifies the disease, while eyewitness accounts describe heavy losses in particular cities. Neither establishes a death toll for the whole region. Tax documents on papyrus, inscriptions, excavated settlements and pollen records capture different aspects of life before and after outbreaks.
 
@@ -220,7 +212,7 @@ Plague struck the Mediterranean world from the sixth century onward. Published e
 
 **Sources** [Papyrological Navigator](<https://papyri.info/>) · [Published research on the first pandemic](<https://doi.org/10.1016/j.jas.2026.106473>)
 
-### 25. How many people lived in the Americas in 1492? (`americas-1492`)
+### 24. How many people lived in the Americas in 1492? (`americas-1492`)
 
 Estimates of the population of the Americas in 1492 differ by tens of millions. Most surviving tribute lists, parish registers and colonial inspections counted people after epidemics and displacement had begun. Published settlement surveys and radiocarbon dates offer a partly independent record of where people lived, with uneven coverage across regions.
 
@@ -228,7 +220,7 @@ Estimates of the population of the Americas in 1492 differ by tens of millions. 
 
 **Sources** [Digitized colonial reports from Mexico](<https://sites.utexas.edu/llilasbensonds/?p=704>) · [Archaeological radiocarbon data](<https://www.p3k14c.org/>)
 
-### 26. By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century? (`gunpowder`)
+### 25. By what route did knowledge of gunpowder reach Latin Europe in the thirteenth century? (`gunpowder`)
 
 Chinese texts attest knowledge of gunpowder by the eleventh century. Arabic and Latin references appear in the later thirteenth century, but the route connecting those written traditions remains unclear. Library records, digitized manuscripts and translations preserve names, marginal notes and sometimes a copyist’s date. An author’s purported lifetime can be much earlier than the surviving copy.
 
@@ -236,7 +228,7 @@ Chinese texts attest knowledge of gunpowder by the eleventh century. Arabic and 
 
 **Sources** [French manuscript catalogues](<https://archivesetmanuscrits.bnf.fr/>) · [Munich digital collections](<https://www.digitale-sammlungen.de/>)
 
-### 27. What do the thousands of unread Shang oracle-bone graphs mean? (`oracle-bones`)
+### 26. What do the thousands of unread Shang oracle-bone graphs mean? (`oracle-bones`)
 
 Shang diviners recorded questions and outcomes on bones and turtle shells. Scholars can read many recurring signs, but thousands of distinct forms lack agreed readings. Photographs, ink rubbings and indexed inscriptions are available. A sign may occur only once or only in a personal name, and different hands can write the same word differently.
 
@@ -244,7 +236,7 @@ Shang diviners recorded questions and outcomes on bones and turtle shells. Schol
 
 **Sources** [Academia Sinica oracle bones](<https://museum.sinica.edu.tw/collection/32/>) · [Yinqi Wenyuan inscriptions](<https://jgw.aynu.edu.cn/>)
 
-### 28. How did smallpox reach Aboriginal communities around Sydney in 1789? (`sydney-smallpox`)
+### 27. How did smallpox reach Aboriginal communities around Sydney in 1789? (`sydney-smallpox`)
 
 Smallpox devastated Aboriginal communities around Sydney in 1789, a year after the British colony was founded. Explanations include an introduction associated with the colony and a much longer route through northern Australia. Dutch records document smallpox at Makassar in 1782 and elsewhere in island Southeast Asia that decade. The intervening chain of cases is missing.
 
@@ -252,7 +244,7 @@ Smallpox devastated Aboriginal communities around Sydney in 1789, a year after t
 
 **Sources** [Transcribed Dutch company records](<https://globalise.huygens.knaw.nl/>) · [Early Sydney records](<https://www.sl.nsw.gov.au/research-and-collections/significant-collections/journals-first-fleet>)
 
-### 29. Did Europe’s three great medieval cattle plagues come from the east? (`medieval-cattle-plagues`)
+### 28. Did Europe’s three great medieval cattle plagues come from the east? (`medieval-cattle-plagues`)
 
 Medieval chronicles describe widespread cattle deaths in Europe in 809–810, 937–942 and 1315–1325. Some writers specify cattle, others mention livestock in general, and some describe a severe winter. Digitized Latin, Irish and Arabic texts make it possible to compare reports from different places. Several chronicles can repeat one writer’s account and create the appearance of a much wider event.
 
@@ -260,7 +252,7 @@ Medieval chronicles describe widespread cattle deaths in Europe in 809–810, 93
 
 **Sources** [Medieval Latin chronicles](<https://www.dmgh.de/>) · [Irish annals](<https://celt.ucc.ie/>)
 
-### 30. Were Mendel's pea-hybrid data too close to expectation, and if so, why? (`mendel`)
+### 29. Were Mendel's pea-hybrid data too close to expectation, and if so, why? (`mendel`)
 
 Gregor Mendel published counts of pea plants that closely fit the ratios predicted by his account of inheritance. Ronald Fisher later argued that the overall fit was unusually good. The tables survive, but few working records show how ambiguous plants were classified, experiments repeated or results selected for publication. Different practices could produce similar totals.
 
@@ -268,7 +260,7 @@ Gregor Mendel published counts of pea plants that closely fit the ratios predict
 
 **Sources** [Mendel’s published experiments](<http://www.mendelweb.org/MWGerText.html>) · [Mendelianum collections](<https://www.mzm.cz/en/mendelianum/>)
 
-### 31. Was rongorongo an independent invention of writing? (`rongorongo`)
+### 30. Was rongorongo an independent invention of writing? (`rongorongo`)
 
 Roughly two dozen surviving objects from Rapa Nui bear signs known as rongorongo. The inscriptions remain undeciphered. Photographs, transcriptions, three-dimensional scans of some tablets and published dates for their wood are available. Whether people carved the signs before European contact matters to the case for an independent invention of writing.
 
@@ -276,7 +268,7 @@ Roughly two dozen surviving objects from Rapa Nui bear signs known as rongorongo
 
 **Sources** [Smithsonian collections](<https://collections.si.edu/search/results.htm?q=rongorongo>) · [Study of rongorongo sign sequences](<https://doi.org/10.1093/oso/9780198908746.003.0011>)
 
-### 32. How did Gutenberg cast his type? (`gutenberg-type`)
+### 31. How did Gutenberg cast his type? (`gutenberg-type`)
 
 Early printed letters that look identical to the eye show small differences when enlarged. Scholars disagree about whether these variations reveal how Gutenberg made his metal type. High-resolution images of early Mainz printing and several copies of the same Bible pages survive. Ink, paper, pressure and wear can all change the outline left by the same piece of type.
 
@@ -284,7 +276,7 @@ Early printed letters that look identical to the eye show small differences when
 
 **Sources** [Göttingen Gutenberg Bible](<http://www.gutenbergdigital.de/>) · [Keio University digital copies](<https://dcollections.lib.keio.ac.jp/en/gutenberg>)
 
-### 33. How many people were carried in the Indian Ocean slave trades, 1500–1850? (`indian-ocean-slave-trade`)
+### 32. How many people were carried in the Indian Ocean slave trades, 1500–1850? (`indian-ocean-slave-trade`)
 
 Historians have reconstructed parts of the trade in enslaved people across the Indian Ocean, particularly voyages recorded by European companies. Dutch, Cape and some Portuguese and French records survive online. People also travelled in small groups aboard mixed cargo vessels or with local carriers whose records survive unevenly. The size of these gaps matters to any total.
 
@@ -292,7 +284,7 @@ Historians have reconstructed parts of the trade in enslaved people across the I
 
 **Sources** [Dutch East India Company archive](<https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02>) · [French overseas archives](<https://recherche-anom.culture.gouv.fr/>)
 
-### 34. Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries? (`kerala-jesuits`)
+### 33. Did Kerala-school infinite series reach early modern Europe through Jesuit missionaries? (`kerala-jesuits`)
 
 Mathematicians in Kerala developed infinite series for quantities such as π before similar results appeared in seventeenth-century Europe. Jesuits worked in the region and corresponded with European mathematicians. A route for contact is plausible, but no known document records the transfer of those series. Access to manuscript correspondence and Indian mathematical texts varies.
 
@@ -300,7 +292,7 @@ Mathematicians in Kerala developed infinite series for quantities such as π bef
 
 **Sources** [Jesuit archival collections](<https://arsi.jesuits.global/>) · [Clavius correspondence](<https://unigre.it/en/historical-archive>)
 
-### 35. Do the missing voices of Renaissance songs survive in lute arrangements? (`renaissance-lute`)
+### 34. Do the missing voices of Renaissance songs survive in lute arrangements? (`renaissance-lute`)
 
 Renaissance printers often sold each voice of a song in a separate book. A tenor book from a 1536 collection survives in Bern, but some companion parts are missing. Lute players arranged songs so that one instrument could play several voices. Digitized partbooks, lute music and contemporary catalogues allow comparisons even when titles have changed.
 
@@ -308,7 +300,7 @@ Renaissance printers often sold each voice of a song in a separate book. A tenor
 
 **Sources** [Bern tenor partbook](<https://www.e-helvetica.nb.admin.ch/directAccess?id=nbdig-839117>) · [RISM music catalogue](<https://rism.online/sources/993114959>)
 
-### 36. Which Atlantic shipments can be linked to Europe’s first potato blight outbreaks? (`potato-blight-ships`)
+### 35. Which Atlantic shipments can be linked to Europe’s first potato blight outbreaks? (`potato-blight-ships`)
 
 Potato blight appeared in European fields in the 1840s and helped precipitate the Irish famine. Agricultural letters describe early damaged crops, while shipping notices and customs records list consignments of potatoes. A port of departure says little about where a cargo was grown, and a newspaper’s publication date can postdate the first field damage.
 
@@ -316,7 +308,7 @@ Potato blight appeared in European fields in the 1840s and helped precipitate th
 
 **Sources** [Agricultural journals](<https://www.biodiversitylibrary.org/bibliography/40100>) · [Dutch shipping notices](<https://www.delpher.nl/>)
 
-### 37. Whose medical knowledge did Hans Sloane collect, and whose names survive in the record? (`sloane-informants`)
+### 36. Whose medical knowledge did Hans Sloane collect, and whose names survive in the record? (`sloane-informants`)
 
 Hans Sloane, a London physician, collected remedies and medicinal plants from around the world. His catalogues often name the person who delivered an item and say little about who explained its use. One lead concerns James Pawpaw, a Virginia healer. A printed account credits him with a remedy resembling one in an unsigned Sloane manuscript. Their relationship is still uncertain.
 
@@ -324,7 +316,7 @@ Hans Sloane, a London physician, collected remedies and medicinal plants from ar
 
 **Sources** [Sloane’s plant catalogue](<https://data.nhm.ac.uk/dataset/sloane-vegetable-substances>) · [Sloane Letters Project](<https://sloaneletters.com/>) · [Printed account naming Pawpaw](<https://digirepo.nlm.nih.gov/ext/dw/8111161/PDF/8111161.pdf#page=50>) · [Unsigned Sloane manuscript](<https://nhm.primo.exlibrisgroup.com/discovery/delivery/44NHM_INST:44NHM_V1/12233186820002081#13233193840002081>)
 
-### 38. Do khipus record more than numbers, and can their non-numerical signs be read? (`khipu`)
+### 37. Do khipus record more than numbers, and can their non-numerical signs be read? (`khipu`)
 
 Andean record keepers tied knots in cords to represent numbers in a decimal system. Colour, the way threads were twisted and the arrangement of pendant cords may also identify people or categories. Public databases record these features, but few khipus can be securely linked to written accounts describing the same community or transaction.
 
@@ -332,7 +324,7 @@ Andean record keepers tied knots in cords to represent numbers in a decimal syst
 
 **Sources** [Open Khipu Repository](<https://github.com/khipulab/open-khipu-repository>) · [Khipu Field Guide](<https://www.khipufieldguide.com/>)
 
-### 39. Which Hittite tablet fragments belong to the same tablet or preserve the same text? (`hittite-fragments`)
+### 38. Which Hittite tablet fragments belong to the same tablet or preserve the same text? (`hittite-fragments`)
 
 Hittite scribes copied treaties, rituals and other texts onto clay tablets. Many survive in pieces. Searches of the TLHdig sign transcriptions can find plausible continuations, and splitting known texts into artificial fragments has helped test the method. Real pieces are damaged, photographs cover only part of the collection, and two tablets can preserve separate copies of the same passage.
 
@@ -340,7 +332,7 @@ Hittite scribes copied treaties, rituals and other texts onto clay tablets. Many
 
 **Sources** [Hittite tablet concordance](<https://hatti.adwudlit.uni-mainz.de/hetkonk/>) · [TLHdig transcriptions](<https://doi.org/10.5281/zenodo.20328284>)
 
-### 40. How many people lived in China around 1600, and how many died between 1620 and 1680? (`china-1600`)
+### 39. How many people lived in China around 1600, and how many died between 1620 and 1680? (`china-1600`)
 
 Estimates for China around 1600 differ by tens of millions. Late Ming and early Qing officials counted taxable households and people under changing rules. Local gazetteers sometimes copied earlier figures decades later, even across war and displacement. Digitized local histories, tax returns and some genealogies allow comparisons below the national level.
 
@@ -348,7 +340,7 @@ Estimates for China around 1600 differ by tens of millions. Late Ming and early 
 
 **Sources** [Harvard-Yenching Library](<https://curiosity.lib.harvard.edu/chinese-rare-books>) · [Library of Congress Chinese collections](<https://www.loc.gov/collections/chinese-rare-books/>)
 
-### 41. When did the thylacine go extinct in the wild? (`thylacine`)
+### 40. When did the thylacine go extinct in the wild? (`thylacine`)
 
 The last known captive thylacine died in Hobart in 1936. Later reports from the Tasmanian bush range from detailed eyewitness accounts to newspaper stories repeated years afterwards. Bounty records, digitized newspapers and a published sightings database let researchers reconstruct some of those reports. The date of the last credible sighting and the date of extinction can differ.
 
@@ -356,7 +348,7 @@ The last known captive thylacine died in Hobart in 1936. Later reports from the 
 
 **Sources** [Tasmanian archival records](<https://libraries.tas.gov.au/>) · [Published sightings database](<https://doi.org/10.7882/az.2023.044>)
 
-### 42. Does the Indus script encode language, or a non-linguistic sign system? (`indus`)
+### 41. Does the Indus script encode language, or a non-linguistic sign system? (`indus`)
 
 Seals and other objects from the Indus civilization carry strings averaging about five signs. Their order has patterns, but ownership marks and other systems can also have rules without spelling out speech. Photographs and sign-by-sign catalogues survive. There is no generally accepted bilingual inscription that gives the signs a reading.
 
@@ -364,7 +356,7 @@ Seals and other objects from the Indus civilization carry strings averaging abou
 
 **Sources** [Asko Parpola on the photographic corpus of Indus seals](<https://tuhat.helsinki.fi/ws/portalfiles/portal/127255979/Parpola_Asko_2018_Indus_Seals_and_Glyptic_Studies_An_Overview_final_proof_2016_.pdf>) · [Interactive Corpus of Indus Texts](<https://www.user.tu-berlin.de/fuls/Homepage/indus/menueindus.htm>)
 
-### 43. How literate was the population of late imperial China? (`qing-literacy`)
+### 42. How literate was the population of late imperial China? (`qing-literacy`)
 
 Estimates of literacy in Qing China have drawn on schooling, the market for primers and observers’ reports. Surviving contracts provide a different kind of evidence. Some parties signed in their own hand, others made a mark, and sometimes a scribe wrote everyone’s name. Selected collections of these documents can be read online.
 
@@ -372,7 +364,7 @@ Estimates of literacy in Qing China have drawn on schooling, the market for prim
 
 **Sources** [Chinese contract collections](<https://history.sjtu.edu.cn/>) · [Taiwan historical records](<https://archives.ith.sinica.edu.tw/>)
 
-### 44. How much of the cacao along Amazonian rivers grew from colonial-era plantings? (`amazon-cacao`)
+### 43. How much of the cacao along Amazonian rivers grew from colonial-era plantings? (`amazon-cacao`)
 
 Cacao grew in Amazonia long before European colonization. Some groves along rivers today might descend from colonial plantings made for trade. A survey of the Rio Negro in 1774–75 names settlements and records production. Modern forest surveys record where cacao grows. Beans shipped from a village could have been harvested elsewhere.
 
@@ -380,7 +372,7 @@ Cacao grew in Amazonia long before European colonization. Some groves along rive
 
 **Sources** [Digitized Rio Negro survey](<https://obrasraras.fcp.pa.gov.br/publication/diario-da-viagem-que-em-visita-e-correicao-das-povoacoes-da-capitania-de-s-joze-do-rio-negro-fez-o-ouvidor-e-intendente-geral-da-mesma/>) · [Published forest-plot research](<https://eprints.whiterose.ac.uk/114745/16/aal0157_SupplementalMaterial_v2.pdf>)
 
-### 45. Do old drawings show Jupiter’s Great Red Spot between 1713 and 1831? (`jupiter-red-spot`)
+### 44. Do old drawings show Jupiter’s Great Red Spot between 1713 and 1831? (`jupiter-red-spot`)
 
 A dark spot on Jupiter was recorded in the seventeenth century. Astronomers disagree about whether it survived to become the modern Great Red Spot. Paris drawings show a dark feature on three nights in 1714. It could be a different weather system. Digitized Paris and Marseille observing books preserve dated drawings and, sometimes, observations of Jupiter’s moons.
 
@@ -388,7 +380,7 @@ A dark spot on Jupiter was recorded in the seventeenth century. Astronomers disa
 
 **Sources** [Paris observing records](<https://bibnum.obspm.fr/ark:/11287/2xxtj>) · [Study of the Great Red Spot’s origin](<https://doi.org/10.1029/2024gl108993>)
 
-### 46. How many Indigenous people were enslaved in the Americas between 1492 and 1900? (`indigenous-slavery`)
+### 45. How many Indigenous people were enslaved in the Americas between 1492 and 1900? (`indigenous-slavery`)
 
 Estimates of Indigenous enslavement across the Americas rely on regional studies made from very different records. Sales, lawsuits over freedom, mission registers and estate inventories name some individuals. Where enslavement was restricted, documents could describe a captive as a servant or dependent. Digitized collections represent jurisdictions and centuries unevenly.
 
@@ -396,7 +388,7 @@ Estimates of Indigenous enslavement across the Americas rely on regional studies
 
 **Sources** [Spanish imperial records](<https://pares.cultura.gob.es/inicio.html>) · [São Paulo public archives](<https://www.arquivoestado.sp.gov.br/>)
 
-### 47. When did Europeans first describe the outbreak later called syphilis? (`early-syphilis`)
+### 46. When did Europeans first describe the outbreak later called syphilis? (`early-syphilis`)
 
 A severe outbreak Europeans called the French disease was widely recognized in the 1490s. Alleged earlier cases matter to the chronology on either side of Columbus’s return in 1493. Digital collections include medical tracts and contemporary chronicles. A writer recalling an earlier patient decades later could use a name learned only after the epidemic.
 
@@ -404,7 +396,7 @@ A severe outbreak Europeans called the French disease was widely recognized in t
 
 **Sources** [Catalogue of early European books](<https://data.cerl.org/istc/>) · [Wellcome Collection](<https://wellcomecollection.org/works/ehw8tv72>)
 
-### 48. Did the age groups most at risk of dying change between waves of the “Russian flu”? (`russian-flu`)
+### 47. Did the age groups most at risk of dying change between waves of the “Russian flu”? (`russian-flu`)
 
 The pandemic that began in 1889 returned in several waves. London medical reports and Danish burial records include ages at death, but the cities had different populations and used different age groups. A larger number of older people among the dead could reflect the city’s age structure or the season in which a wave arrived.
 
@@ -412,7 +404,7 @@ The pandemic that began in 1889 returned in several waves. London medical report
 
 **Sources** [Digitized London health reports](<https://wellcomelibrary.org/moh/report/b18252503/85>) · [Danish mortality research](<https://github.com/PandemiXcenter/SignatureFeatures19thCentury>)
 
-### 49. Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries? (`ottoman-tahrir`)
+### 48. Did the population of Ottoman Anatolia collapse in the late sixteenth and seventeenth centuries? (`ottoman-tahrir`)
 
 Sixteenth-century Ottoman tax surveys suggest a growing population in Anatolia, followed by a marked decline in some records. Many early registers counted taxable household heads. Later registers could group several households into a single tax unit. Published registers and historical place-name lists make it possible to follow some villages across the change.
 
@@ -420,7 +412,7 @@ Sixteenth-century Ottoman tax surveys suggest a growing population in Anatolia, 
 
 **Sources** [Published Ottoman registers](<https://www.devletarsivleri.gov.tr/>) · [Ottoman place-name gazetteer](<https://doi.org/10.5281/zenodo.7351936>)
 
-### 50. Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's? (`ptolemy`)
+### 49. Did Ptolemy observe the Almagest star catalogue or adapt Hipparchus's? (`ptolemy`)
 
 Ptolemy listed positions for about a thousand stars in the second century CE. A systematic error in their longitudes has led scholars to ask whether he updated measurements made by Hipparchus some three centuries earlier. Only fragments of the earlier astronomer’s work survive. Modern catalogues let researchers calculate where stars appeared at either date.
 
@@ -428,7 +420,7 @@ Ptolemy listed positions for about a thousand stars in the second century CE. A 
 
 **Sources** [Historical star catalogues](<https://ptolemaeus.badw.de/>) · [Hipparcos and Tycho star positions](<https://www.cosmos.esa.int/web/hipparcos/catalogues>)
 
-### 51. Where was Yamatai, the realm of Queen Himiko? (`yamatai`)
+### 50. Where was Yamatai, the realm of Queen Himiko? (`yamatai`)
 
 A third-century Chinese account describes a journey to Queen Himiko’s realm in Japan. Following its directions and travel times literally takes a traveller offshore. Scholars have proposed centres in Kyushu and around Nara. Digitized excavation reports record settlements, tombs and imported objects from the period, but each candidate region has conspicuous finds.
 
@@ -436,7 +428,7 @@ A third-century Chinese account describes a journey to Queen Himiko’s realm in
 
 **Sources** [Chinese itinerary](<https://ctext.org/sanguozhi>) · [Japanese excavation reports](<https://sitereports.nabunken.go.jp/>)
 
-### 52. What did Nahua writers say about the people Spaniards described as having leprosy? (`leprosy-americas`)
+### 51. What did Nahua writers say about the people Spaniards described as having leprosy? (`leprosy-americas`)
 
 In sixteenth-century Mexico, a friar used the Spanish word for leprosy in a festival description. Nahua writers described people whom dancers portrayed. The Digital Florentine Codex puts Nahuatl and Spanish accounts side by side, and early dictionaries record words for bodily conditions. A dictionary gloss, a ritual performance and an account of a sick person each answer different questions.
 
@@ -444,7 +436,7 @@ In sixteenth-century Mexico, a friar used the Spanish word for leprosy in a fest
 
 **Sources** [Digital Florentine Codex](<https://florentinecodex.getty.edu/en/book/2/folio/108v>) · [Online Nahuatl Dictionary](<https://nahuatl.wired-humanities.org/content/teococoxqui>)
 
-### 53. Did Cassini see the star that exploded in Cassiopeia in the 1670s? (`cassini-cas-a`)
+### 52. Did Cassini see the star that exploded in Cassiopeia in the 1670s? (`cassini-cas-a`)
 
 The star whose remains are called Cassiopeia A exploded roughly three and a half centuries ago. A French report in June 1671 says the astronomer Cassini had seen stars missing from earlier counts of that constellation. His 1669 notebook survives, but his regular Paris journal starts after the report. Later entries mention Cassiopeia without identifying an explosion.
 
@@ -452,7 +444,7 @@ The star whose remains are called Cassiopeia A exploded roughly three and a half
 
 **Sources** [Cassini’s earlier notebook](<https://bibnum.obspm.fr/ark:/11287/6DjRX>) · [Cassini’s 1671 observing journal](<https://bibnum.obspm.fr/ark:/11287/14CzG>)
 
-### 54. Does Proto-Elamite record language, and is it the ancestor of Linear Elamite? (`proto-elamite`)
+### 53. Does Proto-Elamite record language, and is it the ancestor of Linear Elamite? (`proto-elamite`)
 
 Early Iranian accounting tablets preserve Proto-Elamite signs for numbers alongside signs whose meaning is less certain. Photographs and transcriptions record roughly 1,600–1,700 tablets. A sign beside a number could identify a commodity without spelling a word. Resemblances to the much later Linear Elamite script have also been proposed, across a long gap in the record.
 
@@ -460,7 +452,7 @@ Early Iranian accounting tablets preserve Proto-Elamite signs for numbers alongs
 
 **Sources** [Cuneiform Digital Library Initiative](<https://cdli.earth/search?simple-value%5B0%5D=%2A&simple-field%5B0%5D=keyword&f%5Bperiod%5D%5B0%5D=Proto-Elamite+%28ca.+3100-2900+BC%29&limit=100>) · [Study of Proto-Elamite](<https://doi.org/10.1017/9781009614559>)
 
-### 55. Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery? (`shapira-scrolls`)
+### 54. Were Moses Shapira's Deuteronomy fragments an ancient text or an 1880s forgery? (`shapira-scrolls`)
 
 In 1883 Moses Shapira offered leather strips bearing a version of Deuteronomy for sale. Scholars pronounced them forgeries, and the strips subsequently disappeared. Surviving drawings, transcriptions, newspaper reproductions and Shapira’s papers have supported arguments on both sides. Without the originals, even the shape of a disputed letter can depend on who copied it.
 
@@ -468,7 +460,7 @@ In 1883 Moses Shapira offered leather strips bearing a version of Deuteronomy fo
 
 **Sources** [British Library Shapira papers](<https://searcharchives.bl.uk/>) · [Berlin manuscript collection](<https://stabikat.de/>)
 
-### 56. Which volcano produced the sulfate deposit dated to around 1809? (`eruption-1809`)
+### 55. Which volcano produced the sulfate deposit dated to around 1809? (`eruption-1809`)
 
 Sulfate in polar ice and eyewitness reports of a high haze point to a major eruption around 1809. The volcano remains unidentified. An 1836 account places an eruption of Lamongan in Java in December 1808, while the Latin work it cites describes November 1818. One copied date could create a false lead.
 
@@ -476,7 +468,7 @@ Sulfate in polar ice and eyewitness reports of a high haze point to a major erup
 
 **Sources** [Dutch colonial records](<https://www.nationaalarchief.nl/onderzoeken/archief>) · [Ice-core and climate study](<https://doi.org/10.5194/cp-17-1455-2021>)
 
-### 57. How common was sleeping in two shifts before industrialization? (`segmented-sleep`)
+### 56. How common was sleeping in two shifts before industrialization? (`segmented-sleep`)
 
 References to a “first sleep” helped establish the idea that people once routinely woke in the middle of the night before sleeping again. Digitized books, diaries and court testimony contain descriptions of nights, but a phrase can be figurative, translated or copied through many editions. A person awakened by a burglary tells us little about an ordinary night.
 
@@ -484,7 +476,7 @@ References to a “first sleep” helped establish the idea that people once rou
 
 **Sources** [Digitized early English books](<https://textcreationpartnership.org/>) · [Old Bailey testimony](<https://www.oldbaileyonline.org/>)
 
-### 58. When was Beowulf composed? (`beowulf`)
+### 57. When was Beowulf composed? (`beowulf`)
 
 Beowulf survives in one medieval manuscript copied around the year 1000. Its composition could have been much earlier. Verse rhythms, vocabulary and spellings have all been used to date it, but a scribe can modernize some features and preserve others. Manuscript images, early transcriptions and collections of other Old English poems are available for comparison.
 
@@ -492,7 +484,7 @@ Beowulf survives in one medieval manuscript copied around the year 1000. Its com
 
 **Sources** [Electronic Beowulf](<https://ebeowulf.uky.edu/>) · [Old English Poetry in Facsimile](<https://oepoetryfacsimile.org/>)
 
-### 59. How much American silver reached China between 1550 and 1800? (`silver-china`)
+### 58. How much American silver reached China between 1550 and 1800? (`silver-china`)
 
 Silver mined in the Americas reached China across the Pacific via Manila and by routes through Europe and Asia. Mint and treasury accounts record production and some shipments. Chinese markets also received Japanese silver, and merchants evaded customs. Adding up recorded arrivals can count the same metal several times as it changed ports.
 
@@ -500,15 +492,7 @@ Silver mined in the Americas reached China across the Pacific via Manila and by 
 
 **Sources** [Spanish imperial records](<https://pares.cultura.gob.es/inicio.html>) · [Dutch company archives](<https://www.nationaalarchief.nl/>)
 
-### 60. Which cultivated toromiro trees descend from wild Rapa Nui collections? (`toromiro-provenance`)
-
-Toromiro, a tree from Rapa Nui, survives in cultivation after disappearing from the wild. Some Melbourne trees might preserve a distinct introduction. A pressed specimen records a particular garden bed, while published studies describe relationships among living trees. The name on a specimen does not by itself tell us who supplied the seed.
-
-**One way to investigate.** Follow the specimen number and bed reference into garden inventories, donor lists and records of transfers from Gothenburg. Check dates against earlier herbarium sheets. An unbroken chain of entries could establish an introduction, while an undated or misidentified specimen would leave a gap even if the trees look alike.
-
-**Sources** [Allan Herbarium](<https://scd.landcareresearch.co.nz/Specimen/CHR_524208>) · [Royal Botanic Gardens Victoria](<https://data.rbg.vic.gov.au/rbgcensus/>)
-
-### 61. What texts did Newton copy in the alchemical manuscripts whose sources are unidentified? (`newton-alchemy-sources`)
+### 59. What texts did Newton copy in the alchemical manuscripts whose sources are unidentified? (`newton-alchemy-sources`)
 
 Newton copied and commented on other writers’ alchemical work. Digital editions identify many of his sources and reproduce his manuscripts, but several passages remain unattributed. Authors borrowed from one another, and some works circulated under different titles or only in handwritten copies. Identifying a source would show what Newton had actually read.
 
@@ -516,7 +500,7 @@ Newton copied and commented on other writers’ alchemical work. Digital edition
 
 **Sources** [Chymistry of Isaac Newton](<https://newton.dlib.indiana.edu/>) · [Newton Project](<https://www.newtonproject.ox.ac.uk/>)
 
-### 62. Where was Agade, the capital of the Sargonic empire? (`agade`)
+### 60. Where was Agade, the capital of the Sargonic empire? (`agade`)
 
 Agade was the capital of Sargon’s empire in what is now Iraq. Ancient writers knew how to get there, but the rivers have changed course, and an inscription naming the city has yet to identify its site. Digitized tablets mention nearby towns, river crossings and stages of travel. Historical satellite photographs show abandoned channels.
 
@@ -524,15 +508,7 @@ Agade was the capital of Sargon’s empire in what is now Iraq. Ancient writers 
 
 **Sources** [Cuneiform Digital Library Initiative](<https://cdli.earth/>) · [Historical satellite imagery](<https://corona.cast.uark.edu/>)
 
-### 63. How did a dodo become the subject of a Mughal painting? (`mughal-dodo`)
-
-A Mughal album contains a painting of a bird recognizable as a dodo, a species native to Mauritius. A Dutch ship’s journal records dodos taken there in 1615. The traveller Peter Mundy later recalled seeing two alive at Surat in India. These accounts establish parts of a possible journey, but neither identifies the bird seen by the painter.
-
-**One way to investigate.** Follow the named ship through its journal, cargo records and letters. Look for a dated landing, sale or gift that places a live bird with someone connected to the Mughal court. Check the dating of the painting separately from that of the album assembled around it.
-
-**Sources** [Dutch East India Company records](<https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02/invnr/1059/file/NL-HaNA_1.04.02_1059_0277>) · [Mughal album collection](<https://www.orientalstudies.ru/eng/images/pdf/st.petersburg_muraqqa_1996.pdf>)
-
-### 64. Which lost silent films survive in fragments whose titles are unknown? (`silent-film-fragments`)
+### 61. Which lost silent films survive in fragments whose titles are unknown? (`silent-film-fragments`)
 
 Archives hold fragments of silent films whose identifying titles have disappeared. Eye Filmmuseum makes some available to watch. Trade papers, copyright descriptions and publicity stills can identify a scene. A recent search matched one shipwreck sequence to The Adorable Savage, only to find that Eye had already identified it under another catalogue description.
 
@@ -540,15 +516,7 @@ Archives hold fragments of silent films whose identifying titles have disappeare
 
 **Sources** [Eye Filmmuseum](<https://www.eyefilm.nl/en/collection/collections/film/bits-pieces>) · [Digitized film trade press](<https://lantern.mediahist.org/>)
 
-### 65. Which earthquake sent waves up the Padang River in 1697? (`padang-1697`)
-
-A Dutch dispatch describes an earthquake in 1697 and repeated surges up the river at Padang on Sumatra’s west coast. It gives several places but no dependable wave heights. Published coral records constrain possible offshore earthquakes without selecting a unique source. The dispatch mentions a damage survey that could preserve observations closer to the event.
-
-**One way to investigate.** Trace the enclosure and compare independently written coastal reports, including English correspondence from nearby settlements. Reconstruct which sites experienced waves and when. Test candidate earthquake models against those observations and the coral evidence, keeping uncertain place names and secondhand timings visible.
-
-**Sources** [Dutch company dispatches](<https://transcriptions.globalise.huygens.knaw.nl/detail/urn:globalise:NL-HaNA_1.04.02_1596_0344>) · [East India Company correspondence](<https://searcharchives.bl.uk/catalog/040-000177012>)
-
-### 66. What caused the cocoliztli epidemics of 1545 and 1576 in New Spain? (`cocoliztli`)
+### 62. What caused the cocoliztli epidemics of 1545 and 1576 in New Spain? (`cocoliztli`)
 
 Nahua and Spanish witnesses described devastating epidemics in New Spain in 1545 and 1576. The Nahuatl term cocoliztli could describe a severe pestilence with more than one cause. Published studies of epidemic burials in Oaxaca have identified evidence of enteric fever in some individuals. That finding leaves open the causes of deaths elsewhere and in the later outbreak.
 
@@ -556,7 +524,7 @@ Nahua and Spanish witnesses described devastating epidemics in New Spain in 1545
 
 **Sources** [Colonial Mexican reports](<https://collections.lib.utexas.edu/?f%5Bmods_relatedItem_titleInfo_title_source_t%5D%5B%5D=Relaciones+Geogr%C3%A1ficas+of+Mexico+and+Guatemala>) · [Florentine Codex collection](<https://florentinecodex.getty.edu/>)
 
-### 67. Why did plague disappear from western Europe after the early eighteenth century? (`plague-disappearance`)
+### 63. Why did plague disappear from western Europe after the early eighteenth century? (`plague-disappearance`)
 
 After centuries of recurrent plague, western European cities experienced their last major epidemics at different times. Outbreaks continued around the Mediterranean after London’s last great epidemic in 1665, including in Provence in 1720. Port health registers, dated outbreak lists and quarantine correspondence survive unevenly. A city could escape because precautions worked or because its exposure changed.
 
@@ -564,7 +532,7 @@ After centuries of recurrent plague, western European cities experienced their l
 
 **Sources** [Provençal archives](<https://www.archives13.fr/>) · [Venetian state archives](<https://www.archiviodistatovenezia.it/>)
 
-### 68. Which old books preserve overlooked word lists from little-documented languages? (`hidden-vocabularies`)
+### 64. Which old books preserve overlooked word lists from little-documented languages? (`hidden-vocabularies`)
 
 Early travellers sometimes printed vocabulary lists in books with no mention of language in the title. For a language documented only rarely, one such page could preserve otherwise unknown words. A pilot catalogue covers 42 languages. It also shows how one traveller’s printed list could reappear decades later under another author’s name.
 
@@ -572,7 +540,7 @@ Early travellers sometimes printed vocabulary lists in books with no mention of 
 
 **Sources** [Text Creation Partnership](<https://textcreationpartnership.org/>) · [Wordes of their Language catalogue](<https://github.com/benjaminbreen/WordsoftheirLanguage>)
 
-### 69. Which lost works of Galen survive unrecognised in Arabic and Syriac? (`galen-arabic`)
+### 65. Which lost works of Galen survive unrecognised in Arabic and Syriac? (`galen-arabic`)
 
 Some works by the ancient physician Galen disappeared in Greek after translators had rendered them into Syriac or Arabic. Medieval scholars described their translations, and later authors sometimes quoted them. Digital manuscript images, searchable Arabic texts and a Greek–Arabic lexicon provide clues. A catalogue title can also conceal an abridgement or a different author.
 
@@ -580,7 +548,7 @@ Some works by the ancient physician Galen disappeared in Greek after translators
 
 **Sources** [Greek–Arabic lexicon](<https://telota.bbaw.de/glossga/>) · [Syriac Galen manuscript project](<https://figshare.manchester.ac.uk/articles/dataset/Syriac_Galen_Palimpsest_Processed_Images/28554083>)
 
-### 70. How, if at all, did Copernicus learn of the Maragha-school planetary models? (`copernicus-maragha`)
+### 66. How, if at all, did Copernicus learn of the Maragha-school planetary models? (`copernicus-maragha`)
 
 Copernicus used mathematical devices resembling those developed by astronomers at Maragha and elsewhere in the Islamic world. Surviving diagrams establish the resemblance. What remains unclear is how a particular idea might have reached him. Digitized Arabic, Greek and European manuscripts, library inventories and books he annotated preserve parts of the possible chain.
 
@@ -588,7 +556,7 @@ Copernicus used mathematical devices resembling those developed by astronomers a
 
 **Sources** [Vatican manuscript collections](<https://digi.vatlib.it/view/MSS_Vat.gr.211>) · [Uppsala University Library](<https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized>)
 
-### 71. Are Borneo’s wild elephants native, or descendants of a royal gift? (`borneo-elephants`)
+### 67. Are Borneo’s wild elephants native, or descendants of a royal gift? (`borneo-elephants`)
 
 One account traces Borneo’s elephants to a gift of animals taken from Java through the Sulu islands. Another holds that an elephant population had long lived on Borneo. Dutch company records mention elephants at Javanese courts, including imports. Published genetic studies can estimate when populations diverged, but that date need not be when animals reached an island.
 

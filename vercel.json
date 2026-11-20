@@ -50,6 +50,26 @@
   ],
   "redirects": [
     {
+      "source": "/p/indian-ocean-tsunamis",
+      "destination": "/p/sumatra-tsunamis",
+      "permanent": true
+    },
+    {
+      "source": "/p/padang-1697",
+      "destination": "/p/sumatra-tsunamis",
+      "permanent": true
+    },
+    {
+      "source": "/p/mughal-dodo",
+      "destination": "/leads/mughal-dodo",
+      "permanent": true
+    },
+    {
+      "source": "/p/toromiro-provenance",
+      "destination": "/leads/toromiro-provenance",
+      "permanent": true
+    },
+    {
       "source": "/p/james-pawpaw-remedy",
       "destination": "/p/sloane-informants#james-pawpaw",
       "permanent": true
