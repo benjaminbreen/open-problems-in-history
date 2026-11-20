@@ -1,6 +1,6 @@
 # Which historical questions could a research team answer using today’s digital sources?
 
-Round `2026-11-20` · 72 questions
+Round `2026-11-20-r2` · 71 questions
 
 Imagine the same team of historians and AI agents investigating each question. They can search public digital collections, read scans, transcribe, write code, divide up work and check results against originals. They can follow specific leads across sessions with no fixed time limit. Assume today’s tools and public sources. New digitization, private holdings, bespoke specialist work, laboratory work and fieldwork are outside the scope.
 
@@ -18,10 +18,10 @@ Both contribution scores assume a convincing answer. Judge each independently of
 
 Use this packet and your general knowledge in a fresh conversation with browsing, shared project files and cross-chat memory off. The links identify the sources described in each brief. Read the whole shuffled list before finalizing your judgments. Disclose any prior exposure to rankings of these questions.
 
-Return one JSON object with all 72 IDs in packet order. Use whole numbers. Ties are fine. For each question, give a brief reason covering the decisive evidence or gap, what an answer would change, and any follow-on use.
+Return one JSON object with all 71 IDs in packet order. Use whole numbers. Ties are fine. For each question, give a brief reason covering the decisive evidence or gap, what an answer would change, and any follow-on use.
 
 ```json
-{"round_id":"2026-11-20","model":"your model/version","prior_exposure":"none or brief disclosure","ratings":[
+{"round_id":"2026-11-20-r2","model":"your model/version","prior_exposure":"none or brief disclosure","ratings":[
   {"id":"question-id","chance_pct":null,"historical_contribution":null,"further_research":null,"reason":"Your brief judgment."}
 ]}
 ```
@@ -316,13 +316,13 @@ Potato blight appeared in European fields in the 1840s and helped precipitate th
 
 **Sources** [Agricultural journals](<https://www.biodiversitylibrary.org/bibliography/40100>) · [Dutch shipping notices](<https://www.delpher.nl/>)
 
-### 37. Who supplied the medical knowledge that Hans Sloane's catalogues attribute to unnamed people? (`sloane-informants`)
+### 37. Whose medical knowledge did Hans Sloane collect, and whose names survive in the record? (`sloane-informants`)
 
-Hans Sloane’s medical and botanical collections preserve information from people whose names his catalogues often omit. A European intermediary might be named even when someone else supplied the specimen or explained its use. Digitized catalogue transcriptions, surviving labels and correspondence sometimes describe the same acquisition from different sides.
+Hans Sloane, a London physician, collected remedies and medicinal plants from around the world. His catalogues often name the person who delivered an item and say little about who explained its use. One lead concerns James Pawpaw, a Virginia healer. A printed account credits him with a remedy resembling one in an unsigned Sloane manuscript. Their relationship is still uncertain.
 
-**One way to investigate.** Start with an entry that gives a place, approximate date and named intermediary. Follow that person through letters, ship records or accounts for someone described independently in the same transaction. Check whether the evidence identifies the collector, the person who supplied the knowledge, or both.
+**One way to investigate.** Compare entries in Sloane’s plant catalogue with labels, letters and earlier accounts. Trace named and unnamed contributors across several cases to see whose expertise the catalogue preserved and where names fell out of the record. The Pawpaw manuscript offers one place to test how securely those connections can be made.
 
-**Sources** [Sloane specimen catalogues](<https://data.nhm.ac.uk/dataset/sloane-vegetable-substances>) · [Sloane Letters Project](<https://sloaneletters.com/>)
+**Sources** [Sloane’s plant catalogue](<https://data.nhm.ac.uk/dataset/sloane-vegetable-substances>) · [Sloane Letters Project](<https://sloaneletters.com/>) · [Printed account naming Pawpaw](<https://digirepo.nlm.nih.gov/ext/dw/8111161/PDF/8111161.pdf#page=50>) · [Unsigned Sloane manuscript](<https://nhm.primo.exlibrisgroup.com/discovery/delivery/44NHM_INST:44NHM_V1/12233186820002081#13233193840002081>)
 
 ### 38. Do khipus record more than numbers, and can their non-numerical signs be read? (`khipu`)
 
@@ -564,15 +564,7 @@ After centuries of recurrent plague, western European cities experienced their l
 
 **Sources** [Provençal archives](<https://www.archives13.fr/>) · [Venetian state archives](<https://www.archiviodistatovenezia.it/>)
 
-### 68. Did James Pawpaw’s remedy enter Sloane’s collection without his name? (`james-pawpaw-remedy`)
-
-A printed recipe from 1736 credits James Pawpaw, a healer in Virginia. An anonymous manuscript in Hans Sloane’s collection gives a similar sequence and names three of the same plants, with differences as well. A note on the reverse may help explain its origin. The two surviving versions could also share an intermediary.
-
-**One way to investigate.** Compare the complete texts, including the annotation, against the digitized images. Trace the handwriting, wording and catalogue history into other Virginia papers and dated correspondence. A letter enclosing the manuscript or naming its supplier would connect people and documents more securely than the shared ingredients alone.
-
-**Sources** [Sloane collections](<https://nhm.primo.exlibrisgroup.com/discovery/delivery/44NHM_INST:44NHM_V1/12233186820002081#13233193840002081>) · [National Library of Medicine](<https://digirepo.nlm.nih.gov/ext/dw/8111161/PDF/8111161.pdf#page=50>)
-
-### 69. Which old books preserve overlooked word lists from little-documented languages? (`hidden-vocabularies`)
+### 68. Which old books preserve overlooked word lists from little-documented languages? (`hidden-vocabularies`)
 
 Early travellers sometimes printed vocabulary lists in books with no mention of language in the title. For a language documented only rarely, one such page could preserve otherwise unknown words. A pilot catalogue covers 42 languages. It also shows how one traveller’s printed list could reappear decades later under another author’s name.
 
@@ -580,7 +572,7 @@ Early travellers sometimes printed vocabulary lists in books with no mention of 
 
 **Sources** [Text Creation Partnership](<https://textcreationpartnership.org/>) · [Wordes of their Language catalogue](<https://github.com/benjaminbreen/WordsoftheirLanguage>)
 
-### 70. Which lost works of Galen survive unrecognised in Arabic and Syriac? (`galen-arabic`)
+### 69. Which lost works of Galen survive unrecognised in Arabic and Syriac? (`galen-arabic`)
 
 Some works by the ancient physician Galen disappeared in Greek after translators had rendered them into Syriac or Arabic. Medieval scholars described their translations, and later authors sometimes quoted them. Digital manuscript images, searchable Arabic texts and a Greek–Arabic lexicon provide clues. A catalogue title can also conceal an abridgement or a different author.
 
@@ -588,7 +580,7 @@ Some works by the ancient physician Galen disappeared in Greek after translators
 
 **Sources** [Greek–Arabic lexicon](<https://telota.bbaw.de/glossga/>) · [Syriac Galen manuscript project](<https://figshare.manchester.ac.uk/articles/dataset/Syriac_Galen_Palimpsest_Processed_Images/28554083>)
 
-### 71. How, if at all, did Copernicus learn of the Maragha-school planetary models? (`copernicus-maragha`)
+### 70. How, if at all, did Copernicus learn of the Maragha-school planetary models? (`copernicus-maragha`)
 
 Copernicus used mathematical devices resembling those developed by astronomers at Maragha and elsewhere in the Islamic world. Surviving diagrams establish the resemblance. What remains unclear is how a particular idea might have reached him. Digitized Arabic, Greek and European manuscripts, library inventories and books he annotated preserve parts of the possible chain.
 
@@ -596,7 +588,7 @@ Copernicus used mathematical devices resembling those developed by astronomers a
 
 **Sources** [Vatican manuscript collections](<https://digi.vatlib.it/view/MSS_Vat.gr.211>) · [Uppsala University Library](<https://www.uu.se/en/news/2017/2017-04-06-nicolaus-copernicus-books-digitized>)
 
-### 72. Are Borneo’s wild elephants native, or descendants of a royal gift? (`borneo-elephants`)
+### 71. Are Borneo’s wild elephants native, or descendants of a royal gift? (`borneo-elephants`)
 
 One account traces Borneo’s elephants to a gift of animals taken from Java through the Sulu islands. Another holds that an elephant population had long lived on Borneo. Dutch company records mention elephants at Javanese courts, including imports. Published genetic studies can estimate when populations diverged, but that date need not be when animals reached an island.
 

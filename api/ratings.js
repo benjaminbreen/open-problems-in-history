@@ -8,10 +8,14 @@ import { notify } from "../lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
 import { createHash } from "node:crypto";
-import { criteria, validJudgment, originalRoundId, currentRoundId } from "../lib/potential.js";
+import { criteria, validJudgment, originalRoundId, expandedRoundId, currentRoundId } from "../lib/potential.js";
 import round from "../data/research-potential.json" with { type: "json" };
 
-const roundIds = new Set(round.questions.map((q) => q.id));
+const questionsFor = new Map([
+  [originalRoundId, round.originalQuestions],
+  [expandedRoundId, round.expandedQuestions],
+  [currentRoundId, round.questions],
+].map(([id, questions]) => [id, new Set(questions.map(q => q.id))]));
 const ids = new Set(problems.map((p) => p.id));
 
 export default async function handler(req, res) {
@@ -23,10 +27,10 @@ export default async function handler(req, res) {
     const entries = Object.entries(judgments ?? scores ?? {});
     const s = {};
     if (judgments !== undefined) {
-      if (roundId !== originalRoundId && roundId !== currentRoundId) {
+      if (!questionsFor.has(roundId)) {
         return res.status(400).json({ error: "Unknown rating round. Reload the ballot and try again." });
       }
-      if (!judgments || typeof judgments !== "object" || Array.isArray(judgments) || agent || !entries.length || entries.some(([id, row]) => !roundIds.has(id) || !validJudgment(row))) {
+      if (!judgments || typeof judgments !== "object" || Array.isArray(judgments) || agent || !entries.length || entries.some(([id, row]) => !questionsFor.get(roundId).has(id) || !validJudgment(row))) {
         return res.status(400).json({ error: "Please give all three whole-number scores for each human judgment." });
       }
       for (const [id, row] of entries) s[id] = Object.fromEntries(criteria.map(({ key }) => [key, row[key]]));
@@ -37,7 +41,7 @@ export default async function handler(req, res) {
     if (!clean(name, 80)) return res.status(400).json({ error: "name required" });
     if (await limited(req, "rate", 30, 3600)) return res.status(429).json({ error: "too many submissions" });
     const n = {};
-    for (const [id, v] of Object.entries(notes || {})) if (ids.has(id) && clean(v, 1000)) n[id] = clean(v, 1000);
+    for (const [id, v] of Object.entries(notes || {})) if ((judgments ? questionsFor.get(roundId) : ids).has(id) && clean(v, 1000)) n[id] = clean(v, 1000);
     const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), notes: n };
     if (judgments !== undefined) {
       r.judgments = s;

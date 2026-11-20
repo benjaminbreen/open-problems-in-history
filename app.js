@@ -1,4 +1,4 @@
-import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, currentRoundId, originalPacketPath, currentPacketPath } from "/lib/potential.js";
+import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, expandedRoundId, currentRoundId, editions } from "/lib/potential.js";
 import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
@@ -303,20 +303,24 @@ function refreshVotes(id) {
 
 // ---------- impact rating ----------
 function shuffled(ids) {
+  const key = ballotRound() === currentRoundId ? `op.rate.order.${currentRoundId}` : "op.rate.order";
   let order = [];
-  try { order = JSON.parse(store.get("op.rate.order", "[]")); } catch {}
+  try { order = JSON.parse(store.get(key, "[]")); } catch {}
   if (order.length !== ids.length || !ids.every((id) => order.includes(id))) {
     order = [...ids];
     for (let i = order.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [order[i], order[j]] = [order[j], order[i]]; }
-    store.set("op.rate.order", JSON.stringify(order));
+    store.set(key, JSON.stringify(order));
   }
   return order;
 }
 function ballotRound() {
-  return new URLSearchParams(location.search).get("round") === originalRoundId ? originalRoundId : currentRoundId;
+  const requested = new URLSearchParams(location.search).get("round");
+  return Object.hasOwn(editions, requested) ? requested : currentRoundId;
 }
 function ballotQuestions() {
-  return ballotRound() === originalRoundId ? round.originalQuestions : round.questions;
+  const id = ballotRound();
+  if (id === originalRoundId) return round.originalQuestions;
+  return id === expandedRoundId ? round.expandedQuestions : round.questions;
 }
 function draftKey(id) {
   return id === originalRoundId ? "op.rate.potential.v1" : `op.rate.potential.${id}`;
@@ -340,9 +344,12 @@ function renderRate() {
   document.title = "Rate the problems · Open Problems in History";
   const d = draft();
   d.judgments ||= {}; d.notes ||= {};
-  const archived = ballotRound() === originalRoundId;
-  const previous = draft(originalRoundId);
-  const hasPreviousDraft = Object.keys(previous.judgments || {}).length || Object.keys(previous.notes || {}).length;
+  const roundId = ballotRound();
+  const original = roundId === originalRoundId;
+  const earlierDrafts = [expandedRoundId, originalRoundId].filter(id => {
+    const saved = draft(id);
+    return Object.keys(saved.judgments || {}).length || Object.keys(saved.notes || {}).length;
+  });
   const questions = ballotQuestions();
   const byId = Object.fromEntries(questions.map((q) => [q.id, q]));
   const order = shuffled(questions.map((q) => q.id));
@@ -350,12 +357,12 @@ function renderRate() {
     <div class="rate">
       <h1 class="page-title">Rate the questions</h1>
       <p class="rate-q">Which historical questions could a research team answer using today’s digital sources, and what would we learn if it succeeded?</p>
-      <p class="ballot-edition">${archived ? "November 19, 2026 · Original ballot" : "November 20, 2026 · Expanded ballot"} · <a href="${archived ? originalPacketPath : currentPacketPath}" download>Download the Markdown packet</a></p>
-      ${archived ? `<p class="note"><a href="/rate">Open the current ballot</a></p>
-        <p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>`
-        : `${hasPreviousDraft ? `<p class="note"><a href="/rate?round=${originalRoundId}">Resume your November 19 draft</a></p>` : ""}
-          ${round.guide.map((paragraph) => `<p class="rate-guide">${esc(paragraph)}</p>`).join("")}`}
-      <dl class="rating-rubric">${(archived ? round.originalRubric : round.rubric).map(({ label, description }) => `<dt>${esc(label)}</dt><dd>${esc(description)}</dd>`).join("")}</dl>
+      <p class="ballot-edition">${editions[roundId].label} · <a href="${editions[roundId].path}" download>Download the Markdown packet</a></p>
+      ${roundId !== currentRoundId ? `<p class="note"><a href="/rate">Open the current ballot</a></p>` :
+        earlierDrafts.map(id => `<p class="note"><a href="/rate?round=${id}">Resume your draft from ${editions[id].label}</a></p>`).join("")}
+      ${original ? `<p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>` :
+        round.guide.map((paragraph) => `<p class="rate-guide">${esc(paragraph)}</p>`).join("")}
+      <dl class="rating-rubric">${(original ? round.originalRubric : round.rubric).map(({ label, description }) => `<dt>${esc(label)}</dt><dd>${esc(description)}</dd>`).join("")}</dl>
       <p class="note">Use the evidence below and your own knowledge. Rate any of the ${order.length} questions in this shuffled list. Enter three whole numbers for each question you choose. Your draft is saved in this browser until you submit. You can add or revise ratings later using the same name and browser.</p>
       <form class="rf">
         <div class="rf-who">
@@ -368,7 +375,7 @@ function renderRate() {
           return `<li>
             <span class="rank">${i + 1}</span>
             <div class="main">
-              <a class="ttl" href="/p/${esc(id)}#ballot-reading" target="_blank" rel="noopener">${esc(p.title)}</a>
+              <a class="ttl" href="/p/${esc(id === "james-pawpaw-remedy" ? "sloane-informants" : id)}#ballot-reading" target="_blank" rel="noopener">${esc(p.title)}</a>
               <p class="evidence">${esc(p.evidence)}</p>
               ${p.method ? `<p class="evidence method"><strong>One way to investigate.</strong> ${esc(p.method)}</p>
                 <p class="ballot-sources">Sources · ${p.sources.map(({ label, url }) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(" · ")}</p>` : ""}
@@ -626,7 +633,7 @@ async function renderAdmin() {
   let list, posts, ratings;
   try { [list, posts, ratings] = await Promise.all([api("/api/suggest"), api("/api/comments?pending=1"), api("/api/ratings")]); }
   catch { store.set("op.admin", null); app.innerHTML = `<h1 class="page-title">Admin</h1><p class="note">Token rejected.</p>`; setTimeout(renderAdmin, 1200); return; }
-  state.human = humanPotential(ratings.approved);
+  state.human = humanPotential(ratings.approved, round.currentRoundId, round.unchangedIds);
   const group = (st) => list.filter((s) => s.status === st);
   const item = (s) => `<div class="admin-item">
       <b>${esc(s.title)}</b>
@@ -635,7 +642,7 @@ async function renderAdmin() {
       <div class="acts">${["approved", "rejected", "pending"].filter((x) => x !== s.status)
         .map((x) => `<button type="button" class="btn ghost" data-sid="${esc(s.id)}" data-status="${x}">${{ approved: "Approve", rejected: "Reject", pending: "Back to pending" }[x]}</button>`).join("")}</div>
     </div>`;
-  const title = (id) => problems.find((p) => p.id === id)?.title || id;
+  const title = (id) => problems.find((p) => p.id === id)?.title || round.originalQuestions.find(q => q.id === id)?.title || id;
   const rater = (r, pending) => `<div class="admin-item">
       <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}${r.credit ? ` <span class="note">· wants credit</span>` : ""}
       <div class="note">${Object.keys(r.judgments || r.scores).length} scored · ${r.judgments ? `Research potential · ${esc(r.roundId ?? originalRoundId)}` : "Archived 1–5 impact scale"} · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>

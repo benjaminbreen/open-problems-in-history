@@ -3,6 +3,7 @@
 import { db, parse } from "../lib/store.js";
 import { impact, panel } from "../lib/impact.js";
 
+import round from "../data/research-potential.json" with { type: "json" };
 import { humanPotential } from "../lib/potential.js";
 
 export default async function handler(req, res) {
@@ -15,5 +16,5 @@ export default async function handler(req, res) {
   const rs = Object.values(ratings || {}).map(parse);
   const legacy = rs.filter((r) => r.scores);
   res.setHeader("Cache-Control", "public, max-age=0, must-revalidate, s-maxage=15");
-  res.status(200).json({ tally: tally || {}, counts: counts || {}, suggestions, human: humanPotential(rs), impact: impact(legacy), panel: panel(legacy) });
+  res.status(200).json({ tally: tally || {}, counts: counts || {}, suggestions, human: humanPotential(rs, round.currentRoundId, round.unchangedIds), impact: impact(legacy), panel: panel(legacy) });
 }

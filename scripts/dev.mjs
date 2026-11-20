@@ -4,11 +4,19 @@ import fs from "node:fs";
 import path from "node:path";
 
 const types = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".json": "application/json", ".svg": "image/svg+xml", ".png": "image/png", ".mp3": "audio/mpeg", ".webp": "image/webp", ".txt": "text/plain; charset=utf-8", ".md": "text/plain; charset=utf-8" };
+const redirects = JSON.parse(fs.readFileSync("vercel.json", "utf8")).redirects;
 const port = Number(process.env.PORT) || 4320;
 process.env.ADMIN_TOKEN ||= "dev";
 
 http.createServer(async (req, res) => {
   const u = new URL(req.url, "http://x");
+  const redirect = redirects.find(rule => rule.source === u.pathname.replace(/\/+$/, ""));
+  if (redirect) {
+    const destination = new URL(redirect.destination, u);
+    destination.search = u.search;
+    res.writeHead(redirect.permanent ? 308 : 307, { Location: destination.pathname + destination.search + destination.hash }).end();
+    return;
+  }
   if (u.pathname.startsWith("/api/")) {
     const file = path.resolve("api", u.pathname.slice(5) + ".js");
     if (!fs.existsSync(file)) { res.writeHead(404).end(); return; }

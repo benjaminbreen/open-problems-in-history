@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { rankBallots, validJudgment, compareRank, originalPacketPath, currentPacketPath, currentRoundId, originalRoundId } from "../lib/potential.js";
+import { rankBallots, validJudgment, compareRank, originalPacketPath, expandedPacketPath, currentPacketPath, currentRoundId, originalRoundId } from "../lib/potential.js";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 import { archiveLeads } from "../archive-leads.js";
@@ -52,26 +52,33 @@ const originalQuestions = Array.from(originalPacket.matchAll(/^\d+\. \*\*(.+?)\*
   ([, title, id, evidence]) => ({ id, title, evidence: evidence.trim() }));
 const packetIds = new Set(originalQuestions.map(({ id }) => id));
 const originalTitles = new Map(originalQuestions.map(({ id, title }) => [id, title]));
-const packet = fs.readFileSync("." + currentPacketPath, "utf8");
-const [instructions, ...entries] = packet.trimEnd().split(/^### /m);
-const questions = entries.map((entry, i) => {
-  const [heading, evidence, investigation, citations, ...extra] = entry.trim().split("\n\n");
-  const match = /^(\d+)\. (.+?) \(`([\w-]+)`\)$/.exec(heading);
-  if (!match || Number(match[1]) !== i + 1 || originalTitles.get(match[3]) !== match[2] || !byId.has(match[3]) || extra.length ||
-      !evidence || !investigation?.startsWith("**One way to investigate.** ") || !citations?.startsWith("**Sources** ")) {
-    throw new Error(`Invalid question in ${currentPacketPath} at position ${i + 1}`);
-  }
-  const sources = citations.slice("**Sources** ".length).split(" · ").map((link) => {
-    const source = /^\[([^\]]+)\]\(<(https?:\/\/[^>\s]+)>\)$/.exec(link);
-    if (!source) throw new Error(`Invalid source for ${match[3]}: ${link}`);
-    return { label: source[1], url: source[2] };
+function expandedPacket(path, titles) {
+  const packet = fs.readFileSync("." + path, "utf8");
+  const [instructions, ...entries] = packet.trimEnd().split(/^### /m);
+  const questions = entries.map((entry, i) => {
+    const [heading, evidence, investigation, citations, ...extra] = entry.trim().split("\n\n");
+    const match = /^(\d+)\. (.+?) \(`([\w-]+)`\)$/.exec(heading);
+    if (!match || Number(match[1]) !== i + 1 || titles.get(match[3]) !== match[2] || extra.length ||
+        !evidence || !investigation?.startsWith("**One way to investigate.** ") || !citations?.startsWith("**Sources** ")) {
+      throw new Error(`Invalid question in ${path} at position ${i + 1}`);
+    }
+    const sources = citations.slice("**Sources** ".length).split(" · ").map((link) => {
+      const source = /^\[([^\]]+)\]\(<(https?:\/\/[^>\s]+)>\)$/.exec(link);
+      if (!source) throw new Error(`Invalid source for ${match[3]}: ${link}`);
+      return { label: source[1], url: source[2] };
+    });
+    const method = investigation.slice("**One way to investigate.** ".length).trim();
+    if (!method || sources.length < 1) throw new Error(`Incomplete brief for ${match[3]}`);
+    return { id: match[3], title: match[2], evidence, method, sources };
   });
-  const method = investigation.slice("**One way to investigate.** ".length).trim();
-  if (!method || sources.length < 1) throw new Error(`Incomplete brief for ${match[3]}`);
-  return { id: match[3], title: match[2], evidence, method, sources };
-});
-if (!packetIds.size || originalQuestions.length !== packetIds.size || questions.length !== packetIds.size ||
-    new Set(questions.map(({ id }) => id)).size !== packetIds.size) throw new Error("Rating packet IDs differ");
+  if (questions.length !== titles.size || new Set(questions.map(q => q.id)).size !== titles.size)
+    throw new Error(`Question IDs do not match ${path}`);
+  return { packet, instructions, questions };
+}
+const { questions: expandedQuestions } = expandedPacket(expandedPacketPath, originalTitles);
+const { packet, instructions, questions } = expandedPacket(currentPacketPath, new Map(problems.map(p => [p.id, p.title])));
+const expandedById = new Map(expandedQuestions.map(q => [q.id, q]));
+const unchangedIds = questions.filter(q => JSON.stringify(q) === JSON.stringify(expandedById.get(q.id))).map(q => q.id);
 function readRubric(instructions) {
   const scores = Array.from(instructions.matchAll(/^\d+\. \*\*(.+?)\.\*\* (.+)$/gm),
     ([, label, description]) => ({ label, description }));
@@ -88,13 +95,14 @@ const ballots = Object.entries(models).map(([model, label]) => {
   const source = `/rating-passes/${originalRoundId}/${model}.json`;
   const { ratings, reasoning_effort } = JSON.parse(fs.readFileSync("." + source, "utf8"));
   const rows = Object.fromEntries(ratings.map((r) => [r.id, r]));
-  if (ratings.length !== packetIds.size || questions.some(({ id }) => !validJudgment(rows[id]) || !rows[id].reason?.trim())) {
+  if (ratings.length !== packetIds.size || originalQuestions.some(({ id }) => !validJudgment(rows[id]) || !rows[id].reason?.trim())) {
     throw new Error(`Incomplete or invalid ballot from ${model}`);
   }
   return { label, source, reasoning_effort, rows };
 });
-const ai = rankBallots(ballots.map((ballot) => ballot.rows));
-fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
+// Keep the historical ballots intact. Compute positions among the questions still listed.
+const ai = rankBallots(ballots.map(({ rows }) => Object.fromEntries(Object.entries(rows).filter(([id]) => byId.has(id)))));
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, expandedQuestions, unchangedIds, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
 const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);

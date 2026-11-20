@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentRoundId, originalRoundId, humanPotential, rankBallots, validJudgment } from "../lib/potential.js";
+import { currentRoundId, expandedRoundId, originalRoundId, humanPotential, rankBallots, validJudgment } from "../lib/potential.js";
 
 const judgment = (chance_pct, historical_contribution, further_research) => ({
   chance_pct, historical_contribution, further_research,
@@ -41,4 +41,20 @@ test("require three in-range integers", () => {
   assert(!validJudgment(judgment("50", 7, 8)));
   assert(!validJudgment(judgment(50.5, 7, 8)));
   assert(!validJudgment(judgment(50, 11, 8)));
+});
+
+test("revised ballot retains judgments on identical briefs and keeps the old cases separate", () => {
+  const old = judgment(20, 3, 4), fresh = judgment(80, 8, 7);
+  const approved = [
+    { participant: "one", t: 1, roundId: expandedRoundId, judgments: { same: old, sloane: old, pawpaw: old } },
+    { participant: "two", t: 2, roundId: expandedRoundId, judgments: { same: old, sloane: old } },
+    { participant: "one", t: 3, roundId: currentRoundId, judgments: { same: fresh, sloane: fresh } },
+  ];
+  const current = humanPotential(approved, currentRoundId, ["same"]);
+  assert.equal(current.same.count, 2);
+  assert.equal(current.same.historical, 3.5);
+  assert.equal(current.sloane.count, 1);
+  assert.equal(current.sloane.historical, 6.4);
+  assert.equal(current.pawpaw, undefined);
+  assert.equal(humanPotential(approved, expandedRoundId).pawpaw.count, 1);
 });

@@ -50,6 +50,11 @@
   ],
   "redirects": [
     {
+      "source": "/p/james-pawpaw-remedy",
+      "destination": "/p/sloane-informants#james-pawpaw",
+      "permanent": true
+    },
+    {
       "source": "/p/langley-notebooks",
       "destination": "/leads/langley-kite",
       "permanent": true

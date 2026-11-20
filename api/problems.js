@@ -11,10 +11,14 @@ import round from "../data/research-potential.json" with { type: "json" };
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "public, s-maxage=60, stale-while-revalidate=600");
   res.setHeader("Access-Control-Allow-Origin", "*");
+  if (req.query.id === "james-pawpaw-remedy") {
+    res.setHeader("Location", "/api/problems?id=sloane-informants");
+    return res.status(308).end();
+  }
   const [tally, ccount, acount, ratings] = await Promise.all([db.hgetall("tally"), db.hgetall("ccount"), db.hgetall("acount"), db.hgetall("ratings")]);
   const approved = Object.values(ratings || {}).map(parse);
   const imp = impact(approved.filter((r) => r.scores));
-  const human = humanPotential(approved);
+  const human = humanPotential(approved, round.currentRoundId, round.unchangedIds);
   const live = (id) => {
     const up = Number(tally?.[`${id}:up`]) || 0, down = Number(tally?.[`${id}:down`]) || 0;
     return { potential: { ai: round.ai[id] ?? null, human: human[id] ?? null }, impact: imp[id]?.score ?? null, score: up - down, up, down, comments: Number(ccount?.[id]) || 0, proposed_approaches: Number(acount?.[id]) || 0 };

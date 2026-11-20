@@ -1,7 +1,7 @@
 {
   "id": "sloane-informants",
-  "title": "Who supplied the medical knowledge that Hans Sloane's catalogues attribute to unnamed people?",
-  "short": "Sloane's catalogues attribute remedies and drug samples to 'a Negro', 'an Indian druggist' or an unnamed ship's doctor; few of these informants have been traced to named people.",
+  "title": "Whose medical knowledge did Hans Sloane collect, and whose names survive in the record?",
+  "short": "The London physician Hans Sloane collected remedies and medicinal plants from around the world. His catalogues often name the person who delivered an item but give few clues about the person who first explained its use.",
   "region": "Global",
   "field": "Science & knowledge",
   "start": 1680,
@@ -175,6 +175,11 @@
           "name": "Sloane manuscript catalogue of Vegetables and Vegetable Substances (facsimile)",
           "url": "https://nhm.primo.exlibrisgroup.com/permalink/44NHM_INST/16ehpmm/alma9936352402081",
           "note": "Public IIIF images of the manuscript volumes, needed to check transcriptions, cancelled lines and footnotes."
+        },
+        {
+          "name": "Unsigned manuscript describing a remedy",
+          "url": "https://nhm.primo.exlibrisgroup.com/discovery/delivery/44NHM_INST:44NHM_V1/12233186820002081#13233193840002081",
+          "note": "The manuscript shares three ingredients and a sequence of preparations with the printed account attributed to James Pawpaw. The connection remains open."
         }
       ]
     },
@@ -270,6 +275,13 @@
       "aliases": [
         "Digital Ark"
       ]
+    },
+    {
+      "repository": "National Library of Medicine",
+      "collection": "Digitized 1736 recipe, printed pp. 46–47",
+      "url": "https://digirepo.nlm.nih.gov/ext/dw/8111161/PDF/8111161.pdf#page=50",
+      "digitized": "full",
+      "note": "The published recipe names its practitioner."
     }
   ],
   "provenance": {
@@ -278,5 +290,20 @@
     "compiled_by": "Claude Opus 5.5",
     "compiled_on": "2026-10-12",
     "needs_on": "2026-10-12"
+  },
+  "caseStudy": {
+    "id": "james-pawpaw",
+    "title": "A possible trace of James Pawpaw’s remedy",
+    "text": "James Pawpaw was an enslaved healer in Virginia who gained his freedom after disclosing a treatment. A printed account from 1736 credits him by name. An unsigned manuscript in Sloane’s collection describes a similar remedy. The two versions share three plants and a sequence of preparations, but they differ in places. Who wrote the manuscript, and how did it reach London? A note on the back, a covering letter or another dated copy might connect it to Pawpaw or identify a source both versions drew on. Either finding would help explain whose name travelled with a remedy and where the trail of attribution ends.",
+    "sources": [
+      {
+        "label": "The 1736 printed account, pp. 46–47",
+        "url": "https://digirepo.nlm.nih.gov/ext/dw/8111161/PDF/8111161.pdf#page=50"
+      },
+      {
+        "label": "The unsigned manuscript in Sloane’s collection",
+        "url": "https://nhm.primo.exlibrisgroup.com/discovery/delivery/44NHM_INST:44NHM_V1/12233186820002081#13233193840002081"
+      }
+    ]
   }
 }
