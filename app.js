@@ -1,4 +1,4 @@
-import { compareRank, criteria, humanPotential, validJudgment } from "/lib/potential.js";
+import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, currentRoundId, originalPacketPath, currentPacketPath } from "/lib/potential.js";
 import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
@@ -89,7 +89,7 @@ function renderList() {
   const outcome = view.metric === "historical" ? "contribution to historical knowledge" : "value for further research";
   const tips = {
     ai: `Each of the ${round.ballots.length} AI judges estimated the chance of a convincing answer and its ${outcome} if answered. We multiply each judge’s two values, then average the scores with equal weight. Select an AI rank to see each judge’s scores.`,
-    human: `The same calculation, averaged over the people who rated this question. A dash means there are no approved human ratings yet.`,
+    human: `The same calculation, averaged over people who rated this question using the expanded November 20 packet. A dash means there are no approved human ratings yet.`,
     votes: "Readers' upvotes minus downvotes. One vote per browser per problem.",
     title: "Alphabetical by question.",
     field: "Grouped by field of history.",
@@ -174,7 +174,7 @@ app.addEventListener("submit", async (e) => {
   if (f.matches(".rf")) {
     const d = draft();
     const judgments = {};
-    for (const { id } of round.questions) {
+    for (const { id } of ballotQuestions()) {
       const row = d.judgments?.[id];
       if (!row || !Object.keys(row).length) continue;
       if (!validJudgment(row)) {
@@ -191,7 +191,7 @@ app.addEventListener("submit", async (e) => {
     if (submit.disabled) return;
     submit.disabled = true;
     try {
-      await api("/api/ratings", { method: "POST", body: { ...Object.fromEntries(new FormData(f)), judgments, notes: d.notes || {} } });
+      await api("/api/ratings", { method: "POST", body: { ...Object.fromEntries(new FormData(f)), roundId: ballotRound(), judgments, notes: d.notes || {} } });
     } catch (err) { alert(`Could not submit: ${err.message}`); submit.disabled = false; return; }
     saveDraft({ name: d.name, affiliation: d.affiliation, credit: d.credit });
     app.querySelector(".rate").innerHTML = `<h1 class="page-title">Thank you</h1><p class="rate-q">Your ratings have been submitted for review.</p><p><a href="/">See the rankings</a></p>`;
@@ -312,33 +312,50 @@ function shuffled(ids) {
   }
   return order;
 }
-const draftKey = "op.rate.potential.v1";
-let currentDraft;
-function draft() {
-  if (!currentDraft) {
-    try { currentDraft = JSON.parse(store.get(draftKey, "{}")); } catch {}
-    currentDraft ||= {};
-  }
-  return currentDraft;
+function ballotRound() {
+  return new URLSearchParams(location.search).get("round") === originalRoundId ? originalRoundId : currentRoundId;
 }
-function saveDraft(d) { currentDraft = d; store.set(draftKey, JSON.stringify(d)); }
+function ballotQuestions() {
+  return ballotRound() === originalRoundId ? round.originalQuestions : round.questions;
+}
+function draftKey(id) {
+  return id === originalRoundId ? "op.rate.potential.v1" : `op.rate.potential.${id}`;
+}
+const drafts = new Map();
+function draft(id = ballotRound()) {
+  if (!drafts.has(id)) {
+    let saved;
+    try { saved = JSON.parse(store.get(draftKey(id), "{}")); } catch {}
+    drafts.set(id, saved || {});
+  }
+  return drafts.get(id);
+}
+function saveDraft(d) {
+  const id = ballotRound();
+  drafts.set(id, d);
+  store.set(draftKey(id), JSON.stringify(d));
+}
 
 function renderRate() {
   document.title = "Rate the problems · Open Problems in History";
   const d = draft();
   d.judgments ||= {}; d.notes ||= {};
-  const byId = Object.fromEntries(round.questions.map((q) => [q.id, q]));
-  const order = shuffled(round.questions.map((q) => q.id));
+  const archived = ballotRound() === originalRoundId;
+  const previous = draft(originalRoundId);
+  const hasPreviousDraft = Object.keys(previous.judgments || {}).length || Object.keys(previous.notes || {}).length;
+  const questions = ballotQuestions();
+  const byId = Object.fromEntries(questions.map((q) => [q.id, q]));
+  const order = shuffled(questions.map((q) => q.id));
   app.innerHTML = `
     <div class="rate">
       <h1 class="page-title">Rate the questions</h1>
       <p class="rate-q">Which historical questions could a research team answer using today’s digital sources, and what would we learn if it succeeded?</p>
-      <p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>
-      <dl class="rating-rubric">
-        <dt>Chance of a convincing answer · 0–100%</dt><dd>How likely is the team to reach an answer another historian could verify? A well-supported negative answer counts. A promising lead alone leaves the question open.</dd>
-        <dt>Historical contribution · 1–10</dt><dd>Assume the team succeeds. A 1 refines a small fact, a 5 substantially changes a specialist explanation, and a 10 revises several historical debates. A question about one person or community can score highly.</dd>
-        <dt>Further research · 1–10</dt><dd>What would that answer make possible? A 1 has little additional use, a 5 opens a specific source or line of inquiry, and a 10 opens a substantial body of evidence for many investigations.</dd>
-      </dl>
+      <p class="ballot-edition">${archived ? "November 19, 2026 · Original ballot" : "November 20, 2026 · Expanded ballot"} · <a href="${archived ? originalPacketPath : currentPacketPath}" download>Download the Markdown packet</a></p>
+      ${archived ? `<p class="note"><a href="/rate">Open the current ballot</a></p>
+        <p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>`
+        : `${hasPreviousDraft ? `<p class="note"><a href="/rate?round=${originalRoundId}">Resume your November 19 draft</a></p>` : ""}
+          ${round.guide.map((paragraph) => `<p class="rate-guide">${esc(paragraph)}</p>`).join("")}`}
+      <dl class="rating-rubric">${(archived ? round.originalRubric : round.rubric).map(({ label, description }) => `<dt>${esc(label)}</dt><dd>${esc(description)}</dd>`).join("")}</dl>
       <p class="note">Use the evidence below and your own knowledge. Rate any of the ${order.length} questions in this shuffled list. Enter three whole numbers for each question you choose. Your draft is saved in this browser until you submit. You can add or revise ratings later using the same name and browser.</p>
       <form class="rf">
         <div class="rf-who">
@@ -353,6 +370,8 @@ function renderRate() {
             <div class="main">
               <a class="ttl" href="/p/${esc(id)}#ballot-reading" target="_blank" rel="noopener">${esc(p.title)}</a>
               <p class="evidence">${esc(p.evidence)}</p>
+              ${p.method ? `<p class="evidence method"><strong>One way to investigate.</strong> ${esc(p.method)}</p>
+                <p class="ballot-sources">Sources · ${p.sources.map(({ label, url }) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`).join(" · ")}</p>` : ""}
               <details${d.notes[id] ? " open" : ""}><summary>Reason for your scores (optional)</summary><textarea data-note="${esc(id)}" maxlength="1000" aria-label="Note">${esc(d.notes[id] || "")}</textarea></details>
             </div>
             <div class="judgments" role="group" aria-label="Scores for ${esc(p.title)}">${criteria.map(({ key, label, min, max, range }) =>
@@ -370,7 +389,7 @@ function rateCount() {
   const d = draft();
   const n = Object.values(d.judgments || {}).filter(validJudgment).length;
   const el = app.querySelector("#rate-count");
-  if (el) el.textContent = `${n} of ${round.questions.length} rated`;
+  if (el) el.textContent = `${n} of ${ballotQuestions().length} rated`;
 
 }
 
@@ -619,7 +638,7 @@ async function renderAdmin() {
   const title = (id) => problems.find((p) => p.id === id)?.title || id;
   const rater = (r, pending) => `<div class="admin-item">
       <b>${esc(r.agent ? `${r.agent} (AI)` : r.name)}</b>${r.affiliation ? ` <span class="note">· ${esc(r.affiliation)}</span>` : ""}${r.agent && r.name ? ` <span class="note">· ${esc(r.name)}</span>` : ""}${r.credit ? ` <span class="note">· wants credit</span>` : ""}
-      <div class="note">${Object.keys(r.judgments || r.scores).length} scored · ${r.judgments ? "Research potential" : "Archived 1–5 impact scale"} · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
+      <div class="note">${Object.keys(r.judgments || r.scores).length} scored · ${r.judgments ? `Research potential · ${esc(r.roundId ?? originalRoundId)}` : "Archived 1–5 impact scale"} · ${new Date(r.t).toISOString().slice(0, 16).replace("T", " ")}</div>
       <details><summary class="note">Scores</summary><ol class="admin-scores">${Object.entries(r.judgments || r.scores)
         .map(([id, v]) => `<li>${esc(title(id))} · ${r.judgments ? `${v.chance_pct}% chance · ${v.historical_contribution}/10 historical · ${v.further_research}/10 further research` : `${v}/5`}${r.notes?.[id] ? `<span class="note"> — ${esc(r.notes[id])}</span>` : ""}</li>`).join("")}</ol></details>
       <div class="acts">${pending

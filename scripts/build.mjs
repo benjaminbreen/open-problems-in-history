@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { rankBallots, validJudgment, compareRank } from "../lib/potential.js";
+import { rankBallots, validJudgment, compareRank, originalPacketPath, currentPacketPath, currentRoundId, originalRoundId } from "../lib/potential.js";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 import { archiveLeads } from "../archive-leads.js";
@@ -46,15 +46,46 @@ for (const p of problems) {
 }
 fs.writeFileSync("data/problems.json", JSON.stringify(problems));
 
-// Keep the evidence shown to human raters identical to the frozen model packet.
-const packet = fs.readFileSync("rate.txt", "utf8");
-const questions = Array.from(packet.matchAll(/^\d+\. \*\*(.+?)\*\* \(`([\w-]+)`\) *\r?\n +(.+)$/gm),
+// The Markdown sent to judges is also the source of the human ballot.
+const originalPacket = fs.readFileSync("." + originalPacketPath, "utf8");
+const originalQuestions = Array.from(originalPacket.matchAll(/^\d+\. \*\*(.+?)\*\* \(`([\w-]+)`\) *\r?\n +(.+)$/gm),
   ([, title, id, evidence]) => ({ id, title, evidence: evidence.trim() }));
-const packetIds = new Set(questions.map((q) => q.id));
-if (!questions.length || packetIds.size !== questions.length) throw new Error("Invalid rating packet");
+const packetIds = new Set(originalQuestions.map(({ id }) => id));
+const originalTitles = new Map(originalQuestions.map(({ id, title }) => [id, title]));
+const packet = fs.readFileSync("." + currentPacketPath, "utf8");
+const [instructions, ...entries] = packet.trimEnd().split(/^### /m);
+const questions = entries.map((entry, i) => {
+  const [heading, evidence, investigation, citations, ...extra] = entry.trim().split("\n\n");
+  const match = /^(\d+)\. (.+?) \(`([\w-]+)`\)$/.exec(heading);
+  if (!match || Number(match[1]) !== i + 1 || originalTitles.get(match[3]) !== match[2] || !byId.has(match[3]) || extra.length ||
+      !evidence || !investigation?.startsWith("**One way to investigate.** ") || !citations?.startsWith("**Sources** ")) {
+    throw new Error(`Invalid question in ${currentPacketPath} at position ${i + 1}`);
+  }
+  const sources = citations.slice("**Sources** ".length).split(" · ").map((link) => {
+    const source = /^\[([^\]]+)\]\(<(https?:\/\/[^>\s]+)>\)$/.exec(link);
+    if (!source) throw new Error(`Invalid source for ${match[3]}: ${link}`);
+    return { label: source[1], url: source[2] };
+  });
+  const method = investigation.slice("**One way to investigate.** ".length).trim();
+  if (!method || sources.length < 1) throw new Error(`Incomplete brief for ${match[3]}`);
+  return { id: match[3], title: match[2], evidence, method, sources };
+});
+if (!packetIds.size || originalQuestions.length !== packetIds.size || questions.length !== packetIds.size ||
+    new Set(questions.map(({ id }) => id)).size !== packetIds.size) throw new Error("Rating packet IDs differ");
+function readRubric(instructions) {
+  const scores = Array.from(instructions.matchAll(/^\d+\. \*\*(.+?)\.\*\* (.+)$/gm),
+    ([, label, description]) => ({ label, description }));
+  if (scores.length !== 3) throw new Error("Expected three scoring criteria");
+  return scores;
+}
+const rubric = readRubric(instructions);
+const originalRubric = readRubric(originalPacket);
+const guide = instructions.split("Give three judgments for each question.")[0].trim().split("\n\n").slice(2);
+if (guide.length !== 2) throw new Error("Expected the investigation scope and brief instructions");
+fs.writeFileSync("rate.txt", packet);
 const models = { claude: "Claude Opus 5.5", gemini: "Gemini 4 Hydrogen", gpt: "GPT-6", "gpt-6.2-astra-high": "GPT-6.2 Astra" };
 const ballots = Object.entries(models).map(([model, label]) => {
-  const source = `/rating-passes/2026-11-19/${model}.json`;
+  const source = `/rating-passes/${originalRoundId}/${model}.json`;
   const { ratings, reasoning_effort } = JSON.parse(fs.readFileSync("." + source, "utf8"));
   const rows = Object.fromEntries(ratings.map((r) => [r.id, r]));
   if (ratings.length !== packetIds.size || questions.some(({ id }) => !validJudgment(rows[id]) || !rows[id].reason?.trim())) {
@@ -63,7 +94,7 @@ const ballots = Object.entries(models).map(([model, label]) => {
   return { label, source, reasoning_effort, rows };
 });
 const ai = rankBallots(ballots.map((ballot) => ballot.rows));
-fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, ai, ballots }));
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
 const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);
@@ -111,7 +142,7 @@ fs.mkdirSync("rate", { recursive: true });
 fs.writeFileSync("rate/index.html", page({
   title: `Rate the questions · ${SITE}`,
   description: "Assess which historical questions a research team could answer using public digital sources.",
-  main: '<div class="rate"><h1 class="page-title">Rate the questions</h1><noscript>Enable JavaScript to fill in the ballot. You can also <a href="/rate.txt">read the questions and scoring instructions</a>.</noscript></div>',
+  main: `<div class="rate"><h1 class="page-title">Rate the questions</h1><noscript>Enable JavaScript to fill in the ballot. You can also <a href="${currentPacketPath}">read the questions and scoring instructions</a>.</noscript></div>`,
 }));
 
 fs.rmSync("p", { recursive: true, force: true });
@@ -320,7 +351,7 @@ ${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field
 - How the problems were chosen and how research potential is ranked: ${URL}/methods
 - Primary-source exhibits: ${URL}/leads
 - Every work and archive cited across the problems: ${URL}/sources
-- Instructions for AI models asked to rate research potential: ${URL}/rate.txt
+- Current research-potential ballot and source briefs (Markdown): ${URL}${currentPacketPath}
 - About the project: ${URL}/about
 - Source code and data: ${REPO}
 `);

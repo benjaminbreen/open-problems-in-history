@@ -8,7 +8,7 @@ import { notify } from "../lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
 import { createHash } from "node:crypto";
-import { criteria, validJudgment } from "../lib/potential.js";
+import { criteria, validJudgment, originalRoundId, currentRoundId } from "../lib/potential.js";
 import round from "../data/research-potential.json" with { type: "json" };
 
 const roundIds = new Set(round.questions.map((q) => q.id));
@@ -18,11 +18,14 @@ export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");
 
   if (req.method === "POST") {
-    const { name, affiliation, agent, credit, scores, judgments, notes, website } = req.body || {};
+    const { name, affiliation, agent, credit, scores, judgments, notes, website, roundId = originalRoundId } = req.body || {};
     if (website) return res.status(200).json({ ok: true, pending: true });
     const entries = Object.entries(judgments ?? scores ?? {});
     const s = {};
     if (judgments !== undefined) {
+      if (roundId !== originalRoundId && roundId !== currentRoundId) {
+        return res.status(400).json({ error: "Unknown rating round. Reload the ballot and try again." });
+      }
       if (!judgments || typeof judgments !== "object" || Array.isArray(judgments) || agent || !entries.length || entries.some(([id, row]) => !roundIds.has(id) || !validJudgment(row))) {
         return res.status(400).json({ error: "Please give all three whole-number scores for each human judgment." });
       }
@@ -38,6 +41,7 @@ export default async function handler(req, res) {
     const r = { rid: newId(), name: clean(name, 80), affiliation: clean(affiliation, 160), t: Date.now(), notes: n };
     if (judgments !== undefined) {
       r.judgments = s;
+      r.roundId = roundId;
       r.participant = createHash("sha256").update(voterId(req, res) + "/" + r.name.toLowerCase()).digest("hex");
     } else r.scores = s;
     if (clean(agent, 80)) r.agent = clean(agent, 80);

@@ -1,3 +1,5 @@
+import { originalPacketPath, currentPacketPath } from "./lib/potential.js";
+
 // Pure HTML renderers, shared by the browser (app.js) and the static build (scripts/build.mjs).
 
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
@@ -634,12 +636,12 @@ export function methodsHTML(ballots) {
 
     <div class="prose">
       <h2 id="rankings">How the questions are ranked</h2>
-      <p>Which investigation is most likely to teach us something consequential? In November 2026, ${panel} each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. The judges reported no prior exposure to rankings of these questions.</p>
+      <p>Which investigation is most likely to teach us something consequential? On November 19, 2026, ${panel} each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. The judges reported no prior exposure to rankings of these questions.</p>
       <p>First, each judge estimated the chance of reaching an answer another historian could verify, using today’s tools and public digital sources. A well-supported negative answer counts. Then, assuming the question had been answered, the judge assessed two things on a scale of 1 to 10. How much would the answer change what historians know? And what other research would it make possible?</p>
       <p><em>Overall potential</em> multiplies each judge’s estimate of the chance of a convincing answer by the historical contribution that answer would make. Suppose a judge gives one question a contribution of 10 out of 10 but only a 5% chance of an answer. It scores 0.5. A question with a contribution of 7 and a 70% chance scores 4.9, so it ranks higher on that ballot. The AI ranking gives each ballot equal weight. Each GPT run counts as a separate ballot.</p>
       <p>Choose <em>Further research</em> to see which answers could open up the most work for others. This ranking multiplies the same chance estimates by each judge’s assessment of that follow-on value.</p>
-      <p>The human column uses the same calculation across approved human ballots for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
-      <p>Read the <a href="/rate.txt">original question packet</a> and the scores from ${sources}, or <a href="/rate">fill in a human ballot</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
+      <p>The human column uses the same calculation across approved human ballots from the November 20 round. Those raters see a fuller account of the evidence and one suggested investigation for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
+      <p>Read the <a href="${originalPacketPath}">November 19 packet</a> and the scores from ${sources}. For the new round, <a href="/rate">fill in the human ballot</a> or <a href="${currentPacketPath}" download>download the November 20 packet</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>
     </div>
   </article>`;
 }
