@@ -1,6 +1,6 @@
 {
   "id": "hittite-fragments",
-  "title": "Which Hittite tablet fragments belong to the same tablet or preserve the same text?",
+  "title": "What missing passages of Hittite writing can we recover from broken clay tablets?",
   "short": "Hittite scribes wrote on clay tablets. A few lines on a broken piece could restore a missing passage in a ritual or identify a second copy of a treaty.",
   "region": "Middle East",
   "field": "Texts & authorship",
@@ -11,7 +11,7 @@
   ],
   "matters": "Much of what survives from the Hittite kingdom in Anatolia is in pieces. A physical join can reunite parts of one object. A second scribe’s copy may fill in words missing from a broken tablet and show how a text changed between copies.",
   "stuck": "The TLHdig collection lets readers search transcribed signs. In a pilot on a release containing 23,921 documents, the top tenth of matches on simulated fragments were correct in 94 percent of cases. About eight matches on real fragments appeared to be missing from the catalogue of known pieces. Their photographs and full publication histories still need checking.",
-  "solved": "For a duplicate text, show a distinctive sequence of preserved signs in the same order on separate tablets. For a physical join, also demonstrate that the edges, surface and line spacing fit. Check each result against published editions and museum records.",
+  "solved": "Publish the restored passages alongside the fragments that supply the missing words. For a second copy, show a distinctive sequence of signs shared by both tablets. For a physical join, also show that the edges, surface and line spacing fit. Check each reading against published editions and museum records.",
   "approach": [
     "Search the unassigned groups in TLHdig using signs visible on the clay. Exclude editorial restorations, which may already come from a known copy.",
     "Test the ranking on known duplicates and short formulae, then compare candidates with the Mainz concordance under every inventory number.",

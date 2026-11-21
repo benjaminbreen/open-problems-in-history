@@ -5,7 +5,7 @@
 //   llms.txt             guide for AI agents
 import fs from "node:fs";
 import crypto from "node:crypto";
-import { rankBallots, validJudgment, compareRank, originalPacketPath, expandedPacketPath, revisedPacketPath, currentPacketPath, expandedRoundId, revisedRoundId, currentRoundId, originalRoundId } from "../lib/potential.js";
+import { rankBallots, validJudgment, compareRank, editions, originalPacketPath, currentPacketPath, expandedRoundId, currentRoundId, originalRoundId } from "../lib/potential.js";
 import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, forIndexHTML, NEEDS, collectSources, sourcesHTML, period, REPO } from "../render.js";
 
 import { leadStubs, stubHTML } from "../lead-stubs.js";
@@ -77,17 +77,21 @@ function expandedPacket(path, titles) {
     throw new Error(`Question IDs do not match ${path}`);
   return { packet, instructions, questions };
 }
-const { questions: expandedQuestions } = expandedPacket(expandedPacketPath, originalTitles);
-const { questions: revisedQuestions } = expandedPacket(revisedPacketPath);
 const { packet, instructions, questions } = expandedPacket(currentPacketPath, new Map(problems.map(p => [p.id, p.title])));
 function matchingBriefs(earlier) {
   const byId = new Map(earlier.map(q => [q.id, q]));
   return questions.filter(q => JSON.stringify(q) === JSON.stringify(byId.get(q.id))).map(q => q.id);
 }
-const unchangedIdsByRound = {
-  [expandedRoundId]: matchingBriefs(expandedQuestions),
-  [revisedRoundId]: matchingBriefs(revisedQuestions),
-};
+const archivedQuestions = { originalQuestions };
+const archivedInstructions = {};
+const unchangedIdsByRound = {};
+for (const [id, edition] of Object.entries(editions)) {
+  if (id === originalRoundId || id === currentRoundId) continue;
+  const earlier = expandedPacket(edition.path, id === expandedRoundId ? originalTitles : undefined);
+  archivedQuestions[edition.key] = earlier.questions;
+  archivedInstructions[id] = { guide: readGuide(earlier.instructions), rubric: readRubric(earlier.instructions) };
+  unchangedIdsByRound[id] = matchingBriefs(earlier.questions);
+}
 // Archived ballots retain the original prompts, even after an article moves.
 const redirects = JSON.parse(fs.readFileSync("vercel.json", "utf8")).redirects;
 const readingLinks = Object.fromEntries(redirects.filter(rule => rule.source.startsWith("/p/"))
@@ -100,8 +104,14 @@ function readRubric(instructions) {
 }
 const rubric = readRubric(instructions);
 const originalRubric = readRubric(originalPacket);
-const guide = instructions.split("Give three judgments for each question.")[0].trim().split("\n\n").slice(2);
-if (guide.length !== 2) throw new Error("Expected the investigation scope and brief instructions");
+function readGuide(instructions) {
+  const guide = instructions.split("Give three judgments for each question.")[0].trim().split("\n\n").slice(2);
+  if (guide.length !== 2) throw new Error("Expected the investigation scope and brief instructions");
+  return guide;
+}
+const guide = readGuide(instructions);
+const scoringNote = instructions.split("\n\n").find(paragraph => paragraph.startsWith("Both contribution scores "));
+if (!scoringNote) throw new Error("Expected the scoring explanation in the current packet");
 fs.writeFileSync("rate.txt", packet);
 const models = { claude: "Claude Opus 5.5", gemini: "Gemini 4 Hydrogen", gpt: "GPT-6", "gpt-6.2-astra-high": "GPT-6.2 Astra" };
 const ballots = Object.entries(models).map(([model, label]) => {
@@ -115,7 +125,11 @@ const ballots = Object.entries(models).map(([model, label]) => {
 });
 // Keep the historical ballots intact. Compute positions among the questions still listed.
 const ai = rankBallots(ballots.map(({ rows }) => Object.fromEntries(Object.entries(rows).filter(([id]) => byId.has(id)))));
-fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, originalQuestions, expandedQuestions, revisedQuestions, unchangedIdsByRound, readingLinks, guide, rubric, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
+for (const [id, result] of Object.entries(ai)) {
+  const ratedTitle = originalTitles.get(id);
+  if (ratedTitle !== byId.get(id).title) result.ratedTitle = ratedTitle;
+}
+fs.writeFileSync("data/research-potential.json", JSON.stringify({ questions, ...archivedQuestions, archivedInstructions, unchangedIdsByRound, readingLinks, guide, rubric, scoringNote, originalRubric, currentRoundId, aiRoundId: originalRoundId, ai, ballots }));
 
 // Content hash on the CSS and JS URLs so browsers fetch new copies after each change.
 const ver = crypto.createHash("sha1").update(["style.css", "app.js", "render.js", "data/problems.json", "data/research-potential.json", "lib/potential.js", "grant-player.js"].map((f) => fs.readFileSync(f)).join("")).digest("hex").slice(0, 8);

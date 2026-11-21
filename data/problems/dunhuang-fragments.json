@@ -1,6 +1,6 @@
 {
   "id": "dunhuang-fragments",
-  "title": "Which manuscript fragments from Dunhuang fit back together?",
+  "title": "What writings can we recover from the scattered manuscript fragments of Dunhuang?",
   "short": "Pages from a sealed cave on China’s Silk Road now sit in libraries thousands of miles apart. Reuniting torn pieces could recover a passage no single collection can read.",
   "region": "East Asia",
   "field": "Texts & authorship",
@@ -11,7 +11,7 @@
   ],
   "matters": "The cave at Dunhuang held Buddhist scriptures alongside letters, medical works and texts in several languages. Reassembling a scroll can preserve more than its words. Writing on the reverse may show that a discarded document was put to a new use.",
   "stuck": "The International Dunhuang Programme brings images from many collections together. Different scribes often copied the same passage. Even an exact textual match can point to two copies of a familiar scripture. Older photographs may show only one side or omit the edge of a sheet.",
-  "solved": "Publish the shelfmarks and images of each proposed pair. A physical join needs compatible edges, paper fibres, ruling and handwriting as well as continuous text. Where only the wording matches, identify the text and say what evidence connects the two copies.",
+  "solved": "Identify the manuscripts and transcribe the passages that can now be read. Show the images and shelfmarks. Matching edges, ruling and handwriting can establish that two pieces belonged to one sheet. A second copy can also supply missing words if the surviving text identifies the passage.",
   "approach": [
     "Start with documented joins to check what the images reveal at different scales. Search across the London, Paris, Beijing and St Petersburg collections.",
     "Compare Chinese Buddhist passages against CBETA and Tibetan ones against Old Tibetan Documents Online. Check the reverse, margins and line spacing of each candidate.",

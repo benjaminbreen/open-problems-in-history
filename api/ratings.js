@@ -8,15 +8,11 @@ import { notify } from "../lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
 import { createHash } from "node:crypto";
-import { criteria, validJudgment, originalRoundId, expandedRoundId, revisedRoundId, currentRoundId } from "../lib/potential.js";
+import { criteria, validJudgment, originalRoundId, editions } from "../lib/potential.js";
 import round from "../data/research-potential.json" with { type: "json" };
 
-const questionsFor = new Map([
-  [originalRoundId, round.originalQuestions],
-  [expandedRoundId, round.expandedQuestions],
-  [revisedRoundId, round.revisedQuestions],
-  [currentRoundId, round.questions],
-].map(([id, questions]) => [id, new Set(questions.map(q => q.id))]));
+const questionsFor = new Map(Object.entries(editions).map(([id, edition]) =>
+  [id, new Set(round[edition.key].map(q => q.id))]));
 const ids = new Set(problems.map((p) => p.id));
 
 export default async function handler(req, res) {

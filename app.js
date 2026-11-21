@@ -1,4 +1,4 @@
-import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, expandedRoundId, revisedRoundId, currentRoundId, editions } from "/lib/potential.js";
+import { compareRank, criteria, humanPotential, validJudgment, originalRoundId, expandedRoundId, currentRoundId, editions } from "/lib/potential.js";
 import { FLAGS, esc, period, voteBox as vbox, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML, SPRITES, forIndexHTML, needCounts, NEED, collectSources, sourcesHTML, sourcesBody, commentLabel as clabel, contributeForm, who, up as u, down as d, score as sc, ncom as nc } from "/render.js";
 
 const app = document.getElementById("app");
@@ -319,10 +319,7 @@ function ballotRound() {
   return Object.hasOwn(editions, requested) ? requested : currentRoundId;
 }
 function ballotQuestions() {
-  const id = ballotRound();
-  if (id === originalRoundId) return round.originalQuestions;
-  if (id === expandedRoundId) return round.expandedQuestions;
-  return id === revisedRoundId ? round.revisedQuestions : round.questions;
+  return round[editions[ballotRound()].key];
 }
 function draftKey(id) {
   return id === originalRoundId ? "op.rate.potential.v1" : `op.rate.potential.${id}`;
@@ -348,7 +345,8 @@ function renderRate() {
   d.judgments ||= {}; d.notes ||= {};
   const roundId = ballotRound();
   const original = roundId === originalRoundId;
-  const earlierDrafts = [revisedRoundId, expandedRoundId, originalRoundId].filter(id => {
+  const instructions = round.archivedInstructions[roundId] || round;
+  const earlierDrafts = Object.keys(editions).filter(id => id !== currentRoundId).reverse().filter(id => {
     const saved = draft(id);
     return Object.keys(saved.judgments || {}).length || Object.keys(saved.notes || {}).length;
   });
@@ -363,8 +361,9 @@ function renderRate() {
       ${roundId !== currentRoundId ? `<p class="note"><a href="/rate">Open the current ballot</a></p>` :
         earlierDrafts.map(id => `<p class="note"><a href="/rate?round=${id}">Resume your draft from ${editions[id].label}</a></p>`).join("")}
       ${original ? `<p class="rate-guide">Imagine the same team investigating each question. It can search public collections, read and transcribe scans, write code, divide up work and check the originals. It can keep following leads for as long as it needs. New scans, private access, lab work and fieldwork are outside its reach.</p>` :
-        round.guide.map((paragraph) => `<p class="rate-guide">${esc(paragraph)}</p>`).join("")}
-      <dl class="rating-rubric">${(original ? round.originalRubric : round.rubric).map(({ label, description }) => `<dt>${esc(label)}</dt><dd>${esc(description)}</dd>`).join("")}</dl>
+        instructions.guide.map((paragraph) => `<p class="rate-guide">${esc(paragraph)}</p>`).join("")}
+      <dl class="rating-rubric">${(original ? round.originalRubric : instructions.rubric).map(({ label, description }) => `<dt>${esc(label)}</dt><dd>${esc(description)}</dd>`).join("")}</dl>
+      ${roundId === currentRoundId ? `<p class="note">${esc(round.scoringNote)}</p>` : ""}
       <p class="note">Use the evidence below and your own knowledge. Rate any of the ${order.length} questions in this shuffled list. Enter three whole numbers for each question you choose. Your draft is saved in this browser until you submit. You can add or revise ratings later using the same name and browser.</p>
       <form class="rf">
         <div class="rf-who">

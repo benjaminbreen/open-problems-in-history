@@ -72,6 +72,7 @@ nav a[aria-current] { color: var(--ink); font-weight: 600; box-shadow: inset 0 -
 .breakdown-bar button { background: none; border: none; padding: 4px; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
 .rank-breakdown h2 { font: 500 clamp(21px, 4vw, 28px)/1.15 var(--serif); text-transform: none; letter-spacing: normal; border: none; margin: 14px 0 18px; padding: 0; }
 .model-scores { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: clamp(11px, 2.8vw, 13px); font-variant-numeric: tabular-nums; }
+.model-scores caption { text-align: left; padding-bottom: .45rem; }
 .model-scores th, .model-scores td { text-align: right; padding: 7px 0 7px 6px; border-top: 1px solid var(--rule); vertical-align: middle; }
 .model-scores th:first-child { text-align: left; width: 40%; padding-left: 0; }
 .model-scores tbody th { font-weight: 400; }

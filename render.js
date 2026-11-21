@@ -185,13 +185,13 @@ function rankCell(panel, row, metric, problem) {
   return `<span class="rank-cell ${panel}" title="${label}" aria-label="${label}">${value}</span>`;
 }
 
-function modelScores(problem, ballots, metric) {
+function modelScores(problem, ballots, metric, ratedTitle) {
   const historical = metric === "historical";
   const label = historical ? "Overall potential" : "Further research potential";
   const valueKey = historical ? "historical_contribution" : "further_research";
   const rows = ballots.map((ballot) => ballot.rows[problem.id]);
   const line = (heading, format) => `<tr><th scope="row">${heading}</th>${rows.map((r) => `<td>${format(r)}</td>`).join("")}</tr>`;
-  return `<table class="model-scores" aria-label="Individual model ratings">
+  return `<table class="model-scores" aria-label="Individual model ratings">${ratedTitle ? `<caption class="note">The earlier panel rated “${esc(ratedTitle)}”</caption>` : ""}
       <thead><tr><th scope="col">Rating</th>${ballots.map((b) => `<th scope="col" aria-label="${esc(b.label)}"><span class="model-full">${esc(b.label)}</span><span class="model-short" aria-hidden="true">${esc(b.label.split(" ")[0])}</span></th>`).join("")}</tr></thead>
       <tbody>
         ${line("Chance of a convincing answer", (r) => `${r.chance_pct}%`)}
@@ -209,7 +209,7 @@ function rankBreakdown(problem, ballots, result, metric) {
   return `<div popover id="${id}" class="rank-breakdown" role="dialog" aria-labelledby="${id}-title">
     <div class="breakdown-bar"><span>${label} · AI rank #${result[metric + "_rank"]}</span><button type="button" popovertarget="${id}" popovertargetaction="hide" autofocus>Close</button></div>
     <h2 id="${id}-title">${esc(problem.title)}</h2>
-    ${modelScores(problem, ballots, metric)}
+    ${modelScores(problem, ballots, metric, result.ratedTitle)}
     <p>Each model’s score is its chance of an answer multiplied by its ${historical ? "historical contribution" : "further research"} rating. The individual scores average to <strong>${result[metric].toFixed(2)}/10</strong>.</p>
   </div>`;
 }
@@ -491,7 +491,7 @@ function problemScores(problem, ballots, result) {
       <p><b>#${result.historical_rank}</b> <span>· ${result.historical.toFixed(2)}/10</span></p>
       <a href="#ai-explanations">Read the models’ explanations ↓</a>
     </div>
-    ${modelScores(problem, ballots, "historical")}
+    ${modelScores(problem, ballots, "historical", result.ratedTitle)}
   </aside>`;
 }
 
@@ -639,7 +639,7 @@ export function methodsHTML(ballots) {
       <h2 id="rankings">How the questions are ranked</h2>
       <p>Which investigation is most likely to teach us something consequential? On November 19, 2026, ${panel} each judged the same 72 questions. Each received the same short account of the available evidence and the same instructions. The judges reported no prior exposure to rankings of these questions.</p>
       <p>First, each judge estimated the chance of reaching an answer another historian could verify, using today’s tools and public digital sources. A well-supported negative answer counts. Then, assuming the question had been answered, the judge assessed two things on a scale of 1 to 10. How much would the answer change what historians know? And what other research would it make possible?</p>
-      <p><em>Overall potential</em> multiplies each judge’s estimate of the chance of a convincing answer by the historical contribution that answer would make. Suppose a judge gives one question a contribution of 10 out of 10 but only a 5% chance of an answer. It scores 0.5. A question with a contribution of 7 and a 70% chance scores 4.9, so it ranks higher on that ballot. The AI ranking gives each ballot equal weight. Each GPT run counts as a separate ballot. The current list ranks the remaining questions using their original scores. The panel rated Aceh and Padang separately. The new question about Sumatra’s tsunami history awaits a fresh rating.</p>
+      <p><em>Overall potential</em> multiplies each judge’s estimate of the chance of a convincing answer by the historical contribution that answer would make. Suppose a judge gives one question a contribution of 10 out of 10 but only a 5% chance of an answer. It scores 0.5. A question with a contribution of 7 and a 70% chance scores 4.9, so it ranks higher on that ballot. The AI ranking gives each ballot equal weight. Each GPT run counts as a separate ballot. The current list uses the November 19 scores until the next panel returns its ballots. Where the wording changed, the score table shows the question the panel saw. The panel rated Aceh and Padang separately. The new question about Sumatra’s tsunami history awaits a fresh rating.</p>
       <p>Choose <em>Further research</em> to see which answers could open up the most work for others. This ranking multiplies the same chance estimates by each judge’s assessment of that follow-on value.</p>
       <p>The human column uses the same calculation across approved human ballots from November 20. Earlier ratings carry forward for questions whose briefs are identical. James Pawpaw’s remedy now appears as a lead within the Sloane question. Those raters see a fuller account of the evidence and one suggested investigation for each question. You can rate any questions you know. Each question shows its number of human raters. A dash means it has no rating in that column. Equal scores share a rank. A difference of a few hundredths can change the order, especially with a small panel.</p>
       <p>Read the <a href="${originalPacketPath}">November 19 packet</a> and the scores from ${sources}. For the new round, <a href="/rate">fill in the human ballot</a> or <a href="${currentPacketPath}" download>download the November 20 packet</a>. Earlier ballots asked about impact alone on a five-point scale and are archived separately.</p>

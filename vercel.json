@@ -50,6 +50,11 @@
   ],
   "redirects": [
     {
+      "source": "/p/borneo-elephants",
+      "destination": "/leads/borneo-elephants",
+      "permanent": true
+    },
+    {
       "source": "/p/indian-ocean-tsunamis",
       "destination": "/p/sumatra-tsunamis",
       "permanent": true
