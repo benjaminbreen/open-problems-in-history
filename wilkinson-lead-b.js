@@ -1,4 +1,5 @@
 import { notedPassages } from "./lib/lead-notes.js";
+import { leadByline } from "./render.js";
 
 export const wilkinsonBTitle = "Which dictionary did Agent 13 use?";
 export const wilkinsonBDescription = "James Wilkinson spied for Spain. A letter about his pay lets us test a longstanding idea about the dictionary used to hide words in his mail.";
@@ -96,6 +97,7 @@ export function wilkinsonBHTML() {
       </div>
       <figure class="wilkinson-portrait"><a href="${portrait}"><img src="${original}/wilkinson-sharples.webp" width="420" height="564" alt="James Wilkinson in a blue officer’s coat, in a pastel portrait by James Sharples."></a><figcaption>James Wilkinson<br><a href="${portrait}">Portrait at Yale</a></figcaption></figure>
     </header>
+    ${leadByline([["Claude Opus 5.5", "Researched the dictionary printings and drafted this lead; reviewed by Benjamin Breen."]])}
     ${notedPassages(passages)}
   </article>`;
 }

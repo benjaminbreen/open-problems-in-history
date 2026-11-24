@@ -1,4 +1,5 @@
 import { notedPassages } from './lib/lead-notes.js';
+import { leadByline } from './render.js';
 import { cordReader } from './leads/pachacamac-khipus/cords.js';
 
 const archive = number => `https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02/invnr/7913/file/NL-HaNA_1.04.02_7913_${number}`;
@@ -29,8 +30,12 @@ function article(lead, passages) {
   return `<article class="leads-page archive-lead">
     <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">How the search worked ↓</a></div>
     <header class="archive-mast"><div><p class="lead-label">${lead.label}</p><h1 class="page-title">${lead.title}</h1>
-    <p class="archive-deck">${lead.description}</p><a class="exhibit-jump" href="#exhibit">${lead.action} ↓</a></div>
+    <p class="archive-deck">${lead.description}</p></div>
     <figure><a href="${lead.image}" aria-label="Enlarge the illustration"><img src="${lead.image}" alt="${lead.alt}"></a><figcaption>${lead.caption}</figcaption></figure></header>
+    ${leadByline(
+      [["Claude Opus 5.5", "Researched the primary sources and drafted this lead; reviewed by Benjamin Breen."]],
+      `<a href="#exhibit">${lead.action} ↓</a>`
+    )}
     ${notedPassages(passages)}
     <footer class="archive-footer"><p>Related open problem</p><a href="${lead.related}">${lead.relatedLabel} →</a></footer></article>`;
 }

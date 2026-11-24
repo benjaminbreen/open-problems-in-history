@@ -14,6 +14,7 @@ import { cautionaryTales } from "../cautionary-tales.js";
 import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
 import { superstormTitle, superstormDescription, superstormHTML } from "../superstorm-lead.js";
 import { makassarSmallpoxTitle, makassarSmallpoxDescription, makassarSmallpoxHTML } from "../makassar-smallpox-lead.js";
+import { phantomTitle, phantomDescription, phantomHTML } from "../phantom-disasters-lead.js";
 import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
 import { wilkinsonBDescription, wilkinsonBHTML, wilkinsonBTitle } from "../wilkinson-lead-b.js";
@@ -239,6 +240,15 @@ for (const lead of archiveLeads) {
     main: lead.html(),
   }));
 }
+fs.mkdirSync("leads/phantom-disasters", { recursive: true });
+fs.writeFileSync("leads/phantom-disasters/index.html", page({
+  title: `${phantomTitle} · ${SITE}`,
+  description: phantomDescription,
+  head: social({ title: phantomTitle, description: phantomDescription, url: `${URL}/leads/phantom-disasters`, image: `${URL}/og/phantom-disasters.jpg`, type: "article" })
+    + `<link rel="stylesheet" href="/leads/phantom-disasters/exhibit.css?v=${ver}">\n`
+    + `<script src="/leads/phantom-disasters/phantom.js?v=${ver}" type="module"></script>\n`,
+  main: phantomHTML(),
+}));
 fs.mkdirSync("leads/makassar-smallpox", { recursive: true });
 fs.writeFileSync("leads/makassar-smallpox/index.html", page({
   title: `${makassarSmallpoxTitle} · ${SITE}`,
@@ -365,6 +375,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
 ${[...archiveLeads, ...leadStubs].map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
+<url><loc>${URL}/leads/phantom-disasters</loc></url>
 <url><loc>${URL}/leads/makassar-smallpox</loc></url>
 <url><loc>${URL}/leads/1770-superstorm</loc></url>
 <url><loc>${URL}/leads/dodo-journal</loc></url>

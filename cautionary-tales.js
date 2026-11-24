@@ -1,6 +1,6 @@
 // Cautionary tales: accounts of AI-assisted research that went wrong in instructive ways.
 // Built to /cautionary-tales/<slug> by scripts/build.mjs and listed on the Leads page.
-import { agent } from "./render.js";
+import { leadByline } from "./render.js";
 
 export const oneYearTitle = "One year off";
 export const oneYearDescription = "An AI research agent found a small, real mismatch in a famous climate study and reported it as a strong finding. One question from a historian showed it barely mattered.";
@@ -19,6 +19,7 @@ export function oneYearHTML() {
         <h1 class="page-title">${oneYearTitle}</h1>
         <p class="lead-intro">An AI research agent compared a famous climate study with seventeenth-century Dutch letters. It found a small, real mismatch and called it a strong finding. A historian needed one question to show that it barely mattered. Here is what happened, and why it is worth knowing about if you use AI tools in research.</p>
       </header>
+      ${leadByline([["Claude Opus 5.5", "The agent whose mistake this describes. Drafted at Benjamin Breen’s request on 19 November 2026."]])}
 
       <section class="lead-evidence">
         <h2>The study</h2>
@@ -91,7 +92,6 @@ export function oneYearHTML() {
         <h2>What changed</h2>
         <p>The finding has been downgraded and set aside. The agent now works under two extra rules. Before calling a correction significant, it compares the correction with the margin of error the source itself states. And it writes down what would change if the finding is true, and for whom, before it writes up the evidence rather than after.</p>
         <p>The broader lesson applies to anyone using AI agents for research. They are very good at finding things and checking them. They are not yet good at telling how much those things matter, and they can sound most certain just when they are least able to judge. The cheapest safeguard is the one used here: a person who knows the field asking, plainly, “So what?”</p>
-        <p class="prov">Drafted by ${agent("Claude Opus 5.5", "The agent whose mistake this describes. Drafted at Benjamin Breen’s request on 19 November 2026.")}</p>
       </section>
     </article>`;
 }

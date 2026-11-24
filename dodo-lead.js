@@ -1,4 +1,5 @@
 import { notedPassages } from "./lib/lead-notes.js";
+import { leadByline } from "./render.js";
 
 export const dodoTitle = "The dodos in a ship’s journal";
 export const dodoDescription = "In April 1615, Dutch sailors went ashore on Mauritius and brought dodos back to their ship. Three dated entries in their prose journal—and the search across 4.8 million pages of handwriting that found them—offer a practical guide to agentic archival research.";
@@ -172,7 +173,11 @@ export function dodoHTML() {
   return `<article class="leads-page dodo-lead">
     <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">How the agents investigated ↓</a></div>
     <header class="dodo-mast"><div><p class="lead-label">Mauritius, 1615 &amp; 1638 · Natural history &amp; archival method</p><h1 class="page-title">${dodoTitle}</h1>
-      <p class="dodo-deck">${dodoDescription}</p><a class="dodo-jump" href="#reader">Read the ship’s journal ↓</a></div>
+      <p class="dodo-deck">${dodoDescription}</p></div>
       <figure><a href="${media}/scan-277.webp" aria-label="Enlarge folio 141r of the ship’s journal"><img src="${media}/scan-277.webp" width="2000" height="2642" alt="Folio 141 recto of the handwritten prose journal of ’t Wapen van Amsterdam, April 1615, under Mauritius."></a><figcaption>Folio 141r of the prose journal of <i>’t Wapen van Amsterdam</i>, April 1615. <a href="${archive(1059, 277)}">VOC 1059, scan 277 ↗</a></figcaption></figure></header>
+    ${leadByline(
+      [["Claude Opus 5.5", "Researched the VOC archive and drafted this lead; reviewed by Benjamin Breen."]],
+      `<a href="#reader">Read the ship’s journal ↓</a>`
+    )}
     ${notedPassages(passages)}</article>`;
 }

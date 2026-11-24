@@ -2,11 +2,13 @@ import { leadStubs } from "./lead-stubs.js";
 import { archiveLeads } from "./archive-leads.js";
 import { cautionaryTales } from "./cautionary-tales.js";
 import { notedPassages } from "./lib/lead-notes.js";
+import { leadByline } from "./render.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
 
 import { dodoTitle, dodoDescription } from "./dodo-lead.js";
 import { superstormTitle, superstormDescription } from "./superstorm-lead.js";
 import { makassarSmallpoxTitle, makassarSmallpoxDescription } from "./makassar-smallpox-lead.js";
+import { phantomTitle, phantomDescription } from "./phantom-disasters-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
@@ -24,6 +26,12 @@ export const leadsDescription = "Preliminary writeups of promising leads, method
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
+    {
+      slug: "phantom-disasters", published: "2026-11-23T22:20:00-08:00",
+      label: "Global, 1248–1913 · Historical geophysics & data auditing", title: phantomTitle, description: phantomDescription,
+      image: "/media/leads/phantom-disasters/boekhold-thumb.webp", alt: "Opening of François van Boekhold’s 1792 account of departing Salatiga on 17 July 1786 to climb Mount Merapi.",
+      action: "Trace the false entries",
+    },
     {
       slug: "makassar-smallpox", published: "2026-11-23T16:25:00-08:00",
       label: "Makassar & Sydney, 1781–1792 · Disease history", title: makassarSmallpoxTitle, description: makassarSmallpoxDescription,
@@ -165,6 +173,7 @@ export function langleyHTML() {
           <figure><a href="https://parks.canada.ca/culture/designation/personnage-person/alexander-graham-bell" aria-label="View Alexander Graham Bell’s portrait and archival credit"><img src="${scans}/bell-portrait.webp" width="336" height="416" alt="Alexander Graham Bell with a white beard, wearing a dark jacket and waistcoat."></a><figcaption>Alexander Graham Bell<br><a href="https://parks.canada.ca/culture/designation/personnage-person/alexander-graham-bell">Library and Archives Canada</a></figcaption></figure>
         </div>
       </header>
+      ${leadByline([["Claude Opus 5.5", "Researched the notebook and drafted this lead; reviewed by Benjamin Breen."]])}
       ${notedPassages(passages)}
     </article>`;
 }
@@ -179,6 +188,7 @@ export function grantHTML() {
         <p class="lead-intro">When Thomas Edison’s recording engineer Theo Wangemann took a phonograph to Europe, an American in Vienna used it to dictate a letter. He talked about the children and the apartment. The wax cylinder survived. The box it came in had no list of speakers.</p>
         <p class="lead-intro">How do you put a name to a voice when nobody alive could recognize it? Here, two things helped. The cylinder made much the same swishing noise every time it turned, which gave us a way to quiet it. And the man happened to mention something his family had put on paper.</p>
       </header>
+      ${leadByline([["Claude Opus 5.5", "Researched the cylinder and drafted this lead; reviewed by Benjamin Breen."]], `<a href="#listen">Listen to the cylinder ↓</a>`)}
 
       <div class="cylinder-passages">
         <section class="lead-player" id="listen" aria-labelledby="listen-heading">

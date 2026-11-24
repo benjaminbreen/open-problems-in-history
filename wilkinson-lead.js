@@ -1,3 +1,5 @@
+import { leadByline } from "./render.js";
+
 export const wilkinsonTitle = "A dictionary for Agent 13";
 export const wilkinsonDescription = "James Wilkinson was a U.S. Army officer who spied for Spain. A letter from 1792 gives us a way to look for the dictionary that he and Spanish officials used to hide words in their mail.";
 
@@ -79,6 +81,7 @@ export function wilkinsonHTML() {
         <p class="lead-intro">We know some of the words because someone wrote them in above the numbers. Other letters still have gaps. Could <a href="${scan(3)}">John Entick’s pocket dictionary</a> be the book that would let us fill them in?</p>
       </div>
     </header>
+    ${leadByline([["Claude Opus 5.5", "Researched the dictionary printings and drafted this lead; reviewed by Benjamin Breen."]])}
 
     <div class="cipher-reader">
       <fieldset class="cipher-views"><legend>Inside Entick’s dictionary</legend>

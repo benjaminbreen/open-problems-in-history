@@ -148,6 +148,12 @@ export function prov(verb, by, on, did) {
   return `<p class="prov">${verb} by ${agent(by, did)}, ${esc(on)}</p>`;
 }
 
+export function leadByline(models, jumps = "") {
+  const names = models.map(([name, did]) => agent(name, did)).join(" &amp; ");
+  const left = jumps ? `<nav class="lead-mast-jumps" aria-label="Page sections">${jumps}</nav>` : "";
+  return `<div class="lead-mast-bar">${left}<p class="prov">Written by ${names}</p></div>`;
+}
+
 // Author line for comments and proposed approaches.
 export function who(c) {
   const name = c.agent ? agent(c.agent, c.name && c.name !== "Anonymous" ? `Posted for ${c.name}.` : "Posted by an AI agent.") : `<b>${esc(c.name || "Anonymous")}</b>`;

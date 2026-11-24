@@ -1,4 +1,5 @@
 import { notedPassages } from "./lib/lead-notes.js";
+import { leadByline } from "./render.js";
 
 export const superstormTitle = "The missing half of the 1770 superstorm";
 export const superstormDescription = "In September 1770, blood-red auroras burned over Japan, China, and Captain Cook’s ship off Timor for nine nights—an extreme solar storm now used to stress-test modern power grids. Searching 18th-century European academy journals, observatory logs, and newspapers recovers eight overlooked sightings, finds a date error still live in NASA’s historical catalog, and uses a single star in southern France to explain why Europe saw a far weaker sky.";
@@ -408,11 +409,6 @@ export function superstormHTML() {
         <p class="lead-label">Global, September 1770 · Space weather</p>
         <h1 class="page-title">${superstormTitle}</h1>
         <p class="storm-deck">${superstormDescription}</p>
-        <div class="storm-jumps">
-          <a href="#storm-explorer">Night by night ↓</a>
-          <a href="#capella-geometry">Locating the aurora ↓</a>
-          <a href="#specialist-data">Specialist CSV &amp; tables ↓</a>
-        </div>
       </div>
       <figure>
         <a href="${media}/trondhjem-1770-sept.webp" aria-label="Enlarge Johan Daniel Berlin’s 1784 printed September 1770 Trondhjem weather and aurora table">
@@ -421,6 +417,10 @@ export function superstormHTML() {
         <figcaption>Johan Daniel Berlin’s daily Trondhjem weather table for September 1770 (printed 1784), recording <i>Nordlys</i> on Sept 11, 17, and 18 alongside rain and cloud cover on the silent nights. <a href="${nbBerlin}">National Library of Norway ↗</a></figcaption>
       </figure>
     </header>
+    ${leadByline(
+      [["Claude Opus 5.5", "Researched the primary sources and drafted this lead; reviewed by Benjamin Breen."]],
+      `<a href="#storm-explorer">Night by night ↓</a><a href="#capella-geometry">Locating the aurora ↓</a><a href="#specialist-data">Specialist CSV &amp; tables ↓</a>`
+    )}
     ${notedPassages(passages)}
   </article>`;
 }

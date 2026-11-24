@@ -264,6 +264,17 @@ ol.works, ul.archives { list-style: none; margin: 0; padding: 0; }
 .agent .bot { width: 12px; height: 12px; flex: none; color: var(--ink-2); }
 .agent.human { cursor: default; }
 .prose p.prov { margin: 18px 0 0; font: 400 11.5px/1.4 var(--mono); color: var(--muted); }
+:is(.sp-mast, .storm-mast, .dodo-mast, .archive-mast, .wilkinson-mast, .kite-mast, .lead-hero, .opening, .hv2-hero, .hc-hero):has(+ .lead-mast-bar) { margin-bottom: 0; }
+.lead-mast-bar { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1.25rem; margin: 0 0 1.4rem; padding: .7rem 0; border-bottom: 1px solid var(--rule); }
+.lead-mast-bar .lead-mast-jumps { display: flex; flex-wrap: wrap; align-items: baseline; gap: .3rem 1.05rem; margin: 0; font: .82rem/1.55 var(--mono); color: var(--muted); }
+.lead-mast-bar .lead-mast-jumps a { color: var(--ink-2); white-space: nowrap; text-underline-offset: .18em; }
+.lead-mast-bar .lead-mast-jumps a:hover { color: var(--ink); }
+.lead-mast-bar .prov { margin: 0; font: .78rem/1.5 var(--mono); color: var(--muted); }
+.lead-mast-bar:has(.lead-mast-jumps) .prov { margin-left: auto; }
+@media (max-width: 650px) {
+  .lead-mast-bar { flex-direction: column; align-items: flex-start; gap: .5rem; }
+  .lead-mast-bar:has(.lead-mast-jumps) .prov { margin-left: 0; }
+}
 hr.divider + .prose > h2:first-child { border-top: 0; margin-top: 0; padding-top: 0; }
 .agent.human img { width: 12px; height: 12px; border-radius: 50%; filter: grayscale(1); flex: none; }
 hr.divider { position: relative; border: 0; border-top: 1px solid var(--rule); margin: 44px 0 36px; overflow: visible; }
