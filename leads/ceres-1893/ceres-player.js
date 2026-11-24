@@ -6,9 +6,9 @@ const clips13010 = {
     raw: `${base}/ucsb-13010-sig-raw.mp3`,
     v4: `${base}/ucsb-13010-sig-v4.mp3`,
     slow: `${base}/ucsb-13010-sig-v4-slow.mp3`,
-    kicker: "What is being spoken · Formal Cape Dutch (<em>Hoog-Hollands</em>)",
+    kicker: "Spoken in formal Cape Dutch (<em>Hoog-Hollands</em>)",
     orig: "“Johan Andrew Stegmann. Vijftien December achttienhonderd drie-en-negentig. Predikant der Nederduitse Gereformeerde Kerk te Ceres.”",
-    eng: "<strong>English:</strong> “Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.” <em>(UCSB’s catalogue previously guessed “Johan Andrew Dechman?” and left the date and church undeciphered.)</em>",
+    eng: "<strong>English:</strong> “Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.” UCSB’s catalogue previously read the surname as “Johan Andrew Dechman?” and left the date and church blank.",
   },
   opening: {
     label: "0:00–0:44",
@@ -16,8 +16,8 @@ const clips13010 = {
     v4: `${base}/ucsb-13010-opening-v4.mp3`,
     slow: null,
     kicker: "Opening · Formal Cape Dutch (<em>Hoog-Hollands</em>)",
-    orig: "“Ik heb veel van de zogenaamde fonograaf gehoord. Heden avond heb ik het eerst gehoord, ten huize van den heer Home te Ceres—eene uitvinding, die bepaaldelijk tot een van de nieuwe [wonderen?] dezer eeuw behoort.”",
-    eng: "<strong>English:</strong> “I have heard much of the so-called phonograph. This evening I heard it for the first time, at the house of Mr. Home at Ceres—an invention that certainly belongs among the new [wonders] of this century.”",
+    orig: "“Ik heb veel van de zogenaamde fonograaf gehoord. Heden avond heb ik het eerst gehoord, ten huize van den heer Home te Ceres, eene uitvinding, die bepaaldelijk tot een van de nieuwe [wonderen?] dezer eeuw behoort.”",
+    eng: "<strong>English:</strong> “I have heard much of the so-called phonograph. This evening I heard it for the first time, at the house of Mr. Home at Ceres, an invention that certainly belongs among the new [wonders] of this century.”",
   },
   prophecy: {
     label: "0:44–2:38",
@@ -34,20 +34,19 @@ const clips13010 = {
     v4: `${base}/ucsb-13010-coda-v4.mp3`,
     slow: null,
     kicker: "Second voice on the same cylinder · English (likely Sunday, 17 December 1893)",
-    orig: "“Well now, Mr. Phonograph, here’s a [broad?] voice to hear my voice. This is Sunday afternoon, a jolly good way of spending it, isn’t it? Here all the girls come down in their nightgowns—I mean to say in their dressing gowns—and one thing and another, and we’ve just been hearing some music and an Irish speech… Speak now! Goodbye, ta-ta!”",
+    orig: "“Well now, Mr. Phonograph, here’s a [broad?] voice to hear my voice. This is Sunday afternoon, a jolly good way of spending it, isn’t it? Here all the girls come down in their nightgowns, I mean to say in their dressing gowns, and one thing and another, and we’ve just been hearing some music and an Irish speech… Speak now! Goodbye, ta-ta!”",
     eng: "<strong>Context:</strong> 15 December 1893 was a Friday. Two days later, on Sunday afternoon, a second speaker in the household filled the last half-minute of blank wax.",
   },
 };
 
 const verNames = {
   raw: "Archive audio (raw UCSB transfer)",
-  v4: "Noise reduced (v4 phase-locked scrub, 100.09 RPM)",
+  v4: "Noise reduced (100.09 RPM lock)",
   slow: "Noise reduced · 0.70× speed (pitch-preserved)",
 };
 
 const root = document.querySelector(".ceres-lead");
 if (root) {
-  // Pause any other audio element when one starts playing.
   root.addEventListener("play", (event) => {
     if (event.target instanceof HTMLAudioElement) {
       for (const el of root.querySelectorAll("audio")) {
@@ -56,7 +55,6 @@ if (root) {
     }
   }, true);
 
-  // Primary interactive exhibit for Cylinder 13010
   const tabs = root.querySelector('[data-player="c13010"]');
   const stage = root.querySelector('[data-stage="c13010"]');
   if (tabs && stage) {
@@ -119,13 +117,11 @@ if (root) {
     stage.querySelector(".version-bar").addEventListener("click", (e) => {
       const btn = e.target.closest(".ver-btn");
       if (!btn || btn.dataset.ver === curVer) return;
-      // Preserve timestamp when toggling between raw and v4 of the same passage
       const keepPos = curVer !== "slow" && btn.dataset.ver !== "slow";
       updatePlayer(curClip, btn.dataset.ver, keepPos);
     });
   }
 
-  // Mini A/B switcher for Cylinder 13009 Afrikaans
   for (const mini of root.querySelectorAll("[data-mini]")) {
     const audioEl = mini.querySelector("audio");
     const btns = [...mini.querySelectorAll(".ver-btn")];

@@ -2,7 +2,7 @@ import { notedPassages } from "./lib/lead-notes.js";
 import { leadByline } from "./render.js";
 
 export const ceresTitle = "A voice from South Africa, 1893";
-export const ceresDescription = "Quieting a repeating scratch on an unidentified 1893 wax cylinder at UC Santa Barbara revealed what appears to be the earliest known surviving voice recording made in South Africa—thirteen years before the 1906 recording normally cited—identifying the speaker, exact date, town, and the London Edison agent who recorded Alfred, Lord Tennyson.";
+export const ceresDescription = "Noise reduction on an unidentified 1893 wax cylinder at UC Santa Barbara turned up what appears to be the earliest known surviving voice recording made in South Africa, thirteen years before the 1906 recording usually cited. The cylinder names the speaker, date, town, and house, and points to the London phonograph agent who recorded Alfred, Lord Tennyson.";
 
 const media = "/media/leads/ceres-1893";
 const audio = `${media}/audio`;
@@ -17,14 +17,14 @@ function cylinder13010Exhibit() {
       <div class="exhibit-head">
         <div>
           <p class="exhibit-kicker">Audio Exhibit 1 · UCSB Cylinder 13010 (Set 197-02 · 15 December 1893)</p>
-          <h2 id="listen-13010-title">Hear the name come out of the noise</h2>
-          <p class="exhibit-intro">Pick any passage from the 1893 cylinder below, then toggle between the untouched UC Santa Barbara archive transfer and the noise-reduced version. Start with the oral signature: listen for the minister’s name, date, and town.</p>
+          <h2 id="listen-13010-title">Listen to Cylinder 13010</h2>
+          <p class="exhibit-intro">Select a passage below, then switch between the UC Santa Barbara archive transfer and the filtered version. In the signature at 2:35, listen for the minister’s surname, the day in December 1893, and the town name at the end.</p>
         </div>
       </div>
 
       <div class="ceres-tabs" role="tablist" aria-label="Choose a passage from Cylinder 13010" data-player="c13010">
         <button type="button" class="ceres-tab is-active" role="tab" aria-selected="true" data-clip="sig">
-          <span class="tab-tag">2:35–3:18 · Oral signature</span>
+          <span class="tab-tag">2:35–3:18 · Signature</span>
           <strong>Name, date &amp; church</strong>
         </button>
         <button type="button" class="ceres-tab" role="tab" aria-selected="false" data-clip="opening">
@@ -32,38 +32,38 @@ function cylinder13010Exhibit() {
           <strong>“At the house of Mr. Home”</strong>
         </button>
         <button type="button" class="ceres-tab" role="tab" aria-selected="false" data-clip="prophecy">
-          <span class="tab-tag">0:44–2:38 · Main speech</span>
-          <strong>“Preached by phonograph”</strong>
+          <span class="tab-tag">0:44–2:38 · Speech</span>
+          <strong>Preaching by phonograph</strong>
         </button>
         <button type="button" class="ceres-tab" role="tab" aria-selected="false" data-clip="coda">
           <span class="tab-tag">3:12–3:48 · Second voice</span>
-          <strong>“Sunday afternoon” coda</strong>
+          <strong>English coda</strong>
         </button>
       </div>
 
       <div class="ceres-stage" data-stage="c13010">
         <div class="version-bar" role="group" aria-label="Audio version">
           <button type="button" class="ver-btn" data-ver="raw" aria-pressed="false">Archive audio (raw UCSB)</button>
-          <button type="button" class="ver-btn is-active" data-ver="v4" aria-pressed="true">Noise reduced (v4)</button>
-          <button type="button" class="ver-btn" data-ver="slow" aria-pressed="false">Slowed 0.70× (v4)</button>
+          <button type="button" class="ver-btn is-active" data-ver="v4" aria-pressed="true">Noise reduced</button>
+          <button type="button" class="ver-btn" data-ver="slow" aria-pressed="false">Slowed 0.70×</button>
         </div>
 
         <audio controls preload="metadata" src="${audio}/ucsb-13010-sig-v4.mp3" aria-label="UCSB Cylinder 13010 selected passage"></audio>
 
         <p class="player-meta">
-          <span data-meta-label>2:35–3:18 · Noise reduced (v4 phase-locked scrub, 100.09 RPM)</span> ·
-          <a href="${audio}/ucsb-13010-full-v4.mp3" download>Full cleaned cylinder (3:48, MP3) ↓</a> ·
+          <span data-meta-label>2:35–3:18 · Noise reduced (100.09 RPM lock)</span> ·
+          <a href="${audio}/ucsb-13010-full-v4.mp3" download>Complete cleaned cylinder (3:48, MP3) ↓</a> ·
           <a href="${ucsb13010}">UCSB archive page ↗</a>
         </p>
 
         <div class="transcript-box" data-transcript>
-          <p class="tr-kicker">What is being spoken · Formal Cape Dutch (<em>Hoog-Hollands</em>)</p>
+          <p class="tr-kicker">Spoken in formal Cape Dutch (<em>Hoog-Hollands</em>)</p>
           <blockquote class="tr-orig">“Johan Andrew Stegmann. Vijftien December achttienhonderd drie-en-negentig. Predikant der Nederduitse Gereformeerde Kerk te Ceres.”</blockquote>
-          <p class="tr-eng"><strong>English:</strong> “Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.” <em>(UCSB’s catalogue previously guessed “Johan Andrew Dechman?” and left the date and church undeciphered.)</em></p>
+          <p class="tr-eng"><strong>English:</strong> “Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.” UCSB’s catalogue previously read the surname as “Johan Andrew Dechman?” and left the date and church blank.</p>
         </div>
 
         <noscript>
-          <p><a href="${audio}/ucsb-13010-sig-raw.mp3">Signature (raw)</a> · <a href="${audio}/ucsb-13010-sig-v4.mp3">Signature (cleaned)</a> · <a href="${audio}/ucsb-13010-sig-v4-slow.mp3">Signature (0.70× slowed)</a> · <a href="${audio}/ucsb-13010-opening-v4.mp3">Opening (cleaned)</a> · <a href="${audio}/ucsb-13010-prophecy-v4.mp3">Prophecy (cleaned)</a> · <a href="${audio}/ucsb-13010-coda-v4.mp3">English coda (cleaned)</a></p>
+          <p><a href="${audio}/ucsb-13010-sig-raw.mp3">Signature (raw)</a> · <a href="${audio}/ucsb-13010-sig-v4.mp3">Signature (cleaned)</a> · <a href="${audio}/ucsb-13010-sig-v4-slow.mp3">Signature (0.70× slowed)</a> · <a href="${audio}/ucsb-13010-opening-v4.mp3">Opening (cleaned)</a> · <a href="${audio}/ucsb-13010-prophecy-v4.mp3">Speech (cleaned)</a> · <a href="${audio}/ucsb-13010-coda-v4.mp3">English coda (cleaned)</a></p>
         </noscript>
       </div>
     </section>
@@ -75,9 +75,9 @@ function catalogComparisonExhibit() {
     <section class="source-exhibit catalog-compare" id="catalog-cards" aria-labelledby="catalog-cards-title">
       <div class="exhibit-head">
         <div>
-          <p class="exhibit-kicker">Source Exhibit · Two Neighbors in the Same Box (Set 197)</p>
-          <h2 id="catalog-cards-title">How two unidentified catalogue records unlocked each other</h2>
-          <p class="exhibit-intro">Both cylinders sit side by side in the UC Santa Barbara Cylinder Audio Archive as <strong>Set 197-01</strong> and <strong>Set 197-02</strong>, acquired together from the Don Hill Collection around 2000. On its own, neither record revealed where it was made. Put together, they point to the same small South African town—and the same Victorian recording pioneer.</p>
+          <p class="exhibit-kicker">Source Exhibit · UCSB Set 197-01 and 197-02</p>
+          <h2 id="catalog-cards-title">Two catalogue entries from the same box</h2>
+          <p class="exhibit-intro">Cylinders 13009 and 13010 entered the UC Santa Barbara archive together from the Don Hill Collection around 2000 as Set 197-01 and Set 197-02. Both were listed with no location and no identified speaker.</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ function catalogComparisonExhibit() {
           </a>
           <figcaption>
             <h3>Cylinder 13010 (Set 197-02 · 15 Dec 1893)</h3>
-            <p>UCSB’s catalogue lists performers as “not given or decipherable,” guesses <em>“Johan Andrew Dechman?”</em>, and labels the language Afrikaans. After scrubbing, Ds. <strong>Johan Andrew Stegmann</strong> clearly states his name, the exact date (<strong>15 December 1893</strong>), his church in <strong>Ceres</strong>, and that he is speaking at <strong>“the house of Mr. Home at Ceres.”</strong> <a href="${ucsb13010}">Live record ↗</a></p>
+            <p>The catalogue entry reads “Johan Andrew Dechman?” and tags the language as Afrikaans. On the filtered copy, Ds. Johan Andrew Stegmann states his name, the date (15 December 1893), his church in Ceres, and that he is speaking “at the house of Mr. Home at Ceres.” <a href="${ucsb13010}">Live record ↗</a></p>
           </figcaption>
         </figure>
 
@@ -98,7 +98,7 @@ function catalogComparisonExhibit() {
           </a>
           <figcaption>
             <h3>Cylinder 13009 (Set 197-01 · 1907 or later)</h3>
-            <p>The companion cylinder carries a song from a 1907 London musical, an English message mentioning <strong>Cape Town</strong> and <strong>Ceres</strong>, and a spoken Afrikaans tribute addressed to <strong>“Mister Steytler.”</strong> That name belongs to <strong>Charles Rhenius Cruywagen Steytler</strong>—who recorded Tennyson in 1890 and married <strong>Margaret Henrietta Home</strong> in Ceres in 1897. <a href="${ucsb13009}">Live record ↗</a></p>
+            <p>The companion cylinder holds an English passage naming Cape Town and Ceres, a song from a 1907 London musical, and an Afrikaans speech addressed to “Mister Steytler.” Charles Rhenius Cruywagen Steytler recorded Tennyson in 1890 and married Margaret Henrietta Home in Ceres in 1897. <a href="${ucsb13009}">Live record ↗</a></p>
           </figcaption>
         </figure>
       </div>
@@ -106,8 +106,8 @@ function catalogComparisonExhibit() {
       <figure class="specimen-strip">
         <img src="${media}/brown-wax-cylinder.webp" width="576" height="512" alt="Photograph of an early 1890s Edison brown wax cylinder with beveled interior ribs." loading="lazy">
         <figcaption>
-          <p class="exhibit-kicker">What is a “channel-rim brown wax cylinder”?</p>
-          <p>All four cylinders in Set 197 are described by UCSB as <em>channel-rim brown wax</em>—Edison’s early-1890s soft wax blanks, molded with a narrow recessed groove around the end rim so they sat cleanly on the phonograph’s tapered brass mandrel. Unlike mass-produced black cylinders made after 1902, brown-wax blanks could be recorded at home with a recording horn, played back immediately, or shaved smooth and reused. <em>Specimen shown: Edison brown wax cylinder EDIS 93947, Thomas Edison National Historical Park (Public Domain).</em></p>
+          <p class="exhibit-kicker">Channel-rim brown wax</p>
+          <p>All four cylinders in Set 197 are channel-rim brown wax blanks, the soft-wax format Edison supplied in the early 1890s. A narrow groove around the rim seated the blank on the phonograph’s brass mandrel. Owners could record into a horn at home, play the cylinder back immediately, or shave the surface smooth to reuse it. <em>Specimen shown: Edison brown wax cylinder EDIS 93947, Thomas Edison National Historical Park (Public Domain).</em></p>
         </figcaption>
       </figure>
     </section>
@@ -119,45 +119,45 @@ function companionAudioExhibit() {
     <section class="source-exhibit ceres-player-card" id="listen-13009" aria-labelledby="listen-13009-title">
       <div class="exhibit-head">
         <div>
-          <p class="exhibit-kicker">Audio Exhibit 2 · Companion Cylinders from the Same Box (Set 197-01, 03 &amp; 04)</p>
-          <h2 id="listen-13009-title">“Mister Steytler!” — and two cataloguing surprises</h2>
-          <p class="exhibit-intro">Compare the vernacular Afrikaans speech on <strong>Cylinder 13009</strong> (addressed directly to C. R. C. Steytler in Ceres) with the other two cylinders from Set 197, one of which had been misfiled under the wrong language.</p>
+          <p class="exhibit-kicker">Audio Exhibit 2 · Set 197-01, 197-03 &amp; 197-04</p>
+          <h2 id="listen-13009-title">The other three cylinders in Set 197</h2>
+          <p class="exhibit-intro">Cylinder 13009 carries spoken Afrikaans addressed to “Mister Steytler” alongside an English message naming Ceres. Cylinders 13011 and 13012 come from the same box.</p>
         </div>
       </div>
 
       <div class="companion-grid">
         <div class="mini-player" data-mini="c13009afr">
-          <p class="tab-tag">Cylinder 13009 · Vernacular Afrikaans (1:35–2:22)</p>
-          <h3>“Mister Steytler! Our minister seems a dear man…”</h3>
+          <p class="tab-tag">Cylinder 13009 · Afrikaans (1:35–2:22)</p>
+          <h3>“Mister Steytler! Ons predikant…”</h3>
           <div class="version-bar" role="group" aria-label="Cylinder 13009 Afrikaans version">
             <button type="button" class="ver-btn" data-mini-src="${audio}/ucsb-13009-afrikaans-raw.mp3" aria-pressed="false">Archive audio (raw)</button>
-            <button type="button" class="ver-btn is-active" data-mini-src="${audio}/ucsb-13009-afrikaans-v4.mp3" aria-pressed="true">Noise reduced (v4)</button>
+            <button type="button" class="ver-btn is-active" data-mini-src="${audio}/ucsb-13009-afrikaans-v4.mp3" aria-pressed="true">Noise reduced</button>
           </div>
           <audio controls preload="none" src="${audio}/ucsb-13009-afrikaans-v4.mp3" aria-label="Cylinder 13009 spoken Afrikaans addressing Mister Steytler"></audio>
           <p class="mini-quote">“Mister Steytler! Ons predikant lyk my liewe man… Ons het hom ’n paar slae gehoor preek, maar hy’s ’n goeie preek gelewer. Hy lyk my ons gemeente hoog tevrede is met hom. Ons wens hom ’n goeie geluk hierop, in die gemeente!”</p>
-          <p class="mini-note">Unlike Stegmann’s formal 1893 Cape Dutch, this passage is unmistakably spoken <strong>Afrikaans</strong>—praising a newly arrived Ceres minister (possibly Ds. R. D. McDonald, installed in 1911).</p>
+          <p class="mini-note">Spoken in vernacular Afrikaans, praising a minister whom the congregation has heard preach a few times (possibly Ds. R. D. McDonald, installed at Ceres in 1911).</p>
         </div>
 
         <div class="mini-player">
-          <p class="tab-tag">Cylinder 13009 · English opening (0:00–1:02)</p>
-          <h3>“Arrive at Ceres at the end of the week”</h3>
+          <p class="tab-tag">Cylinder 13009 · English (0:00–1:02)</p>
+          <h3>Cape Town docks and Ceres</h3>
           <audio controls preload="none" src="${audio}/ucsb-13009-ceres-eng-v4.mp3" aria-label="Cylinder 13009 English opening mentioning Cape Town and Ceres"></audio>
-          <p class="mini-quote">“This is the first time I’ve ever spoken into a gramophone, and I don’t quite believe that my voice will ever come out again! … I’m going to Cape Town on Monday night, and I hope to be at the docks at 8 o’clock on Tuesday morning … and that they’ll arrive at <strong>Ceres</strong> at the end of the week.”</p>
-          <p class="mini-note">Immediately afterward, the speaker sings “Two Little Sausages” from the London musical <em>The Girls of Gottenberg</em> (May 1907), establishing a firm earliest date for this cylinder.</p>
+          <p class="mini-quote">“This is the first time I’ve ever spoken into a gramophone, and I don’t quite believe that my voice will ever come out again! … I’m going to Cape Town on Monday night, and I hope to be at the docks at 8 o’clock on Tuesday morning … and that they’ll arrive at Ceres at the end of the week.”</p>
+          <p class="mini-note">After this passage the speaker sings “Two Little Sausages” from <em>The Girls of Gottenberg</em> (London, May 1907), placing this cylinder in 1907 or later.</p>
         </div>
 
         <div class="mini-player">
           <p class="tab-tag">Cylinder 13011 · Set 197-03 · Catalogue correction</p>
-          <h3>Not Afrikaans—Tyrolean German yodeling</h3>
+          <h3>Austrian-German yodeling song</h3>
           <audio controls preload="none" src="${audio}/ucsb-13011-tyrolean-v4.mp3" aria-label="Cylinder 13011 Austrian-German yodeling folksong"></audio>
-          <p class="mini-note">UCSB catalogued <a href="${ucsb13011}">Cylinder 13011</a> as “Male singing in Afrikaans.” Scrubbed at 165.01 RPM, it is actually an Austrian/Tyrolean German yodeling song (<em>“Es zog ein Pater von Österreich… der ging so gern nach Frankreich…”</em>).</p>
+          <p class="mini-note">UCSB catalogued <a href="${ucsb13011}">Cylinder 13011</a> as “Male singing in Afrikaans.” Filtered at 165.01 RPM, it is an Austrian-German yodeling folksong (<em>“Es zog ein Pater von Österreich… der ging so gern nach Frankreich…”</em>).</p>
         </div>
 
         <div class="mini-player">
           <p class="tab-tag">Cylinder 13012 · Set 197-04 · 96.60 RPM</p>
-          <h3>Schiller’s “Song of the Bell” &amp; Shelley</h3>
+          <h3>Schiller and Shelley</h3>
           <audio controls preload="none" src="${audio}/ucsb-13012-schiller-v4.mp3" aria-label="Cylinder 13012 Schiller recitation"></audio>
-          <p class="mini-note">Recorded at the same slow early-1890s speed (~100 RPM) as Stegmann’s 1893 cylinder, <a href="${ucsb13012}">Cylinder 13012</a> opens with a speaker announcing “an extract from Schiller’s <em>Song of the Bell</em>, a poem I had to learn by heart when I was a schoolboy,” then switches to Shelley’s “To a Skylark,” laughter, and a Spanish sign-off.</p>
+          <p class="mini-note">Recorded at roughly 100 RPM, the same early-1890s speed as Cylinder 13010. The speaker announces an excerpt from Schiller’s <em>Song of the Bell</em>, recites in German, switches to Shelley’s “To a Skylark” in English, and closes with laughter and a line of Spanish. <a href="${ucsb13012}">UCSB record ↗</a></p>
         </div>
       </div>
     </section>
@@ -169,16 +169,16 @@ function methodologyDiagramExhibit() {
     <section class="source-exhibit dsp-figure-card" id="dsp-diagram" aria-labelledby="dsp-diagram-title">
       <div class="exhibit-head">
         <div>
-          <p class="exhibit-kicker">Visual Walkthrough · Real Measurements from UCSB Cylinder 13010</p>
-          <h2 id="dsp-diagram-title">How rotation-locked scrubbing separates wax noise from human speech</h2>
-          <p class="exhibit-intro">Top: measuring how strongly the cylinder’s high-frequency hiss repeats against itself reveals an exact revolution period of <strong>0.600 seconds (100.0 RPM)</strong>, with a clean echo at two turns (1.20 s). Middle and bottom: comparing the same 38 seconds of Ds. Stegmann’s oral signature before and after phase-locked scrubbing shows the vertical scratch stripes fading out while the horizontal voice harmonics stay sharp.</p>
+          <p class="exhibit-kicker">Acoustic Measurements · UCSB Cylinder 13010</p>
+          <h2 id="dsp-diagram-title">Rotation lock and spectrograms of the 1893 signature</h2>
+          <p class="exhibit-intro">Top: correlating the high-frequency surface noise (3.5–8 kHz) against itself produces a spike at 0.600 seconds (100.0 RPM, <em>r</em> = +0.44) and a second spike at two turns (1.20 s). Middle and bottom: spectrograms of the 38-second oral signature before and after phase-locked filtering.</p>
         </div>
       </div>
       <figure class="dsp-fig">
         <a href="${media}/v4-scrub-diagram.webp" aria-label="Open full-resolution acoustic diagnostic diagram for UCSB Cylinder 13010">
           <img src="${media}/v4-scrub-diagram.webp" width="1600" height="1080" alt="Three-panel acoustic diagram of UCSB Cylinder 13010 showing the rotation-lock autocorrelation peak at 0.600 seconds (100.0 RPM, r = +0.44), the raw spectrogram of 2:38 to 3:16 obscured by vertical scratch stripes, and the cleaned v4 spectrogram revealing speech formants for Johan Andrew Stegmann, 15 December 1893, Predikant der NG Kerk te Ceres." loading="lazy">
         </a>
-        <figcaption>Measured directly from UCSB Cylinder 13010 raw transfer and v4 output. No generative AI or speech resynthesis is used at any step—only phase-preserving spectral attenuation of noise that repeats at the cylinder’s physical rotation period. <a href="${media}/v4-scrub-diagram.webp">Full-size chart ↗</a></figcaption>
+        <figcaption>Measured directly from UCSB Cylinder 13010 raw transfer and filtered output. The filter lowers only repeating frequencies locked to the cylinder’s rotation period and preserves the original phase of the signal. <a href="${media}/v4-scrub-diagram.webp">Full-size chart ↗</a></figcaption>
       </figure>
     </section>
   `;
@@ -186,24 +186,24 @@ function methodologyDiagramExhibit() {
 
 function pilotBatchTable() {
   const rows = [
-    { cyl: "13010", set: "Set 197-02", rpm: "100.09 RPM", lock: "+0.195", before: "Unidentified “Johan Andrew Dechman?”, tagged Afrikaans", after: "<strong>Ds. Johan Andrew Stegmann (1825–1908)</strong>, 15 Dec 1893, at Mr. Home’s house in Ceres, formal Cape Dutch." },
-    { cyl: "13009", set: "Set 197-01", rpm: "128.04 RPM", lock: "+0.140", before: "Unidentified, “Mister Steytler?”", after: "Ceres/Cape Town English speech + 1907 song + <strong>vernacular Afrikaans</strong> addressing <strong>C. R. C. Steytler (1864–1919)</strong>." },
-    { cyl: "13011", set: "Set 197-03", rpm: "165.01 RPM", lock: "+0.167", before: "Mislabeled “Male singing in Afrikaans”", after: "Corrected: Austrian/Tyrolean German yodeling folksong (<em>“Es zog ein Pater von Österreich”</em>)." },
-    { cyl: "13012", set: "Set 197-04", rpm: "96.60 RPM", lock: "+0.374", before: "Unidentified “Schiller’s […] when I was a schoolboy”", after: "Early ~100 RPM channel-rim recitation of Schiller’s <em>Song of the Bell</em> + Shelley’s “To a Skylark.”" },
-    { cyl: "12884", set: "Set 140-07", rpm: "155.90 RPM*", lock: "+0.341", before: "Jèrriais, announcement missing “[during the … season?]”", after: "Recovered verbatim: “Conversation between two farmers in the Island of Jersey <strong>during the potato season</strong> — Edison Record.”" },
-    { cyl: "13001", set: "Giovannoni", rpm: "120.20 RPM", lock: "+0.183", before: "Dated Dec 30, 1897, street blank", after: "Recovered timestamp &amp; address: “109 West [84th/94th?] Street, New York, Dec. 30, 1897, 11 P.M.”" },
-    { cyl: "12892", set: "Set 141-06", rpm: "164.63 RPM", lock: "+0.150", before: "Unidentified German encounter with the Pope", after: "Clear Austrian-German account of a 6-person Papal audience on “Monday, 19 October” (1903, 1908, or 1914)." },
-    { cyl: "12962", set: "Giovannoni", rpm: "134.24 RPM", lock: "+0.420", before: "William Dunlop, Dec 26, 1900", after: "Strongest lock in pilot; crisp Ulster/Irish Boxing Day voice letter to brother George Dunlop in America." },
-    { cyl: "12888", set: "Set 141-02", rpm: "166.28 RPM", lock: "+0.268", before: "Unidentified German, Dec 1, 1915", after: "Clean WWI-era Austrian-German home conversation (box inscribed <em>Josef Robauch</em>)." },
+    { cyl: "13010", set: "Set 197-02", rpm: "100.09 RPM", lock: "+0.195", before: "Unidentified “Johan Andrew Dechman?”, tagged Afrikaans", after: "Ds. Johan Andrew Stegmann (1825–1908), 15 Dec 1893, at Mr. Home’s house in Ceres, formal Cape Dutch." },
+    { cyl: "13009", set: "Set 197-01", rpm: "128.04 RPM", lock: "+0.140", before: "Unidentified, “Mister Steytler?”", after: "Ceres/Cape Town English speech, 1907 song, and vernacular Afrikaans addressing C. R. C. Steytler (1864–1919)." },
+    { cyl: "13011", set: "Set 197-03", rpm: "165.01 RPM", lock: "+0.167", before: "Mislabeled “Male singing in Afrikaans”", after: "Austrian-German yodeling folksong (<em>“Es zog ein Pater von Österreich”</em>)." },
+    { cyl: "13012", set: "Set 197-04", rpm: "96.60 RPM", lock: "+0.374", before: "Unidentified “Schiller’s […] when I was a schoolboy”", after: "Early ~100 RPM channel-rim recitation of Schiller’s <em>Song of the Bell</em> and Shelley’s “To a Skylark.”" },
+    { cyl: "12884", set: "Set 140-07", rpm: "155.90 RPM*", lock: "+0.341", before: "Jèrriais, announcement missing “[during the … season?]”", after: "“Conversation between two farmers in the Island of Jersey during the potato season — Edison Record.”" },
+    { cyl: "13001", set: "Giovannoni", rpm: "120.20 RPM", lock: "+0.183", before: "Dated Dec 30, 1897, street blank", after: "“109 West [84th/94th?] Street, New York, Dec. 30, 1897, 11 P.M.”" },
+    { cyl: "12892", set: "Set 141-06", rpm: "164.63 RPM", lock: "+0.150", before: "Unidentified German encounter with the Pope", after: "Austrian-German account of a 6-person Papal audience on “Monday, 19 October” (1903, 1908, or 1914)." },
+    { cyl: "12962", set: "Giovannoni", rpm: "134.24 RPM", lock: "+0.420", before: "William Dunlop, Dec 26, 1900", after: "Strongest lock in pilot; clear Irish Boxing Day voice letter to brother George Dunlop in America." },
+    { cyl: "12888", set: "Set 141-02", rpm: "166.28 RPM", lock: "+0.268", before: "Unidentified German, Dec 1, 1915", after: "WWI-era Austrian-German conversation (box inscribed <em>Josef Robauch</em>)." },
   ];
 
   return `
     <section class="source-exhibit pilot-table-card" id="pilot-batch" aria-labelledby="pilot-batch-title">
       <div class="exhibit-head">
         <div>
-          <p class="exhibit-kicker">Pilot Summary · 9 of 9 Cylinders Cleanly Locked</p>
-          <h2 id="pilot-batch-title">Where Set 197 came from: a 9-cylinder multilingual test batch</h2>
-          <p class="exhibit-intro">The Ceres discovery emerged during an initial 9-cylinder pilot testing whether automated rotation-locked scrubbing could recover names and dates across noisy, non-English home recordings in the UCSB archive. Every cylinder in the batch locked cleanly onto its physical rotation speed.</p>
+          <p class="exhibit-kicker">Test Batch · 9 of 9 Cylinders Locked</p>
+          <h2 id="pilot-batch-title">Results across the first nine cylinders</h2>
+          <p class="exhibit-intro">Set 197 turned up during a nine-cylinder test of automated rotation-locked filtering on noisy, mostly non-English home recordings in the UCSB archive.</p>
         </div>
       </div>
       <div class="table-scroll">
@@ -215,7 +215,7 @@ function pilotBatchTable() {
               <th>Detected speed</th>
               <th>Lock <em>r</em></th>
               <th>Catalogue before</th>
-              <th>Recovered after v4 scrub</th>
+              <th>Recovered after filtering</th>
             </tr>
           </thead>
           <tbody>
@@ -230,7 +230,7 @@ function pilotBatchTable() {
           </tbody>
         </table>
       </div>
-      <p class="table-footnote">*Cylinder 12884 locked onto its half-speed subharmonic (77.95 RPM, corresponding to two revolutions at 155.90 RPM). Lock <em>r</em> reports the batch script’s broad-band autocorrelation score; on Cylinder 13010, isolating the 3.5–8 kHz surface-noise band raises the envelope correlation to <code>r = +0.44</code>.</p>
+      <p class="table-footnote">*Cylinder 12884 locked onto its half-speed subharmonic (77.95 RPM, two turns at 155.90 RPM). Lock <em>r</em> gives the batch script’s broadband score; on Cylinder 13010, isolating the 3.5–8 kHz noise band raises envelope correlation to <code>r = +0.44</code>.</p>
     </section>
   `;
 }
@@ -240,13 +240,13 @@ export function ceresHTML() {
     {
       id: "who-spoke",
       body: ref => `
-        <h2>A Victorian minister meets the phonograph</h2>
-        <p>On the evening of Friday, <strong>15 December 1893</strong>, an elderly Dutch Reformed minister stepped up to the brass horn of an Edison phonograph in the small Cape Colony town of <strong>Ceres</strong>, roughly ninety miles northeast of Cape Town. He had never heard a sound recording before. Speaking slowly and deliberately in formal pulpit Dutch, he marveled at the machine—and made a prediction about its future:${ref}</p>
-        <blockquote class="pull-quote">“I have heard much of the so-called phonograph. This evening I heard it for the first time, at the house of Mr. Home at Ceres… I do not doubt for a moment that the telephone will one day be used for the spread of the Word. <strong>The Gospel will one day without doubt be preached through the phonograph.</strong> The time is fast approaching when this great wonder shall be used among us… to extend His kingdom through the preaching of the Word <strong>in an artificial manner</strong>.”</blockquote>
-        <p>Then, like someone signing a letter, he spoke his full name, the exact date, and his office into the wax: <strong>“Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.”</strong></p>
-        <p>Over the next century, the brown-wax cylinder made its way into a private American collection and eventually to the UC Santa Barbara Cylinder Audio Archive, where it was digitized as <strong>Cylinder 13010</strong>. By then, surface hiss and a repeating vertical scratch had swallowed the consonants in his closing signature. The archive’s cataloguer caught the year 1893 and made a reasonable guess at the garbled name—<em>“Johan Andrew Dechman?”</em>—while leaving the exact date, the host’s name, and the church unreadable.</p>
+        <h2>A minister’s prediction, 15 December 1893</h2>
+        <p>On the evening of Friday, 15 December 1893, a retired Dutch Reformed minister spoke into the horn of an Edison phonograph in Ceres, a town about ninety miles northeast of Cape Town. He had never heard a sound recording before. Speaking slowly in formal pulpit Dutch, he predicted that the new machine would soon carry sermons:${ref}</p>
+        <blockquote class="pull-quote">“I have heard much of the so-called phonograph. This evening I heard it for the first time, at the house of Mr. Home at Ceres. I do not doubt for a moment that the telephone will one day be used for the spread of the Word. The Gospel will one day without doubt be preached through the phonograph. The time is fast approaching when this great wonder shall be used among us to extend His kingdom through the preaching of the Word in an artificial manner.”</blockquote>
+        <p>At the end he gave his name, the exact date, and his title: “Johan Andrew Stegmann. Fifteen December eighteen hundred and ninety-three. Minister of the Dutch Reformed Church at Ceres.”</p>
+        <p>The brown-wax cylinder eventually reached the UC Santa Barbara Cylinder Audio Archive as Cylinder 13010. Surface hiss and a repeating scratch obscured the consonants in the closing lines. UCSB’s catalogue noted the year 1893, guessed “Johan Andrew Dechman?” for the speaker’s name, and left the date, host, and church unread.</p>
       `,
-      note: `UCSB Cylinder Audio Archive, <a href="${ucsb13010}">Cylinder 13010</a> (The David Giovannoni Collection of home cylinder recordings, Set Number 197-02, originally acquired from the Don Hill Collection, c. 2000). The original spoken phrase for “in an artificial manner” is <em>op eene kunstmatige wijze</em>—formal 19th-century Cape Dutch (<em>Hoog-Hollands</em>), not vernacular Afrikaans as tagged in UCSB’s metadata.`,
+      note: `UCSB Cylinder Audio Archive, <a href="${ucsb13010}">Cylinder 13010</a> (David Giovannoni Collection of home cylinder recordings, Set Number 197-02, originally acquired from the Don Hill Collection, c. 2000). The spoken phrase for “in an artificial manner” is <em>op eene kunstmatige wijze</em>, formal 19th-century Cape Dutch (<em>Hoog-Hollands</em>).`,
     },
     {
       id: "audio-13010",
@@ -256,23 +256,23 @@ export function ceresHTML() {
     {
       id: "stegmann-id",
       body: ref => `
-        <h2>Putting the right biography to the voice</h2>
-        <p>Once the repeating scratch is lowered, every syllable of the closing signature comes into focus: <strong>Johan Andrew Stegmann</strong>, <strong>15 December 1893</strong>, <strong>Predikant der Nederduitse Gereformeerde Kerk te Ceres</strong>. South African church histories immediately identify him. Born around April 1825 in Cape Town and named in honor of his brother-in-law, the prominent Scottish-born clergyman Andrew Murray Sr., Ds. Johan Andrew Stegmann served as the <strong>very first resident minister of the Ceres Dutch Reformed congregation</strong> from 1857 until his retirement in 1883. He was sixty-eight years old when he spoke into the horn in December 1893, and lived until 5 January 1908, dying at Sea Point in Cape Town.${ref}</p>
-        <p>Checking the genealogy closely also prevented an easy mistake. Cape Town archives list a near-contemporary namesake, <em>Johannes Augustus Stegmann</em> (born 31 October 1819, died 17 August 1894), from another branch of the same extended Cape family. Listening at 0.70× speed confirms the speaker says <em>Andrew</em>—not <em>Augustus</em>—and church chronicles confirm it was Johan Andrew Stegmann (1825–1908) who spent twenty-six years leading the Ceres parish.</p>
-        <p>Even the brief English message tacked onto the last thirty-five seconds of blank wax fits the calendar. After Stegmann finishes, a jovial English-speaking man jokes into the horn, <em>“Well now, Mr. Phonograph… This is Sunday afternoon, a jolly good way of spending it, isn’t it? Here all the girls come down in their nightgowns—I mean to say in their dressing gowns…”</em> In 1893, <strong>15 December fell on a Friday</strong>. Two days later, on Sunday afternoon, 17 December, someone in the same household appears to have used up the final half-minute of wax.</p>
+        <h2>Who spoke into the horn</h2>
+        <p>With the repeating scratch lowered, the closing signature reads clearly: Johan Andrew Stegmann, 15 December 1893, Predikant der Nederduitse Gereformeerde Kerk te Ceres. South African church histories record him as the first resident minister of the Ceres Dutch Reformed congregation, where he served from 1857 until 1883. Born around April 1825 in Cape Town and named after his brother-in-law Andrew Murray Sr., Stegmann was sixty-eight years old when he made the recording. He died on 5 January 1908 in Sea Point, Cape Town.${ref}</p>
+        <p>Slowing the signature to 0.70× speed helped avoid a genealogical mix-up. Cape Town records list a contemporary cousin, Johannes Augustus Stegmann (31 October 1819 – 17 August 1894), from another branch of the same family. On the slowed clip the middle name is unmistakably <em>Andrew</em>, and parish histories confirm that Johan Andrew Stegmann was the Ceres minister.</p>
+        <p>A second speaker filled the last thirty-five seconds of blank wax at the end of the cylinder. Speaking in English, he jokes: “Well now, Mr. Phonograph, here’s a [broad?] voice to hear my voice. This is Sunday afternoon, a jolly good way of spending it, isn’t it? Here all the girls come down in their nightgowns, I mean to say in their dressing gowns.” In 1893, 15 December was a Friday, so this coda was likely added two days later, on Sunday afternoon, 17 December.</p>
       `,
-      note: `On Ds. Johan Andrew Stegmann’s 1857–1883 ministry in Ceres, see <a href="https://www.gemeentegeskiedenis.co.za/ng-gemeente-ceres/">NG Gemeente Ceres (Gemeentegeskiedenis)</a> and J. Du Plessis, <em>The Life of Andrew Murray of South Africa</em> (1919), which records how Johan Andrew was named after Andrew Murray Sr. Genealogical records (WikiTree / South African Genealogies) give his lifespan as c. April 1825 – 5 January 1908 (Sea Point, Cape Town), distinct from his Cape Town cousin Johannes Augustus Stegmann (31 Oct 1819 – 17 Aug 1894, son of George Frederik Stegmann and Anna Maria Zibee).`,
+      note: `On Ds. Johan Andrew Stegmann’s 1857–1883 ministry in Ceres, see <a href="https://www.gemeentegeskiedenis.co.za/ng-gemeente-ceres/">NG Gemeente Ceres (Gemeentegeskiedenis)</a> and J. Du Plessis, <em>The Life of Andrew Murray of South Africa</em> (1919). WikiTree and <em>South African Genealogies</em> give his dates as c. April 1825 – 5 January 1908 (Sea Point, Cape Town), distinct from Johannes Augustus Stegmann (31 Oct 1819 – 17 Aug 1894, son of George Frederik Stegmann and Anna Maria Zibee).`,
     },
     {
       id: "tennyson-link",
       body: ref => `
-        <h2>How an Edison agent from London ended up in Ceres</h2>
-        <p>Why was a working Edison brown-wax phonograph sitting in a parlor in rural Cape Colony in December 1893—barely five years after Edison introduced wax cylinders in New Jersey? The answer was sitting right next door in UCSB’s catalogue, on <strong>Cylinder 13009</strong> (Set 197-01).</p>
-        <p>UCSB’s note on Cylinder 13009 remarked that an English speaker and a subsequent Afrikaans speaker both seemed to address a <strong>“Mister Steytler.”</strong> Listening to the scrubbed English half reveals the missing place name: the speaker plans to take the train to Cape Town on Monday night to meet arriving relatives at the docks, hoping <em>“that they’ll arrive at <strong>Ceres</strong> at the end of the week.”</em>${ref}</p>
-        <p>In the history of early recorded sound, there is only one “Mister Steytler” linked to both Edison phonographs and Ceres, South Africa: <strong>Charles Rhenius Cruywagen Steytler</strong> (c. 1864 – 10 September 1919). Born into a prominent Cape Colony family, Steytler went to London in the late 1880s and joined the small team of recording agents working for <strong>Colonel George Edward Gouraud</strong>, Thomas Edison’s exclusive European representative. In <strong>May 1890</strong>, Steytler traveled to Farringford on the Isle of Wight to record the eighty-year-old Poet Laureate, <strong>Alfred, Lord Tennyson</strong>, reciting <em>“The Charge of the Light Brigade”</em> onto Edison wax cylinders. By April 1891 he was touring British theaters lecturing on “Edison’s Latest and Most Perfected Phonograph.”</p>
-        <p>Soon afterward, Steytler returned home to the Cape—and brought Edison’s technology with him. One final archival record locks the entire story shut. On the 1893 cylinder, Ds. Stegmann says he heard the phonograph <em>“at the house of <strong>Mr. Home</strong> at Ceres.”</em> Parish marriage registers for St. Andrew’s Anglican Church in Ceres record that on <strong>10 February 1897</strong>, <strong>Charles Rhenius Cruywagen Steytler</strong> married <strong>Margaret Henrietta Home</strong>—daughter of the Home family of Ceres. On that Friday evening in December 1893, the man who had recorded Tennyson in England was demonstrating his brown-wax phonograph in the parlor of his future in-laws.${ref}</p>
+        <h2>The link to Tennyson’s recordist</h2>
+        <p>An Edison wax-cylinder phonograph was rare anywhere outside Europe and North America in 1893. The clue to how one reached rural Cape Colony sat on the companion cylinder in the same UCSB box, Cylinder 13009 (Set 197-01).</p>
+        <p>UCSB’s notes on Cylinder 13009 mentioned that both an English speaker and an Afrikaans speaker seemed to address a “Mister Steytler.” On the filtered English track, the speaker talks about taking the train to Cape Town on Monday night to meet relatives at the docks and hopes “that they’ll arrive at Ceres at the end of the week.”${ref}</p>
+        <p>That points directly to Charles Rhenius Cruywagen Steytler (c. 1864 – 10 September 1919). Born into a Cape Colony family, Steytler worked in London in the late 1880s for Colonel George Edward Gouraud, Thomas Edison’s European agent. In May 1890, Steytler went to Farringford on the Isle of Wight and recorded Alfred, Lord Tennyson reading “The Charge of the Light Brigade” on Edison wax cylinders. Through at least April 1891 he toured British theaters demonstrating Edison’s “Perfected” Phonograph before returning to South Africa.</p>
+        <p>A local marriage register ties Steytler directly to the house named on the 1893 cylinder. Ds. Stegmann opens by saying he heard the phonograph “at the house of Mr. Home at Ceres.” Parish records for St. Andrew’s Anglican Church in Ceres show that on 10 February 1897, Charles Rhenius Cruywagen Steytler married Margaret Henrietta Home, a daughter of the Home family in Ceres. Four years earlier, in December 1893, Gouraud’s former London agent was demonstrating his phonograph in his future in-laws’ parlor.${ref}</p>
       `,
-      note: `On C. R. C. Steytler’s 1890 Tennyson session for Col. Gouraud and his April 1891 lecture at the Tyne Theatre in Newcastle, see early phonograph histories (Musical Box Society of Great Britain; Library of Congress / Tennyson Society discographies). Cape parish marriage transcriptions (<a href="https://www.1820settlers.com/">1820settlers.com</a>, St. Andrew’s Anglican Church, Ceres &amp; Prince Alfred Hamlet) record the marriage of Charles Rhenius Cruywagen Steytler and Margaret Henrietta Home on 10 February 1897; Henry Home (1822–1903) lived in Ceres. Steytler later served as Honorary Secretary of the Ceres Angling Association (<em>Cape Piscatorial Society</em> records) and died in Sea Point, Cape Town, on 10 September 1919.`,
+      note: `On C. R. C. Steytler’s May 1890 Tennyson session for Col. Gouraud and his April 1891 lecture at the Tyne Theatre in Newcastle, see Musical Box Society of Great Britain journals and Library of Congress Tennyson discographies. Parish marriage transcriptions (<a href="https://www.1820settlers.com/">1820settlers.com</a>, St. Andrew’s Anglican Church, Ceres &amp; Prince Alfred Hamlet) record the marriage of Charles Rhenius Cruywagen Steytler and Margaret Henrietta Home on 10 February 1897; Henry Home (1822–1903) lived in Ceres. Steytler later served as Honorary Secretary of the Ceres Angling Association (<em>Cape Piscatorial Society</em> records) and died in Sea Point, Cape Town, on 10 September 1919.`,
     },
     {
       id: "catalog-exhibit",
@@ -287,32 +287,32 @@ export function ceresHTML() {
     {
       id: "significance",
       body: ref => `
-        <h2>What makes this find historically significant—and what still needs checking</h2>
-        <p>It helps to be precise about what these cylinders are—and what they are not. Cylinder 13010 is <strong>not</strong> spoken in modern vernacular Afrikaans, despite UCSB’s catalogue tag. Like most educated Dutch Reformed clergy of his generation, Ds. Stegmann used formal Cape Dutch (<em>Hoog-Hollands</em>) for serious public reflections, spoken with a South African cadence. Vernacular spoken Afrikaans arrives on the companion cylinder, <strong>Cylinder 13009</strong>, where a local speaker addresses “Mister Steytler” in unmistakable conversational Afrikaans (<em>“Ons predikant lyk my liewe man… ons gemeente hoog tevrede is met hom”</em>). Because Cylinder 13009 also quotes a song from the May 1907 London musical <em>The Girls of Gottenberg</em>, that recording dates to 1907 or later—possibly around 1911, when Ceres welcomed a new minister, Ds. R. D. McDonald, after the previous pastor drowned in December 1910.${ref}</p>
-        <p>Even with that distinction kept sharp, the <strong>15 December 1893</strong> recording is remarkable. Standard South African sound histories place the earliest commercial Afrikaans recording in <strong>July 1906</strong>—made overseas in London by the touring Springbok rugby team (<em>“Springboks Conversing in the Taal,”</em> Gramophone Concert Record <code>GC 4608</code>)—and the earliest major ethnographic cylinder collections made inside Southern Africa (such as Dorothea Bleek’s and Percival Kirby’s recordings) from roughly 1905 onward. An explicitly dated, localized, identified recording made in Ceres in <strong>December 1893</strong> sits thirteen years earlier, and directly links the founding generation of Edison’s London phonograph circle to rural South Africa.${ref}</p>
-        <p>Three checks still belong on the to-do list before calling this the absolute earliest surviving South African recording:</p>
+        <h2>Cape Dutch, Afrikaans, and open questions</h2>
+        <p>Standard South African sound histories place the earliest Afrikaans recording in July 1906, when the touring Springbok rugby team recorded “Springboks Conversing in the Taal” in London (Gramophone Concert Record <code>GC 4608</code>). Major ethnographic cylinder collections made inside Southern Africa, such as Dorothea Bleek’s and Percival Kirby’s, begin around 1905. Dated 15 December 1893 and localized to Ceres, Cylinder 13010 predates both by over a decade.${ref}</p>
+        <p>One linguistic distinction matters. Although UCSB tagged Cylinder 13010 as Afrikaans, Ds. Stegmann speaks formal Cape Dutch (<em>Hoog-Hollands</em>) with a South African pronunciation, as educated Dutch Reformed clergy of his generation did on formal occasions. Conversational Afrikaans appears on the companion cylinder, Cylinder 13009, in the tribute addressed to “Mister Steytler.” Because Cylinder 13009 also includes a song from the May 1907 musical <em>The Girls of Gottenberg</em>, that recording dates to 1907 or later. Its praise of a newly arrived Ceres minister fits Ds. R. D. McDonald, who took the pulpit in 1911 after Ds. W. A. Alheit drowned in December 1910.${ref}</p>
+        <p>Three checks remain open before treating Cylinder 13010 as the earliest surviving recording made in South Africa:</p>
         <ul class="limits-list">
-          <li><strong>Check with South African sound historians and UCSB Special Collections:</strong> Confirm with specialists (such as Schalk D. van der Merwe, Patrick Feaster, and UCSB’s cylinder curators) whether any earlier 1889–1893 colonial Cape recordings survive in private hands or uncatalogued museum boxes, and submit the Set 197 identifications and the Cylinder 13011 language correction to UCSB.</li>
-          <li><strong>Search 1891–1894 Cape newspapers and <em>De Kerkbode</em>:</strong> Contemporary Cape Town or Western Cape press notices of C. R. C. Steytler’s phonograph demonstrations—or a church note mentioning Ds. Stegmann speaking into the machine in Ceres—would independently corroborate the evening of 15 December 1893.</li>
-          <li><strong>Compare the English coda voice against Tennyson’s 1890 cylinders:</strong> It is plausible that the jovial English speaker on the final thirty-five seconds of Cylinder 13010 is C. R. C. Steytler himself (or a member of the Home family). Comparing his voice against any surviving spoken announcement by Steytler on Gouraud’s 1890 British cylinders could test that possibility directly.</li>
+          <li><strong>Check with South African sound historians and UCSB curators:</strong> Ask specialists (including Schalk D. van der Merwe, Patrick Feaster, and UCSB Special Collections) whether any earlier 1889–1893 Cape Colony cylinder survives in another archive or private collection, and send UCSB the Set 197 identifications and the Cylinder 13011 language correction.</li>
+          <li><strong>Search 1891–1894 Cape newspapers and <em>De Kerkbode</em>:</strong> Contemporary press mentions of C. R. C. Steytler demonstrating an Edison phonograph in the Western Cape, or a church notice mentioning Ds. Stegmann’s recording, would give an independent written witness.</li>
+          <li><strong>Compare the English coda voice against 1890 British cylinders:</strong> The English speaker at 3:12 of Cylinder 13010 may be C. R. C. Steytler himself or a member of the Home family. Comparing that clip with any surviving spoken announcement by Steytler on Gouraud’s 1890 cylinders could test the match.</li>
         </ul>
       `,
-      note: `On the July 1906 Springbok rugby recording (<em>GC 4608</em>) as the standard starting point for Afrikaans recorded sound, see South African discographical surveys (<a href="https://www.flatinternational.org/">Flat International</a>; Schalk D. van der Merwe) and UCT Special Collections summaries of early Southern African wax-cylinder fieldwork (Dorothea Bleek, Percival Kirby). On the succession of Ceres NG ministers—J. A. Stegmann (1857–1883), G. F. Marais (1884–1893), W. A. Alheit (1894–1910, drowned 31 Dec 1910), and R. D. McDonald (1911–1939)—see <a href="https://www.gemeentegeskiedenis.co.za/ng-gemeente-ceres/">Gemeentegeskiedenis</a>.`,
+      note: `On the July 1906 Springbok rugby recording (<em>GC 4608</em>), see South African discographical surveys (<a href="https://www.flatinternational.org/">Flat International</a>; Schalk D. van der Merwe) and UCT Special Collections notes on early Southern African wax cylinders (Dorothea Bleek, Percival Kirby). On the Ceres NG ministers (J. A. Stegmann 1857–1883, G. F. Marais 1884–1893, W. A. Alheit 1894–1910, R. D. McDonald 1911–1939), see <a href="https://www.gemeentegeskiedenis.co.za/ng-gemeente-ceres/">Gemeentegeskiedenis</a>.`,
     },
     {
       id: "methodology",
       body: ref => `
-        <h2 id="methodology">Methodology: How to quiet a 133-year-old scratch without inventing speech</h2>
-        <p>Anyone trying to decipher an old wax cylinder faces a trap. Modern AI “speech enhancement” tools can make a noisy tape sound startlingly crisp—by guessing what syllables ought to be there and generating new speech from scratch. For historical work, that is fatal. A generative denoiser can easily turn a faint <em>Stegmann</em> into a crystal-clear <em>Dechman</em> (or vice versa), leaving the researcher with fabricated audio that looks clean but cannot be trusted as evidence.${ref}</p>
-        <p>Instead, our pipeline relies on a simple physical fact about wax cylinders—and uses <strong>zero generative AI</strong> on the audio itself. A brown-wax cylinder spins on a brass shaft at a steady speed (typically between 95 and 165 revolutions per minute). Every scratch, mold spot, or crack on the wax strikes the playback stylus at the <strong>exact same point in every turn</strong>. A human voice, by contrast, never repeats the same syllable at the exact same millisecond on every turn of the cylinder. That physical difference lets us separate wax noise from speech deterministically:</p>
+        <h2 id="methodology">Methodology</h2>
+        <p>Standard AI speech-enhancement tools are risky for historical recordings because generative models fill noisy gaps with guessed syllables. On a damaged name like Stegmann’s, a generative model can invent clear consonants that were never spoken. Our pipeline uses deterministic signal processing only.${ref}</p>
+        <p>A wax cylinder turns on a mandrel at a steady rate, typically 95 to 165 revolutions per minute. Every scratch, mold patch, or seam on the wax hits the stylus at the same point in every turn, while human speech changes continuously from one turn to the next. That physical difference allows four repeatable steps:</p>
         <ol class="method-steps">
-          <li><strong>Step 1 — Light click suppression without smearing consonants:</strong> We decode the archive transfer to uncompressed 24 kHz mono audio and run a gentle median de-click filter (<code>ffmpeg adeclick</code>) to knock down sharp isolated pops while keeping the full acoustic speech band intact (150–7,800 Hz).</li>
-          <li><strong>Step 2 — Automatic rotation-speed lock:</strong> Rather than guessing the playback speed, a Python script isolates the high-frequency surface hiss (3.5–8 kHz, where wax noise dominates over early acoustic voices), computes its amplitude envelope, and correlates that envelope against itself across lags from 0.30 to 1.30 seconds. A sharp spike appears at the cylinder’s true physical revolution period <em>T</em>—on Cylinder 13010, exactly <strong>0.600 seconds (100.0 RPM, <em>r</em> = +0.44)</strong>, with a clean second harmonic at two turns (1.20 s).</li>
-          <li><strong>Step 3 — Full-band phase-locked spectral scrubbing (150–7,800 Hz):</strong> We convert the audio into a time-frequency spectrogram (Short-Time Fourier Transform) and compare every tiny slice of sound at time <em>t</em> against the <em>exact same angular position on the wax</em> one, two, and three turns earlier and later (<em>t</em> ± <em>kT</em>). Frequencies that stay constant across neighboring turns belong to the repeating wax defect; frequencies that appear on only one turn belong to the speaker. A smooth Wiener-style gain mask lowers only the repeating noise profile while leaving the original acoustic phase completely untouched. Nothing is synthesized or hallucinated.</li>
-          <li><strong>Step 4 — Direct listening, slowed verification, and archival triangulation:</strong> Instead of trusting automatic speech-to-text on historical accents and 19th-century Dutch, we listen directly to targeted excerpts—and slow key passages to <strong>0.70× speed</strong> (preserving pitch) so consonant clusters in names and place-names can be checked syllable by syllable. Once hard anchors emerge (<em>Johan Andrew Stegmann</em> + <em>15 December 1893</em> + <em>Mr. Home at Ceres</em> + <em>Mister Steytler</em>), we verify every candidate across independent church histories, parish marriage registers, and sibling cylinders in the same archival box.</li>
+          <li><strong>Light impulse de-clicking:</strong> Decode the archive MP3 to 24 kHz mono WAV and apply a mild median de-click filter (<code>ffmpeg adeclick</code>) to knock down isolated pops while keeping the 150–7,800 Hz speech band intact.</li>
+          <li><strong>Automatic rotation-speed lock:</strong> Isolate the 3.5–8 kHz surface-noise band, compute its amplitude envelope, and correlate that envelope against itself across lags from 0.30 to 1.30 seconds. A peak marks the cylinder’s true revolution period <em>T</em>. On Cylinder 13010, the peak falls at 0.600 seconds (100.0 RPM, <em>r</em> = +0.44), with a second peak at two turns (1.20 s).</li>
+          <li><strong>Full-band phase-locked spectral filtering (150–7,800 Hz):</strong> Convert the audio to a Short-Time Fourier Transform spectrogram and compare each time slice <em>t</em> against the same angular position on the wax one, two, and three revolutions earlier and later (<em>t</em> ± <em>kT</em>). A smooth Wiener-style gain mask lowers energy that repeats across turns while keeping the original acoustic phase unchanged.</li>
+          <li><strong>Direct listening, slowed playback, and archival checking:</strong> Listen directly to normal-speed and 0.70× pitch-preserved clips to extract concrete names, dates, and places, then verify every candidate against church registers, genealogies, and sibling cylinders in the same archival set.</li>
         </ol>
       `,
-      note: `The rotation-locked scrubber (<code>v4_batch_scrub.py</code>) extends the periodic-noise suppression approach demonstrated on <a href="/leads/grant-cylinder">EDIS 93953 (“A voice from Vienna”)</a> across the full 150–7,800 Hz acoustic speech band, adding automatic sub-millisecond revolution-period detection so entire batches of unidentified cylinders can be processed unattended. In our Phase 1 test across 9 multilingual UCSB cylinders (Dutch/Cape Dutch, Afrikaans, Jèrriais, Austrian German, Irish English, and New York English), 9 of 9 locked cleanly onto their rotation speeds.`,
+      note: `The batch script (<code>v4_batch_scrub.py</code>) extends the periodic-noise filter used on <a href="/leads/grant-cylinder">EDIS 93953 (“A voice from Vienna”)</a> across 150–7,800 Hz and adds automatic revolution-period detection. All nine cylinders in the first multilingual batch (Dutch/Cape Dutch, Afrikaans, Jèrriais, Austrian German, Irish English, and New York English) locked cleanly onto their rotation speeds.`,
     },
     {
       id: "dsp-diagram-block",
@@ -327,11 +327,11 @@ export function ceresHTML() {
     {
       id: "what-next",
       body: ref => `
-        <h2>Scaling up across the remaining unidentified cylinders</h2>
-        <p>The Ceres box was only one of eight targets in our first test run. The same automated scrubber also recovered UCSB’s missing bracketed words on a rare <strong>Jèrriais</strong> (Jersey Norman French) recording—revealing the announcement <em>“Conversation between two farmers in the Island of Jersey during the potato season — Edison Record”</em> on Cylinder 12884—and pulled crisp names, dates, and street addresses out of recordings from 1897 New York, 1900 Ireland, and early-20th-century Austria.${ref}</p>
-        <p>More than a hundred additional unidentified home wax cylinders sit digitized in the UCSB archive alone, alongside thousands more in the Library of Congress, the British Library, and regional sound archives worldwide. Because rotation-locked scrubbing runs locally in a few seconds per cylinder and never fabricates speech, pairing it with systematic archival verification turns noisy “undecipherable” catalog entries into searchable historical evidence—one turn of the wax at a time.</p>
+        <h2>Other cylinders from the test batch</h2>
+        <p>The same nine-cylinder run recovered missing words on several unrelated home recordings. On Cylinder 12884, a recording in Jèrriais (Jersey Norman French) where UCSB had bracketed the opening announcement as “[during the … season?],” the filtered audio reads clearly: “Conversation between two farmers in the Island of Jersey during the potato season — Edison Record.” Other cylinders in the batch yielded a dated 30 December 1897 New York address (Cylinder 13001) and a clear Austrian-German account of a six-person private Papal audience on “Monday, 19 October” (Cylinder 12892).${ref}</p>
+        <p>More than a hundred additional unidentified home recordings remain digitized in the UCSB archive alone. Running the same rotation-locked filter across multi-cylinder sets and non-English recordings takes a few seconds per cylinder locally and gives archivists concrete names and dates to check.</p>
       `,
-      note: `All nine Phase 1 cylinders come from the <a href="https://cylinders.library.ucsb.edu/">UC Santa Barbara Cylinder Audio Archive</a> (David Giovannoni Collection of home cylinder recordings). Cylinder 12884 (<a href="https://cylinders.library.ucsb.edu/detail.php?query_type=mms_id&query=990041107430203776">Set 140-07, Frank O. Moon Collection</a>) is worth flagging to <em>La Société Jersiaise</em> as a potentially very early surviving Jèrriais sound recording.`,
+      note: `All nine cylinders come from the <a href="https://cylinders.library.ucsb.edu/">UC Santa Barbara Cylinder Audio Archive</a> (David Giovannoni Collection of home cylinder recordings). Cylinder 12884 (<a href="https://cylinders.library.ucsb.edu/detail.php?query_type=mms_id&query=990041107430203776">Set 140-07, Frank O. Moon Collection</a>) is worth checking with <em>La Société Jersiaise</em> as an early surviving recording of Jèrriais.`,
     },
   ];
 
@@ -346,7 +346,7 @@ export function ceresHTML() {
         <div class="ceres-mast-copy">
           <p class="lead-label">Ceres, South Africa · December 1893 · Wax cylinder</p>
           <h1 class="page-title">${ceresTitle}</h1>
-          <p class="ceres-deck">Quieting a repeating scratch on an unidentified 1893 brown-wax cylinder at UC Santa Barbara revealed what appears to be the <strong>earliest known surviving voice recording made in South Africa</strong>—thirteen years before the 1906 milestone usually cited. For the first time, the scrubbed audio identifies the speaker, exact date, town, and house, and traces the cylinder back to the London agent who recorded Alfred, Lord Tennyson.</p>
+          <p class="ceres-deck">Lowering a repeating scratch on an unidentified 1893 brown-wax cylinder at UC Santa Barbara turned up what appears to be the <strong>earliest known surviving voice recording made in South Africa</strong>, thirteen years before the 1906 recording usually cited. The filtered audio names the speaker, date, town, and house, and traces the cylinder back to the London agent who recorded Alfred, Lord Tennyson.</p>
           ${leadByline(
             [["Gemini 4", "Deterministic audio restoration pipeline, transcription, archival triangulation, and writeup; reviewed by Benjamin Breen."]],
             `<a href="#listen-13010">Listen to the 1893 voice ↓</a> · <a href="#catalog-cards">Catalogue cards ↓</a> · <a href="#methodology">Methodology ↓</a>`
@@ -356,7 +356,7 @@ export function ceresHTML() {
           <a href="${media}/edison-gouraud-1888.webp" aria-label="Enlarge June 16, 1888 photograph of Thomas Edison and Col. George Gouraud with the Perfected Phonograph">
             <img src="${media}/edison-gouraud-1888.webp" width="1100" height="829" alt="June 16, 1888 photograph of Thomas Edison seated behind his Perfected Phonograph with wax cylinders on the table, surrounded by staff including Col. George Gouraud and Theo Wangemann.">
           </a>
-          <figcaption><strong>Where the chain began.</strong> Thomas Edison and his European agent <strong>Col. George Gouraud</strong> (seated right) with the Perfected Phonograph and wax cylinders at West Orange, 16 June 1888. Gouraud’s London recordist, South African-born <strong>C. R. C. Steytler</strong>, recorded Tennyson in 1890—and brought an Edison machine home to Ceres, Cape Colony. <em>National Park Service / Wikimedia Commons (Public Domain).</em></figcaption>
+          <figcaption>Thomas Edison and his European agent Col. George Gouraud (seated right) with the Perfected Phonograph and wax cylinders at West Orange, 16 June 1888. Gouraud’s London recordist, South African-born C. R. C. Steytler, recorded Tennyson in 1890 and brought an Edison phonograph home to Ceres, Cape Colony. <em>National Park Service / Wikimedia Commons (Public Domain).</em></figcaption>
         </figure>
       </header>
 
