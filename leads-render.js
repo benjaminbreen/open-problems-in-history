@@ -4,6 +4,7 @@ import { notedPassages } from "./lib/lead-notes.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
 
 import { dodoTitle, dodoDescription } from "./dodo-lead.js";
+import { superstormTitle, superstormDescription } from "./superstorm-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
@@ -21,6 +22,12 @@ export const leadsDescription = "Some preliminary writeups of findings and metho
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
+    {
+      slug: "1770-superstorm", published: "2026-11-23T16:10:00-08:00",
+      label: "Global, September 1770 · Space weather", title: superstormTitle, description: superstormDescription,
+      image: "/media/leads/1770-superstorm/trondhjem-sept-crop.webp", alt: "September 1770 daily weather and aurora table for Trondhjem, Norway by Johan Daniel Berlin (1784).",
+      action: "Explore the storm night by night",
+    },
     ...leadStubs.map(stub => ({ ...stub, action: "Read the research stub" })),
     ...archiveLeads,
     {
