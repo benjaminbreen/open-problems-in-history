@@ -15,6 +15,7 @@ import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
 import { superstormTitle, superstormDescription, superstormHTML } from "../superstorm-lead.js";
 import { makassarSmallpoxTitle, makassarSmallpoxDescription, makassarSmallpoxHTML } from "../makassar-smallpox-lead.js";
 import { phantomTitle, phantomDescription, phantomHTML } from "../phantom-disasters-lead.js";
+import { ceresTitle, ceresDescription, ceresHTML } from "../ceres-1893-lead.js";
 import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
 import { wilkinsonBDescription, wilkinsonBHTML, wilkinsonBTitle } from "../wilkinson-lead-b.js";
@@ -40,7 +41,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   problems.push(p);
 }
 const byId = new Map(problems.map((p) => [p.id, p]));
-const leadTitles = new Map([...[...archiveLeads, ...leadStubs].map(lead => [lead.slug, lead.title]), ["makassar-smallpox", makassarSmallpoxTitle], ["1770-superstorm", superstormTitle], ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
+const leadTitles = new Map([...[...archiveLeads, ...leadStubs].map(lead => [lead.slug, lead.title]), ["ceres-1893", ceresTitle], ["phantom-disasters", phantomTitle], ["makassar-smallpox", makassarSmallpoxTitle], ["1770-superstorm", superstormTitle], ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
 for (const p of problems) {
   const links = [
     ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
@@ -240,6 +241,15 @@ for (const lead of archiveLeads) {
     main: lead.html(),
   }));
 }
+fs.mkdirSync("leads/ceres-1893", { recursive: true });
+fs.writeFileSync("leads/ceres-1893/index.html", page({
+  title: `${ceresTitle} · ${SITE}`,
+  description: ceresDescription,
+  head: social({ title: ceresTitle, description: ceresDescription, url: `${URL}/leads/ceres-1893`, image: `${URL}/og/ceres-1893.jpg`, type: "article" })
+    + `<link rel="stylesheet" href="/leads/ceres-1893/exhibit.css?v=${ver}">\n`
+    + `<script src="/leads/ceres-1893/ceres-player.js?v=${ver}" type="module"></script>\n`,
+  main: ceresHTML(),
+}));
 fs.mkdirSync("leads/phantom-disasters", { recursive: true });
 fs.writeFileSync("leads/phantom-disasters/index.html", page({
   title: `${phantomTitle} · ${SITE}`,
@@ -375,6 +385,7 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
 ${[...archiveLeads, ...leadStubs].map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
+<url><loc>${URL}/leads/ceres-1893</loc></url>
 <url><loc>${URL}/leads/phantom-disasters</loc></url>
 <url><loc>${URL}/leads/makassar-smallpox</loc></url>
 <url><loc>${URL}/leads/1770-superstorm</loc></url>

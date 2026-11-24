@@ -9,6 +9,7 @@ import { dodoTitle, dodoDescription } from "./dodo-lead.js";
 import { superstormTitle, superstormDescription } from "./superstorm-lead.js";
 import { makassarSmallpoxTitle, makassarSmallpoxDescription } from "./makassar-smallpox-lead.js";
 import { phantomTitle, phantomDescription } from "./phantom-disasters-lead.js";
+import { ceresTitle, ceresDescription } from "./ceres-1893-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
@@ -26,6 +27,12 @@ export const leadsDescription = "Preliminary writeups of promising leads, method
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
+    {
+      slug: "ceres-1893", published: "2026-11-23T23:30:00-08:00",
+      label: "Ceres, South Africa · December 1893 · Wax cylinder", title: ceresTitle, description: ceresDescription,
+      image: "/media/leads/ceres-1893/thumb.webp", alt: "Thomas Edison and Col. George Gouraud with the Perfected Phonograph and wax cylinders in June 1888.",
+      action: "Listen to the 1893 voice",
+    },
     {
       slug: "phantom-disasters", published: "2026-11-23T22:20:00-08:00",
       label: "Global, 1248–1913 · Historical geophysics & data auditing", title: phantomTitle, description: phantomDescription,
