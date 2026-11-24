@@ -109,7 +109,7 @@ Good contributions are specific: cite works with author, title, year and a DOI o
 
 - Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: https://historyproblems.com/for and https://historyproblems.com/for/<speciality>
 - How the problems were chosen and how research potential is ranked: https://historyproblems.com/methods
-- Primary-source exhibits: https://historyproblems.com/leads
+- Primary-source exhibits and cautionary tales: https://historyproblems.com/leads
 - Every work and archive cited across the problems: https://historyproblems.com/sources
 - Current research-potential ballot and source briefs (Markdown): https://historyproblems.com/rating-passes/2026-11-20/research-potential-r4.md
 - About the project: https://historyproblems.com/about

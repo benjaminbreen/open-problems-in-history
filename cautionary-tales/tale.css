@@ -1,0 +1,29 @@
+.tale .lead-evidence, .tale .lead-open { margin-top: 26px; padding-bottom: 6px; }
+.tale p:not([class]), .tale li { max-width: 38em; color: var(--ink-2); font: 19px/1.5 var(--serif); }
+.tale li { margin: 8px 0; }
+.tale ul, .tale ol { padding-left: 1.2em; }
+.tale blockquote { max-width: 34em; margin: 16px 0; padding: 2px 0 2px 18px; border-left: 3px solid var(--accent); font: italic 22px/1.4 var(--serif); color: var(--ink); }
+.tale .tale-list li::marker { color: var(--accent); font-family: var(--mono); font-size: 14px; }
+.tale-figure { margin: 34px 0 10px; padding: 22px 0 16px; border-block: 1px solid var(--ink); }
+.tale-axis { position: relative; height: 18px; margin-left: calc(240px + 16px); margin-right: calc(130px + 16px); font: 11px/1 var(--mono); color: var(--muted); }
+.tale-axis span { position: absolute; transform: translateX(-50%); }
+.tale-axis span:first-child { transform: none; }
+.tale-axis span:last-child { transform: translateX(-100%); }
+.tale-row { display: grid; grid-template-columns: 240px minmax(0, 1fr) 130px; gap: 16px; align-items: center; min-height: 52px; }
+.tale-name { margin: 0; font: 14px/1.35 var(--serif); color: var(--ink-2); }
+.tale-val { margin: 0; font: 500 13px/1.3 var(--mono); }
+.tale-track { position: relative; height: 34px; }
+.tale-track::before { content: ""; position: absolute; inset: 50% 0 auto; border-top: 1px solid var(--rule); }
+.tale-band { position: absolute; top: 9px; bottom: 9px; background: color-mix(in srgb, var(--accent) 18%, transparent); border-inline: 1px dashed var(--accent); }
+.tale-dot { position: absolute; top: 50%; width: 12px; height: 12px; transform: translate(-50%, -50%); border: 2px solid var(--bg); box-sizing: content-box; z-index: 1; }
+.tale-dot.coral { background: var(--accent); border-radius: 50%; }
+.tale-dot.letters { background: var(--ink); }
+.tale-figure figcaption { margin-top: 12px; font: 12px/1.55 var(--mono); color: var(--ink-2); max-width: 60em; }
+@media (max-width: 640px) {
+  .tale-axis { margin-left: 0; margin-right: calc(124px + 12px); }
+  .tale-row { grid-template-columns: 1fr 124px; gap: 4px 12px; padding: 8px 0; }
+  .tale-name { grid-column: 1 / -1; }
+  .tale-track { grid-column: 1; grid-row: 2; }
+  .tale-val { grid-column: 2; grid-row: 2; text-align: right; white-space: nowrap; font-size: 12px; }
+  .tale p:not([class]), .tale li { font-size: 18px; }
+}

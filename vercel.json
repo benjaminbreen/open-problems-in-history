@@ -50,11 +50,6 @@
   ],
   "redirects": [
     {
-      "source": "/p/borneo-elephants",
-      "destination": "/leads/borneo-elephants",
-      "permanent": true
-    },
-    {
       "source": "/p/indian-ocean-tsunamis",
       "destination": "/p/sumatra-tsunamis",
       "permanent": true
@@ -67,11 +62,6 @@
     {
       "source": "/p/mughal-dodo",
       "destination": "/leads/mughal-dodo",
-      "permanent": true
-    },
-    {
-      "source": "/p/toromiro-provenance",
-      "destination": "/leads/toromiro-provenance",
       "permanent": true
     },
     {
@@ -98,6 +88,11 @@
       "source": "/contact",
       "destination": "/about",
       "permanent": true
+    },
+    {
+      "source": "/cautionary-tales",
+      "destination": "/leads#cautionary-tales",
+      "permanent": false
     }
   ]
 }

@@ -690,9 +690,9 @@ function stats() {
 function route() {
   stopCharacter();
   const path = location.pathname.replace(/\/+$/, "") || "/";
-  const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.split("/")[1];
+  const nav = path === "/" ? "list" : path === "/contact" ? "about" : path.startsWith("/cautionary-tales") ? "leads" : path.split("/")[1];
   for (const a of document.querySelectorAll("nav a")) a.toggleAttribute("aria-current", a.dataset.nav === nav);
-  if (isLeadsPath(path)) return;
+  if (isStaticPath(path)) return;
   document.title = "Open Problems in History";
   if (path.startsWith("/p/")) renderDetail(decodeURIComponent(path.slice(3)));
   else if (path === "/suggest") renderSuggest();
@@ -706,13 +706,14 @@ function route() {
   else { readURL(); renderList(); }
 }
 
-const isLeadsPath = (path) => path === "/leads" || path.startsWith("/leads/");
+// Pre-rendered sections the client router leaves alone.
+const isStaticPath = (path) => /^\/(leads|cautionary-tales)(\/|$)/.test(path);
 
 // Links handled by the client router: same-origin pages only, not files (llms.txt, images) or the API.
 function internal(a, e) {
   return a.origin === location.origin && !a.target && !e.metaKey && !e.ctrlKey && !e.shiftKey
     && !(a.pathname === "/methods" && a.hash)
-    && !isLeadsPath(a.pathname) && !isLeadsPath(location.pathname)
+    && !isStaticPath(a.pathname) && !isStaticPath(location.pathname)
     && !/\.[a-z0-9]+$/i.test(a.pathname) && !a.pathname.startsWith("/api") && !a.pathname.startsWith("/data");
 }
 

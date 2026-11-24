@@ -10,8 +10,10 @@ import { esc, rowHTML, detailHTML, aboutHTML, methodsHTML, colophonHTML, forHTML
 
 import { leadStubs, stubHTML } from "../lead-stubs.js";
 import { archiveLeads } from "../archive-leads.js";
+import { cautionaryTales } from "../cautionary-tales.js";
 import { dodoTitle, dodoDescription, dodoHTML } from "../dodo-lead.js";
 import { superstormTitle, superstormDescription, superstormHTML } from "../superstorm-lead.js";
+import { makassarSmallpoxTitle, makassarSmallpoxDescription, makassarSmallpoxHTML } from "../makassar-smallpox-lead.js";
 import { grantDescription, grantHTML, grantTitle, langleyDescription, langleyHTML, langleyTitle, leadsDescription, leadsHTML } from "../leads-render.js";
 import { wilkinsonDescription, wilkinsonHTML, wilkinsonTitle } from "../wilkinson-lead.js";
 import { wilkinsonBDescription, wilkinsonBHTML, wilkinsonBTitle } from "../wilkinson-lead-b.js";
@@ -37,7 +39,7 @@ for (const f of fs.readdirSync(dir).filter((f) => f.endsWith(".json")).sort()) {
   problems.push(p);
 }
 const byId = new Map(problems.map((p) => [p.id, p]));
-const leadTitles = new Map([...[...archiveLeads, ...leadStubs].map(lead => [lead.slug, lead.title]), ["1770-superstorm", superstormTitle], ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
+const leadTitles = new Map([...[...archiveLeads, ...leadStubs].map(lead => [lead.slug, lead.title]), ["makassar-smallpox", makassarSmallpoxTitle], ["1770-superstorm", superstormTitle], ["dodo-journal", dodoTitle], ["grant-cylinder", grantTitle], ["wilkinson-dictionary", wilkinsonTitle], ["langley-kite", langleyTitle]]);
 for (const p of problems) {
   const links = [
     ...(p.leads || []).map((id) => ({ href: `/leads/${id}`, label: leadTitles.get(id) })),
@@ -202,9 +204,9 @@ for (const p of problems) {
 
 fs.mkdirSync("leads/grant-cylinder", { recursive: true });
 fs.writeFileSync("leads/index.html", page({
-  title: `Leads · ${SITE}`,
+  title: `Leads and warnings · ${SITE}`,
   description: leadsDescription,
-  head: social({ title: `Leads · ${SITE}`, description: leadsDescription, url: `${URL}/leads`, image: `${URL}/og/index.jpg` })
+  head: social({ title: `Leads and warnings · ${SITE}`, description: leadsDescription, url: `${URL}/leads`, image: `${URL}/og/index.jpg` })
     + '<link rel="stylesheet" href="/leads/index.css">\n',
   main: leadsHTML(),
 }));
@@ -237,6 +239,14 @@ for (const lead of archiveLeads) {
     main: lead.html(),
   }));
 }
+fs.mkdirSync("leads/makassar-smallpox", { recursive: true });
+fs.writeFileSync("leads/makassar-smallpox/index.html", page({
+  title: `${makassarSmallpoxTitle} · ${SITE}`,
+  description: makassarSmallpoxDescription,
+  head: social({ title: makassarSmallpoxTitle, description: makassarSmallpoxDescription, url: `${URL}/leads/makassar-smallpox`, image: `${URL}/og/makassar-smallpox.jpg`, type: "article" })
+    + `<link rel="stylesheet" href="/leads/makassar-smallpox/exhibit.css?v=${ver}">\n`,
+  main: makassarSmallpoxHTML(),
+}));
 fs.mkdirSync("leads/1770-superstorm", { recursive: true });
 fs.writeFileSync("leads/1770-superstorm/index.html", page({
   title: `${superstormTitle} · ${SITE}`,
@@ -278,6 +288,19 @@ fs.writeFileSync("leads/wilkinson-dictionary-b/index.html", page({
     + '<link rel="stylesheet" href="/leads/wilkinson-dictionary-b/exhibit.css">\n',
   main: wilkinsonBHTML(),
 }));
+
+// Cautionary tales, listed in their own section of the Leads page.
+for (const tale of cautionaryTales) {
+  const path = `cautionary-tales/${tale.slug}`;
+  fs.mkdirSync(path, { recursive: true });
+  fs.writeFileSync(`${path}/index.html`, page({
+    title: `${tale.title} · ${SITE}`,
+    description: tale.metaDescription || tale.description,
+    head: social({ title: tale.title, description: tale.metaDescription || tale.description, url: `${URL}/${path}`, image: `${URL}/og/index.jpg`, type: "article" })
+      + '<link rel="stylesheet" href="/cautionary-tales/tale.css">\n',
+    main: tale.html(),
+  }));
+}
 
 fs.mkdirSync("about", { recursive: true });
 fs.writeFileSync("about/index.html", page({
@@ -342,11 +365,13 @@ ${NEEDS.map((n) => `<url><loc>${URL}/for/${n.slug}</loc></url>`).join("\n")}
 <url><loc>${URL}/leads/heerlen-c</loc></url>
 <url><loc>${URL}/leads/grant-cylinder</loc></url>
 ${[...archiveLeads, ...leadStubs].map(lead => `<url><loc>${URL}/leads/${lead.slug}</loc></url>`).join("\n")}
+<url><loc>${URL}/leads/makassar-smallpox</loc></url>
 <url><loc>${URL}/leads/1770-superstorm</loc></url>
 <url><loc>${URL}/leads/dodo-journal</loc></url>
 <url><loc>${URL}/leads/langley-kite</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary</loc></url>
 <url><loc>${URL}/leads/wilkinson-dictionary-b</loc></url>
+${cautionaryTales.map((tale) => `<url><loc>${URL}/cautionary-tales/${tale.slug}</loc></url>`).join("\n")}
 ${problems.map((p) => `<url><loc>${URL}/p/${p.id}</loc></url>`).join("\n")}
 </urlset>
 `);
@@ -405,7 +430,7 @@ ${problems.map((p) => `- [${p.title}](${URL}/p/${p.id}): ${p.short} · ${p.field
 
 - Problems grouped by the specialities they need (archivists, geneticists, astronomers and others), with what each could do: ${URL}/for and ${URL}/for/<speciality>
 - How the problems were chosen and how research potential is ranked: ${URL}/methods
-- Primary-source exhibits: ${URL}/leads
+- Primary-source exhibits and cautionary tales: ${URL}/leads
 - Every work and archive cited across the problems: ${URL}/sources
 - Current research-potential ballot and source briefs (Markdown): ${URL}${currentPacketPath}
 - About the project: ${URL}/about

@@ -21,7 +21,7 @@ Comments, proposed approaches and suggestions are held for review at `/admin`. T
 
 `/llms.txt` explains how agents can read the site (`/api/problems`, `/p/<id>`) and contribute approaches, comments and suggestions through the JSON API.
 
-For primary-source research on open problems, agents working locally can use the shared search tool in `~/Code/archive-harness`. Run `uv run hist doctor` there first, then see its `README.md` for which sources are verified and what each returns. It searches Ben's local corpora, Library of Congress newspaper pages, Delpher, OpenAlex and others, and keeps local catalogs of BHL and British Library books with text fetched per item.
+For primary-source research on open problems, agents working locally can use the shared search tool in `~/Code/archive-harness`. Run `uv run hist doctor` there first, then see its `README.md` for which sources are verified and what each returns. It searches Ben's local corpora, Library of Congress newspaper pages, Delpher, OpenAlex and others, and keeps local catalogs of BHL and British Library books with text fetched per item. Three commands are useful even if you search elsewhere: `hist known '<names or "phrases">'` checks OpenAlex and Wikipedia before you call something new,, `hist log <terms>` shows what agents in other projects have already searched, including searches that found nothing, and `hist trace '"phrase"'` finds where else a phrase or name appears across all sources and how early, confirming the early hits against the OCR text. Run them from this folder as `uv run --project ~/Code/archive-harness hist …` so the log records the project.
 
 ## Local
 

@@ -1,7 +1,11 @@
 .leads-index { --thumb-width: clamp(8rem, 13vw, 10.5rem); --column-gap: clamp(1.2rem, 3vw, 2.3rem); }
 .leads-page.leads-index .page-title { font-size: clamp(2.3rem, 5.3vw, 3.8rem); }
 .leads-index .lead-intro { max-width: 66ch; }
+.lead-jumps { margin: 4px 0 0; font: 500 12px/1.5 var(--mono); color: var(--muted); }
+.lead-jumps a { color: var(--ink-2); text-underline-offset: 3px; text-decoration-color: var(--accent); }
+.lead-section-head { margin: 2.8rem 0 0; padding-top: 12px; border-top: 2px solid var(--ink); font: 600 13px/1.4 var(--mono); letter-spacing: .08em; text-transform: uppercase; scroll-margin-top: 16px; }
 .lead-index-list { list-style: none; margin: 2rem 0 0; padding: 0; border-bottom: 1px solid var(--rule); }
+.lead-section-head + .lead-index-list { margin-top: .9rem; }
 .lead-index-row { padding: 1.4rem 0; border-top: 1px solid var(--rule); }
 .leads-index .lead-entry {
   display: grid;

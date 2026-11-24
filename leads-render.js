@@ -1,10 +1,12 @@
 import { leadStubs } from "./lead-stubs.js";
 import { archiveLeads } from "./archive-leads.js";
+import { cautionaryTales } from "./cautionary-tales.js";
 import { notedPassages } from "./lib/lead-notes.js";
 import { wilkinsonTitle } from "./wilkinson-lead.js";
 
 import { dodoTitle, dodoDescription } from "./dodo-lead.js";
 import { superstormTitle, superstormDescription } from "./superstorm-lead.js";
+import { makassarSmallpoxTitle, makassarSmallpoxDescription } from "./makassar-smallpox-lead.js";
 
 export const grantTitle = "A voice from Vienna";
 export const grantDescription = "How a recurring noise on an Edison wax cylinder, a girl’s floor plan, and a school register helped put a possible name to an American voice in Vienna.";
@@ -17,16 +19,22 @@ const transfer = "https://www.nps.gov/edis/learn/photosmultimedia/upload/08-tenh
 const plan = "https://scholarsjunction.msstate.edu/cgi/viewcontent.cgi?article=1003&amp;context=fdg-and-ihg-correspondence#page=7";
 const register = "https://books.google.com/books?id=V33R3iW7K50C&amp;pg=RA1-PA61";
 
-export const leadsDescription = "Some preliminary writeups of findings and methods used to try to tackle open historical problems using digitized archives and agentic research";
+export const leadsDescription = "Preliminary writeups of promising leads, methods and cautionary tales from tackling open historical problems using digitized archives and agentic research.";
 
 export function leadsHTML() {
   // First appearance of each writeup on the Leads index, in repository time.
   const entries = [
     {
+      slug: "makassar-smallpox", published: "2026-11-23T16:25:00-08:00",
+      label: "Makassar & Sydney, 1781–1792 · Disease history", title: makassarSmallpoxTitle, description: makassarSmallpoxDescription,
+      image: "/media/leads/makassar-smallpox/crop-makassar-1782.webp", alt: "Detail of the spring 1782 Makassar council resolution ordering four-foot graves during a smallpox outbreak.",
+      action: "Read the Company papers",
+    },
+    {
       slug: "1770-superstorm", published: "2026-11-23T16:10:00-08:00",
       label: "Global, September 1770 · Space weather", title: superstormTitle, description: superstormDescription,
       image: "/media/leads/1770-superstorm/trondhjem-sept-crop.webp", alt: "September 1770 daily weather and aurora table for Trondhjem, Norway by Johan Daniel Berlin (1784).",
-      action: "Explore the storm night by night",
+      action: "Explore the 12-night storm",
     },
     ...leadStubs.map(stub => ({ ...stub, action: "Read the research stub" })),
     ...archiveLeads,
@@ -67,20 +75,24 @@ export function leadsHTML() {
     },
   ];
   const dateFormat = new Intl.DateTimeFormat("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Los_Angeles" });
-  const rows = entries.sort((a, b) => Date.parse(b.published) - Date.parse(a.published)).map(entry => `
+  const renderRows = (list) => [...list].sort((a, b) => Date.parse(b.published) - Date.parse(a.published)).map(entry => `
     <li class="lead-index-row">
-      <a class="lead-entry" href="/leads/${entry.slug}" aria-labelledby="title-${entry.slug}">
+      <a class="lead-entry" href="${entry.href || `/leads/${entry.slug}`}" aria-labelledby="title-${entry.slug}">
         <img class="lead-thumb" src="${entry.image}" alt="${entry.alt}" width="168" height="126">
         <p class="lead-label">${entry.label}</p>
         <h2 id="title-${entry.slug}">${entry.title}</h2>
         <p class="lead-summary">${entry.description}</p>
         <div class="lead-index-details"><span class="lead-link">${entry.action} <span aria-hidden="true">→</span></span><time datetime="${entry.published}">Published ${dateFormat.format(new Date(entry.published))}</time></div>
       </a>${entry.versions ? `\n      <p class="lead-versions">${entry.versions}</p>` : ""}
-    </li>`);
+    </li>`).join("");
   return `<article class="leads-page leads-index">
-    <h1 class="page-title">Leads</h1>
+    <h1 class="page-title">Leads and warnings</h1>
     <p class="lead-intro">${leadsDescription}</p>
-    <ol class="lead-index-list" aria-label="Leads, newest first">${rows.join("")}</ol>
+    <p class="lead-jumps"><a href="#promising-leads">Promising leads</a> · <a href="#cautionary-tales">Cautionary tales</a></p>
+    <h2 class="lead-section-head" id="promising-leads">Promising leads</h2>
+    <ol class="lead-index-list" aria-label="Promising leads, newest first">${renderRows(entries)}</ol>
+    <h2 class="lead-section-head" id="cautionary-tales">Cautionary tales</h2>
+    <ol class="lead-index-list" aria-label="Cautionary tales, newest first">${renderRows(cautionaryTales)}</ol>
   </article>`;
 }
 

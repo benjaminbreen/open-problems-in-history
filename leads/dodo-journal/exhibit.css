@@ -17,8 +17,21 @@
 .dodo-note p { margin: .35rem 0; font: 1.04rem/1.45 var(--serif); }
 .dodo-lead .lead-passage { color: var(--ink-2); font: 1.23rem/1.5 var(--serif); }
 .dodo-lead .lead-passage > h2 { margin: 1.65rem 0 .55rem; border: 0; padding: 0; font: 500 clamp(1.65rem, 3vw, 2.15rem)/1.12 var(--serif); text-transform: none; letter-spacing: -.025em; color: var(--ink); }
+.dodo-lead .lead-passage > h3 { margin: 1.35rem 0 .4rem; border: 0; padding: 0; font: 500 clamp(1.25rem, 2.2vw, 1.5rem)/1.22 var(--serif); text-transform: none; letter-spacing: -.015em; color: var(--ink); }
 .dodo-lead .lead-passage > p { margin: 0 0 .8em; }
-.dodo-lead :is(#methodology,#reader,#map,.dodo-place) { scroll-margin-top: calc(var(--head-h, 80px) + 1.5rem); }
+.dodo-lead :is(.lead-passage,.lead-notes) code { font: .8em/1.3 var(--mono); background: var(--bg-2); padding: .08em .3em; border-radius: 2px; }
+.dodo-table-wrap { margin: .6rem 0 1.2rem; overflow-x: auto; border: 1px solid var(--rule); background: var(--bg-2); }
+.dodo-table { width: 100%; min-width: 34rem; border-collapse: collapse; font: 1rem/1.45 var(--serif); color: var(--ink-2); }
+.dodo-table caption { padding: .8rem 1rem .4rem; text-align: left; font: 600 .8rem/1.4 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.dodo-table th, .dodo-table td { padding: .8rem 1rem; border-top: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.dodo-table th { font: 600 .78rem/1.35 var(--mono); letter-spacing: .05em; text-transform: uppercase; color: var(--ink); background: var(--bg); }
+.dodo-table td strong { color: var(--ink); font-weight: 600; }
+.dodo-checklist { margin: .7rem 0 1.4rem; padding-left: 1.35rem; }
+.dodo-checklist li { margin: .6rem 0; }
+.dodo-checklist li::marker { color: var(--dodo-green); font: 600 .85em/1 var(--mono); }
+.dodo-checklist strong { color: var(--ink); }
+.dodo-next-links { margin-top: 1.4rem; font: .85rem/1.5 var(--mono); }
+.dodo-lead :is(#methodology,#reader,#checklist,#findings) { scroll-margin-top: calc(var(--head-h, 80px) + 1.5rem); }
 .dodo-reader, .dodo-map { display: block; margin: .8rem 0; padding: clamp(1rem, 3vw, 2rem); border: 1px solid var(--rule); background: var(--bg-2); }
 .dodo-lead :is(.dodo-reader,.dodo-map) h3 { margin: 0; font: 500 clamp(1.5rem, 2.6vw, 2.05rem)/1.2 var(--serif); color: var(--ink); }
 .dodo-reader > p, .dodo-map > p { margin: .45rem 0 1.1rem; font-size: 1.06rem; }

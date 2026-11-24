@@ -1,58 +1,56 @@
 import { notedPassages } from "./lib/lead-notes.js";
 
 export const dodoTitle = "The dodos in a ship’s journal";
-export const dodoDescription = "In April 1615, Dutch sailors went ashore on Mauritius and brought dodos back to their ship. Two entries in their journal fill a gap in the short written history of this extinct, flightless bird.";
+export const dodoDescription = "In April 1615, Dutch sailors went ashore on Mauritius and brought dodos back to their ship. Three dated entries in their prose journal—and the search across 4.8 million pages of handwriting that found them—offer a practical guide to agentic archival research.";
 
 const media = "/media/leads/dodo";
 const blog = "https://resobscura.substack.com/p/using-opus-55-to-discover-a-new-eyewitness";
 const dossier = "https://claude.ai/artifact/4nLg6iQE1154NEz1thp2MU";
 const globalise = "https://globalise.huygens.knaw.nl/";
-const catalogue = "https://www.orientalstudies.ru/eng/images/pdf/st.petersburg_muraqqa_1996.pdf";
 const chronology = "https://doi.org/10.3390/quat3010004";
-const mundy = "https://archive.org/details/travelsofpetermu02mund/page/318/mode/2up";
-const almeida = "https://archive.org/details/collectiondesouv02gran/page/117/mode/2up";
+const hume2006 = "https://doi.org/10.1080/08912960600639400";
 const arrival = "https://archive.org/details/collectiondesouv02gran/page/208/mode/2up";
 const archive = (inventory, scan) => `https://www.nationaalarchief.nl/onderzoeken/archief/1.04.02/invnr/${inventory}/file/NL-HaNA_1.04.02_${inventory}_${String(scan).padStart(4, "0")}`;
 
 const extracts = [
   {
     id: "hunters", width: 1252, height: 262, date: "17 April 1615", title: "The hunters come back", inventory: 1059, scan: 277,
-    alt: "Five lines of the ship’s journal. Dodersen is near the right end of the fourth line.",
-    dutch: "Jagers vuyt die sommighe schiltpadden &amp; <mark>dodersen</mark> aen boort brochten",
-    english: "Hunters went out and brought some tortoises and <mark>dodos</mark> aboard.",
-    context: "The ship had sent its small boat to carry a letter to two other ships. The writer gives the hunters’ return just a few words at the end of the day’s entry.",
+    alt: "Five lines of the ship’s journal. Dodeersen is near the right end of the fourth line.",
+    dutch: "…ende sonden meede Jagers vuyt die sommighe schiltpadden &amp; <mark>dodeersen</mark> aen boort brochten",
+    english: "…and also sent hunters out, who brought some tortoises and <mark>dodos</mark> aboard.",
+    context: "The ship had sent its boat with a letter to the Walcheren and the Engel. The writer gives the hunters’ return a single clause at the end of the day’s entry. Although machine transcription dropped an e to read “dodersen,” the manuscript clearly has the same double-e secretary-hand loops (“dodeersen”) used throughout the journal.",
     word: [72, 51, 15, 29],
   },
   {
     id: "water", width: 1246, height: 152, date: "21 April 1615", title: "A second catch", inventory: 1059, scan: 277,
     alt: "Two lines beginning Den 21 dito. Dodeersen begins the second line.",
-    dutch: "Den 21 dito wederom water gehaelt ende veel schiltpadden <mark>dodeersen</mark> ende sommighe gansen &amp; papegayen geuangen",
-    english: "On the 21st, fetched water again and caught many tortoises, <mark>dodos</mark> and some geese and parrots.",
-    context: "The writer uses a slightly different spelling here. “Many” clearly applies to the tortoises. The entry leaves the number of dodos open.",
+    dutch: "Den 21 dito wederom water gehaelt ende veel schilt padden / <mark>dodeersen</mark> ende sommighe gansen &amp; papegayen geuangen",
+    english: "On the 21st, fetched water again and caught many tortoises, <mark>dodos</mark>, and some geese and parrots.",
+    context: "Because there is no “ende” (“and”) between “schilt padden” and “dodeersen,” it is grammatically open whether “veel” (“many”) applies to the dodos as well as the tortoises.",
     word: [3, 39, 17, 39],
   },
   {
-    id: "provisions", width: 1210, height: 240, date: "30 April 1615", title: "What the island provided", inventory: 1059, scan: 278,
+    id: "provisions", width: 1210, height: 240, date: "30 April 1615", title: "Departure summary", inventory: 1059, scan: 278,
     alt: "A detail of the following page. Dodeersen appears near the right margin above the line listing tortoises.",
-    dutch: "goede ververssinge gecregen, soe van <mark>dodeersen</mark>, landt ende water schiltpadden met meenichte",
-    english: "Obtained fresh provisions, including <mark>dodos</mark> and plentiful land tortoises and sea turtles.",
-    context: "As the ship prepares to leave, the writer sums up what the crew obtained at the anchorage. This third mention looks back over the stay. Counting it as another hunt would count the same evidence twice.",
+    dutch: "Wy hebben al hier opde Molucksche Ree leggende goede ververssinge gecregen, soe van <mark>dodeersen</mark>, landt ende water schiltpadden met meenichte",
+    english: "Lying here at the Moluccan Roadstead, we obtained good fresh provisions, including <mark>dodos</mark> and plentiful land tortoises and sea turtles.",
+    context: "As the ship prepares to sail, the writer sums up what the crew obtained at the anchorage (and notes releasing a sheep and fat-tailed ram brought from Madagascar). Because this third mention looks back over the whole stay, counting it as another hunt would double-count the evidence.",
     word: [72, 31, 17, 27],
   },
   {
     id: "verse", width: 635, height: 295, date: "The same voyage", title: "The dodo in a sailor’s verse", inventory: 1059, scan: 51,
-    alt: "Stanza 200 of the rhymed account. Dodersen begins the fourth line of verse.",
-    dutch: "<mark>dodersen</mark> en patrysen<br>gansen weert om te prijsen<br>en schiltpadden daer syn",
+    alt: "Stanza 200 of the rhymed account. Dodeersen begins the fourth line of verse.",
+    dutch: "<mark>dodeersen</mark> en patrysen<br>gansen weert om te prijsen<br>en schiltpadden daer syn",
     english: "There are <mark>dodos</mark> and partridges,<br>geese worth praising,<br>and tortoises there.",
-    context: "Johan Both Volkertsz put the voyage into rhyme. His poem drew on the ship’s journal and was published in a modern edition in 1971. It preserves the name in another form of writing about the same voyage.",
+    context: "Johan Both Volkertsz put the voyage into rhyme, drawing on the prose journal. His poem has been known to literary historians since 1850 and was edited in 1971—so the voyage itself was not unknown, only absent from specialist dodo chronologies. Here too, the ink reads “dodeersen” (compare “weert” directly below it).",
     word: [4, 49, 33, 20],
   },
   {
-    id: "rail", width: 949, height: 180, date: "November 1638", title: "What was a “field-hen”?", inventory: 1128, scan: 360,
+    id: "rail", width: 949, height: 180, date: "November 1638", title: "A “field-hen” hidden in translation", inventory: 1128, scan: 360,
     alt: "An underlined list of animals. Velthoenderen follows the word for geese.",
     dutch: "koebeesten gansz <mark>velthoenderen</mark> eenden duijven",
     english: "Cattle, geese, <mark>field-hens</mark>, ducks, pigeons.",
-    context: "In a December letter, the Dutch commander Cornelis Gooyer described sailing around Mauritius the previous month. A French edition in 1890 rendered “field-hens” as “partridges.” Other Dutch visitors used a similar word for the red rail, another flightless Mauritian bird that later died out. Gooyer gives too little detail for a certain identification.",
+    context: "In a December 1638 letter describing a circuit of Mauritius the previous month, Dutch commander Cornelis Gooyer listed “velthoenderen.” Roland Bonaparte’s 1890 French edition translated that word as “partridges” (“perdrix”), hiding a probable red-rail sighting inside a twenty-year period modern chronologies describe as empty. Without an anatomical description, the identification stays probable rather than certain.",
     word: [31, 46, 24, 23],
   },
 ];
@@ -73,7 +71,7 @@ function manuscriptReader() {
   }).join("");
   return `<section class="dodo-reader" aria-labelledby="reader-title" id="reader">
     <h3 id="reader-title">Read the manuscripts</h3>
-    <p>Open an entry to see the handwriting. Switch languages to compare the excerpt, or select the image to enlarge the whole page.</p>
+    <p>Open an entry to inspect the handwriting. Switch languages to compare the excerpt, highlight the bird’s name on the scan, or select any crop to enlarge the full page.</p>
     <div class="dodo-controls"><fieldset><legend>Text beside the manuscript</legend>
       <label><input type="radio" name="reading-language" value="en" checked><span>English translation</span></label>
       <label><input type="radio" name="reading-language" value="nl"><span>Dutch transcription</span></label>
@@ -82,71 +80,99 @@ function manuscriptReader() {
   </section>`;
 }
 
-const places = [
-  { id: "mauritius", label: "Mauritius", heading: "A young bird caught on Mauritius", x: 43.1, y: 91.15,
-    body: `In 1616 Manuel de Almeida, a Portuguese Jesuit priest, described catching what he called a young ostrich. The place and description have led historians to identify it as a dodo. Almeida leaves its fate open. <a href="${almeida}">Read the French edition, p. 117</a>.` },
-  { id: "goa", label: "Goa", heading: "A ship returns to Goa", x: 71.6, y: 25.0,
-    body: `After visiting Madagascar, one ship from Almeida’s expedition reached this port on India’s west coast on 17 September 1616. The arrival account names a Malagasy passenger presented to the Portuguese viceroy. Whether the bird boarded either ship or survived the journey is unknown. <a href="${arrival}">Read the arrival account, p. 208</a>.` },
-  { id: "surat", label: "Surat", heading: "Two dodos at an English trading house", x: 69.9, y: 14.5,
-    body: `English traveller Peter Mundy wrote, “I saw two of them in Suratt howse that were brought from thence.” He meant Mauritius. Mundy stayed in Surat in 1628–30 and again in 1633–34. He gives neither a date for the sighting nor the name of the person who brought the birds. <a href="${mundy}">Read Mundy’s account, pp. 318–19</a>.` },
-];
-
-function evidenceMap() {
-  return `<section class="dodo-map" id="map" aria-labelledby="map-title"><h3 id="map-title">Where the records place the birds</h3>
-    <p>Select a place to read its evidence. Each point belongs to a separate account.</p>
-    <div class="dodo-atlas"><div class="dodo-geography" role="group" aria-label="Locations in the western Indian Ocean">
-      <span class="sea" aria-hidden="true">Indian Ocean</span><span class="madagascar" aria-hidden="true">Madagascar</span><span class="india" aria-hidden="true">India</span>
-      ${places.map(p => `<a href="#place-${p.id}" class="dodo-pin" style="left:${p.x}%;top:${p.y}%">${p.label}</a>`).join("")}
-    </div><div class="dodo-places">${places.map(p => `<div class="dodo-place" id="place-${p.id}"><h4>${p.heading}</h4><p>${p.body}</p></div>`).join("")}</div></div>
-    <p class="dodo-credit">Coastlines from <a href="https://www.naturalearthdata.com/">Natural Earth</a>.</p>
-  </section>`;
+function retrievalTable() {
+  return `<div class="dodo-table-wrap">
+    <table class="dodo-table">
+      <caption>Lexical search vs. semantic embeddings on the same VOC archive</caption>
+      <thead>
+        <tr>
+          <th scope="col">Method</th>
+          <th scope="col">Corpus slice</th>
+          <th scope="col">What it found</th>
+          <th scope="col">What it missed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Whole-corpus FTS5 lexical + fuzzy sweep</strong><br>Exact + edit distance ≤ 2 for period spellings (<code>dodaers</code>, <code>dodeersen</code>, <code>dodersen</code>, <code>walgvogel</code>)</td>
+          <td>All 4.79M GLOBALISE pages (~1 min, $0)</td>
+          <td><strong>Found the 1615 <i>Wapen van Amsterdam</i> entries immediately</strong>, plus every known VOC dodo record (1629, 1647, 1669, 1674).</td>
+          <td>Passages describing an animal without using a standard name, or masked behind synonyms and translations.</td>
+        </tr>
+        <tr>
+          <td><strong>Semantic embedding search</strong><br><code>text-embedding-3-large</code>, 16 descriptive queries written without quoting sources</td>
+          <td>17,513 post-1638 Mauritius pages ($1.65) &amp; 7,895 pre-1640 pages ($0.83)</td>
+          <td>Ranked Pretorius’s held-out 1669 report <strong>#1 on 13 of 16 queries</strong>; surfaced Gooyer’s 1638 <i>velthoenderen</i> and tortoise-exploitation registers.</td>
+          <td>Ranked the 1615 prose pages <strong>163rd and 171st</strong> of 273; <strong>missed the known 1629 Nassau dodo page completely</strong>; ranked the known 1647 Japan cargo line (“1 dodeers”) <strong>2,293rd of 7,415</strong> in a gift-list pass.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>`;
 }
 
 export function dodoHTML() {
   const passages = [
     {
-      id: "painting",
-      body: ref => `<h2>The problem</h2><p>How did a painter in India know what a dodo looked like? The dodo was a large, flightless bird whose only wild home was Mauritius, an island east of Madagascar. It died out in the seventeenth century. Few people who saw one left a drawing. One of the most lifelike surviving pictures comes from India, thousands of miles away.</p>
-      <p>The artist usually credited with the dodo is Mansur. He painted animals for Jahangir, the Mughal emperor who ruled much of South Asia from 1605 to 1627. The bird now appears among parrots and other birds on an album page. Someone assembled that page later from several pictures. Even the date specialists give the dodo itself, around 1615, is an estimate.${ref}</p>`,
-      note: `See folio 80r, plate 147, in <a href="${catalogue}">the St. Petersburg album catalogue</a>, printed p. 98. Stuart Cary Welch attributes the dodo to Mansur and explains how the separate pictures were assembled. <a href="https://artsandculture.google.com/asset/a-page-of-birds-st-petersburg-muraqqa/hQHTqIc-rsbHOg">Explore the album page</a>.`,
-    },
-    {
-      id: "search",
-      body: ref => `<h2 id="methodology">How the search worked</h2><p>Dutch East India Company ships stopped at Mauritius for fresh water and food. Their officers kept journals of winds, repairs, letters and provisions. An entry about filling water casks could mention an animal in passing.</p>
-      <p>Using GLOBALISE’s machine transcriptions, the agents searched for old spellings of the bird’s name and for passages about hunting or taking on provisions. Each method found things the other could miss. A search by meaning missed a known 1629 dodo reference buried on a page about crew changes. A spelling search recovered it. The agents then compared the promising words with the handwriting and the dates with published lists of sightings.${ref}</p>`,
-      note: `The <a href="${globalise}">GLOBALISE project</a> makes millions of manuscript pages searchable. Breen’s <a href="${blog}">account of the search</a> and the <a href="${dossier}">original Claude research dossier</a> describe the investigation. The <a href="${archive(1095,922)}">1629 journal page</a> provides a known example to test against.`,
+      id: "why-test",
+      body: ref => `<h2>Why this case is a good test of agentic archival research</h2>
+      <p>Most historical questions make poor tests for AI research agents: either generations of specialists have already combed every surviving page, or the evidence is too thin to tell whether a new find changes anything. Extinct-species records sit in a productive middle ground. The written eyewitness history of the dodo (<i>Raphus cucullatus</i>) on Mauritius comes down to only a few dozen dated accounts between 1598 and the late seventeenth century, and standard specialist chronologies note a quiet interval in Dutch records after 1611, jumping straight to a 1616 Portuguese Jesuit report and a 1617 Dutch drawing.${ref}</p>
+      <p>Meanwhile, the <a href="${globalise}">GLOBALISE</a> project released bulk Handwritten Text Recognition (HTR) transcriptions covering 4,786,033 page scans from the Dutch East India Company (VOC) <i>Overgekomen Brieven en Papieren</i> series at the Nationaal Archief in The Hague. Pairing a scarce, well-catalogued scholarly baseline with a newly searchable manuscript archive turned this search into a clear test of what AI agents actually do well in archives—and where they break.</p>`,
+      note: `Major specialist dodo works checked: Julian P. Hume, “The history of the Dodo <i>Raphus cucullatus</i> and the penguin of Mauritius,” <a href="${hume2006}"><i>Historical Biology</i> 18 (2006)</a>; Anthony Cheke and Julian P. Hume, <i>Lost Land of the Dodo</i> (2008); Jolyon C. Parish, <i>The Dodo and the Solitaire: A Natural History</i> (2013); and Anthony Cheke and Jolyon C. Parish, “The Dodo and the Red Hen, a Confusing Tale,” <a href="${chronology}"><i>Quaternary</i> 3(1):4 (2020), Table A1</a>. For the initial account of this search, see Benjamin Breen’s <a href="${blog}">Res Obscura post</a> and the <a href="${dossier}">original Claude research dossier</a>.`,
     },
     {
       id: "journal",
-      body: ref => `<h2 id="findings">What turned up</h2><p>On 17 April 1615, hunters returned to the Dutch ship <i>Wapen van Amsterdam</i> with tortoises and dodos. Four days later, the crew fetched water and caught dodos again. Both entries fit on one page. Turn the leaf and a third mention appears in the ship’s account of the provisions it gathered before sailing on.</p>
-      <p>These entries add two days to the short list of occasions when someone actually recorded encountering a dodo in the wild. A widely used chronology goes from 1611 to 1616 without this stop. The ship’s voyage was already known, and a rhymed account was in print. The apparent addition to dodo history is the dated evidence in the prose journal.${ref}</p>`,
-      note: `The journal is in the Dutch National Archives, <a href="${archive(1059,277)}">VOC 1059, folio 141</a>. The <a href="${archive(1059,300)}">title on the journal</a> identifies the ship. Compare <a href="${chronology}">Cheke and Parish’s chronology</a>, Table A1, and the <a href="${archive(1059,51)}">rhymed account</a>, edited by L. M. Akveld and J. P. Houterman in 1971.`,
+      body: ref => `<h2 id="findings">What turned up in the manuscripts</h2>
+      <p>In April 1615, the VOC ship <i>’t Wapen van Amsterdam</i> anchored at Mauritius (<i>Molucksche Ree</i>), where its crew learned of the recent wrecks of the <i>Banda</i> and <i>Provintia</i> and the drowning of Governor-General Pieter Both. The ship’s official prose journal—kept by Isbrant Cornelisz van Petten—mentions dodos three times across two facing pages: hunters returning with tortoises and dodos on 17 April, a second catch alongside water, geese and parrots on 21 April, and a departure summary on 30 April looking back over the provisions gathered at the anchorage.${ref}</p>
+      <p>A rhymed account of the same voyage by Johan Both Volkertsz (<i>Cort verhaell</i>), which drew on the prose journal, has been known to literary historians since 1850 and in print since 1971. So this is not a claim that the voyage itself was unknown. What was overlooked by all four specialist dodo chronologies are the dated eyewitness entries in the prose journal, which fill the 1611–1616 gap. They sit mid-sequence and do not move the dodo’s extinction date; their value is tightening a sparse baseline and showing what a systematic sweep can recover.</p>`,
+      note: `Nationaal Archief, <code>NL-HaNA 1.04.02</code>, <a href="${archive(1059, 277)}">VOC 1059, fol. 141r (scan 277)</a> and <a href="${archive(1059, 278)}">fol. 141v (scan 278)</a>; journal endorsement on <a href="${archive(1059, 300)}">scan 300</a>. The rhymed version appears on <a href="${archive(1059, 51)}">scan 51 (stanza 200)</a>, edited by L. M. Akveld and J. P. Houterman (MNVZ, 1971). Direct inspection of all four scans shows the writer consistently wrote <i>dodeersen</i> with a double <i>e</i>—correcting earlier machine-transcription readings of <i>dodersen</i>.`,
+    },
+    {
+      id: "field-hen",
+      body: ref => `<p>The same investigation surfaced a second, subtler kind of find: a December 1638 letter from Cornelis Gooyer, the first Dutch commander on Mauritius, listing <i>velthoenderen</i> (“field-hens”) among the wildlife he saw while sailing around the island in November. Roland Bonaparte’s 1890 French edition translated that word as <i>perdrix</i> (“partridges”). Modern chronologies citing Bonaparte describe 1638–58 as a faunal blank mentioning only introduced livestock, even though those same tables treat Dutch <i>velthoenders</i> in 1629 and c. 1632 as the extinct red rail (<i>Aphanapteryx bonasia</i>). Gooyer gives no description of the bird, so the identification remains probable rather than proved—yet reading the manuscript recovered a clue a single translated word had obscured.${ref}</p>`,
+      note: `Compare Gooyer’s letter, <a href="${archive(1128, 360)}">VOC 1128, fols. 251–252 (scan 360)</a>, with Roland Bonaparte, <i>Le premier établissement des Néerlandais à Maurice</i> (1890), pp. 39–40, and <a href="${chronology}">Cheke &amp; Parish (2020)</a> on Mauritian bird names.`,
     },
     { wide: true, body: manuscriptReader },
     {
-      id: "field-hen",
-      body: ref => `<h2>A second bird hidden in translation</h2><p>The last manuscript above comes from the first year of Dutch settlement on Mauritius. Its author lists “field-hens” between geese and ducks. A reader of the later French translation would find partridges there. Someone searching only that edition for a red rail could pass straight over the passage.</p><p>The original wording makes this a possible sighting of the red rail in 1638. The same search that recovered a date for the dodo also turned up a place where one translated word may have obscured another animal.${ref}</p>`,
-      note: `Compare <a href="${archive(1128,360)}">Gooyer’s letter, VOC 1128, scan 360</a>, with Roland Bonaparte’s <i>Le premier établissement des Néerlandais à Maurice</i> (1890), pp. 39–40. <a href="${chronology}">Cheke and Parish</a> discuss how names for the island’s birds changed over time.`,
+      id: "methodology-intro",
+      body: ref => `<h2 id="methodology">How the search actually worked</h2>
+      <p>Most accounts of AI-assisted research make the pipeline sound smoother than it is. In practice, <strong>the semantic embedding search we built first did not surface the 1615 dodo entries</strong>, and <strong>an automated LLM reader hallucinated a dodo quote that did not exist</strong>. What worked only became clear by testing each stage against known records already inside the archive.${ref}</p>
+      <h3>1. Match the search method to how facts sit on the page</h3>
+      <p>Agents often default to semantic embeddings (“search by meaning”) because they feel more sophisticated than keyword queries. Running both head-to-head on the same VOC corpus exposed a sharp division of labor: lexical and fuzzy search caught brief, one-word log mentions immediately, while semantic embeddings shone on longer narrative descriptions and translation-masked references.</p>`,
+      note: `Known VOC recall controls inside GLOBALISE: Le Febvre / <i>Nassau</i> 1629 (<a href="${archive(1095, 922)}">VOC 1095, scan 922</a>), 1647 Japan dodo (<a href="${archive(1164, 738)}">VOC 1164, scan 738</a>; <a href="${archive(1165, 143)}">VOC 1165, scan 143</a>), Pretorius 1669 (<a href="${archive(4005, 603)}">VOC 4005, scan 603</a>) and Hugo 1674 (<a href="${archive(4011, 411)}">VOC 4011, scan 411</a>). Other pages cited below: hallucinated gift-screen hit (<a href="${archive(1053, 430)}">VOC 1053, scan 430</a>), 1683 <i>Europa</i> goose supply list (<a href="${archive(4019, 170)}">VOC 4019, scan 170</a>), and the 1616 Goa arrival date corrected from OCR “1&quot;” to Saturday 17 September in <a href="${arrival}">Grandidier II, p. 208</a>.`,
+    },
+    { wide: true, body: retrievalTable },
+    {
+      id: "lessons",
+      body: () => `<h3>2. Plant held-out positive controls before trusting a sweep</h3>
+      <p>Before reading new hits, choose two or three known records already inside the corpus and keep their wording out of your prompts. When Pretorius’s 1669 report ranked first on 13 of 16 queries without being quoted, we knew the narrative embedding pass had real recall. When the known 1647 Japan cargo line (“1 dodeers”) ranked 2,293rd in a gift-list embedding pass, that failed control immediately told us embeddings were blind to archaic single-word cargo entries—saving us from falsely declaring “no dodos in VOC gift lists” until we switched to lexical windows.</p>
+      <h3>3. Automate quote verification—and then still look at the ink</h3>
+      <p>Two distinct kinds of error surfaced, and each needs its own check. First, <strong>LLM readers fabricate</strong>: when a fast model (<code>gpt-5.4-mini</code>) screened 8,287 gift-and-cargo windows, only 460 of 914 flagged items contained quotes actually present in the source text, and on VOC 1053 (scan 430) the model flatly invented a “1 dodeers” quotation. Every agent-extracted quote must pass a programmatic exact-substring check against the stored text before a human ever reviews it.</p>
+      <p>Second, <strong>HTR and OCR still drift even when quotes match the text</strong>. Substring verification proves only that a quote matches the machine transcription, not the ink. Inspecting the actual VOC 1059 scans caught that the machine text dropped an <i>e</i> on 17 April and in Stanza 200—an artifact an earlier AI draft had turned into an invented note about spelling variation. Looking at the original scans also caught HTR reading 1683 as 1688 on a Mauritius supply list and Internet Archive OCR turning “17 septembre 1616” into “1&quot;” in a Portuguese arrival account (verified against the Gregorian weekday, Saturday).</p>
+      <h3>4. Check specialist print monographs, not just web search</h3>
+      <p>During the wider sweep, an agent flagged Nicolaes van Wassenaer’s 1625 printed mention of “Dodeersen” as possibly new because web searches did not link it to dodo bibliographies. Checking Jolyon Parish’s 2013 print monograph showed it was already quoted in full. Web indexes, OpenAlex and Wikipedia miss large stretches of book-length scholarship, non-English editions and specialist catalogues; treat them as a first filter, never proof of novelty.</p>
+      <h3>5. Separate corpus boundaries from absence—and know when to stop</h3>
+      <p>A follow-up sweep read 815 filtered late-Mauritius pages (1655–1702) in GLOBALISE and found no new dodo or red-rail entries. That closes GLOBALISE cleanly while preserving an explicit boundary: the decisive 1685–88 Lamotius hunting journals survive in the Cape Archives (C 2238–2240), not in the Amsterdam and Zeeland copies digitized here. (The same sweep turned up a scan-verified 1683 supply list recording 605 unpriced wild geese fifteen years before the last recorded sighting of the extinct Mauritius sheldgoose.)</p>
+      <p>Just as important is knowing when to park an unpromising thread. After the 1615 find, agents spent ten follow-up passes trying to trace which live bird inspired the famous St. Petersburg dodo miniature attributed to the Mughal painter Ustad Mansur—checking 1616 Portuguese Goa voyages, 1617–18 Dutch embassies, 939 freshly OCR’d pages of Persian chronicles, Surat gift consignments and a Dutch painter’s 1625 cassowary mission. Those runs produced genuine archival plumbing (shelfmarks, corrected dates, a named Mughal painting pupil), yet zero documents connecting a dodo to the painting. Compatible context can accumulate indefinitely without narrowing a hypothesis; the right move was to separate the verified 1615 journal find from the unproven Mughal route and park the painting question as a brief <a href="/leads/mughal-dodo">research stub</a> until a bird-specific transfer or conservation record appears.</p>`,
     },
     {
-      id: "india",
-      body: ref => `<h2>Did a bird reach the painter?</h2><p>The 1615 journal follows the hunters as far as their ship. Other travellers left clues closer to India. A Portuguese expedition caught a young bird on Mauritius the following year. An English traveller later recalled seeing two dodos in Surat. Following the dates and places shows where a bird can be traced and where its trail breaks off.${ref}</p>`,
-      note: `Almeida’s account survives in a <a href="${almeida}">French edition published in 1904</a>. The return to Goa appears in a <a href="${arrival}">separate account of the expedition</a>. Mundy’s <a href="${mundy}">recollection</a> describes the birds at the trading house.`,
-    },
-    { wide: true, body: evidenceMap },
-    {
-      id: "next",
-      body: ref => `<h2>What to look for next</h2><p>A letter saying who received a bird at Surat, or a household entry paying someone to feed or transport it inland, could connect a port sighting to an artist or patron. The bird’s description matters as much as its destination. In 1625, for instance, a Dutch merchant did send a large flightless bird to Jahangir. His letter calls it a cassowary, a different bird that the Dutch also traded.${ref}</p>
-      <p>The dated catches already tell us something about the dodo on Mauritius. Finding the painter’s model will take a record that follows an individual bird one step further.</p><p><a href="/leads/mughal-dodo">How did a dodo become the subject of a Mughal painting? →</a></p>`,
-      note: `The <a href="${archive(1084,134)}">1625 letter from Surat</a> names the bird. A <a href="${archive(1090,626)}">later letter</a> records how well the king received it.`,
+      id: "checklist",
+      body: () => `<h2 id="checklist">A repeatable checklist for future agentic archive sweeps</h2>
+      <p>The same workflow has since been reused on VOC earthquake and tsunami records (including the <a href="/leads/buru-tsunami">1738 Buru tsunami</a>), seventeenth-century VOC smallpox and cannabis ordinances, and the Dutch West India Company Atlantic corpus:</p>
+      <ol class="dodo-checklist">
+        <li><strong>Define the baseline and pick held-out controls first.</strong> Identify the 2–4 specialist monographs or catalogues that define what is already known, and choose 2–3 records inside the corpus to serve as blind recall checks.</li>
+        <li><strong>Run lexical and semantic passes as complements.</strong> Index locally with FTS5 for exact and fuzzy period-spelling sweeps (essential for logs, lists and archaic orthography); reserve semantic embeddings for narrative passages where concepts appear without standard keywords.</li>
+        <li><strong>Measure recall on your controls before trusting a null.</strong> If a known record ranks low or disappears, diagnose why before drawing historical conclusions from empty results.</li>
+        <li><strong>Gate every LLM-screened batch with programmatic quote checks.</strong> Automatically discard any extracted quotation that is not a verbatim substring of the underlying text buffer.</li>
+        <li><strong>Inspect original page images for every surviving candidate.</strong> Verify spellings, numerals, dates (with folio and weekday checks), and whether a passage is an independent eyewitness entry or a later summary or copy.</li>
+        <li><strong>Check print prior art and enforce a stopping rule.</strong> Compare survivors against canonical print editions, state what the corpus cannot observe, and park any line where compatible context grows faster than discriminating evidence—a lesson paired with our cautionary tale <a href="/cautionary-tales/one-year-off">One year off</a>.</li>
+      </ol>
+      <p class="dodo-next-links"><a href="/leads/mughal-dodo">Related stub: How did a dodo become the subject of a Mughal painting? →</a></p>`,
     },
   ];
   return `<article class="leads-page dodo-lead">
     <div class="lead-page-links"><a class="back" href="/leads">← All leads</a><a class="methodology-jump" href="#methodology">How the agents investigated ↓</a></div>
-    <header class="dodo-mast"><div><p class="lead-label">Mauritius · April 1615</p><h1 class="page-title">${dodoTitle}</h1>
+    <header class="dodo-mast"><div><p class="lead-label">Mauritius, 1615 &amp; 1638 · Natural history &amp; archival method</p><h1 class="page-title">${dodoTitle}</h1>
       <p class="dodo-deck">${dodoDescription}</p><a class="dodo-jump" href="#reader">Read the ship’s journal ↓</a></div>
-      <figure><a href="https://commons.wikimedia.org/wiki/File:DodoMansur.jpg"><img src="${media}/birds.webp" width="760" height="1222" alt="A painted dodo with a large curved bill stands at the centre of an album page among smaller, brightly coloured birds."></a><figcaption>The dodo study attributed to Mansur, now part of an album in St. Petersburg. <a href="${catalogue}">Plate 147</a>.</figcaption></figure></header>
-    <aside class="dodo-note" aria-labelledby="ben-note"><h2 id="ben-note">A note from Benjamin Breen</h2>
-      <p>The text below is a research report of some new findings using AI agents to search through the digitized Dutch East India Company records (<a href="${globalise}">GLOBALISE</a>). I wrote <a href="${blog}">this post</a> on my newsletter Res Obscura with some initial thoughts on the process and the new 17th century report about dodos it unearthed.  As this site gets more developed, I will write up a full methods report in my own words. Until then please excuse the AI-written text below, which was produced by GPT-6.2 Astra. I figured it would be helpful to include an initial report of the method and findings that the AI research agents used to help develop this promising early finding, which I think is reproducible in hunting for other references to extinct species in digitized early modern records.</p></aside>
-    ${notedPassages(passages)}<script type="module" src="/leads/dodo-journal/map.js"></script></article>`;
+      <figure><a href="${media}/scan-277.webp" aria-label="Enlarge folio 141r of the ship’s journal"><img src="${media}/scan-277.webp" width="2000" height="2642" alt="Folio 141 recto of the handwritten prose journal of ’t Wapen van Amsterdam, April 1615, under Mauritius."></a><figcaption>Folio 141r of the prose journal of <i>’t Wapen van Amsterdam</i>, April 1615. <a href="${archive(1059, 277)}">VOC 1059, scan 277 ↗</a></figcaption></figure></header>
+    ${notedPassages(passages)}</article>`;
 }
