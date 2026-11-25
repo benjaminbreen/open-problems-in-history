@@ -3,12 +3,12 @@
 // Admin only (x-admin-token header):
 // GET                      { pending: [...], approved: [...] }
 // PATCH { rid, action: "approve" | "reject" | "remove" }
-import { db, parse, newId, limited, isAdmin, clean, voterId } from "../lib/store.js";
-import { notify } from "../lib/notify.js";
+import { db, parse, newId, limited, isAdmin, clean, voterId } from "../src/lib/store.js";
+import { notify } from "../src/lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
 import { createHash } from "node:crypto";
-import { criteria, validJudgment, originalRoundId, editions } from "../lib/potential.js";
+import { criteria, validJudgment, originalRoundId, editions } from "../src/lib/potential.js";
 import round from "../data/research-potential.json" with { type: "json" };
 
 const questionsFor = new Map(Object.entries(editions).map(([id, edition]) =>

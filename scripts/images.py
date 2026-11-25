@@ -1,10 +1,10 @@
 """Turn source images into red halftones, and make share cards.
 
-  data/images/<id>.json + source file  ->  img/<id>.webp      (4:3 halftone, transparent, for the problem page)
-                                       ->  og/<id>.png        (1200x630 share card)
-  all halftones                        ->  og/index.png       (share card for the home page)
+  data/images/<id>.json + source file  ->  assets/img/<id>.webp  (4:3 halftone, transparent, for the problem page)
+                                       ->  assets/og/<id>.jpg    (1200x630 share card)
+  all halftones                        ->  assets/og/index.jpg   (share card for the home page)
 
-Run: python3 scripts/images.py   (then npm run data)
+Run: python3 scripts/images.py   (then npm run build)
 """
 import json, math, glob, os, textwrap
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageFilter, ImageEnhance
@@ -149,8 +149,8 @@ def period(p):
 
 
 def main():
-    os.makedirs("img", exist_ok=True)
-    os.makedirs("og", exist_ok=True)
+    os.makedirs("assets/img", exist_ok=True)
+    os.makedirs("assets/og", exist_ok=True)
     problems = {p["id"]: p for p in json.load(open("data/problems.json"))}
     thumbs = []
     for meta_file in sorted(glob.glob("data/images/*.json")):
@@ -164,9 +164,9 @@ def main():
         ht_page = halftone(src, 960, 720, hint, cell=7, zoom=m.get("zoom", 1.0), invert=m.get("invert", False), style=m.get("style", "soft"))
         alpha = ht_page.split()[3].point(lambda v: min(255, (v + 16) // 32 * 32))  # few alpha levels compress well
         flat = Image.merge("RGBA", (*Image.new("RGB", ht_page.size, RED).split(), alpha))
-        flat.save(f"img/{p['id']}.webp", lossless=True, method=6)
+        flat.save(f"assets/img/{p['id']}.webp", lossless=True, method=6)
         ht = halftone(src, 500, 630, hint, cell=5.5, bg=(255, 255, 255), zoom=m.get("zoom", 1.0), invert=m.get("invert", False), style=m.get("style", "soft"))
-        card(p, ht).save(f"og/{p['id']}.jpg", quality=86, optimize=True)
+        card(p, ht).save(f"assets/og/{p['id']}.jpg", quality=86, optimize=True)
         if p["id"] in HOME:
             thumbs.append((HOME.index(p["id"]), halftone(src, 300, 315, hint, cell=4.5, bg=(255, 255, 255))))
         print("ok", p["id"])
@@ -185,7 +185,7 @@ def main():
         d.text((64, y), line, font=f, fill=INK)
         y += 74
     d.text((64, H - 74), "historyproblems.com", font=font("IBMPlexMono-SemiBold.ttf", 22), fill=RED)
-    im.save("og/index.jpg", quality=86, optimize=True)
+    im.save("assets/og/index.jpg", quality=86, optimize=True)
     print("done")
 
 

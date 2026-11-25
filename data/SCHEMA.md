@@ -10,7 +10,7 @@
   "related": ["optional related problem ids"],
   "leads": ["optional published exhibit ids"],
   "flags": array, possibly empty, of "digitization" (progress likely needs new digitization of known, located holdings and collaboration with archivists) and/or "science" (confirmation needs collaboration with scientists: excavation, ancient DNA, radiocarbon, dendrochronology, materials analysis, imaging),
-  "needs": [ { "who": speciality slug from NEEDS in render.js (e.g. "archivists", "geneticists", "astronomers"), "ask": "One imperative sentence, max ~28 words: what someone in that speciality could concretely do on this problem" } ],
+  "needs": [ { "who": speciality slug from NEEDS in src/render.js (e.g. "archivists", "geneticists", "astronomers"), "ask": "One imperative sentence, max ~28 words: what someone in that speciality could concretely do on this problem" } ],
   "matters": "2–4 sentences: what other arguments depend on the answer",
   "stuck": "2–4 sentences: why it has stayed open",
   "solved": "1–3 sentences: what would count as a solution, stated as a test that can be checked",

@@ -6,8 +6,8 @@
 // GET ?pending=1                list posts awaiting review
 // PATCH { cid, action: "approve" | "reject" }
 // DELETE ?id=&cid=&kind=        remove an approved post
-import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
-import { notify } from "../lib/notify.js";
+import { db, parse, newId, limited, isAdmin, clean } from "../src/lib/store.js";
+import { notify } from "../src/lib/notify.js";
 import problems from "../data/problems.json" with { type: "json" };
 
 const KINDS = { comment: ["c", "ccount"], approach: ["a", "acount"], work: null };

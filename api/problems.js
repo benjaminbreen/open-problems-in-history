@@ -2,10 +2,10 @@
 // GET /api/problems            all problems with live votes and counts
 // GET /api/problems?id=<id>    one problem in full, with its comments and proposed approaches
 import problems from "../data/problems.json" with { type: "json" };
-import { db, parse } from "../lib/store.js";
-import { impact } from "../lib/impact.js";
+import { db, parse } from "../src/lib/store.js";
+import { impact } from "../src/lib/impact.js";
 
-import { humanPotential, compareRank } from "../lib/potential.js";
+import { humanPotential, compareRank } from "../src/lib/potential.js";
 import round from "../data/research-potential.json" with { type: "json" };
 
 export default async function handler(req, res) {

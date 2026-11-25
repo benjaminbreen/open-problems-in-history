@@ -1,8 +1,8 @@
 // POST { title, details, name, email, agent, website }   submit (private until approved)
 // GET   all suggestions (admin only)
 // PATCH { sid, status: "approved" | "rejected" | "pending" }   (admin only)
-import { db, parse, newId, limited, isAdmin, clean } from "../lib/store.js";
-import { notify } from "../lib/notify.js";
+import { db, parse, newId, limited, isAdmin, clean } from "../src/lib/store.js";
+import { notify } from "../src/lib/notify.js";
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "no-store");

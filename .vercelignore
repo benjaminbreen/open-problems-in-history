@@ -3,5 +3,8 @@
 skills-lock.json
 data/images/src
 .data
+dist
+docs
+test
 node_modules
 .env*

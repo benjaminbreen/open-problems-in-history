@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { currentRoundId, revisedRoundId, expandedRoundId, originalRoundId, humanPotential, rankBallots, validJudgment } from "../lib/potential.js";
+import { currentRoundId, revisedRoundId, expandedRoundId, originalRoundId, humanPotential, rankBallots, validJudgment } from "../src/lib/potential.js";
 
 const judgment = (chance_pct, historical_contribution, further_research) => ({
   chance_pct, historical_contribution, further_research,

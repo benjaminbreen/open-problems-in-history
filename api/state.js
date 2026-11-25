@@ -1,10 +1,10 @@
 // GET: vote tallies, comment counts, approved suggestions, impact scores.
 // The same for every visitor, so Vercel's edge caches it; this visitor's own votes come from /api/mine.
-import { db, parse } from "../lib/store.js";
-import { impact, panel } from "../lib/impact.js";
+import { db, parse } from "../src/lib/store.js";
+import { impact, panel } from "../src/lib/impact.js";
 
 import round from "../data/research-potential.json" with { type: "json" };
-import { humanPotential } from "../lib/potential.js";
+import { humanPotential } from "../src/lib/potential.js";
 
 export default async function handler(req, res) {
   const [tally, counts, sugg, ratings] = await Promise.all([

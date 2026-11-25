@@ -1,4 +1,6 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
   "rewrites": [
     {
@@ -61,7 +63,12 @@
     },
     {
       "source": "/p/mughal-dodo",
-      "destination": "/leads/mughal-dodo",
+      "destination": "/null-results/mughal-dodo",
+      "permanent": true
+    },
+    {
+      "source": "/leads/mughal-dodo",
+      "destination": "/null-results/mughal-dodo",
       "permanent": true
     },
     {
@@ -92,6 +99,11 @@
     {
       "source": "/cautionary-tales",
       "destination": "/leads#cautionary-tales",
+      "permanent": false
+    },
+    {
+      "source": "/null-results",
+      "destination": "/leads#null-results",
       "permanent": false
     }
   ]

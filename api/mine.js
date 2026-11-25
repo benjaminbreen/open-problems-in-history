@@ -1,5 +1,5 @@
 // GET: this visitor's own votes. Visitors without a vote cookie have none, so skip the database.
-import { db } from "../lib/store.js";
+import { db } from "../src/lib/store.js";
 
 export default async function handler(req, res) {
   res.setHeader("Cache-Control", "private, no-store");

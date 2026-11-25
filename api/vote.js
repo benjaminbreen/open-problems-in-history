@@ -1,5 +1,5 @@
 // POST { id, v: 1 | -1 | 0 } — one vote per browser per problem, changeable.
-import { db, voterId, limited } from "../lib/store.js";
+import { db, voterId, limited } from "../src/lib/store.js";
 
 export default async function handler(req, res) {
   if (req.method !== "POST") return res.status(405).end();
